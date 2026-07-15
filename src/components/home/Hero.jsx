@@ -128,11 +128,11 @@ export default function Hero() {
                 >
                   {slide.livingType}
                 </span>
-                <h1 className="text-4xl sm:text-4xl md:text-[3.5rem] font-display font-bold text-brand-cream tracking-tight leading-[1.05] mb-4">
+                <p className="text-4xl sm:text-4xl md:text-[3.5rem] font-display font-bold text-brand-cream tracking-tight leading-[1.05] mb-4">
                   {slide.title}
                   <br />
                   <span className="text-brand-gold-light italic font-medium">{slide.subtitle}</span>
-                </h1>
+                </p>
 
                 <p className="text-brand-cream/85 text-base sm:text-lg max-w-xl leading-relaxed mb-8">
                   {slide.description}
@@ -170,7 +170,7 @@ export default function Hero() {
               >
                 <img
                   src={item.image}
-                  alt=""
+                  alt={`${item.title} — co-living in Madhapur`}
                   className={`w-full object-cover transition-[height] duration-300 ${
                     isActive ? 'h-12 sm:h-14' : 'h-9 sm:h-10'
                   }`}

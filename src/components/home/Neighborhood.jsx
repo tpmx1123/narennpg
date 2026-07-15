@@ -6,13 +6,28 @@ export default function Neighborhood() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         
         <div className="lg:col-span-5 space-y-6">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">LOCATION BENEFITS</span>
-          <h2 className="text-3xl sm:text-5xl font-display font-bold text-brand-charcoal tracking-tight leading-tight">
-            In the Heart of <br />
-            <span className="text-brand-gold italic font-medium">Madhapur.</span>
+          <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
+            Location
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            The Perfect Location in <br />
+            <span className="text-[#FBBD45] italic font-medium">VIP Hills, Madhapur.</span>
           </h2>
           <p className="text-brand-charcoal-light text-sm leading-relaxed">
-            Location is the ultimate amenity. Our co-living homes and Narenn&apos;s Crown residence for girls place you minutes from Hitech IT Parks, premium dining, and lifestyle hubs.
+            From VIP Hills you can reach Hitech City in about 5–10 minutes, Gachibowli and the
+            Financial District in 15–20 minutes, and Kondapur metro shortly after. Read more about{' '}
+            <a href="/locations/madhapur/" className="text-brand-burgundy font-semibold hover:underline">
+              PG in Madhapur
+            </a>{' '}
+            and why this corridor works for{' '}
+            <a href="/coliving-for-it-professionals/" className="text-brand-burgundy font-semibold hover:underline">
+              co-living for IT professionals
+            </a>{' '}
+            and{' '}
+            <a href="/pg-for-students/" className="text-brand-burgundy font-semibold hover:underline">
+              PG for students
+            </a>
+            .
           </p>
 
           <div className="space-y-4 pt-2">

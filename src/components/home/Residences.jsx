@@ -53,14 +53,14 @@ function ResidenceCard({ res }) {
         <span
           className={`inline-flex items-center rounded-full border px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide backdrop-blur-md ${
             res.livingType === 'For Girls'
-              ? 'border-brand-burgundy/30 bg-brand-burgundy text-white'
+              ? 'border-[#B1020C]/30 bg-[#B1020C] text-white'
               : 'border-white/25 bg-white/20 text-white'
           }`}
         >
           {res.livingType}
         </span>
         <span className="inline-flex items-center gap-1 rounded-full border border-white/25 bg-black/35 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-md">
-          <Star className="h-3 w-3 fill-brand-gold text-brand-gold" />
+          <Star className="h-3 w-3 fill-[#FBBD45] text-[#FBBD45]" />
           {res.rating}
         </span>
       </div>
@@ -74,7 +74,7 @@ function ResidenceCard({ res }) {
         >
           {res.name}
         </motion.h3>
-        <p className="mt-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-brand-gold">
+        <p className="mt-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#FBBD45]">
           {res.tagline}
         </p>
         <motion.p
@@ -129,56 +129,65 @@ export default function Residences() {
   }, []);
 
   return (
-    <section id="properties" className="pt-8 pb-20 lg:pt-10 lg:pb-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="mb-8 lg:mb-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-20">
+    <section id="properties" className="py-14 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Header — same style as About */}
+        <div className=" lg:mb-2 px-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-16">
           <div className="shrink-0">
-            <span className="text-[11px] font-semibold tracking-[0.22em] text-brand-gold uppercase block mb-3">
-              Our Residences
+            <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase mb-3 block">
+              Our Rooms
             </span>
-            <h2 className="font-display font-bold text-brand-charcoal tracking-tight leading-[1.05]">
-              <span className="block text-4xl sm:text-4xl lg:text-4xl">Four Properties.</span>
-              <span className="block mt-1 text-4xl sm:text-4xl lg:text-4xl font-serif italic font-semibold bg-gradient-to-r from-brand-burgundy to-brand-gold bg-clip-text text-transparent">
-                One Standard of Excellence.
-              </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+              Rooms Designed <br />
+              <span className="text-[#FBBD45] italic font-medium">for Real Life.</span>
             </h2>
           </div>
 
-          <p className="max-w-md text-sm sm:text-[15px] leading-relaxed text-brand-charcoal border-l-2 border-brand-burgundy pl-5 lg:pl-6 lg:mt-8 lg:self-center">
-            Strategically located in Madhapur, each property offers a unique sanctuary tailored to
-            your lifestyle. Three are premium co-living residences, while{' '}
-            <span className="font-semibold text-brand-charcoal">Narenn&apos;s Crown</span> is a
-            signature safe space curated exclusively for girls.
+          <p className="max-w-xl text-brand-charcoal-light text-md leading-relaxed border-l-2 border-brand-burgundy pl-5 lg:pl-6 lg:self-center">
+            Every room at Narenn Living is move-in ready with a comfortable bed, wardrobe, study desk,
+            air-conditioning and clean linen. Choose a private single room for focus and privacy, a
+            double sharing room for the balance of company and space, or an economical triple sharing
+            room that keeps costs down without cutting corners. Take a closer look at{' '}
+            <a
+              href="/rooms/"
+              className="text-brand-burgundy font-semibold hover:underline"
+            >
+              our rooms
+            </a>{' '}
+            and find the option that fits your budget and lifestyle.
           </p>
         </div>
 
-        <div className="flex justify-end items-center gap-2 mb-5">
+        {/* Minimal Control Row Indicator Layout */}
+        <div className="flex justify-end items-center gap-2 mb-6 px-6 sm:px-10 lg:px-0">
           <button
             type="button"
             onClick={() => scrollByDir(-1)}
             aria-label="Scroll residences left"
-            className="w-11 h-11 rounded-full border border-brand-gold/35 bg-white text-brand-charcoal hover:bg-brand-burgundy hover:border-brand-burgundy hover:text-white transition-colors flex items-center justify-center shadow-sm"
+            className="w-11 h-11 rounded-full border border-gray-150 bg-white text-brand-charcoal hover:bg-[#B1020C] hover:border-[#B1020C] hover:text-white transition-colors flex items-center justify-center shadow-sm focus:outline-none"
           >
-            <ChevronLeft className="w-5 h-5" />
+            <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
           </button>
           <button
             type="button"
             onClick={() => scrollByDir(1)}
             aria-label="Scroll residences right"
-            className="w-11 h-11 rounded-full border border-brand-gold/35 bg-white text-brand-charcoal hover:bg-brand-burgundy hover:border-brand-burgundy hover:text-white transition-colors flex items-center justify-center shadow-sm"
+            className="w-11 h-11 rounded-full border border-gray-150 bg-white text-brand-charcoal hover:bg-[#B1020C] hover:border-[#B1020C] hover:text-white transition-colors flex items-center justify-center shadow-sm focus:outline-none"
           >
-            <ChevronRight className="w-5 h-5" />
+            <ChevronRight className="w-5 h-5 stroke-[2.5]" />
           </button>
         </div>
       </div>
 
+      {/* Kinetic Carousels Track Frame Track */}
       <div
         ref={trackRef}
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
         onFocus={() => setPaused(true)}
         onBlur={() => setPaused(false)}
-        className="flex gap-5 overflow-x-auto px-6 pb-2 scrollbar-none"
+        className="flex gap-5 overflow-x-auto px-6 pb- scrollbar-none snap-x"
         style={{
           scrollBehavior: 'auto',
           WebkitOverflowScrolling: 'touch',

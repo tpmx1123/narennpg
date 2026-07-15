@@ -6,15 +6,20 @@ export default function Dining() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         
         <div className="lg:col-span-5 space-y-6">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">NARENN DINING</span>
-          <h2 className="text-3xl sm:text-5xl font-display font-bold text-brand-charcoal tracking-tight leading-[1.12]">
-            Fresh Meals. <br />
-            Healthy living starts <br />
-            with <span className="text-brand-gold italic font-medium">good food.</span>
+          <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
+            Food
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            Food That Tastes <br />
+            Like <span className="text-[#FBBD45] italic font-medium">Home.</span>
           </h2>
           <p className="text-brand-charcoal-light text-sm leading-relaxed">
-            Healthy, hygienic, chef-prepared meals served thrice daily across our co-living residences
-            and Narenn&apos;s Crown home for girls — from Hyderabadi specials to balanced continental plates.
+            Our in-house kitchen serves fresh meals every day with a rotating menu of home-style South
+            Indian and North Indian dishes. See our{' '}
+            <a href="/food/" className="text-brand-burgundy font-semibold hover:underline">
+              homely food menu
+            </a>{' '}
+            and taste the difference for yourself.
           </p>
           
           <div className="space-y-3.5 pt-2">
@@ -52,7 +57,8 @@ export default function Dining() {
           <div className="col-span-8 rounded-3xl overflow-hidden border border-brand-cream-dark/60 h-80 shadow-md">
             <img 
               src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" 
-              alt="Chef preparing meals"
+              alt="Four homely meals a day served from the in-house kitchen at Narenn Living Madhapur"
+              title="In-house kitchen food at Narenn Living"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>

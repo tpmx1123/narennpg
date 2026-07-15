@@ -71,25 +71,34 @@ function TiltCard({ children, className = '' }) {
 
 export default function Amenities() {
   return (
-    <section id="amenities" className="py-4 lg:py-6 bg-white relative overflow-hidden">
+    <section id="amenities" className=" bg-white relative overflow-hidden py-14">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-8 lg:mb-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-16">
           <div className="shrink-0">
-            <span className="text-[11px] font-semibold tracking-[0.22em] text-brand-gold uppercase block mb-3">
-              Why Choose Us
+            <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
+              Premium Amenities
             </span>
-            <h2 className="font-display font-bold text-brand-charcoal tracking-tight leading-[1.05]">
-              <span className="block text-3xl sm:text-4xl lg:text-4xl">Designed Around Your</span>
-              <span className="block text-3xl sm:text-4xl lg:text-4xl font-serif italic font-semibold bg-gradient-to-r from-brand-burgundy to-brand-gold bg-clip-text text-transparent pb-1">
-                Everyday Comfort.
-              </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+              Built for IT Pros <br />
+              <span className="text-[#FBBD45] italic font-medium">&amp; Students Alike.</span>
             </h2>
           </div>
 
-          <p className="max-w-md text-sm leading-relaxed text-brand-charcoal border-l-2 border-brand-burgundy pl-5 lg:pl-6 lg:mt-6 lg:self-center">
-            Eight essentials across our co-living residences and{' '}
-            <span className="font-semibold text-brand-charcoal">Narenn&apos;s Crown</span> home for
-            girls.
+          <p className="max-w-xl text-sm leading-relaxed text-brand-charcoal border-l-2 border-brand-burgundy pl-5 lg:pl-6 lg:mt-6 lg:self-center">
+            Whether you are an engineer starting a new role in Hitech City or a student preparing for
+            exams, Narenn Living is designed around your day. Our{' '}
+            <a
+              href="/coliving-for-it-professionals/"
+              className="text-brand-burgundy font-semibold hover:underline"
+            >
+              co-living for IT professionals
+            </a>{' '}
+            offers quiet, work-ready rooms and a fast-commute location, while our{' '}
+            <a href="/pg-for-students/" className="text-brand-burgundy font-semibold hover:underline">
+              PG for students
+            </a>{' '}
+            provides a safe, supportive and study-friendly environment with everything included in one
+            simple monthly fee.
           </p>
         </div>
 

@@ -38,12 +38,43 @@ export default function Footer() {
 
         {/* Links 2 */}
         <div className="lg:col-span-2 space-y-3">
-          <span className="font-display font-bold text-xs uppercase tracking-widest text-brand-gold block mb-2">COMPANY</span>
+          <span className="font-display font-bold text-xs uppercase tracking-widest text-brand-gold block mb-2">EXPLORE</span>
           <ul className="space-y-2 text-xs text-brand-charcoal-light">
-            <li><a href="#about" className="hover:text-brand-gold transition-colors">About Us</a></li>
-            <li><a href="#about" className="hover:text-brand-gold transition-colors">The Narenn Legacy</a></li>
-            <li><a href="#amenities" className="hover:text-brand-gold transition-colors">Careers</a></li>
-            <li><a href="#" className="hover:text-brand-gold transition-colors">Privacy Policy</a></li>
+            <li>
+              <a href="/rooms/" className="hover:text-brand-gold transition-colors">
+                Explore our rooms
+              </a>
+            </li>
+            <li>
+              <a href="/amenities/" className="hover:text-brand-gold transition-colors">
+                Premium amenities
+              </a>
+            </li>
+            <li>
+              <a href="/food/" className="hover:text-brand-gold transition-colors">
+                Homely food menu
+              </a>
+            </li>
+            <li>
+              <a href="/locations/madhapur/" className="hover:text-brand-gold transition-colors">
+                PG in Madhapur
+              </a>
+            </li>
+            <li>
+              <a href="/coliving-for-it-professionals/" className="hover:text-brand-gold transition-colors">
+                Co-living for IT professionals
+              </a>
+            </li>
+            <li>
+              <a href="/pg-for-students/" className="hover:text-brand-gold transition-colors">
+                PG for students
+              </a>
+            </li>
+            <li>
+              <a href="/contact-us/" className="hover:text-brand-gold transition-colors">
+                Book a free visit
+              </a>
+            </li>
           </ul>
         </div>
 

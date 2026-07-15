@@ -6,11 +6,13 @@ export default function Safety() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         
         <div className="lg:col-span-6 space-y-6">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">SAFETY & SECURITY</span>
-          <h2 className="text-3xl sm:text-5xl font-display font-bold text-brand-charcoal tracking-tight leading-tight">
+          <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
+            Safety &amp; Security
+          </span>
+          <p className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             Every Precaution. <br />
-            <span className="text-brand-gold italic font-medium">Every Single Day.</span>
-          </h2>
+            <span className="text-[#FBBD45] italic font-medium">Every Single Day.</span>
+          </p>
           <p className="text-brand-charcoal-light text-sm leading-relaxed">
             Peace of mind is the ultimate luxury. Our multi-layered, state-of-the-art security protocols ensure that you can focus entirely on your professional goals and comfort, while we handle your complete safety.
           </p>

@@ -6,8 +6,12 @@ export default function Gallery({ onBookVisit }) {
     <section className="py-24 max-w-7xl mx-auto px-6">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
         <div>
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">GALLERY Showcase</span>
-          <h2 className="text-3xl sm:text-5xl font-display font-bold text-brand-charcoal tracking-tight">A Glimpse of Elegance</h2>
+          <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
+            Gallery Showcase
+          </span>
+          <p className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            A Glimpse of <span className="text-[#FBBD45] italic font-medium">Elegance</span>
+          </p>
         </div>
         <button 
           onClick={() => onBookVisit()}
@@ -26,7 +30,8 @@ export default function Gallery({ onBookVisit }) {
           >
             <img 
               src={img.url} 
-              alt={img.title}
+              alt={img.alt || img.title}
+              title={img.title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/70 via-brand-charcoal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

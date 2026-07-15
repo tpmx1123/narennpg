@@ -2,16 +2,25 @@ import { ArrowRight, MessageSquare } from 'lucide-react';
 
 export default function FinalCta({ onBookVisit }) {
   return (
-    <section className="py-28 text-center bg-brand-cream relative z-10">
+    <section id="contact" className="py-28 text-center bg-brand-cream relative z-10">
       <div className="max-w-4xl mx-auto px-6 space-y-8">
-        <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">EXPERIENCE THE STANDARD</span>
-        <h2 className="text-4xl sm:text-6xl font-display font-bold text-brand-charcoal tracking-tight leading-none">
-          Upgrade to <br />
-          <span className="text-brand-gold italic font-medium">Premium Living Today.</span>
+        <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
+          Book a Visit
+        </span>
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          Book Your Free <br />
+          <span className="text-[#FBBD45] italic font-medium">Visit Today.</span>
         </h2>
         <p className="text-brand-charcoal-light text-md max-w-xl mx-auto leading-relaxed">
-          Spaces are filling fast. Book a tour of our co-living residences — or Narenn&apos;s Crown,
-          curated exclusively for girls — at Narenn Living today.
+          Walk through the rooms, meet the team and taste the food. Call{' '}
+          <a href="tel:+917075985666" className="text-brand-burgundy font-semibold hover:underline">
+            70759 85666
+          </a>{' '}
+          or{' '}
+          <a href="/contact-us/" className="text-brand-burgundy font-semibold hover:underline">
+            book a free visit
+          </a>{' '}
+          and see why residents stay longer at Narenn Living.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

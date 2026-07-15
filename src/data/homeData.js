@@ -240,10 +240,34 @@ export const TESTIMONIALS = [
 ];
 
 export const GALLERY_IMAGES = [
-  { url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80", title: "Premium Dining Area" },
-  { url: "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=800&q=80", title: "Luxury Suite Bedroom" },
-  { url: "https://images.unsplash.com/photo-1517502884422-41eaaced0168?auto=format&fit=crop&w=800&q=80", title: "Dynamic Coworking Zone" },
-  { url: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80", title: "Rooftop Sky Deck" },
-  { url: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80", title: "Modern In-house Fitness Center" },
-  { url: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80", title: "Bespoke Study Lounges" }
+  {
+    url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+    title: "Premium Dining Area",
+    alt: "Homely dining space at Narenn Living co-living in Madhapur",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=800&q=80",
+    title: "Luxury Suite Bedroom",
+    alt: "Fully furnished AC room with bed, wardrobe and study desk at Narenn Living Madhapur",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1517502884422-41eaaced0168?auto=format&fit=crop&w=800&q=80",
+    title: "Dynamic Coworking Zone",
+    alt: "Work-ready common space at Narenn Living co-living in Hyderabad",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+    title: "Rooftop Sky Deck",
+    alt: "Residents at a terrace community event at Narenn Living co-living in Hyderabad",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+    title: "Modern In-house Fitness Center",
+    alt: "In-house fitness area at Narenn Living Madhapur",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    title: "Bespoke Study Lounges",
+    alt: "Study lounge for students and professionals at Narenn Living Madhapur",
+  },
 ];

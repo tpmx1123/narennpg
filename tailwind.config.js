@@ -14,6 +14,12 @@ export default {
             dark: '#E5A62A',
             pale: '#FFF8E6',
           },
+          green: {
+            DEFAULT: '#0F3D2E',
+            light: '#1A5C45',
+            dark: '#0A2E22',
+            pale: '#E8F2EE',
+          },
           burgundy: {
             DEFAULT: '#B1020C',
             light: '#D4252E',
@@ -33,9 +39,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Outfit', 'Inter', 'sans-serif'],
-        display: ['Outfit', 'sans-serif'],
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['Montserrat', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
+        serif: ['Montserrat', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out forwards',
