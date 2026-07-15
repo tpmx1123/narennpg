@@ -144,8 +144,8 @@ export default function Hero() {
       </div>
 
       {/* Property previews — vertically centered on the right */}
-      <div className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 flex flex-col items-center gap-3">
-        <div className="flex flex-col items-center gap-3" role="tablist" aria-label="Property slides">
+      <div className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 flex flex-col items-center gap-2.5">
+        <div className="flex flex-col items-center gap-2.5" role="tablist" aria-label="Property slides">
           {HERO_SLIDES.map((item, index) => {
             const isActive = index === activeSlide;
             return (
@@ -157,12 +157,12 @@ export default function Hero() {
                 aria-label={`View ${item.property} (${item.livingType})`}
                 onClick={() => goTo(index)}
                 animate={{
-                  scale: isActive ? 1.28 : 0.88,
+                  scale: isActive ? 1.18 : 0.9,
                   opacity: isActive ? 1 : 0.65,
                 }}
-                whileHover={{ scale: isActive ? 1.28 : 0.95, opacity: 1 }}
+                whileHover={{ scale: isActive ? 1.18 : 0.96, opacity: 1 }}
                 transition={{ type: 'spring', stiffness: 320, damping: 24 }}
-                className={`group relative w-[4.25rem] sm:w-20 overflow-hidden rounded-lg border origin-center transition-colors duration-300 ${
+                className={`group relative w-14 sm:w-16 overflow-hidden rounded-md border origin-center transition-colors duration-300 ${
                   isActive
                     ? 'border-brand-gold shadow-[0_0_0_2px_rgba(251,189,69,0.45),0_8px_24px_rgba(0,0,0,0.35)] z-10'
                     : 'border-white/25 hover:border-white/50 z-0'
@@ -172,7 +172,7 @@ export default function Hero() {
                   src={item.image}
                   alt=""
                   className={`w-full object-cover transition-[height] duration-300 ${
-                    isActive ? 'h-16 sm:h-[4.75rem]' : 'h-11 sm:h-12'
+                    isActive ? 'h-12 sm:h-14' : 'h-9 sm:h-10'
                   }`}
                 />
                 <span
