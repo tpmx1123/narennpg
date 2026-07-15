@@ -9,31 +9,33 @@ export default {
       colors: {
         brand: {
           gold: {
-            DEFAULT: '#9E7A44',
-            light: '#C5B495',
-            dark: '#7A5C2B',
-            pale: '#F4EFE6',
+            DEFAULT: '#FBBD45',
+            light: '#FCD56E',
+            dark: '#E5A62A',
+            pale: '#FFF8E6',
           },
           burgundy: {
-            DEFAULT: '#6B1D2F',
-            light: '#8C2D43',
-            dark: '#4A101C',
+            DEFAULT: '#B1020C',
+            light: '#D4252E',
+            dark: '#8A0109',
+            pale: '#FFF0F1',
           },
           cream: {
-            DEFAULT: '#FAF8F4',
-            dark: '#F3EDE2',
-            light: '#FCFBF9',
+            DEFAULT: '#FFFFFF',
+            dark: '#F5F5F5',
+            light: '#FFFFFF',
           },
           charcoal: {
-            DEFAULT: '#222222',
-            light: '#4A4A4A',
-            dark: '#111111',
+            DEFAULT: '#1A1A1A',
+            light: '#5C5C5C',
+            dark: '#0D0D0D',
           }
         }
       },
       fontFamily: {
         sans: ['Outfit', 'Inter', 'sans-serif'],
         display: ['Outfit', 'sans-serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out forwards',
