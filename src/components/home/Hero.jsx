@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HERO_SLIDES } from '../../data/homeData';
+import IconSlideButton from '../ui/IconSlideButton';
 
 const TRANSITION = { duration: 0.65, ease: [0.22, 1, 0.36, 1] };
 const NEXT_ICON =
@@ -10,7 +11,7 @@ const NEXT_ICON =
 const controlBtnClass =
   'rounded-full border border-brand-cream/35 bg-brand-cream/15 text-brand-cream hover:bg-brand-gold hover:border-brand-gold backdrop-blur-md flex items-center justify-center shadow-lg transition-all duration-300';
 
-export default function Hero() {
+export default function Hero({ onBookVisit }) {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
   const [direction, setDirection] = useState(1);
@@ -137,6 +138,22 @@ export default function Hero() {
                 <p className="text-brand-cream/85 text-base sm:text-lg max-w-xl leading-relaxed mb-8">
                   {slide.description}
                 </p>
+
+                {typeof onBookVisit === 'function' && (
+                  <IconSlideButton
+                    onClick={() => onBookVisit({ property: slide.property })}
+                    radius={10}
+                    bgColor="#B1020C"
+                    bgHoverColor="#8A0109"
+                    fillColor="#FBBD45"
+                    textColor="#ffffff"
+                    textHoverColor="#1A1A1A"
+                    iconColor="#ffffff"
+                    iconHoverColor="#1A1A1A"
+                  >
+                    Book a Visit
+                  </IconSlideButton>
+                )}
               </motion.div>
             </AnimatePresence>
           </div>

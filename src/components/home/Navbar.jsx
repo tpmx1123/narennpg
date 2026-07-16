@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown, ArrowRight, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RESIDENCES, BRAND_LOGO } from '../../data/homeData';
+import IconSlideButton from '../ui/IconSlideButton';
 
 const NAV_LINKS = [
   { href: '#about', label: 'About Us' },
@@ -241,23 +242,23 @@ export default function Navbar({ onBookVisit }) {
                 onMouseEnter={openBookMenu}
                 onMouseLeave={closeBookMenu}
               >
-                <button
-                  type="button"
+                <IconSlideButton
                   onClick={() => {
                     setBookMenuOpen((open) => !open);
                     setLayerOpen(false);
                   }}
-                  className="inline-flex items-center gap-2 px-5 py-3 bg-brand-burgundy text-white font-display font-bold text-sm tracking-wide hover:bg-brand-burgundy-dark transition-colors rounded-[15px]"
+                  radius={10}
+                  bgColor="#B1020C"
+                  bgHoverColor="#8A0109"
+                  fillColor="#FBBD45"
+                  textColor="#ffffff"
+                  textHoverColor="#1A1A1A"
+                  iconColor="#ffffff"
+                  iconHoverColor="#1A1A1A"
+                  fontSize={13}
                 >
                   Book a Visit
-                  <motion.span
-                    animate={{ rotate: bookMenuOpen ? 180 : 0 }}
-                    transition={chevronSpring}
-                    className="inline-flex"
-                  >
-                    <ChevronDown className="w-4 h-4" />
-                  </motion.span>
-                </button>
+                </IconSlideButton>
 
                 <AnimatePresence>
                   {bookMenuOpen && (
@@ -520,17 +521,23 @@ export default function Navbar({ onBookVisit }) {
               </div>
 
               <div className="flex flex-col gap-2 pt-1">
-                <button
-                  type="button"
+                <IconSlideButton
                   onClick={() => {
                     closeAll();
                     onBookVisit();
                   }}
-                  className="w-full py-3.5 bg-brand-burgundy text-white font-display font-bold text-sm tracking-wide flex items-center justify-center gap-2"
+                  radius={10}
+                  className="w-full"
+                  bgColor="#B1020C"
+                  bgHoverColor="#8A0109"
+                  fillColor="#FBBD45"
+                  textColor="#ffffff"
+                  textHoverColor="#1A1A1A"
+                  iconColor="#ffffff"
+                  iconHoverColor="#1A1A1A"
                 >
                   Book a Visit
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                </IconSlideButton>
                 <a
                   href="https://wa.me/917075985666"
                   target="_blank"

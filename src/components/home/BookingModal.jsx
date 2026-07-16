@@ -1,6 +1,7 @@
-import { X, Send, CheckCircle2 } from 'lucide-react';
+import { X, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RESIDENCES } from '../../data/homeData';
+import IconSlideButton from '../ui/IconSlideButton';
 
 export default function BookingModal({
   open,
@@ -147,13 +148,20 @@ export default function BookingModal({
                     />
                   </div>
 
-                  <button
+                  <IconSlideButton
                     type="submit"
-                    className="w-full py-4 rounded-xl bg-brand-burgundy text-white font-display font-bold text-sm tracking-wider shadow-md hover:bg-brand-burgundy-dark transition-all duration-300 flex items-center justify-center gap-2 mt-4"
+                    radius={10}
+                    className="w-full mt-4"
+                    bgColor="#B1020C"
+                    bgHoverColor="#8A0109"
+                    fillColor="#FBBD45"
+                    textColor="#ffffff"
+                    textHoverColor="#1A1A1A"
+                    iconColor="#ffffff"
+                    iconHoverColor="#1A1A1A"
                   >
-                    <Send className="w-4 h-4" />
                     Submit Visit Request
-                  </button>
+                  </IconSlideButton>
                 </form>
               </div>
             ) : (

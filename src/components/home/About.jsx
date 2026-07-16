@@ -1,5 +1,6 @@
 import { Phone } from 'lucide-react';
 import { HOME_SEO } from '../../data/seoHome';
+import IconSlideButton from '../ui/IconSlideButton';
 
 export default function About({ onBookVisit }) {
   return (
@@ -48,12 +49,19 @@ export default function About({ onBookVisit }) {
 
         {/* Action CTAs */}
         <div className="flex flex-wrap items-center gap-6">
-          <button 
+          <IconSlideButton
             onClick={() => onBookVisit()}
-            className="px-6 py-3 rounded-full bg-[#B1020C] text-white font-display font-bold text-sm tracking-wide hover:bg-[#8A0109] transition-all duration-300 shadow-sm"
+            radius={10}
+            bgColor="#B1020C"
+            bgHoverColor="#8A0109"
+            fillColor="#FBBD45"
+            textColor="#ffffff"
+            textHoverColor="#1A1A1A"
+            iconColor="#ffffff"
+            iconHoverColor="#1A1A1A"
           >
             Know More About Us
-          </button>
+          </IconSlideButton>
           
           <a 
             href="tel:+917075985666" 
