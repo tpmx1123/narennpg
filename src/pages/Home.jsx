@@ -72,15 +72,16 @@ export default function Home() {
       <Residences onBookVisit={onBookVisit} />
       <Amenities />
       <Pricing onBookVisit={onBookVisit} />
-      {/*} <Dining />
-      <Gallery onBookVisit={onBookVisit} />
-      <Safety />
+       <Dining />
+      {/*<Gallery onBookVisit={onBookVisit} />*/}
+      {/* <Safety /> */}
       <Testimonials />
+      
       <Neighborhood />
-      <SeoSections />
       <Faq />
       <FinalCta onBookVisit={onBookVisit} />
-      <Footer /> */}
+      <Footer /> 
+      {/*<SeoSections /> */}
       <BookingModal
         open={bookingModalOpen}
         bookingSubmitted={bookingSubmitted}

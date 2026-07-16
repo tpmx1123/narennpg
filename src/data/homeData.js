@@ -1,13 +1,45 @@
-import {
-  Shield,
-  Utensils,
-  Sparkles,
-  Clock,
-  Users,
-  Zap,
-  Wifi,
-  PlugZap,
-} from 'lucide-react';
+export const AMENITIES = [
+  {
+    title: 'Gourmet Dining',
+    description: 'Chef-prepared hygienic meals, thrice daily.',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Gigabit WiFi',
+    description: 'Enterprise-grade seamless connectivity.',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a0?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Housekeeping',
+    description: 'Daily professional cleaning & laundry.',
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Fitness Studio',
+    description: 'Fully equipped modern gym on premise.',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: '24/7 Power Backup',
+    description: 'Uninterrupted electricity round the clock.',
+    image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Rooftop Terrace',
+    description: 'Breathtaking city views for evening relaxation.',
+    image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Two-Wheeler Parking',
+    description: 'Secure on-premise parking for your two-wheelers.',
+    image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    title: 'Community Events',
+    description: 'Curated networking and lifestyle events.',
+    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80',
+  },
+];
 
 export const BRAND_LOGO =
   'https://res.cloudinary.com/dmaeijlc/image/upload/v1784012843/narennlogo_opx4st.png';
@@ -67,6 +99,7 @@ export const RESIDENCES = [
     description: "Premium co-living designed for focused living, privacy, and high-productivity workflows.",
     features: ["Co-Living", "Premium Desks", "Private Balconies", "Near Raheja Mindspace"],
     image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+    mapUrl: "https://maps.app.goo.gl/DqPwF8JMTihVhMX28",
     rating: 4.9,
     reviews: 124
   },
@@ -77,6 +110,7 @@ export const RESIDENCES = [
     description: "A signature safe space curated exclusively for girls - modern comfort with warm social settings.",
     features: ["For Girls", "Spacious Lounge", "Dedicated Dining Room", "Walk to Metro"],
     image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+    mapUrl: "https://maps.app.goo.gl/MBMx1EEn6psPjwUC8",
     rating: 4.8,
     reviews: 98
   },
@@ -87,6 +121,7 @@ export const RESIDENCES = [
     description: "Modern upscale co-living crafted for ambitious corporate leaders and tech professionals.",
     features: ["Co-Living", "Rooftop Cafe", "Mini-Gym inside", "Quiet Study Zone"],
     image: "https://res.cloudinary.com/dmaeijlc/video/upload/so_1,w_800,h_500,c_fill,q_auto,f_jpg/v1784010621/01_NARENN_PINNACLE_ttyhib.jpg",
+    mapUrl: "https://maps.app.goo.gl/VcRoEHR2fWrfy3SL7",
     rating: 4.9,
     reviews: 87
   },
@@ -97,51 +132,9 @@ export const RESIDENCES = [
     description: "Spacious co-living with high-energy environments, network hubs, and community living.",
     features: ["Co-Living", "Curated Library", "Weekly Networking", "Silicon Valley Area"],
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+    mapUrl: "https://maps.app.goo.gl/L4ztDQmid2G76yMt6",
     rating: 4.7,
     reviews: 154
-  }
-];
-
-export const AMENITIES = [
-  {
-    title: "Premium Furnished Rooms",
-    description: "Plush orthopaedic mattresses, bespoke workstations, expansive custom wardrobes, and ambient designer lighting.",
-    icon: Sparkles,
-  },
-  {
-    title: "Chef-Prepared Meals",
-    description: "Delectable, nutritious, and hygienic meals prepared by master chefs, served hot thrice daily in standard dining.",
-    icon: Utensils,
-  },
-  {
-    title: "Daily Housekeeping",
-    description: "Professional daily housekeeping, room sanitization, and seamless in-house laundry management.",
-    icon: Clock,
-  },
-  {
-    title: "Fitness & Wellness",
-    description: "State-of-the-art in-house gym setup, curated wellness sessions, yoga zones, and stress-buster recreation areas.",
-    icon: Zap,
-  },
-  {
-    title: "Community Spaces",
-    description: "Breathtaking sky decks, private movie lounges, collaborative co-working lobbies, and networking spaces.",
-    icon: Users,
-  },
-  {
-    title: "24/7 Security Shield",
-    description: "Smart biometric entry, comprehensive high-definition CCTV coverage, round-the-clock wardens, and visitor validation.",
-    icon: Shield,
-  },
-  {
-    title: "High-Speed Wi-Fi",
-    description: "Enterprise-grade fiber connectivity across rooms and common areas for uninterrupted work, streaming, and video calls.",
-    icon: Wifi,
-  },
-  {
-    title: "Power Backup",
-    description: "Fully managed backup power so lights, cooling, and Wi-Fi stay online even during outages — zero downtime living.",
-    icon: PlugZap,
   }
 ];
 

@@ -1,26 +1,56 @@
-import { MapPin, Map } from 'lucide-react';
+import { ArrowUpRight, MapPin } from 'lucide-react';
+import { RESIDENCES } from '../../data/homeData';
+
+const NEARBY_HIGHLIGHTS = [
+  {
+    title: 'Major IT Hubs',
+    distance: '5–10 mins',
+    detail: 'Raheja Mindspace, Hitech City, Salesforce, Deloitte & Amazon campuses.',
+  },
+  {
+    title: 'Metro Connectivity',
+    distance: 'Walkable',
+    detail: 'Madhapur Metro Station links you to the rest of Hyderabad in minutes.',
+  },
+  {
+    title: 'Lifestyle & Dining',
+    distance: '15 mins',
+    detail: 'Jubilee Hills cafés, Inorbit Mall, breweries and weekend hangout spots.',
+  },
+];
+
+const AREA_IMAGE =
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp';
 
 export default function Neighborhood() {
   return (
-    <section id="neighborhood" className="py-24 bg-brand-burgundy-pale/35 border-y border-brand-burgundy/10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        
-        <div className="lg:col-span-5 space-y-6">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
-            Location
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
-            The Perfect Location in <br />
-            <span className="text-[#FBBD45] italic font-medium">VIP Hills, Madhapur.</span>
-          </h2>
-          <p className="text-brand-charcoal-light text-sm leading-relaxed">
+    <section
+      id="neighborhood"
+      className="relative py-14  bg-white  overflow-hidden"
+    >
+      <div className="relative max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="mb-10 lg:mb-14 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-12">
+          <div className="max-w-xl">
+            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-3 block">
+              Location
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+              Four properties in{' '}
+              <span className="text-brand-gold italic font-medium">VIP Hills, Madhapur.</span>
+            </h2>
+          </div>
+          <p className="text-sm text-brand-charcoal leading-relaxed max-w-lg border-l-[3px] border-brand-burgundy pl-5">
             From VIP Hills you can reach Hitech City in about 5–10 minutes, Gachibowli and the
-            Financial District in 15–20 minutes, and Kondapur metro shortly after. Read more about{' '}
+            Financial District in 15–20 minutes. Explore{' '}
             <a href="/locations/madhapur/" className="text-brand-burgundy font-semibold hover:underline">
               PG in Madhapur
-            </a>{' '}
-            and why this corridor works for{' '}
-            <a href="/coliving-for-it-professionals/" className="text-brand-burgundy font-semibold hover:underline">
+            </a>
+            ,{' '}
+            <a
+              href="/coliving-for-it-professionals/"
+              className="text-brand-burgundy font-semibold hover:underline"
+            >
               co-living for IT professionals
             </a>{' '}
             and{' '}
@@ -29,80 +59,99 @@ export default function Neighborhood() {
             </a>
             .
           </p>
+        </div>
 
-          <div className="space-y-4 pt-2">
-            {[
-              { title: "Major IT Hubs", dist: "5 mins to Raheja Mindspace & Hitech City", desc: "Reduce commute fatigue to Salesforce, Deloitte, Amazon, and other top IT headquarters." },
-              { title: "Metro Connectivity", dist: "Walking distance to Madhapur Metro Station", desc: "Seamless and green transit routes straight to main Hyderabad city lines." },
-              { title: "Lifestyle Hubs", dist: "Close to Jubilee Hills cafes & Inorbit Mall", desc: "Enjoy weekends at top breweries, upscale lounges, and fashion shopping arenas." }
-            ].map((loc, idx) => (
-              <div key={idx} className="flex gap-4">
-                <div className="w-10 h-10 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold shrink-0 mt-0.5">
-                  <MapPin className="w-5 h-5" />
+        {/* Main — open list + full-bleed visual */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 mb-14 lg:mb-16 items-start">
+          <div className="lg:col-span-5">
+            <ul className="divide-y divide-brand-gold/25">
+              {NEARBY_HIGHLIGHTS.map(({ title, distance, detail }) => (
+                <li key={title} className="py-5 first:pt-0 last:pb-0">
+                  <div className="flex items-baseline justify-between gap-4 mb-1.5">
+                    <span className="font-display font-bold text-base text-brand-charcoal">{title}</span>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-brand-gold shrink-0">
+                      {distance}
+                    </span>
+                  </div>
+                  <p className="text-sm text-brand-charcoal-light leading-relaxed">{detail}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="lg:col-span-7 relative min-h-[260px] sm:min-h-[340px] overflow-hidden rounded-[10px]">
+            <img
+              src={AREA_IMAGE}
+              alt="Narenn Living terrace and neighbourhood views in VIP Hills, Madhapur"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-green/90 via-brand-green/40 to-transparent" />
+            <div className="relative h-full min-h-[260px] sm:min-h-[340px] flex flex-col justify-end p-6 sm:p-8">
+              
+              <h3 className="font-display font-bold text-xl sm:text-2xl text-white mb-1">
+                VIP Hills, Madhapur
+              </h3>
+              <p className="text-sm text-white/85 max-w-md leading-relaxed">
+                Hyderabad, Telangana 500084 - four Narenn Living homes within walking distance of
+                Madhapur&apos;s best commute and lifestyle corridors.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Property map links */}
+        <div className="pt-2 ">
+          <div className="mb-8 sm:mb-10 pt-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+            <div>
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-burgundy block mb-1.5">
+                Our Addresses
+              </span>
+              <h3 className="font-display font-bold text-xl sm:text-2xl text-brand-green tracking-tight">
+                Find each property on Google Maps
+              </h3>
+            </div>
+            <p className="text-xs text-brand-charcoal-light max-w-xs sm:text-right leading-relaxed">
+              Tap a property to open directions in Google Maps.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-0">
+            {RESIDENCES.map((res, index) => (
+              <a
+                key={res.name}
+                href={res.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group grid grid-cols-[110px_1fr] sm:grid-cols-[132px_1fr] gap-5 items-center py-6 transition-colors"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[10px] shrink-0 ring-1 ring-brand-green/10 group-hover:ring-brand-gold/40 transition-[box-shadow,ring-color] duration-300 shadow-sm group-hover:shadow-md">
+                  <img
+                    src={res.image}
+                    alt={`${res.name} — ${res.tagline}`}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
+                  />
+                  
+                  
                 </div>
-                <div>
-                  <span className="font-display font-bold text-sm text-brand-charcoal block">{loc.title}</span>
-                  <span className="font-sans text-[11px] text-brand-gold font-bold block mt-0.5">{loc.dist}</span>
-                  <span className="text-brand-charcoal-light text-xs mt-1 block leading-relaxed">{loc.desc}</span>
+
+                <div className="min-w-0 flex flex-col justify-center">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-brand-charcoal-light mb-1">
+                    {res.livingType}
+                  </span>
+                  <h4 className="font-display font-bold text-lg text-brand-green group-hover:text-brand-burgundy transition-colors leading-snug">
+                    {res.name}
+                  </h4>
+                  <p className="text-xs text-brand-gold font-semibold italic mt-1">{res.tagline}</p>
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-display font-bold text-brand-burgundy">
+                    <MapPin className="w-3.5 h-3.5 text-brand-gold" />
+                    Open in Maps
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
-
-        <div className="lg:col-span-7 bg-brand-cream border border-brand-cream-dark/60 rounded-3xl p-8 shadow-md relative min-h-[400px] flex flex-col justify-between overflow-hidden">
-          {/* Styled background map details to look futuristic and Gen-Z */}
-          <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
-            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#222" strokeWidth="1" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
-          </div>
-          
-          {/* Map Simulator */}
-          <div>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-brand-gold block mb-1">LOCALITY MAP SYSTEM</span>
-            <h3 className="text-2xl font-display font-bold text-brand-charcoal">VIP Hills, Road 21</h3>
-            <span className="text-brand-charcoal-light text-xs block">Silicon Valley, Madhapur, Hyderabad, Telangana</span>
-          </div>
-
-          {/* Simulating Map Markers */}
-          <div className="my-8 relative h-48 bg-brand-cream-dark/30 border border-brand-cream-dark/40 rounded-2xl overflow-hidden flex items-center justify-center">
-            <div className="absolute w-2.5 h-2.5 bg-brand-gold rounded-full animate-ping" style={{ top: '35%', left: '40%' }} />
-            <div className="absolute w-4 h-4 bg-brand-gold border-2 border-brand-cream rounded-full shadow-md" style={{ top: '33%', left: '39%' }} />
-            <span className="absolute bg-brand-charcoal text-brand-cream text-[10px] font-bold px-2 py-0.5 rounded shadow-sm" style={{ top: '22%', left: '35%' }}>
-              Narenn Elite
-            </span>
-
-            <div className="absolute w-3 h-3 bg-brand-burgundy border-2 border-brand-cream rounded-full" style={{ top: '65%', left: '68%' }} />
-            <span className="absolute bg-brand-cream border border-brand-cream-dark text-brand-charcoal-light text-[9px] px-2 py-0.5 rounded" style={{ top: '55%', left: '60%' }}>
-              Madhapur Metro
-            </span>
-
-            <div className="absolute w-3 h-3 bg-brand-charcoal border-2 border-brand-cream rounded-full" style={{ top: '15%', left: '20%' }} />
-            <span className="absolute bg-brand-cream border border-brand-cream-dark text-brand-charcoal-light text-[9px] px-2 py-0.5 rounded" style={{ top: '8%', left: '15%' }}>
-              Mindspace IT Park
-            </span>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-brand-cream-dark/40 z-10">
-            <span className="text-xs text-brand-charcoal-light">Close to major food joints like Jubilee Hills Cafes, Inorbit Mall, and metro.</span>
-            <a 
-              href="https://maps.google.com/?q=Narenn+Elite,+Road+21,+VIP+Hills,+Silicon+Valley,+Madhapur"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2.5 rounded-full bg-brand-burgundy hover:bg-brand-burgundy-dark text-white font-display font-bold text-xs tracking-wider transition-colors shrink-0 shadow-md flex items-center gap-1.5"
-            >
-              <Map className="w-4 h-4" />
-              View on Google Maps
-            </a>
-          </div>
-        </div>
-
       </div>
     </section>
   );
