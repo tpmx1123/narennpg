@@ -1,25 +1,19 @@
 import { useState, useEffect, useRef } from 'react';
-import { Menu, X, ChevronDown, ArrowRight, MessageSquare } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { RESIDENCES, BRAND_LOGO } from '../../data/homeData';
-import IconSlideButton from '../ui/IconSlideButton';
+import { BRAND_LOGO } from '../../data/homeData';
+import { NAV_PROPERTIES, NAV_ROOMS } from '../../data/sitePages';
 
 const NAV_LINKS = [
-  { href: '#about', label: 'About Us' },
-  { href: '#amenities', label: 'Amenities' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#dining', label: 'Food' },
-  { href: '#neighborhood', label: 'Location' },
+  { to: '/amenities/', label: 'Amenities' },
+  { to: '/food/', label: 'Food' },
+  { to: '/locations/madhapur/', label: 'Locations' },
+  { to: '/events/', label: 'Events' },
 ];
 
-const LAYER_ITEMS = RESIDENCES.map((res) => ({
-  title: res.name,
-  description: res.description,
-  image: res.image,
-  href: '#properties',
-  tagline: res.tagline,
-  livingType: res.livingType,
-}));
+const PROPERTY_ITEMS = NAV_PROPERTIES.filter((p) => p.slug !== 'all');
+const ROOM_ITEMS = NAV_ROOMS.filter((r) => r.slug !== 'all');
 
 const menuMotion = {
   initial: { opacity: 0, height: 0, y: -12 },
@@ -45,34 +39,45 @@ const menuMotion = {
   },
 };
 
-const cardStagger = {
-  animate: {
-    transition: { staggerChildren: 0.06, delayChildren: 0.08 },
-  },
-};
-
+const cardStagger = { animate: { transition: { staggerChildren: 0.06, delayChildren: 0.08 } } };
 const cardItem = {
   initial: { opacity: 0, y: 14 },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
-  },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } },
 };
-
 const chevronSpring = { type: 'spring', stiffness: 280, damping: 22 };
 
-export default function Navbar({ onBookVisit }) {
+function NavLink({ to, children, overHero, onClick, className = '' }) {
+  return (
+    <Link
+      to={to}
+      onClick={onClick}
+      className={`font-display text-sm font-semibold tracking-wide whitespace-nowrap shrink-0 transition-colors duration-300 ${linkClass(overHero)} ${className}`}
+    >
+      {children}
+    </Link>
+  );
+}
+
+function linkClass(overHero) {
+  return overHero
+    ? 'text-brand-cream/90 hover:text-brand-gold-light'
+    : 'text-brand-charcoal hover:text-brand-gold';
+}
+
+export default function Navbar() {
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
+  const [roomsOpen, setRoomsOpen] = useState(false);
   const [layerOpen, setLayerOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [bookMenuOpen, setBookMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef(null);
-  const bookCloseTimer = useRef(null);
-  const layerCloseTimer = useRef(null);
+  const roomsTimer = useRef(null);
+  const layerTimer = useRef(null);
 
-  const clearMenuTimer = (timerRef) => {
-    if (timerRef.current) clearTimeout(timerRef.current);
+  const clearTimer = (ref) => {
+    if (ref.current) clearTimeout(ref.current);
   };
 
   useEffect(() => {
@@ -86,7 +91,7 @@ export default function Navbar({ onBookVisit }) {
     const onPointerDown = (e) => {
       if (navRef.current && !navRef.current.contains(e.target)) {
         setLayerOpen(false);
-        setBookMenuOpen(false);
+        setRoomsOpen(false);
       }
     };
     document.addEventListener('pointerdown', onPointerDown);
@@ -101,55 +106,47 @@ export default function Navbar({ onBookVisit }) {
   }, [mobileOpen]);
 
   useEffect(() => {
-    return () => {
-      clearMenuTimer(bookCloseTimer);
-      clearMenuTimer(layerCloseTimer);
-    };
-  }, []);
+    closeAll();
+  }, [location.pathname]);
+
+  useEffect(
+    () => () => {
+      clearTimer(roomsTimer);
+      clearTimer(layerTimer);
+    },
+    []
+  );
 
   const closeAll = () => {
     setLayerOpen(false);
+    setRoomsOpen(false);
     setMobileOpen(false);
-    setBookMenuOpen(false);
   };
 
-  const openLayerMenu = () => {
-    clearMenuTimer(layerCloseTimer);
-    clearMenuTimer(bookCloseTimer);
-    setBookMenuOpen(false);
+  const openRooms = () => {
+    clearTimer(roomsTimer);
+    clearTimer(layerTimer);
+    setLayerOpen(false);
+    setRoomsOpen(true);
+  };
+  const closeRooms = () => {
+    clearTimer(roomsTimer);
+    roomsTimer.current = setTimeout(() => setRoomsOpen(false), 120);
+  };
+
+  const openLayer = () => {
+    clearTimer(layerTimer);
+    clearTimer(roomsTimer);
+    setRoomsOpen(false);
     setLayerOpen(true);
   };
-
-  const closeLayerMenu = () => {
-    clearMenuTimer(layerCloseTimer);
-    layerCloseTimer.current = setTimeout(() => setLayerOpen(false), 120);
+  const closeLayer = () => {
+    clearTimer(layerTimer);
+    layerTimer.current = setTimeout(() => setLayerOpen(false), 120);
   };
 
-  const openBookMenu = () => {
-    clearMenuTimer(bookCloseTimer);
-    clearMenuTimer(layerCloseTimer);
-    setLayerOpen(false);
-    setBookMenuOpen(true);
-  };
-
-  const closeBookMenu = () => {
-    clearMenuTimer(bookCloseTimer);
-    bookCloseTimer.current = setTimeout(() => setBookMenuOpen(false), 120);
-  };
-
-  const bookProperty = (propertyName) => {
-    setBookMenuOpen(false);
-    setLayerOpen(false);
-    onBookVisit({ property: propertyName });
-  };
-
-  // Stay transparent over hero even while the properties menu is open
-  const overHero = !isScrolled;
-  const menuExpanded = layerOpen || mobileOpen || bookMenuOpen;
-
-  const linkClass = overHero
-    ? 'font-display text-sm font-semibold tracking-wide text-brand-cream/90 hover:text-brand-gold-light transition-colors duration-300'
-    : 'font-display text-sm font-semibold tracking-wide text-brand-charcoal hover:text-brand-gold transition-colors duration-300';
+  const overHero = isHome && !isScrolled;
+  const menuExpanded = layerOpen || roomsOpen || mobileOpen;
 
   return (
     <header
@@ -170,383 +167,276 @@ export default function Navbar({ onBookVisit }) {
             ? '1px solid rgba(255,255,255,0.12)'
             : '1px solid transparent'
           : '1px solid rgba(255,255,255,0.35)',
-        boxShadow: menuExpanded && !overHero
-          ? '0 8px 30px -18px rgba(34,34,34,0.2)'
-          : 'none',
+        boxShadow: menuExpanded && !overHero ? '0 8px 30px -18px rgba(34,34,34,0.2)' : 'none',
       }}
     >
-      <nav className="max-w-[1160px] mx-auto px-4 sm:px-5 lg:px-[60px] py-3">
-        <div className="flex items-center justify-between gap-4">
-          <a href="#" className="flex items-center gap-2.5 shrink-0" onClick={closeAll}>
-            <img
-              src={BRAND_LOGO}
-              alt="Narenn Living"
-              className="h-11 sm:h-12 w-auto object-contain drop-shadow-sm"
-            />
-          </a>
-          
+      <nav className="max-w-[1320px] mx-auto px-6 sm:px-8 lg:px-12 py-3.5">
+        <motion.div className="flex items-center gap-6 xl:gap-8">
+          <Link to="/" className="flex items-center gap-2.5 shrink-0 ml-3 lg:ml-6" onClick={closeAll}>
+            <img src={BRAND_LOGO} alt="Narenn Living" className="h-11 sm:h-12 w-auto object-contain drop-shadow-sm" />
+          </Link>
 
-          <div className="hidden md:flex items-center gap-8 lg:gap-10">
-            <div className="flex items-center gap-6 lg:gap-8">
+          <motion.div className="hidden lg:flex items-center gap-5 xl:gap-7 ml-auto">
+            <NavLink to="/about-us/" overHero={overHero} onClick={closeAll}>
+              About Us
+            </NavLink>
+
+            {/* Properties dropdown */}
+            <div className="relative" onMouseEnter={openLayer} onMouseLeave={closeLayer}>
               <button
                 type="button"
-                onMouseEnter={openLayerMenu}
-                onMouseLeave={closeLayerMenu}
-                className={`flex items-center gap-1.5 font-display text-sm font-semibold tracking-wide transition-colors duration-300 ${
-                  layerOpen
-                    ? 'text-brand-gold'
-                    : overHero
-                      ? 'text-brand-cream/90 hover:text-brand-gold-light'
-                      : 'text-brand-charcoal hover:text-brand-gold'
+                className={`flex items-center gap-1.5 font-display text-sm font-semibold tracking-wide whitespace-nowrap shrink-0 transition-colors ${
+                  layerOpen ? 'text-brand-gold' : linkClass(overHero)
                 }`}
               >
-                Our Properties
-                <motion.span
-                  animate={{ rotate: layerOpen ? 180 : 0 }}
-                  transition={chevronSpring}
-                  className="inline-flex "
-                >
-                  <ChevronDown className="w-4 h-4 " />
+                Properties
+                <motion.span animate={{ rotate: layerOpen ? 180 : 0 }} transition={chevronSpring} className="inline-flex">
+                  <ChevronDown className="w-4 h-4" />
                 </motion.span>
               </button>
-
-              {NAV_LINKS.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setLayerOpen(false)}
-                  className={linkClass}
-                >
-                  {link.label}
-                </a>
-              ))}
             </div>
 
-            <div className="flex items-center gap-3">
-              <a
-                href="https://wa.me/917075985666"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`p-2 transition-colors duration-300 ${
-                  overHero
-                    ? 'text-brand-cream/85 hover:text-brand-gold-light'
-                    : 'text-brand-charcoal-light hover:text-brand-gold'
+            {/* Rooms dropdown */}
+            <div className="relative" onMouseEnter={openRooms} onMouseLeave={closeRooms}>
+              <button
+                type="button"
+                className={`flex items-center gap-1.5 font-display text-sm font-semibold tracking-wide whitespace-nowrap shrink-0 transition-colors ${
+                  roomsOpen ? 'text-brand-gold' : linkClass(overHero)
                 }`}
-                title="Chat with Us"
               >
-                <MessageSquare className="w-5 h-5" />
-              </a>
-
-              <div
-                className="relative"
-                onMouseEnter={openBookMenu}
-                onMouseLeave={closeBookMenu}
-              >
-                <IconSlideButton
-                  onClick={() => {
-                    setBookMenuOpen((open) => !open);
-                    setLayerOpen(false);
-                  }}
-                  radius={10}
-                  bgColor="#B1020C"
-                  bgHoverColor="#8A0109"
-                  fillColor="#FBBD45"
-                  textColor="#ffffff"
-                  textHoverColor="#1A1A1A"
-                  iconColor="#ffffff"
-                  iconHoverColor="#1A1A1A"
-                  fontSize={13}
-                >
-                  Book a Visit
-                </IconSlideButton>
-
-                <AnimatePresence>
-                  {bookMenuOpen && (
-                    <motion.div
-                      key="book-menu"
-                      initial={{ opacity: 0, y: 8, scale: 0.98 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 6, scale: 0.98 }}
-                      transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-                      className="absolute right-0 top-[calc(100%+10px)] z-50 w-64 overflow-hidden rounded-2xl border border-white/20 shadow-xl"
-                      style={{
-                        background: overHero ? 'rgba(20,20,20,0.82)' : 'rgba(255,255,255,0.95)',
-                        WebkitBackdropFilter: 'blur(18px)',
-                        backdropFilter: 'blur(18px)',
-                      }}
-                    >
-                      <div className="px-3.5 py-2.5 border-b border-white/10">
-                        <span
-                          className={`text-[10px] font-bold uppercase tracking-[0.2em] ${
-                            overHero ? 'text-brand-gold' : 'text-brand-burgundy'
-                          }`}
-                        >
-                          Choose a property
-                        </span>
-                      </div>
-                      <ul className="py-1.5">
-                        {RESIDENCES.map((res) => (
-                          <li key={res.name}>
-                            <button
-                              type="button"
-                              onClick={() => bookProperty(res.name)}
-                              className={`w-full text-left px-3.5 py-2.5 flex items-center gap-3 transition-colors ${
-                                overHero
-                                  ? 'hover:bg-white/10 text-brand-cream'
-                                  : 'hover:bg-brand-burgundy-pale text-brand-charcoal'
-                              }`}
-                            >
-                              <img
-                                src={res.image}
-                                alt=""
-                                className="w-10 h-10 rounded-lg object-cover shrink-0 border border-white/15"
-                              />
-                              <span className="min-w-0">
-                                <span className="font-display font-bold text-sm block leading-tight">
-                                  {res.name}
-                                </span>
-                                <span
-                                  className={`text-[11px] block mt-0.5 ${
-                                    res.livingType === 'For Girls'
-                                      ? 'text-brand-gold'
-                                      : overHero
-                                        ? 'text-brand-cream/60'
-                                        : 'text-brand-charcoal-light'
-                                  }`}
-                                >
-                                  {res.livingType} · {res.tagline}
-                                </span>
-                              </span>
-                            </button>
-                          </li>
-                        ))}
-                      </ul>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                Rooms
+                <motion.span animate={{ rotate: roomsOpen ? 180 : 0 }} transition={chevronSpring} className="inline-flex">
+                  <ChevronDown className="w-4 h-4" />
+                </motion.span>
+              </button>
             </div>
-          </div>
+
+            {NAV_LINKS.map((link) => (
+              <NavLink key={link.to} to={link.to} overHero={overHero} onClick={closeAll}>
+                {link.label}
+              </NavLink>
+            ))}
+
+            <Link
+              to="/contact-us/"
+              onClick={closeAll}
+              className="inline-flex items-center justify-center px-4 py-2 rounded-[10px] bg-brand-burgundy text-white font-display font-bold text-xs tracking-wide whitespace-nowrap hover:bg-brand-burgundy-dark transition-colors ml-2 xl:ml-4"
+            >
+              Contact Us
+            </Link>
+          </motion.div>
 
           <button
             type="button"
-            className={`md:hidden p-2 transition-colors duration-300 ${
-              overHero ? 'text-brand-cream' : 'text-brand-charcoal'
-            }`}
+            className={`lg:hidden p-2 ml-auto transition-colors ${overHero ? 'text-brand-cream' : 'text-brand-charcoal'}`}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             onClick={() => {
-              setMobileOpen((open) => !open);
+              setMobileOpen((o) => !o);
               setLayerOpen(false);
+              setRoomsOpen(false);
             }}
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </div>
+        </motion.div>
       </nav>
 
-      {/* Desktop properties layer — transparent glass + smooth open/close */}
+      {/* Desktop properties layer */}
       <AnimatePresence initial={false}>
         {layerOpen && (
           <motion.div
-            key="nav-layer"
+            key="properties-layer"
             {...menuMotion}
-            onMouseEnter={openLayerMenu}
-            onMouseLeave={closeLayerMenu}
-            className="hidden md:block overflow-hidden border-t border-white/10"
+            onMouseEnter={openLayer}
+            onMouseLeave={closeLayer}
+            className="hidden lg:block overflow-hidden border-t border-white/10"
             style={{
               background: overHero ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.35)',
-              WebkitBackdropFilter: 'blur(22px)',
               backdropFilter: 'blur(22px)',
             }}
           >
-            <div className="max-w-[1160px] mx-auto px-5 lg:px-[60px] py-5">
-              <motion.div
-                className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 "
-                variants={cardStagger}
-                initial="initial"
-                animate="animate"
-              >
-                {LAYER_ITEMS.map((item) => (
-                  <motion.a
-                    key={item.title}
-                    href={item.href}
-                    onClick={closeAll}
-                    variants={cardItem}
-                    className={`group min-w-0 overflow-hidden border transition-colors duration-300 rounded-[15px] ${
-                      overHero
-                        ? 'border-white/15 bg-white/8 hover:border-brand-gold/45 hover:bg-white/12'
-                        : 'border-brand-cream-dark/50 bg-white/70 hover:border-brand-gold/40'
-                    }`}
-                    style={{
-                      WebkitBackdropFilter: 'blur(12px)',
-                      backdropFilter: 'blur(12px)',
-                    }}
-                  >
-                    <div className="relative h-36 overflow-hidden ">
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/55 to-transparent" />
-                      <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest font-bold text-brand-cream bg-black/45 backdrop-blur-sm px-2 py-0.5 rounded-full border border-white/15">
-                        {item.livingType}
-                      </span>
-                      <span className="absolute bottom-3 left-3 text-[10px] uppercase tracking-widest font-bold text-brand-cream">
-                        {item.tagline}
-                      </span>
-                    </div>
-                    <div className="p-4">
-                      <div className="flex items-center justify-between gap-2 mb-1.5">
-                        <h3
-                          className={`font-display font-bold text-base ${
-                            overHero ? 'text-brand-cream' : 'text-brand-charcoal'
-                          }`}
-                        >
-                          {item.title}
-                        </h3>
-                        <ArrowRight className="w-4 h-4 text-brand-gold opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+            <div className="max-w-[1320px] mx-auto px-6 sm:px-8 lg:px-12 py-5">
+              <motion.div className="grid grid-cols-2 xl:grid-cols-4 gap-3 lg:gap-4" variants={cardStagger} initial="initial" animate="animate">
+                {PROPERTY_ITEMS.map((item) => (
+                  <motion.div key={item.label} variants={cardItem}>
+                    <Link
+                      to={item.href}
+                      onClick={closeAll}
+                      className={`group block min-w-0 overflow-hidden border transition-colors rounded-[15px] ${
+                        overHero
+                          ? 'border-white/15 bg-white/8 hover:border-brand-gold/45'
+                          : 'border-brand-cream-dark/50 bg-white/70 hover:border-brand-gold/40'
+                      }`}
+                    >
+                      <div className="relative h-32 overflow-hidden">
+                        <img src={item.image} alt={item.label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/55 to-transparent" />
+                        <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest font-bold text-brand-cream bg-black/45 px-2 py-0.5 rounded-full">
+                          {item.livingType}
+                        </span>
                       </div>
-                      <p
-                        className={`text-xs leading-relaxed line-clamp-2 ${
-                          overHero ? 'text-brand-cream/70' : 'text-brand-charcoal-light'
-                        }`}
-                      >
-                        {item.description}
-                      </p>
-                    </div>
-                  </motion.a>
+                      <div className="p-3">
+                        <div className="flex items-center justify-between gap-2">
+                          <h3 className={`font-display font-bold text-sm ${overHero ? 'text-brand-cream' : 'text-brand-charcoal'}`}>
+                            {item.label}
+                          </h3>
+                          <ArrowRight className="w-4 h-4 text-brand-gold opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </div>
+                        <p className={`text-xs mt-1 line-clamp-2 ${overHero ? 'text-brand-cream/70' : 'text-brand-charcoal-light'}`}>
+                          {item.description}
+                        </p>
+                      </div>
+                    </Link>
+                  </motion.div>
                 ))}
               </motion.div>
+              <div className="mt-3 text-right">
+                <Link to="/properties/" onClick={closeAll} className="text-xs font-display font-bold text-brand-gold hover:underline">
+                  View all properties →
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Mobile panel */}
+      {/* Desktop rooms layer */}
+      <AnimatePresence initial={false}>
+        {roomsOpen && (
+          <motion.div
+            key="rooms-layer"
+            {...menuMotion}
+            onMouseEnter={openRooms}
+            onMouseLeave={closeRooms}
+            className="hidden lg:block overflow-hidden border-t border-white/10"
+            style={{
+              background: overHero ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.35)',
+              backdropFilter: 'blur(22px)',
+            }}
+          >
+            <div className="max-w-[1320px] mx-auto px-6 sm:px-8 lg:px-12 py-5">
+              <motion.div className="grid grid-cols-2 xl:grid-cols-4 gap-3 lg:gap-4" variants={cardStagger} initial="initial" animate="animate">
+                {ROOM_ITEMS.map((item) => (
+                  <motion.div key={item.label} variants={cardItem}>
+                    <Link
+                      to={item.href}
+                      onClick={closeAll}
+                      className={`group block min-w-0 overflow-hidden border transition-colors rounded-[15px] ${
+                        overHero
+                          ? 'border-white/15 bg-white/8 hover:border-brand-gold/45'
+                          : 'border-brand-cream-dark/50 bg-white/70 hover:border-brand-gold/40'
+                      }`}
+                    >
+                      <div className="relative h-32 overflow-hidden">
+                        <img src={item.image} alt={item.label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/55 to-transparent" />
+                        <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest font-bold text-brand-cream bg-black/45 px-2 py-0.5 rounded-full">
+                          {item.sharingType}
+                        </span>
+                      </div>
+                      <div className="p-3">
+                        <div className="flex items-center justify-between gap-2">
+                          <h3 className={`font-display font-bold text-sm ${overHero ? 'text-brand-cream' : 'text-brand-charcoal'}`}>
+                            {item.label}
+                          </h3>
+                          <ArrowRight className="w-4 h-4 text-brand-gold opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </div>
+                        <p className={`text-[10px] font-semibold uppercase tracking-wide mt-0.5 ${overHero ? 'text-brand-gold/90' : 'text-brand-gold'}`}>
+                          {item.tagline}
+                        </p>
+                        <p className={`text-xs mt-1 line-clamp-2 ${overHero ? 'text-brand-cream/70' : 'text-brand-charcoal-light'}`}>
+                          {item.description}
+                        </p>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </motion.div>
+              <div className="mt-3 text-right">
+                <Link to="/rooms/" onClick={closeAll} className="text-xs font-display font-bold text-brand-gold hover:underline">
+                  View all rooms →
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Mobile menu */}
       <AnimatePresence initial={false}>
         {mobileOpen && (
           <motion.div
             key="mobile-nav"
             {...menuMotion}
-            className="md:hidden overflow-hidden border-t border-white/10 max-h-[calc(100vh-64px)]"
+            className="lg:hidden overflow-hidden border-t border-white/10 max-h-[calc(100vh-64px)]"
             style={{
-              background: overHero ? 'rgba(12,12,12,0.45)' : 'rgba(255,255,255,0.7)',
-              WebkitBackdropFilter: 'blur(22px)',
+              background: overHero ? 'rgba(12,12,12,0.45)' : 'rgba(255,255,255,0.92)',
               backdropFilter: 'blur(22px)',
             }}
           >
-            <div className="px-4 py-4 flex flex-col gap-5 overflow-y-auto max-h-[calc(100vh-72px)]">
+            <div className="px-4 py-4 flex flex-col gap-4 overflow-y-auto max-h-[calc(100vh-72px)]">
+              <NavLink to="/about-us/" overHero={overHero} onClick={closeAll} className="py-2">
+                About Us
+              </NavLink>
+
               <div>
                 <button
                   type="button"
-                  onClick={() => setLayerOpen((open) => !open)}
-                  className={`w-full flex items-center justify-between font-display font-semibold text-sm py-2 ${
-                    overHero ? 'text-brand-cream' : 'text-brand-charcoal'
-                  }`}
+                  onClick={() => setLayerOpen((o) => !o)}
+                  className={`w-full flex items-center justify-between font-display font-semibold text-sm py-2 ${overHero ? 'text-brand-cream' : 'text-brand-charcoal'}`}
                 >
-                  Our Properties
-                  <motion.span
-                    animate={{ rotate: layerOpen ? 180 : 0 }}
-                    transition={chevronSpring}
-                    className="inline-flex"
-                  >
-                    <ChevronDown className={`w-4 h-4 ${layerOpen ? 'text-brand-gold' : ''}`} />
-                  </motion.span>
+                  Properties
+                  <ChevronDown className={`w-4 h-4 ${layerOpen ? 'rotate-180 text-brand-gold' : ''}`} />
                 </button>
-                <AnimatePresence initial={false}>
-                  {layerOpen && (
-                    <motion.div {...menuMotion} className="overflow-hidden">
-                      <div className="flex flex-col gap-2 pt-2 pb-1">
-                        {LAYER_ITEMS.map((item) => (
-                          <a
-                            key={item.title}
-                            href={item.href}
-                            onClick={closeAll}
-                            className={`flex gap-3 border p-2 ${
-                              overHero
-                                ? 'border-white/15 bg-white/10'
-                                : 'border-brand-cream-dark/60 bg-brand-cream/80'
-                            }`}
-                          >
-                            <img
-                              src={item.image}
-                              alt={item.title}
-                              className="w-20 h-16 object-cover shrink-0"
-                            />
-                            <div className="min-w-0">
-                              <span
-                                className={`font-display font-bold text-sm block ${
-                                  overHero ? 'text-brand-cream' : 'text-brand-charcoal'
-                                }`}
-                              >
-                                {item.title}
-                              </span>
-                              <span className="text-[10px] font-bold uppercase tracking-wide text-brand-gold block mt-0.5">
-                                {item.livingType}
-                              </span>
-                              <span
-                                className={`text-[11px] line-clamp-2 ${
-                                  overHero ? 'text-brand-cream/65' : 'text-brand-charcoal-light'
-                                }`}
-                              >
-                                {item.description}
-                              </span>
-                            </div>
-                          </a>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {layerOpen && (
+                  <div className="flex flex-col gap-2 pt-2">
+                    {NAV_PROPERTIES.map((item) => (
+                      <Link
+                        key={item.href}
+                        to={item.href}
+                        onClick={closeAll}
+                        className={`text-sm py-2 border-b ${overHero ? 'border-white/10 text-brand-cream' : 'border-brand-cream-dark/40 text-brand-charcoal'}`}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              <div
-                className={`flex flex-col gap-1 border-t pt-3 ${
-                  overHero ? 'border-white/15' : 'border-brand-cream-dark/50'
-                }`}
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setRoomsOpen((o) => !o)}
+                  className={`w-full flex items-center justify-between font-display font-semibold text-sm py-2 ${overHero ? 'text-brand-cream' : 'text-brand-charcoal'}`}
+                >
+                  Rooms
+                  <ChevronDown className={`w-4 h-4 transition-transform ${roomsOpen ? 'rotate-180 text-brand-gold' : ''}`} />
+                </button>
+                {roomsOpen && (
+                  <div className="pl-3 flex flex-col gap-1 pt-1">
+                    {NAV_ROOMS.map((item) => (
+                      <Link key={item.href} to={item.href} onClick={closeAll} className={`py-2 text-sm ${linkClass(overHero)}`}>
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {NAV_LINKS.map((link) => (
+                <NavLink key={link.to} to={link.to} overHero={overHero} onClick={closeAll} className="py-2">
+                  {link.label}
+                </NavLink>
+              ))}
+
+              <Link
+                to="/contact-us/"
+                onClick={closeAll}
+                className="w-full py-3 rounded-[10px] bg-brand-burgundy text-white font-display font-bold text-xs text-center"
               >
-                {NAV_LINKS.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={closeAll}
-                    className={`py-2.5 font-display font-semibold text-sm hover:text-brand-gold ${
-                      overHero ? 'text-brand-cream' : 'text-brand-charcoal'
-                    }`}
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-
-              <div className="flex flex-col gap-2 pt-1">
-                <IconSlideButton
-                  onClick={() => {
-                    closeAll();
-                    onBookVisit();
-                  }}
-                  radius={10}
-                  className="w-full"
-                  bgColor="#B1020C"
-                  bgHoverColor="#8A0109"
-                  fillColor="#FBBD45"
-                  textColor="#ffffff"
-                  textHoverColor="#1A1A1A"
-                  iconColor="#ffffff"
-                  iconHoverColor="#1A1A1A"
-                >
-                  Book a Visit
-                </IconSlideButton>
-                <a
-                  href="https://wa.me/917075985666"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 border border-brand-gold text-brand-gold font-display font-bold text-sm text-center"
-                >
-                  WhatsApp Us
-                </a>
-              </div>
+                Contact Us
+              </Link>
             </div>
           </motion.div>
         )}

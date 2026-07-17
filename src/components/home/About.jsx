@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import { HOME_SEO } from '../../data/seoHome';
 import IconSlideButton from '../ui/IconSlideButton';
 
-export default function About({ onBookVisit }) {
+export default function About() {
+  const navigate = useNavigate();
   return (
     <section id="about" className="py-14 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center bg-white">
       
@@ -50,7 +52,7 @@ export default function About({ onBookVisit }) {
         {/* Action CTAs */}
         <div className="flex flex-wrap items-center gap-6">
           <IconSlideButton
-            onClick={() => onBookVisit()}
+            onClick={() => navigate('/about-us/')}
             radius={10}
             bgColor="#B1020C"
             bgHoverColor="#8A0109"

@@ -99,59 +99,7 @@ export default function Neighborhood() {
           </div>
         </div>
 
-        {/* Property map links */}
-        <div className="pt-2 ">
-          <div className="mb-8 sm:mb-10 pt-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
-            <div>
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-burgundy block mb-1.5">
-                Our Addresses
-              </span>
-              <h3 className="font-display font-bold text-xl sm:text-2xl text-brand-green tracking-tight">
-                Find each property on Google Maps
-              </h3>
-            </div>
-            <p className="text-xs text-brand-charcoal-light max-w-xs sm:text-right leading-relaxed">
-              Tap a property to open directions in Google Maps.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-0">
-            {RESIDENCES.map((res, index) => (
-              <a
-                key={res.name}
-                href={res.mapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group grid grid-cols-[110px_1fr] sm:grid-cols-[132px_1fr] gap-5 items-center py-6 transition-colors"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[10px] shrink-0 ring-1 ring-brand-green/10 group-hover:ring-brand-gold/40 transition-[box-shadow,ring-color] duration-300 shadow-sm group-hover:shadow-md">
-                  <img
-                    src={res.image}
-                    alt={`${res.name} — ${res.tagline}`}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
-                  />
-                  
-                  
-                </div>
-
-                <div className="min-w-0 flex flex-col justify-center">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-brand-charcoal-light mb-1">
-                    {res.livingType}
-                  </span>
-                  <h4 className="font-display font-bold text-lg text-brand-green group-hover:text-brand-burgundy transition-colors leading-snug">
-                    {res.name}
-                  </h4>
-                  <p className="text-xs text-brand-gold font-semibold italic mt-1">{res.tagline}</p>
-                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-display font-bold text-brand-burgundy">
-                    <MapPin className="w-3.5 h-3.5 text-brand-gold" />
-                    Open in Maps
-                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+              
       </div>
     </section>
   );

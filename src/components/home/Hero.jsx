@@ -205,7 +205,7 @@ export default function Hero({ onBookVisit }) {
       </div>
 
       {/* Mute + next — bottom right */}
-      <div className="absolute bottom-8 right-4 md:bottom-10 md:right-8 z-20 flex items-center gap-2.5">
+      <div className="absolute bottom-10 right-14 md:bottom-12 md:right-20 z-20 flex items-center gap-2.5">
         <button
           type="button"
           onClick={toggleMute}

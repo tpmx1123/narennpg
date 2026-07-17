@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { RESIDENCES } from '../../data/homeData';
 
@@ -54,10 +55,10 @@ const SOCIAL_LINKS = [
 ];
 
 const COMPANY_LINKS = [
-  { label: 'About Us', href: '#about' },
-  { label: 'Our Properties', href: '#properties' },
-  { label: 'Amenities', href: '#amenities' },
-  { label: 'Testimonials', href: '#faq' },
+  { label: 'About Us', href: '/about-us/' },
+  { label: 'Our Properties', href: '/properties/' },
+  { label: 'Amenities', href: '/amenities/' },
+  { label: 'FAQ', href: '/faq/' },
 ];
 
 const EXPLORE_LINKS = [
@@ -70,7 +71,7 @@ const EXPLORE_LINKS = [
 const RESIDENT_LINKS = [
   { label: 'Co-living for IT professionals', href: '/coliving-for-it-professionals/' },
   { label: 'PG for students', href: '/pg-for-students/' },
-  { label: 'Sharing & pricing', href: '#pricing' },
+  { label: 'Sharing & pricing', href: '/rooms/' },
   { label: 'Book a free visit', href: '/contact-us/' },
 ];
 
@@ -80,13 +81,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-4 mb-12">
           <div className="lg:col-span-3 space-y-4 max-w-xs">
-            <a href="/" className="flex justify-center">
+            <Link to="/" className="flex justify-center">
               <img
                 src={FOOTER_LOGO}
                 alt="Narenn Living"
                 className="h-20 sm:h-24 w-auto object-contain"
               />
-            </a>
+            </Link>
             <p className="text-sm text-brand-charcoal-light leading-relaxed text-center">
               Premium co-living and luxury PG in VIP Hills, Madhapur - four properties, one standard
               of comfort, food and community near Hitech City.
@@ -113,9 +114,9 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-brand-charcoal-light">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="hover:text-brand-burgundy transition-colors">
+                  <Link to={link.href} className="hover:text-brand-burgundy transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -126,9 +127,9 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-brand-charcoal-light">
               {EXPLORE_LINKS.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="hover:text-brand-burgundy transition-colors">
+                  <Link to={link.href} className="hover:text-brand-burgundy transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -139,9 +140,9 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-brand-charcoal-light">
               {RESIDENT_LINKS.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="hover:text-brand-burgundy transition-colors">
+                  <Link to={link.href} className="hover:text-brand-burgundy transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

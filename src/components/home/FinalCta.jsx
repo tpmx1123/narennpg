@@ -52,7 +52,7 @@ export default function FinalCta({ onBookVisit }) {
                 <span className="text-brand-gold italic font-medium">Narenn Living</span>
               </h2>
               <p className="text-sm sm:text-base text-white/85 leading-relaxed mb-6 max-w-lg">
-                Walk through the rooms, meet the team and taste the food. Schedule a visit today —
+                Walk through the rooms, meet the team and taste the food. Schedule a visit today -
                 rooms in popular sharing types fill quickly at the start of every month.
               </p>
 

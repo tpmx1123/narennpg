@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useMemo } from 'react';
+import { useOutletContext } from 'react-router-dom';
 import {
-  Navbar,
   Hero,
   Highlights,
   SeoIntro,
@@ -9,87 +9,68 @@ import {
   Amenities,
   Pricing,
   Dining,
-  Gallery,
-  Safety,
   Testimonials,
   Neighborhood,
-  SeoSections,
   Faq,
   FinalCta,
   Footer,
-  BookingModal,
 } from '../components/home';
+import PageMeta from '../components/seo/PageMeta';
+import { HOME_SEO } from '../data/seoHome';
+import { SITE_URL } from '../data/sitePages';
 
 export default function Home() {
-  const [bookingModalOpen, setBookingModalOpen] = useState(false);
-  const [bookingSubmitted, setBookingSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    property: 'Narenn Elite',
-    roomType: '1 Sharing',
-    visitDate: '',
-  });
+  const { onBookVisit } = useOutletContext() ?? {};
 
-  const onBookVisit = (overrides = {}) => {
-    setFormData((prev) => ({ ...prev, ...overrides }));
-    setBookingModalOpen(true);
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleBookingSubmit = (e) => {
-    e.preventDefault();
-    setTimeout(() => {
-      setBookingSubmitted(true);
-    }, 800);
-  };
-
-  const resetBookingForm = () => {
-    setBookingSubmitted(false);
-    setBookingModalOpen(false);
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      property: 'Narenn Elite',
-      roomType: '1 Sharing',
-      visitDate: '',
-    });
-  };
+  const jsonLd = useMemo(
+    () => ({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Organization',
+          '@id': `${SITE_URL}/#organization`,
+          name: 'Narenn Living',
+          url: `${SITE_URL}/`,
+          logo: `${SITE_URL}/favicon.svg`,
+          telephone: '+91-70759-85666',
+          email: 'info@narennliving.com',
+        },
+        {
+          '@type': 'WebSite',
+          '@id': `${SITE_URL}/#website`,
+          url: `${SITE_URL}/`,
+          name: 'Narenn Living',
+          publisher: { '@id': `${SITE_URL}/#organization` },
+          inLanguage: 'en-IN',
+        },
+      ],
+    }),
+    []
+  );
 
   return (
-    <div className="min-h-screen bg-white text-brand-charcoal font-sans flex flex-col selection:bg-brand-gold/25 selection:text-brand-burgundy">
-      <Navbar onBookVisit={onBookVisit} />
-      <Hero onBookVisit={onBookVisit} />
-      <Highlights />
-      <SeoIntro />
-      <About onBookVisit={onBookVisit} />
-      <Residences onBookVisit={onBookVisit} />
-      <Amenities />
-      <Pricing onBookVisit={onBookVisit} />
-       <Dining />
-      {/*<Gallery onBookVisit={onBookVisit} />*/}
-      {/* <Safety /> */}
-      <Testimonials />
-      
-      <Neighborhood />
-      <Faq />
-      <FinalCta onBookVisit={onBookVisit} />
-      <Footer /> 
-      {/*<SeoSections /> */}
-      <BookingModal
-        open={bookingModalOpen}
-        bookingSubmitted={bookingSubmitted}
-        formData={formData}
-        onInputChange={handleInputChange}
-        onSubmit={handleBookingSubmit}
-        onReset={resetBookingForm}
+    <>
+      <PageMeta
+        title={HOME_SEO.title}
+        description={HOME_SEO.description}
+        canonical={`${SITE_URL}/`}
+        jsonLd={jsonLd}
       />
-    </div>
+      <Hero onBookVisit={onBookVisit} />
+      <div className="px-4 sm:px-6 lg:px-10">
+        <Highlights />
+        <SeoIntro />
+        <About onBookVisit={onBookVisit} />
+        <Residences onBookVisit={onBookVisit} />
+        <Amenities />
+        <Pricing onBookVisit={onBookVisit} />
+        <Dining />
+        <Testimonials />
+        <Neighborhood />
+        <Faq />
+        <FinalCta onBookVisit={onBookVisit} />
+      </div>
+      <Footer />
+    </>
   );
 }
