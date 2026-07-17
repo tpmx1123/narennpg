@@ -139,21 +139,7 @@ export default function Hero({ onBookVisit }) {
                   {slide.description}
                 </p>
 
-                {typeof onBookVisit === 'function' && (
-                  <IconSlideButton
-                    onClick={() => onBookVisit({ property: slide.property })}
-                    radius={10}
-                    bgColor="#B1020C"
-                    bgHoverColor="#8A0109"
-                    fillColor="#FBBD45"
-                    textColor="#ffffff"
-                    textHoverColor="#1A1A1A"
-                    iconColor="#ffffff"
-                    iconHoverColor="#1A1A1A"
-                  >
-                    Book a Visit
-                  </IconSlideButton>
-                )}
+                
               </motion.div>
             </AnimatePresence>
           </div>
