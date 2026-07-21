@@ -138,65 +138,6 @@ export const RESIDENCES = [
   }
 ];
 
-export const ROOM_OCCUPANCIES = {
-  "Private Room": {
-    price: "₹36,000",
-    note: "AC & Maintenance Included",
-    description: "Designed for individuals who value complete privacy, focus, and quiet personal reflection. The ultimate sanctuary for high-achievers.",
-    perks: [
-      "Dedicated spacious king/queen bedroom",
-      "Full executive workstation setup",
-      "In-room smart LED TV & mini-fridge",
-      "Private attached luxury washroom",
-      "Individual climate control options",
-      "High-speed fiber-to-the-room connection"
-    ],
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80"
-  },
-  "2 Sharing": {
-    price: "₹21,500",
-    note: "AC variant / Non-AC at ₹20,000",
-    description: "Balanced living with personal space and friendly companionship. Perfect for friends or classmates who want a structured social vibe.",
-    perks: [
-      "Twin beds with customized privacy separators",
-      "Independent individual study desks",
-      "Dual-wardrobe storage setup",
-      "Attached spacious modern bathroom",
-      "Shared Smart TV and seating area",
-      "Biweekly dedicated linen change"
-    ],
-    image: "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80"
-  },
-  "3 Sharing": {
-    price: "₹17,200",
-    note: "AC variant / Non-AC at ₹16,000",
-    description: "Comfortable shared living designed for collaboration, cost efficiency, and vibrant camaraderie without compromising on utilities.",
-    perks: [
-      "Three custom-built beds with storage drawers",
-      "Individual study compartments",
-      "Triple-door modern modular wardrobe",
-      "Spacious clean attached bathroom",
-      "High capacity climate cooling setup",
-      "Curated standard roommate matching"
-    ],
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"
-  },
-  "4 Sharing": {
-    price: "₹14,500",
-    note: "AC variant / Non-AC at ₹13,500",
-    description: "Maximize your networking and savings. Highly popular amongst college students seeking standard luxury on a budget.",
-    perks: [
-      "Bespoke capsule-style bunk bedding",
-      "Dedicated study tables and chairs",
-      "Secure keycard individual lockers",
-      "Clean luxury shared washroom facilities",
-      "Central air conditioning system",
-      "All-inclusive utilities bundle"
-    ],
-    image: "https://images.unsplash.com/photo-1544085311-11a028465b03?auto=format&fit=crop&w=800&q=80"
-  }
-};
-
 export const TESTIMONIALS = [
   {
     name: "Rahul Reddy",
@@ -230,37 +171,4 @@ export const TESTIMONIALS = [
     quote: "Warm atmosphere, chef-curated food menu, and zero maintenance stress. Narenn Living offers a perfect equilibrium of active privacy and vibrant community interaction.",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80"
   }
-];
-
-export const GALLERY_IMAGES = [
-  {
-    url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
-    title: "Premium Dining Area",
-    alt: "Homely dining space at Narenn Living co-living in Madhapur",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=800&q=80",
-    title: "Luxury Suite Bedroom",
-    alt: "Fully furnished AC room with bed, wardrobe and study desk at Narenn Living Madhapur",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1517502884422-41eaaced0168?auto=format&fit=crop&w=800&q=80",
-    title: "Dynamic Coworking Zone",
-    alt: "Work-ready common space at Narenn Living co-living in Hyderabad",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
-    title: "Rooftop Sky Deck",
-    alt: "Residents at a terrace community event at Narenn Living co-living in Hyderabad",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
-    title: "Modern In-house Fitness Center",
-    alt: "In-house fitness area at Narenn Living Madhapur",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
-    title: "Bespoke Study Lounges",
-    alt: "Study lounge for students and professionals at Narenn Living Madhapur",
-  },
 ];

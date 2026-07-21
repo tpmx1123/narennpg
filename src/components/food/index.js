@@ -1,0 +1,12 @@
+export { default as FoodHero } from './FoodHero';
+export { default as FoodIntro } from './FoodIntro';
+export { default as FoodMeals } from './FoodMeals';
+export { default as FoodHome } from './FoodHome';
+export { default as FoodWeeklyMenu } from './FoodWeeklyMenu';
+export { default as FoodHygiene } from './FoodHygiene';
+export { default as FoodSavings } from './FoodSavings';
+export { default as FoodFuel } from './FoodFuel';
+export { default as FoodEditorial } from './FoodEditorial';
+export { default as FoodVariety } from './FoodVariety';
+export { default as FoodInspection } from './FoodInspection';
+export { default as FoodFaq } from './FoodFaq';

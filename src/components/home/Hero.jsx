@@ -2,7 +2,6 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HERO_SLIDES } from '../../data/homeData';
-import IconSlideButton from '../ui/IconSlideButton';
 
 const TRANSITION = { duration: 0.65, ease: [0.22, 1, 0.36, 1] };
 const NEXT_ICON =
@@ -11,7 +10,7 @@ const NEXT_ICON =
 const controlBtnClass =
   'rounded-full border border-brand-cream/35 bg-brand-cream/15 text-brand-cream hover:bg-brand-gold hover:border-brand-gold backdrop-blur-md flex items-center justify-center shadow-lg transition-all duration-300';
 
-export default function Hero({ onBookVisit }) {
+export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isMuted, setIsMuted] = useState(true);
   const [direction, setDirection] = useState(1);

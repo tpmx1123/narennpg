@@ -1,0 +1,9 @@
+export { default as RoomsHero } from './RoomsHero';
+export { default as RoomsIntro } from './RoomsIntro';
+export { default as RoomsFormats } from './RoomsFormats';
+export { default as RoomsIncludes } from './RoomsIncludes';
+export { default as RoomsTransparent } from './RoomsTransparent';
+export { default as RoomsChoose } from './RoomsChoose';
+export { default as RoomsProperties } from './RoomsProperties';
+export { default as RoomsRent } from './RoomsRent';
+export { default as RoomsFaq } from './RoomsFaq';

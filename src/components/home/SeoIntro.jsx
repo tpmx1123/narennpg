@@ -11,7 +11,7 @@ export default function SeoIntro() {
   return (
     <section
       id="seo-intro"
-      className="relative py-16 lg:py-24 overflow-hidden"
+      className="relative pt-6 pb-10 sm:pt-8 sm:pb-12 lg:pt-8 lg:pb-14 overflow-hidden"
       aria-labelledby="home-seo-h1"
     >
       <img
@@ -31,7 +31,7 @@ export default function SeoIntro() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.55, ease: EASE_OUT }}
-          className="mb-10 lg:mb-12 max-w-4xl"
+          className="mb-6 lg:mb-8 max-w-4xl"
         >
           <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
             Co-Living in Madhapur

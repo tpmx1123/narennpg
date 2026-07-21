@@ -2,24 +2,12 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
-:root {
-  --brand-gold: #FBBD45;
-  --brand-gold-light: #FCD56E;
-  --brand-gold-pale: #FFF8E6;
-  --brand-green: #0F3D2E;
-  --brand-red: #B1020C;
-  --brand-red-light: #D4252E;
-  --brand-red-pale: #FFF0F1;
-  --brand-bg: #FFFFFF;
-  --brand-bg-muted: #F7F7F7;
-  --brand-text: #1A1A1A;
-}
-
 body {
   background-color: #FFFFFF;
   color: #1A1A1A;
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+  /* clip avoids creating a scroll container (hidden breaks position:sticky) */
+  overflow-x: clip;
 }
 
 ::-webkit-scrollbar {

@@ -1,0 +1,12 @@
+export { default as QuadRoomHero } from './QuadRoomHero';
+export { default as QuadRoomIntro } from './QuadRoomIntro';
+export { default as QuadRoomGallery } from './QuadRoomGallery';
+export { default as QuadRoomIncludes } from './QuadRoomIncludes';
+export { default as QuadRoomMostValue } from './QuadRoomMostValue';
+export { default as QuadRoomCommunity } from './QuadRoomCommunity';
+export { default as QuadRoomFood } from './QuadRoomFood';
+export { default as QuadRoomWho } from './QuadRoomWho';
+export { default as QuadRoomSpace } from './QuadRoomSpace';
+export { default as QuadRoomUpgrade } from './QuadRoomUpgrade';
+export { default as QuadRoomNot } from './QuadRoomNot';
+export { default as QuadRoomFAQ } from './QuadRoomFAQ';

@@ -56,20 +56,18 @@ export default function Home() {
         canonical={`${SITE_URL}/`}
         jsonLd={jsonLd}
       />
-      <Hero onBookVisit={onBookVisit} />
-      <div className="px-4 sm:px-6 lg:px-10">
-        <Highlights />
-        <SeoIntro />
-        <About onBookVisit={onBookVisit} />
-        <Residences onBookVisit={onBookVisit} />
-        <Amenities />
-        <Pricing onBookVisit={onBookVisit} />
-        <Dining />
-        <Testimonials />
-        <Neighborhood />
-        <Faq />
-        <FinalCta onBookVisit={onBookVisit} />
-      </div>
+      <Hero />
+      <Highlights />
+      <SeoIntro />
+      <About onBookVisit={onBookVisit} />
+      <Residences onBookVisit={onBookVisit} />
+      <Amenities />
+      <Pricing onBookVisit={onBookVisit} />
+      <Dining />
+      <Testimonials />
+      <Neighborhood />
+      <Faq />
+      <FinalCta onBookVisit={onBookVisit} />
       <Footer />
     </>
   );

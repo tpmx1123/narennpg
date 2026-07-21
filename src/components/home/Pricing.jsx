@@ -80,8 +80,8 @@ const SHARING_TIERS = [
 ];
 
 export default function Pricing({ onBookVisit }) {
-  const [activeId, setActiveId] = useState(SHARING_TIERS[0].id);
-  const active = SHARING_TIERS.find((tier) => tier.id === activeId) ?? SHARING_TIERS[0];
+  const [activeId, setActiveId] = useState('4');
+  const active = SHARING_TIERS.find((tier) => tier.id === activeId) ?? SHARING_TIERS[3];
 
   return (
     <section id="pricing" className="py-14 bg-white relative">

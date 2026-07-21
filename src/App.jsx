@@ -3,6 +3,13 @@ import SiteLayout from './components/layout/SiteLayout';
 import ScrollToTop from './components/layout/ScrollToTop';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
+import Rooms from './pages/Rooms';
+import SingleSharing from './pages/rooms/SingleSharing';
+import DoubleSharing from './pages/rooms/DoubleSharing';
+import TripleSharing from './pages/rooms/TripleSharing';
+import QuadSharing from './pages/rooms/QuadSharing';
+import Amenities from './pages/Amenities';
+import Food from './pages/Food';
 import ComingSoon from './pages/ComingSoon';
 
 const REDIRECTS = [
@@ -35,13 +42,13 @@ export default function App() {
         <Route element={<SiteLayout />}>
           <Route index element={<Home />} />
           <Route path="/about-us/" element={<AboutUs />} />
-          <Route path="/rooms/" element={<ComingSoon pageKey="rooms" />} />
-          <Route path="/rooms/single-sharing/" element={<ComingSoon pageKey="rooms-single-sharing" />} />
-          <Route path="/rooms/double-sharing/" element={<ComingSoon pageKey="rooms-double-sharing" />} />
-          <Route path="/rooms/triple-sharing/" element={<ComingSoon pageKey="rooms-triple-sharing" />} />
-          <Route path="/rooms/quad-sharing/" element={<ComingSoon pageKey="rooms-quad-sharing" />} />
-          <Route path="/amenities/" element={<ComingSoon pageKey="amenities" />} />
-          <Route path="/food/" element={<ComingSoon pageKey="food" />} />
+          <Route path="/rooms/" element={<Rooms />} />
+          <Route path="/rooms/single-sharing/" element={<SingleSharing />} />
+          <Route path="/rooms/double-sharing/" element={<DoubleSharing />} />
+          <Route path="/rooms/triple-sharing/" element={<TripleSharing />} />
+          <Route path="/rooms/quad-sharing/" element={<QuadSharing />} />
+          <Route path="/amenities/" element={<Amenities />} />
+          <Route path="/food/" element={<Food />} />
           <Route path="/locations/madhapur/" element={<ComingSoon pageKey="locations-madhapur" />} />
           <Route path="/properties/" element={<ComingSoon pageKey="properties" />} />
           <Route path="/properties/narenn-elite/" element={<ComingSoon pageKey="properties-narenn-elite" />} />

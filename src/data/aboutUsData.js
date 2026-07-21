@@ -43,7 +43,6 @@ export const ABOUT_IMAGES = {
 
 export const ABOUT_HERO = {
   eyebrow: 'Our Story',
-  h1: 'About Narenn Living - Redefining Co-Living in Madhapur, Hyderabad',
   lead:
     'Professionally managed, genuinely comfortable, fairly priced co-living - trusted by students and professionals across VIP Hills, Madhapur.',
   paragraphs: [

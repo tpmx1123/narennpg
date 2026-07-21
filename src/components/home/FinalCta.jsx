@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import CurvedInput from '../ui/CurvedInput';
+import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
 
 const CTA_IMAGE =
   'https://res.cloudinary.com/dmaeijlc/image/upload/v1784195917/image-13-2_xarwah.webp';
@@ -24,7 +25,22 @@ const PhoneIcon = (
   </g>
 );
 
-export default function FinalCta({ onBookVisit }) {
+const DEFAULT_TITLE = (
+  <>
+    Book your free visit and see why residents choose{' '}
+    <span className="text-brand-gold italic font-medium">Narenn Living</span>
+  </>
+);
+
+const DEFAULT_DESCRIPTION =
+  'Walk through the rooms, meet the team and taste the food. Schedule a visit today - rooms in popular sharing types fill quickly at the start of every month.';
+
+export default function FinalCta({
+  onBookVisit,
+  title = DEFAULT_TITLE,
+  description = DEFAULT_DESCRIPTION,
+  imageAlt = 'Narenn Living co-living terrace in Madhapur, Hyderabad',
+}) {
   const [phone, setPhone] = useState('');
 
   const handleSubmit = (value) => {
@@ -39,22 +55,19 @@ export default function FinalCta({ onBookVisit }) {
             <div className="relative lg:col-span-5 min-h-[220px] sm:min-h-[260px] lg:min-h-[320px]">
               <img
                 src={CTA_IMAGE}
-                alt="Narenn Living co-living terrace in Madhapur, Hyderabad"
+                alt={imageAlt}
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-brand-green/20 via-brand-green/40 to-brand-green/90 lg:to-brand-green" />
-              
             </div>
 
             <div className="lg:col-span-7 px-6 py-8 sm:px-10 sm:py-10 lg:px-12 lg:py-12 flex flex-col justify-center">
               <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-[2rem] text-white tracking-tight leading-snug mb-3">
-                Book your free visit and see why residents choose{' '}
-                <span className="text-brand-gold italic font-medium">Narenn Living</span>
+                {title}
               </h2>
-              <p className="text-sm sm:text-base text-white/85 leading-relaxed mb-6 max-w-lg">
-                Walk through the rooms, meet the team and taste the food. Schedule a visit today -
-                rooms in popular sharing types fill quickly at the start of every month.
-              </p>
+              <div className="text-sm sm:text-base text-white/85 leading-relaxed mb-6 max-w-lg">
+                {typeof description === 'string' ? <p>{description}</p> : description}
+              </div>
 
               <div className="max-w-lg">
                 <CurvedInput
@@ -68,7 +81,7 @@ export default function FinalCta({ onBookVisit }) {
                   ariaLabel="Phone number for booking a visit"
                   theme="dark"
                   width="100%"
-                  bend={24}
+                  bend={0}
                   height={60}
                   fontSize={15}
                   backgroundColor="rgba(255,255,255,0.12)"
@@ -84,13 +97,16 @@ export default function FinalCta({ onBookVisit }) {
                 />
                 <p className="mt-4 text-[11px] text-white/60 leading-relaxed">
                   Or call us directly on{' '}
-                  <a href="tel:+917075985666" className="text-brand-gold font-semibold hover:underline">
-                    70759 85666
+                  <a
+                    href={`tel:${PHONE_TEL}`}
+                    className="text-brand-gold font-semibold hover:underline"
+                  >
+                    {PHONE_DISPLAY}
                   </a>
                   . Read our{' '}
-                  <a href="/contact-us/" className="underline underline-offset-2 hover:text-white">
+                  <Link to="/contact-us/" className="underline underline-offset-2 hover:text-white">
                     contact page
-                  </a>{' '}
+                  </Link>{' '}
                   for directions to VIP Hills.
                 </p>
               </div>

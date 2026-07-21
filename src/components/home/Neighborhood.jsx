@@ -1,6 +1,3 @@
-import { ArrowUpRight, MapPin } from 'lucide-react';
-import { RESIDENCES } from '../../data/homeData';
-
 const NEARBY_HIGHLIGHTS = [
   {
     title: 'Major IT Hubs',

@@ -1,0 +1,12 @@
+export { default as DoubleRoomHero } from './DoubleRoomHero';
+export { default as DoubleRoomIntro } from './DoubleRoomIntro';
+export { default as DoubleRoomGallery } from './DoubleRoomGallery';
+export { default as DoubleRoomIncludes } from './DoubleRoomIncludes';
+export { default as DoubleRoomBestOfBoth } from './DoubleRoomBestOfBoth';
+export { default as DoubleRoomStudentValue } from './DoubleRoomStudentValue';
+export { default as DoubleRoomManaged } from './DoubleRoomManaged';
+export { default as DoubleRoomRoommateMatching } from './DoubleRoomRoommateMatching';
+export { default as DoubleRoomCostCase } from './DoubleRoomCostCase';
+export { default as DoubleRoomIdentical } from './DoubleRoomIdentical';
+export { default as DoubleRoomFallback } from './DoubleRoomFallback';
+export { default as DoubleRoomFAQ } from './DoubleRoomFAQ';
