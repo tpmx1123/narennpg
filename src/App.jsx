@@ -10,6 +10,7 @@ import TripleSharing from './pages/rooms/TripleSharing';
 import QuadSharing from './pages/rooms/QuadSharing';
 import Amenities from './pages/Amenities';
 import Food from './pages/Food';
+import Madhapur from './pages/locations/Madhapur';
 import ComingSoon from './pages/ComingSoon';
 
 const REDIRECTS = [
@@ -49,7 +50,7 @@ export default function App() {
           <Route path="/rooms/quad-sharing/" element={<QuadSharing />} />
           <Route path="/amenities/" element={<Amenities />} />
           <Route path="/food/" element={<Food />} />
-          <Route path="/locations/madhapur/" element={<ComingSoon pageKey="locations-madhapur" />} />
+          <Route path="/locations/madhapur/" element={<Madhapur />} />
           <Route path="/properties/" element={<ComingSoon pageKey="properties" />} />
           <Route path="/properties/narenn-elite/" element={<ComingSoon pageKey="properties-narenn-elite" />} />
           <Route path="/properties/narenn-crown/" element={<ComingSoon pageKey="properties-narenn-crown" />} />

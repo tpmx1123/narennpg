@@ -5,11 +5,10 @@ import { Footer, FinalCta } from '../components/home';
 import {
   AboutHero,
   AboutIntro,
+  AboutMission,
   AboutProperties,
-  AboutDifferent,
   AboutComfort,
   AboutPhilosophy,
-  AboutNot,
   AboutSafety,
   AboutFaq,
 } from '../components/about-us';
@@ -82,19 +81,27 @@ export default function AboutUs() {
         jsonLd={jsonLd}
       />
 
-      <main className="flex-1">
+      <main className="flex-1 bg-white">
         <AboutHero onBookVisit={onBookVisit} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
           <AboutIntro />
+          <AboutMission />
           <AboutProperties />
-          <AboutDifferent />
           <AboutComfort />
           <AboutPhilosophy />
-          <AboutNot />
           <AboutSafety />
           <AboutFaq />
         </div>
-        <FinalCta onBookVisit={onBookVisit} />
+        <FinalCta
+          onBookVisit={onBookVisit}
+          title={
+            <>
+              Ready to see it for <span className="text-brand-gold italic font-medium">yourself?</span>
+            </>
+          }
+          description="Words only go so far. The best way to understand Narenn Living is to walk through it — see the rooms, meet the team, taste the food and feel the atmosphere."
+          imageAlt="Narenn Living co-living in Madhapur, Hyderabad — schedule a visit"
+        />
       </main>
       <Footer />
     </>

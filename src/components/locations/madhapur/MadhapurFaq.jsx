@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
-import { ABOUT_FAQS } from '../../data/aboutUsData';
+import { MADHAPUR_FAQS } from '../../../data/madhapurLocationData';
 
-export default function AboutFaq() {
+export default function MadhapurFaq() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
@@ -12,12 +12,12 @@ export default function AboutFaq() {
         <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3 text-center">
           FAQ
         </span>
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-10">
           Frequently Asked <span className="text-[#FBBD45] italic font-medium">Questions</span>
         </h2>
 
         <div className="space-y-3 mb-8">
-          {ABOUT_FAQS.map((faq, index) => {
+          {MADHAPUR_FAQS.map((faq, index) => {
             const open = openIndex === index;
             return (
               <div
@@ -51,10 +51,6 @@ export default function AboutFaq() {
 
         <p className="text-sm text-brand-charcoal-light leading-relaxed text-center">
           Explore our{' '}
-          <Link to="/properties/" className="text-brand-burgundy font-semibold hover:underline">
-            four properties
-          </Link>
-          ,{' '}
           <Link to="/rooms/" className="text-brand-burgundy font-semibold hover:underline">
             room options
           </Link>
@@ -62,9 +58,9 @@ export default function AboutFaq() {
           <Link to="/amenities/" className="text-brand-burgundy font-semibold hover:underline">
             amenities
           </Link>{' '}
-          and{' '}
-          <Link to="/events/" className="text-brand-burgundy font-semibold hover:underline">
-            community events
+          or{' '}
+          <Link to="/contact-us/" className="text-brand-burgundy font-semibold hover:underline">
+            book a visit
           </Link>
           .
         </p>

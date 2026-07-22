@@ -50,9 +50,9 @@ export const COMING_SOON_PAGES = {
   },
   'locations-madhapur': {
     path: '/locations/madhapur/',
-    title: 'PG in Madhapur, Hyderabad | Narenn Living VIP Hills',
+    title: 'PG in Madhapur, Hyderabad | Co-Living Near Hitech City',
     description:
-      'Narenn Living in VIP Hills, Madhapur — premium PG and co-living minutes from Hitech City, Gachibowli, Kondapur and the Financial District.',
+      'Premium PG & co-living in Madhapur, VIP Hills — AC rooms, four meals, WiFi & housekeeping, minutes from Hitech City. Book a free visit at Narenn Living today.',
   },
   properties: {
     path: '/properties/',

@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { ABOUT_STORY } from '../../data/aboutUsData';
+import { MADHAPUR_INTRO } from '../../../data/madhapurLocationData';
 
 const EASE = [0.16, 1, 0.3, 1];
 const WATERMARK_LOGO =
   'https://res.cloudinary.com/dmaeijlc/image/upload/v1784010508/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo.png';
 
-export default function AboutIntro() {
+export default function MadhapurIntro() {
   return (
     <section className="mb-14 lg:mb-16 -mt-6 sm:-mt-8 relative z-10">
       <motion.div
@@ -23,7 +23,7 @@ export default function AboutIntro() {
         />
 
         <div className="relative z-10 space-y-5 text-center max-w-5xl mx-auto">
-          {ABOUT_STORY.paragraphs.map((para) => (
+          {MADHAPUR_INTRO.map((para) => (
             <p
               key={para.slice(0, 48)}
               className="text-sm sm:text-base text-brand-charcoal-light leading-relaxed"
@@ -31,9 +31,6 @@ export default function AboutIntro() {
               {para}
             </p>
           ))}
-          <p className="text-base sm:text-lg font-display font-semibold text-brand-green tracking-tight">
-            {ABOUT_STORY.closingLine}
-          </p>
         </div>
       </motion.div>
     </section>

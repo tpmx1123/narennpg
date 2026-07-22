@@ -1,72 +1,62 @@
-import { Shield } from 'lucide-react';
+import { Lock, Shield, UserRound, Video } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { ABOUT_IMAGES } from '../../data/aboutUsData';
+import { ABOUT_IMAGES, ABOUT_SAFETY } from '../../data/aboutUsData';
 
 const EASE = [0.16, 1, 0.3, 1];
-
-const SAFETY_POINTS = [
-  'Biometric access control at every property',
-  'CCTV across entry points, corridors and common areas',
-  '24x7 security staffing on site',
-  'Verified and logged visitor entry',
-  'Separate male and female accommodation floors',
-];
+const ICONS = { Lock, Video, Shield, UserRound };
 
 export default function AboutSafety() {
   const { security } = ABOUT_IMAGES;
 
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-14 lg:mb-16 py-10 lg:py-14 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-cream-dark/60 border-y border-brand-gold/10">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.55, ease: EASE }}
+        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
-          <div className="lg:col-span-5 order-2 lg:order-1">
-            <div className="relative rounded-[12px] overflow-hidden h-full min-h-[320px] lg:min-h-full border border-brand-gold/20 shadow-[0_20px_50px_-24px_rgba(15,61,46,0.25)]">
-              <img
-                src={security.src}
-                alt={security.alt}
-                title={security.title}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
+        <div className="order-2 lg:order-1">
+          <div className="rounded-xl overflow-hidden shadow-[0_16px_40px_-20px_rgba(15,61,46,0.2)] h-[280px] sm:h-[360px] lg:h-[400px]">
+            <img
+              src={security.src}
+              alt={security.alt}
+              title={security.title}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
+        </div>
 
-          <div className="lg:col-span-7 order-1 lg:order-2">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
-              Peace of Mind
-            </span>
-            <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-[2.15rem] text-brand-green tracking-tight leading-[1.12] mb-4">
-              Our Commitment to{' '}
-              <span className="text-brand-gold italic font-medium">Safety</span>
-            </h2>
-            <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed border-l-[3px] border-brand-burgundy pl-4 mb-4">
-              Safety is not a feature we bolt on for the marketing page — it is the reason a lot of
-              parents let their daughter or son move to a new city at all.
-            </p>
-            <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mb-6">
-              Every property runs biometric access control, CCTV coverage across entry points,
-              corridors and common areas, and 24x7 security staffing. Visitor entry is verified and
-              logged. Male and female accommodation is separate and clearly demarcated with dedicated
-              floors.
-            </p>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 mb-6">
-              {SAFETY_POINTS.map((point) => (
-                <li key={point} className="flex gap-3 items-start">
-                  <Shield className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-sm text-brand-charcoal leading-relaxed">{point}</span>
+        <div className="space-y-5 order-1 lg:order-2">
+          <span className="text-[11px] font-bold tracking-[0.2em] text-brand-burgundy uppercase">
+            {ABOUT_SAFETY.eyebrow}
+          </span>
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.15]">
+            {ABOUT_SAFETY.h2}
+          </h2>
+          <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
+            {ABOUT_SAFETY.intro}
+          </p>
+
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-2">
+            {ABOUT_SAFETY.points.map((point) => {
+              const Icon = ICONS[point.icon] ?? Shield;
+              return (
+                <li key={point.label} className="flex items-center gap-3">
+                  <Icon className="w-5 h-5 text-brand-burgundy shrink-0" aria-hidden="true" />
+                  <span className="text-sm font-display font-semibold text-brand-charcoal">
+                    {point.label}
+                  </span>
                 </li>
-              ))}
-            </ul>
-            <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
-              None of this comes at the cost of freedom. There is no curfew, because a curfew does
-              not make anyone safer — it just punishes people whose shift ends at midnight.
-              Controlled, verified, monitored access does the actual work.
-            </p>
-          </div>
+              );
+            })}
+          </ul>
+
+          <p className="text-sm text-brand-charcoal-light leading-relaxed italic">
+            {ABOUT_SAFETY.closing}
+          </p>
         </div>
       </motion.div>
     </section>

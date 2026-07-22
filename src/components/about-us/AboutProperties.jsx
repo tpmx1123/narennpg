@@ -1,97 +1,94 @@
 import { Link } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { ABOUT_IMAGES } from '../../data/aboutUsData';
+import {
+  ABOUT_DIFFERENT_BULLETS,
+  ABOUT_PROPERTIES,
+} from '../../data/aboutUsData';
 
 const EASE = [0.16, 1, 0.3, 1];
+const WHY_NARENN_WATERMARK =
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp';
 
 export default function AboutProperties() {
-  const { properties, legacy } = ABOUT_IMAGES;
-
   return (
     <section className="mb-14 lg:mb-16">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="relative overflow-hidden rounded-[16px] border border-brand-gold/30 shadow-[0_24px_60px_-28px_rgba(15,61,46,0.2)]"
+        className="grid grid-cols-1 md:grid-cols-3 gap-5"
       >
-        <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(251,189,69,0.14)_0%,_transparent_45%),radial-gradient(ellipse_at_bottom_right,_rgba(15,61,46,0.08)_0%,_transparent_50%)]"
-          aria-hidden="true"
-        />
-        <div className="absolute inset-0 bg-brand-green-pale/80" aria-hidden="true" />
-
-        <div className="relative grid grid-cols-1 lg:grid-cols-2">
-          <div className="p-7 sm:p-9 lg:p-11 lg:pr-12 lg:border-r border-brand-gold/25">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+        {/* Residences */}
+        <article className="md:col-span-1 bg-white p-7 sm:p-8 rounded-xl border border-brand-gold/20 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <span className="text-[11px] font-bold tracking-[0.2em] text-brand-burgundy uppercase block mb-3">
               Residences
             </span>
-            <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.15] mb-5">
+            <h2 className="font-display font-bold text-xl sm:text-2xl text-brand-charcoal tracking-tight mb-6">
               Our Four Properties
             </h2>
-            <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mb-5">
-              We operate four premium co-living properties in VIP Hills, Madhapur — Narenn Elite,
-              Narenn Crown, Narenn Pinnacle and Narenn Supreme. Each maintains the same high standard
-              while offering its own character and room mix, so residents can pick the property and
-              sharing type that fits them best.
-            </p>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5 mb-6">
-              {['Narenn Elite', "Narenn's Crown", 'Narenn Pinnacle', "Narenn's Supreme"].map(
-                (name) => (
-                  <li
-                    key={name}
-                    className="flex items-center gap-2 text-sm font-display font-semibold text-brand-green"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0" aria-hidden="true" />
-                    {name}
-                  </li>
-                )
-              )}
+            <ul className="space-y-3.5 mb-8">
+              {ABOUT_PROPERTIES.map((name) => (
+                <li
+                  key={name}
+                  className="flex items-center gap-3 text-sm font-display font-semibold text-brand-charcoal"
+                >
+                  <span className="w-2 h-2 rounded-full bg-brand-gold shrink-0" aria-hidden="true" />
+                  {name}
+                </li>
+              ))}
             </ul>
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-6">
-              <Link
-                to="/properties/"
-                className="inline-flex items-center gap-1.5 text-sm font-display font-bold text-brand-burgundy hover:text-brand-burgundy-dark transition-colors group"
-              >
-                our four properties
-                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </Link>
-              <span className="text-brand-gold/50" aria-hidden="true">
-                /
-              </span>
-              <Link
-                to="/rooms/"
-                className="inline-flex items-center gap-1.5 text-sm font-display font-bold text-brand-burgundy hover:text-brand-burgundy-dark transition-colors group"
-              >
-                room options
-                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </Link>
-            </div>
-           
           </div>
+          <div className="space-y-2">
+            <Link
+              to="/properties/"
+              className="inline-flex items-center gap-2 text-sm font-display font-bold text-brand-burgundy hover:text-brand-burgundy-dark transition-colors group"
+            >
+              Discover our properties
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+            <Link
+              to="/rooms/"
+              className="inline-flex items-center gap-2 text-sm font-display font-bold text-brand-burgundy hover:text-brand-burgundy-dark transition-colors group"
+            >
+              room options
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+          </div>
+        </article>
 
-          <div className="relative p-7 sm:p-9 lg:p-11 lg:pl-12 border-t lg:border-t-0 border-brand-gold/25 bg-white/55 backdrop-blur-[2px]">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-burgundy uppercase block mb-3">
-              Purpose
-            </span>
-            <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.15] mb-5">
-              Our Mission
-            </h2>
-            <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mb-5">
-              Our mission is to make moving to a new city effortless. When a resident walks into
-              Narenn Living with a suitcase, everything else is already taken care of — a furnished
-              room, four homely meals a day, high-speed internet, housekeeping, laundry, security and
-              a community waiting to welcome them.
-            </p>
-            <p className="font-display font-semibold text-base sm:text-lg text-brand-green tracking-tight leading-snug border-l-[3px] border-brand-gold pl-4 mb-6">
-              We manage the hundred small things that make a house liveable — so residents can focus
-              on careers, studies and life.
-            </p>
-           
+        {/* Why Narenn */}
+        <article className="md:col-span-2 relative overflow-hidden rounded-xl border border-brand-gold/20 bg-white shadow-sm min-h-[320px]">
+          <img
+            src={WHY_NARENN_WATERMARK}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-[0.14]"
+          />
+          <div className="relative z-10 p-7 sm:p-8 lg:p-10 h-full flex flex-col justify-between">
+            <div>
+              <span className="text-[11px] font-bold tracking-[0.2em] text-brand-burgundy uppercase block mb-3">
+                Why Narenn
+              </span>
+              <h2 className="font-display font-bold text-xl sm:text-2xl text-brand-green tracking-tight mb-6">
+                What Makes Us <span className="text-brand-gold italic font-medium">Different</span>
+              </h2>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                {ABOUT_DIFFERENT_BULLETS.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2
+                      className="w-5 h-5 text-brand-burgundy shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    />
+                    <p className="text-sm text-brand-charcoal-light leading-relaxed">{item}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
+        </article>
       </motion.div>
     </section>
   );

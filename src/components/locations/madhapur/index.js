@@ -1,0 +1,9 @@
+export { default as MadhapurHero } from './MadhapurHero';
+export { default as MadhapurIntro } from './MadhapurIntro';
+export { default as MadhapurWhy } from './MadhapurWhy';
+export { default as MadhapurMinutes } from './MadhapurMinutes';
+export { default as MadhapurAudience } from './MadhapurAudience';
+export { default as MadhapurSuburbs } from './MadhapurSuburbs';
+export { default as MadhapurLandmarks } from './MadhapurLandmarks';
+export { default as MadhapurProperties } from './MadhapurProperties';
+export { default as MadhapurFaq } from './MadhapurFaq';

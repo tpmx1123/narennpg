@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
-import IconSlideButton from '../ui/IconSlideButton';
-import { ABOUT_HERO, ABOUT_IMAGES } from '../../data/aboutUsData';
+import IconSlideButton from '../../ui/IconSlideButton';
+import { MADHAPUR_HERO, MADHAPUR_IMAGES } from '../../../data/madhapurLocationData';
 
 const EASE = [0.22, 1, 0.36, 1];
 
-export default function AboutHero({ onBookVisit }) {
-  const { hero } = ABOUT_IMAGES;
+export default function MadhapurHero({ onBookVisit }) {
+  const { hero } = MADHAPUR_IMAGES;
 
   return (
     <section className="relative min-h-[420px] sm:min-h-[480px] lg:min-h-[560px] flex items-end overflow-hidden">
@@ -30,18 +30,19 @@ export default function AboutHero({ onBookVisit }) {
         <motion.div
           initial={{ opacity: 0, y: 22 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: EASE, delay: 0.06 }}
+          transition={{ duration: 0.55, ease: EASE }}
           className="max-w-3xl"
         >
           <span className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4">
-            {ABOUT_HERO.eyebrow}
+            {MADHAPUR_HERO.eyebrow}
           </span>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-[2rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-7">
-            {ABOUT_HERO.h1} -{' '}
-            <span className="text-brand-gold-light italic font-medium">{ABOUT_HERO.h1Accent}</span>{' '}
-            {ABOUT_HERO.h1Suffix}
+          <h1 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-4">
+            {MADHAPUR_HERO.h1} -{' '}
+            <span className="text-brand-gold-light italic font-medium">{MADHAPUR_HERO.h1Accent}</span>
           </h1>
+
+          
 
           <div className="flex flex-wrap items-center gap-4">
             {onBookVisit ? (
@@ -56,14 +57,14 @@ export default function AboutHero({ onBookVisit }) {
                 iconColor="#ffffff"
                 iconHoverColor="#1A1A1A"
               >
-                Schedule a Visit
+                Book a Visit
               </IconSlideButton>
             ) : null}
             <Link
-              to="/properties/"
+              to="/rooms/"
               className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-brand-cream/90 hover:text-brand-gold transition-colors"
             >
-              Our four properties
+              View Available Rooms
               <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
