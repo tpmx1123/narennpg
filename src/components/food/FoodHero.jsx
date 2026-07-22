@@ -32,7 +32,7 @@ export default function FoodHero({ onBookVisit }) {
             {FOOD_HERO.eyebrow}
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-[2rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-7">
-            {FOOD_HERO.h1} —{' '}
+            {FOOD_HERO.h1} -{' '}
             <span className="text-brand-gold-light italic font-medium">{FOOD_HERO.h1Accent}</span>
           </h1>
 

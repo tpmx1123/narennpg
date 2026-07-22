@@ -14,8 +14,8 @@ export const FOOD_HERO = {
   h1: 'Home-Style Food at Narenn Living',
   h1Accent: 'Four Fresh Meals a Day',
   paragraphs: [
-    'Ask anyone who has lived in a PG what makes or breaks the experience, and the answer is almost always the food. At Narenn Living, we treat PG food in Madhapur as a priority, not an afterthought. Our in-house kitchen serves four freshly cooked meals every day — breakfast, lunch, evening snacks and dinner — prepared in a clean, hygienic kitchen by cooks who take pride in their work. The result is food that tastes like home, so you never have to depend on takeout or skip a meal because you are too busy.',
-    'For students and professionals new to Hyderabad, reliable, tasty, nutritious food is one of the biggest reasons they choose — and stay at — Narenn Living.',
+    'Ask anyone who has lived in a PG what makes or breaks the experience, and the answer is almost always the food. At Narenn Living, we treat PG food in Madhapur as a priority, not an afterthought. Our in-house kitchen serves four freshly cooked meals every day - breakfast, lunch, evening snacks and dinner - prepared in a clean, hygienic kitchen by cooks who take pride in their work. The result is food that tastes like home, so you never have to depend on takeout or skip a meal because you are too busy.',
+    'For students and professionals new to Hyderabad, reliable, tasty, nutritious food is one of the biggest reasons they choose - and stay at - Narenn Living.',
   ],
   image:
     'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1600&q=80',
