@@ -54,7 +54,7 @@ export default function FoodWeeklyMenu() {
       className="mb-14 lg:mb-16 py-10 lg:py-14 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-[#F2F0ED] border-y border-brand-gold/10"
     >
       <div className="text-center max-w-3xl mx-auto">
-        <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-brand-charcoal tracking-tight leading-[1.12]">
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
           This Week&apos;s Menu
         </h2>
         <p className="text-sm text-brand-charcoal-light leading-relaxed mt-3">

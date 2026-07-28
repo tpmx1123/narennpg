@@ -18,7 +18,8 @@ import {
   AMENITIES_FULL_LIST_ITEMS,
   AMENITIES_PAGE,
 } from '../data/amenitiesData';
-import { PHONE_DISPLAY, PHONE_TEL, SITE_URL } from '../data/sitePages';
+import { SITE_URL } from '../data/sitePages';
+import { PhoneWhatsAppLinks } from '../components/ui/ContactText';
 
 export default function Amenities() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -111,13 +112,7 @@ export default function Amenities() {
           description={
             <p>
               Visit any of our properties, explore the spaces and taste the food. Call{' '}
-              <a
-                href={`tel:${PHONE_TEL}`}
-                className="text-brand-gold font-semibold hover:underline"
-              >
-                {PHONE_DISPLAY}
-              </a>{' '}
-              or{' '}
+              <PhoneWhatsAppLinks /> or{' '}
               <Link to="/contact-us/" className="text-brand-gold font-semibold hover:underline">
                 book a visit
               </Link>{' '}

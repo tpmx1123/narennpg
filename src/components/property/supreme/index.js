@@ -1,0 +1,10 @@
+export { default as SupremeHero } from './SupremeHero';
+export { default as SupremeIntro } from './SupremeIntro';
+export { default as SupremeHighlights } from './SupremeHighlights';
+export { default as SupremeWhy } from './SupremeWhy';
+export { default as SupremeAmenities } from './SupremeAmenities';
+export { default as SupremeRooms } from './SupremeRooms';
+export { default as SupremeIdealFor } from './SupremeIdealFor';
+export { default as SupremeMap } from './SupremeMap';
+export { default as SupremeOthers } from './SupremeOthers';
+export { default as SupremeFaq } from './SupremeFaq';

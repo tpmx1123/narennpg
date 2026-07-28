@@ -1,0 +1,14 @@
+export { default as GachibowliHero } from './GachibowliHero';
+export { default as GachibowliIntro } from './GachibowliIntro';
+export { default as GachibowliConnected } from './GachibowliConnected';
+export { default as GachibowliWhyMadhapur } from './GachibowliWhyMadhapur';
+export { default as GachibowliProfessionals } from './GachibowliProfessionals';
+export { default as GachibowliAmenities } from './GachibowliAmenities';
+export { default as GachibowliValue } from './GachibowliValue';
+export { default as GachibowliBookVisit } from './GachibowliBookVisit';
+export { default as GachibowliWorkLiving } from './GachibowliWorkLiving';
+export { default as GachibowliWhoCommutes } from './GachibowliWhoCommutes';
+export { default as GachibowliTwentyMinutes } from './GachibowliTwentyMinutes';
+export { default as GachibowliHonest } from './GachibowliHonest';
+export { default as GachibowliFaq } from './GachibowliFaq';
+export { default as GachibowliMaps } from './GachibowliMaps';

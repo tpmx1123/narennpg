@@ -17,7 +17,7 @@ export default function SingleRoomPrivacyCommunity() {
       <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
         Community
       </span>
-      <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-[2.15rem] tracking-tight leading-[1.12] mb-5 text-brand-green">
+      <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
         Privacy Without{' '}
         <span className="text-brand-gold italic font-medium">Isolation</span>
       </h2>
@@ -51,7 +51,7 @@ export function SingleRoomPrivacyCommunitySecond() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             Belonging
           </span>
-          <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-[2.15rem] text-brand-green tracking-tight leading-[1.12]">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             Privacy Without{' '}
             <span className="text-brand-gold italic font-medium">Isolation</span>
           </h2>

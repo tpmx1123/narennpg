@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Phone } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { ABOUT_COMMUNITY, ABOUT_IMAGES } from '../../data/aboutUsData';
 import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
+import IconSlideButton from '../ui/IconSlideButton';
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -36,10 +37,10 @@ export default function AboutComfort() {
         </div>
 
         <div className="space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.2em] text-brand-burgundy uppercase">
+          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {ABOUT_COMMUNITY.eyebrow}
           </span>
-          <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {ABOUT_COMMUNITY.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
@@ -50,13 +51,9 @@ export default function AboutComfort() {
           </p>
 
           <div className="pt-2 space-y-4">
-            <Link
-              to="/events/"
-              className="inline-flex items-center gap-2 bg-brand-burgundy text-white px-6 py-3.5 rounded-xl text-sm font-display font-bold hover:bg-brand-burgundy-dark transition-colors group"
-            >
+            <IconSlideButton to="/events/">
               Take a look at our community events
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </Link>
+            </IconSlideButton>
 
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-display font-bold">
               <Link

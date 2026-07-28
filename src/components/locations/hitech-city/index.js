@@ -1,0 +1,13 @@
+export { default as HitechCityHero } from './HitechCityHero';
+export { default as HitechCityIntro } from './HitechCityIntro';
+export { default as HitechCityCommute } from './HitechCityCommute';
+export { default as HitechCityItPros } from './HitechCityItPros';
+export { default as HitechCityComfort } from './HitechCityComfort';
+export { default as HitechCityValue } from './HitechCityValue';
+export { default as HitechCityMadhapur } from './HitechCityMadhapur';
+export { default as HitechCityBook } from './HitechCityBook';
+export { default as HitechCityCosted } from './HitechCityCosted';
+export { default as HitechCityResidents } from './HitechCityResidents';
+export { default as HitechCityTimings } from './HitechCityTimings';
+export { default as HitechCityFaq } from './HitechCityFaq';
+export { default as HitechCityProperties } from './HitechCityProperties';

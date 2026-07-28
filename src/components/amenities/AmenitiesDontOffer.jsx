@@ -16,7 +16,7 @@ export default function AmenitiesDontOffer() {
         transition={{ duration: 0.55, ease: EASE }}
         className="w-full max-w-3xl bg-brand-charcoal text-white p-7 sm:p-9 lg:p-10 rounded-2xl text-center"
       >
-        <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-gold tracking-tight leading-[1.2] mb-5 flex flex-wrap items-center justify-center gap-2.5">
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-gold tracking-tight leading-[1.15] mb-5 flex flex-wrap items-center justify-center gap-2.5">
           <Info className="w-7 h-7 sm:w-8 sm:h-8 text-brand-gold shrink-0" aria-hidden="true" />
           <span>
             {plain}{' '}

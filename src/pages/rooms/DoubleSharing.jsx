@@ -23,7 +23,8 @@ import {
   DOUBLE_SHARING_PAGE,
   DOUBLE_SHARING_RATES,
 } from '../../data/doubleSharingData';
-import { PHONE_DISPLAY, PHONE_TEL, SITE_URL } from '../../data/sitePages';
+import { SITE_URL } from '../../data/sitePages';
+import { PhoneWhatsAppLinks } from '../../components/ui/ContactText';
 
 export default function DoubleSharing() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -50,39 +51,6 @@ export default function DoubleSharing() {
           image: DOUBLE_SHARING_PAGE.ogImage,
           url: canonical,
           brand: organizationRef(),
-          offers: [
-            {
-              '@type': 'Offer',
-              name: DOUBLE_SHARING_RATES.monthly.nonAc.schemaName,
-              priceCurrency: DOUBLE_SHARING_RATES.currency,
-              price: String(DOUBLE_SHARING_RATES.monthly.nonAc.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Monthly rent for Double Sharing — 2 Sharing (Non-AC)',
-              unitText: 'MONTH',
-            },
-            {
-              '@type': 'Offer',
-              name: DOUBLE_SHARING_RATES.monthly.ac.schemaName,
-              priceCurrency: DOUBLE_SHARING_RATES.currency,
-              price: String(DOUBLE_SHARING_RATES.monthly.ac.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Monthly rent for Double Sharing — 2 Sharing (AC)',
-              unitText: 'MONTH',
-            },
-            {
-              '@type': 'Offer',
-              name: DOUBLE_SHARING_RATES.daily.schemaName,
-              priceCurrency: DOUBLE_SHARING_RATES.currency,
-              price: String(DOUBLE_SHARING_RATES.daily.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Day-wise / short-stay rate for double sharing — per day, not monthly',
-              unitCode: 'DAY',
-              unitText: 'DAY',
-            },
-          ],
         },
         buildBreadcrumbSchema([
           { name: 'Home', path: '/' },
@@ -165,13 +133,7 @@ export default function DoubleSharing() {
             <p>
               Double sharing is our most in-demand room type and tends to fill first every month. To
               secure your spot, the best step is to visit, pick your room and reserve it early. Call{' '}
-              <a
-                href={`tel:${PHONE_TEL}`}
-                className="text-brand-gold font-semibold hover:underline"
-              >
-                {PHONE_DISPLAY}
-              </a>{' '}
-              or{' '}
+              <PhoneWhatsAppLinks /> or{' '}
               <Link
                 to="/contact-us/"
                 className="text-brand-gold font-semibold hover:underline"

@@ -17,7 +17,7 @@ export default function QuadRoomCommunity() {
       <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
         Social Living
       </span>
-      <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.15] mb-4">
+      <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4">
         Instant <span className="text-brand-gold italic font-medium">Community</span>
       </h2>
       <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed border-l-[3px] border-brand-burgundy pl-4">

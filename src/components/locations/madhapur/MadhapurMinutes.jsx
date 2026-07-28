@@ -105,7 +105,7 @@ export default function MadhapurMinutes() {
   return (
     <section className="mb-14 lg:mb-16 py-8 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-white border-y border-brand-gold/10">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.12] text-center mb-8 lg:mb-9">
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-8 lg:mb-9">
           {MADHAPUR_MINUTES.h2}
         </h2>
 

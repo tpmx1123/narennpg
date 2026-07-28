@@ -16,7 +16,7 @@ export default function AmenitiesFullList() {
         transition={{ duration: 0.55, ease: EASE }}
         className="max-w-5xl mx-auto"
       >
-        <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.12] mb-3">
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-3">
           {plain}{' '}
           <span className="text-brand-gold italic font-medium">{AMENITIES_FULL_LIST.h2Accent}</span>
         </h2>

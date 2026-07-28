@@ -14,10 +14,10 @@ export default function AboutPhilosophy() {
         transition={{ duration: 0.55, ease: EASE }}
       >
         <div className="max-w-3xl mb-8 lg:mb-10">
-          <span className="text-[11px] font-bold tracking-[0.2em] text-brand-burgundy uppercase block mb-3">
+          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {ABOUT_PHILOSOPHY.eyebrow}
           </span>
-          <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.15] mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
             {ABOUT_PHILOSOPHY.h2}
           </h2>
           <p className="text-base sm:text-lg font-display font-medium text-brand-charcoal-light italic border-l-4 border-brand-gold pl-5 leading-snug">

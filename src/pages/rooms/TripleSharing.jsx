@@ -23,7 +23,8 @@ import {
   TRIPLE_SHARING_PAGE,
   TRIPLE_SHARING_RATES,
 } from '../../data/tripleSharingData';
-import { PHONE_DISPLAY, PHONE_TEL, SITE_URL } from '../../data/sitePages';
+import { SITE_URL } from '../../data/sitePages';
+import { PhoneWhatsAppLinks } from '../../components/ui/ContactText';
 
 export default function TripleSharing() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -50,39 +51,6 @@ export default function TripleSharing() {
           image: TRIPLE_SHARING_PAGE.ogImage,
           url: canonical,
           brand: organizationRef(),
-          offers: [
-            {
-              '@type': 'Offer',
-              name: TRIPLE_SHARING_RATES.monthly.nonAc.schemaName,
-              priceCurrency: TRIPLE_SHARING_RATES.currency,
-              price: String(TRIPLE_SHARING_RATES.monthly.nonAc.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Monthly rent for Triple Sharing — 3 Sharing (Non-AC)',
-              unitText: 'MONTH',
-            },
-            {
-              '@type': 'Offer',
-              name: TRIPLE_SHARING_RATES.monthly.ac.schemaName,
-              priceCurrency: TRIPLE_SHARING_RATES.currency,
-              price: String(TRIPLE_SHARING_RATES.monthly.ac.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Monthly rent for Triple Sharing — 3 Sharing (AC)',
-              unitText: 'MONTH',
-            },
-            {
-              '@type': 'Offer',
-              name: TRIPLE_SHARING_RATES.daily.schemaName,
-              priceCurrency: TRIPLE_SHARING_RATES.currency,
-              price: String(TRIPLE_SHARING_RATES.daily.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Day-wise / short-stay rate for triple sharing — per day, not monthly',
-              unitCode: 'DAY',
-              unitText: 'DAY',
-            },
-          ],
         },
         buildBreadcrumbSchema([
           { name: 'Home', path: '/' },
@@ -165,14 +133,7 @@ export default function TripleSharing() {
             <p>
               Triple rooms offer the best value and understandably go fast, particularly at the start
               of every academic term. If budget-friendly premium living is what you are after, act
-              early. Call{' '}
-              <a
-                href={`tel:${PHONE_TEL}`}
-                className="text-brand-gold font-semibold hover:underline"
-              >
-                {PHONE_DISPLAY}
-              </a>{' '}
-              or{' '}
+              early. Call <PhoneWhatsAppLinks /> or{' '}
               <Link
                 to="/contact-us/"
                 className="text-brand-gold font-semibold hover:underline"

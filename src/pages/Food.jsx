@@ -17,7 +17,8 @@ import {
   FoodWeeklyMenu,
 } from '../components/food';
 import { FOOD_FAQS, FOOD_PAGE } from '../data/foodPageData';
-import { PHONE_DISPLAY, PHONE_TEL, SITE_URL } from '../data/sitePages';
+import { SITE_URL } from '../data/sitePages';
+import { PhoneWhatsAppLinks } from '../components/ui/ContactText';
 
 export default function Food() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -104,10 +105,7 @@ export default function Food() {
           description={
             <p>
               Do not just take our word for it. Book a visit and join us for lunch. Call{' '}
-              <a href={`tel:${PHONE_TEL}`} className="text-brand-gold font-semibold hover:underline">
-                {PHONE_DISPLAY}
-              </a>{' '}
-              or{' '}
+              <PhoneWhatsAppLinks /> or{' '}
               <Link to="/contact-us/" className="text-brand-gold font-semibold hover:underline">
                 book a visit
               </Link>{' '}

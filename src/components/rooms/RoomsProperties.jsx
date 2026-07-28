@@ -28,13 +28,17 @@ export default function RoomsProperties() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             One Standard
           </span>
-          <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.12]">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             Rooms Across Four Properties,{' '}
             <span className="text-brand-gold italic font-medium">One Standard</span>
           </h2>
         </div>
-        <div className="lg:col-span-7">
-          <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed border-l-[3px] border-brand-burgundy pl-4">
+        <div className="lg:col-span-7 flex items-stretch gap-5 lg:gap-6">
+          <div
+            className="hidden sm:block w-[3px] shrink-0 bg-brand-burgundy rounded-full"
+            aria-hidden="true"
+          />
+          <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             The room mix and pricing vary slightly between properties. What you can count on does
             not — explore{' '}
             <Link

@@ -1,0 +1,10 @@
+export { default as EventsHero } from './EventsHero';
+export { default as EventsIntro } from './EventsIntro';
+export { default as EventsCalendar } from './EventsCalendar';
+export { default as EventsFestivals } from './EventsFestivals';
+export { default as EventsPillars } from './EventsPillars';
+export { default as EventsWhy } from './EventsWhy';
+export { default as EventsMonth } from './EventsMonth';
+export { default as EventsTerrace } from './EventsTerrace';
+export { default as EventsInvite } from './EventsInvite';
+export { default as EventsFaq } from './EventsFaq';

@@ -16,13 +16,17 @@ export default function RoomsRent() {
             <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
               Transparent Fee
             </span>
-            <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.12]">
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
               What Your Rent Covers -{' '}
               <span className="text-brand-gold italic font-medium">and What It Does Not</span>
             </h2>
           </div>
-          <div className="lg:col-span-7">
-            <p className="font-display font-semibold text-base sm:text-lg text-brand-green tracking-tight leading-snug border-l-[3px] border-brand-burgundy pl-4">
+          <div className="lg:col-span-7 flex items-stretch gap-5 lg:gap-6">
+            <div
+              className="hidden sm:block w-[3px] shrink-0 bg-brand-burgundy rounded-full"
+              aria-hidden="true"
+            />
+            <p className="font-display font-bold text-sm sm:text-base text-brand-charcoal uppercase tracking-wide leading-snug">
               One monthly figure. One written agreement. No surprise invoices at exit.
             </p>
           </div>
@@ -39,7 +43,7 @@ export default function RoomsRent() {
               lift access, security and every community event we run through the year.
             </p>
           </div>
-          <div className="rounded-[12px] border border-brand-gold/25 bg-white p-6 sm:p-7">
+          <div className="rounded-[12px] border border-brand-gold/25 bg-[#FFF4E8] p-6 sm:p-7">
             <h3 className="font-display font-bold text-sm text-brand-burgundy uppercase tracking-wide mb-3">
               Outside rent
             </h3>

@@ -32,7 +32,7 @@ export default function Neighborhood() {
             <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-3 block">
               Location
             </span>
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
               Four properties in{' '}
               <span className="text-brand-gold italic font-medium">VIP Hills, Madhapur.</span>
             </h2>

@@ -28,7 +28,7 @@ export default function FoodHero({ onBookVisit }) {
           transition={{ duration: 0.55, ease: EASE, delay: 0.06 }}
           className="max-w-3xl"
         >
-          <span className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4">
+          <span className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3 mb-4">
             {FOOD_HERO.eyebrow}
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-[2rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-7">

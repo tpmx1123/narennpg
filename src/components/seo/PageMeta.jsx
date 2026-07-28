@@ -40,6 +40,7 @@ export default function PageMeta({
   canonical,
   robots = 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage = DEFAULT_OG_IMAGE,
+  ogType = 'website',
   jsonLd,
 }) {
   useEffect(() => {
@@ -48,7 +49,7 @@ export default function PageMeta({
     setMeta('name', 'robots', robots);
     setLink('canonical', canonical);
 
-    setMeta('property', 'og:type', 'website');
+    setMeta('property', 'og:type', ogType);
     setMeta('property', 'og:url', canonical);
     setMeta('property', 'og:title', title);
     setMeta('property', 'og:description', description);
@@ -67,7 +68,7 @@ export default function PageMeta({
       const el = document.getElementById('page-jsonld');
       if (el) el.remove();
     };
-  }, [title, description, canonical, robots, ogImage, jsonLd]);
+  }, [title, description, canonical, robots, ogImage, ogType, jsonLd]);
 
   return null;
 }

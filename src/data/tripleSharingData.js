@@ -13,7 +13,7 @@ export const TRIPLE_SHARING_RATES = {
       price: 17200,
       schemaName: 'Triple Sharing — 3 Sharing (AC)',
     },
-    maintenanceNote: '+ ₹3,000 one-time maintenance · electricity billed separately',
+    maintenanceNote: 'One-time maintenance applies · electricity billed separately',
   },
   daily: {
     price: 1200,

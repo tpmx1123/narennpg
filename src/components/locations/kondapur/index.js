@@ -1,0 +1,9 @@
+export { default as KondapurHero } from './KondapurHero';
+export { default as KondapurIntro } from './KondapurIntro';
+export { default as KondapurCommute } from './KondapurCommute';
+export { default as KondapurWhy } from './KondapurWhy';
+export { default as KondapurStandard } from './KondapurStandard';
+export { default as KondapurAudience } from './KondapurAudience';
+export { default as KondapurBook } from './KondapurBook';
+export { default as KondapurFaq } from './KondapurFaq';
+export { default as KondapurProperties } from './KondapurProperties';

@@ -33,7 +33,7 @@ export default function RoomsHero({ onBookVisit }) {
           transition={{ duration: 0.55, ease: EASE }}
           className="max-w-3xl"
         >
-          <span className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4">
+          <span className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3 mb-4">
             {ROOMS_HERO.eyebrow}
           </span>
 

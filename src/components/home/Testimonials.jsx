@@ -5,11 +5,11 @@ export default function Testimonials() {
   return (
     <section className="py-24 max-w-7xl mx-auto px-6">
       <div className="text-center max-w-2xl mx-auto mb-16">
-        <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
+        <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
           Verified Reviews
         </span>
         <p className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
-          Residents Who Chose <span className="text-[#FBBD45] italic font-medium">Narenn</span>
+          Residents Who Chose <span className="text-brand-gold italic font-medium">Narenn</span>
         </p>
         <p className="text-brand-charcoal-light text-sm mt-4">
           Real experiences from residents across our co-living homes and Narenn&apos;s Crown

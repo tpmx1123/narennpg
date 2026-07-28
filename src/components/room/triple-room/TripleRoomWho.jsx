@@ -19,7 +19,7 @@ export default function TripleRoomWho() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             Audience Fit
           </span>
-          <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-[2.15rem] text-brand-green tracking-tight leading-[1.12]">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             Who Triple Sharing Is{' '}
             <span className="text-brand-gold italic font-medium">Built For</span>
           </h2>

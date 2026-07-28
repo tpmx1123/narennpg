@@ -1,0 +1,40 @@
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { PROPERTIES_FIND } from '../../data/propertiesPageData';
+import { PhoneWhatsAppLinks } from '../ui/ContactText';
+
+const EASE = [0.16, 1, 0.3, 1];
+
+export default function PropertiesFind() {
+  return (
+    <section className="mb-14 lg:mb-16 -mx-4 sm:-mx-6 lg:-mx-10 relative overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url('${PROPERTIES_FIND.backgroundImage}')` }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-brand-green/80" aria-hidden="true" />
+
+      <motion.div
+        initial={{ opacity: 0, y: 18 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.25 }}
+        transition={{ duration: 0.55, ease: EASE }}
+        className="relative z-10 px-4 sm:px-6 lg:px-10 py-16 lg:py-24 text-center"
+      >
+        <div className="max-w-2xl mx-auto">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-[1.12]">
+            {PROPERTIES_FIND.h2}
+          </h2>
+          <p className="text-sm sm:text-base text-white/85 leading-relaxed mt-4">
+            {PROPERTIES_FIND.body} Call <PhoneWhatsAppLinks /> or{' '}
+            <Link to="/contact-us/" className="font-semibold text-brand-gold hover:underline">
+              book a visit
+            </Link>{' '}
+            to tour our four homes in VIP Hills, Madhapur.
+          </p>
+        </div>
+      </motion.div>
+    </section>
+  );
+}

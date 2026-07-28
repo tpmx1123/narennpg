@@ -17,7 +17,7 @@ export default function DoubleRoomManaged() {
       <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
         Hassle-Free
       </span>
-      <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.15] mb-4">
+      <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4">
         Everything Managed{' '}
         <span className="text-brand-gold italic font-medium">for You</span>
       </h2>

@@ -1,0 +1,9 @@
+export { default as PropertiesHero } from './PropertiesHero';
+export { default as PropertiesIntro } from './PropertiesIntro';
+export { default as PropertiesStandard } from './PropertiesStandard';
+export { default as PropertiesShowcase } from './PropertiesShowcase';
+export { default as PropertiesLocation } from './PropertiesLocation';
+export { default as PropertiesFind } from './PropertiesFind';
+export { default as PropertiesCompare } from './PropertiesCompare';
+export { default as PropertiesBuilt } from './PropertiesBuilt';
+export { default as PropertiesFaq } from './PropertiesFaq';

@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import PageMeta from '../components/seo/PageMeta';
 import { Footer } from '../components/home';
+import IconSlideButton from '../components/ui/IconSlideButton';
 import { COMING_SOON_PAGES, PHONE_DISPLAY, PHONE_TEL, SITE_URL, WHATSAPP_URL } from '../data/sitePages';
 
 export default function ComingSoon({ pageKey }) {
@@ -41,12 +41,7 @@ export default function ComingSoon({ pageKey }) {
             </a>{' '}
             to book a visit or ask about rooms at Narenn Living.
           </p>
-          <Link
-            to="/"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-[10px] bg-brand-burgundy text-white font-display font-bold text-sm hover:bg-brand-burgundy-dark transition-colors"
-          >
-            Back to Home
-          </Link>
+          <IconSlideButton to="/">Back to Home</IconSlideButton>
         </div>
       </main>
       <Footer />

@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BRAND_LOGO } from '../../data/homeData';
 import { NAV_PROPERTIES, NAV_ROOMS } from '../../data/sitePages';
+import IconSlideButton from '../ui/IconSlideButton';
 
 const NAV_LINKS = [
   { to: '/amenities/', label: 'Amenities' },
@@ -217,13 +218,14 @@ export default function Navbar() {
               </NavLink>
             ))}
 
-            <Link
+            <IconSlideButton
               to="/contact-us/"
               onClick={closeAll}
-              className="inline-flex items-center justify-center px-4 py-2 rounded-[10px] bg-brand-burgundy text-white font-display font-bold text-xs tracking-wide whitespace-nowrap hover:bg-brand-burgundy-dark transition-colors ml-2 xl:ml-4"
+              compact
+              className="ml-2 xl:ml-4"
             >
               Contact Us
-            </Link>
+            </IconSlideButton>
           </motion.div>
 
           <button
@@ -430,13 +432,14 @@ export default function Navbar() {
                 </NavLink>
               ))}
 
-              <Link
+              <IconSlideButton
                 to="/contact-us/"
                 onClick={closeAll}
-                className="w-full py-3 rounded-[10px] bg-brand-burgundy text-white font-display font-bold text-xs text-center"
+                compact
+                className="w-full"
               >
                 Contact Us
-              </Link>
+              </IconSlideButton>
             </div>
           </motion.div>
         )}

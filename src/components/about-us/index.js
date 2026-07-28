@@ -1,6 +1,8 @@
 export { default as AboutHero } from './AboutHero';
 export { default as AboutIntro } from './AboutIntro';
 export { default as AboutMission } from './AboutMission';
+export { default as AboutFounder } from './AboutFounder';
+export { default as AboutGallery } from './AboutGallery';
 export { default as AboutProperties } from './AboutProperties';
 export { default as AboutComfort } from './AboutComfort';
 export { default as AboutPhilosophy } from './AboutPhilosophy';

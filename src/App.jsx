@@ -11,10 +11,30 @@ import QuadSharing from './pages/rooms/QuadSharing';
 import Amenities from './pages/Amenities';
 import Food from './pages/Food';
 import Madhapur from './pages/locations/Madhapur';
+import HitechCity from './pages/locations/HitechCity';
+import Gachibowli from './pages/locations/Gachibowli';
+import Kondapur from './pages/locations/Kondapur';
+import Properties from './pages/Properties';
+import NarennElite from './pages/properties/NarennElite';
+import NarennCrown from './pages/properties/NarennCrown';
+import NarennPinnacle from './pages/properties/NarennPinnacle';
+import NarennSupreme from './pages/properties/NarennSupreme';
+import Events from './pages/Events';
+import ContactUs from './pages/ContactUs';
+import Faq from './pages/Faq';
+import ColivingItProfessionals from './pages/ColivingItProfessionals';
+import PgForStudents from './pages/PgForStudents';
+import Blog from './pages/Blog';
+import BlogPost from './pages/blog/BlogPost';
+import Founder from './pages/Founder';
 import ComingSoon from './pages/ComingSoon';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUse from './pages/TermsOfUse';
 
 const REDIRECTS = [
   ['about-us', '/about-us/'],
+  ['founder', '/narenn-founder/'],
+  ['narenn-founder', '/narenn-founder/'],
   ['rooms', '/rooms/'],
   ['rooms/single-sharing', '/rooms/single-sharing/'],
   ['rooms/double-sharing', '/rooms/double-sharing/'],
@@ -23,6 +43,7 @@ const REDIRECTS = [
   ['amenities', '/amenities/'],
   ['food', '/food/'],
   ['events', '/events/'],
+  ['blog', '/blog/'],
   ['contact-us', '/contact-us/'],
   ['faq', '/faq/'],
   ['properties', '/properties/'],
@@ -31,8 +52,14 @@ const REDIRECTS = [
   ['properties/narenn-pinnacle', '/properties/narenn-pinnacle/'],
   ['properties/narenn-supreme', '/properties/narenn-supreme/'],
   ['locations/madhapur', '/locations/madhapur/'],
+  ['locations/hitech-city', '/locations/hitech-city/'],
+  ['locations/gachibowli', '/locations/gachibowli/'],
+  ['locations/kondapur', '/locations/kondapur/'],
   ['coliving-for-it-professionals', '/coliving-for-it-professionals/'],
   ['pg-for-students', '/pg-for-students/'],
+  ['privacy-policy', '/privacy-policy/'],
+  ['terms-of-use', '/terms-of-use/'],
+  ['terms-and-conditions', '/terms-of-use/'],
 ];
 
 export default function App() {
@@ -43,6 +70,7 @@ export default function App() {
         <Route element={<SiteLayout />}>
           <Route index element={<Home />} />
           <Route path="/about-us/" element={<AboutUs />} />
+          <Route path="/narenn-founder/" element={<Founder />} />
           <Route path="/rooms/" element={<Rooms />} />
           <Route path="/rooms/single-sharing/" element={<SingleSharing />} />
           <Route path="/rooms/double-sharing/" element={<DoubleSharing />} />
@@ -51,19 +79,23 @@ export default function App() {
           <Route path="/amenities/" element={<Amenities />} />
           <Route path="/food/" element={<Food />} />
           <Route path="/locations/madhapur/" element={<Madhapur />} />
-          <Route path="/properties/" element={<ComingSoon pageKey="properties" />} />
-          <Route path="/properties/narenn-elite/" element={<ComingSoon pageKey="properties-narenn-elite" />} />
-          <Route path="/properties/narenn-crown/" element={<ComingSoon pageKey="properties-narenn-crown" />} />
-          <Route path="/properties/narenn-pinnacle/" element={<ComingSoon pageKey="properties-narenn-pinnacle" />} />
-          <Route path="/properties/narenn-supreme/" element={<ComingSoon pageKey="properties-narenn-supreme" />} />
-          <Route path="/events/" element={<ComingSoon pageKey="events" />} />
-          <Route path="/contact-us/" element={<ComingSoon pageKey="contact-us" />} />
-          <Route path="/faq/" element={<ComingSoon pageKey="faq" />} />
-          <Route
-            path="/coliving-for-it-professionals/"
-            element={<ComingSoon pageKey="coliving-for-it-professionals" />}
-          />
-          <Route path="/pg-for-students/" element={<ComingSoon pageKey="pg-for-students" />} />
+          <Route path="/locations/hitech-city/" element={<HitechCity />} />
+          <Route path="/locations/gachibowli/" element={<Gachibowli />} />
+          <Route path="/locations/kondapur/" element={<Kondapur />} />
+          <Route path="/properties/" element={<Properties />} />
+          <Route path="/properties/narenn-elite/" element={<NarennElite />} />
+          <Route path="/properties/narenn-crown/" element={<NarennCrown />} />
+          <Route path="/properties/narenn-pinnacle/" element={<NarennPinnacle />} />
+          <Route path="/properties/narenn-supreme/" element={<NarennSupreme />} />
+          <Route path="/events/" element={<Events />} />
+          <Route path="/blog/" element={<Blog />} />
+          <Route path="/blog/:slug/" element={<BlogPost />} />
+          <Route path="/contact-us/" element={<ContactUs />} />
+          <Route path="/faq/" element={<Faq />} />
+          <Route path="/coliving-for-it-professionals/" element={<ColivingItProfessionals />} />
+          <Route path="/pg-for-students/" element={<PgForStudents />} />
+          <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-use/" element={<TermsOfUse />} />
           {REDIRECTS.map(([from, to]) => (
             <Route key={from} path={`/${from}`} element={<Navigate to={to} replace />} />
           ))}

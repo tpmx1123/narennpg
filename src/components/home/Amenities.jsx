@@ -6,12 +6,12 @@ export default function Amenities() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-8 lg:mb-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-16">
           <div className="shrink-0">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-[#FBBD45] uppercase block mb-3">
+            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
               Premium Amenities
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
               Built for IT Pros <br />
-              <span className="text-[#FBBD45] italic font-medium">&amp; Students Alike.</span>
+              <span className="text-brand-gold italic font-medium">&amp; Students Alike.</span>
             </h2>
           </div>
 

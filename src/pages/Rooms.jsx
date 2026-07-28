@@ -14,7 +14,8 @@ import {
   RoomsFaq,
 } from '../components/rooms';
 import { ROOMS_PAGE, ROOMS_FAQS } from '../data/roomsData';
-import { PHONE_DISPLAY, PHONE_TEL, SITE_URL } from '../data/sitePages';
+import { SITE_URL } from '../data/sitePages';
+import { PhoneWhatsAppLinks } from '../components/ui/ContactText';
 
 export default function Rooms() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -97,13 +98,7 @@ export default function Rooms() {
             <p>
               Popular sharing types fill quickly, especially at the start of the month. The smartest
               move is to visit, choose your room and reserve it before it is gone. Call{' '}
-              <a
-                href={`tel:${PHONE_TEL}`}
-                className="text-brand-gold font-semibold hover:underline"
-              >
-                {PHONE_DISPLAY}
-              </a>{' '}
-              or{' '}
+              <PhoneWhatsAppLinks /> or{' '}
               <Link
                 to="/contact-us/"
                 className="text-brand-gold font-semibold hover:underline"

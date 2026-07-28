@@ -1,7 +1,10 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import { PHONE_DISPLAY, PHONE_TEL } from '../../../data/sitePages';
+import { PhoneWhatsAppLinks } from '../../ui/ContactText';
 
 const EASE = [0.16, 1, 0.3, 1];
+
+const LINK_CLASS =
+  'text-brand-burgundy font-semibold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-sm';
 
 export default function TripleRoomNot() {
   const reduceMotion = useReducedMotion();
@@ -19,7 +22,7 @@ export default function TripleRoomNot() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             Honest Floor
           </span>
-          <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-[2.15rem] text-brand-green tracking-tight leading-[1.12]">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             What Triple Sharing{' '}
             <span className="text-brand-gold italic font-medium">Is Not</span>
           </h2>
@@ -34,14 +37,7 @@ export default function TripleRoomNot() {
             wardrobes, individual study space, air conditioning, fibre WiFi, daily housekeeping and
             four meals a day — in VIP Hills, Madhapur. That is the floor at Narenn Living, not a
             compromise on it. Come and look at one before you assume the price implies the quality.
-            Call{' '}
-            <a
-              href={`tel:${PHONE_TEL}`}
-              className="text-brand-burgundy font-semibold hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-sm"
-            >
-              {PHONE_DISPLAY}
-            </a>
-            .
+            Call <PhoneWhatsAppLinks className={LINK_CLASS} />.
           </p>
         </div>
       </div>

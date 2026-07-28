@@ -5,9 +5,9 @@ import { Phone, Wifi, Wind, UtensilsCrossed, Sparkles, ChevronUp } from 'lucide-
 import {
   SINGLE_SHARING_BOOKING,
   SINGLE_SHARING_RATES,
-  SINGLE_SHARING_SHARE_SAVE,
 } from '../../../data/singleSharingData';
-import { PHONE_DISPLAY, PHONE_TEL } from '../../../data/sitePages';
+import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../../data/sitePages';
+import IconSlideButton from '../../ui/IconSlideButton';
 
 const EASE = [0.22, 1, 0.36, 1];
 const FADE = { duration: 0.15, ease: 'easeOut' };
@@ -19,10 +19,6 @@ const TRUST_ICONS = {
   WiFi: Wifi,
   Housekeeping: Sparkles,
 };
-
-function formatPrice(n) {
-  return n.toLocaleString('en-IN');
-}
 
 function SegmentedToggle({ options, value, onChange, ariaLabel }) {
   return (
@@ -54,13 +50,6 @@ function SegmentedToggle({ options, value, onChange, ariaLabel }) {
   );
 }
 
-function resolveMonthlyPrice(tier, climate) {
-  if (tier === 'small') return SINGLE_SHARING_RATES.monthly.small.price;
-  return climate === 'ac'
-    ? SINGLE_SHARING_RATES.monthly.standard.ac.price
-    : SINGLE_SHARING_RATES.monthly.standard.nonAc.price;
-}
-
 function resolveProductLabel(billing, tier, climate) {
   if (billing === 'daily') return SINGLE_SHARING_RATES.daily.productName;
   if (tier === 'small') return SINGLE_SHARING_RATES.monthly.small.productName;
@@ -76,10 +65,6 @@ function BookingCardBody({ onBookVisit, compact = false }) {
   const [climate, setClimate] = useState('nonAc');
 
   const isMonthly = billing === 'monthly';
-  const price = isMonthly
-    ? resolveMonthlyPrice(tier, climate)
-    : SINGLE_SHARING_RATES.daily.price;
-  const unit = isMonthly ? 'month' : 'day';
   const ctaLabel = isMonthly ? 'Book This Room' : 'Book a Daily Stay';
   const productLabel = resolveProductLabel(billing, tier, climate);
 
@@ -156,26 +141,21 @@ function BookingCardBody({ onBookVisit, compact = false }) {
 
       <div className="mt-4">
         <AnimatePresence mode="wait" initial={false}>
-          <motion.div key={`${billing}-${tier}-${climate}-${price}`} {...fadeProps}>
+          <motion.div key={`${billing}-${tier}-${climate}`} {...fadeProps}>
             <p className="text-[11px] font-bold tracking-[0.18em] text-brand-gold uppercase mb-2">
               {productLabel}
             </p>
-            <p className="font-display text-3xl sm:text-4xl font-semibold text-brand-green tabular-nums tracking-tight">
-              ₹{formatPrice(price)}
-              <span className="text-sm font-sans font-medium text-brand-charcoal-light ml-1.5">
-                /{unit}
-              </span>
+            <p className="font-display text-xl sm:text-2xl font-semibold text-brand-green tracking-tight">
+              Enquire for current rates
             </p>
 
             {isMonthly ? (
               <>
                 <p className="mt-2 text-[11px] leading-relaxed text-brand-charcoal-light/80">
-                  {SINGLE_SHARING_RATES.monthly.maintenanceNote}
+                  One-time maintenance applies · electricity billed separately
                 </p>
                 <p className="mt-2.5 text-xs leading-relaxed text-brand-charcoal-light/80">
-                  Prefer to share and save? ₹
-                  {formatPrice(SINGLE_SHARING_SHARE_SAVE.monthlyPerPerson)}
-                  /month per person for a Small Room, 2 Sharing — see{' '}
+                  Prefer to share? See{' '}
                   <Link
                     to="/rooms/double-sharing/"
                     className="font-semibold text-brand-burgundy underline underline-offset-2 hover:text-brand-burgundy-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-sm"
@@ -217,21 +197,27 @@ function BookingCardBody({ onBookVisit, compact = false }) {
 
       <div className={`flex flex-col gap-3 ${compact ? 'mt-3' : 'mt-6'}`}>
         {onBookVisit && (
-          <button
-            type="button"
-            onClick={() => onBookVisit()}
-            className="inline-flex items-center justify-center min-h-[44px] rounded-[10px] bg-brand-burgundy px-5 py-3 text-sm font-display font-bold text-white hover:bg-brand-burgundy-dark hover:scale-[1.02] transition-all duration-150 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold"
-          >
-            {ctaLabel} →
-          </button>
+          <IconSlideButton onClick={() => onBookVisit()} compact>
+            {ctaLabel}
+          </IconSlideButton>
         )}
-        <a
-          href={`tel:${PHONE_TEL}`}
-          className="inline-flex items-center justify-center gap-2 min-h-[44px] text-sm font-display font-bold text-brand-charcoal hover:text-brand-burgundy transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-md"
-        >
-          <Phone className="w-4 h-4 text-brand-gold" aria-hidden="true" />
-          {PHONE_DISPLAY}
-        </a>
+        <div className="flex flex-col items-center gap-1.5">
+          <a
+            href={`tel:${PHONE_TEL}`}
+            className="inline-flex items-center justify-center gap-2 min-h-[44px] text-sm font-display font-bold text-brand-charcoal hover:text-brand-burgundy transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-md"
+          >
+            <Phone className="w-4 h-4 text-brand-gold" aria-hidden="true" />
+            {PHONE_DISPLAY}
+          </a>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-semibold text-brand-burgundy hover:underline underline-offset-2"
+          >
+            WhatsApp
+          </a>
+        </div>
       </div>
     </>
   );
@@ -280,10 +266,7 @@ export default function SingleRoomStickyBookingCard({ onBookVisit }) {
             aria-expanded={sheetOpen}
           >
             <span className="font-display font-bold text-sm text-brand-green">
-              Book a Room ·{' '}
-              <span className="font-display tabular-nums">
-                from ₹{formatPrice(SINGLE_SHARING_RATES.monthly.small.price)}/mo
-              </span>
+              Book a Room · Enquire for rates
             </span>
             <ChevronUp
               className={`w-5 h-5 text-brand-burgundy transition-transform ${

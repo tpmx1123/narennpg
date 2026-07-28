@@ -14,7 +14,7 @@ export default function MadhapurWhy() {
 
   return (
     <section className="mb-14 lg:mb-16">
-      <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.15] text-center mb-8 lg:mb-10">
+      <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-8 lg:mb-10">
         {MADHAPUR_WHY.h2}
       </h2>
 

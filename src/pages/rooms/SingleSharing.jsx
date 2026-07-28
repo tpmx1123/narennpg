@@ -20,9 +20,9 @@ import {
 import {
   SINGLE_SHARING_FAQS,
   SINGLE_SHARING_PAGE,
-  SINGLE_SHARING_RATES,
 } from '../../data/singleSharingData';
-import { PHONE_DISPLAY, PHONE_TEL, SITE_URL } from '../../data/sitePages';
+import { SITE_URL } from '../../data/sitePages';
+import { PhoneWhatsAppLinks } from '../../components/ui/ContactText';
 
 export default function SingleSharing() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -49,49 +49,6 @@ export default function SingleSharing() {
           image: SINGLE_SHARING_PAGE.ogImage,
           url: canonical,
           brand: organizationRef(),
-          offers: [
-            {
-              '@type': 'Offer',
-              name: SINGLE_SHARING_RATES.monthly.small.schemaName,
-              priceCurrency: SINGLE_SHARING_RATES.currency,
-              price: String(SINGLE_SHARING_RATES.monthly.small.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Monthly rent for Small Room, 1 Sharing',
-              unitText: 'MONTH',
-            },
-            {
-              '@type': 'Offer',
-              name: SINGLE_SHARING_RATES.monthly.standard.nonAc.schemaName,
-              priceCurrency: SINGLE_SHARING_RATES.currency,
-              price: String(SINGLE_SHARING_RATES.monthly.standard.nonAc.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Monthly rent for Standard Room, Non-AC, 1 Sharing',
-              unitText: 'MONTH',
-            },
-            {
-              '@type': 'Offer',
-              name: SINGLE_SHARING_RATES.monthly.standard.ac.schemaName,
-              priceCurrency: SINGLE_SHARING_RATES.currency,
-              price: String(SINGLE_SHARING_RATES.monthly.standard.ac.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Monthly rent for Standard Room, AC, 1 Sharing',
-              unitText: 'MONTH',
-            },
-            {
-              '@type': 'Offer',
-              name: SINGLE_SHARING_RATES.daily.schemaName,
-              priceCurrency: SINGLE_SHARING_RATES.currency,
-              price: String(SINGLE_SHARING_RATES.daily.price),
-              availability: 'https://schema.org/InStock',
-              url: canonical,
-              description: 'Day-wise / short-stay rate for single sharing — per day, not monthly',
-              unitCode: 'DAY',
-              unitText: 'DAY',
-            },
-          ],
         },
         buildBreadcrumbSchema([
           { name: 'Home', path: '/' },
@@ -172,14 +129,7 @@ export default function SingleSharing() {
           description={
             <p>
               Single rooms are our most limited inventory and reserve fastest. If privacy is a
-              priority for you, do not wait until they are gone. Call{' '}
-              <a
-                href={`tel:${PHONE_TEL}`}
-                className="text-brand-gold font-semibold hover:underline"
-              >
-                {PHONE_DISPLAY}
-              </a>{' '}
-              or{' '}
+              priority for you, do not wait until they are gone. Call <PhoneWhatsAppLinks /> or{' '}
               <Link
                 to="/contact-us/"
                 className="text-brand-gold font-semibold hover:underline"

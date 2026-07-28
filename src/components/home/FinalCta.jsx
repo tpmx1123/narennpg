@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CurvedInput from '../ui/CurvedInput';
-import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
+import ContactText from '../ui/ContactText';
+import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 
 const CTA_IMAGE =
   'https://res.cloudinary.com/dmaeijlc/image/upload/v1784195917/image-13-2_xarwah.webp';
@@ -66,7 +67,15 @@ export default function FinalCta({
                 {title}
               </h2>
               <div className="text-sm sm:text-base text-white/85 leading-relaxed mb-6 max-w-lg">
-                {typeof description === 'string' ? <p>{description}</p> : description}
+                {typeof description === 'string' ? (
+                  <p>
+                    <ContactText linkClassName="text-brand-gold font-semibold hover:underline">
+                      {description}
+                    </ContactText>
+                  </p>
+                ) : (
+                  description
+                )}
               </div>
 
               <div className="max-w-lg">
@@ -96,12 +105,21 @@ export default function FinalCta({
                   icon={PhoneIcon}
                 />
                 <p className="mt-4 text-[11px] text-white/60 leading-relaxed">
-                  Or call us directly on{' '}
+                  Or call us on{' '}
                   <a
                     href={`tel:${PHONE_TEL}`}
                     className="text-brand-gold font-semibold hover:underline"
                   >
                     {PHONE_DISPLAY}
+                  </a>
+                  {' · '}
+                  <a
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-gold font-semibold hover:underline"
+                  >
+                    WhatsApp
                   </a>
                   . Read our{' '}
                   <Link to="/contact-us/" className="underline underline-offset-2 hover:text-white">

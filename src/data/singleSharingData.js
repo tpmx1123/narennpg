@@ -23,7 +23,7 @@ export const SINGLE_SHARING_RATES = {
         schemaName: 'Single Sharing - Standard Room (AC)',
       },
     },
-    maintenanceNote: '+ ₹3,000 one-time maintenance · electricity billed separately',
+    maintenanceNote: 'One-time maintenance applies · electricity billed separately',
   },
   daily: {
     price: 2500,

@@ -1,0 +1,12 @@
+export { default as ItHero } from './ItHero';
+export { default as ItIntro } from './ItIntro';
+export { default as ItNeeds } from './ItNeeds';
+export { default as ItCommute } from './ItCommute';
+export { default as ItWfh } from './ItWfh';
+export { default as ItRecharge } from './ItRecharge';
+export { default as ItInclusive } from './ItInclusive';
+export { default as ItBook } from './ItBook';
+export { default as ItShifts } from './ItShifts';
+export { default as ItInfra } from './ItInfra';
+export { default as ItMaths } from './ItMaths';
+export { default as ItFaq } from './ItFaq';

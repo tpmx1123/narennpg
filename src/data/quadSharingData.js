@@ -13,7 +13,7 @@ export const QUAD_SHARING_RATES = {
       price: 13000,
       schemaName: 'Four Sharing — 4 Sharing (AC)',
     },
-    maintenanceNote: '+ ₹3,000 one-time maintenance · electricity billed separately',
+    maintenanceNote: 'One-time maintenance applies · electricity billed separately',
   },
   daily: {
     price: 1000,

@@ -13,7 +13,7 @@ export const DOUBLE_SHARING_RATES = {
       price: 21500,
       schemaName: 'Double Sharing - 2 Sharing (AC)',
     },
-    maintenanceNote: '+ ₹3,000 one-time maintenance · electricity billed separately',
+    maintenanceNote: 'One-time maintenance applies · electricity billed separately',
   },
   daily: {
     price: 1400,

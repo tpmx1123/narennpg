@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Phone, Wifi, Wind, UtensilsCrossed, Sparkles, ChevronUp } from 'lucide-react';
-import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
+import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
+import IconSlideButton from '../ui/IconSlideButton';
 
 const EASE = [0.22, 1, 0.36, 1];
 const FADE = { duration: 0.15, ease: 'easeOut' };
@@ -17,10 +18,6 @@ const TRUST_ICONS = {
 
 const linkClass =
   'font-semibold text-brand-burgundy underline underline-offset-2 hover:text-brand-burgundy-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-sm';
-
-function formatPrice(n) {
-  return n.toLocaleString('en-IN');
-}
 
 function SegmentedToggle({ options, value, onChange, ariaLabel }) {
   return (
@@ -74,12 +71,6 @@ function BookingCardBody({ onBookVisit, rates, booking, compact = false }) {
   const [climate, setClimate] = useState('nonAc');
 
   const isMonthly = billing === 'monthly';
-  const price = isMonthly
-    ? climate === 'ac'
-      ? rates.monthly.ac.price
-      : rates.monthly.nonAc.price
-    : rates.daily.price;
-  const unit = isMonthly ? 'month' : 'day';
   const ctaLabel = isMonthly ? 'Book This Room' : 'Book a Daily Stay';
   const productLabel = isMonthly
     ? booking.monthlyProductLabels[climate]
@@ -133,21 +124,18 @@ function BookingCardBody({ onBookVisit, rates, booking, compact = false }) {
 
       <div className="mt-4">
         <AnimatePresence mode="wait" initial={false}>
-          <motion.div key={`${billing}-${climate}-${price}`} {...fadeProps}>
+          <motion.div key={`${billing}-${climate}`} {...fadeProps}>
             <p className="text-[11px] font-bold tracking-[0.18em] text-brand-gold uppercase mb-2">
               {productLabel}
             </p>
-            <p className="font-display text-3xl sm:text-4xl font-semibold text-brand-green tabular-nums tracking-tight">
-              ₹{formatPrice(price)}
-              <span className="text-sm font-sans font-medium text-brand-charcoal-light ml-1.5">
-                /{unit}
-              </span>
+            <p className="font-display text-xl sm:text-2xl font-semibold text-brand-green tracking-tight">
+              Enquire for current rates
             </p>
 
             {isMonthly ? (
               <>
                 <p className="mt-2 text-[11px] leading-relaxed text-brand-charcoal-light/80">
-                  {rates.monthly.maintenanceNote}
+                  One-time maintenance applies · electricity billed separately
                 </p>
                 <MonthlyHint parts={booking.monthlyHint} />
               </>
@@ -183,21 +171,30 @@ function BookingCardBody({ onBookVisit, rates, booking, compact = false }) {
 
       <div className={`flex flex-col gap-3 ${compact ? 'mt-3' : 'mt-6'}`}>
         {onBookVisit && (
-          <button
-            type="button"
+          <IconSlideButton
             onClick={() => onBookVisit({ roomType: booking.roomType })}
-            className="inline-flex items-center justify-center min-h-[44px] rounded-[10px] bg-brand-burgundy px-5 py-3 text-sm font-display font-bold text-white hover:bg-brand-burgundy-dark hover:scale-[1.02] transition-all duration-150 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold"
+            compact
           >
-            {ctaLabel} →
-          </button>
+            {ctaLabel}
+          </IconSlideButton>
         )}
-        <a
-          href={`tel:${PHONE_TEL}`}
-          className="inline-flex items-center justify-center gap-2 min-h-[44px] text-sm font-display font-bold text-brand-charcoal hover:text-brand-burgundy transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-md"
-        >
-          <Phone className="w-4 h-4 text-brand-gold" aria-hidden="true" />
-          {PHONE_DISPLAY}
-        </a>
+        <div className="flex flex-col items-center gap-1.5">
+          <a
+            href={`tel:${PHONE_TEL}`}
+            className="inline-flex items-center justify-center gap-2 min-h-[44px] text-sm font-display font-bold text-brand-charcoal hover:text-brand-burgundy transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-md"
+          >
+            <Phone className="w-4 h-4 text-brand-gold" aria-hidden="true" />
+            {PHONE_DISPLAY}
+          </a>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-semibold text-brand-burgundy hover:underline underline-offset-2"
+          >
+            WhatsApp
+          </a>
+        </div>
       </div>
     </>
   );
@@ -246,10 +243,7 @@ export default function RoomClimateStickyBookingCard({ onBookVisit, rates, booki
             aria-expanded={sheetOpen}
           >
             <span className="font-display font-bold text-sm text-brand-green">
-              Book a Room ·{' '}
-              <span className="font-display tabular-nums">
-                from ₹{formatPrice(rates.monthly.nonAc.price)}/mo
-              </span>
+              Book a Room · Enquire for rates
             </span>
             <ChevronUp
               className={`w-5 h-5 text-brand-burgundy transition-transform ${

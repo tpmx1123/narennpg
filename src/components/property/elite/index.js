@@ -1,0 +1,10 @@
+export { default as EliteHero } from './EliteHero';
+export { default as EliteIntro } from './EliteIntro';
+export { default as EliteHighlights } from './EliteHighlights';
+export { default as EliteWhy } from './EliteWhy';
+export { default as EliteAmenities } from './EliteAmenities';
+export { default as EliteRooms } from './EliteRooms';
+export { default as EliteIdealFor } from './EliteIdealFor';
+export { default as EliteMap } from './EliteMap';
+export { default as EliteOthers } from './EliteOthers';
+export { default as EliteFaq } from './EliteFaq';

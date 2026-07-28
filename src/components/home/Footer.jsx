@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { RESIDENCES } from '../../data/homeData';
+import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 
 const FOOTER_LOGO =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784010508/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo.png';
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784012843/narennlogo_opx4st.png';
+
+const FOOTER_ORNAMENT =
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784975018/f51c22a1-fcd7-429f-95dc-dcc512f1285a_-_Copy_ah0mdw.png';
 
 function FacebookIcon({ className }) {
   return (
@@ -51,11 +55,12 @@ const SOCIAL_LINKS = [
   { label: 'Facebook', href: 'https://www.facebook.com/', Icon: FacebookIcon, color: '#1877F2' },
   { label: 'Instagram', href: 'https://www.instagram.com/', Icon: InstagramIcon, color: null },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/', Icon: LinkedInIcon, color: '#0A66C2' },
-  { label: 'WhatsApp', href: 'https://wa.me/917075985666', Icon: WhatsAppIcon, color: '#25D366' },
+  { label: 'WhatsApp', href: WHATSAPP_URL, Icon: WhatsAppIcon, color: '#25D366' },
 ];
 
 const COMPANY_LINKS = [
   { label: 'About Us', href: '/about-us/' },
+  { label: "Founder's Note", href: '/narenn-founder/' },
   { label: 'Our Properties', href: '/properties/' },
   { label: 'Amenities', href: '/amenities/' },
   { label: 'FAQ', href: '/faq/' },
@@ -65,6 +70,7 @@ const EXPLORE_LINKS = [
   { label: 'Explore our rooms', href: '/rooms/' },
   { label: 'Premium amenities', href: '/amenities/' },
   { label: 'Homely food menu', href: '/food/' },
+  { label: 'Read our blog', href: '/blog/' },
   { label: 'PG in Madhapur', href: '/locations/madhapur/' },
 ];
 
@@ -79,13 +85,13 @@ export default function Footer() {
   return (
     <footer className="bg-brand-green-pale border-t border-brand-gold/30 relative z-10 pt-28 sm:pt-32 lg:pt-36 pb-8">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-4 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-4 mb-0">
           <div className="lg:col-span-3 space-y-4 max-w-xs">
             <Link to="/" className="flex justify-center">
               <img
                 src={FOOTER_LOGO}
                 alt="Narenn Living"
-                className="h-20 sm:h-24 w-auto object-contain"
+                className="h-16 sm:h-20 w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-brand-charcoal-light leading-relaxed text-center">
@@ -155,8 +161,21 @@ export default function Footer() {
                 <span className="w-8 h-8 rounded-full bg-white border border-brand-gold/30 flex items-center justify-center shrink-0 shadow-sm">
                   <Phone className="w-4 h-4 text-brand-burgundy" />
                 </span>
-                <a href="tel:+917075985666" className="hover:text-brand-burgundy transition-colors">
-                  +91 70759 85666
+                <a href={`tel:${PHONE_TEL}`} className="hover:text-brand-burgundy transition-colors">
+                  +91 {PHONE_DISPLAY}
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <span className="w-8 h-8 rounded-full bg-white border border-brand-gold/30 flex items-center justify-center shrink-0 shadow-sm">
+                  <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                </span>
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-burgundy transition-colors"
+                >
+                  WhatsApp
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
@@ -201,13 +220,22 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="flex justify-center -mt-24 sm:-mt-28 lg:-mt-40 pb-6 lg:pb-8">
+          <img
+            src={FOOTER_ORNAMENT}
+            alt=""
+            aria-hidden="true"
+            className="w-[min(100%,880px)] h-auto max-h-32 sm:max-h-36 lg:max-h-40 object-contain"
+          />
+        </div>
+
         <div className="pt-6 border-t border-brand-green/15 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-charcoal-light">
           <span>&copy; {new Date().getFullYear()} Narenn Group. All rights reserved.</span>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-            <a href="#" className="hover:text-brand-burgundy transition-colors">
+            <a href="/privacy-policy/" className="hover:text-brand-burgundy transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-brand-burgundy transition-colors">
+            <a href="/terms-of-use/" className="hover:text-brand-burgundy transition-colors">
               Terms of Use
             </a>
             <a href="/contact-us/" className="hover:text-brand-burgundy transition-colors">

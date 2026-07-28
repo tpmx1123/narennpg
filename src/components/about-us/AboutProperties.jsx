@@ -23,7 +23,7 @@ export default function AboutProperties() {
         {/* Residences */}
         <article className="md:col-span-1 bg-white p-7 sm:p-8 rounded-xl border border-brand-gold/20 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
           <div>
-            <span className="text-[11px] font-bold tracking-[0.2em] text-brand-burgundy uppercase block mb-3">
+            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
               Residences
             </span>
             <h2 className="font-display font-bold text-xl sm:text-2xl text-brand-charcoal tracking-tight mb-6">
@@ -69,10 +69,10 @@ export default function AboutProperties() {
           />
           <div className="relative z-10 p-7 sm:p-8 lg:p-10 h-full flex flex-col justify-between">
             <div>
-              <span className="text-[11px] font-bold tracking-[0.2em] text-brand-burgundy uppercase block mb-3">
+              <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
                 Why Narenn
               </span>
-              <h2 className="font-display font-bold text-xl sm:text-2xl text-brand-green tracking-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6">
                 What Makes Us <span className="text-brand-gold italic font-medium">Different</span>
               </h2>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">

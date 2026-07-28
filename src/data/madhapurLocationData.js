@@ -77,8 +77,8 @@ export const MADHAPUR_PREMIUM = {
     'Fully Furnished Designer Spaces',
     'No Hidden Maintenance Fees',
   ],
-  savings: 'Save ₹50k+',
-  savingsNote: 'Initial setup & deposit vs a standard 2BHK.',
+  savings: 'Zero Brokerage',
+  savingsNote: 'Skip deposits and setup costs of a typical 2BHK.',
 };
 
 export const MADHAPUR_MINUTES = {
@@ -137,7 +137,7 @@ export const MADHAPUR_AUDIENCE = {
 export const MADHAPUR_SUBURBS = {
   h2: 'Why Madhapur Beats the Cheaper Suburbs',
   intro:
-    "It's tempting to rent 30 minutes away to save ₹3,000. But the hidden costs of a long commute are much higher than you think.",
+    "It's tempting to rent farther away for a lower sticker rent. But the hidden costs of a long commute are much higher than you think.",
   stats: [
     {
       value: '375 hrs',
@@ -146,7 +146,7 @@ export const MADHAPUR_SUBURBS = {
       icon: 'Clock',
     },
     {
-      value: '₹4k+',
+      value: 'Less travel',
       label: 'Fuel & Travel Savings',
       detail: 'Eliminate the high cost of daily cabs or fuel during peak traffic hours.',
       icon: 'Wallet',
@@ -255,6 +255,6 @@ export const MADHAPUR_FAQS = [
   {
     question: 'How does the cost compare to renting a flat?',
     answer:
-      'While the monthly rent might seem comparable to a share of a flat, a PG at Narenn includes electricity, daily housekeeping, 3 meals a day, WiFi, and maintenance. In a flat, these hidden costs can add ₹8,000 - ₹12,000 to your monthly budget, not including the heavy furniture investment and brokerage.',
+      'While a flat share can look cheaper on paper, a PG at Narenn includes daily housekeeping, meals, WiFi and maintenance. In a flat, furniture, brokerage, utilities and food often become separate monthly costs.',
   },
 ];

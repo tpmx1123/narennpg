@@ -17,7 +17,7 @@ export default function AmenitiesMaintenance() {
         className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center"
       >
         <div className="lg:col-span-7">
-          <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.12] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6">
             {plain}{' '}
             <span className="text-brand-gold italic font-medium">{AMENITIES_MAINTENANCE.h2Accent}</span>
           </h2>

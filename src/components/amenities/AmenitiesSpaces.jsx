@@ -10,7 +10,7 @@ export default function AmenitiesSpaces() {
   return (
     <section className="mb-14 lg:mb-16">
       <div className="text-center max-w-5xl mx-auto mb-10">
-        <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight leading-[1.12]">
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
           {plain}{' '}
           <span className="text-brand-gold italic font-medium">{AMENITIES_SPACES.h2Accent}</span>
         </h2>

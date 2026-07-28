@@ -1,0 +1,10 @@
+export { default as PinnacleHero } from './PinnacleHero';
+export { default as PinnacleIntro } from './PinnacleIntro';
+export { default as PinnacleHighlights } from './PinnacleHighlights';
+export { default as PinnacleWhy } from './PinnacleWhy';
+export { default as PinnacleAmenities } from './PinnacleAmenities';
+export { default as PinnacleRooms } from './PinnacleRooms';
+export { default as PinnacleIdealFor } from './PinnacleIdealFor';
+export { default as PinnacleMap } from './PinnacleMap';
+export { default as PinnacleOthers } from './PinnacleOthers';
+export { default as PinnacleFaq } from './PinnacleFaq';

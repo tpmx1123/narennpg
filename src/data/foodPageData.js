@@ -201,9 +201,9 @@ export const FOOD_SAVINGS = {
   intro:
     "Ordering in every day isn't just unhealthy; it's a financial drain. With Narenn Living, premium meals are included in your rent, saving you significant monthly costs.",
   tagline: 'Smart Living, Smarter Savings',
-  savings: '₹12,000+',
-  label: 'Estimated Monthly Savings',
-  note: '*Based on average daily ordering costs for 4 meals in urban centers',
+  savings: 'Meals Included',
+  label: 'No Extra Food Budget',
+  note: '*Four home-style meals a day are part of your stay — no daily ordering needed',
   image:
     'https://res.cloudinary.com/dmaeijlc/image/upload/v1784631361/wmremove-transformed_7_uubsmx.png',
   alt: 'Home-style Indian meal with dal, rice, curry and roti at Narenn Living',

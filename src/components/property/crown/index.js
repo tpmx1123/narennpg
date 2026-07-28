@@ -1,0 +1,10 @@
+export { default as CrownHero } from './CrownHero';
+export { default as CrownIntro } from './CrownIntro';
+export { default as CrownHighlights } from './CrownHighlights';
+export { default as CrownWhy } from './CrownWhy';
+export { default as CrownAmenities } from './CrownAmenities';
+export { default as CrownRooms } from './CrownRooms';
+export { default as CrownIdealFor } from './CrownIdealFor';
+export { default as CrownMap } from './CrownMap';
+export { default as CrownOthers } from './CrownOthers';
+export { default as CrownFaq } from './CrownFaq';
