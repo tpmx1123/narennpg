@@ -5,10 +5,10 @@ export default function BlogPostSidebar({ currentSlug, sidebarCta, onBookVisit }
   const recentPosts = BLOG_POSTS.filter((post) => post.slug !== currentSlug).slice(0, 3);
 
   return (
-    <aside className="lg:col-span-4">
-      <div className="sticky top-24 space-y-6">
-        <div className="bg-brand-charcoal text-white p-6 rounded-2xl shadow-xl">
-          <h3 className="text-lg font-display font-semibold mb-2">{BLOG_NEWSLETTER.title}</h3>
+    <aside className="lg:col-span-4 min-w-0">
+      <div className="lg:sticky lg:top-24 space-y-5 sm:space-y-6">
+        <div className="bg-brand-charcoal text-white p-5 sm:p-6 rounded-2xl shadow-xl">
+          <h3 className="text-base sm:text-lg font-display font-semibold mb-2">{BLOG_NEWSLETTER.title}</h3>
           <p className="text-white/70 text-xs sm:text-sm mb-4 leading-relaxed">{BLOG_NEWSLETTER.body}</p>
           <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
             <input
@@ -29,7 +29,7 @@ export default function BlogPostSidebar({ currentSlug, sidebarCta, onBookVisit }
           </p>
         </div>
 
-        <div className="bg-brand-cream-dark p-6 rounded-2xl">
+        <div className="bg-brand-cream-dark p-5 sm:p-6 rounded-2xl">
           <h3 className="text-xs font-display font-bold text-brand-charcoal mb-4 uppercase tracking-widest border-b border-brand-gold/20 pb-2">
             Recent Stories
           </h3>
@@ -50,12 +50,12 @@ export default function BlogPostSidebar({ currentSlug, sidebarCta, onBookVisit }
         </div>
 
         {sidebarCta ? (
-          <div className="relative rounded-2xl overflow-hidden aspect-4/3 flex items-end p-6 group">
+          <div className="relative rounded-2xl overflow-hidden aspect-4/3 flex items-end p-5 sm:p-6 group">
             <div className="absolute inset-0 z-0">
               <img
                 src={sidebarCta.image}
                 alt={sidebarCta.imageAlt}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-brand-burgundy/40 mix-blend-multiply" />
               <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />

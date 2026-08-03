@@ -3,7 +3,7 @@ import FoodSectionHeading from './FoodSectionHeading';
 
 export default function FoodHome() {
   return (
-    <section className="mb-14 lg:mb-16 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+    <section className="mb-10 sm:mb-14 lg:mb-16 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center">
       <div className="lg:col-span-6 order-2 lg:order-1">
         <FoodSectionHeading title={FOOD_HOME.h2} />
         <div className="space-y-4 mt-4">
@@ -21,7 +21,7 @@ export default function FoodHome() {
         <img
           src={FOOD_HOME.image}
           alt={FOOD_HOME.alt}
-          className="w-full aspect-[16/9] object-cover rounded-2xl border border-brand-gold/20 shadow-[0_20px_50px_-24px_rgba(15,61,46,0.18)]"
+          className="w-full max-w-full aspect-video object-cover rounded-xl sm:rounded-2xl border border-brand-gold/20 shadow-[0_20px_50px_-24px_rgba(15,61,46,0.18)]"
         />
       </div>
     </section>

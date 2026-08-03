@@ -4,9 +4,9 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
 
 export default function FoodInspection() {
   return (
-    <section className="mb-14 lg:mb-16 space-y-12 lg:space-y-14">
+    <section className="mb-10 sm:mb-14 lg:mb-16 space-y-10 sm:space-y-12 lg:space-y-14">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
           Hygiene You Can{' '}
           <span className="text-brand-gold italic font-medium">Walk In and Inspect</span>
         </h2>
@@ -16,7 +16,7 @@ export default function FoodInspection() {
       </div>
 
       <div className="max-w-3xl mx-auto text-center pt-10 border-t border-brand-gold/20">
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
           Special Requirements and{' '}
           <span className="text-brand-gold italic font-medium">Off-Cycle Timings</span>
         </h2>

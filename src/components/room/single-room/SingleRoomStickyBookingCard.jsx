@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { Phone, Wifi, Wind, UtensilsCrossed, Sparkles, ChevronUp } from 'lucide-react';
+import { Wifi, Wind, UtensilsCrossed, Sparkles, ChevronUp } from 'lucide-react';
 import {
   SINGLE_SHARING_BOOKING,
   SINGLE_SHARING_RATES,
 } from '../../../data/singleSharingData';
-import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../../data/sitePages';
 import IconSlideButton from '../../ui/IconSlideButton';
 
 const EASE = [0.22, 1, 0.36, 1];
@@ -195,30 +194,13 @@ function BookingCardBody({ onBookVisit, compact = false }) {
         </ul>
       )}
 
-      <div className={`flex flex-col gap-3 ${compact ? 'mt-3' : 'mt-6'}`}>
-        {onBookVisit && (
+      {onBookVisit ? (
+        <div className={compact ? 'mt-3' : 'mt-6'}>
           <IconSlideButton onClick={() => onBookVisit()} compact>
             {ctaLabel}
           </IconSlideButton>
-        )}
-        <div className="flex flex-col items-center gap-1.5">
-          <a
-            href={`tel:${PHONE_TEL}`}
-            className="inline-flex items-center justify-center gap-2 min-h-[44px] text-sm font-display font-bold text-brand-charcoal hover:text-brand-burgundy transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold rounded-md"
-          >
-            <Phone className="w-4 h-4 text-brand-gold" aria-hidden="true" />
-            {PHONE_DISPLAY}
-          </a>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-semibold text-brand-burgundy hover:underline underline-offset-2"
-          >
-            WhatsApp
-          </a>
         </div>
-      </div>
+      ) : null}
     </>
   );
 }

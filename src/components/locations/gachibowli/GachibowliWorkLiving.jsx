@@ -10,19 +10,20 @@ export default function GachibowliWorkLiving() {
   const [src, setSrc] = useState(img.src);
 
   return (
-    <section className="mb-8 lg:mb-10">
+    <section className="mb-8 sm:mb-10 lg:mb-12">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.5, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center"
+        className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center"
       >
-        <div className="lg:col-span-7 space-y-4">
+        <div className="order-2 lg:order-1 lg:col-span-7 space-y-3.5 sm:space-y-4 min-w-0">
           <SectionHeading
             eyebrow={GACHIBOWLI_WORK_LIVING.eyebrow}
             title={GACHIBOWLI_WORK_LIVING.h2}
             accent={GACHIBOWLI_WORK_LIVING.h2Accent}
+            titleClassName="text-3xl sm:text-[2rem] lg:text-4xl"
           />
           {GACHIBOWLI_WORK_LIVING.paragraphs.map((para) => (
             <p
@@ -34,14 +35,14 @@ export default function GachibowliWorkLiving() {
           ))}
         </div>
 
-        <div className="lg:col-span-5">
-          <div className="overflow-hidden rounded-2xl aspect-[16/10] max-h-[280px] sm:max-h-[320px] border border-brand-gold/20 shadow-[0_16px_40px_-20px_rgba(15,61,46,0.16)]">
+        <div className="order-1 lg:order-2 lg:col-span-5">
+          <div className="overflow-hidden aspect-[16/10] max-h-[240px] sm:max-h-[320px] rounded-xl sm:rounded-2xl border border-brand-gold/20 shadow-[0_16px_40px_-20px_rgba(15,61,46,0.16)] w-full max-w-xl mx-auto lg:max-w-none">
             <img
               src={src}
               alt={img.alt}
               title={img.title}
               onError={() => setSrc(img.fallback)}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
               loading="lazy"
             />
           </div>

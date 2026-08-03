@@ -20,17 +20,17 @@ export default function GachibowliBookVisit({ onBookVisit }) {
   const [src, setSrc] = useState(bg.src);
 
   return (
-    <section className="relative mb-8 lg:mb-10 -mx-4 sm:-mx-6 lg:-mx-10 overflow-hidden">
+    <section className="relative mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-10 overflow-hidden">
       <img
         src={src}
         alt=""
         aria-hidden="true"
         onError={() => setSrc(bg.fallback)}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-brand-charcoal/70" aria-hidden="true" />
       <div
-        className="absolute inset-0 bg-gradient-to-b from-brand-green/40 via-brand-charcoal/50 to-brand-charcoal/75"
+        className="absolute inset-0 bg-linear-to-b from-brand-green/40 via-brand-charcoal/50 to-brand-charcoal/75"
         aria-hidden="true"
       />
 
@@ -39,12 +39,12 @@ export default function GachibowliBookVisit({ onBookVisit }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.5, ease: EASE }}
-        className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-10 py-12 lg:py-14"
+        className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-10 py-10 sm:py-12 lg:py-14"
       >
-        <p className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-5">
+        <p className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4 sm:mb-5">
           {GACHIBOWLI_BOOK.eyebrow}
         </p>
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-white tracking-tight leading-[1.15] mb-4">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-white tracking-tight leading-[1.15] mb-3 sm:mb-4">
           {GACHIBOWLI_BOOK.h2}
         </h2>
         <p className="text-sm sm:text-base text-white/85 leading-relaxed max-w-xl mx-auto">
@@ -53,7 +53,7 @@ export default function GachibowliBookVisit({ onBookVisit }) {
           </ContactText>
         </p>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
           {onBookVisit ? (
             <IconSlideButton onClick={() => onBookVisit()}>Book a Visit</IconSlideButton>
           ) : (
@@ -64,7 +64,7 @@ export default function GachibowliBookVisit({ onBookVisit }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp Narenn Living"
-            className="inline-flex items-center justify-center w-12 h-12 rounded-xl border border-white/30 text-[#25D366] bg-white/95 hover:bg-white transition-colors"
+            className="inline-flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-xl border border-white/30 text-[#25D366] bg-white/95 hover:bg-white transition-colors"
           >
             <WhatsAppIcon className="w-5 h-5" />
           </a>

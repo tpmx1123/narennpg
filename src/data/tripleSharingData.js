@@ -7,11 +7,11 @@ export const TRIPLE_SHARING_RATES = {
     productName: 'Triple Sharing — 3 Sharing',
     nonAc: {
       price: 16000,
-      schemaName: 'Triple Sharing — 3 Sharing (Non-AC)',
+      schemaName: 'Triple Sharing - 3 Sharing (Non-AC)',
     },
     ac: {
       price: 17200,
-      schemaName: 'Triple Sharing — 3 Sharing (AC)',
+      schemaName: 'Triple Sharing - 3 Sharing (AC)',
     },
     maintenanceNote: 'One-time maintenance applies · electricity billed separately',
   },
@@ -41,11 +41,11 @@ export const TRIPLE_SHARING_HERO = {
 
 export const TRIPLE_SHARING_BOOKING = {
   roomType: '3 Sharing',
-  availabilitySignal: 'Best value — fills fast at term start',
+  availabilitySignal: 'Best value - fills fast at term start',
   trustItems: ['AC', 'Meals', 'WiFi', 'Housekeeping'],
   monthlyProductLabels: {
-    ac: 'Triple Sharing — 3 Sharing (AC)',
-    nonAc: 'Triple Sharing — 3 Sharing (Non-AC)',
+    ac: 'Triple Sharing - 3 Sharing (AC)',
+    nonAc: 'Triple Sharing - 3 Sharing (Non-AC)',
   },
   monthlyHint: [
     'Want more personal space? See our ',
@@ -91,7 +91,7 @@ export const TRIPLE_SHARING_INCLUDES = [
 export const TRIPLE_SHARING_WHO = {
   h2: 'Who Triple Sharing Is Built For',
   paragraphs: [
-    'Triple sharing is the format we recommend to students, first-year freshers and anyone whose priority right now is keeping monthly outgo low without living somewhere grim. If you are out of the room from nine in the morning until eight at night — at college, at the office, at the gym — you are paying for a place to sleep, eat and recharge. Triple sharing prices that honestly.',
+    'Triple sharing is the format we recommend to students, first-year freshers and anyone whose priority right now is keeping monthly outgo low without living somewhere grim. If you are out of the room from nine in the morning until eight at night - at college, at the office, at the gym - you are paying for a place to sleep, eat and recharge. Triple sharing prices that honestly.',
     'It is also the fastest way into the VIP Hills postcode. The location, the food, the security and the community are identical to what a single-room resident gets. The only thing you trade is floor space, and at this stage of a career or a degree, that is usually the right trade to make.',
   ],
 };
@@ -99,9 +99,9 @@ export const TRIPLE_SHARING_WHO = {
 export const TRIPLE_SHARING_SPACE = {
   h2: 'Space That Actually Works for Three',
   points: [
-    'A larger room proportioned for three residents — not a double with a bed squeezed in',
+    'A larger room proportioned for three residents - not a double with a bed squeezed in',
     'Three individual beds with quality mattresses and bedding',
-    'Three separate lockable wardrobes — nobody shares storage',
+    'Three separate lockable wardrobes - nobody shares storage',
     'Individual study space and charging points per resident',
     'Air conditioning, fibre WiFi, daily housekeeping and four meals a day, exactly as in every other format',
   ],

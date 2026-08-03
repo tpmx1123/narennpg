@@ -153,7 +153,7 @@ const questionsToAskBeforeBookingPg = {
         {
           text: 'No amount of questioning replaces seeing the property yourself. Visit, inspect the actual room you would stay in, taste the food, check the cleanliness and get a feel for the atmosphere and community. If an operator is reluctant to let you visit or dodges your questions, treat that as a red flag. ',
         },
-        { type: 'link', href: '/faq/', text: 'Our FAQ' },
+        { type: 'link', href: '/faq/', text: 'our FAQ' },
         {
           text: ' answers many common questions, and we always welcome an in-person visit.',
         },

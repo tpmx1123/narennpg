@@ -7,18 +7,18 @@ import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
 export default function About() {
   const navigate = useNavigate();
   return (
-    <section id="about" className="py-14 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-4 items-center bg-white">
+    <section id="about" className="py-10 sm:py-14 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-4 items-center bg-white">
       
       {/* LEFT SIDE: Premium Cinematic Image — centered in column */}
-      <div className="lg:col-span-5 flex items-center justify-center self-center">
-        <div className="relative w-full max-w-[320px] sm:max-w-[360px] lg:max-w-[400px] h-[360px] sm:h-[420px] lg:h-[460px] rounded-3xl overflow-hidden shadow-xl group">
+      <div className="hidden lg:flex lg:col-span-5 items-center justify-center self-center">
+        <div className="relative w-full max-w-full sm:max-w-90 lg:max-w-100 h-70 sm:h-105 lg:h-115 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl group">
           <img 
             src="https://res.cloudinary.com/dmaeijlc/image/upload/v1785218189/phototune.ai_1785218104_t7bsvl.png" 
             alt="Premium co-living building interior in Madhapur, Hyderabad — Narenn Living VIP Hills"
             title="Narenn Living co-living in Madhapur"
             className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-80 pointer-events-none" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-80 pointer-events-none" />
         </div>
       </div>
 
@@ -28,12 +28,22 @@ export default function About() {
           From Day One
         </span>
         
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-3">
+        <h2 className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-3">
           Why Residents Choose <br />
           <span className="text-brand-gold italic font-medium">Narenn Living.</span>
         </h2>
+
+        <div className="lg:hidden relative w-full h-70 sm:h-105 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl mb-6">
+          <img
+            src="https://res.cloudinary.com/dmaeijlc/image/upload/v1785218189/phototune.ai_1785218104_t7bsvl.png"
+            alt="Premium co-living building interior in Madhapur, Hyderabad — Narenn Living VIP Hills"
+            title="Narenn Living co-living in Madhapur"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-80 pointer-events-none" />
+        </div>
         
-        <p className="text-brand-charcoal-light text-md leading-relaxed mb-3 max-w-3xl">
+        <p className="text-brand-charcoal-light text-sm sm:text-base leading-relaxed mb-3 max-w-3xl">
           We built Narenn Living around the things that actually matter when you move to a new city -
           food you look forward to, a room that feels yours, reliable internet, and people you can
           trust. Here is what every resident gets from day one:
@@ -51,7 +61,8 @@ export default function About() {
         </ul>
 
         {/* Action CTAs */}
-        <div className="flex flex-wrap items-center gap-6">
+        <div className="flex flex-row items-center justify-around sm:justify-start gap-3 sm:gap-6">
+         
           <IconSlideButton
             onClick={() => navigate('/about-us/')}
             radius={10}
@@ -62,13 +73,14 @@ export default function About() {
             textHoverColor="#1A1A1A"
             iconColor="#ffffff"
             iconHoverColor="#1A1A1A"
+            className="hidden sm:inline-flex"
           >
             Know More About Us
           </IconSlideButton>
           
           <a 
             href={`tel:${PHONE_TEL}`} 
-            className="flex items-center gap-2 text-brand-charcoal-light font-display font-bold text-sm hover:text-[#FBBD45] transition-colors group"
+            className="flex items-center gap-2 text-brand-charcoal-light font-display font-bold text-xs sm:text-sm hover:text-[#FBBD45] transition-colors group"
           >
             <Phone className="w-4 h-4 text-[#FBBD45] group-hover:animate-pulse" />
             +91 {PHONE_DISPLAY}

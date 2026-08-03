@@ -15,10 +15,10 @@ export default function AboutSafety() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-14 items-center"
       >
         <div className="order-2 lg:order-1">
-          <div className="rounded-xl overflow-hidden shadow-[0_16px_40px_-20px_rgba(15,61,46,0.2)] h-[280px] sm:h-[360px] lg:h-[400px]">
+          <div className="rounded-xl overflow-hidden shadow-[0_16px_40px_-20px_rgba(15,61,46,0.2)] h-55 sm:h-75 lg:h-100">
             <img
               src={security.src}
               alt={security.alt}
@@ -33,7 +33,7 @@ export default function AboutSafety() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {ABOUT_SAFETY.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {ABOUT_SAFETY.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">

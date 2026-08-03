@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import { HERO_SLIDES, RESIDENCES } from '../../data/homeData';
 
 const ease = [0.22, 1, 0.36, 1];
-const CARD_WIDTH = 280;
-const CARD_HEIGHT = 420;
 
 const PROPERTY_CARDS = RESIDENCES.map((res) => {
   const slide = HERO_SLIDES.find((s) => s.property === res.name);
@@ -27,8 +25,7 @@ function ResidenceCard({ res }) {
         scale: hovered ? 1.02 : 1,
       }}
       transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-      className="group relative shrink-0 overflow-hidden rounded-2xl border border-white/15 snap-start"
-      style={{ width: CARD_WIDTH, height: CARD_HEIGHT }}
+      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl border border-white/15 sm:snap-start"
     >
       <motion.video
         key={res.videoUrl}
@@ -91,10 +88,10 @@ export default function Residences() {
         <div className="mb-6 px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-10">
           <div className="shrink-0">
             <span className="text-[10px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-2 block">
-              Our Rooms
+              Our Properties
             </span>
             <h2 className="text-2xl sm:text-3xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
-              Rooms Designed <br />
+              Properties Designed <br />
               <span className="text-brand-gold italic font-medium">for Real Life.</span>
             </h2>
           </div>
@@ -113,7 +110,7 @@ export default function Residences() {
       </div>
 
       <div
-        className="flex gap-4 overflow-x-auto px-4 sm:px-6 lg:px-10 pb-2 scrollbar-none snap-x snap-mandatory"
+        className="grid grid-cols-1 gap-4 px-4 pb-2 sm:flex sm:overflow-x-auto sm:px-6 lg:px-10 sm:scrollbar-none sm:snap-x sm:snap-mandatory"
         style={{
           WebkitOverflowScrolling: 'touch',
           msOverflowStyle: 'none',

@@ -16,7 +16,7 @@ export default function AmenitiesFullList() {
         transition={{ duration: 0.55, ease: EASE }}
         className="max-w-5xl mx-auto"
       >
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-3">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-3">
           {plain}{' '}
           <span className="text-brand-gold italic font-medium">{AMENITIES_FULL_LIST.h2Accent}</span>
         </h2>
@@ -24,14 +24,18 @@ export default function AmenitiesFullList() {
           {AMENITIES_FULL_LIST.intro}
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {AMENITIES_FULL_LIST_ITEMS.map((item) => (
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          {AMENITIES_FULL_LIST_ITEMS.map((item, index) => (
             <div
               key={item}
-              className="flex items-start gap-3 bg-white p-4 rounded-xl border border-brand-gold/20 shadow-sm"
+              className={`flex items-start gap-2 sm:gap-3 bg-white p-3 sm:p-4 rounded-xl border border-brand-gold/20 shadow-sm ${
+                index === AMENITIES_FULL_LIST_ITEMS.length - 1
+                  ? 'col-span-2 w-full max-w-lg mx-auto lg:col-span-1 lg:max-w-none lg:mx-0'
+                  : ''
+              }`}
             >
-              <CheckCircle2 className="w-5 h-5 shrink-0 text-brand-burgundy mt-0.5" aria-hidden="true" />
-              <span className="text-sm text-brand-charcoal leading-relaxed">{item}</span>
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 text-brand-burgundy mt-0.5" aria-hidden="true" />
+              <span className="text-xs sm:text-sm text-brand-charcoal leading-relaxed">{item}</span>
             </div>
           ))}
         </div>

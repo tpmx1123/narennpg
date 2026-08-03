@@ -28,12 +28,14 @@ function MenuMealCard({ item }) {
   );
 }
 
-function DayTab({ label, active, onClick }) {
+function DayTab({ label, active, onClick, compact = false }) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className={`rounded-full border px-5 py-2.5 text-sm font-display font-bold transition-colors min-w-[7.5rem] ${
+      className={`shrink-0 rounded-full border py-2.5 text-sm font-display font-bold transition-colors ${
+        compact ? 'px-3.5 min-w-0 snap-start' : 'px-5 min-w-30'
+      } ${
         active
           ? 'border-brand-burgundy bg-brand-burgundy text-white shadow-sm'
           : 'border-brand-burgundy bg-transparent text-brand-burgundy hover:bg-brand-burgundy/5'
@@ -51,10 +53,10 @@ export default function FoodWeeklyMenu() {
   return (
     <section
       id="weekly-menu"
-      className="mb-14 lg:mb-16 py-10 lg:py-14 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-[#F2F0ED] border-y border-brand-gold/10"
+      className="mb-10 sm:mb-14 lg:mb-16 py-8 sm:py-10 lg:py-14 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-[#F2F0ED] border-y border-brand-gold/10"
     >
       <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
           This Week&apos;s Menu
         </h2>
         <p className="text-sm text-brand-charcoal-light leading-relaxed mt-3">
@@ -74,7 +76,7 @@ export default function FoodWeeklyMenu() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
           {WEEKLY_MENU[activeDay].map((item) => (
             <MenuMealCard key={`${activeDay}-${item.meal}`} item={item} />
           ))}
@@ -84,13 +86,14 @@ export default function FoodWeeklyMenu() {
       </div>
 
       <div className="md:hidden mt-8">
-        <div className="flex gap-2 overflow-x-auto pb-3 -mx-1 px-1 scrollbar-none">
+        <div className="flex gap-2 overflow-x-auto pb-3 -mx-1 px-1 scrollbar-none snap-x snap-mandatory">
           {Object.entries(DAY_LABELS).map(([key, label]) => (
             <DayTab
               key={key}
               label={label.slice(0, 3)}
               active={mobileOpenDay === key}
               onClick={() => setMobileOpenDay(key)}
+              compact
             />
           ))}
         </div>

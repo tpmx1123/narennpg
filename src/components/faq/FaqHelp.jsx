@@ -19,7 +19,7 @@ export default function FaqHelp({ onBookVisit }) {
   const { talkBg } = FAQ_IMAGES;
 
   return (
-    <section className="relative mb-16 lg:mb-20 -mx-4 sm:-mx-6 lg:-mx-10 overflow-hidden">
+    <section className="relative mb-10 sm:mb-14 lg:mb-20 -mx-4 sm:-mx-6 lg:-mx-10 overflow-hidden">
       <img
         src={talkBg.src}
         alt=""
@@ -31,7 +31,7 @@ export default function FaqHelp({ onBookVisit }) {
         aria-hidden="true"
       />
       <div
-        className="absolute inset-0 bg-gradient-to-b from-brand-green/40 via-brand-charcoal/50 to-brand-charcoal/75"
+        className="absolute inset-0 bg-linear-to-b from-brand-green/40 via-brand-charcoal/50 to-brand-charcoal/75"
         aria-hidden="true"
       />
 
@@ -40,36 +40,36 @@ export default function FaqHelp({ onBookVisit }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.5, ease: EASE }}
-        className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-10 py-14 lg:py-20"
+        className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20"
       >
         <h2 className="sr-only">{FAQ_STILL_ASK.h2}</h2>
-        <p className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-5">
+        <p className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4 sm:mb-5">
           Talk to us
         </p>
         <a
           href={`tel:${PHONE_TEL}`}
-          className="inline-block font-display font-bold text-4xl sm:text-5xl lg:text-[3.5rem] text-white tracking-tight leading-none hover:text-brand-gold transition-colors"
+          className="inline-block font-display font-bold text-3xl sm:text-5xl lg:text-[3.5rem] text-white tracking-tight leading-none hover:text-brand-gold transition-colors"
         >
           {PHONE_DISPLAY}
         </a>
-        <p className="mt-4 text-base sm:text-lg text-white/90 leading-relaxed max-w-xl mx-auto">
+        <p className="mt-3 sm:mt-4 text-sm sm:text-lg text-white/90 leading-relaxed max-w-xl mx-auto">
           A real person picks up -{' '}
           <span className="text-brand-gold italic font-medium">evenings and weekends included</span>.
         </p>
-        <p className="mt-3 text-sm text-white/75 leading-relaxed max-w-lg mx-auto">
+        <p className="mt-2.5 sm:mt-3 text-sm text-white/75 leading-relaxed max-w-lg mx-auto">
           <ContactText linkClassName="text-brand-gold font-semibold hover:underline underline-offset-2">
             {FAQ_STILL_ASK.paragraphs[0]}
           </ContactText>
         </p>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
           <IconSlideButton href={`tel:${PHONE_TEL}`}>Call now</IconSlideButton>
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp Narenn Living"
-            className="inline-flex items-center justify-center w-12 h-12 rounded-xl border border-white/30 text-[#25D366] bg-white/95 hover:bg-white transition-colors"
+            className="inline-flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-xl border border-white/30 text-[#25D366] bg-white/95 hover:bg-white transition-colors"
           >
             <WhatsAppIcon className="w-5 h-5" />
           </a>

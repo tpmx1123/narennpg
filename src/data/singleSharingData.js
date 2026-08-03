@@ -113,7 +113,7 @@ export const SINGLE_SHARING_COMPARISON = {
     '1BHK rent plus a six to ten month deposit, versus our single room rent plus a modest refundable deposit',
     'Furniture, appliances, AC, curtains and kitchen setup - a large one-time hit you never take with us',
     'Broadband connection, installation and monthly bill - included here',
-    'A cook and a maid, or cooking yourself after a ten-hour day — we serve four meals a day',
+    'A cook and a maid, or cooking yourself after a ten-hour day - we serve four meals a day',
     'Society maintenance, water charges and brokerage - none of it applies',
     'Lock-in periods and exit painting deductions - replaced by a clear written agreement',
   ],

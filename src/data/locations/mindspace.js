@@ -9,7 +9,7 @@ export default {
   keyword: 'PG near Mindspace',
   page: {
     path: '/locations/mindspace/',
-    title: 'PG near Mindspace, Hyderabad - 10 Min | Narenn Living',
+    title: 'PG near Mindspace, Hyderabad — 10 Min | Narenn Living',
     description:
       'Furnished PG & co-living under 10 minutes from Mindspace IT Park. AC rooms, four meals, WiFi & housekeeping. Book a free visit today.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',

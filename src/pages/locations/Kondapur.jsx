@@ -122,9 +122,9 @@ export default function Kondapur() {
         jsonLd={jsonLd}
       />
 
-      <main className="flex-1 bg-white">
+      <main className="flex-1 bg-white overflow-x-clip">
         <KondapurHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-4 lg:pb-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 sm:pb-10 lg:pb-10">
           <KondapurIntro />
           <KondapurCommute />
           <KondapurWhy />

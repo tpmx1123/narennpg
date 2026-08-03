@@ -6,7 +6,7 @@ const EASE = [0.16, 1, 0.3, 1];
 /** Quiet utility Q&A list — Treatment A */
 export default function FaqWish() {
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
         initial={{ opacity: 0, y: 14 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -14,16 +14,16 @@ export default function FaqWish() {
         transition={{ duration: 0.45, ease: EASE }}
         className="max-w-3xl mx-auto"
       >
-        <h2 className="text-xl sm:text-2xl font-display font-bold text-brand-green tracking-tight leading-snug mb-6 text-center">
+        <h2 className="text-lg sm:text-2xl font-display font-bold text-brand-green tracking-tight leading-snug mb-4 sm:mb-6 text-center">
           {FAQ_WISH.h2}
         </h2>
         <ol className="space-y-0 border-t border-brand-charcoal/10">
           {FAQ_WISH.items.map((item, index) => (
             <li
               key={item.question}
-              className="flex gap-4 py-4 sm:py-5 border-b border-brand-charcoal/10"
+              className="flex gap-3 sm:gap-4 py-3.5 sm:py-5 border-b border-brand-charcoal/10"
             >
-              <span className="font-display font-bold text-xs text-brand-charcoal/35 tabular-nums pt-0.5 w-6 shrink-0">
+              <span className="font-display font-bold text-xs text-brand-charcoal/35 tabular-nums pt-0.5 w-5 sm:w-6 shrink-0">
                 {String(index + 1).padStart(2, '0')}
               </span>
               <div className="min-w-0 space-y-1.5">

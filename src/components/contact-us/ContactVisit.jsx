@@ -21,7 +21,7 @@ export default function ContactVisit() {
   const movePlain = CONTACT_MOVE.h2.replace(CONTACT_MOVE.h2Accent, '').trim();
 
   return (
-    <section className="mb-14 lg:mb-16 space-y-14 lg:space-y-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16 space-y-10 sm:space-y-14 lg:space-y-16">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function ContactVisit() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {CONTACT_VISIT.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {visitPlain}{' '}
             <span className="text-brand-gold italic font-medium">{CONTACT_VISIT.h2Accent}</span>
           </h2>
@@ -49,7 +49,7 @@ export default function ContactVisit() {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="rounded-2xl overflow-hidden border border-brand-gold/20 aspect-[16/10] max-h-[260px] sm:max-h-[300px]">
+          <div className="rounded-2xl overflow-hidden border border-brand-gold/20 aspect-16/10">
             <img
               src={src}
               alt={visitImg.alt}
@@ -66,13 +66,13 @@ export default function ContactVisit() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.12 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-5 items-start"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-5 items-start"
       >
-        <div className="lg:col-span-2 space-y-5">
+        <div className="md:col-span-2 lg:col-span-2 space-y-5">
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {CONTACT_SITE_VISIT.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {sitePlain}{' '}
             <span className="text-brand-gold italic font-medium">{CONTACT_SITE_VISIT.h2Accent}</span>
           </h2>

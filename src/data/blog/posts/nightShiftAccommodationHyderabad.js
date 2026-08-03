@@ -43,7 +43,7 @@ const nightShiftAccommodationHyderabad = {
         {
           text: 'Night-shift workers sleep when others are awake, so daytime quiet is crucial. ',
         },
-        { type: 'link', href: '/rooms/single-sharing/', text: 'Private single rooms' },
+        { type: 'link', href: '/rooms/single-sharing/', text: 'private single rooms' },
         {
           text: " give you the control to rest properly without a room-mate's daytime activity disturbing you. Combined with good curtains and AC, it creates the restful, dark, cool environment your body needs to recover.",
         },

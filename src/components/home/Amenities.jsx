@@ -2,14 +2,14 @@ import { AMENITIES } from '../../data/homeData';
 
 export default function Amenities() {
   return (
-    <section id="amenities" className="bg-white relative overflow-hidden py-14">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="amenities" className="bg-white relative overflow-hidden py-10 sm:py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-8 lg:mb-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-16">
           <div className="shrink-0">
             <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
               Premium Amenities
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            <h2 className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
               Built for IT Pros <br />
               <span className="text-brand-gold italic font-medium">&amp; Students Alike.</span>
             </h2>
@@ -33,11 +33,11 @@ export default function Amenities() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3">
           {AMENITIES.map((am) => (
             <article
               key={am.title}
-              className="group relative h-36 sm:h-40 lg:h-44 overflow-hidden rounded-xl sm:rounded-2xl"
+              className="group relative h-40 sm:h-40 lg:h-44 overflow-hidden rounded-xl sm:rounded-2xl"
             >
               <img
                 src={am.image}
@@ -45,11 +45,11 @@ export default function Amenities() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-brand-charcoal/55 group-hover:bg-brand-charcoal/45 transition-colors duration-300" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-3 sm:px-4">
-                <h3 className="font-display font-bold text-sm sm:text-base text-white tracking-tight mb-1">
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-2 sm:px-4">
+                <h3 className="font-display font-bold text-xs sm:text-base text-white tracking-tight mb-1">
                   {am.title}
                 </h3>
-                <p className="text-[10px] sm:text-xs text-white/90 leading-snug max-w-[180px]">
+                <p className="text-[9px] sm:text-xs text-white/90 leading-snug max-w-45">
                   {am.description}
                 </p>
               </div>

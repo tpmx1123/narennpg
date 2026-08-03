@@ -13,13 +13,13 @@ export default function AboutMission() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-14 items-center"
       >
         <div className="space-y-5">
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {ABOUT_MISSION.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {ABOUT_MISSION.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
@@ -36,11 +36,11 @@ export default function AboutMission() {
               src={mission.src}
               alt={mission.alt}
               title={mission.title}
-              className="w-full h-[360px] sm:h-[420px] lg:h-[480px] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+              className="w-full h-60 sm:h-80 md:h-95 lg:h-120 object-cover transition-transform duration-500 group-hover:scale-[1.02]"
               loading="lazy"
             />
           </div>
-          <div className="absolute -bottom-5 -left-3 sm:-left-5 bg-brand-burgundy text-white px-5 py-4 rounded-xl shadow-lg hidden md:block">
+          <div className="absolute -bottom-4 left-4 lg:-bottom-5 lg:-left-5 bg-brand-burgundy text-white px-5 py-4 rounded-xl shadow-lg hidden md:block">
             <p className="font-display font-bold text-2xl leading-none">{ABOUT_MISSION.badgeValue}</p>
             <p className="text-[11px] font-semibold tracking-wide mt-1 opacity-90">
               {ABOUT_MISSION.badgeLabel}

@@ -10,19 +10,19 @@ export default function EventsFestivals() {
   const plain = EVENTS_FESTIVALS.h2.replace(EVENTS_FESTIVALS.h2Accent, '').trim();
 
   return (
-    <section id="about" className="mb-14 lg:mb-16 scroll-mt-24">
+    <section id="about" className="mb-10 sm:mb-14 lg:mb-16 scroll-mt-24">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-14 items-center"
       >
         <div className="space-y-5">
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {EVENTS_FESTIVALS.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {plain}{' '}
             <span className="text-brand-gold italic font-medium">{EVENTS_FESTIVALS.h2Accent}</span>
           </h2>
@@ -46,7 +46,7 @@ export default function EventsFestivals() {
               className="w-full aspect-[4/3] object-cover"
             />
           </div>
-          <div className="absolute -bottom-5 -right-2 sm:-right-4 bg-white p-5 rounded-xl shadow-lg border border-brand-gold/20 hidden sm:block max-w-[180px]">
+          <div className="absolute bottom-2 right-2 sm:right-4 bg-white p-5 rounded-xl shadow-lg border border-brand-gold/20 hidden sm:block max-w-45">
             <p className="text-brand-burgundy font-display font-bold text-2xl leading-none mb-1">
               {EVENTS_FESTIVALS.stat}
             </p>

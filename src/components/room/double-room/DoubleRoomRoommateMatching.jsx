@@ -31,7 +31,7 @@ export default function DoubleRoomRoommateMatching() {
             Roommate Matching
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
-            We Match Roommates —{' '}
+            We Match Roommates -{' '}
             <span className="text-brand-gold italic font-medium">
               We Don&apos;t Assign Them Randomly
             </span>

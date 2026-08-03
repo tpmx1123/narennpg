@@ -1,4 +1,3 @@
-import { MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const EASE = [0.16, 1, 0.3, 1];
@@ -7,13 +6,13 @@ const WATERMARK_LOGO =
 
 export default function PropertyIntro({ data }) {
   return (
-    <section className="mb-14 lg:mb-16 -mt-6 sm:-mt-8 relative z-10">
+    <section className="mb-10 sm:mb-14 lg:mb-16 -mt-6 sm:-mt-8 relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="relative overflow-hidden rounded-[10px] border border-brand-gold/25 bg-white shadow-[0_20px_60px_-24px_rgba(15,61,46,0.18)] p-6 sm:p-8 lg:p-12 max-w-6xl mx-auto"
+        className="relative overflow-hidden rounded-[10px] border border-brand-gold/25 bg-white shadow-[0_20px_60px_-24px_rgba(15,61,46,0.18)] p-5 sm:p-8 lg:p-12 max-w-6xl mx-auto"
       >
         <img
           src={WATERMARK_LOGO}
@@ -38,11 +37,6 @@ export default function PropertyIntro({ data }) {
               {para}
             </p>
           ))}
-
-          <p className="flex items-start justify-center gap-2 text-sm text-brand-charcoal-light pt-2">
-            <MapPin className="w-4 h-4 text-brand-burgundy shrink-0 mt-0.5" aria-hidden="true" />
-            <span>{data.address}</span>
-          </p>
         </div>
       </motion.div>
     </section>

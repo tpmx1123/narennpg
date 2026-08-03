@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Link, Navigate, useOutletContext, useParams } from 'react-router-dom';
 import PageMeta, { buildBreadcrumbSchema, organizationRef } from '../../components/seo/PageMeta';
 import { Footer, FinalCta } from '../../components/home';
@@ -11,28 +11,30 @@ import {
 import { getBlogPostContent } from '../../data/blog/posts';
 import {
   BLOG_PAGE,
-  BLOG_POSTS,
   getBlogPostBySlug,
 } from '../../data/blogPageData';
 import { SITE_URL } from '../../data/sitePages';
 
+const BLOG_IMAGE_FALLBACK =
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp';
+
 function BlogPostPlaceholderView({ post, onBookVisit }) {
   return (
-    <main className="flex-1 bg-[#FDFCF8] pt-28 sm:pt-32 lg:pt-36">
-      <section className="pb-14 sm:pb-16 lg:pb-20">
+    <main className="flex-1 bg-[#FDFCF8] pt-24 sm:pt-28 lg:pt-36 overflow-x-clip">
+      <section className="pb-10 sm:pb-14 lg:pb-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10">
           <Link
             to="/blog/"
-            className="inline-flex items-center text-sm font-display font-bold text-brand-burgundy hover:underline mb-6"
+            className="inline-flex items-center text-sm font-display font-bold text-brand-burgundy hover:underline mb-5 sm:mb-6"
           >
             Back to Journal
           </Link>
-          <div className="space-y-5">
-            <span className="inline-flex rounded-full bg-brand-gold/15 px-3 py-1 text-[11px] font-display font-bold uppercase tracking-[0.18em] text-brand-burgundy">
+          <div className="space-y-4 sm:space-y-5 min-w-0">
+            <span className="inline-flex rounded-full bg-brand-gold/15 px-3 py-1 text-[10px] sm:text-[11px] font-display font-bold uppercase tracking-[0.18em] text-brand-burgundy">
               {post.category}
             </span>
-            <h1 className="text-4xl sm:text-5xl font-display font-bold text-brand-charcoal tracking-tight leading-[1.08]">
-              {post.title}
+            <h1 className="text-[1.35rem] sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-charcoal tracking-tight leading-[1.15] break-words">
+              {post.h1 ?? post.title}
             </h1>
             <div className="flex flex-wrap gap-3 text-sm text-brand-charcoal-light">
               <span>{post.date}</span>
@@ -41,48 +43,22 @@ function BlogPostPlaceholderView({ post, onBookVisit }) {
             </div>
           </div>
 
-          <div className="mt-8 overflow-hidden rounded-2xl border border-brand-gold/15 shadow-[0_16px_40px_rgba(15,61,46,0.06)]">
-            <img src={post.image} alt={post.alt} className="w-full aspect-video object-cover" />
+          <div className="mt-6 sm:mt-8 overflow-hidden rounded-xl sm:rounded-2xl border border-brand-gold/15 shadow-[0_16px_40px_rgba(15,61,46,0.06)]">
+            <img
+              src={post.image}
+              alt={post.alt}
+              title={post.imageTitle}
+              onError={(e) => {
+                e.currentTarget.src = BLOG_IMAGE_FALLBACK;
+              }}
+              className="w-full aspect-video object-cover object-center"
+            />
           </div>
 
-          <div className="mt-10 rounded-2xl border border-brand-gold/15 bg-white p-6 sm:p-8 lg:p-10">
-            <p className="text-base sm:text-lg text-brand-charcoal-light leading-relaxed">
+          <div className="mt-8 sm:mt-10 rounded-xl sm:rounded-2xl border border-brand-gold/15 bg-white p-5 sm:p-8 lg:p-10">
+            <p className="text-sm sm:text-lg text-brand-charcoal-light leading-relaxed">
               {post.excerpt}
             </p>
-            <div className="mt-8 space-y-4 text-sm sm:text-base text-brand-charcoal-light leading-relaxed">
-              <p>
-                This article route is live and ready for final editorial copy. The title, slug,
-                metadata, card artwork, and internal linking structure are already in place.
-              </p>
-              <p>
-                Once you share the full article content, this page can be upgraded from a staging
-                placeholder into a complete SEO post with headings, rich schema, and related links.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-10 rounded-2xl border border-brand-gold/15 bg-brand-green-pale/40 p-6 sm:p-8">
-            <h2 className="text-2xl font-display font-bold text-brand-green mb-3">
-              More from The Narenn Journal
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {BLOG_POSTS.filter((item) => item.slug !== post.slug)
-                .slice(0, 4)
-                .map((item) => (
-                  <Link
-                    key={item.slug}
-                    to={item.path}
-                    className="rounded-xl border border-brand-gold/15 bg-white px-4 py-4 hover:border-brand-burgundy/30 transition-colors"
-                  >
-                    <p className="text-[11px] font-display font-bold uppercase tracking-[0.18em] text-brand-burgundy mb-2">
-                      {item.category}
-                    </p>
-                    <p className="font-display font-bold text-brand-charcoal leading-snug">
-                      {item.title}
-                    </p>
-                  </Link>
-                ))}
-            </div>
           </div>
         </div>
       </section>
@@ -109,26 +85,45 @@ function BlogPostPlaceholderView({ post, onBookVisit }) {
 
 function BlogPostArticleView({ post, content, onBookVisit }) {
   return (
-    <main className="flex-1 bg-[#FDFCF8]">
-      <BlogPostHero post={post} />
+    <>
+      <main className="flex-1 bg-[#FDFCF8] overflow-x-clip">
+        <BlogPostHero post={post} imageFallback={BLOG_IMAGE_FALLBACK} />
 
-      <section className="py-10 sm:py-12 lg:py-14">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
-            <div className="lg:col-span-8">
-              <BlogPostContent blocks={content.blocks} />
-              <BlogPostFaq faqs={content.faqs} />
+        <section className="py-7 sm:py-10 lg:py-14">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-6 lg:gap-8">
+              <div className="lg:col-span-8 min-w-0">
+                <BlogPostContent blocks={content.blocks} imageFallback={BLOG_IMAGE_FALLBACK} />
+                <BlogPostFaq faqs={content.faqs} />
+              </div>
+
+              <BlogPostSidebar
+                currentSlug={post.slug}
+                sidebarCta={content.sidebarCta}
+                onBookVisit={onBookVisit}
+              />
             </div>
-
-            <BlogPostSidebar
-              currentSlug={post.slug}
-              sidebarCta={content.sidebarCta}
-              onBookVisit={onBookVisit}
-            />
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+
+      <FinalCta
+        onBookVisit={onBookVisit}
+        title={
+          <>
+            Ready to see it in person?{' '}
+            <span className="text-brand-gold italic font-medium">Book a visit</span>
+          </>
+        }
+        description={
+          <p>
+            Call 70759 85666 or book a free visit to Narenn Living in VIP Hills, Madhapur — and
+            compare rooms, food and the commute yourself.
+          </p>
+        }
+        imageAlt={`${post.h1 ?? post.title} — visit Narenn Living`}
+      />
+    </>
   );
 }
 
@@ -146,9 +141,14 @@ export default function BlogPost() {
   const canonical = `${SITE_URL}${post.path}`;
   const metaTitle = post.metaTitle ?? `${post.title} | The Narenn Journal`;
   const metaDescription = post.description ?? post.excerpt;
-  const robots = isArticle ? post.robots ?? 'index, follow, max-image-preview:large, max-snippet:-1' : 'noindex, follow';
+  const robots = isArticle
+    ? (post.robots ?? 'index, follow, max-image-preview:large, max-snippet:-1')
+    : 'noindex, follow';
+  const published = post.datePublished ?? '2024-10-24';
+  const modified = post.dateModified ?? published;
 
   const jsonLd = useMemo(() => {
+    const authorId = `${SITE_URL}/#editorial-team`;
     const graph = [
       {
         '@type': 'Organization',
@@ -161,7 +161,7 @@ export default function BlogPost() {
       },
       {
         '@type': 'Person',
-        '@id': `${SITE_URL}/#editorial-team`,
+        '@id': authorId,
         name: post.author ?? 'The Narenn Editorial Team',
         worksFor: organizationRef(),
       },
@@ -169,23 +169,27 @@ export default function BlogPost() {
         '@type': 'BlogPosting',
         '@id': `${canonical}#post`,
         headline: post.h1 ?? post.title,
+        alternativeHeadline: post.metaTitle ?? post.title,
         description: metaDescription,
-        image: post.image,
-        datePublished: post.datePublished ?? '2024-10-24',
-        dateModified: post.dateModified ?? post.datePublished ?? '2024-10-24',
-        author: {
-          '@type': 'Organization',
-          name: post.author ?? 'The Narenn Editorial Team',
-          url: `${SITE_URL}/`,
-        },
+        image: [post.image],
+        datePublished: published,
+        dateModified: modified,
+        author: { '@id': authorId },
         publisher: organizationRef(),
         mainEntityOfPage: {
           '@type': 'WebPage',
           '@id': `${canonical}#webpage`,
+          url: canonical,
+          name: metaTitle,
+          description: metaDescription,
+          inLanguage: 'en-IN',
+          isPartOf: { '@id': `${SITE_URL}/#website` },
         },
         inLanguage: 'en-IN',
         articleSection: post.category,
         keywords: post.keywords,
+        wordCount: content?.wordCount,
+        isAccessibleForFree: true,
       },
       buildBreadcrumbSchema([
         { name: 'Home', path: '/' },
@@ -197,6 +201,7 @@ export default function BlogPost() {
     if (isArticle && content.faqs?.length) {
       graph.push({
         '@type': 'FAQPage',
+        '@id': `${canonical}#faq`,
         mainEntity: content.faqs.map((faq) => ({
           '@type': 'Question',
           name: faq.question,
@@ -212,7 +217,7 @@ export default function BlogPost() {
       '@context': 'https://schema.org',
       '@graph': graph,
     };
-  }, [canonical, content, isArticle, metaDescription, post]);
+  }, [canonical, content, isArticle, metaDescription, metaTitle, modified, post, published]);
 
   return (
     <>
@@ -223,6 +228,9 @@ export default function BlogPost() {
         robots={robots}
         ogImage={post.image}
         ogType={isArticle ? 'article' : 'website'}
+        articlePublishedTime={isArticle ? published : undefined}
+        articleModifiedTime={isArticle ? modified : undefined}
+        articleSection={isArticle ? post.category : undefined}
         jsonLd={jsonLd}
       />
 

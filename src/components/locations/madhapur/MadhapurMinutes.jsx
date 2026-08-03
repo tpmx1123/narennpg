@@ -1,7 +1,23 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MADHAPUR_MINUTES } from '../../../data/madhapurLocationData';
 
 const EASE = [0.22, 1, 0.36, 1];
+
+function PlaceTitle({ item, className }) {
+  const titleClass =
+    className ?? 'font-display font-bold text-base sm:text-lg text-brand-charcoal';
+  if (item.to) {
+    return (
+      <h3 className={titleClass}>
+        <Link to={item.to} className="hover:text-brand-burgundy transition-colors">
+          {item.place}
+        </Link>
+      </h3>
+    );
+  }
+  return <h3 className={titleClass}>{item.place}</h3>;
+}
 
 function TimelineItem({ item, index }) {
   const placeLeft = index % 2 === 0;
@@ -21,7 +37,7 @@ function TimelineItem({ item, index }) {
           {item.short}
         </div>
         <div className="pt-1 min-w-0">
-          <h3 className="font-display font-bold text-base text-brand-charcoal">{item.place}</h3>
+          <PlaceTitle item={item} className="font-display font-bold text-base text-brand-charcoal" />
           <p className="text-sm font-semibold text-brand-burgundy mt-0.5">{item.time}</p>
           {item.detail ? (
             <p className="text-sm text-brand-charcoal-light mt-0.5">{item.detail}</p>
@@ -40,9 +56,7 @@ function TimelineItem({ item, index }) {
         >
           {placeLeft ? (
             <>
-              <h3 className="font-display font-bold text-base sm:text-lg text-brand-charcoal">
-                {item.place}
-              </h3>
+              <PlaceTitle item={item} />
               {item.detail ? (
                 <p className="text-sm text-brand-charcoal-light mt-0.5">{item.detail}</p>
               ) : null}
@@ -73,9 +87,7 @@ function TimelineItem({ item, index }) {
             <p className="text-brand-burgundy font-semibold text-sm sm:text-base">{item.time}</p>
           ) : (
             <>
-              <h3 className="font-display font-bold text-base sm:text-lg text-brand-charcoal">
-                {item.place}
-              </h3>
+              <PlaceTitle item={item} />
               {item.detail ? (
                 <p className="text-sm text-brand-charcoal-light mt-0.5">{item.detail}</p>
               ) : null}
@@ -103,14 +115,13 @@ function DottedLine({ className }) {
 
 export default function MadhapurMinutes() {
   return (
-    <section className="mb-14 lg:mb-16 py-8 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-white border-y border-brand-gold/10">
+    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-white border-y border-brand-gold/10">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-8 lg:mb-9">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-8 lg:mb-9">
           {MADHAPUR_MINUTES.h2}
         </h2>
 
         <div className="relative">
-          {/* Track ends at last badge center (half of 40/44px node) */}
           <div
             className="absolute left-5 top-5 bottom-5 w-0 border-l-2 border-dotted border-brand-gold/35 md:hidden"
             style={{

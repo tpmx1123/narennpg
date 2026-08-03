@@ -21,26 +21,26 @@ export default function EventsCalendar() {
   const plain = h2.replace(h2Accent, '').trim();
 
   return (
-    <section id="events" className="mb-14 lg:mb-16 scroll-mt-24">
+    <section id="events" className="mb-10 sm:mb-14 lg:mb-16 scroll-mt-24">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.55, ease: EASE }}
       >
-        <div className="mb-10 lg:mb-12 max-w-3xl space-y-4">
+        <div className="mb-8 sm:mb-10 lg:mb-12 max-w-3xl space-y-4">
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {plain}{' '}
             <span className="text-brand-gold italic font-medium">{h2Accent}</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">{intro}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5">
-          <div className="md:col-span-8 group relative overflow-hidden rounded-2xl h-72 sm:h-96 border border-brand-gold/20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5">
+          <div className="lg:col-span-8 group relative overflow-hidden rounded-xl lg:rounded-2xl h-72 sm:h-96 border border-brand-gold/20">
             <img
               src={festivalSrc}
               alt={festival.alt}
@@ -48,8 +48,8 @@ export default function EventsCalendar() {
               onError={() => setFestivalSrc(festival.fallback)}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-brand-charcoal/15 to-transparent" />
-            <div className="absolute bottom-0 left-0 p-6 sm:p-8">
+            <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/80 via-brand-charcoal/15 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-8">
               <h3 className="text-white font-display font-bold text-xl sm:text-2xl mb-2">
                 {featured.title}
               </h3>
@@ -64,7 +64,7 @@ export default function EventsCalendar() {
             return (
               <div
                 key={card.title}
-                className={`md:col-span-4 flex flex-col justify-between p-6 sm:p-8 rounded-2xl ${TONE[card.tone]}`}
+                className={`lg:col-span-4 flex flex-col justify-between p-5 sm:p-8 rounded-xl lg:rounded-2xl ${TONE[card.tone]}`}
               >
                 <div>
                   <Icon className="w-9 h-9 mb-4 text-brand-burgundy" strokeWidth={1.5} />

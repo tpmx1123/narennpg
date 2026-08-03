@@ -11,7 +11,7 @@ export default {
     path: '/locations/cyber-towers/',
     title: 'PG near Cyber Towers, Hyderabad | Narenn Living',
     description:
-      'Premium co-living 5-7 minutes from Cyber Towers. AC rooms, food, fast WiFi & housekeeping in Madhapur. Book your free visit.',
+      'Premium co-living 5–7 minutes from Cyber Towers. AC rooms, food, fast WiFi & housekeeping in Madhapur. Book your free visit.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     ogImage: `${SITE_URL}/images/pg-near-cyber-towers-hyderabad-hero.jpg`,
   },
@@ -70,7 +70,7 @@ export default {
       "The handful of PGs directly beside Cyber Towers charge some of the steepest per-bed rates in the city precisely because of that five-minute walk, often for rooms carved out of old flats with no real common facilities. A short ride further into VIP Hills gets you a purpose-run property instead - our own kitchen, daily housekeeping, and a fixed monthly fee that does not climb every renewal simply because of proximity. Cyber Towers still stays inside a 5-7 minute reach, so you are not really trading commute time, only trading an inflated address premium for better rooms and service.",
     ],
     links: [
-      { to: '/locations/mindspace/', label: 'PG near Mindspace' },
+      { to: '/locations/madhapur/', label: 'PG in Madhapur' },
       { to: '/locations/hitech-city/', label: 'PG near Hitech City' },
     ],
   },

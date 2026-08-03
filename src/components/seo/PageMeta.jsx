@@ -41,6 +41,9 @@ export default function PageMeta({
   robots = 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage = DEFAULT_OG_IMAGE,
   ogType = 'website',
+  articlePublishedTime,
+  articleModifiedTime,
+  articleSection,
   jsonLd,
 }) {
   useEffect(() => {
@@ -57,6 +60,12 @@ export default function PageMeta({
     setMeta('property', 'og:locale', 'en_IN');
     setMeta('property', 'og:site_name', 'Narenn Living');
 
+    if (ogType === 'article') {
+      if (articlePublishedTime) setMeta('property', 'article:published_time', articlePublishedTime);
+      if (articleModifiedTime) setMeta('property', 'article:modified_time', articleModifiedTime);
+      if (articleSection) setMeta('property', 'article:section', articleSection);
+    }
+
     setMeta('name', 'twitter:card', 'summary_large_image');
     setMeta('name', 'twitter:title', title);
     setMeta('name', 'twitter:description', description);
@@ -68,7 +77,18 @@ export default function PageMeta({
       const el = document.getElementById('page-jsonld');
       if (el) el.remove();
     };
-  }, [title, description, canonical, robots, ogImage, ogType, jsonLd]);
+  }, [
+    title,
+    description,
+    canonical,
+    robots,
+    ogImage,
+    ogType,
+    articlePublishedTime,
+    articleModifiedTime,
+    articleSection,
+    jsonLd,
+  ]);
 
   return null;
 }

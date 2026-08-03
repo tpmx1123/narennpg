@@ -4,7 +4,7 @@ import { RESIDENCES } from '../../data/homeData';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 
 const FOOTER_LOGO =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784012843/narennlogo_opx4st.png';
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784010508/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo.png';
 
 const FOOTER_ORNAMENT =
   'https://res.cloudinary.com/dmaeijlc/image/upload/v1784975018/f51c22a1-fcd7-429f-95dc-dcc512f1285a_-_Copy_ah0mdw.png';
@@ -83,10 +83,10 @@ const RESIDENT_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-green-pale border-t border-brand-gold/30 relative z-10 pt-28 sm:pt-32 lg:pt-36 pb-8">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-4 mb-0">
-          <div className="lg:col-span-3 space-y-4 max-w-xs">
+    <footer className="bg-brand-green-pale border-t border-brand-gold/30 relative z-10 pt-28 sm:pt-32 lg:pt-36 pb-6 sm:pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-5 gap-y-8 sm:gap-x-10 sm:gap-y-10 lg:gap-4 mb-0">
+          <div className="col-span-2 lg:col-span-3 space-y-4 max-w-sm lg:max-w-xs mx-auto lg:mx-0">
             <Link to="/" className="flex justify-center">
               <img
                 src={FOOTER_LOGO}
@@ -115,7 +115,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-2 space-y-4">
+          <div className="col-span-1 lg:col-span-2 space-y-4">
             <h3 className="font-display font-bold text-sm text-brand-green">Company</h3>
             <ul className="space-y-2.5 text-sm text-brand-charcoal-light">
               {COMPANY_LINKS.map((link) => (
@@ -128,7 +128,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-2 space-y-4">
+          <div className="col-span-1 lg:col-span-2 space-y-4">
             <h3 className="font-display font-bold text-sm text-brand-green">Explore</h3>
             <ul className="space-y-2.5 text-sm text-brand-charcoal-light">
               {EXPLORE_LINKS.map((link) => (
@@ -141,7 +141,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-2 space-y-4">
+          <div className="col-span-2 sm:col-span-1 lg:col-span-2 space-y-4">
             <h3 className="font-display font-bold text-sm text-brand-green">For Residents</h3>
             <ul className="space-y-2.5 text-sm text-brand-charcoal-light">
               {RESIDENT_LINKS.map((link) => (
@@ -154,7 +154,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-3 space-y-4">
+          <div className="col-span-2 sm:col-span-1 lg:col-span-3 space-y-4">
             <h3 className="font-display font-bold text-sm text-brand-green">Contact Us</h3>
             <ul className="space-y-3 text-sm text-brand-charcoal-light">
               <li className="flex items-center gap-2.5">
@@ -220,18 +220,20 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex justify-center -mt-24 sm:-mt-28 lg:-mt-40 pb-6 lg:pb-8">
+        <div className="flex justify-center mt-8 sm:mt-10 lg:-mt-40 pb-6 lg:pb-8">
           <img
             src={FOOTER_ORNAMENT}
             alt=""
             aria-hidden="true"
-            className="w-[min(100%,880px)] h-auto max-h-32 sm:max-h-36 lg:max-h-40 object-contain"
+            className="w-[min(100%,880px)] h-auto max-h-24 sm:max-h-36 lg:max-h-40 object-contain"
           />
         </div>
 
         <div className="pt-6 border-t border-brand-green/15 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-charcoal-light">
-          <span>&copy; {new Date().getFullYear()} Narenn Group. All rights reserved.</span>
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+          <span className="text-center sm:text-left">
+            &copy; {new Date().getFullYear()} Narenn Group. All rights reserved.
+          </span>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-3 text-center sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-6">
             <a href="/privacy-policy/" className="hover:text-brand-burgundy transition-colors">
               Privacy Policy
             </a>

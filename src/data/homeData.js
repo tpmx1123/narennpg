@@ -140,35 +140,31 @@ export const RESIDENCES = [
 
 export const TESTIMONIALS = [
   {
-    name: "Rahul Reddy",
-    role: "Software Engineer at Salesforce",
-    date: "May 22, 2026",
+    name: 'Jeevan',
+    role: 'Google Review',
     rating: 5,
-    quote: "The rooms are clean, spacious, and extremely well-maintained. The gourmet food quality and professional on-site management team make Narenn Living feel exactly like a premium home.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
+    quote:
+      'I had an excellent experience here. The staff was welcoming, professional, and genuinely focused on customer satisfaction. Honesty, timely service, and high standards stood out — I highly recommend this place for quality and reliability.',
   },
   {
-    name: "Ananya Sharma",
-    role: "UX Designer at Microsoft · Narenn's Crown",
-    date: "Jan 12, 2026",
+    name: 'Praveen Kumar Reddy Dodda',
+    role: 'Google Review · Madhapur',
     rating: 5,
-    quote: "Narenn's Crown is thoughtfully run and feels genuinely safe. As a residence for girls, the privacy and community balance is exactly what I needed in Madhapur.",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80"
+    quote:
+      'I’ve been staying in this PG in Madhapur and overall it’s been a really good experience. The place is well-maintained, cleaned daily, and the food is very good compared to most PGs. I’d definitely recommend it for a comfortable, well-managed stay.',
   },
   {
-    name: "Siddharth Kumar",
-    role: "Data Analyst at Deloitte",
-    date: "April 02, 2025",
+    name: 'Venugopal Reddy Kurapati',
+    role: "Google Review · Narenn's Crown",
     rating: 5,
-    quote: "What stood out immediately was the premium comfort and hospitality. Fast Wi-Fi, zero power backup failures, and a very structured and welcoming environment.",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80"
+    quote:
+      'The Narenn Crown girls PG was amazing in Madhapur — less traffic, good food, parking available, and near Hitech City. My daughter stays here with 24/7 security. I am happy now.',
   },
   {
-    name: "Priya Verma",
-    role: "Chartered Accountant",
-    date: "May 13, 2025",
+    name: 'Anu Siddu',
+    role: "Google Review · Narenn's Crown",
     rating: 5,
-    quote: "Warm atmosphere, chef-curated food menu, and zero maintenance stress. Narenn Living offers a perfect equilibrium of active privacy and vibrant community interaction.",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80"
-  }
+    quote:
+      "One of the best and safest PG for women — 24/7 security with CCTV, delicious hygienic food, good ambiance, well-furnished rooms, and a cool balcony view. Housekeeping is excellent, and the terrace garden with gym and carrom is awesome.",
+  },
 ];

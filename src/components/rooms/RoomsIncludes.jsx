@@ -9,7 +9,7 @@ export default function RoomsIncludes() {
   const { inclusions } = ROOMS_IMAGES;
 
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -23,12 +23,12 @@ export default function RoomsIncludes() {
         />
         <div className="absolute inset-0 bg-brand-green-pale/70" aria-hidden="true" />
 
-        <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 p-7 sm:p-9 lg:p-11">
+        <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 p-5 sm:p-8 lg:p-11">
           <div className="lg:col-span-7">
             <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
               Standard Package
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4">
+            <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4">
               What Every Room{' '}
               <span className="text-brand-gold italic font-medium">Includes</span>
             </h2>
@@ -60,7 +60,7 @@ export default function RoomsIncludes() {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="relative rounded-[12px] overflow-hidden h-full min-h-[260px] border border-brand-gold/20">
+            <div className="relative rounded-[12px] overflow-hidden h-full min-h-50 sm:min-h-60 lg:min-h-65 border border-brand-gold/20">
               <img
                 src={inclusions.src}
                 alt={inclusions.alt}

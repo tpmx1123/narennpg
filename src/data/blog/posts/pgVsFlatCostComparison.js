@@ -59,7 +59,7 @@ const pgVsFlatCostComparison = {
         {
           text: 'With co-living, one transparent monthly fee replaces that entire list. At Narenn Living, your fee includes a ',
         },
-        { type: 'link', href: '/rooms/', text: 'fully furnished AC room' },
+        { type: 'link', href: '/rooms/', text: 'fully furnished rooms' },
         {
           text: ', four home-style meals a day, high-speed WiFi, daily housekeeping, laundry support, security and community amenities. There are no deposits to lose track of, no brokerage, no furniture to buy and no bills to juggle. Explore our ',
         },
@@ -97,10 +97,10 @@ const pgVsFlatCostComparison = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Cost is only half the story. A flat means cooking, cleaning, grocery runs, bill payments and maintenance calls — hours every week. A PG hands all of that to a professional team, giving you back time for work, study and life. When you value your time, the fully furnished, fully managed option looks even better. And with four meals from our ',
+          text: 'Cost is only half the story. A flat means cooking, cleaning, grocery runs, bill payments and maintenance calls — hours every week. A PG hands all of that to a professional team, giving you back time for work, study and life. When you value your time, the fully furnished, fully managed option looks even better. And with four ',
         },
-        { type: 'link', href: '/food/', text: 'homely food menu' },
-        { text: ' included, you also save the daily cost and effort of feeding yourself.' },
+        { type: 'link', href: '/food/', text: 'meals included' },
+        { text: ' from our in-house kitchen, you also save the daily cost and effort of feeding yourself.' },
       ],
     },
     {
@@ -111,9 +111,9 @@ const pgVsFlatCostComparison = {
       type: 'paragraph',
       parts: [
         {
-          text: 'If you are a family or a group of close friends planning to stay long term, a flat can make sense. But if you are an individual student or professional — especially new to the city — a PG or co-living space usually wins on cost, convenience and community. You get a prime location in ',
+          text: 'If you are a family or a group of close friends planning to stay long term, a flat can make sense. But if you are an individual student or professional — especially new to the city — a PG or co-living space usually wins on cost, convenience and community. You get a prime location in our ',
         },
-        { type: 'link', href: '/locations/madhapur/', text: 'Madhapur' },
+        { type: 'link', href: '/locations/madhapur/', text: 'PG in Madhapur' },
         {
           text: ', everything included, and a ready-made social circle, without the financial and logistical burden of setting up a home from scratch.',
         },

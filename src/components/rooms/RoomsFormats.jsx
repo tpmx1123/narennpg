@@ -7,11 +7,11 @@ const EASE = [0.16, 1, 0.3, 1];
 
 export default function RoomsFormats() {
   return (
-    <section className="mb-14 lg:mb-16 space-y-12 lg:space-y-16">
+    <section className="mb-14 lg:mb-16 space-y-6 sm:space-y-10 lg:space-y-16">
       {ROOMS_FORMATS.map((format, index) => {
         const image = ROOMS_IMAGES[format.imageKey];
         const reverse = index % 2 === 1;
-        const [title, accent] = format.h2.split(' — ');
+        const [title, accent] = format.h2.split(' - ');
 
         return (
           <motion.article
@@ -20,26 +20,29 @@ export default function RoomsFormats() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, ease: EASE }}
-            className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+            className="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-12 items-center rounded-xl border border-brand-gold/20 bg-white p-3 shadow-sm lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
           >
-            <div className={`lg:col-span-5 ${reverse ? 'lg:order-2' : ''}`}>
-              <div className="relative rounded-[12px] overflow-hidden aspect-[4/3] border border-brand-gold/20 shadow-[0_20px_50px_-24px_rgba(15,61,46,0.25)]">
+            <div className={`min-w-0 lg:col-span-5 ${reverse ? 'lg:order-2' : ''}`}>
+              <div className="relative rounded-lg lg:rounded-[12px] overflow-hidden aspect-3/2 sm:aspect-4/3 border border-brand-gold/20 shadow-[0_20px_50px_-24px_rgba(15,61,46,0.25)]">
                 <img
                   src={image.src}
                   alt={image.alt}
                   title={image.title}
                   className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>
 
-            <div className={`lg:col-span-7 ${reverse ? 'lg:order-1' : ''}`}>
-              
-              <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4">
+            <div className={`min-w-0 pt-3 sm:pt-5 lg:pt-0 lg:col-span-7 ${reverse ? 'lg:order-1' : ''}`}>
+              <span className="lg:hidden text-[10px] font-bold tracking-[0.2em] text-brand-gold uppercase block mb-2">
+                {format.eyebrow}
+              </span>
+              <h2 className="text-lg sm:text-2xl lg:text-4xl font-display font-bold text-brand-burgundy lg:text-brand-green tracking-tight leading-[1.15] mb-2 sm:mb-3 lg:mb-4">
                 {title}
                 {accent && (
                   <>
-                    {' — '}
+                    {' - '}
                     <span className="text-brand-gold italic font-medium">{accent}</span>
                   </>
                 )}
@@ -47,14 +50,14 @@ export default function RoomsFormats() {
               {format.paragraphs.map((para) => (
                 <p
                   key={para.slice(0, 40)}
-                  className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mb-5"
+                  className="text-xs sm:text-[15px] text-brand-charcoal-light leading-relaxed mb-3 sm:mb-5"
                 >
                   {para}
                 </p>
               ))}
               <Link
                 to={format.href}
-                className="inline-flex items-center gap-1.5 text-sm font-display font-bold text-brand-burgundy hover:text-brand-burgundy-dark transition-colors group"
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-display font-bold text-brand-burgundy hover:text-brand-burgundy-dark transition-colors group"
               >
                 {format.linkLabel}
                 <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

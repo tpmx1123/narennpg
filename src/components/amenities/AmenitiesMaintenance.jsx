@@ -8,7 +8,7 @@ export default function AmenitiesMaintenance() {
   const { utilities } = AMENITIES_IMAGES;
 
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export default function AmenitiesMaintenance() {
         className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center"
       >
         <div className="lg:col-span-7">
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6">
             {plain}{' '}
             <span className="text-brand-gold italic font-medium">{AMENITIES_MAINTENANCE.h2Accent}</span>
           </h2>

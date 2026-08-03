@@ -141,6 +141,6 @@ export default {
     title: 'Book Your Visit',
     titleAccent: 'Ameerpet Coaching Commute',
     description:
-      'See the room and time the Metro ride to Ameerpet before your batch starts. Call 70759 85666 or WhatsApp us for a free visit.',
+      "See the room and time the Metro ride to Ameerpet before your batch starts. Call 70759 85666 or WhatsApp us for a free visit.",
   },
 };

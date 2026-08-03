@@ -4,14 +4,14 @@ import { SITE_URL } from './sitePages';
 export const QUAD_SHARING_RATES = {
   currency: 'INR',
   monthly: {
-    productName: 'Four Sharing — 4 Sharing',
+    productName: 'Four Sharing - 4 Sharing',
     nonAc: {
       price: 12000,
-      schemaName: 'Four Sharing — 4 Sharing (Non-AC)',
+      schemaName: 'Four Sharing - 4 Sharing (Non-AC)',
     },
     ac: {
       price: 13000,
-      schemaName: 'Four Sharing — 4 Sharing (AC)',
+      schemaName: 'Four Sharing - 4 Sharing (AC)',
     },
     maintenanceNote: 'One-time maintenance applies · electricity billed separately',
   },
@@ -41,11 +41,11 @@ export const QUAD_SHARING_HERO = {
 
 export const QUAD_SHARING_BOOKING = {
   roomType: '4 Sharing',
-  availabilitySignal: 'Lowest monthly rent — limited inventory',
+  availabilitySignal: 'Lowest monthly rent - limited inventory',
   trustItems: ['AC', 'Meals', 'WiFi', 'Housekeeping'],
   monthlyProductLabels: {
-    ac: 'Four Sharing — 4 Sharing (AC)',
-    nonAc: 'Four Sharing — 4 Sharing (Non-AC)',
+    ac: 'Four Sharing - 4 Sharing (AC)',
+    nonAc: 'Four Sharing - 4 Sharing (Non-AC)',
   },
   monthlyHint: [
     'Want more personal space? See our ',
@@ -91,7 +91,7 @@ export const QUAD_SHARING_INCLUDES = [
 export const QUAD_SHARING_WHO = {
   h2: 'Who Four Sharing Is Built For',
   paragraphs: [
-    'Four sharing is the format we recommend when the priority is keeping monthly outgo as low as possible without living somewhere grim. If you are out of the room from morning until evening — at college, at the office, at the gym — you are paying for a place to sleep, eat and recharge. Four sharing prices that honestly.',
+    'Four sharing is the format we recommend when the priority is keeping monthly outgo as low as possible without living somewhere grim. If you are out of the room from morning until evening - at college, at the office, at the gym - you are paying for a place to sleep, eat and recharge. Four sharing prices that honestly.',
     'It is also the fastest way into the VIP Hills postcode. The location, the food, the security and the community are identical to what a single-room resident gets. The only thing you trade is floor space, and at this stage of a career or a degree, that is usually the right trade to make.',
   ],
 };
@@ -99,9 +99,9 @@ export const QUAD_SHARING_WHO = {
 export const QUAD_SHARING_SPACE = {
   h2: 'Space That Actually Works for Four',
   points: [
-    'A room proportioned for four residents — not three beds with one squeezed in',
+    'A room proportioned for four residents - not three beds with one squeezed in',
     'Four individual beds with quality mattresses and bedding',
-    'Separate lockable storage per resident — nobody shares a wardrobe',
+    'Separate lockable storage per resident - nobody shares a wardrobe',
     'Individual study space and charging points per resident',
     'Air conditioning, fibre WiFi, daily housekeeping and four meals a day, exactly as in every other format',
   ],

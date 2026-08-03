@@ -11,10 +11,10 @@ export const PROPERTIES_PAGE = {
 
 export const PROPERTIES_IMAGES = {
   hero: {
-    src: `${SITE_URL}/images/co-living-properties-in-madhapur-vip-hills-hero.jpg`,
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785405044/Gemini_Generated_Image_shjp3lshjp3lshjp_bbugon.png',
     fallback:
       'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp',
-    alt: 'Four Narenn Living co-living properties in VIP Hills, Madhapur, Hyderabad',
+    alt: 'Narenn Living branded lobby entrance in VIP Hills, Madhapur, Hyderabad',
     title: 'Co-living properties in Madhapur',
   },
 };

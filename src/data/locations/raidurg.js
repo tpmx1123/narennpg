@@ -70,8 +70,8 @@ export default {
       "Raidurg was built out around IT campuses and the metro line, so most of what is available nearby is large gated apartment complexes and serviced residences - fine for a family, expensive and impractical for a single working professional wanting a shared room. There is very little genuine PG stock in the immediate area. Narenn Living gives you a purpose-run alternative in VIP Hills instead: a fixed monthly fee, an in-house kitchen, and daily housekeeping, all while keeping Raidurg's metro station and offices inside a 7-10 minute reach - often quicker than navigating a large gated campus internally.",
     ],
     links: [
+      { to: '/locations/madhapur/', label: 'PG in Madhapur' },
       { to: '/locations/hitech-city/', label: 'PG near Hitech City' },
-      { to: '/locations/gachibowli/', label: 'PG near Gachibowli' },
     ],
   },
   standard: {

@@ -20,13 +20,13 @@ export default function PropertiesFind() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="relative z-10 px-4 sm:px-6 lg:px-10 py-16 lg:py-24 text-center"
+        className="relative z-10 px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-24 text-center"
       >
         <div className="max-w-2xl mx-auto">
           <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-[1.12]">
             {PROPERTIES_FIND.h2}
           </h2>
-          <p className="text-sm sm:text-base text-white/85 leading-relaxed mt-4">
+          <p className="px-1 text-sm sm:text-base text-white/85 leading-relaxed mt-4">
             {PROPERTIES_FIND.body} Call <PhoneWhatsAppLinks /> or{' '}
             <Link to="/contact-us/" className="font-semibold text-brand-gold hover:underline">
               book a visit

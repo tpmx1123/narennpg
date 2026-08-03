@@ -31,9 +31,9 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      'Is a PG cheaper than a flat in Hyderabad? A full cost breakdown of rent, deposits, furniture, food & bills - plus which option really saves you money.',
+      'Is a PG cheaper than a flat in Hyderabad? A full cost breakdown of rent, deposits, furniture, food & bills — plus which option really saves you money.',
     description:
-      'Is a PG cheaper than a flat in Hyderabad? A full cost breakdown of rent, deposits, furniture, food & bills - plus which option really saves you money.',
+      'Is a PG cheaper than a flat in Hyderabad? A full cost breakdown of rent, deposits, furniture, food & bills — plus which option really saves you money.',
     keywords:
       'PG vs flat in Hyderabad, cost of PG in Hyderabad, renting a flat in Madhapur cost, is PG cheaper than flat',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
@@ -56,9 +56,9 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      'Madhapur, Gachibowli, Kondapur or Hitech City? A guide to the best areas to live in Hyderabad for IT professionals - commute, rent, lifestyle & where to base.',
+      'Madhapur, Gachibowli, Kondapur or Hitech City? A guide to the best areas to live in Hyderabad for IT professionals — commute, rent, lifestyle & where to base.',
     description:
-      'Madhapur, Gachibowli, Kondapur or Hitech City? A guide to the best areas to live in Hyderabad for IT professionals - commute, rent, lifestyle & where to base.',
+      'Madhapur, Gachibowli, Kondapur or Hitech City? A guide to the best areas to live in Hyderabad for IT professionals — commute, rent, lifestyle & where to base.',
     keywords:
       'best areas to live in Hyderabad for IT professionals, where to live in Hyderabad IT, best area near Hitech City, Madhapur vs Gachibowli living',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',

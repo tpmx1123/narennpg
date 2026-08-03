@@ -89,9 +89,9 @@ export default function Amenities() {
         jsonLd={jsonLd}
       />
 
-      <main className="flex-1 bg-white">
+      <main className="flex-1 bg-white overflow-x-clip">
         <AmenitiesHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 sm:pb-10 lg:pb-10">
           <AmenitiesIntro />
           <AmenitiesFeatures />
           <AmenitiesFullList />
@@ -116,7 +116,7 @@ export default function Amenities() {
               <Link to="/contact-us/" className="text-brand-gold font-semibold hover:underline">
                 book a visit
               </Link>{' '}
-              — see everything Narenn Living includes for one simple monthly fee.
+              - see everything Narenn Living includes for one simple monthly fee.
             </p>
           }
         />

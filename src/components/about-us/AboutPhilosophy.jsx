@@ -17,22 +17,22 @@ export default function AboutPhilosophy() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {ABOUT_PHILOSOPHY.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
             {ABOUT_PHILOSOPHY.h2}
           </h2>
-          <p className="text-base sm:text-lg font-display font-medium text-brand-charcoal-light italic border-l-4 border-brand-gold pl-5 leading-snug">
+          <p className="text-sm sm:text-lg font-display font-medium text-brand-charcoal-light italic border-l-4 border-brand-gold pl-4 sm:pl-5 leading-snug">
             “{ABOUT_PHILOSOPHY.quote}”
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           <div className="space-y-5 text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             {ABOUT_PHILOSOPHY.paragraphs.map((para) => (
               <p key={para.slice(0, 40)}>{para}</p>
             ))}
           </div>
 
-          <div className="bg-brand-cream-dark rounded-xl p-6 sm:p-8 space-y-5">
+          <div className="bg-brand-cream-dark rounded-xl p-5 sm:p-8 space-y-5">
             <h3 className="font-display font-bold text-lg sm:text-xl text-brand-burgundy tracking-tight">
               What We Are <span className="text-brand-charcoal">Not</span>
             </h3>

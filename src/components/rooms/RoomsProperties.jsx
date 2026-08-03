@@ -22,13 +22,13 @@ const POINTS = [
 
 export default function RoomsProperties() {
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 mb-8 lg:mb-10 items-end">
         <div className="lg:col-span-5">
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             One Standard
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             Rooms Across Four Properties,{' '}
             <span className="text-brand-gold italic font-medium">One Standard</span>
           </h2>
@@ -63,7 +63,7 @@ export default function RoomsProperties() {
             key={item}
             custom={index}
             variants={itemVariants}
-            className="flex gap-3.5 items-start"
+            className="min-w-0 flex gap-3.5 items-start"
           >
             <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-gold/20 text-brand-burgundy">
               <Check className="w-3.5 h-3.5 stroke-[2.5]" aria-hidden="true" />

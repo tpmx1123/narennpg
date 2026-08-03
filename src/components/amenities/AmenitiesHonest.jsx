@@ -7,7 +7,7 @@ export default function AmenitiesHonest() {
   const plain = AMENITIES_DAILY.h2.replace(AMENITIES_DAILY.h2Accent, '').trim();
 
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
@@ -16,10 +16,10 @@ export default function AmenitiesHonest() {
           transition={{ duration: 0.55, ease: EASE }}
           className="lg:col-span-6 space-y-5"
         >
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {AMENITIES_DAILY.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {plain}{' '}
             <span className="text-brand-gold italic font-medium">{AMENITIES_DAILY.h2Accent}</span>
           </h2>
@@ -35,7 +35,7 @@ export default function AmenitiesHonest() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.55, ease: EASE, delay: 0.08 }}
-          className="lg:col-span-6 grid grid-cols-2 gap-4"
+          className="lg:col-span-6 grid grid-cols-2 gap-3 sm:gap-4"
         >
           <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-brand-gold/20">
             <img
@@ -45,7 +45,7 @@ export default function AmenitiesHonest() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="aspect-[4/5] overflow-hidden rounded-2xl mt-8 border border-brand-gold/20">
+          <div className="aspect-[4/5] overflow-hidden rounded-2xl mt-4 sm:mt-8 border border-brand-gold/20">
             <img
               src={AMENITIES_IMAGES.wifi.src}
               alt={AMENITIES_IMAGES.wifi.alt}

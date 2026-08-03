@@ -71,8 +71,8 @@ export default {
       "Housing right around Nanakramguda is dominated by recently built, premium apartment complexes catering to ISB faculty, senior executives and long-term corporate tenants - not the kind of market that supports affordable shared PG living. What limited shared housing does exist is often overpriced simply for the ISB or Financial District address. Basing yourself at Narenn Living in VIP Hills instead gives you an established, well-run property with a fixed monthly fee, while Nanakramguda itself stays a consistent 18-20 minutes away - close enough for daily classes or meetings, far enough to actually have a life beyond the campus gates.",
     ],
     links: [
+      { to: '/locations/madhapur/', label: 'PG in Madhapur' },
       { to: '/locations/financial-district/', label: 'PG near Financial District' },
-      { to: '/locations/gachibowli/', label: 'PG near Gachibowli' },
     ],
   },
   standard: {

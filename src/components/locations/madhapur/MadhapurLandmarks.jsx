@@ -5,35 +5,39 @@ const ICONS = { Briefcase, TrainFront, ShoppingBag, HeartPulse };
 
 export default function MadhapurLandmarks() {
   return (
-    <section className="mb-14 lg:mb-16">
-      <div className="text-center max-w-3xl mx-auto mb-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-2.5">
+    <section className="mb-8 sm:mb-10 lg:mb-12">
+      <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-2.5">
           {MADHAPUR_LANDMARKS.h2}
         </h2>
-        <p className="text-sm text-brand-charcoal-light leading-relaxed">{MADHAPUR_LANDMARKS.intro}</p>
+        <p className="text-sm text-brand-charcoal-light leading-relaxed px-1">
+          {MADHAPUR_LANDMARKS.intro}
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {MADHAPUR_LANDMARKS.groups.map((group) => {
           const Icon = ICONS[group.icon] ?? Briefcase;
           return (
             <article
               key={group.title}
-              className="rounded-2xl border border-brand-gold/20 bg-brand-gold-pale/40 p-5"
+              className="rounded-xl sm:rounded-2xl border border-brand-gold/20 bg-brand-gold-pale/40 p-3.5 sm:p-5 min-w-0"
             >
-              <div className="flex items-center gap-3 border-b border-brand-gold/25 pb-3 mb-3">
-                <div className="w-9 h-9 shrink-0 rounded-lg bg-brand-burgundy/10 text-brand-burgundy flex items-center justify-center">
+              <div className="flex items-center gap-2 sm:gap-3 border-b border-brand-gold/25 pb-2.5 sm:pb-3 mb-2.5 sm:mb-3">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 shrink-0 rounded-lg bg-brand-burgundy/10 text-brand-burgundy flex items-center justify-center">
                   <Icon className="w-4 h-4" aria-hidden="true" />
                 </div>
-                <h3 className="font-display font-bold text-base text-brand-green">{group.title}</h3>
+                <h3 className="font-display font-bold text-sm sm:text-base text-brand-green leading-snug min-w-0">
+                  {group.title}
+                </h3>
               </div>
-              <ul className="space-y-2.5">
+              <ul className="space-y-2 sm:space-y-2.5">
                 {group.items.map((item) => (
                   <li
                     key={item.name}
-                    className="flex justify-between gap-3 text-sm text-brand-charcoal-light"
+                    className="flex justify-between gap-2 sm:gap-3 text-xs sm:text-sm text-brand-charcoal-light"
                   >
-                    <span>{item.name}</span>
+                    <span className="min-w-0">{item.name}</span>
                     <span className="font-semibold text-brand-charcoal shrink-0">{item.distance}</span>
                   </li>
                 ))}

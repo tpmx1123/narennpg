@@ -7,8 +7,8 @@ export default function MadhapurAudience() {
   const { audience } = MADHAPUR_IMAGES;
 
   return (
-    <section className="mb-14 lg:mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
-      <div className="rounded-2xl overflow-hidden border border-brand-gold/20 aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[360px] shadow-[0_16px_40px_-20px_rgba(15,61,46,0.16)]">
+    <section className="mb-8 sm:mb-10 lg:mb-12 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-center">
+      <div className="order-1 overflow-hidden aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[360px] rounded-xl sm:rounded-2xl border border-brand-gold/20 shadow-[0_16px_40px_-20px_rgba(15,61,46,0.16)] w-full max-w-xl mx-auto lg:max-w-none">
         <img
           src={audience.src}
           alt={audience.alt}
@@ -18,8 +18,8 @@ export default function MadhapurAudience() {
         />
       </div>
 
-      <div className="space-y-4 lg:space-y-5">
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+      <div className="order-2 space-y-4 sm:space-y-5 min-w-0">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
           {MADHAPUR_AUDIENCE.h2}
         </h2>
         <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">

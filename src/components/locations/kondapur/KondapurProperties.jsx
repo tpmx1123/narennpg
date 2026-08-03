@@ -8,19 +8,19 @@ const EASE = [0.16, 1, 0.3, 1];
 
 export default function KondapurProperties() {
   return (
-    <section className="mb-8 lg:mb-10 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-10 lg:py-12 bg-brand-gold-pale/25 border-y border-brand-gold/15">
+    <section className="mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12 bg-brand-gold-pale/25 border-y border-brand-gold/15">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.12 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start max-w-7xl mx-auto"
+        className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-start max-w-7xl mx-auto"
       >
-        <div className="lg:col-span-5 space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+        <div className="lg:col-span-5 space-y-4 sm:space-y-5 min-w-0">
+          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
             {KONDAPUR_PROPERTIES.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             Our{' '}
             <span className="text-brand-gold italic font-medium">
               {KONDAPUR_PROPERTIES.h2Accent}
@@ -55,10 +55,10 @@ export default function KondapurProperties() {
           {CONTACT_MAPS.map((property) => (
             <article
               key={property.name}
-              className="bg-white rounded-xl border border-brand-gold/20 p-3 overflow-hidden"
+              className="bg-white rounded-xl border border-brand-gold/20 p-3 overflow-hidden min-w-0"
             >
               <div className="flex items-center justify-between gap-2 mb-2">
-                <h3 className="font-display font-bold text-sm text-brand-green truncate">
+                <h3 className="font-display font-bold text-sm text-brand-green truncate min-w-0">
                   {property.name}
                 </h3>
                 <Link
@@ -68,7 +68,7 @@ export default function KondapurProperties() {
                   View →
                 </Link>
               </div>
-              <div className="w-full h-[140px] sm:h-[160px] rounded-lg overflow-hidden border border-brand-gold/15 bg-white">
+              <div className="w-full h-[120px] sm:h-[160px] rounded-lg overflow-hidden border border-brand-gold/15 bg-white">
                 <iframe
                   title={`Map of ${property.name} in VIP Hills, Madhapur`}
                   src={property.embed}

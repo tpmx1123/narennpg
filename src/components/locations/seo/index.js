@@ -1,0 +1,9 @@
+export { default as LocationHero } from './LocationHero';
+export { default as LocationIntro } from './LocationIntro';
+export { default as LocationCommute } from './LocationCommute';
+export { default as LocationWhy } from './LocationWhy';
+export { default as LocationStandard } from './LocationStandard';
+export { default as LocationAudience } from './LocationAudience';
+export { default as LocationBook } from './LocationBook';
+export { default as LocationFaq } from './LocationFaq';
+export { default as LocationMaps } from './LocationMaps';

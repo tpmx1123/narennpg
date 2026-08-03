@@ -19,7 +19,7 @@ export default function SingleRoomAvailability() {
             Timing
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
-            Availability —{' '}
+            Availability -{' '}
             <span className="text-brand-gold italic font-medium">Book Early</span>
           </h2>
         </div>

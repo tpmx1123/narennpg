@@ -17,11 +17,11 @@ export default function AboutComfort() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-14 items-center"
       >
-        <div className="relative grid grid-cols-2 gap-3 sm:gap-4">
+        <div className="relative grid grid-cols-2 gap-3 sm:gap-4 pb-4 sm:pb-6 lg:pb-8">
           <div
-            className="aspect-square rounded-xl bg-cover bg-center translate-y-6 sm:translate-y-8"
+            className="aspect-square rounded-xl bg-cover bg-center translate-y-4 sm:translate-y-6 lg:translate-y-8"
             style={{ backgroundImage: `url('${communityA.src}')` }}
             role="img"
             aria-label={communityA.alt}
@@ -40,7 +40,7 @@ export default function AboutComfort() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {ABOUT_COMMUNITY.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {ABOUT_COMMUNITY.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
@@ -51,8 +51,8 @@ export default function AboutComfort() {
           </p>
 
           <div className="pt-2 space-y-4">
-            <IconSlideButton to="/events/">
-              Take a look at our community events
+            <IconSlideButton to="/events/" compact className="max-w-full">
+              View Community Events
             </IconSlideButton>
 
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-display font-bold">

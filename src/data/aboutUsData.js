@@ -9,22 +9,22 @@ export const ABOUT_PAGE = {
 
 export const ABOUT_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785332320/DIN00315_3_fuqgs1.jpg',
     alt: 'Narenn Living premium co-living properties in VIP Hills, Madhapur, Hyderabad',
     title: 'About Narenn Living',
   },
   mission: {
-    src: 'https://lh3.googleusercontent.com/aida/AP1WRLuP42GkbQvYrk2WsvN2E4BK_kHat3W-5UqtD_rfLhwf_E_5IlWW5a0cLhvbpSBXmb264ffqj2JZUWLO8876xk5tQCm_7xlbWNNxFb3DMLHu6c47RmpBVZg5I7A8Um1xI81JWTBwP7dyNulCkdGOUnZlM0J7H4SlsGG1C7rMmMvvxwm73tPa-ICWjEfHVBfZNEgxbgzNFlaiYU1kWUA4aj0puWGHCFM0hOA1e16OkmbftVfxZA45nWxD9w',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785333213/wmremove-transformed_koov6k.png',
     alt: 'Premium furnished co-living room at Narenn Living Madhapur',
     title: 'Our Mission',
   },
   communityA: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA7fMPgjiFn0CfuBPbrmVKDNWitPdkt8QlrKsFoNmASyEAKtl-0nAP6W9wfaW3FMFIr4MTRupmNKmRTFASghRQKi5-Li0UYi96OqKRgKu4cMXR_oSkJVbR7lMalzWuK9LTELo7f_xjk800b1LoJciBLuP5guPsBrC9KoDdgEaB1tMwv-8bIQq-CHOWWCNZ4e7D75jnxlEysoWikLm0uP_v6xZ4zbFMCVVSkA3O7BTc1-QXWOsF7zICc-Y0KrpvfNR12JWVl7pKckIM',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785392456/ChatGPT_Image_Jul_29_2026_07_59_36_PM_wuru9q.png',
     alt: 'Residents sharing a meal in a Narenn Living communal dining area',
     title: 'Narenn Living community',
   },
   communityB: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBEmcfq13VhSr38lwGUeA4PJ_k1c8-3KMWbl31fLlc7tLhBBAk3LQx1f7-aMMqM_UQNLQ3SZ6ipisbiPn6mHwe8KqamXc7AYNyKP7Zm3xQtLOMQcMz7dtQ4D7t98elR9S0qEIGfzUzRzozqfY4af6yGxRjFurUd1D17TT_g7LqOYmBp6FWAmaIHqEWcIh8JzD-SlGvqZ6SdXtlCMKPiysFhfG1ygkC7WM2_niKmsyHbuOl529EAmcxBQJHrI6Het8hZZsCxZNX16nE',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785392456/ChatGPT_Image_Jul_29_2026_08_06_03_PM_fjgh0h.png',
     alt: 'Evening terrace gathering at Narenn Living Madhapur',
     title: 'Community events at Narenn Living',
   },

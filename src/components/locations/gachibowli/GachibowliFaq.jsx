@@ -8,30 +8,30 @@ export default function GachibowliFaq() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="mb-8 lg:mb-10 pt-10 lg:pt-12 border-t border-brand-gold/15">
-      <div className="max-w-3xl mx-auto">
-        <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3 text-center">
+    <section className="mb-8 sm:mb-10 lg:mb-12 pt-8 sm:pt-10 lg:pt-12 border-t border-brand-gold/15">
+      <div className="max-w-3xl mx-auto min-w-0">
+        <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-2.5 sm:mb-3 text-center">
           FAQ
         </span>
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-8 lg:mb-10">
+        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-6 sm:mb-8 lg:mb-10">
           Frequently Asked <span className="text-brand-gold italic font-medium">Questions</span>
         </h2>
 
-        <div className="space-y-3 mb-8">
+        <div className="space-y-2.5 sm:space-y-3 mb-6 sm:mb-8">
           {GACHIBOWLI_FAQS.map((faq, index) => {
             const open = openIndex === index;
             return (
               <div
                 key={faq.question}
-                className="border border-brand-gold/25 rounded-2xl overflow-hidden bg-brand-gold-pale/30"
+                className="border border-brand-gold/25 rounded-2xl overflow-hidden bg-brand-gold-pale/30 min-w-0"
               >
                 <button
                   type="button"
                   onClick={() => setOpenIndex(open ? -1 : index)}
-                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
+                  className="w-full flex items-center justify-between gap-3 px-4 py-3.5 sm:gap-4 sm:px-5 sm:py-4 text-left"
                   aria-expanded={open}
                 >
-                  <h3 className="font-display font-bold text-sm sm:text-base text-brand-charcoal pr-2">
+                  <h3 className="font-display font-bold text-sm sm:text-base text-brand-charcoal pr-2 min-w-0">
                     {faq.question}
                   </h3>
                   <ChevronDown
@@ -41,7 +41,7 @@ export default function GachibowliFaq() {
                   />
                 </button>
                 {open ? (
-                  <div className="px-5 pb-5">
+                  <div className="px-4 pb-4 sm:px-5 sm:pb-5">
                     <p className="text-sm leading-relaxed text-brand-charcoal-light">
                       <ContactText>{faq.answer}</ContactText>
                     </p>
@@ -52,7 +52,7 @@ export default function GachibowliFaq() {
           })}
         </div>
 
-        <p className="text-sm text-brand-charcoal-light leading-relaxed text-center">
+        <p className="text-sm text-brand-charcoal-light leading-relaxed text-center px-1">
           Also explore{' '}
           <Link to="/locations/hitech-city/" className="text-brand-burgundy font-semibold hover:underline">
             PG near Hitech City

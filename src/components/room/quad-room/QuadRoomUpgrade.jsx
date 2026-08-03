@@ -35,7 +35,7 @@ export default function QuadRoomUpgrade() {
           </p>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             We allow that switch subject to availability and we do not charge a penalty for it.
-            Starting at four sharing is not a lesser tier — it is a sensible first step. Tell us on{' '}
+            Starting at four sharing is not a lesser tier - it is a sensible first step. Tell us on{' '}
             <PhoneWhatsAppLinks className={LINK_CLASS} /> when you want to move up and we will slot
             you in as soon as something opens.
           </p>

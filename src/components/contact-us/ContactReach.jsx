@@ -36,9 +36,9 @@ function ActionButton({ action, onBookVisit }) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp Narenn Living"
-        className={`${BTN} w-9 h-9 !px-0 text-[#25D366] border border-[#25D366]/30 bg-white hover:bg-[#25D366]/10`}
+        className={`${BTN} w-9 h-9 px-0! text-[#25D366] border border-[#25D366]/30 bg-white hover:bg-[#25D366]/10`}
       >
-        <WhatsAppIcon className="w-[18px] h-[18px]" />
+        <WhatsAppIcon className="w-4.5 h-4.5" />
       </a>
     );
   }
@@ -76,18 +76,18 @@ export default function ContactReach({ onBookVisit }) {
   const plain = CONTACT_REACH.h2.replace(CONTACT_REACH.h2Accent, '').trim();
 
   return (
-    <section id="reach" className="mb-14 lg:mb-16 scroll-mt-24">
+    <section id="reach" className="mb-10 sm:mb-14 lg:mb-16 scroll-mt-24">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.55, ease: EASE }}
       >
-        <div className="mb-10 lg:mb-12 max-w-3xl space-y-4">
+        <div className="mb-8 sm:mb-10 lg:mb-12 max-w-3xl space-y-4">
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {CONTACT_REACH.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {plain}{' '}
             <span className="text-brand-gold italic font-medium">{CONTACT_REACH.h2Accent}</span>
           </h2>
@@ -96,21 +96,21 @@ export default function ContactReach({ onBookVisit }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
           {CONTACT_REACH.methods.map((method) => {
             const Icon = ICONS[method.icon] ?? Phone;
             return (
               <div
                 key={method.title}
-                className="flex flex-col p-5 sm:p-6 rounded-2xl bg-brand-gold-pale/40 border border-brand-gold/20 min-h-[200px]"
+                className="flex flex-col p-3 sm:p-6 rounded-xl sm:rounded-2xl bg-brand-gold-pale/40 border border-brand-gold/20 min-h-48 sm:min-h-50"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <Icon className="w-6 h-6 text-brand-burgundy shrink-0" strokeWidth={1.5} />
-                  <h3 className="font-display font-bold text-base sm:text-lg text-brand-green leading-snug">
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-brand-burgundy shrink-0" strokeWidth={1.5} />
+                  <h3 className="font-display font-bold text-sm sm:text-lg text-brand-green leading-snug">
                     {method.title}
                   </h3>
                 </div>
-                <p className="text-sm text-brand-charcoal-light leading-relaxed flex-1 mb-4">
+                <p className="text-xs sm:text-sm text-brand-charcoal-light leading-relaxed flex-1 mb-3 sm:mb-4">
                   <ContactText>{method.body}</ContactText>
                 </p>
                 {method.actions?.length ? (

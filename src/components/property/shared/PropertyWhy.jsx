@@ -7,7 +7,7 @@ export default function PropertyWhy({ data }) {
   const { why } = data;
 
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export default function PropertyWhy({ data }) {
         className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start"
       >
         <div className="lg:col-span-5">
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {why.h2}
           </h2>
         </div>

@@ -16,10 +16,10 @@ export default function AboutFounder() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center"
+        className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center"
       >
         <div className="order-2 lg:order-1 lg:col-span-4 relative group w-full">
-          <div className="absolute -inset-3 border border-brand-gold/25 rounded-2xl -z-10 transition-transform group-hover:scale-[1.02]" />
+          <div className="absolute inset-0 sm:-inset-3 border border-brand-gold/25 rounded-2xl -z-10 transition-transform group-hover:scale-[1.02]" />
           <div className="h-72 sm:h-80 rounded-xl overflow-hidden shadow-[0_20px_50px_-24px_rgba(15,61,46,0.28)]">
             <img
               src={ABOUT_FOUNDER.image}
@@ -43,7 +43,7 @@ export default function AboutFounder() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             {ABOUT_FOUNDER.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {ABOUT_FOUNDER.h2}{' '}
             <span className="text-brand-gold italic font-medium">{ABOUT_FOUNDER.h2Accent}</span>
           </h2>

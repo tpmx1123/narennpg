@@ -11,19 +11,19 @@ export default function GachibowliMaps() {
   const plain = GACHIBOWLI_MAPS.h2.replace(GACHIBOWLI_MAPS.h2Accent, '').trim();
 
   return (
-    <section className="mb-8 lg:mb-10">
+    <section className="mb-8 sm:mb-10 lg:mb-12">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.12 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start"
+        className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-start"
       >
-        <div className="lg:col-span-5 space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+        <div className="lg:col-span-5 space-y-4 sm:space-y-5 min-w-0">
+          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-2.5 sm:mb-3">
             {GACHIBOWLI_MAPS.eyebrow}
           </span>
-          <p className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <p className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             {plain}{' '}
             <span className="text-brand-gold italic font-medium">{GACHIBOWLI_MAPS.h2Accent}</span>
           </p>
@@ -64,10 +64,10 @@ export default function GachibowliMaps() {
           {CONTACT_MAPS.map((property) => (
             <article
               key={property.name}
-              className="bg-brand-gold-pale/30 rounded-xl border border-brand-gold/20 p-3 overflow-hidden"
+              className="bg-brand-gold-pale/30 rounded-xl border border-brand-gold/20 p-3 overflow-hidden min-w-0"
             >
               <div className="flex items-center justify-between gap-2 mb-2">
-                <h3 className="font-display font-bold text-sm text-brand-green truncate">
+                <h3 className="font-display font-bold text-sm text-brand-green truncate min-w-0">
                   {property.name}
                 </h3>
                 <Link
@@ -77,7 +77,7 @@ export default function GachibowliMaps() {
                   View →
                 </Link>
               </div>
-              <div className="w-full h-[140px] sm:h-[160px] rounded-lg overflow-hidden border border-brand-gold/15 bg-white">
+              <div className="w-full h-[120px] sm:h-[160px] rounded-lg overflow-hidden border border-brand-gold/15 bg-white">
                 <iframe
                   title={`Map of ${property.name} in VIP Hills, Madhapur`}
                   src={property.embed}

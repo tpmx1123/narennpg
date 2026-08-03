@@ -8,7 +8,7 @@ import {
 
 const EASE = [0.16, 1, 0.3, 1];
 const WHY_NARENN_WATERMARK =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp';
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1785333986/Screenshot_2026-07-27_152428_plsvfj.png';
 
 export default function AboutProperties() {
   return (
@@ -21,7 +21,7 @@ export default function AboutProperties() {
         className="grid grid-cols-1 md:grid-cols-3 gap-5"
       >
         {/* Residences */}
-        <article className="md:col-span-1 bg-white p-7 sm:p-8 rounded-xl border border-brand-gold/20 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+        <article className="md:col-span-1 bg-white p-5 sm:p-7 lg:p-8 rounded-xl border border-brand-gold/20 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
           <div>
             <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
               Residences
@@ -63,19 +63,19 @@ export default function AboutProperties() {
         <article className="md:col-span-2 relative overflow-hidden rounded-xl border border-brand-gold/20 bg-white shadow-sm min-h-[320px]">
           <img
             src={WHY_NARENN_WATERMARK}
-            alt=""
-            aria-hidden="true"
-            className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-[0.14]"
+            alt="Premium co-living building in Madhapur, Hyderabad — Narenn Living VIP Hills"
+            title="Narenn Living co-living in Madhapur"
+            className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover opacity-[0.14]"
           />
-          <div className="relative z-10 p-7 sm:p-8 lg:p-10 h-full flex flex-col justify-between">
+          <div className="relative z-10 p-5 sm:p-7 lg:p-10 h-full flex flex-col justify-between">
             <div>
               <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
                 Why Narenn
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6">
+              <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6">
                 What Makes Us <span className="text-brand-gold italic font-medium">Different</span>
               </h2>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+              <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5">
                 {ABOUT_DIFFERENT_BULLETS.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle2

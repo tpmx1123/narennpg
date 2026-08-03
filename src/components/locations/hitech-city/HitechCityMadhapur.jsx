@@ -10,31 +10,31 @@ export default function HitechCityMadhapur() {
   const [src, setSrc] = useState(img.src);
 
   return (
-    <section className="mb-8 lg:mb-10">
+    <section className="mb-8 sm:mb-10 lg:mb-12">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 0.55, ease: EASE }}
-        className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto"
+        className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center max-w-6xl mx-auto"
       >
-        <div className="lg:col-span-7 order-2 lg:order-1">
-          <div className="overflow-hidden aspect-[4/3] lg:aspect-[5/4] -mx-4 sm:mx-0 sm:rounded-2xl">
+        <div className="lg:col-span-7 order-1 lg:order-1">
+          <div className="overflow-hidden aspect-[4/3] lg:aspect-[5/4] rounded-xl sm:rounded-2xl w-full max-w-xl mx-auto lg:max-w-none">
             <img
               src={src}
               alt={img.alt}
               title={img.title}
               onError={() => setSrc(img.fallback)}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </div>
 
-        <div className="lg:col-span-5 order-1 lg:order-2 space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+        <div className="lg:col-span-5 order-2 lg:order-2 space-y-4 sm:space-y-5 min-w-0">
+          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
             {HITECH_CITY_MADHAPUR.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             The Convenience of{' '}
             <span className="text-brand-gold italic font-medium">
               {HITECH_CITY_MADHAPUR.h2Accent}

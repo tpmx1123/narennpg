@@ -80,13 +80,13 @@ export default function Pricing({ onBookVisit }) {
   const active = SHARING_TIERS.find((tier) => tier.id === activeId) ?? SHARING_TIERS[3];
 
   return (
-    <section id="pricing" className="py-14 sm:py-16 bg-white relative">
+    <section id="pricing" className="py-10 sm:py-16 bg-white relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             Sharing Types
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
+          <h2 className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4 sm:mb-5">
             Transparent Pricing,{' '}
             <span className="text-brand-gold italic font-medium">No Surprises.</span>
           </h2>
@@ -99,7 +99,7 @@ export default function Pricing({ onBookVisit }) {
         </div>
 
         <div
-          className="flex flex-wrap justify-center gap-x-8 sm:gap-x-12 gap-y-2 border-b border-brand-gold/20 mb-8 sm:mb-10"
+          className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-x-4 sm:gap-x-12 gap-y-1 sm:gap-y-2 border-b border-brand-gold/20 mb-8 sm:mb-10"
           role="tablist"
           aria-label="Sharing types"
         >
@@ -112,7 +112,7 @@ export default function Pricing({ onBookVisit }) {
                 role="tab"
                 aria-selected={isActive}
                 onClick={() => setActiveId(tier.id)}
-                className={`relative pb-3.5 text-[11px] sm:text-xs font-display font-bold uppercase tracking-[0.14em] transition-colors ${
+                className={`relative min-h-11 pb-3 text-[10px] sm:text-xs font-display font-bold uppercase tracking-[0.12em] sm:tracking-[0.14em] transition-colors ${
                   isActive
                     ? 'text-brand-green'
                     : 'text-brand-charcoal-light hover:text-brand-charcoal'
@@ -122,7 +122,7 @@ export default function Pricing({ onBookVisit }) {
                 {isActive ? (
                   <motion.span
                     layoutId="pricing-tab-underline"
-                    className="absolute left-0 right-0 -bottom-px h-[3px] bg-brand-gold"
+                    className="absolute left-0 right-0 -bottom-px h-0.75 bg-brand-gold"
                     transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   />
                 ) : null}
@@ -142,12 +142,12 @@ export default function Pricing({ onBookVisit }) {
             className="rounded-2xl border border-brand-gold/15 bg-brand-gold-pale/25 shadow-[0_20px_50px_rgba(15,61,46,0.14),0_8px_24px_rgba(15,61,46,0.08)] p-4 sm:p-6 lg:p-8"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-stretch">
-              <div className="rounded-xl overflow-hidden border border-brand-gold/10 min-h-60 sm:min-h-72 lg:min-h-0">
+              <div className="rounded-xl overflow-hidden border border-brand-gold/10 min-h-48 sm:min-h-72 lg:min-h-0">
                 <img
                   src={active.image}
                   alt={active.alt}
                   title={`${active.occupancy} ${active.titleSuffix}`}
-                  className="w-full h-full object-cover aspect-4/3 lg:aspect-auto lg:h-full min-h-60"
+                  className="w-full h-full object-cover aspect-4/3 lg:aspect-auto lg:h-full min-h-48 sm:min-h-60"
                 />
               </div>
 
@@ -202,6 +202,7 @@ export default function Pricing({ onBookVisit }) {
                     textHoverColor="#1A1A1A"
                     iconColor="#ffffff"
                     iconHoverColor="#1A1A1A"
+                    className="w-full sm:w-auto"
                   >
                     Enquire Now
                   </IconSlideButton>

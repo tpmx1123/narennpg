@@ -134,7 +134,7 @@ const womensPgSafetyChecklist = {
       type: 'paragraph',
       parts: [
         {
-          text: 'At Narenn Living, safety is designed into every property — 24/7 CCTV, biometric access, on-site management and a central, well-connected Madhapur location. We warmly welcome prospective residents and their families to visit and see it all first-hand. Call 70759 85666 or ',
+          text: 'At Narenn Living, safety is designed into every property - 24/7 CCTV, biometric access, on-site management and a central, well-connected Madhapur location. We warmly welcome prospective residents and their families to visit and see it all first-hand. Call 70759 85666 or ',
         },
         { type: 'link', href: '/contact-us/', text: 'book a visit' },
         {

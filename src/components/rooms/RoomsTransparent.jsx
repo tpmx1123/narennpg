@@ -6,7 +6,7 @@ const EASE = [0.16, 1, 0.3, 1];
 
 export default function RoomsTransparent() {
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export default function RoomsTransparent() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             Pricing Clarity
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
             Everything Included,{' '}
             <span className="text-brand-gold italic font-medium">Nothing Hidden</span>
           </h2>

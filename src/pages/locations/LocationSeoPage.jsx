@@ -1,32 +1,31 @@
 import { useMemo } from 'react';
-import { Link, useOutletContext } from 'react-router-dom';
+import { Link, Navigate, useOutletContext } from 'react-router-dom';
 import PageMeta, { buildBreadcrumbSchema, organizationRef } from '../../components/seo/PageMeta';
 import { Footer, FinalCta } from '../../components/home';
 import ContactText, { PhoneWhatsAppLinks } from '../../components/ui/ContactText';
 import {
-  KondapurAudience,
-  KondapurBook,
-  KondapurCommute,
-  KondapurFaq,
-  KondapurHero,
-  KondapurIntro,
-  KondapurProperties,
-  KondapurStandard,
-  KondapurWhy,
-} from '../../components/locations/kondapur';
-import {
-  KONDAPUR_FAQS,
-  KONDAPUR_FINAL_CTA,
-  KONDAPUR_PAGE,
-} from '../../data/kondapurLocationData';
+  LocationAudience,
+  LocationBook,
+  LocationCommute,
+  LocationFaq,
+  LocationHero,
+  LocationIntro,
+  LocationMaps,
+  LocationStandard,
+  LocationWhy,
+} from '../../components/locations/seo';
+import { getSeoLocation } from '../../data/locations';
 import { SITE_URL } from '../../data/sitePages';
 
-export default function Kondapur() {
+export default function LocationSeoPage({ slug }) {
   const { onBookVisit } = useOutletContext() ?? {};
-  const canonical = `${SITE_URL}${KONDAPUR_PAGE.path}`;
+  const data = getSeoLocation(slug);
 
-  const jsonLd = useMemo(
-    () => ({
+  const canonical = data ? `${SITE_URL}${data.page.path}` : SITE_URL;
+
+  const jsonLd = useMemo(() => {
+    if (!data) return null;
+    return {
       '@context': 'https://schema.org',
       '@graph': [
         {
@@ -41,17 +40,17 @@ export default function Kondapur() {
         {
           '@type': 'LodgingBusiness',
           '@id': `${canonical}#lodging`,
-          name: 'Narenn Living — PG near Kondapur',
+          name: `Narenn Living — ${data.keyword}`,
           url: canonical,
-          description: KONDAPUR_PAGE.description,
-          image: KONDAPUR_PAGE.ogImage,
+          description: data.page.description,
+          image: data.page.ogImage,
           telephone: '+91-70759-85666',
           address: {
             '@type': 'PostalAddress',
-            streetAddress: 'VIP Hills, Road 21, Silicon Valley, Madhapur',
-            addressLocality: 'Hyderabad',
-            addressRegion: 'Telangana',
-            postalCode: '500084',
+            streetAddress: data.maps.streetAddress,
+            addressLocality: data.maps.locality,
+            addressRegion: data.maps.region,
+            postalCode: data.maps.postalCode,
             addressCountry: 'IN',
           },
           geo: {
@@ -64,15 +63,14 @@ export default function Kondapur() {
         {
           '@type': 'Place',
           '@id': `${canonical}#place`,
-          name: 'VIP Hills near Kondapur, Madhapur',
-          description:
-            'VIP Hills neighbourhood in Madhapur, Hyderabad — home to Narenn Living co-living properties 8–10 minutes from Kondapur, Botanical Garden Road and Kothaguda.',
+          name: `VIP Hills near ${data.area}, Madhapur`,
+          description: data.page.description,
           address: {
             '@type': 'PostalAddress',
-            streetAddress: 'VIP Hills, Road 21, Silicon Valley, Madhapur',
-            addressLocality: 'Hyderabad',
-            addressRegion: 'Telangana',
-            postalCode: '500084',
+            streetAddress: data.maps.streetAddress,
+            addressLocality: data.maps.locality,
+            addressRegion: data.maps.region,
+            postalCode: data.maps.postalCode,
             addressCountry: 'IN',
           },
           geo: {
@@ -85,19 +83,20 @@ export default function Kondapur() {
           '@type': 'WebPage',
           '@id': `${canonical}#webpage`,
           url: canonical,
-          name: KONDAPUR_PAGE.title,
-          description: KONDAPUR_PAGE.description,
+          name: data.page.title,
+          description: data.page.description,
           isPartOf: { '@id': `${SITE_URL}/#website` },
           about: { '@id': `${canonical}#place` },
           inLanguage: 'en-IN',
         },
         buildBreadcrumbSchema([
           { name: 'Home', path: '/' },
-          { name: 'PG near Kondapur', path: KONDAPUR_PAGE.path },
+          { name: 'PG in Madhapur', path: '/locations/madhapur/' },
+          { name: data.keyword, path: data.page.path },
         ]),
         {
           '@type': 'FAQPage',
-          mainEntity: KONDAPUR_FAQS.map((faq) => ({
+          mainEntity: data.faqs.map((faq) => ({
             '@type': 'Question',
             name: faq.question,
             acceptedAnswer: {
@@ -107,48 +106,51 @@ export default function Kondapur() {
           })),
         },
       ],
-    }),
-    [canonical]
-  );
+    };
+  }, [canonical, data]);
+
+  if (!data) {
+    return <Navigate to="/locations/madhapur/" replace />;
+  }
 
   return (
     <>
       <PageMeta
-        title={KONDAPUR_PAGE.title}
-        description={KONDAPUR_PAGE.description}
+        title={data.page.title}
+        description={data.page.description}
         canonical={canonical}
-        robots={KONDAPUR_PAGE.robots}
-        ogImage={KONDAPUR_PAGE.ogImage}
+        robots={data.page.robots}
+        ogImage={data.page.ogImage}
         jsonLd={jsonLd}
       />
 
-      <main className="flex-1 bg-white">
-        <KondapurHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-4 lg:pb-6">
-          <KondapurIntro />
-          <KondapurCommute />
-          <KondapurWhy />
-          <KondapurStandard />
-          <KondapurAudience />
-          <KondapurBook onBookVisit={onBookVisit} />
-          <KondapurFaq />
-          <KondapurProperties />
+      <main className="flex-1 bg-white overflow-x-clip">
+        <LocationHero data={data} onBookVisit={onBookVisit} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-6 sm:pb-10 lg:pb-10">
+          <LocationIntro data={data} />
+          <LocationCommute data={data} />
+          <LocationWhy data={data} />
+          <LocationStandard data={data} />
+          <LocationAudience data={data} />
+          <LocationBook data={data} onBookVisit={onBookVisit} />
+          <LocationFaq data={data} />
+          <LocationMaps data={data} />
         </div>
 
         <FinalCta
           onBookVisit={onBookVisit}
           title={
             <>
-              {KONDAPUR_FINAL_CTA.title}{' '}
+              {data.finalCta.title}{' '}
               <span className="text-brand-gold italic font-medium">
-                {KONDAPUR_FINAL_CTA.titleAccent}
+                {data.finalCta.titleAccent}
               </span>
             </>
           }
           description={
             <p>
               <ContactText linkClassName="text-brand-gold font-semibold hover:underline">
-                {KONDAPUR_FINAL_CTA.description}
+                {data.finalCta.description}
               </ContactText>{' '}
               Or{' '}
               <Link to="/contact-us/" className="text-brand-gold font-semibold hover:underline">
@@ -157,7 +159,7 @@ export default function Kondapur() {
               . Reach us on <PhoneWhatsAppLinks />.
             </p>
           }
-          imageAlt="PG near Kondapur — Narenn Living VIP Hills, Madhapur"
+          imageAlt={`${data.keyword} — Narenn Living VIP Hills, Madhapur`}
         />
       </main>
       <Footer />

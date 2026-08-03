@@ -19,7 +19,7 @@ function SectionBlock({ data, delay = 0, children }) {
       <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
         {data.eyebrow}
       </span>
-      <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+      <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
         {plain}{' '}
         <span className="text-brand-gold italic font-medium">{data.h2Accent}</span>
       </h2>
@@ -38,7 +38,7 @@ function SectionBlock({ data, delay = 0, children }) {
 
 export default function ContactPhoneOutside() {
   return (
-    <section className="mb-14 lg:mb-16">
+    <section className="mb-10 sm:mb-14 lg:mb-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
         <SectionBlock data={CONTACT_PHONE}>
           <div className="flex flex-wrap gap-3 pt-2">

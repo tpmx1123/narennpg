@@ -89,31 +89,64 @@ export const MADHAPUR_MINUTES = {
       time: 'about 5–10 minutes',
       short: '5m',
       detail: 'The core tech hub of Hyderabad',
+      to: '/locations/hitech-city/',
     },
     {
       place: 'Durgam Cheruvu metro',
       time: 'under 10 minutes',
       short: '10m',
       detail: 'Relaxing lakefront & cable bridge',
+      to: '/locations/durgam-cheruvu/',
     },
     {
       place: 'Kondapur',
       time: 'around 8–10 minutes',
       short: '8m',
       detail: 'Medical hubs & shopping centers',
+      to: '/locations/kondapur/',
     },
     {
       place: 'Gachibowli & Financial District',
       time: 'roughly 15–20 minutes',
       short: '15m',
       detail: 'Financial District access',
+      to: '/locations/gachibowli/',
     },
     {
       place: 'Jubilee Hills',
       time: 'about 15 minutes',
       short: '15m',
       detail: 'Cafés, dining, and weekend hangouts',
+      to: '/locations/jubilee-hills/',
     },
+  ],
+};
+
+/** SEO hub links from Madhapur — not used in nav/footer. */
+export const MADHAPUR_NEARBY = {
+  eyebrow: 'Nearby Areas',
+  h2: 'PG Near',
+  h2Accent: 'West Hyderabad',
+  intro:
+    'Searching for a PG near your office or college? These pages cover real commute times from our VIP Hills base to the areas people ask about most.',
+  items: [
+    { label: 'PG near Hitech City', to: '/locations/hitech-city/' },
+    { label: 'PG near Kondapur', to: '/locations/kondapur/' },
+    { label: 'PG near Gachibowli', to: '/locations/gachibowli/' },
+    { label: 'PG near Mindspace', to: '/locations/mindspace/' },
+    { label: 'PG near Cyber Towers', to: '/locations/cyber-towers/' },
+    { label: 'PG near Durgam Cheruvu', to: '/locations/durgam-cheruvu/' },
+    { label: 'PG near Raidurg', to: '/locations/raidurg/' },
+    { label: 'PG near Financial District', to: '/locations/financial-district/' },
+    { label: 'PG near Nanakramguda', to: '/locations/nanakramguda/' },
+    { label: 'PG near Jubilee Hills', to: '/locations/jubilee-hills/' },
+    { label: 'PG near Kothaguda', to: '/locations/kothaguda/' },
+    { label: 'PG near Manikonda', to: '/locations/manikonda/' },
+    { label: 'PG near Nallagandla', to: '/locations/nallagandla/' },
+    { label: 'PG near Miyapur', to: '/locations/miyapur/' },
+    { label: 'PG near Kukatpally', to: '/locations/kukatpally/' },
+    { label: 'PG near Ameerpet', to: '/locations/ameerpet/' },
+    { label: 'PG near Begumpet', to: '/locations/begumpet/' },
   ],
 };
 

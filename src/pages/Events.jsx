@@ -120,9 +120,9 @@ export default function Events() {
         jsonLd={jsonLd}
       />
 
-      <main className="flex-1 bg-white">
+      <main className="flex-1 bg-white overflow-x-clip">
         <EventsHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 sm:pb-10 lg:pb-10">
           <EventsIntro />
           <EventsCalendar />
           <EventsFestivals />
