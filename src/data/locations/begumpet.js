@@ -1,4 +1,4 @@
-import { SITE_URL } from '../sitePages';
+import { LOCATION_HERO_IMAGE, SITE_URL } from '../sitePages';
 
 const FALLBACK =
   'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp';
@@ -13,12 +13,12 @@ export default {
     description:
       'Premium PG & co-living within easy reach of Begumpet. AC rooms, four meals, WiFi & housekeeping in VIP Hills, Madhapur. Book a visit.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    ogImage: `${SITE_URL}/images/pg-near-begumpet-hyderabad-hero.jpg`,
+    ogImage: LOCATION_HERO_IMAGE,
   },
   images: {
     hero: {
-      src: `${SITE_URL}/images/pg-near-begumpet-hyderabad-hero.jpg`,
-      fallback: FALLBACK,
+      src: LOCATION_HERO_IMAGE,
+      fallback: LOCATION_HERO_IMAGE,
       alt: 'PG near Begumpet, Hyderabad - Narenn Living VIP Hills, Madhapur',
       title: 'PG near Begumpet',
     },

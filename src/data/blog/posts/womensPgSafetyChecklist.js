@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const womensPgSafetyChecklist = {
   blocks: [
@@ -50,7 +48,7 @@ const womensPgSafetyChecklist = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/biometric-cctv-security-womens-pg-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785761471/wmremove-transformed_9_vlhg6k.png',
       alt: "Biometric access and CCTV security at a women's PG in Hyderabad",
       title: 'Security systems',
     },
@@ -70,7 +68,7 @@ const womensPgSafetyChecklist = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/well-lit-corridor-womens-pg-madhapur.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785761471/wmremove-transformed_10_fxrvny.png',
       alt: "Well-lit corridor and stairwell at a women's PG in Madhapur, Hyderabad",
       title: 'Lighting and corridors',
     },
@@ -215,7 +213,8 @@ const womensPgSafetyChecklist = {
     title: 'Visit and verify every claim.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/safe-pg-for-women-in-hyderabad-checklist.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785761471/wmremove-transformed_8_mku7o6.png',
     imageAlt: 'Safe PG for women in Hyderabad — safety checklist and verified entry',
   },
 };

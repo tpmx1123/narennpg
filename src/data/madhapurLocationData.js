@@ -1,4 +1,4 @@
-import { SITE_URL } from './sitePages';
+import { LOCATION_HERO_IMAGE, SITE_URL } from './sitePages';
 
 export const MADHAPUR_PAGE = {
   path: '/locations/madhapur/',
@@ -6,12 +6,12 @@ export const MADHAPUR_PAGE = {
   description:
     'Premium PG & co-living in Madhapur, VIP Hills - AC rooms, four meals, WiFi & housekeeping, minutes from Hitech City. Book a free visit at Narenn Living today.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: `${SITE_URL}/images/pg-in-madhapur-hyderabad-narenn-living-hero.jpg`,
+  ogImage: LOCATION_HERO_IMAGE,
 };
 
 export const MADHAPUR_IMAGES = {
   hero: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBRJ1FubqrPNmqPI3NHnySHZB91Z_dGK_Kcue70JA9qUIlHr0jXv8EiAM70T_JAS5Jtbm9azyzCpImcLvyDyXxPCsLma2ImiwFuL1qIBMK4GHU-sQpgec9VAgVXf692h3EkCc1nfSBsn_XEyr5lGeyqnczBLheIqR4kCYpie8BzxMSgXEXQ-iPTljd_6tG7s7Pnmv9DjX_NpGBCwzbNx-Q9HStJ3EXIma_OTIeMxmyznUP1ad-3Am74pZCcb-I32I5y5wTolO4fEbg',
+    src: LOCATION_HERO_IMAGE,
     alt: 'PG in Madhapur, Hyderabad - Narenn Living VIP Hills property exterior',
     title: 'PG in Madhapur',
   },
@@ -119,34 +119,6 @@ export const MADHAPUR_MINUTES = {
       detail: 'Cafés, dining, and weekend hangouts',
       to: '/locations/jubilee-hills/',
     },
-  ],
-};
-
-/** SEO hub links from Madhapur — not used in nav/footer. */
-export const MADHAPUR_NEARBY = {
-  eyebrow: 'Nearby Areas',
-  h2: 'PG Near',
-  h2Accent: 'West Hyderabad',
-  intro:
-    'Searching for a PG near your office or college? These pages cover real commute times from our VIP Hills base to the areas people ask about most.',
-  items: [
-    { label: 'PG near Hitech City', to: '/locations/hitech-city/' },
-    { label: 'PG near Kondapur', to: '/locations/kondapur/' },
-    { label: 'PG near Gachibowli', to: '/locations/gachibowli/' },
-    { label: 'PG near Mindspace', to: '/locations/mindspace/' },
-    { label: 'PG near Cyber Towers', to: '/locations/cyber-towers/' },
-    { label: 'PG near Durgam Cheruvu', to: '/locations/durgam-cheruvu/' },
-    { label: 'PG near Raidurg', to: '/locations/raidurg/' },
-    { label: 'PG near Financial District', to: '/locations/financial-district/' },
-    { label: 'PG near Nanakramguda', to: '/locations/nanakramguda/' },
-    { label: 'PG near Jubilee Hills', to: '/locations/jubilee-hills/' },
-    { label: 'PG near Kothaguda', to: '/locations/kothaguda/' },
-    { label: 'PG near Manikonda', to: '/locations/manikonda/' },
-    { label: 'PG near Nallagandla', to: '/locations/nallagandla/' },
-    { label: 'PG near Miyapur', to: '/locations/miyapur/' },
-    { label: 'PG near Kukatpally', to: '/locations/kukatpally/' },
-    { label: 'PG near Ameerpet', to: '/locations/ameerpet/' },
-    { label: 'PG near Begumpet', to: '/locations/begumpet/' },
   ],
 };
 

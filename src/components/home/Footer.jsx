@@ -62,6 +62,7 @@ const COMPANY_LINKS = [
   { label: 'About Us', href: '/about-us/' },
   { label: "Founder's Note", href: '/narenn-founder/' },
   { label: 'Our Properties', href: '/properties/' },
+  { label: 'Corporate accommodation', href: '/corporate-accommodation/' },
   { label: 'Amenities', href: '/amenities/' },
   { label: 'FAQ', href: '/faq/' },
 ];

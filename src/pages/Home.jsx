@@ -17,7 +17,7 @@ import {
 } from '../components/home';
 import PageMeta from '../components/seo/PageMeta';
 import { HOME_SEO } from '../data/seoHome';
-import { SITE_URL } from '../data/sitePages';
+import { SITE_URL, SITE_LOGO } from '../data/sitePages';
 
 export default function Home() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -31,7 +31,7 @@ export default function Home() {
           '@id': `${SITE_URL}/#organization`,
           name: 'Narenn Living',
           url: `${SITE_URL}/`,
-          logo: `${SITE_URL}/favicon.svg`,
+          logo: SITE_LOGO,
           telephone: '+91-70759-85666',
           email: 'info@narennliving.com',
         },

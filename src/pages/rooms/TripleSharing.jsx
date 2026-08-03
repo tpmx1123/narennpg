@@ -23,7 +23,7 @@ import {
   TRIPLE_SHARING_PAGE,
   TRIPLE_SHARING_RATES,
 } from '../../data/tripleSharingData';
-import { SITE_URL } from '../../data/sitePages';
+import { SITE_URL, SITE_LOGO } from '../../data/sitePages';
 import { PhoneWhatsAppLinks } from '../../components/ui/ContactText';
 
 export default function TripleSharing() {
@@ -39,7 +39,7 @@ export default function TripleSharing() {
           '@id': `${SITE_URL}/#organization`,
           name: 'Narenn Living',
           url: `${SITE_URL}/`,
-          logo: `${SITE_URL}/favicon.svg`,
+          logo: SITE_LOGO,
           telephone: '+91-70759-85666',
           email: 'info@narennliving.com',
         },

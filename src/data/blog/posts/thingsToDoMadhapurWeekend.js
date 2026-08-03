@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const thingsToDoMadhapurWeekend = {
   blocks: [
@@ -37,7 +35,7 @@ const thingsToDoMadhapurWeekend = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/inorbit-mall-sarath-city-mall-madhapur-weekend.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763966/ChatGPT_Image_Aug_3_2026_07_02_34_PM_odry8k.png',
       alt: 'Inorbit Mall and Sarath City Capital Mall near Madhapur',
       title: 'Malls near Madhapur',
     },
@@ -57,7 +55,7 @@ const thingsToDoMadhapurWeekend = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/durgam-cheruvu-lake-cable-bridge-madhapur.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763978/ChatGPT_Image_Aug_3_2026_07_00_40_PM_j3rwb6.png',
       alt: 'Durgam Cheruvu lake and cable bridge near Madhapur, Hyderabad',
       title: 'Durgam Cheruvu',
     },
@@ -211,7 +209,8 @@ const thingsToDoMadhapurWeekend = {
     title: 'Live where the weekend is close.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/things-to-do-in-madhapur-weekend-guide.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763804/ChatGPT_Image_Aug_3_2026_06_59_52_PM_qeamin.png',
     imageAlt: 'Things to do in Madhapur on a weekend — Durgam Cheruvu and Inorbit Mall',
   },
 };

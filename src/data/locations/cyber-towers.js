@@ -1,4 +1,4 @@
-import { SITE_URL } from '../sitePages';
+import { LOCATION_HERO_IMAGE, SITE_URL } from '../sitePages';
 
 const FALLBACK =
   'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp';
@@ -13,12 +13,12 @@ export default {
     description:
       'Premium co-living 5–7 minutes from Cyber Towers. AC rooms, food, fast WiFi & housekeeping in Madhapur. Book your free visit.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    ogImage: `${SITE_URL}/images/pg-near-cyber-towers-hyderabad-hero.jpg`,
+    ogImage: LOCATION_HERO_IMAGE,
   },
   images: {
     hero: {
-      src: `${SITE_URL}/images/pg-near-cyber-towers-hyderabad-hero.jpg`,
-      fallback: FALLBACK,
+      src: LOCATION_HERO_IMAGE,
+      fallback: LOCATION_HERO_IMAGE,
       alt: 'PG near Cyber Towers, Hyderabad - Narenn Living VIP Hills, Madhapur',
       title: 'PG near Cyber Towers',
     },

@@ -38,6 +38,7 @@ import ContactUs from './pages/ContactUs';
 import Faq from './pages/Faq';
 import ColivingItProfessionals from './pages/ColivingItProfessionals';
 import PgForStudents from './pages/PgForStudents';
+import CorporateAccommodation from './pages/CorporateAccommodation';
 import Blog from './pages/Blog';
 import BlogPost from './pages/blog/BlogPost';
 import Founder from './pages/Founder';
@@ -94,6 +95,7 @@ const REDIRECTS = [
   ['locations/hitec-city', '/locations/hitech-city/'],
   ['coliving-for-it-professionals', '/coliving-for-it-professionals/'],
   ['pg-for-students', '/pg-for-students/'],
+  ['corporate-accommodation', '/corporate-accommodation/'],
   ['privacy-policy', '/privacy-policy/'],
   ['terms-of-use', '/terms-of-use/'],
   ['terms-and-conditions', '/terms-of-use/'],
@@ -147,6 +149,7 @@ export default function App() {
           <Route path="/faq/" element={<Faq />} />
           <Route path="/coliving-for-it-professionals/" element={<ColivingItProfessionals />} />
           <Route path="/pg-for-students/" element={<PgForStudents />} />
+          <Route path="/corporate-accommodation/" element={<CorporateAccommodation />} />
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use/" element={<TermsOfUse />} />
           {REDIRECTS.map(([from, to]) => (

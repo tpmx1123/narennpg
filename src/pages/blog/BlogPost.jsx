@@ -13,7 +13,7 @@ import {
   BLOG_PAGE,
   getBlogPostBySlug,
 } from '../../data/blogPageData';
-import { SITE_URL } from '../../data/sitePages';
+import { SITE_URL, SITE_LOGO } from '../../data/sitePages';
 
 const BLOG_IMAGE_FALLBACK =
   'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp';
@@ -155,7 +155,7 @@ export default function BlogPost() {
         '@id': `${SITE_URL}/#organization`,
         name: 'Narenn Living',
         url: `${SITE_URL}/`,
-        logo: `${SITE_URL}/favicon.svg`,
+        logo: SITE_LOGO,
         telephone: '+91-70759-85666',
         email: 'info@narennliving.com',
       },

@@ -2,31 +2,19 @@ import { useMemo } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
 import PageMeta, { buildBreadcrumbSchema, organizationRef } from '../components/seo/PageMeta';
 import { Footer, FinalCta } from '../components/home';
+import { CorporateHero, CorporateSections, CorporateFaq } from '../components/corporate';
 import {
-  StudentsHero,
-  StudentsIntro,
-  StudentsTrust,
-  StudentsStudy,
-  StudentsFoodCommunity,
-  StudentsIncluded,
-  StudentsBook,
-  StudentsApprove,
-  StudentsSupports,
-  StudentsBudgets,
-  StudentsFaq,
-} from '../components/students';
-import {
-  STUDENTS_PAGE,
-  STUDENTS_IMAGES,
-  STUDENTS_FAQS,
-  STUDENTS_FINAL_CTA,
-} from '../data/studentsPageData';
+  CORPORATE_PAGE,
+  CORPORATE_IMAGES,
+  CORPORATE_FAQS,
+  CORPORATE_FINAL_CTA,
+} from '../data/corporateAccommodationPageData';
 import { SITE_URL, SITE_LOGO } from '../data/sitePages';
 import { PhoneWhatsAppLinks } from '../components/ui/ContactText';
 
-export default function PgForStudents() {
+export default function CorporateAccommodation() {
   const { onBookVisit } = useOutletContext() ?? {};
-  const canonical = `${SITE_URL}${STUDENTS_PAGE.path}`;
+  const canonical = `${SITE_URL}${CORPORATE_PAGE.path}`;
 
   const jsonLd = useMemo(
     () => ({
@@ -40,49 +28,69 @@ export default function PgForStudents() {
           logo: SITE_LOGO,
           telephone: '+91-70759-85666',
           email: 'info@narennliving.com',
+          founder: {
+            '@type': 'Person',
+            name: 'Narendranath Chaganla',
+            jobTitle: 'Founder',
+          },
         },
         {
           '@type': 'WebPage',
           '@id': `${canonical}#webpage`,
           url: canonical,
-          name: STUDENTS_PAGE.title,
-          description: STUDENTS_PAGE.description,
+          name: CORPORATE_PAGE.title,
+          description: CORPORATE_PAGE.description,
           isPartOf: { '@id': `${SITE_URL}/#website` },
           about: { '@id': `${canonical}#service` },
           inLanguage: 'en-IN',
           primaryImageOfPage: {
             '@type': 'ImageObject',
-            url: STUDENTS_IMAGES.hero.src,
+            url: CORPORATE_IMAGES.hero.src,
           },
         },
         {
           '@type': 'Service',
           '@id': `${canonical}#service`,
-          name: 'PG for Students in Madhapur',
-          serviceType: 'Student paying guest / co-living accommodation',
-          description: STUDENTS_PAGE.description,
+          name: 'Corporate Accommodation by Narenn Living',
+          serviceType: 'Corporate Accommodation',
+          description: CORPORATE_PAGE.description,
           url: canonical,
-          provider: organizationRef(),
-          areaServed: {
-            '@type': 'Place',
-            name: 'Madhapur, Hyderabad',
+          provider: {
+            '@type': 'LodgingBusiness',
+            '@id': `${SITE_URL}/#lodging`,
+            name: 'Narenn Living Co-living & PG',
+            url: `${SITE_URL}/`,
+            parentOrganization: organizationRef(),
+            founder: {
+              '@type': 'Person',
+              name: 'Narendranath Chaganla',
+              jobTitle: 'Founder',
+            },
             address: {
               '@type': 'PostalAddress',
-              addressLocality: 'Madhapur',
+              streetAddress: 'VIP Hills, Road 21, Silicon Valley, Madhapur',
+              addressLocality: 'Hyderabad',
               addressRegion: 'Telangana',
+              postalCode: '500084',
               addressCountry: 'IN',
             },
           },
-          image: STUDENTS_IMAGES.hero.src,
+          areaServed: { '@type': 'City', name: 'Hyderabad' },
+          audience: {
+            '@type': 'Audience',
+            audienceType:
+              'Corporates, HR teams, relocating employees, project teams, interns',
+          },
+          image: CORPORATE_IMAGES.hero.src,
         },
         buildBreadcrumbSchema([
           { name: 'Home', path: '/' },
-          { name: 'PG for Students', path: STUDENTS_PAGE.path },
+          { name: 'Corporate Accommodation', path: CORPORATE_PAGE.path },
         ]),
         {
           '@type': 'FAQPage',
           '@id': `${canonical}#faq`,
-          mainEntity: STUDENTS_FAQS.map((faq) => ({
+          mainEntity: CORPORATE_FAQS.map((faq) => ({
             '@type': 'Question',
             name: faq.question,
             acceptedAnswer: {
@@ -96,32 +104,26 @@ export default function PgForStudents() {
     [canonical]
   );
 
-  const ctaPlain = STUDENTS_FINAL_CTA.title.replace(STUDENTS_FINAL_CTA.titleAccent, '').trim();
+  const ctaPlain = CORPORATE_FINAL_CTA.title
+    .replace(CORPORATE_FINAL_CTA.titleAccent, '')
+    .trim();
 
   return (
     <>
       <PageMeta
-        title={STUDENTS_PAGE.title}
-        description={STUDENTS_PAGE.description}
+        title={CORPORATE_PAGE.title}
+        description={CORPORATE_PAGE.description}
         canonical={canonical}
-        robots={STUDENTS_PAGE.robots}
-        ogImage={STUDENTS_PAGE.ogImage}
+        robots={CORPORATE_PAGE.robots}
+        ogImage={CORPORATE_PAGE.ogImage}
         jsonLd={jsonLd}
       />
 
       <main className="flex-1 bg-white">
-        <StudentsHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-4 lg:pb-6">
-          <StudentsIntro />
-          <StudentsTrust />
-          <StudentsStudy />
-          <StudentsFoodCommunity />
-          <StudentsIncluded />
-          <StudentsBook onBookVisit={onBookVisit} />
-          <StudentsApprove />
-          <StudentsSupports />
-          <StudentsBudgets />
-          <StudentsFaq />
+        <CorporateHero onBookVisit={onBookVisit} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
+          <CorporateSections onBookVisit={onBookVisit} />
+          <CorporateFaq />
         </div>
         <FinalCta
           onBookVisit={onBookVisit}
@@ -129,20 +131,20 @@ export default function PgForStudents() {
             <>
               {ctaPlain}{' '}
               <span className="text-brand-gold italic font-medium">
-                {STUDENTS_FINAL_CTA.titleAccent}
+                {CORPORATE_FINAL_CTA.titleAccent}
               </span>
             </>
           }
           description={
             <p>
-              {STUDENTS_FINAL_CTA.body} Call <PhoneWhatsAppLinks /> or{' '}
+              {CORPORATE_FINAL_CTA.body} Call <PhoneWhatsAppLinks /> or{' '}
               <Link to="/contact-us/" className="text-brand-gold font-semibold hover:underline">
-                book a visit
+                contact us
               </Link>
               .
             </p>
           }
-          imageAlt="Students at a PG for students in Hyderabad — Narenn Living Madhapur"
+          imageAlt="Corporate accommodation and managed housing for teams in Hyderabad"
         />
       </main>
       <Footer />

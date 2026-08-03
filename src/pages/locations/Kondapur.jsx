@@ -19,7 +19,7 @@ import {
   KONDAPUR_FINAL_CTA,
   KONDAPUR_PAGE,
 } from '../../data/kondapurLocationData';
-import { SITE_URL } from '../../data/sitePages';
+import { SITE_URL, SITE_LOGO } from '../../data/sitePages';
 
 export default function Kondapur() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -34,7 +34,7 @@ export default function Kondapur() {
           '@id': `${SITE_URL}/#organization`,
           name: 'Narenn Living',
           url: `${SITE_URL}/`,
-          logo: `${SITE_URL}/favicon.svg`,
+          logo: SITE_LOGO,
           telephone: '+91-70759-85666',
           email: 'info@narennliving.com',
         },

@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const nightShiftAccommodationHyderabad = {
   blocks: [
@@ -29,7 +27,7 @@ const nightShiftAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/biometric-no-curfew-entry-night-shift-madhapur.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763652/ChatGPT_Image_Aug_3_2026_06_57_01_PM_xdlrwm.png',
       alt: 'Biometric no-curfew entry for night shift residents in Madhapur',
       title: 'No-curfew biometric entry',
     },
@@ -51,7 +49,7 @@ const nightShiftAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/daytime-sleep-friendly-ac-room-co-living-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763736/ChatGPT_Image_Aug_3_2026_06_58_44_PM_nv3dig.png',
       alt: 'AC room set up for daytime sleep for night shift workers in Hyderabad',
       title: 'Daytime sleep room',
     },
@@ -218,7 +216,8 @@ const nightShiftAccommodationHyderabad = {
     title: 'Accommodation that fits your hours.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/night-shift-friendly-pg-in-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763653/ChatGPT_Image_Aug_3_2026_06_56_54_PM_g0gvxl.png',
     imageAlt: 'Night shift friendly PG in Hyderabad with 24x7 biometric access',
   },
 };

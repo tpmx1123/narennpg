@@ -1,4 +1,4 @@
-import { SITE_URL } from './sitePages';
+import { LOCATION_HERO_IMAGE, SITE_URL } from './sitePages';
 
 export const HITECH_CITY_PAGE = {
   path: '/locations/hitech-city/',
@@ -6,14 +6,13 @@ export const HITECH_CITY_PAGE = {
   description:
     'Premium PG & co-living just 5-10 minutes from Hitech City. AC rooms, four meals, fast WiFi & housekeeping in Madhapur VIP Hills. Book a free visit at Narenn Living.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: `${SITE_URL}/images/pg-near-hitech-city-hyderabad-hero.jpg`,
+  ogImage: LOCATION_HERO_IMAGE,
 };
 
 export const HITECH_CITY_IMAGES = {
   hero: {
-    src: `${SITE_URL}/images/pg-near-hitech-city-hyderabad-hero.jpg`,
-    fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
+    src: LOCATION_HERO_IMAGE,
+    fallback: LOCATION_HERO_IMAGE,
     alt: 'PG near Hitech City, Hyderabad - Narenn Living VIP Hills, Madhapur',
     title: 'PG near Hitech City',
   },

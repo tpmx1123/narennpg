@@ -1,4 +1,8 @@
 export const SITE_URL = 'https://narennliving.com';
+export const SITE_LOGO =
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1785750940/Narenn_Favicon_u6seha.png';
+export const LOCATION_HERO_IMAGE =
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1785751476/ChatGPT_Image_Aug_3_2026_03_34_24_PM_zri9cq.png';
 export const PHONE_DISPLAY = '70759 85666';
 export const PHONE_TEL = '+917075985666';
 export const WHATSAPP_URL = 'https://wa.me/917075985666';
@@ -119,6 +123,12 @@ export const COMING_SOON_PAGES = {
     title: 'PG for Students in Madhapur, Hyderabad | Safe & Homely',
     description:
       'Safe, homely PG for students in Madhapur with AC rooms, four meals a day, WiFi & study-friendly spaces. Trusted by parents. Book a free visit at Narenn Living.',
+  },
+  'corporate-accommodation': {
+    path: '/corporate-accommodation/',
+    title: 'Corporate Accommodation in Hyderabad | Narenn Co-living & PG',
+    description:
+      'Narenn offers safe, fully-managed corporate accommodation in Hyderabad for relocating employees, project teams & interns — flexible stays, hospitality-grade service, single point of billing.',
   },
   'locations-hitech-city': {
     path: '/locations/hitech-city/',

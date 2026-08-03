@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const costOfLivingHyderabadGuide = {
   blocks: [
@@ -41,7 +39,7 @@ const costOfLivingHyderabadGuide = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/hyderabad-monthly-expenses-breakdown-chart.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762693/ChatGPT_Image_Aug_3_2026_06_40_54_PM_ludnuj.png',
       alt: 'Chart of monthly expenses in Hyderabad — rent, food, transport and lifestyle',
       title: 'Monthly expense breakdown',
     },
@@ -123,7 +121,7 @@ const costOfLivingHyderabadGuide = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/inclusive-co-living-rent-hyderabad-predictable-cost.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762693/ChatGPT_Image_Aug_3_2026_06_37_03_PM_pfwayt.png',
       alt: 'Inclusive co-living rent covering room, meals and WiFi in Hyderabad',
       title: 'Inclusive monthly cost',
     },
@@ -215,7 +213,8 @@ const costOfLivingHyderabadGuide = {
     title: 'Keep your costs predictable.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/cost-of-living-in-hyderabad-monthly-budget.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762695/output-image_jb9yac.png',
     imageAlt: 'Cost of living in Hyderabad — monthly budget breakdown for professionals',
   },
 };

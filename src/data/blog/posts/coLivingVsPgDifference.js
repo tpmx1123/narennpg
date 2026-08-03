@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const coLivingVsPgDifference = {
   blocks: [
@@ -39,7 +37,7 @@ const coLivingVsPgDifference = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/co-living-community-space-vs-traditional-pg-room.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785760929/output-image_1_mptfig.jpg',
       alt: 'Co-living community space compared with a traditional PG room in Hyderabad',
       title: 'Community vs room',
     },
@@ -104,7 +102,7 @@ const coLivingVsPgDifference = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/in-house-kitchen-vs-outsourced-caterer-pg.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785760930/wmremove-transformed_5_ubtiip.png',
       alt: 'In-house co-living kitchen compared with an outsourced PG caterer',
       title: 'Kitchen comparison',
     },
@@ -194,7 +192,8 @@ const coLivingVsPgDifference = {
     title: 'Feel the difference yourself.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/co-living-vs-pg-difference-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785760929/output-image_2_ebpuz6.jpg',
     imageAlt: 'Co-living vs PG comparison in Hyderabad — rooms, food and community',
   },
 };

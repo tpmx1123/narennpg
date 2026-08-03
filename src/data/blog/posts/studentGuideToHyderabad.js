@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const studentGuideToHyderabad = {
   blocks: [
@@ -33,7 +31,7 @@ const studentGuideToHyderabad = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/student-pg-room-hyderabad-study-setup.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763397/ChatGPT_Image_Aug_3_2026_06_52_59_PM_mvpalo.png',
       alt: 'Student PG room in Hyderabad with a study desk and WiFi',
       title: 'Student room setup',
     },
@@ -59,7 +57,7 @@ const studentGuideToHyderabad = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/hyderabad-metro-transport-for-students.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763443/ChatGPT_Image_Aug_3_2026_06_53_52_PM_f9zoll.png',
       alt: 'Hyderabad metro and transport options for students',
       title: 'Student transport',
     },
@@ -219,7 +217,8 @@ const studentGuideToHyderabad = {
     title: 'Start student life right.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/student-guide-to-hyderabad-accommodation.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763317/ChatGPT_Image_Aug_3_2026_06_51_25_PM_yb4ulk.png',
     imageAlt: 'Student guide to living in Hyderabad — accommodation, food and budget',
   },
 };

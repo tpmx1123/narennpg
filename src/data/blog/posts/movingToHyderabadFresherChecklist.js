@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const movingToHyderabadFresherChecklist = {
   blocks: [
@@ -65,7 +63,7 @@ const movingToHyderabadFresherChecklist = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/furnished-co-living-room-move-in-ready-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757338/3b1e0be1-6538-40a5-bd17-db8ef1795fc5_1_kaukkm.jpg',
       alt: 'Move-in ready furnished co-living room for a fresher in Hyderabad',
       title: 'Move-in ready room',
     },
@@ -143,7 +141,7 @@ const movingToHyderabadFresherChecklist = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/first-week-in-hyderabad-fresher-essentials.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757339/009cacce-a5b5-4e17-b684-6092a394de62_qh8ds4.jpg',
       alt: 'First week essentials for a fresher moving to Hyderabad',
       title: 'First week essentials',
     },
@@ -219,7 +217,8 @@ const movingToHyderabadFresherChecklist = {
     title: 'Settle in from day one.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/fresher-moving-to-hyderabad-checklist.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757339/Gemini_Generated_Image_hpuyjjhpuyjjhpuy_v0gxge.jpg',
     imageAlt: 'Fresher moving to Hyderabad with a suitcase — relocation checklist',
   },
 };

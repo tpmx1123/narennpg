@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const bestAreasToLiveHyderabadItProfessionals = {
   blocks: [
@@ -35,7 +33,7 @@ const bestAreasToLiveHyderabadItProfessionals = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/madhapur-hitech-city-it-corridor-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757339/Gemini_Generated_Image_3ux1xd3ux1xd3ux1_jb2ivn.jpg',
       alt: 'Madhapur and Hitech City IT corridor in Hyderabad',
       title: 'Hyderabad IT corridor',
     },
@@ -103,7 +101,7 @@ const bestAreasToLiveHyderabadItProfessionals = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/hyderabad-commute-map-it-offices.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757739/output-image_oqqvw1.jpg',
       alt: 'Commute map showing Hyderabad IT office locations and residential areas',
       title: 'Hyderabad commute map',
     },
@@ -214,7 +212,8 @@ const bestAreasToLiveHyderabadItProfessionals = {
     title: 'Base yourself in Madhapur.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/best-areas-to-live-in-hyderabad-for-it-professionals.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757343/wmremove-transformed_4_x4hsl8.png',
     imageAlt:
       'Best areas to live in Hyderabad for IT professionals - Madhapur, Kondapur, Gachibowli',
   },

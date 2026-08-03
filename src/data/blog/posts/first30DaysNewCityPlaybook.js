@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const first30DaysNewCityPlaybook = {
   blocks: [
@@ -74,7 +72,7 @@ const first30DaysNewCityPlaybook = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/new-resident-dining-hall-community-co-living-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785764227/ChatGPT_Image_Aug_3_2026_07_06_45_PM_jvkr7w.png',
       alt: 'New resident meeting others in the dining hall at a co-living in Hyderabad',
       title: 'Community dining',
     },
@@ -171,7 +169,7 @@ const first30DaysNewCityPlaybook = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/co-living-terrace-friends-hyderabad-settling-in.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785764291/ChatGPT_Image_Aug_3_2026_07_07_57_PM_mnvesk.png',
       alt: 'New residents socialising on a co-living terrace in Hyderabad',
       title: 'Terrace socialising',
     },
@@ -208,7 +206,8 @@ const first30DaysNewCityPlaybook = {
     title: 'Start your first month strong.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/settling-in-hyderabad-first-30-days-guide.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785764228/ChatGPT_Image_Aug_3_2026_07_04_19_PM_pbe2v3.png',
     imageAlt: 'Settling into Hyderabad — a first 30 days playbook for new residents',
   },
 };

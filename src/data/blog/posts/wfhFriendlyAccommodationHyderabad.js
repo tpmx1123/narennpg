@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const wfhFriendlyAccommodationHyderabad = {
   blocks: [
@@ -27,7 +25,7 @@ const wfhFriendlyAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/high-speed-wifi-video-call-co-living-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763226/ChatGPT_Image_Aug_3_2026_06_50_07_PM_uxikdo.png',
       alt: 'High-speed WiFi supporting video calls in a co-living room in Hyderabad',
       title: 'WiFi for video calls',
     },
@@ -49,7 +47,7 @@ const wfhFriendlyAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/wfh-desk-chair-setup-co-living-room-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_46_49_PM_zs7jej.png',
       alt: 'Proper desk and chair setup for working from home in a co-living room',
       title: 'WFH desk setup',
     },
@@ -214,7 +212,8 @@ const wfhFriendlyAccommodationHyderabad = {
     title: 'Build a better WFH setup.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/work-from-home-friendly-pg-in-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71.png',
     imageAlt: 'Work from home friendly PG room in Hyderabad with desk, chair and WiFi',
   },
 };

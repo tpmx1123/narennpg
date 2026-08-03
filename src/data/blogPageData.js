@@ -37,7 +37,8 @@ export const BLOG_POSTS = [
     keywords:
       'PG vs flat in Hyderabad, cost of PG in Hyderabad, renting a flat in Madhapur cost, is PG cheaper than flat',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/pg-vs-flat-cost-comparison-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757345/wmremove-transformed_1_jklafe.png',
     alt: 'PG vs flat cost comparison for Hyderabad - rent, deposit and hidden costs',
     imageTitle: 'PG vs flat cost comparison',
   },
@@ -62,7 +63,8 @@ export const BLOG_POSTS = [
     keywords:
       'best areas to live in Hyderabad for IT professionals, where to live in Hyderabad IT, best area near Hitech City, Madhapur vs Gachibowli living',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/best-areas-to-live-in-hyderabad-for-it-professionals.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757343/wmremove-transformed_4_x4hsl8.png',
     alt: 'Best areas to live in Hyderabad for IT professionals - Madhapur, Kondapur, Gachibowli',
     imageTitle: 'Best areas for IT professionals',
   },
@@ -87,7 +89,8 @@ export const BLOG_POSTS = [
     keywords:
       'moving to Hyderabad checklist, fresher moving to Hyderabad, first job Hyderabad accommodation, what to pack moving to Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/fresher-moving-to-hyderabad-checklist.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757339/Gemini_Generated_Image_hpuyjjhpuyjjhpuy_v0gxge.jpg',
     alt: 'Fresher moving to Hyderabad with a suitcase — relocation checklist',
     imageTitle: 'Fresher moving checklist',
   },
@@ -112,7 +115,8 @@ export const BLOG_POSTS = [
     keywords:
       'co-living vs PG, difference between co-living and PG, is co-living better than PG, co-living meaning Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/co-living-vs-pg-difference-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785760929/output-image_2_ebpuz6.jpg',
     alt: 'Co-living vs PG comparison in Hyderabad — rooms, food and community',
     imageTitle: 'Co-living vs PG',
   },
@@ -137,7 +141,8 @@ export const BLOG_POSTS = [
     keywords:
       "safe PG for women in Hyderabad, women's PG safety Hyderabad, PG safety checklist, secure PG for women Madhapur",
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/safe-pg-for-women-in-hyderabad-checklist.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785761471/wmremove-transformed_8_mku7o6.png',
     alt: 'Safe PG for women in Hyderabad — safety checklist and verified entry',
     imageTitle: 'Safe PG for women in Hyderabad',
   },
@@ -162,7 +167,8 @@ export const BLOG_POSTS = [
     keywords:
       'cost of living in Hyderabad, monthly expenses Hyderabad, living costs Hyderabad students, how much to earn to live in Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/cost-of-living-in-hyderabad-monthly-budget.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762695/output-image_jb9yac.png',
     alt: 'Cost of living in Hyderabad — monthly budget breakdown for professionals',
     imageTitle: 'Cost of living in Hyderabad',
   },
@@ -187,7 +193,8 @@ export const BLOG_POSTS = [
     keywords:
       'questions to ask before booking a PG, what to ask before joining a PG, PG booking checklist, things to check before booking PG',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/questions-to-ask-before-booking-a-pg-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762954/ChatGPT_Image_Aug_3_2026_06_42_48_PM_xl7yv3.png',
     alt: 'Questions to ask before booking a PG in Hyderabad — site visit checklist',
     imageTitle: 'Questions before booking a PG',
   },
@@ -212,7 +219,8 @@ export const BLOG_POSTS = [
     keywords:
       'WFH-friendly accommodation in Hyderabad, work from home PG Hyderabad, co-living for remote work, best WiFi PG Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/work-from-home-friendly-pg-in-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71.png',
     alt: 'Work from home friendly PG room in Hyderabad with desk, chair and WiFi',
     imageTitle: 'WFH friendly PG in Hyderabad',
   },
@@ -237,7 +245,8 @@ export const BLOG_POSTS = [
     keywords:
       'student guide to Hyderabad, student life in Hyderabad, accommodation for students Hyderabad, tips for students moving to Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/student-guide-to-hyderabad-accommodation.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763317/ChatGPT_Image_Aug_3_2026_06_51_25_PM_yb4ulk.png',
     alt: 'Student guide to living in Hyderabad — accommodation, food and budget',
     imageTitle: 'Student guide to Hyderabad',
   },
@@ -262,7 +271,8 @@ export const BLOG_POSTS = [
     keywords:
       'night shift accommodation in Hyderabad, no curfew PG Hyderabad, PG for night shift workers, 24/7 access PG Madhapur',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/night-shift-friendly-pg-in-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763653/ChatGPT_Image_Aug_3_2026_06_56_54_PM_g0gvxl.png',
     alt: 'Night shift friendly PG in Hyderabad with 24x7 biometric access',
     imageTitle: 'Night shift PG in Hyderabad',
   },
@@ -287,7 +297,8 @@ export const BLOG_POSTS = [
     keywords:
       'things to do in Madhapur, Madhapur weekend guide, places to visit near Madhapur, cafes in Madhapur Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/things-to-do-in-madhapur-weekend-guide.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763804/ChatGPT_Image_Aug_3_2026_06_59_52_PM_qeamin.png',
     alt: 'Things to do in Madhapur on a weekend — Durgam Cheruvu and Inorbit Mall',
     imageTitle: 'Madhapur weekend guide',
   },
@@ -312,7 +323,8 @@ export const BLOG_POSTS = [
     keywords:
       'settling into a new city, first 30 days new city, moving to a new city tips, how to settle in Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-    image: `${SITE_URL}/images/settling-in-hyderabad-first-30-days-guide.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785764228/ChatGPT_Image_Aug_3_2026_07_04_19_PM_pbe2v3.png',
     alt: 'Settling into Hyderabad — a first 30 days playbook for new residents',
     imageTitle: 'First 30 days in Hyderabad',
   },

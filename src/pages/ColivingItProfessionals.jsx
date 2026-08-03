@@ -22,7 +22,7 @@ import {
   IT_FAQS,
   IT_FINAL_CTA,
 } from '../data/itProfessionalsPageData';
-import { SITE_URL } from '../data/sitePages';
+import { SITE_URL, SITE_LOGO } from '../data/sitePages';
 import { PhoneWhatsAppLinks } from '../components/ui/ContactText';
 
 export default function ColivingItProfessionals() {
@@ -38,7 +38,7 @@ export default function ColivingItProfessionals() {
           '@id': `${SITE_URL}/#organization`,
           name: 'Narenn Living',
           url: `${SITE_URL}/`,
-          logo: `${SITE_URL}/favicon.svg`,
+          logo: SITE_LOGO,
           telephone: '+91-70759-85666',
           email: 'info@narennliving.com',
         },

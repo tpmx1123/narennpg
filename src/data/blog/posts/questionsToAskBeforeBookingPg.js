@@ -1,5 +1,3 @@
-import { SITE_URL } from '../../sitePages';
-
 /** @type {import('../types').BlogArticleContent} */
 const questionsToAskBeforeBookingPg = {
   blocks: [
@@ -113,7 +111,7 @@ const questionsToAskBeforeBookingPg = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/pg-agreement-deposit-terms-in-writing-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762954/ChatGPT_Image_Aug_3_2026_06_43_59_PM_kcqwgw.png',
       alt: 'Written PG agreement showing deposit and notice period terms in Hyderabad',
       title: 'Written agreement',
     },
@@ -143,7 +141,7 @@ const questionsToAskBeforeBookingPg = {
     },
     {
       type: 'image',
-      src: `${SITE_URL}/images/pg-site-visit-inspection-madhapur-hyderabad.jpg`,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762953/ChatGPT_Image_Aug_3_2026_06_45_36_PM_ubf8sb.png',
       alt: 'Prospective resident inspecting a PG room during a site visit in Hyderabad',
       title: 'PG site visit',
     },
@@ -248,7 +246,8 @@ const questionsToAskBeforeBookingPg = {
     title: 'Ask us anything on a visit.',
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
-    image: `${SITE_URL}/images/questions-to-ask-before-booking-a-pg-hyderabad.jpg`,
+    image:
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762954/ChatGPT_Image_Aug_3_2026_06_42_48_PM_xl7yv3.png',
     imageAlt: 'Questions to ask before booking a PG in Hyderabad — site visit checklist',
   },
 };

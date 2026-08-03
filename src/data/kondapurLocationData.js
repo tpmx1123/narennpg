@@ -1,4 +1,4 @@
-import { SITE_URL } from './sitePages';
+import { LOCATION_HERO_IMAGE, SITE_URL } from './sitePages';
 
 export const KONDAPUR_PAGE = {
   path: '/locations/kondapur/',
@@ -6,14 +6,13 @@ export const KONDAPUR_PAGE = {
   description:
     'Premium PG & co-living 8-10 minutes from Kondapur. AC rooms with food, WiFi & housekeeping in Madhapur VIP Hills. Book a free visit today.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: `${SITE_URL}/images/pg-near-kondapur-hyderabad-hero.jpg`,
+  ogImage: LOCATION_HERO_IMAGE,
 };
 
 export const KONDAPUR_IMAGES = {
   hero: {
-    src: `${SITE_URL}/images/pg-near-kondapur-hyderabad-hero.jpg`,
-    fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
+    src: LOCATION_HERO_IMAGE,
+    fallback: LOCATION_HERO_IMAGE,
     alt: 'PG near Kondapur, Hyderabad - Narenn Living VIP Hills, Madhapur',
     title: 'PG near Kondapur',
   },
