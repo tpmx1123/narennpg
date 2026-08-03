@@ -118,12 +118,6 @@ export const CORPORATE_FINAL_CTA = {
   body: 'Share your headcount, timeline and preferred zone — we will prepare a clear plan for bulk or individual corporate stays.',
 };
 
-export const CORPORATE_FAQ_HEADING = {
-  eyebrow: 'FAQs',
-  h2: 'Corporate Accommodation',
-  h2Accent: 'Questions',
-};
-
 export const CORPORATE_FAQS = [
   {
     question: 'Does Narenn offer corporate accommodation in Hyderabad?',
