@@ -24,13 +24,13 @@ export default function EventsTerrace() {
             src={terraceA.src}
             alt={terraceA.alt}
             title={terraceA.title}
-            className="rounded-xl w-full h-48 sm:h-64 object-cover border border-brand-gold/20 translate-y-4 sm:translate-y-6"
+            loading="lazy" className="rounded-xl w-full h-48 sm:h-64 object-cover border border-brand-gold/20 translate-y-4 sm:translate-y-6"
           />
           <img
             src={terraceB.src}
             alt={terraceB.alt}
             title={terraceB.title}
-            className="rounded-xl w-full h-48 sm:h-64 object-cover border border-brand-gold/20"
+            loading="lazy" className="rounded-xl w-full h-48 sm:h-64 object-cover border border-brand-gold/20"
           />
         </div>
 

@@ -38,7 +38,7 @@ export default function EventsFestivals() {
 
         <div className="relative">
           <div className="rounded-2xl overflow-hidden border border-brand-gold/20 shadow-[0_20px_50px_-24px_rgba(15,61,46,0.2)]">
-            <img
+            <img loading="lazy"
               src={src}
               alt={sweets.alt}
               title={sweets.title}

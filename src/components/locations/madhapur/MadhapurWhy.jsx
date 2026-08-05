@@ -94,7 +94,7 @@ export default function MadhapurWhy() {
             src={room.src}
             alt={room.alt}
             title={room.title}
-            className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+            loading="lazy" className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-linear-to-r from-white via-white/90 to-transparent md:w-3/4" />
           <div className="relative z-10 p-5 sm:p-6 h-full flex flex-col justify-center">

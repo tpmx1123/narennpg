@@ -41,7 +41,7 @@ export default function EventsCalendar() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5">
           <div className="lg:col-span-8 group relative overflow-hidden rounded-xl lg:rounded-2xl h-72 sm:h-96 border border-brand-gold/20">
-            <img
+            <img loading="lazy"
               src={festivalSrc}
               alt={festival.alt}
               title={festival.title}

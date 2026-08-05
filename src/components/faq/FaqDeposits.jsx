@@ -36,7 +36,7 @@ export default function FaqDeposits() {
 
         <div className="order-1 lg:order-2 lg:col-span-6">
           <div className="rounded-xl sm:rounded-2xl overflow-hidden aspect-[4/3]">
-            <img
+            <img loading="lazy"
               src={src}
               alt={pricing.alt}
               title={pricing.title}

@@ -31,7 +31,7 @@ export default function PropertiesBuilt({ onBookVisit }) {
             <img
               src={FOOTER_LOGO}
               alt="Narenn Living"
-              className="w-30 sm:w-40 lg:w-50 h-auto object-contain"
+              loading="lazy" className="w-30 sm:w-40 lg:w-50 h-auto object-contain"
             />
           </div>
         </div>

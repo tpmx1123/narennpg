@@ -16,7 +16,8 @@ export const SUPREME_PAGE = {
   description:
     "Narenn's Supreme - vibrant co-living in Silicon Valley, Madhapur with networking hubs and community events near IT parks.",
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: item.image.src,
+  ogImage:
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785914850/ChatGPT_Image_Aug_5_2026_12_57_13_PM_muwbh3.png',
 };
 
 export const SUPREME = {
@@ -29,7 +30,7 @@ export const SUPREME = {
     h1Accent: 'Madhapur',
     lead: 'Dependable comfort with a friendly, social vibe.',
     image: {
-      src: item.image.src,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785914850/ChatGPT_Image_Aug_5_2026_12_57_13_PM_muwbh3.png',
       alt: item.image.alt,
       title: item.image.title,
     },

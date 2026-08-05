@@ -20,7 +20,7 @@ const BLOG_IMAGE_FALLBACK =
 
 function BlogPostPlaceholderView({ post, onBookVisit }) {
   return (
-    <main className="flex-1 bg-[#FDFCF8] pt-24 sm:pt-28 lg:pt-36 overflow-x-clip">
+    <main className="flex-1 bg-[#FDFCF8] pt-10 sm:pt-12 lg:pt-16 overflow-x-clip">
       <section className="pb-10 sm:pb-14 lg:pb-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10">
           <Link
@@ -44,7 +44,7 @@ function BlogPostPlaceholderView({ post, onBookVisit }) {
           </div>
 
           <div className="mt-6 sm:mt-8 overflow-hidden rounded-xl sm:rounded-2xl border border-brand-gold/15 shadow-[0_16px_40px_rgba(15,61,46,0.06)]">
-            <img
+            <img loading="lazy"
               src={post.image}
               alt={post.alt}
               title={post.imageTitle}

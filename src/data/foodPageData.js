@@ -18,7 +18,7 @@ export const FOOD_HERO = {
     'For students and professionals new to Hyderabad, reliable, tasty, nutritious food is one of the biggest reasons they choose - and stay at - Narenn Living.',
   ],
   image:
-    'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1600&q=80',
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926966/M_P09882_1_zeo7ft.jpg',
   alt: 'Professional chefs preparing fresh meals in the Narenn Living in-house kitchen',
 };
 
@@ -56,131 +56,10 @@ export const FOOD_HOME = {
     'Every ingredient is sourced fresh, every dish is tasted by our quality manager, and every recipe is refined based on resident feedback. We do not just feed you; we nourish you.',
   ],
   image:
-    'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80',
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926297/M_P09866_1_anlo2u.jpg',
   alt: 'Home-style Indian food served on a warm dining table at Narenn Living',
 };
 
-export const WEEKLY_MENU = {
-  Mon: [
-    {
-      meal: 'Breakfast',
-      title: 'Poha with Peanuts & Sprouts Salad',
-      description: 'Flattened rice tempered with peanuts, served with a fresh, protein-rich side.',
-    },
-    {
-      meal: 'Lunch',
-      title: 'Dal Tadka, Paneer Butter Masala, Roti, Rice',
-      description: 'A balanced midday plate with comforting staples and familiar flavours.',
-    },
-    {
-      meal: 'Dinner',
-      title: 'Mix Veg Pulao with Raita & Papad',
-      description: 'A satisfying but easy-on-the-stomach dinner to close the day well.',
-    },
-  ],
-  Tue: [
-    {
-      meal: 'Breakfast',
-      title: 'Aloo Paratha with Curd',
-      description: 'Soft stuffed parathas served with fresh curd and homemade pickle.',
-    },
-    {
-      meal: 'Lunch',
-      title: 'Chicken or Veg Curry with Pulao',
-      description: 'A rotating curry selection with pulao rice and fresh salad.',
-    },
-    {
-      meal: 'Dinner',
-      title: 'Mixed Veg with Phulka',
-      description: 'Fresh seasonal vegetables paired with soft whole-wheat phulkas.',
-    },
-  ],
-  Wed: [
-    {
-      meal: 'Breakfast',
-      title: 'Idli, Sambar & Coconut Chutney',
-      description: 'Steamed idlis with aromatic sambar and fresh chutneys.',
-    },
-    {
-      meal: 'Lunch',
-      title: 'Rajma Chawal',
-      description: 'Slow-cooked rajma served with premium rice for a satisfying lunch.',
-    },
-    {
-      meal: 'Dinner',
-      title: 'Egg or Veg Fried Rice',
-      description: 'A lighter Indo-Chinese dinner that still feels substantial.',
-    },
-  ],
-  Thu: [
-    {
-      meal: 'Breakfast',
-      title: 'Upma with Seasonal Fruit',
-      description: 'A balanced breakfast of savoury upma and a side of fresh fruit.',
-    },
-    {
-      meal: 'Lunch',
-      title: 'Methi Matar Malai with Missi Roti',
-      description: 'A richer lunch built around fresh methi and comforting breads.',
-    },
-    {
-      meal: 'Dinner',
-      title: 'Dal Tadka with Jeera Rice',
-      description: 'A dependable evening favourite that feels warm and familiar.',
-    },
-  ],
-  Fri: [
-    {
-      meal: 'Breakfast',
-      title: 'Masala Omelette & Toast',
-      description: 'A workday breakfast that is simple, filling and quick to serve fresh.',
-    },
-    {
-      meal: 'Lunch',
-      title: 'Chole Bhature',
-      description: 'A Friday favourite that residents genuinely look forward to.',
-    },
-    {
-      meal: 'Dinner',
-      title: 'Pasta Arrabbiata with Garlic Bread',
-      description: 'A lighter dinner with a little variety built into the week.',
-    },
-  ],
-  Sat: [
-    {
-      meal: 'Breakfast',
-      title: 'Masala Dosa',
-      description: 'Crisp dosas with potato masala, sambar and tomato chutney.',
-    },
-    {
-      meal: 'Lunch',
-      title: 'Special Dum Biryani',
-      description: 'A Saturday favourite served with mirchi ka salan and raita.',
-    },
-    {
-      meal: 'Dinner',
-      title: 'Soup & Sandwiches',
-      description: 'A lighter end-of-day meal that still feels complete.',
-    },
-  ],
-  Sun: [
-    {
-      meal: 'Breakfast',
-      title: 'Poori Bhaji',
-      description: 'A relaxed Sunday breakfast with warm pooris and potato bhaji.',
-    },
-    {
-      meal: 'Lunch',
-      title: 'Grand Sunday Thali',
-      description: 'A fuller spread featuring festive favourites and seasonal specials.',
-    },
-    {
-      meal: 'Dinner',
-      title: "Chef's Surprise",
-      description: 'A rotating dish to end the week with a bit of variety and fun.',
-    },
-  ],
-};
 
 export const FOOD_HYGIENE = {
   h2: 'Hygiene You Can Trust',
@@ -192,7 +71,7 @@ export const FOOD_HYGIENE = {
     'Trained culinary staff and an open-kitchen mindset',
   ],
   image:
-    'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785928264/M_P09857_1_ppkmpv.jpg',
   alt: 'Clean kitchen counter and hygiene-focused food prep area at Narenn Living',
 };
 
@@ -209,14 +88,14 @@ export const FOOD_SAVINGS = {
   alt: 'Home-style Indian meal with dal, rice, curry and roti at Narenn Living',
 };
 
-export const FOOD_FUEL = {
+export const FOOD_FUEL = {  
   h2: 'Fuel for Work and Study',
   paragraphs: [
     'Whether you are prepping for exams or handling late-night client calls, our nutrition-focused meals keep your brain sharp. We avoid overly heavy oils and excessive sugars.',
     'Strategic protein-rich breakfasts and brain-boosting snacks help you avoid the mid-afternoon slump that bad PG food often causes.',
   ],
   image:
-    'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80',
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1784199448/image-27_y9go5p.webp',
   alt: 'Healthy breakfast with work laptop at Narenn Living co-living dining area',
 };
 
@@ -226,7 +105,7 @@ export const FOOD_EDITORIAL = {
     'Many PGs outsource their catering to save costs. We do not. We manage our own kitchen staff, source our own produce, and control every variable. Why? Because you cannot outsource care.',
   attribution: 'The Management Team, Narenn Living',
   image:
-    'https://res.cloudinary.com/dmaeijlc/image/upload/v1784628419/wmremove-transformed_6_udrkvb.png',
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926966/M_P09882_1_zeo7ft.jpg',
   alt: 'Narenn Living in-house kitchen team preparing fresh meals together',
 };
 
@@ -241,7 +120,7 @@ export const FOOD_VARIETY = {
     'Desserts and fresh fruits included',
   ],
   image:
-    'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1200&q=80',
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785929076/M_P09865_1_u709q3.jpg',
   alt: 'Traditional Indian thali showing food variety at Narenn Living',
 };
 

@@ -12,13 +12,13 @@ export default function SeoIntro() {
     <section
       id="seo-intro"
       className="relative pt-6 pb-10 sm:pt-8 sm:pb-12 lg:pt-8 lg:pb-14 overflow-hidden"
-      aria-labelledby="home-seo-h1"
+      aria-labelledby="home-seo-heading"
     >
       <img
         src={INTRO_BG}
         alt="Premium co-living building in Madhapur, Hyderabad — Narenn Living VIP Hills"
         title="Narenn Living co-living in Madhapur"
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        loading="lazy" className="absolute inset-0 w-full h-full object-cover object-center"
       />
       <div
         className="absolute inset-0 bg-linear-to-r from-white/92 via-white/85 to-white/70 sm:to-white/25 lg:to-transparent"
@@ -36,15 +36,15 @@ export default function SeoIntro() {
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             Co-Living in Madhapur
           </span>
-          <h1
-            id="home-seo-h1"
+          <h2
+            id="home-seo-heading"
             className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]"
           >
             Premium Co-Living &amp; Luxury PG in{' '}
             <span className="text-brand-gold italic font-medium">
               <br className="hidden sm:block" /> Madhapur, Hyderabad
             </span>
-          </h1>
+          </h2>
         </motion.div>
 
         <motion.div
@@ -59,7 +59,7 @@ export default function SeoIntro() {
               src={LEGACY_BADGE}
               alt="25 years of legacy — Narenn Group real estate and hospitality"
               title="25 Years of Legacy"
-              className="w-32 sm:w-40 lg:w-48 h-auto object-contain shrink-0 lg:translate-x-10 xl:translate-x-12"
+              loading="lazy" className="w-32 sm:w-40 lg:w-48 h-auto object-contain shrink-0 lg:translate-x-10 xl:translate-x-12"
             />
           </div>
 

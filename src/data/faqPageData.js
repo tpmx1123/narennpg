@@ -20,7 +20,7 @@ export const FAQ_IMAGES = {
   pricing: {
     src: `${SITE_URL}/images/pg-rent-deposit-terms-madhapur.jpg`,
     fallback:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuA7fMPgjiFn0CfuBPbrmVKDNWitPdkt8QlrKsFoNmASyEAKtl-0nAP6W9wfaW3FMFIr4MTRupmNKmRTFASghRQKi5-Li0UYi96OqKRgKu4cMXR_oSkJVbR7lMalzWuK9LTELo7f_xjk800b1LoJciBLuP5guPsBrC9KoDdgEaB1tMwv-8bIQq-CHOWWCNZ4e7D75jnxlEysoWikLm0uP_v6xZ4zbFMCVVSkA3O7BTc1-QXWOsF7zICc-Y0KrpvfNR12JWVl7pKckIM',
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919949/M_P00337_1_xcyssw.jpg',
     alt: 'Transparent rent and deposit terms for a PG in Madhapur, Hyderabad',
     title: 'Pricing and deposits',
   },

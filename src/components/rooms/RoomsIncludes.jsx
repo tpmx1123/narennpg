@@ -65,7 +65,7 @@ export default function RoomsIncludes() {
                 src={inclusions.src}
                 alt={inclusions.alt}
                 title={inclusions.title}
-                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy" className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
           </div>

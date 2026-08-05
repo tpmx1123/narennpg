@@ -13,7 +13,7 @@ const SHARING_TIERS = [
     description:
       'Designed for privacy and personal comfort. A peaceful space to focus, relax, and unwind.',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
     alt: 'Fully furnished AC private room with bed, wardrobe and study desk at Narenn Living Madhapur',
     features: [
       { label: 'Spacious Room', detail: 'Your own dedicated living space.' },
@@ -30,7 +30,7 @@ const SHARING_TIERS = [
     description:
       'Balanced living with personal space and friendly companionship — ideal for friends or classmates.',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte.webp',
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785921010/M_P00210_2_tgzf4c.jpg',
     alt: 'Double sharing furnished room at Narenn Living Madhapur co-living',
     features: [
       { label: 'Twin Beds', detail: 'Personal beds with privacy-friendly layout.' },
@@ -47,7 +47,7 @@ const SHARING_TIERS = [
     description:
       'Comfortable shared living designed for collaboration, cost efficiency, and everyday camaraderie.',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00196_1_hkg9hw.jpg',
     alt: 'Triple sharing room at Narenn Living PG in Madhapur',
     features: [
       { label: 'Three Beds', detail: 'Custom beds with personal storage drawers.' },
@@ -64,7 +64,7 @@ const SHARING_TIERS = [
     description:
       'A vibrant, budget-friendly footprint built around group routines and shared convenience.',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922348/M_P00064_1_xrjutj.jpg',
     alt: 'Four sharing co-living room at Narenn Living Hyderabad',
     features: [
       { label: 'Four Beds', detail: 'Efficient layout with personal sleep zones.' },
@@ -147,7 +147,7 @@ export default function Pricing({ onBookVisit }) {
                   src={active.image}
                   alt={active.alt}
                   title={`${active.occupancy} ${active.titleSuffix}`}
-                  className="w-full h-full object-cover aspect-4/3 lg:aspect-auto lg:h-full min-h-48 sm:min-h-60"
+                  loading="lazy" className="w-full h-full object-cover aspect-4/3 lg:aspect-auto lg:h-full min-h-48 sm:min-h-60"
                 />
               </div>
 

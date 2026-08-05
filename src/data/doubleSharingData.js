@@ -1,5 +1,3 @@
-import { SITE_URL } from './sitePages';
-
 /** Confirmed double-sharing rates for the sticky booking card + schema Offers. */
 export const DOUBLE_SHARING_RATES = {
   currency: 'INR',
@@ -29,7 +27,7 @@ export const DOUBLE_SHARING_PAGE = {
   description:
     'Comfortable 2-sharing AC rooms in Madhapur near Hitech City. Meals, WiFi & housekeeping included. Perfect balance of privacy & company. Book a free visit today.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: `${SITE_URL}/images/double-sharing-pg-in-madhapur-twin-room.jpg`,
+  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785921010/M_P00210_2_tgzf4c.jpg',
 };
 
 export const DOUBLE_SHARING_HERO = {
@@ -58,24 +56,24 @@ export const DOUBLE_SHARING_BOOKING = {
 
 export const DOUBLE_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte.webp',
-    alt: 'Double sharing PG room in Madhapur with two single beds and individual wardrobes',
-    title: 'Double sharing PG in Madhapur',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785921010/M_P00210_2_tgzf4c.jpg',
+    alt: 'Hero image of a double sharing room',
+    title: 'Double sharing room - hero',
   },
   studyDesks: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
-    alt: 'Two separate study desks and chairs in a double sharing room at Narenn Living',
-    title: 'Individual study desks',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920680/M_P00072_1_gkmydq.jpg',
+    alt: 'Study desk area in a double sharing room',
+    title: 'Double sharing room - study desk',
   },
   roommates: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
-    alt: 'Roommates in a double sharing co-living room in Madhapur, Hyderabad',
-    title: 'Roommate matching',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920571/M_P00014_1_x7k9z0.jpg',
+    alt: 'Room view in a double sharing room',
+    title: 'Double sharing room - room view',
   },
   wardrobes: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
-    alt: 'Two individual lockable wardrobes in a double sharing PG room in Madhapur',
-    title: 'Lockable wardrobes',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920312/M_P00166_1_gxa8lp.jpg',
+    alt: 'Wardrobe area in a double sharing room',
+    title: 'Double sharing room - wardrobes',
   },
 };
 

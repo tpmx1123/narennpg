@@ -34,7 +34,7 @@ export default function LocationStandard({ data }) {
         className="grid grid-cols-1 lg:grid-cols-12"
       >
         <div className="lg:col-span-5 relative aspect-[16/10] sm:aspect-[16/9] lg:aspect-auto lg:min-h-[280px] lg:h-full order-1">
-          <img
+          <img loading="lazy"
             src={src}
             alt={img.alt}
             title={img.title}

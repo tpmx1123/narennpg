@@ -24,7 +24,7 @@ export default function FaqHelp({ onBookVisit }) {
         src={talkBg.src}
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover"
+        loading="lazy" className="absolute inset-0 w-full h-full object-cover"
       />
       <div
         className="absolute inset-0 bg-brand-charcoal/70"

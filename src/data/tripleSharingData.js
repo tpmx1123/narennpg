@@ -1,10 +1,8 @@
-import { SITE_URL } from './sitePages';
-
 /** Confirmed triple-sharing rates for the sticky booking card + schema Offers. */
 export const TRIPLE_SHARING_RATES = {
   currency: 'INR',
   monthly: {
-    productName: 'Triple Sharing — 3 Sharing',
+    productName: 'Triple Sharing - 3 Sharing',
     nonAc: {
       price: 16000,
       schemaName: 'Triple Sharing - 3 Sharing (Non-AC)',
@@ -29,7 +27,7 @@ export const TRIPLE_SHARING_PAGE = {
   description:
     'Affordable 3-sharing AC rooms in Madhapur near Hitech City. Meals, WiFi & housekeeping included. Best value co-living for students & freshers. Book a visit.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: `${SITE_URL}/images/triple-sharing-pg-in-madhapur-affordable-room.jpg`,
+  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00196_1_hkg9hw.jpg',
 };
 
 export const TRIPLE_SHARING_HERO = {
@@ -58,24 +56,24 @@ export const TRIPLE_SHARING_BOOKING = {
 
 export const TRIPLE_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
-    alt: 'Affordable triple sharing PG room in Madhapur with three beds and AC',
-    title: 'Triple sharing PG in Madhapur',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00196_1_hkg9hw.jpg',
+    alt: 'Triple sharing room hero image',
+    title: 'Triple sharing room - hero',
   },
   wardrobes: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
-    alt: 'Three individual lockable wardrobes in a triple sharing PG room in Madhapur',
-    title: 'Individual wardrobes',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920680/M_P00072_1_gkmydq.jpg',
+    alt: 'Wardrobe/storage area in a triple sharing room',
+    title: 'Triple sharing room - wardrobes',
   },
   students: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte.webp',
-    alt: 'Students in a triple sharing PG room at Narenn Living Hyderabad',
-    title: 'Student triple sharing',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00355_1_t0hd6k.jpg',
+    alt: 'Room interior view in a triple sharing room',
+    title: 'Triple sharing room - interior view',
   },
   studySpace: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
-    alt: 'Individual study space and charging points in a triple sharing room in Madhapur',
-    title: 'Study space',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00071_1_lcjjph.jpg',
+    alt: 'Study space in a triple sharing room',
+    title: 'Triple sharing room - study space',
   },
 };
 

@@ -122,7 +122,7 @@ export default function CorporateAccommodation() {
 
       <main className="flex-1 bg-white">
         <section className="relative min-h-[420px] sm:min-h-[480px] lg:min-h-[560px] flex items-end overflow-hidden">
-          <img
+          <img loading="lazy"
             src={imgSrc}
             alt={hero.alt}
             title={hero.title}

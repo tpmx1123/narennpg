@@ -55,7 +55,7 @@ export default function BlogPostSidebar({ currentSlug, sidebarCta, onBookVisit }
               <img
                 src={sidebarCta.image}
                 alt={sidebarCta.imageAlt}
-                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                loading="lazy" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-brand-burgundy/40 mix-blend-multiply" />
               <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />

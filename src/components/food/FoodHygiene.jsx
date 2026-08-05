@@ -9,7 +9,7 @@ export default function FoodHygiene() {
         <img
           src={FOOD_HYGIENE.image}
           alt={FOOD_HYGIENE.alt}
-          className="w-full max-w-full aspect-video object-cover rounded-xl sm:rounded-2xl border border-brand-gold/20 shadow-[0_20px_50px_-24px_rgba(15,61,46,0.18)]"
+          loading="lazy" className="w-full max-w-full aspect-video object-cover rounded-xl sm:rounded-2xl border border-brand-gold/20 shadow-[0_20px_50px_-24px_rgba(15,61,46,0.18)]"
         />
       </div>
       <div className="lg:col-span-6">

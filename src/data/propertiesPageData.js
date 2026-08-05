@@ -1,12 +1,10 @@
-import { SITE_URL } from './sitePages';
-
 export const PROPERTIES_PAGE = {
   path: '/properties/',
   title: 'Our Co-Living Properties in Madhapur | Elite, Crown, Pinnacle, Supreme',
   description:
-    "Explore Narenn Living's four premium co-living properties in VIP Hills, Madhapur — Elite, Crown, Pinnacle & Supreme. AC rooms, meals & WiFi included. Book a visit.",
+    "Explore Narenn Living's four premium co-living properties in VIP Hills, Madhapur - Elite, Crown, Pinnacle & Supreme. AC rooms, meals & WiFi included. Book a visit.",
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: `${SITE_URL}/images/co-living-properties-in-madhapur-vip-hills-hero.jpg`,
+  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785405044/Gemini_Generated_Image_shjp3lshjp3lshjp_bbugon.png',
 };
 
 export const PROPERTIES_IMAGES = {
@@ -23,11 +21,11 @@ export const PROPERTIES_HERO = {
   eyebrow: 'Our Properties',
   h1: 'Our Co-Living Properties in VIP Hills,',
   lead:
-    'Four premium homes in Madhapur — Elite, Crown, Pinnacle and Supreme — one standard of comfort, service and location.',
+    'Four premium homes in Madhapur - Elite, Crown, Pinnacle and Supreme - one standard of comfort, service and location.',
 };
 
 export const PROPERTIES_INTRO = [
-  'Narenn Living operates four premium co-living properties in Madhapur — Narenn Elite, Narenn Crown, Narenn Pinnacle and Narenn Supreme — all located in the sought-after VIP Hills neighbourhood, minutes from Hitech City and Gachibowli. Each property upholds the same high standard of comfort, cleanliness and service, while offering its own character and room mix, so residents can choose the setting and sharing type that suits them best.',
+  'Narenn Living operates four premium co-living properties in Madhapur - Narenn Elite, Narenn Crown, Narenn Pinnacle and Narenn Supreme - all located in the sought-after VIP Hills neighbourhood, minutes from Hitech City and Gachibowli. Each property upholds the same high standard of comfort, cleanliness and service, while offering its own character and room mix, so residents can choose the setting and sharing type that suits them best.',
   'Whether you are a student, a fresher or an experienced IT professional, there is a Narenn property and a room that fits your budget and lifestyle. Here is a closer look at what unites them and what makes each special.',
 ];
 
@@ -63,7 +61,7 @@ export const PROPERTIES_LIST = [
     href: '/properties/narenn-elite/',
     linkLabel: 'Explore Narenn Elite',
     image: {
-      src: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80',
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911174/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly.png',
       alt: 'Narenn Elite co-living property in VIP Hills, Madhapur',
       title: 'Narenn Elite',
     },
@@ -78,7 +76,7 @@ export const PROPERTIES_LIST = [
     href: '/properties/narenn-crown/',
     linkLabel: 'Explore Narenn Crown',
     image: {
-      src: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911283/ChatGPT_Image_Aug_5_2026_11_57_36_AM_xwf4ye.png',
       alt: 'Narenn Crown co-living property in VIP Hills, Madhapur',
       title: 'Narenn Crown',
     },
@@ -89,11 +87,11 @@ export const PROPERTIES_LIST = [
     id: 'pinnacle',
     name: 'Narenn Pinnacle',
     h2: 'Narenn Pinnacle',
-    body: 'Narenn Pinnacle stands for elevated living — spacious, thoughtfully designed rooms and a calm, focused atmosphere. It appeals to residents who want a peaceful environment for work and study without sacrificing the warmth of community.',
+    body: 'Narenn Pinnacle stands for elevated living - spacious, thoughtfully designed rooms and a calm, focused atmosphere. It appeals to residents who want a peaceful environment for work and study without sacrificing the warmth of community.',
     href: '/properties/narenn-pinnacle/',
     linkLabel: 'Explore Narenn Pinnacle',
     image: {
-      src: 'https://res.cloudinary.com/dmaeijlc/video/upload/so_1,w_1200,h_750,c_fill,q_auto,f_jpg/v1784010621/01_NARENN_PINNACLE_ttyhib.jpg',
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785915351/ChatGPT_Image_Aug_5_2026_01_05_43_PM_c34gr5.png',
       alt: 'Narenn Pinnacle co-living property in VIP Hills, Madhapur',
       title: 'Narenn Pinnacle',
     },
@@ -108,7 +106,7 @@ export const PROPERTIES_LIST = [
     href: '/properties/narenn-supreme/',
     linkLabel: 'Explore Narenn Supreme',
     image: {
-      src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80',
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785914850/ChatGPT_Image_Aug_5_2026_12_57_13_PM_muwbh3.png',
       alt: 'Narenn Supreme co-living property in VIP Hills, Madhapur',
       title: 'Narenn Supreme',
     },
@@ -144,10 +142,10 @@ export const PROPERTIES_UNIFORM = {
 export const PROPERTIES_CHOOSE = {
   h2: 'How to Choose Between Them',
   bullets: [
-    'Start with your sharing format — single, double or triple — and see which properties currently have it open',
+    'Start with your sharing format - single, double or triple - and see which properties currently have it open',
     'Then consider your budget band; pricing varies modestly between properties',
     "Then consider your specific office; all four are in VIP Hills, but a few minutes' difference matters if you walk",
-    'Visit at least two before deciding — most people know within five minutes which one feels right',
+    'Visit at least two before deciding - most people know within five minutes which one feels right',
     'Ask us honestly which one we would put a friend in. We will tell you.',
   ],
   image: {

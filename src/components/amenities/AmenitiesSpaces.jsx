@@ -36,7 +36,7 @@ export default function AmenitiesSpaces() {
             src={AMENITIES_IMAGES[primary.key].src}
             alt={AMENITIES_IMAGES[primary.key].alt}
             title={primary.title}
-            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            loading="lazy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
           <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/80 via-brand-charcoal/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
@@ -54,7 +54,7 @@ export default function AmenitiesSpaces() {
                 src={AMENITIES_IMAGES[space.key].src}
                 alt={AMENITIES_IMAGES[space.key].alt}
                 title={space.title}
-                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/80 via-brand-charcoal/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">

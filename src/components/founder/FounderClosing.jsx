@@ -15,7 +15,7 @@ export default function FounderClosing() {
             <img
               src={signature.image}
               alt={signature.alt}
-              className="h-10 sm:h-14 mb-3 sm:mb-4 opacity-80"
+              loading="lazy" className="h-10 sm:h-14 mb-3 sm:mb-4 opacity-80"
             />
             <h4 className="text-lg sm:text-2xl font-display font-bold text-brand-green tracking-tight">
               {signature.name}

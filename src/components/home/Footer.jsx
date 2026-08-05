@@ -52,9 +52,24 @@ function WhatsAppIcon({ className }) {
 }
 
 const SOCIAL_LINKS = [
-  { label: 'Facebook', href: 'https://www.facebook.com/', Icon: FacebookIcon, color: '#1877F2' },
-  { label: 'Instagram', href: 'https://www.instagram.com/', Icon: InstagramIcon, color: null },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/', Icon: LinkedInIcon, color: '#0A66C2' },
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/profile.php?id=61570854237010',
+    Icon: FacebookIcon,
+    color: '#1877F2',
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/narennliving/',
+    Icon: InstagramIcon,
+    color: null,
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/narenn-living-hyd/',
+    Icon: LinkedInIcon,
+    color: '#0A66C2',
+  },
   { label: 'WhatsApp', href: WHATSAPP_URL, Icon: WhatsAppIcon, color: '#25D366' },
 ];
 
@@ -92,7 +107,7 @@ export default function Footer() {
               <img
                 src={FOOTER_LOGO}
                 alt="Narenn Living"
-                className="h-16 sm:h-20 w-auto object-contain"
+                loading="lazy" className="h-16 sm:h-20 w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-brand-charcoal-light leading-relaxed text-center">
@@ -226,7 +241,7 @@ export default function Footer() {
             src={FOOTER_ORNAMENT}
             alt=""
             aria-hidden="true"
-            className="w-[min(100%,880px)] h-auto max-h-24 sm:max-h-36 lg:max-h-40 object-contain"
+            loading="lazy" className="w-[min(100%,880px)] h-auto max-h-24 sm:max-h-36 lg:max-h-40 object-contain"
           />
         </div>
 

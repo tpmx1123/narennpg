@@ -20,7 +20,7 @@ export default function LocationIntro({ data }) {
           src={WATERMARK_LOGO}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[140px] sm:w-[220px] lg:w-[260px] h-auto object-contain opacity-[0.1] sm:opacity-[0.12]"
+          loading="lazy" className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[140px] sm:w-[220px] lg:w-[260px] h-auto object-contain opacity-[0.1] sm:opacity-[0.12]"
         />
 
         <div className="relative z-10 space-y-3 sm:space-y-4 text-left sm:text-center max-w-4xl mx-auto">

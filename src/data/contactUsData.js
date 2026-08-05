@@ -18,10 +18,10 @@ export const CONTACT_IMAGES = {
     title: 'Contact Narenn Living',
   },
   visit: {
-    src: `${SITE_URL}/images/site-visit-pg-madhapur-room-walkthrough.jpg`,
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785931048/M_P00021_1_jrrqj3.jpg',
     fallback:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuA7fMPgjiFn0CfuBPbrmVKDNWitPdkt8QlrKsFoNmASyEAKtl-0nAP6W9wfaW3FMFIr4MTRupmNKmRTFASghRQKi5-Li0UYi96OqKRgKu4cMXR_oSkJVbR7lMalzWuK9LTELo7f_xjk800b1LoJciBLuP5guPsBrC9KoDdgEaB1tMwv-8bIQq-CHOWWCNZ4e7D75jnxlEysoWikLm0uP_v6xZ4zbFMCVVSkA3O7BTc1-QXWOsF7zICc-Y0KrpvfNR12JWVl7pKckIM',
-    alt: 'Prospective resident on a free site visit walkthrough at a PG in Madhapur',
+      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785931048/M_P00021_1_jrrqj3.jpg',
+    alt: 'Hallway interior during a free site visit at Narenn Living PG in Madhapur',
     title: 'Free site visit',
   },
   map: {

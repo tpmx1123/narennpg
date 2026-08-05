@@ -18,7 +18,7 @@ export default function PropertyIntro({ data }) {
           src={WATERMARK_LOGO}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] sm:w-[280px] lg:w-[340px] h-auto object-contain opacity-[0.18]"
+          loading="lazy" className="pointer-events-none select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] sm:w-[280px] lg:w-[340px] h-auto object-contain opacity-[0.18]"
         />
 
         <div className="relative z-10 space-y-5 max-w-5xl mx-auto">

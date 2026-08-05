@@ -16,7 +16,7 @@ export const ELITE_PAGE = {
   description:
     'Narenn Elite - Minimlistic co-living in VIP Hills, Madhapur with premium desks, private balconies and proximity to Raheja Mindspace.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
+  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911174/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly.png',
 };
 
 export const ELITE = {
@@ -29,7 +29,7 @@ export const ELITE = {
     h1Accent: 'Madhapur',
     lead: 'A premium co-living space for men and women in VIP Hills.',
     image: {
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911174/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly.png',
       alt: 'Narenn Elite co-living property in VIP Hills, Madhapur',
       title: 'Narenn Elite',
     },

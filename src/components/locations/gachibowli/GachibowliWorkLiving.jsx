@@ -37,7 +37,7 @@ export default function GachibowliWorkLiving() {
 
         <div className="order-1 lg:order-2 lg:col-span-5">
           <div className="overflow-hidden aspect-[16/10] max-h-[240px] sm:max-h-[320px] rounded-xl sm:rounded-2xl border border-brand-gold/20 shadow-[0_16px_40px_-20px_rgba(15,61,46,0.16)] w-full max-w-xl mx-auto lg:max-w-none">
-            <img
+            <img loading="lazy"
               src={src}
               alt={img.alt}
               title={img.title}

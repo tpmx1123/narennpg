@@ -40,7 +40,7 @@ export default function Highlights() {
                 src={item.icon}
                 alt=""
                 aria-hidden="true"
-                className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                loading="lazy" className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
               />
               <span className="font-display font-bold text-[11px] sm:text-sm text-brand-charcoal leading-tight block">
                 {item.label}

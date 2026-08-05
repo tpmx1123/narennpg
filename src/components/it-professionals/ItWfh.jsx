@@ -41,7 +41,7 @@ export default function ItWfh() {
 
         <div className="lg:col-span-6">
           <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-            <img
+            <img loading="lazy"
               src={src}
               alt={img.alt}
               title={img.title}

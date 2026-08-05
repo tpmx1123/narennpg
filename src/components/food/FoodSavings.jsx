@@ -7,7 +7,7 @@ export default function FoodSavings() {
       <img
         src={FOOD_SAVINGS.image}
         alt={FOOD_SAVINGS.alt}
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        loading="lazy" className="absolute inset-0 w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-brand-charcoal/50" />
       <div className="absolute inset-0 bg-linear-to-r from-brand-charcoal/85 via-brand-charcoal/55 to-brand-charcoal/35" />

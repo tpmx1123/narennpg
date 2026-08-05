@@ -39,7 +39,7 @@ export default function AmenitiesMaintenance() {
               src={utilities.src}
               alt={utilities.alt}
               title={utilities.title}
-              className="w-full aspect-[4/3] object-cover"
+              loading="lazy" className="w-full aspect-[4/3] object-cover"
             />
           </div>
         </div>

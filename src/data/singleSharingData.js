@@ -1,5 +1,3 @@
-import { SITE_URL } from './sitePages';
-
 /** Confirmed single-sharing rates for the sticky booking card + schema Offers. */
 export const SINGLE_SHARING_RATES = {
   currency: 'INR',
@@ -44,7 +42,7 @@ export const SINGLE_SHARING_PAGE = {
   description:
     'Private single occupancy AC rooms in Madhapur near Hitech City. Meals, WiFi, housekeeping & security included. Ideal for working professionals. Book a visit.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: `${SITE_URL}/images/single-sharing-pg-in-madhapur-private-ac-room.jpg`,
+  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
 };
 
 export const SINGLE_SHARING_HERO = {
@@ -63,24 +61,24 @@ export const SINGLE_SHARING_BOOKING = {
 
 export const SINGLE_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
-    alt: 'Private single sharing PG room in Madhapur with AC, bed and study desk',
-    title: 'Single sharing PG in Madhapur',
-  },
-  workDesk: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte.webp',
-    alt: 'Work desk and chair in a single sharing room suitable for work from home in Madhapur',
-    title: 'Single room work desk',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
+    alt: 'Bed area in a single sharing room',
+    title: 'Single sharing room - bed',
   },
   bathroom: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
-    alt: 'Attached bathroom with 24x7 hot water in a single sharing PG room in Madhapur',
-    title: 'Attached bathroom',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919949/M_P00337_1_xcyssw.jpg',
+    alt: 'Alternate view of the room in a single sharing PG',
+    title: 'Single sharing room - alternate view',
   },
   wardrobe: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
-    alt: 'Full-height lockable wardrobe in a single sharing room at Narenn Living Madhapur',
-    title: 'Wardrobe and storage',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920310/M_P00128_1_zkwdpx.jpg',
+    alt: 'Wardrobe and storage area in a single sharing room',
+    title: 'Single sharing room - wardrobe',
+  },
+  workDesk: {
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00012_1_t5x15w.jpg',
+    alt: 'Work desk and chair area in a single sharing room',
+    title: 'Single sharing room - work desk',
   },
 };
 

@@ -66,7 +66,7 @@ export default function LocationAudience({ data }) {
 
         <div className="order-1 lg:order-2 lg:col-span-5">
           <div className="overflow-hidden aspect-[16/10] max-h-[200px] sm:max-h-[320px] rounded-xl sm:rounded-2xl w-full max-w-xl mx-auto lg:max-w-none">
-            <img
+            <img loading="lazy"
               src={src}
               alt={img.alt}
               title={img.title}

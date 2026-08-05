@@ -20,7 +20,7 @@ export default function HitechCityMadhapur() {
       >
         <div className="lg:col-span-7 order-1 lg:order-1">
           <div className="overflow-hidden aspect-[4/3] lg:aspect-[5/4] rounded-xl sm:rounded-2xl w-full max-w-xl mx-auto lg:max-w-none">
-            <img
+            <img loading="lazy"
               src={src}
               alt={img.alt}
               title={img.title}

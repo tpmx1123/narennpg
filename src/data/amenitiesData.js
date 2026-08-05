@@ -22,37 +22,57 @@ export const AMENITIES_INTRO = [
 
 export const AMENITIES_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926109/M_P00304_2_becavf.jpg',
     alt: 'PG amenities in Madhapur including AC rooms, WiFi, housekeeping and meals',
     title: 'PG amenities in Madhapur',
   },
+  rooms: {
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00355_1_t0hd6k.jpg',
+    alt: 'Comfortable fully furnished PG room with wardrobe, TV and mini fridge in Madhapur',
+    title: 'Fully furnished rooms',
+  },
+  meals: {
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926297/M_P09866_1_anlo2u.jpg',
+    alt: 'Four home-style meals a day from the Narenn Living in-house kitchen in Madhapur',
+    title: 'Four home-style meals a day',
+  },
   housekeeping: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925678/M_P00093_1_vaq4bx.jpg',
     alt: 'Daily housekeeping service in a PG room in Madhapur, Hyderabad',
     title: 'Daily housekeeping',
   },
   wifi: {
-    src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a0?auto=format&fit=crop&w=1200&q=80',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925677/M_P00138_1_1_bhlykz.jpg',
     alt: 'High-speed fibre WiFi and power backup at Narenn Living co-living in Madhapur',
     title: 'WiFi and power backup',
   },
+  security: {
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785910572/M_P09966_1_e3b8lr.jpg',
+    alt: 'On-site Narenn Living security and facility staff in Madhapur',
+    title: 'Safety and security',
+  },
+  community: {
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785851628/M_P00046_1_qstcck.jpg',
+    alt: 'Community terrace seating at Narenn Living co-living in Madhapur',
+    title: 'Community spaces and terrace',
+  },
   dining: {
-    src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926297/M_P09866_1_anlo2u.jpg',
     alt: 'Dining hall and common lounge area at Narenn Living co-living in Hyderabad',
     title: 'Dining hall and lounge',
   },
   lounge: {
-    src: 'https://images.unsplash.com/photo-1517502884422-41eaaced0168?auto=format&fit=crop&w=800&q=80',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785909674/M_P00304_1_cgpnd2.jpg',
     alt: 'Social lounge and common area at Narenn Living co-living in Madhapur',
     title: 'The Social Lounge',
   },
   rooftop: {
-    src: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785851628/M_P00046_1_qstcck.jpg',
     alt: 'Rooftop terrace with city views at Narenn Living co-living in Hyderabad',
     title: 'Rooftop Skydeck',
   },
   utilities: {
-    src: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925844/M_P00312_1_zealpq.jpg',
     alt: 'RO drinking water, hot water and lift access at a PG in Madhapur',
     title: 'Core utilities',
   },
@@ -60,23 +80,22 @@ export const AMENITIES_IMAGES = {
 
 export const AMENITIES_FEATURES = [
   {
-    icon: 'bed',
     h2: 'Comfortable, Fully Furnished Rooms',
     h2Accent: 'Rooms',
+    imageKey: 'rooms',
     description:
       'Every room arrives move-in ready with a quality bed and mattress, personal wardrobe, study desk and air-conditioning. You bring your bags; we handle everything else. Whether you choose a single, double or triple room, comfort is engineered into the space.',
     link: { to: '/rooms/', label: 'room options', prefix: 'Explore our ', suffix: ' to find your fit.' },
   },
   {
-    icon: 'meals',
     h2: 'Four Home-Style Meals a Day',
     h2Accent: 'Meals a Day',
+    imageKey: 'meals',
     description:
       'Our in-house kitchen is the heart of Narenn Living. We serve four freshly cooked meals daily - breakfast, lunch, evening snacks and dinner - with a rotating menu of South Indian and North Indian favourites. It is one of the most loved parts of living here.',
     link: { to: '/food/', label: 'food menu', prefix: 'See what is on our ', suffix: '.' },
   },
   {
-    icon: 'wifi',
     h2: 'High-Speed WiFi Throughout',
     h2Accent: 'WiFi Throughout',
     imageKey: 'wifi',
@@ -84,7 +103,6 @@ export const AMENITIES_FEATURES = [
       'Reliable internet is non-negotiable for work-from-home professionals and students attending online classes. We provide strong, high-speed WiFi across all our properties so you can work, study and stream without interruption.',
   },
   {
-    icon: 'housekeeping',
     h2: 'Daily Housekeeping and Laundry Support',
     h2Accent: 'Laundry Support',
     imageKey: 'housekeeping',
@@ -92,16 +110,16 @@ export const AMENITIES_FEATURES = [
       'A clean space makes for a clear mind. Our housekeeping team cleans rooms and common areas daily and refreshes linen regularly, while laundry support keeps the chore of washing off your plate. It is the kind of everyday convenience that quietly makes life better.',
   },
   {
-    icon: 'security',
     h2: 'Safety and Security You Can Rely On',
     h2Accent: 'You Can Rely On',
+    imageKey: 'security',
     description:
       'Peace of mind is an amenity too. Every property features 24/7 CCTV surveillance, biometric no-curfew access and on-site management, so residents and their families feel secure at all hours. Your independence is respected, and your safety is never compromised.',
   },
   {
-    icon: 'community',
     h2: 'Community Spaces and Terrace',
     h2Accent: 'Terrace',
+    imageKey: 'community',
     description:
       'Beyond the rooms, Narenn Living offers inviting common areas and terrace spaces where residents relax, socialise and celebrate. These are the backdrop for our vibrant events calendar - from festival nights to birthday parties.',
     link: {

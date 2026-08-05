@@ -6,7 +6,7 @@ import BlogRichText from './BlogRichText';
 function ContentImage({ src, alt, title, fallback, className }) {
   const [imgSrc, setImgSrc] = useState(src);
   return (
-    <img
+    <img loading="lazy"
       src={imgSrc}
       alt={alt}
       title={title}

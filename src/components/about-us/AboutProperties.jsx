@@ -65,7 +65,7 @@ export default function AboutProperties() {
             src={WHY_NARENN_WATERMARK}
             alt="Premium co-living building in Madhapur, Hyderabad — Narenn Living VIP Hills"
             title="Narenn Living co-living in Madhapur"
-            className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover opacity-[0.14]"
+            loading="lazy" className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover opacity-[0.14]"
           />
           <div className="relative z-10 p-5 sm:p-7 lg:p-10 h-full flex flex-col justify-between">
             <div>

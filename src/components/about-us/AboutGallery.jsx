@@ -80,7 +80,7 @@ function GalleryLightbox({ images, index, onClose, onPrev, onNext }) {
             src={image.src}
             alt={image.alt}
             title={image.title}
-            className={`max-h-[min(72vh,calc(100dvh-11rem))] sm:max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-2xl ${
+            loading="lazy" className={`max-h-[min(72vh,calc(100dvh-11rem))] sm:max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-2xl ${
               image.orientation === 'portrait' ? 'max-w-[min(100%,420px)] sm:max-w-md' : ''
             }`}
           />

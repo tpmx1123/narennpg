@@ -43,7 +43,7 @@ export default function EventsMonth() {
 
         <div className="lg:col-span-5">
           <div className="rounded-2xl overflow-hidden border border-brand-gold/20">
-            <img
+            <img loading="lazy"
               src={src}
               alt={cricket.alt}
               title={cricket.title}

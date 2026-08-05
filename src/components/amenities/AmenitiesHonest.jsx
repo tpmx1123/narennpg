@@ -42,7 +42,7 @@ export default function AmenitiesHonest() {
               src={AMENITIES_IMAGES.housekeeping.src}
               alt={AMENITIES_IMAGES.housekeeping.alt}
               title={AMENITIES_IMAGES.housekeeping.title}
-              className="w-full h-full object-cover"
+              loading="lazy" className="w-full h-full object-cover"
             />
           </div>
           <div className="aspect-[4/5] overflow-hidden rounded-2xl mt-4 sm:mt-8 border border-brand-gold/20">
@@ -50,7 +50,7 @@ export default function AmenitiesHonest() {
               src={AMENITIES_IMAGES.wifi.src}
               alt={AMENITIES_IMAGES.wifi.alt}
               title={AMENITIES_IMAGES.wifi.title}
-              className="w-full h-full object-cover"
+              loading="lazy" className="w-full h-full object-cover"
             />
           </div>
         </motion.div>

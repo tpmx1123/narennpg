@@ -33,7 +33,7 @@ export default function StudentsTrust() {
         className="grid grid-cols-1 lg:grid-cols-12"
       >
         <div className="lg:col-span-5 relative min-h-[240px] sm:min-h-[300px] lg:min-h-full">
-          <img
+          <img loading="lazy"
             src={src}
             alt={img.alt}
             title={img.title}

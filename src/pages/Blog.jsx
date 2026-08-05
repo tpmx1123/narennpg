@@ -106,7 +106,7 @@ export default function Blog() {
       />
 
       <main className="flex-1 bg-[#FDFCF8] overflow-x-clip">
-        <section className="pt-24 sm:pt-28 lg:pt-36 pb-8 sm:pb-10 lg:pb-14">
+        <section className="pt-10 sm:pt-12 lg:pt-16 pb-8 sm:pb-10 lg:pb-14">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 items-center">
               <div className="order-2 md:order-1 md:col-span-3 min-w-0">
@@ -141,7 +141,7 @@ export default function Blog() {
                   <img
                     src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
                     alt="Modern co-living lounge with warm wood tones and natural light"
-                    className="w-full h-full object-cover object-center"
+                    loading="lazy" className="w-full h-full object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/45 to-transparent" />
                 </div>
@@ -161,7 +161,7 @@ export default function Blog() {
                   <img
                     src={featuredPost.image}
                     alt={featuredPost.alt}
-                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy" className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-5 sm:p-6 lg:p-8 flex flex-col justify-center min-w-0">
@@ -243,7 +243,7 @@ export default function Blog() {
                         <img
                           src={post.image}
                           alt={post.alt}
-                          className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                          loading="lazy" className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                         />
                       </Link>
                       <div className="p-4 sm:p-5 flex flex-col flex-1 min-w-0">
@@ -329,7 +329,7 @@ export default function Blog() {
             src="https://images.unsplash.com/photo-1522770179533-24471fcdba45?auto=format&fit=crop&w=1600&q=80"
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 w-full h-full object-cover object-center opacity-20"
+            loading="lazy" className="absolute inset-0 w-full h-full object-cover object-center opacity-20"
           />
           <div className="absolute inset-0 bg-brand-charcoal/65" aria-hidden="true" />
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand-burgundy/20 blur-3xl" />

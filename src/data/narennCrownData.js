@@ -16,7 +16,8 @@ export const CROWN_PAGE = {
   description:
     "Narenn's Crown - a safe, refined co-living space for girls in VIP Hills, Madhapur with spacious lounge and dedicated dining.",
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: item.image.src,
+  ogImage:
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911283/ChatGPT_Image_Aug_5_2026_11_57_36_AM_xwf4ye.png',
 };
 
 export const CROWN = {
@@ -29,7 +30,7 @@ export const CROWN = {
     h1Accent: 'Madhapur',
     lead: 'A safe, refined women-only co-living home in VIP Hills.',
     image: {
-      src: item.image.src,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911283/ChatGPT_Image_Aug_5_2026_11_57_36_AM_xwf4ye.png',
       alt: item.image.alt,
       title: item.image.title,
     },

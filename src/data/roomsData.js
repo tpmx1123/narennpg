@@ -1,37 +1,42 @@
 export const ROOMS_PAGE = {
   path: '/rooms/',
-  title: 'PG Rooms in Madhapur, Hyderabad | Single, Double & Triple Sharing',
+  title: 'PG Rooms in Madhapur, Hyderabad | Single, Double, Triple & Four Sharing',
   description:
-    'Fully furnished AC rooms in Madhapur - single, double & triple sharing. Meals, WiFi & housekeeping included. Near Hitech City. Book your room at Narenn Living.',
+    'Fully furnished AC rooms in Madhapur - single, double, triple & four sharing. Meals, WiFi & housekeeping included. Near Hitech City. Book your room at Narenn Living.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://narennliving.com/images/fully-furnished-pg-rooms-in-madhapur-hero.jpg',
+  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922730/M_P00299_1_ilshb5.jpg',
 };
 
 export const ROOMS_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922730/M_P00299_1_ilshb5.jpg',
     alt: 'Fully furnished PG rooms in Madhapur with AC, bed, wardrobe and study desk',
     title: 'Fully furnished PG rooms in Madhapur',
   },
   single: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
-    alt: 'Single sharing PG room in Madhapur with private AC and work desk',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
+    alt: 'Single sharing room hero image',
     title: 'Single sharing room',
   },
   double: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte.webp',
-    alt: 'Double sharing PG room in Madhapur with two beds, two wardrobes and two desks',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785921010/M_P00210_2_tgzf4c.jpg',
+    alt: 'Double sharing room hero image',
     title: 'Double sharing room',
   },
   triple: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00196_1_hkg9hw.jpg',
     alt: 'Triple sharing PG room in Madhapur with three beds and individual wardrobes',
     title: 'Triple sharing room',
   },
   inclusions: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919949/M_P00337_1_xcyssw.jpg',
     alt: 'Standard inclusions in every Narenn Living PG room in Madhapur',
     title: 'Room inclusions',
+  },
+  quad: {
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922348/M_P00064_1_xrjutj.jpg',
+    alt: 'Four sharing room in Madhapur hero image',
+    title: 'Four sharing room',
   },
 };
 
@@ -43,7 +48,7 @@ export const ROOMS_HERO = {
 
 export const ROOMS_INTRO = [
   'Every Narenn Living room is designed to be move-in ready from the moment you arrive. Our PG rooms in Madhapur come fully furnished with a comfortable bed and mattress, wardrobe, study desk, air-conditioning and fresh linen - plus four meals a day, high-speed WiFi and daily housekeeping included in one simple monthly fee. Whether you want privacy, company or the most economical option, there is a room here that fits your budget and your lifestyle.',
-  'Located in VIP Hills, Madhapur, all our rooms sit minutes from Hitech City, Gachibowli and Kondapur, so wherever you work or study, your commute stays short. Below is a quick guide to our three sharing types.',
+  'Located in VIP Hills, Madhapur, all our rooms sit minutes from Hitech City, Gachibowli and Kondapur, so wherever you work or study, your commute stays short. Below is a quick guide to our four sharing types.',
 ];
 
 export const ROOMS_FORMATS = [
@@ -80,6 +85,17 @@ export const ROOMS_FORMATS = [
       'If you want premium living at the friendliest price, our triple sharing rooms are the answer. You get all the same inclusions - AC, meals, WiFi, housekeeping and amenities - at the most economical rate, along with the built-in social circle that comes with sharing. It is especially popular with students and freshers.',
     ],
   },
+  {
+    id: 'quad',
+    eyebrow: '4 Sharing',
+    h2: 'Four Sharing Rooms - Lowest Monthly Rent',
+    href: '/rooms/quad-sharing/',
+    linkLabel: 'four sharing rooms',
+    imageKey: 'quad',
+    paragraphs: [
+      'If keeping monthly costs as low as possible is the priority, our four sharing rooms offer the most economical co-living format at Narenn Living. You share an AC room with three others, with personal bed, storage and study space - plus the same meals, WiFi, housekeeping and full access to amenities.',
+    ],
+  },
 ];
 
 export const ROOMS_INCLUDES = [
@@ -96,19 +112,20 @@ export const ROOMS_CHOOSE = [
   'Choose single sharing if you take client calls from your room, work night shifts or on-call rotations, or simply value silence enough to pay for it',
   'Choose double sharing if you want the balance of cost and personal space, and one good housemate would help you settle into Hyderabad faster',
   'Choose triple sharing if you are on a student budget or a first-job salary and spend most of your day outside the room anyway',
-  'Still unsure? Start with double or triple and upgrade later — we allow format changes subject to availability, with no penalty',
+  'Choose four sharing if your priority is the lowest monthly rent and a lively group setting',
+  'Still unsure? Start with double, triple or four and upgrade later — we allow format changes subject to availability, with no penalty',
 ];
 
 export const ROOMS_FAQS = [
   {
     question: 'Are the rooms at Narenn Living air-conditioned?',
     answer:
-      'Yes, all our single, double and triple sharing rooms are air-conditioned and fully furnished with a bed, wardrobe and study desk.',
+      'Yes, all our single, double, triple and four sharing rooms are air-conditioned and fully furnished with a bed, wardrobe and study desk.',
   },
   {
     question: 'Which sharing type is the most economical?',
     answer:
-      'Triple sharing is the most economical option while still including AC, meals, WiFi, housekeeping and all amenities in one monthly fee.',
+      'Quad sharing is the most economical option while still including AC, meals, WiFi, housekeeping and all amenities in one monthly fee.',
   },
   {
     question: 'Can I see the room before booking?',

@@ -42,7 +42,7 @@ export default function Amenities() {
               <img
                 src={am.image}
                 alt={am.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-brand-charcoal/55 group-hover:bg-brand-charcoal/45 transition-colors duration-300" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-2 sm:px-4">

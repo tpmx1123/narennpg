@@ -16,7 +16,7 @@ export const MADHAPUR_IMAGES = {
     title: 'PG in Madhapur',
   },
   room: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC9-lo_v3V9ClmglBqZOkzJ0DVYlMLG1CZxPg8SDPNR2JstT0xvwwUZmrkN2gcn0ewp01RGGHo5J96fC4AG460saxrnhr8GLsLHcs5lJtaeYPm-PcYLLL4E86WVHHl-LgtuxbuNOelTQf7XSzMzlkDKstemKZGIHQAksnhAJedl5-KM7ajAOLroqlGoXEvQrv5uCUUk_c6di-N9bVKwavcDJ4lGQcC-CITrReYeASrlK75ZtEL_sfic0NH0v4UEbaIMRbnB47giNsU',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
     alt: 'Furnished AC room interior at a PG in Madhapur, Hyderabad',
     title: 'Madhapur PG room',
   },

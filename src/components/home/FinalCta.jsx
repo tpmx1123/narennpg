@@ -5,7 +5,7 @@ import ContactText from '../ui/ContactText';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 
 const CTA_IMAGE =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784195917/image-13-2_xarwah.webp';
+  'https://res.cloudinary.com/dmaeijlc/image/upload/v1785851628/M_P00046_1_qstcck.jpg';
 
 const PhoneIcon = (
   <g>
@@ -57,7 +57,7 @@ export default function FinalCta({
               <img
                 src={CTA_IMAGE}
                 alt={imageAlt}
-                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy" className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-r from-brand-green/20 via-brand-green/40 to-brand-green/90 lg:to-brand-green" />
             </div>

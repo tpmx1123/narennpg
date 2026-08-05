@@ -21,7 +21,7 @@ export default function GachibowliBookVisit({ onBookVisit }) {
 
   return (
     <section className="relative mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-10 overflow-hidden">
-      <img
+      <img loading="lazy"
         src={src}
         alt=""
         aria-hidden="true"

@@ -25,7 +25,7 @@ function ResidenceCard({ res }) {
         scale: hovered ? 1.02 : 1,
       }}
       transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl border border-white/15 sm:snap-start"
+      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl border border-white/15"
     >
       <motion.video
         key={res.videoUrl}
@@ -110,12 +110,7 @@ export default function Residences() {
       </div>
 
       <div
-        className="grid grid-cols-1 gap-4 px-4 pb-2 sm:flex sm:overflow-x-auto sm:px-6 lg:px-10 sm:scrollbar-none sm:snap-x sm:snap-mandatory"
-        style={{
-          WebkitOverflowScrolling: 'touch',
-          msOverflowStyle: 'none',
-          scrollbarWidth: 'none',
-        }}
+        className="max-w-7xl mx-auto grid grid-cols-1 gap-4 px-4 pb-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-4 sm:px-6 lg:px-10"
       >
         {PROPERTY_CARDS.map((res) => (
           <ResidenceCard key={res.name} res={res} />

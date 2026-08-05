@@ -42,7 +42,7 @@ export default function StudentsSupports() {
 
           <div className="lg:col-span-6">
             <div className="overflow-hidden rounded-2xl aspect-[16/10] sm:aspect-[3/2]">
-              <img
+              <img loading="lazy"
                 src={src}
                 alt={img.alt}
                 title={img.title}

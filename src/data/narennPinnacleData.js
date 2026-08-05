@@ -17,7 +17,7 @@ export const PINNACLE_PAGE = {
     'Narenn Pinnacle - upscale executive co-living in Madhapur with rooftop café, mini-gym and quiet study zones near Hitech City.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage:
-    'https://res.cloudinary.com/dmaeijlc/image/upload/so_1,w_1200,h_630,c_fill,q_auto,f_jpg/v1784010621/01_NARENN_PINNACLE_ttyhib.jpg',
+    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785915351/ChatGPT_Image_Aug_5_2026_01_05_43_PM_c34gr5.png',
 };
 
 export const PINNACLE = {
@@ -30,7 +30,7 @@ export const PINNACLE = {
     h1Accent: 'Madhapur',
     lead: 'A modern space crafted for high-performance living.',
     image: {
-      src: item.image.src,
+      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785915351/ChatGPT_Image_Aug_5_2026_01_05_43_PM_c34gr5.png',
       alt: item.image.alt,
       title: item.image.title,
     },

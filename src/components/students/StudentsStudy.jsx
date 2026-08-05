@@ -20,7 +20,7 @@ export default function StudentsStudy() {
       >
         <div className="lg:col-span-7 order-2 lg:order-1">
           <div className="overflow-hidden aspect-[4/3] lg:aspect-[5/4] -mx-4 sm:mx-0 sm:rounded-2xl">
-            <img
+            <img loading="lazy"
               src={src}
               alt={img.alt}
               title={img.title}

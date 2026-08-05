@@ -152,7 +152,7 @@ export default function Navbar() {
   return (
     <header
       ref={navRef}
-      className="fixed top-0 left-0 w-full z-50 transition-[background,border-color,box-shadow] duration-500 ease-out"
+      className={`${isHome ? 'fixed' : 'sticky'} top-0 left-0 w-full z-50 transition-[background,border-color,box-shadow] duration-500 ease-out`}
       style={{
         WebkitBackdropFilter: overHero || menuExpanded ? 'blur(18px)' : 'blur(14px)',
         backdropFilter: overHero || menuExpanded ? 'blur(18px)' : 'blur(14px)',
@@ -161,14 +161,14 @@ export default function Navbar() {
             ? 'rgba(12, 12, 12, 0.28)'
             : 'linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.03) 60%, rgba(255,255,255,0) 100%)'
           : menuExpanded
-            ? 'rgba(255, 255, 255, 0.55)'
-            : 'rgba(255, 255, 255, 0.45)',
+            ? 'rgba(255, 255, 255, 0.92)'
+            : 'rgba(255, 255, 255, 0.96)',
         borderBottom: overHero
           ? menuExpanded
             ? '1px solid rgba(255,255,255,0.12)'
             : '1px solid transparent'
-          : '1px solid rgba(255,255,255,0.35)',
-        boxShadow: menuExpanded && !overHero ? '0 8px 30px -18px rgba(34,34,34,0.2)' : 'none',
+          : '1px solid rgba(15, 61, 46, 0.08)',
+        boxShadow: !overHero ? '0 8px 30px -18px rgba(34,34,34,0.18)' : 'none',
       }}
     >
       <nav className="max-w-[1320px] mx-auto px-6 sm:px-8 lg:px-12 py-3.5">

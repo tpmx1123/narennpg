@@ -7,7 +7,7 @@ const GRID = [
   { key: 'hero', className: 'sm:col-span-2 sm:row-span-2 min-h-[240px] sm:min-h-[360px]' },
   { key: 'wardrobes', className: 'min-h-[160px] sm:min-h-[170px]' },
   { key: 'students', className: 'min-h-[160px] sm:min-h-[170px]' },
-  { key: 'studySpace', className: 'sm:col-span-2 min-h-[160px] sm:min-h-[180px]' },
+  { key: 'studySpace', className: 'sm:col-span-2 min-h-[240px] sm:min-h-[360px]' },
 ];
 
 export default function TripleRoomGallery() {
@@ -32,13 +32,13 @@ export default function TripleRoomGallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08, ease: EASE }}
-              className={`relative overflow-hidden rounded-[12px] border border-brand-gold/20 group ${item.className}`}
+              className={`relative overflow-hidden rounded-xl border border-brand-gold/20 group ${item.className}`}
             >
               <img
                 src={image.src}
                 alt={image.alt}
                 title={image.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+                loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
               />
             </motion.div>
           );

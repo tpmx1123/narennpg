@@ -14,22 +14,22 @@ export const ABOUT_IMAGES = {
     title: 'About Narenn Living',
   },
   mission: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785333213/wmremove-transformed_koov6k.png',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785850669/M_P09974_1_vq94me.jpg',
     alt: 'Premium furnished co-living room at Narenn Living Madhapur',
     title: 'Our Mission',
   },
   communityA: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785392456/ChatGPT_Image_Jul_29_2026_07_59_36_PM_wuru9q.png',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785909674/M_P00304_1_cgpnd2.jpg',
     alt: 'Residents sharing a meal in a Narenn Living communal dining area',
     title: 'Narenn Living community',
   },
   communityB: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785392456/ChatGPT_Image_Jul_29_2026_08_06_03_PM_fjgh0h.png',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785851628/M_P00046_1_qstcck.jpg',
     alt: 'Evening terrace gathering at Narenn Living Madhapur',
     title: 'Community events at Narenn Living',
   },
   security: {
-    src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAF35RkwaLIcF-Ene5VeHgIASGuFJEUJ_xCQIGYCJtu1qDBB8fHI4t_KUeDxP4xzInRWc4onhQCutosEDhYPLb6mtH4A-s9v8FbPNryCIPg3GJzKWf3ukVURb4--eH16z0cz3m9AZfOBkq-kiolymtk9CQQfApFHKAa535sX9tjbr7YhHQocmiSBMbVztIEj4v3o7cI1cR-yiO7cbm9jZLPIpQNW_-WB0rtPmi0dNDgxfBATbDo1m5m1tMhoiXRi9gFJ6YJkbpMkFk',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785910572/M_P09966_1_e3b8lr.jpg',
     alt: 'Biometric access control at the entrance of Narenn Living co-living in Madhapur',
     title: 'Biometric security access',
   },

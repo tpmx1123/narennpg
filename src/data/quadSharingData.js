@@ -1,5 +1,3 @@
-import { SITE_URL } from './sitePages';
-
 /** Confirmed four-sharing rates for the sticky booking card + schema Offers. */
 export const QUAD_SHARING_RATES = {
   currency: 'INR',
@@ -29,7 +27,7 @@ export const QUAD_SHARING_PAGE = {
   description:
     'Budget-friendly 4-sharing AC rooms in Madhapur near Hitech City. Meals, WiFi & housekeeping included. Most economical co-living for students. Book a visit.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: `${SITE_URL}/images/four-sharing-pg-in-madhapur-budget-room.jpg`,
+  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922348/M_P00064_1_xrjutj.jpg',
 };
 
 export const QUAD_SHARING_HERO = {
@@ -58,24 +56,24 @@ export const QUAD_SHARING_BOOKING = {
 
 export const QUAD_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
-    alt: 'Budget four sharing PG room in Madhapur with four beds and AC',
-    title: 'Four sharing PG in Madhapur',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922348/M_P00064_1_xrjutj.jpg',
+    alt: 'Hero image of a four sharing room',
+    title: 'Four sharing room - hero',
   },
   wardrobes: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
-    alt: 'Individual lockable storage in a four sharing PG room in Madhapur',
-    title: 'Individual storage',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00355_1_t0hd6k.jpg',
+    alt: 'Storage/wardrobe area in a four sharing room',
+    title: 'Four sharing room - storage',
   },
   students: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte.webp',
-    alt: 'Students in a four sharing PG room at Narenn Living Hyderabad',
-    title: 'Student four sharing',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920680/M_P00072_1_gkmydq.jpg',
+    alt: 'Room interior view in a four sharing room',
+    title: 'Four sharing room - interior view',
   },
   studySpace: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp',
-    alt: 'Study desks and charging points in a four sharing room in Madhapur',
-    title: 'Study space',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922347/M_P00060_1_mwxgvh.jpg',
+    alt: 'Study space in a four sharing room',
+    title: 'Four sharing room - study space',
   },
 };
 

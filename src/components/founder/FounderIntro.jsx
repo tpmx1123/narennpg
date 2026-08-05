@@ -58,7 +58,7 @@ export default function FounderIntro() {
                   src={founder.image}
                   alt={founder.alt}
                   title={founder.title}
-                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy" className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="mt-4 sm:mt-6">

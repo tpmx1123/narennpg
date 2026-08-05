@@ -50,7 +50,7 @@ export default function ContactVisit() {
 
         <div className="lg:col-span-6">
           <div className="rounded-2xl overflow-hidden border border-brand-gold/20 aspect-16/10">
-            <img
+            <img loading="lazy"
               src={src}
               alt={visitImg.alt}
               title={visitImg.title}

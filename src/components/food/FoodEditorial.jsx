@@ -3,11 +3,11 @@ import { FOOD_EDITORIAL } from '../../data/foodPageData';
 export default function FoodEditorial() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
-      <div className="relative overflow-hidden rounded-2xl sm:rounded-[28px] sm:min-h-95 flex items-center">
+      <div className="relative overflow-hidden rounded-2xl sm:rounded-[28px] min-h-72 sm:min-h-115 lg:min-h-130 flex items-center">
         <img
           src={FOOD_EDITORIAL.image}
           alt={FOOD_EDITORIAL.alt}
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          loading="lazy" className="absolute inset-0 w-full h-full object-cover "
         />
         <div className="absolute inset-0 bg-brand-charcoal/65" />
         <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/80 via-brand-charcoal/40 to-brand-charcoal/25" />

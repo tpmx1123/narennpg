@@ -2,37 +2,57 @@ export const AMENITIES = [
   {
     title: 'Gourmet Dining',
     description: 'Chef-prepared hygienic meals, thrice daily.',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785924684/M_P09905_1_b5nsjf.jpg',
   },
   {
     title: 'Gigabit WiFi',
     description: 'Enterprise-grade seamless connectivity.',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a0?auto=format&fit=crop&w=800&q=80',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925677/M_P00138_1_1_bhlykz.jpg',
   },
   {
     title: 'Housekeeping',
     description: 'Daily professional cleaning & laundry.',
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925678/M_P00093_1_vaq4bx.jpg',
   },
   {
     title: 'Fitness Studio',
     description: 'Fully equipped modern gym on premise.',
-    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785935055/M_P00049_1_cemcnv.jpg',
   },
   {
     title: '24/7 Power Backup',
     description: 'Uninterrupted electricity round the clock.',
-    image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925775/ChatGPT_Image_Aug_5_2026_03_59_02_PM_l6bwrb.png',
   },
   {
     title: 'Rooftop Terrace',
     description: 'Breathtaking city views for evening relaxation.',
-    image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785934758/M_P00038_1_reuqwj.jpg',
   },
   {
     title: 'Two-Wheeler Parking',
     description: 'Secure on-premise parking for your two-wheelers.',
-    image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785935045/M_P00295_2_1_p3nt4i.jpg',
+  },
+  {
+    title: 'CCTV',
+    description: '24/7 surveillance with live monitoring on site.',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925676/M_P09901_1_zsv8ir.jpg',
+  },
+  {
+    title: 'Lift Service',
+    description: 'Convenient elevator access across floors.',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925780/M_P00360_1_zvm9re.jpg',
+  },
+  {
+    title: 'Carrom Board',
+    description: 'Indoor recreation for downtime with friends.',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785935314/M_P00300_1_erklci.jpg',
+  },
+  {
+    title: 'Table Tennis',
+    description: 'Play TT in our common recreation space.',
+    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785935303/M_P00301_1_vbhlsh.jpg',
   },
   {
     title: 'Community Events',

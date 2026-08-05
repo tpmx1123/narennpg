@@ -21,7 +21,7 @@ export default function StudentsBook({ onBookVisit }) {
 
   return (
     <section className="relative mb-0 -mx-4 sm:-mx-6 lg:-mx-10 overflow-hidden">
-      <img
+      <img loading="lazy"
         src={src}
         alt=""
         aria-hidden="true"

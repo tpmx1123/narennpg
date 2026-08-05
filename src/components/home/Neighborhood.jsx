@@ -80,7 +80,7 @@ export default function Neighborhood() {
             <img
               src={AREA_IMAGE}
               alt="Narenn Living terrace and neighbourhood views in VIP Hills, Madhapur"
-              className="absolute inset-0 w-full h-full object-cover"
+              loading="lazy" className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-t from-brand-green/90 via-brand-green/40 to-transparent" />
             <div className="relative h-full min-h-55 sm:min-h-85 flex flex-col justify-end p-4 sm:p-8">

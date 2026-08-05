@@ -14,7 +14,6 @@ import {
   FoodMeals,
   FoodSavings,
   FoodVariety,
-  FoodWeeklyMenu,
 } from '../components/food';
 import { FOOD_FAQS, FOOD_PAGE } from '../data/foodPageData';
 import { SITE_URL, SITE_LOGO } from '../data/sitePages';
@@ -85,7 +84,6 @@ export default function Food() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 sm:pb-10 lg:pb-10">
           <FoodMeals />
           <FoodHome />
-          <FoodWeeklyMenu />
           <FoodHygiene />
           <FoodSavings />
           <FoodFuel />

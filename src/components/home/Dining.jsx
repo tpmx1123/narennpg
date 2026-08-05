@@ -6,13 +6,13 @@ const FOOD_IMAGES = [
     className: 'col-span-12 sm:col-span-7 row-span-2 min-h-45 sm:min-h-[280px] lg:min-h-[320px]',
   },
   {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784199448/image-32_yry0pd.webp',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926297/M_P09866_1_anlo2u.jpg',
     alt: 'Resident serving lunch from the Narenn Living Madhapur buffet',
     title: 'Serving lunch at Narenn Living',
     className: 'col-span-6 sm:col-span-5 min-h-35 sm:min-h-[180px] lg:min-h-[200px]',
   },
   {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784199448/image-37_qv84uj.webp',
+    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785929076/M_P09865_1_u709q3.jpg',
     alt: 'Residents with thali trays at Narenn Living co-living dining hall',
     title: 'Community dining at Narenn Living',
     className: 'col-span-6 sm:col-span-5 min-h-35 sm:min-h-[180px] lg:min-h-[200px]',
@@ -57,7 +57,7 @@ export default function Dining() {
                   src={img.src}
                   alt={img.alt}
                   title={img.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </div>
             ))}
