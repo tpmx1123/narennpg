@@ -4,7 +4,7 @@ export const AMENITIES_PAGE = {
   path: '/amenities/',
   title: 'PG Amenities in Madhapur, Hyderabad | Narenn Living Co-Living',
   description:
-    'AC rooms, four meals a day, high-speed WiFi, housekeeping, laundry, security & terrace. See all amenities included at Narenn Living co-living in Madhapur.',
+    'AC rooms, three meals a day, high-speed WiFi, housekeeping, security & terrace. See all amenities included at Narenn Living co-living in Madhapur.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage: `${SITE_URL}/images/pg-amenities-in-madhapur-narenn-living-hero.jpg`,
 };
@@ -16,7 +16,7 @@ export const AMENITIES_HERO = {
 };
 
 export const AMENITIES_INTRO = [
-  'The difference between a house and a home is in the details, and at Narenn Living those details are built in from day one. Our PG amenities in Madhapur are designed to cover every part of daily life, so residents never have to worry about furniture, cooking, cleaning or connectivity. From air-conditioned rooms and four fresh meals a day to high-speed WiFi, daily housekeeping and round-the-clock security, everything comes bundled into one simple, transparent monthly fee.',
+  'The difference between a house and a home is in the details, and at Narenn Living those details are built in from day one. Our PG amenities in Madhapur are designed to cover every part of daily life, so residents never have to worry about furniture, cooking, cleaning or connectivity. From air-conditioned rooms and three fresh meals a day to high-speed WiFi, daily housekeeping and round-the-clock security, everything comes bundled into one simple, transparent monthly fee.',
   'Below is a closer look at the amenities that make Narenn Living one of the most comfortable co-living addresses in West Hyderabad.',
 ];
 
@@ -33,8 +33,8 @@ export const AMENITIES_IMAGES = {
   },
   meals: {
     src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926297/M_P09866_1_anlo2u.jpg',
-    alt: 'Four home-style meals a day from the Narenn Living in-house kitchen in Madhapur',
-    title: 'Four home-style meals a day',
+    alt: 'Three home-style meals a day from the Narenn Living in-house kitchen in Madhapur',
+    title: 'Three home-style meals a day',
   },
   housekeeping: {
     src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925678/M_P00093_1_vaq4bx.jpg',
@@ -84,15 +84,15 @@ export const AMENITIES_FEATURES = [
     h2Accent: 'Rooms',
     imageKey: 'rooms',
     description:
-      'Every room arrives move-in ready with a quality bed and mattress, personal wardrobe, study desk and air-conditioning. You bring your bags; we handle everything else. Whether you choose a single, double or triple room, comfort is engineered into the space.',
+      'Every room arrives move-in ready with a quality bed and ortho mattress, personal wardrobe and air-conditioning. You bring your bags; we handle everything else. Whether you choose a single, double, triple or four sharing room, comfort is engineered into the space.',
     link: { to: '/rooms/', label: 'room options', prefix: 'Explore our ', suffix: ' to find your fit.' },
   },
   {
-    h2: 'Four Home-Style Meals a Day',
+    h2: 'Three Home-Style Meals a Day',
     h2Accent: 'Meals a Day',
     imageKey: 'meals',
     description:
-      'Our in-house kitchen is the heart of Narenn Living. We serve four freshly cooked meals daily - breakfast, lunch, evening snacks and dinner - with a rotating menu of South Indian and North Indian favourites. It is one of the most loved parts of living here.',
+      'Our in-house kitchen is the heart of Narenn Living. We serve three freshly cooked meals daily - breakfast, lunch and dinner - with a rotating menu of South Indian and North Indian favourites. Evening snacks with tea or coffee are served between lunch and dinner, and are not counted as a meal. It is one of the most loved parts of living here.',
     link: { to: '/food/', label: 'food menu', prefix: 'See what is on our ', suffix: '.' },
   },
   {
@@ -103,11 +103,11 @@ export const AMENITIES_FEATURES = [
       'Reliable internet is non-negotiable for work-from-home professionals and students attending online classes. We provide strong, high-speed WiFi across all our properties so you can work, study and stream without interruption.',
   },
   {
-    h2: 'Daily Housekeeping and Laundry Support',
-    h2Accent: 'Laundry Support',
+    h2: 'Daily Housekeeping',
+    h2Accent: 'Housekeeping',
     imageKey: 'housekeeping',
     description:
-      'A clean space makes for a clear mind. Our housekeeping team cleans rooms and common areas daily and refreshes linen regularly, while laundry support keeps the chore of washing off your plate. It is the kind of everyday convenience that quietly makes life better.',
+      'A clean space makes for a clear mind. Our housekeeping team cleans rooms and common areas daily and refreshes linen regularly. It is the kind of everyday convenience that quietly makes life better.',
   },
   {
     h2: 'Safety and Security You Can Rely On',
@@ -137,7 +137,7 @@ export const AMENITIES_DAILY = {
   h2Accent: 'Look Good in Photos',
   paragraphs: [
     'Plenty of co-living brands advertise a games room nobody enters after week two. We would rather over-invest in the five things you touch every single day: the bed, the bathroom, the WiFi, the food and the cleaning.',
-    'That is where our money goes. The mattress is a real mattress. The hot water works at 6 AM when everyone wants it, not just at noon. The WiFi holds a video call. The room is cleaned daily, not when someone complains. Everything else is a bonus on top of a foundation that actually works.',
+    'That is where our money goes. The mattress is a real ortho mattress. The hot water works at 6 AM when everyone wants it, not just at noon. The WiFi holds a video call. The room is cleaned daily, not when someone complains. Everything else is a bonus on top of a foundation that actually works.',
   ],
 };
 
@@ -148,11 +148,10 @@ export const AMENITIES_FULL_LIST = {
 };
 
 export const AMENITIES_FULL_LIST_ITEMS = [
-  'Fully furnished AC rooms with bed, wardrobe and study desk',
-  'Four home-style meals a day from our in-house kitchen',
+  'Fully furnished AC rooms with bed, wardrobe and AC',
+  'Three home-style meals a day from our in-house kitchen',
   'High-speed WiFi across the property',
   'Daily housekeeping and regular linen changes',
-  'Laundry support',
   '24/7 CCTV security and biometric no-curfew access',
   'On-site professional management',
   'Terrace and common areas for relaxation and events',
@@ -177,7 +176,7 @@ export const AMENITIES_DONT_OFFER = {
   h2Accent: "Don't Offer",
   paragraphs: [
     'We do not have a swimming pool, a cinema room or a rooftop infinity anything. Those features exist mainly to justify a rent increase and to look good in a listing photograph.',
-    'We would rather spend that money on the mattress you sleep on, the hot water at 6 AM, the WiFi at 9 PM, the food on your plate four times a day, and the housekeeper who shows up daily whether or not you complained. Those are the things that decide whether you are still here in year two. Everything else is decoration.',
+    'We would rather spend that money on the ortho mattress you sleep on, the hot water at 6 AM, the WiFi at 9 PM, the food on your plate three times a day, and the housekeeper who shows up daily whether or not you complained. Those are the things that decide whether you are still here in year two. Everything else is decoration.',
   ],
 };
 
@@ -199,12 +198,12 @@ export const AMENITIES_FAQS = [
   {
     question: 'Are meals included in the amenities?',
     answer:
-      'Yes, four home-style meals a day - breakfast, lunch, evening snacks and dinner - are included and prepared fresh in our in-house kitchen.',
+      'Yes, three home-style meals a day - breakfast, lunch and dinner - are included and prepared fresh in our in-house kitchen. Evening snacks are also served, separately from the meals.',
   },
   {
     question: 'Is there any extra charge for WiFi or housekeeping?',
     answer:
-      'No. WiFi, daily housekeeping, laundry support, security and all amenities are included in one transparent monthly fee with no hidden charges.',
+      'No. WiFi, daily housekeeping, security and all amenities are included in one transparent monthly fee with no hidden charges.',
   },
   {
     question: 'Do all properties have the same amenities?',

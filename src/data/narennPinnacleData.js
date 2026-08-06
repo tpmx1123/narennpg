@@ -73,7 +73,7 @@ export const PINNACLE = {
     {
       question: 'Are meals included at Pinnacle?',
       answer:
-        'Yes. Four home-style meals a day from our in-house kitchen are part of the Narenn Living experience across all four properties.',
+        'Yes. Three home-style meals a day from our in-house kitchen are part of the Narenn Living experience across all four properties.',
     },
     {
       question: 'Where is Narenn Pinnacle located?',

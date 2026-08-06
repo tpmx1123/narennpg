@@ -68,7 +68,7 @@ export const CORPORATE_INCLUDED = {
     'Furnished, ready-to-move-in rooms - no employee has to buy a single piece of furniture or wait on a delivery.',
     'Housekeeping and meals - daily upkeep and food service handled, so relocated employees can focus on settling into the job, not the kitchen.',
     'High-speed Wi-Fi - reliable connectivity for remote work, calls, and everyday life.',
-    'Laundry service - one less errand for employees adjusting to a new city.',
+    'On-site management so employees can settle in faster.',
     '24/7 security and verified access - the same safety protocols applied across every Narenn Living property, corporate or individual.',
     'Flexible tenure - from a few weeks for a project deployment to open-ended stays for full relocations.',
   ],
@@ -132,7 +132,7 @@ export const CORPORATE_FAQS = [
   {
     question: "What is included in Narenn's corporate accommodation package?",
     answer:
-      'Corporate accommodation at Narenn Living includes furnished rooms, housekeeping, meals, Wi-Fi, laundry, security, and dedicated relationship management for corporate clients, with flexible lease terms.',
+      'Corporate accommodation at Narenn Living includes furnished rooms, housekeeping, meals, Wi-Fi, security, and dedicated relationship management for corporate clients, with flexible lease terms.',
   },
   {
     question: "Is Narenn's corporate accommodation available for short-term stays?",

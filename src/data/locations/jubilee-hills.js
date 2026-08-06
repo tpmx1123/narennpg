@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Jubilee Hills is one of Hyderabad's most expensive residential addresses, built around private bungalows, celebrity homes and luxury apartments - there is effectively no PG or co-living market inside it. A PG near Jubilee Hills at Narenn Living solves this the sensible way: a comfortable, furnished home in VIP Hills, Madhapur, about 15 minutes from the Check Post, Road No. 36 and Film Nagar. You get an AC room, four home-style meals a day, fast WiFi and daily housekeeping for a fraction of what any shared arrangement inside Jubilee Hills would realistically cost, if you could even find one.",
+          "Jubilee Hills is one of Hyderabad's most expensive residential addresses, built around private bungalows, celebrity homes and luxury apartments - there is effectively no PG or co-living market inside it. A PG near Jubilee Hills at Narenn Living solves this the sensible way: a comfortable, furnished home in VIP Hills, Madhapur, about 15 minutes from the Check Post, Road No. 36 and Film Nagar. You get an AC room, three home-style meals a day, fast WiFi and daily housekeeping for a fraction of what any shared arrangement inside Jubilee Hills would realistically cost, if you could even find one.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      "Anyone commuting from a Jubilee Hills-adjacent job knows that late meetings, shoots or client calls are common, and coming home to a chore list is the last thing you want. At Narenn Living, every room is furnished and air-conditioned, four home-style meals come from our own kitchen on a fixed daily schedule, WiFi is fast enough for calls and streaming, and housekeeping and laundry are handled for you. It turns a 15-minute Jubilee Hills commute into a genuinely comfortable daily routine rather than one more thing to manage. Explore our",
+      "Anyone commuting from a Jubilee Hills-adjacent job knows that late meetings, shoots or client calls are common, and coming home to a chore list is the last thing you want. At Narenn Living, every room is furnished and air-conditioned, three home-style meals come from our own kitchen on a fixed daily schedule, WiFi is fast enough for calls and streaming, and housekeeping is handled for you. It turns a 15-minute Jubilee Hills commute into a genuinely comfortable daily routine rather than one more thing to manage. Explore our",
     ],
     links: [
       { to: '/amenities/', label: 'amenities' },

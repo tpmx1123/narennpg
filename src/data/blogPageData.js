@@ -221,7 +221,7 @@ export const BLOG_POSTS = [
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
       'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71.png',
-    alt: 'Work from home friendly PG room in Hyderabad with desk, chair and WiFi',
+    alt: 'Work from home friendly PG room in Hyderabad with fast WiFi',
     imageTitle: 'WFH friendly PG in Hyderabad',
   },
   {

@@ -11,7 +11,7 @@ export default {
     path: '/locations/mindspace/',
     title: 'PG near Mindspace, Hyderabad — 10 Min | Narenn Living',
     description:
-      'Furnished PG & co-living under 10 minutes from Mindspace IT Park. AC rooms, four meals, WiFi & housekeeping. Book a free visit today.',
+      'Furnished PG & co-living under 10 minutes from Mindspace IT Park. AC rooms, three meals, WiFi & housekeeping. Book a free visit today.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     ogImage: LOCATION_HERO_IMAGE,
   },
@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Mindspace employs one of the largest single office populations in Hyderabad, and the PG buildings that ring the park have grown crowded and pricey to match. A PG near Mindspace at Narenn Living gives you a calmer alternative just under 10 minutes away in VIP Hills, Madhapur, without the queues, thin walls and inflated bed rates common right outside the Gigaplex gate. You still get a fully furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping, in a property built and run as one address rather than stitched together from converted flats.",
+          "Mindspace employs one of the largest single office populations in Hyderabad, and the PG buildings that ring the park have grown crowded and pricey to match. A PG near Mindspace at Narenn Living gives you a calmer alternative just under 10 minutes away in VIP Hills, Madhapur, without the queues, thin walls and inflated bed rates common right outside the Gigaplex gate. You still get a fully furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping, in a property built and run as one address rather than stitched together from converted flats.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      'Working inside a campus as large as Mindspace usually means long hours and back-to-back calls, which makes what happens at home even more important. Every Narenn Living room is furnished and air-conditioned, four home-style meals come from our own kitchen daily, WiFi is fast enough for video calls and VPN work, and housekeeping and laundry are managed by an on-site team. None of it depends on you having energy left after a Mindspace workday - it simply runs on its own schedule. Take a look at our full',
+      'Working inside a campus as large as Mindspace usually means long hours and back-to-back calls, which makes what happens at home even more important. Every Narenn Living room is furnished and air-conditioned, three home-style meals come from our own kitchen daily, WiFi is fast enough for video calls and VPN work, and housekeeping is managed by an on-site team. None of it depends on you having energy left after a Mindspace workday - it simply runs on its own schedule. Take a look at our full',
     ],
     links: [
       { to: '/amenities/', label: 'amenities' },

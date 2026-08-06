@@ -11,7 +11,7 @@ export default {
     path: '/locations/kothaguda/',
     title: 'PG near Kothaguda, Hyderabad | Co-Living | Narenn Living',
     description:
-      'Premium PG & co-living minutes from Kothaguda junction. AC rooms, four meals, WiFi & housekeeping in Madhapur. Book a visit today.',
+      'Premium PG & co-living minutes from Kothaguda junction. AC rooms, three meals, WiFi & housekeeping in Madhapur. Book a visit today.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     ogImage: LOCATION_HERO_IMAGE,
   },
@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Kothaguda sits at the western edge of Hyderabad's IT corridor, where Botanical Garden Road, the Kothaguda flyover and a cluster of tech parks meet the daily traffic of the Hitech City stretch. A PG near Kothaguda at Narenn Living puts you close to all of it without asking you to live inside the junction itself - our VIP Hills address in Madhapur is a short, mostly signal-free ride from Kothaguda Junction, Clearview and the offices along Botanical Garden Road. You get a furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping, in a neighbourhood that has far more going on after 7 PM than Kothaguda does.",
+          "Kothaguda sits at the western edge of Hyderabad's IT corridor, where Botanical Garden Road, the Kothaguda flyover and a cluster of tech parks meet the daily traffic of the Hitech City stretch. A PG near Kothaguda at Narenn Living puts you close to all of it without asking you to live inside the junction itself - our VIP Hills address in Madhapur is a short, mostly signal-free ride from Kothaguda Junction, Clearview and the offices along Botanical Garden Road. You get a furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping, in a neighbourhood that has far more going on after 7 PM than Kothaguda does.",
       },
       {
         text:
@@ -81,7 +81,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      "Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi built for video calls and remote work days, plus a proper desk for anyone splitting time between office and WFH. Four meals a day come out of our own kitchen, so a quick commute doesn't get undone by an hour of cooking after work. Daily housekeeping, laundry support and biometric no-curfew access mean your evening starts the moment you walk in, whatever time that is.",
+      "Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi built for video calls and remote work days. Three meals a day come out of our own kitchen, so a quick commute doesn't get undone by an hour of cooking after work. daily housekeeping and biometric no-curfew access mean your evening starts the moment you walk in, whatever time that is.",
     ],
     links: [
       { to: '/rooms/', label: 'room options' },

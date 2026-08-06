@@ -32,7 +32,7 @@ const studentGuideToHyderabad = {
     {
       type: 'image',
       src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763397/ChatGPT_Image_Aug_3_2026_06_52_59_PM_mvpalo.png',
-      alt: 'Student PG room in Hyderabad with a study desk and WiFi',
+      alt: 'Student PG room in Hyderabad with WiFi',
       title: 'Student room setup',
     },
     {
@@ -43,7 +43,7 @@ const studentGuideToHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Good, affordable food is essential for a student. Constantly eating out is expensive and often unhealthy. Accommodation with included home-style meals solves this neatly — with four fresh meals a day from our in-house kitchen, you eat well without stretching your budget. Having ',
+          text: 'Good, affordable food is essential for a student. Constantly eating out is expensive and often unhealthy. Accommodation with included home-style meals solves this neatly — with three fresh meals a day from our in-house kitchen, you eat well without stretching your budget. Having ',
         },
         { type: 'link', href: '/food/', text: 'meals included' },
         {
@@ -156,7 +156,7 @@ const studentGuideToHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'An inclusive plan with four home-style meals a day is very often cheaper than the true cost of a distant room plus ordered-in food plus daily cabs. Run that comparison honestly before you decide the cheapest headline rent is the cheapest option. It usually is not.',
+          text: 'An inclusive plan with three home-style meals a day is very often cheaper than the true cost of a distant room plus ordered-in food plus daily cabs. Run that comparison honestly before you decide the cheapest headline rent is the cheapest option. It usually is not.',
         },
       ],
     },

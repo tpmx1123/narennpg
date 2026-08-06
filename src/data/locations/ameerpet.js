@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Ameerpet is where half of Hyderabad seems to go for coaching classes, certifications and competitive exam prep, packed along RTC X Roads and the lanes around SR Nagar. A PG near Ameerpet at Narenn Living gives students a comfortable, fully managed home in VIP Hills, Madhapur, linked to the Ameerpet Metro interchange by a direct Blue Line ride - no changing autos, no navigating the coaching-lane crowds to find a room. You get a furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping, in a neighbourhood calmer than Ameerpet's packed institute lanes.",
+          "Ameerpet is where half of Hyderabad seems to go for coaching classes, certifications and competitive exam prep, packed along RTC X Roads and the lanes around SR Nagar. A PG near Ameerpet at Narenn Living gives students a comfortable, fully managed home in VIP Hills, Madhapur, linked to the Ameerpet Metro interchange by a direct Blue Line ride - no changing autos, no navigating the coaching-lane crowds to find a room. You get a furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping, in a neighbourhood calmer than Ameerpet's packed institute lanes.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      'Every room at Narenn Living is fully furnished and air-conditioned, with a proper desk for study sessions and fibre WiFi steady enough for recorded lectures and mock tests alike. Four home-style meals a day mean you are not choosing between attending an evening class and cooking dinner. Daily housekeeping and laundry support are handled for you, and biometric no-curfew access respects that exam season does not run on a fixed clock.',
+      'Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi steady enough for recorded lectures and mock tests alike. Three home-style meals a day mean you are not choosing between attending an evening class and cooking dinner. Daily housekeeping are handled for you, and biometric no-curfew access respects that exam season does not run on a fixed clock.',
     ],
     links: [
       { to: '/rooms/', label: 'room options' },
@@ -119,7 +119,7 @@ export default {
     {
       question: 'Is this PG suitable for students attending Ameerpet coaching classes?',
       answer:
-        'Yes, it is built specifically for that - a Metro-connected base with study-friendly rooms, four meals a day and no-curfew access around class timings.',
+        'Yes, it is built specifically for that - a Metro-connected base with study-friendly rooms, three meals a day and no-curfew access around class timings.',
     },
     {
       question: 'What if my coaching institute is nearer Begumpet instead?',

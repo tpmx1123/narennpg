@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Nanakramguda has grown quickly around ISB, Sattva Knowledge City and a stretch of the Financial District, but the housing around it has not caught up - most options are premium new-build apartments with little in the way of an established PG market. A PG near Nanakramguda at Narenn Living offers a more grounded alternative: a comfortable, furnished home in VIP Hills, Madhapur, about 18-20 minutes away, with a furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping included. Rather than paying premium rent in a still-developing pocket, you get an established neighbourhood with restaurants, clinics and a genuine social life.",
+          "Nanakramguda has grown quickly around ISB, Sattva Knowledge City and a stretch of the Financial District, but the housing around it has not caught up - most options are premium new-build apartments with little in the way of an established PG market. A PG near Nanakramguda at Narenn Living offers a more grounded alternative: a comfortable, furnished home in VIP Hills, Madhapur, about 18-20 minutes away, with a furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping included. Rather than paying premium rent in a still-developing pocket, you get an established neighbourhood with restaurants, clinics and a genuine social life.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      'A commute to Nanakramguda is worth little if home life is unpredictable, which is why Narenn Living keeps the essentials fixed and reliable. Every room is furnished and air-conditioned, our own kitchen serves four home-style meals a day, WiFi is fast enough for coursework, research calls or client meetings, and housekeeping and laundry are handled daily by an on-site team. It means whether your day runs long at ISB or the Financial District, the room, the food and the WiFi are exactly as you left them. See our full',
+      'A commute to Nanakramguda is worth little if home life is unpredictable, which is why Narenn Living keeps the essentials fixed and reliable. Every room is furnished and air-conditioned, our own kitchen serves three home-style meals a day, WiFi is fast enough for coursework, research calls or client meetings, and housekeeping is handled daily by an on-site team. It means whether your day runs long at ISB or the Financial District, the room, the food and the WiFi are exactly as you left them. See our full',
     ],
     links: [
       { to: '/amenities/', label: 'amenities' },

@@ -11,7 +11,7 @@ export default {
     path: '/locations/kukatpally/',
     title: 'PG near Kukatpally, Hyderabad | Co-Living | Narenn Living',
     description:
-      'Premium PG & co-living a short ride from Kukatpally & KPHB. AC rooms, four meals, WiFi & housekeeping in Madhapur. Book a visit.',
+      'Premium PG & co-living a short ride from Kukatpally & KPHB. AC rooms, three meals, WiFi & housekeeping in Madhapur. Book a visit.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     ogImage: LOCATION_HERO_IMAGE,
   },
@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Kukatpally and KPHB form one of Hyderabad's busiest student and residential belts, anchored by JNTU and a string of coaching centres and Metro stations along the Red Line. A PG near Kukatpally at Narenn Living gives you a comfortable, fully managed home in VIP Hills, Madhapur - a manageable ride from KPHB and JNTU, in a neighbourhood with a more settled IT and co-living crowd than the busier Kukatpally stretch itself. You get a furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping, whether you're heading to class at JNTU or an office further down the corridor.",
+          "Kukatpally and KPHB form one of Hyderabad's busiest student and residential belts, anchored by JNTU and a string of coaching centres and Metro stations along the Red Line. A PG near Kukatpally at Narenn Living gives you a comfortable, fully managed home in VIP Hills, Madhapur - a manageable ride from KPHB and JNTU, in a neighbourhood with a more settled IT and co-living crowd than the busier Kukatpally stretch itself. You get a furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping, whether you're heading to class at JNTU or an office further down the corridor.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      'Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi solid enough for both lecture streams and late-night work calls, and four home-style meals a day so students skip the mess-food routine and professionals skip cooking after a long day. Daily housekeeping, laundry support and biometric no-curfew access mean neither a college timetable nor a shift schedule has to work around a fixed gate time.',
+      'Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi solid enough for both lecture streams and late-night work calls, and three home-style meals a day so students skip the mess-food routine and professionals skip cooking after a long day. daily housekeeping and biometric no-curfew access mean neither a college timetable nor a shift schedule has to work around a fixed gate time.',
     ],
     links: [
       { to: '/rooms/', label: 'room options' },

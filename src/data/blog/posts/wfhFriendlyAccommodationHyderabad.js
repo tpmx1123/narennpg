@@ -5,7 +5,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Remote and hybrid work is now a permanent part of many careers, which makes your living space your workspace too. Choosing WFH-friendly accommodation in Hyderabad means looking beyond a comfortable bed to the things that make a full working day productive — fast internet, a quiet room, a proper desk and a setup that supports focus. Here is what to prioritise, and how the right co-living space can make working from home genuinely easy.',
+          text: 'Remote and hybrid work is now a permanent part of many careers, which makes your living space your workspace too. Choosing WFH-friendly accommodation in Hyderabad means looking beyond a comfortable bed to the things that make a full working day productive — fast internet, a quiet room and a setup that supports focus. Here is what to prioritise, and how the right co-living space can make working from home genuinely easy.',
         },
       ],
     },
@@ -48,18 +48,18 @@ const wfhFriendlyAccommodationHyderabad = {
     {
       type: 'image',
       src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_46_49_PM_zs7jej.png',
-      alt: 'Proper desk and chair setup for working from home in a co-living room',
-      title: 'WFH desk setup',
+      alt: 'Quiet co-living room suited for working from home in Hyderabad',
+      title: 'WFH-friendly room',
     },
     {
       type: 'h2',
-      text: '3. A Proper Desk and Ergonomics',
+      text: '3. Power, Charging and Connectivity',
     },
     {
       type: 'paragraph',
       parts: [
         {
-          text: 'Working from a bed all day is a recipe for back pain and low productivity. Look for accommodation that provides a dedicated study desk and chair, so you have a real workspace. Every Narenn Living room includes a study desk, giving you a designated spot to work that keeps your posture — and your focus — in check.',
+          text: 'A productive workday needs more than a laptop on a bed and one socket behind the mattress. Look for accommodation with multiple charging points, stable power backup and fibre WiFi that holds up through long call days. At Narenn Living, every room is set up for that kind of everyday workday reliability — so your focus stays on the meeting, not on the connection.',
         },
       ],
     },
@@ -83,7 +83,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'When home is also the office, chores compete with work for your time and attention. A managed co-living space removes that burden — meals, cleaning and laundry are handled, so you can devote your working hours to work and your free time to rest. Four meals a day from our in-house kitchen means you never break your flow to cook.',
+          text: 'When home is also the office, chores compete with work for your time and attention. A managed co-living space removes that burden — meals and cleaning are handled, so you can devote your working hours to work and your free time to rest. Three meals a day from our in-house kitchen means you never break your flow to cook.',
         },
       ],
     },
@@ -115,7 +115,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Narenn Living brings together everything a remote worker needs: fast WiFi, private rooms, proper desks, no-curfew flexibility, handled chores and a supportive community — all in a central Madhapur location minutes from Hitech City for your in-office days. See our guide to a ',
+          text: 'Narenn Living brings together everything a remote worker needs: fast WiFi, private rooms, no-curfew flexibility, handled chores and a supportive community — all in a central Madhapur location minutes from Hitech City for your in-office days. See our guide to a ',
         },
         { type: 'link', href: '/locations/hitech-city/', text: 'PG near Hitech City' },
         { text: '. Call 70759 85666 or ' },
@@ -132,10 +132,10 @@ const wfhFriendlyAccommodationHyderabad = {
     {
       type: 'list',
       items: [
-        'A real desk and a real chair — not a bed and a laptop, which becomes a back problem by month three',
+        'A quiet private room when you are on camera for most of the day',
         'Fibre WiFi that holds a video call at 9 PM when the whole building is online, with backup connectivity',
         'Power backup, so an outage does not cost you a client meeting',
-        'Multiple charging points at the desk, not one socket behind the bed',
+        'Multiple charging points, not one socket behind the bed',
         'A presentable, quiet background for camera-on calls',
         'Somewhere to go when the room closes in — a lounge, a terrace, anywhere that is not the same four walls',
       ],
@@ -176,7 +176,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Add four meals arriving without you cooking during a workday, daily housekeeping, and infrastructure maintained by someone else. Call 70759 85666 and ask specifically about WFH-suitable rooms — we know which ones they are.',
+          text: 'Add three meals arriving without you cooking during a workday, daily housekeeping, and infrastructure maintained by someone else. Call 70759 85666 and ask specifically about WFH-suitable rooms — we know which ones they are.',
         },
       ],
     },
@@ -187,7 +187,7 @@ const wfhFriendlyAccommodationHyderabad = {
     {
       type: 'list',
       items: [
-        "Can I see the desk and chair, or is 'workspace' just a photograph of a windowsill?",
+        'Can I join a video call from the room during a visit, or is the WiFi demo only at a quiet hour?',
         'How does the WiFi perform at 9 PM when the building is full — not at 3 PM when you are demonstrating it?',
         'Is there backup connectivity, or does one outage cost me a client call?',
         'Is there power backup, and how quickly does it cut in?',
@@ -200,7 +200,7 @@ const wfhFriendlyAccommodationHyderabad = {
     {
       question: 'What makes accommodation WFH-friendly?',
       answer:
-        'Fast, reliable WiFi, a quiet private space, a proper desk and chair, flexible no-curfew access, and freedom from chores through managed services like included meals and housekeeping.',
+        'Fast, reliable WiFi, a quiet private space, flexible no-curfew access, and freedom from chores through managed services like included meals and housekeeping.',
     },
     {
       question: 'Is a single room better for working from home?',
@@ -214,7 +214,7 @@ const wfhFriendlyAccommodationHyderabad = {
     href: '/contact-us/',
     image:
       'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71.png',
-    imageAlt: 'Work from home friendly PG room in Hyderabad with desk, chair and WiFi',
+    imageAlt: 'Work from home friendly PG room in Hyderabad with fast WiFi',
   },
 };
 

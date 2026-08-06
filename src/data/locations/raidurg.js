@@ -39,7 +39,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Raidurg grew up around the metro terminus and a cluster of large campuses, which means most nearby housing is high-rise gated communities and serviced apartments rather than an established PG market. A PG near Raidurg at Narenn Living fills that gap with a genuinely furnished, professionally managed home in VIP Hills, Madhapur, a short ride from the Raidurg metro station, IKEA Hyderabad and Knowledge City. You get an AC room, four home-style meals a day, fast WiFi and daily housekeeping, plus the added flexibility of a Blue Line metro station close by for the rest of the city.",
+          "Raidurg grew up around the metro terminus and a cluster of large campuses, which means most nearby housing is high-rise gated communities and serviced apartments rather than an established PG market. A PG near Raidurg at Narenn Living fills that gap with a genuinely furnished, professionally managed home in VIP Hills, Madhapur, a short ride from the Raidurg metro station, IKEA Hyderabad and Knowledge City. You get an AC room, three home-style meals a day, fast WiFi and daily housekeeping, plus the added flexibility of a Blue Line metro station close by for the rest of the city.",
       },
       {
         text:
@@ -79,7 +79,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      'Having a metro station close by is genuinely useful only if the home you return to is equally dependable. Every Narenn Living room is furnished and air-conditioned, four home-style meals are prepared daily by our own kitchen, WiFi is fast and stable for calls and streaming, and housekeeping and laundry are handled by an on-site team on a fixed schedule. Whether you commute to Raidurg by bike or take the metro from the station nearby, the room and the food are exactly where you left them. Explore our full',
+      'Having a metro station close by is genuinely useful only if the home you return to is equally dependable. Every Narenn Living room is furnished and air-conditioned, three home-style meals are prepared daily by our own kitchen, WiFi is fast and stable for calls and streaming, and housekeeping is handled by an on-site team on a fixed schedule. Whether you commute to Raidurg by bike or take the metro from the station nearby, the room and the food are exactly where you left them. Explore our full',
     ],
     links: [
       { to: '/amenities/', label: 'amenities' },

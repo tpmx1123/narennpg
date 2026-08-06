@@ -44,11 +44,11 @@ export const KONDAPUR_HERO = {
   h1: 'PG near Kondapur',
   h1Accent: 'Comfort Minutes from Home and Office',
   lead:
-    'Fully furnished AC rooms, four meals and fast WiFi - just 8-10 minutes from Kondapur’s offices, clinics and Botanical Garden Road.',
+    'Fully furnished AC rooms, three meals and fast WiFi - just 8-10 minutes from Kondapur’s offices, clinics and Botanical Garden Road.',
 };
 
 export const KONDAPUR_INTRO = [
-  'Kondapur sits between Hitech City and Gachibowli - a stretch of Botanical Garden Road, Kothaguda Junction and mid-rise IT campuses where product teams, hospitals and coaching institutes share the same corridor. A PG near Kondapur at Narenn Living puts you 8-10 minutes from that stretch, from our base in VIP Hills, Madhapur: a furnished AC room, four home-style meals, fibre WiFi and daily housekeeping, without living inside Kondapur’s denser residential blocks.',
+  'Kondapur sits between Hitech City and Gachibowli - a stretch of Botanical Garden Road, Kothaguda Junction and mid-rise IT campuses where product teams, hospitals and coaching institutes share the same corridor. A PG near Kondapur at Narenn Living puts you 8-10 minutes from that stretch, from our base in VIP Hills, Madhapur: a furnished AC room, three home-style meals, fibre WiFi and daily housekeeping, without living inside Kondapur’s denser residential blocks.',
   'If your week is split between Ascendas, client sites off Botanical Garden Road and the odd meeting in Hitech City, this is the address that keeps every hop short.',
 ];
 
@@ -87,7 +87,7 @@ export const KONDAPUR_STANDARD = {
   eyebrow: 'The Narenn Standard',
   h2: 'Rooms, Food, WiFi and Everything Handled',
   h2Accent: 'Everything Handled',
-  body: 'Every Narenn room is furnished with an AC, a proper desk and chair, and storage that survives a year of IT life. Four home-style meals come from our kitchen - not a dabba that arrives cold. Fibre WiFi is provisioned for video calls and VPNs; daily housekeeping and laundry support keep the week running; biometric access with no curfew fits Kondapur shift patterns and late client calls. Explore our',
+  body: 'Every Narenn room is furnished with an AC, a comfortable bed and storage that survives a year of IT life. Three home-style meals come from our kitchen - not a dabba that arrives cold. Fibre WiFi is provisioned for video calls and VPNs; daily housekeeping keep the week running; biometric access with no curfew fits Kondapur shift patterns and late client calls. Explore our',
   roomsLink: { to: '/rooms/', label: 'room options' },
   mid: 'and full',
   amenitiesLink: { to: '/amenities/', label: 'amenities' },
@@ -151,7 +151,7 @@ export const KONDAPUR_FAQS = [
   {
     question: 'What is included if I choose a PG near Kondapur with Narenn Living?',
     answer:
-      'A furnished AC room, four home-style meals a day, high-speed WiFi, daily housekeeping, laundry support, biometric security and community amenities - all in one monthly fee.',
+      'A furnished AC room, three home-style meals a day, high-speed WiFi, daily housekeeping, biometric security and community amenities - all in one monthly fee.',
   },
 ];
 

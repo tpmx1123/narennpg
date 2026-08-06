@@ -142,7 +142,7 @@ export const PROPERTIES_UNIFORM = {
 export const PROPERTIES_CHOOSE = {
   h2: 'How to Choose Between Them',
   bullets: [
-    'Start with your sharing format - single, double or triple - and see which properties currently have it open',
+    'Start with your sharing format - single, double, triple or four sharing - and see which properties currently have it open',
     'Then consider your budget band; pricing varies modestly between properties',
     "Then consider your specific office; all four are in VIP Hills, but a few minutes' difference matters if you walk",
     'Visit at least two before deciding - most people know within five minutes which one feels right',
@@ -176,7 +176,7 @@ export const PROPERTIES_FAQS = [
   {
     question: 'Do all properties offer the same amenities?',
     answer:
-      'Yes. All four properties maintain the same standard of furnished AC rooms, four daily meals, WiFi, housekeeping, security and community events.',
+      'Yes. All four properties maintain the same standard of furnished AC rooms, three daily meals, WiFi, housekeeping, security and community events.',
   },
   {
     question: 'How do I choose the right property?',

@@ -132,7 +132,7 @@ export const CONTACT_ASK = {
   eyebrow: 'Be Prepared',
   h2: 'What to Ask About',
   h2Accent: 'Ask About',
-  body: 'When you contact us, feel free to ask about anything that matters to you - current availability in single, double or triple sharing, the all-inclusive monthly fee, our four home-style meals, WiFi speed, security arrangements or community events. We believe in complete transparency, and our team will answer every question openly.',
+  body: 'When you contact us, feel free to ask about anything that matters to you - current availability in single, double, triple or four sharing, the all-inclusive monthly fee, our three home-style meals, WiFi speed, security arrangements or community events. We believe in complete transparency, and our team will answer every question openly.',
   links: [
     { to: '/amenities/', label: 'amenities' },
     { to: '/food/', label: 'food menu' },

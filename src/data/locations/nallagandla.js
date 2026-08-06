@@ -11,7 +11,7 @@ export default {
     path: '/locations/nallagandla/',
     title: 'PG near Nallagandla, Hyderabad | Co-Living | Narenn Living',
     description:
-      'Premium PG & co-living within reach of Nallagandla. AC rooms, four meals, WiFi & housekeeping in Madhapur. Book a free visit today.',
+      'Premium PG & co-living within reach of Nallagandla. AC rooms, three meals, WiFi & housekeeping in Madhapur. Book a free visit today.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     ogImage: LOCATION_HERO_IMAGE,
   },
@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Nallagandla and the stretch past Gopanpally toward Tellapur and Lingampally have become a popular, more affordable pocket of west Hyderabad, but they sit a genuine 25 to 35 minutes from the Madhapur-Hitech City core depending on traffic. A PG near Nallagandla at Narenn Living is upfront about that: our VIP Hills address is not the closest option to Nallagandla itself, but it puts you in an established, well-connected neighbourhood with a furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping - and a commute that's honest rather than optimistic.",
+          "Nallagandla and the stretch past Gopanpally toward Tellapur and Lingampally have become a popular, more affordable pocket of west Hyderabad, but they sit a genuine 25 to 35 minutes from the Madhapur-Hitech City core depending on traffic. A PG near Nallagandla at Narenn Living is upfront about that: our VIP Hills address is not the closest option to Nallagandla itself, but it puts you in an established, well-connected neighbourhood with a furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping - and a commute that's honest rather than optimistic.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      "Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi reliable enough for daily video calls even after a longer commute home. Four home-style meals a day come from our own kitchen, so a 30-minute ride doesn't turn into an hour once you add cooking on either end. Housekeeping, laundry and biometric no-curfew access are handled every day, which matters more, not less, when your commute already takes a bite out of your evening.",
+      "Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi reliable enough for daily video calls even after a longer commute home. Three home-style meals a day come from our own kitchen, so a 30-minute ride doesn't turn into an hour once you add cooking on either end. Housekeeping and biometric no-curfew access are handled every day, which matters more, not less, when your commute already takes a bite out of your evening.",
     ],
     links: [
       { to: '/rooms/', label: 'room options' },

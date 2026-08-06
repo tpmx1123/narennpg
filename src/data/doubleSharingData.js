@@ -62,8 +62,8 @@ export const DOUBLE_SHARING_IMAGES = {
   },
   studyDesks: {
     src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920680/M_P00072_1_gkmydq.jpg',
-    alt: 'Study desk area in a double sharing room',
-    title: 'Double sharing room - study desk',
+    alt: 'Room interior detail in a double sharing room',
+    title: 'Double sharing room - interior',
   },
   roommates: {
     src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920571/M_P00014_1_x7k9z0.jpg',
@@ -78,10 +78,10 @@ export const DOUBLE_SHARING_IMAGES = {
 };
 
 export const DOUBLE_SHARING_INCLUDES = [
-  'An AC room shared by two, with a personal bed and mattress for each',
-  'Individual wardrobe and study desk per resident',
+  'An AC room shared by two, with a personal bed and ortho mattress for each',
+  'Individual wardrobe per resident',
   'High-speed WiFi for work and online classes',
-  'Four home-style meals a day from our in-house kitchen',
+  'Three home-style meals a day from our in-house kitchen',
   'Daily housekeeping and fresh linen',
   'Biometric no-curfew access and round-the-clock security',
 ];
@@ -103,7 +103,7 @@ export const DOUBLE_SHARING_ROOMMATE_MATCHING = {
 export const DOUBLE_SHARING_COST_CASE = {
   h2: 'The Cost Case for Double Sharing',
   points: [
-    'Versus a single room - you save meaningfully every month and still get your own bed, wardrobe and desk',
+    'Versus a single room - you save meaningfully every month and still get your own bed and wardrobe',
     'Versus sharing a 2BHK in Madhapur - add rent, a large deposit, furniture, appliances, AC, internet, a cook, a maid, utilities and brokerage, and a shared flat routinely costs more than double sharing here, with none of the meals, cleaning or security included',
     'Versus triple sharing - a modest premium buys noticeably more personal space and a quieter room to work in',
   ],
@@ -112,7 +112,7 @@ export const DOUBLE_SHARING_COST_CASE = {
 export const DOUBLE_SHARING_IDENTICAL = {
   h2: 'Everything Else Is Identical',
   paragraphs: [
-    'Choosing double sharing does not downgrade anything else about your stay. The same in-house kitchen serving four daily meals. The same daily housekeeping and weekly deep clean. The same biometric no-curfew access. The same terrace events. The same fibre WiFi. The same VIP Hills address minutes from Hitech City, Mindspace and Kondapur.',
+    'Choosing double sharing does not downgrade anything else about your stay. The same in-house kitchen serving three daily meals. The same daily housekeeping and weekly deep clean. The same biometric no-curfew access. The same terrace events. The same fibre WiFi. The same VIP Hills address minutes from Hitech City, Mindspace and Kondapur.',
     'The only variable is how many people sleep in your room. Everything that determines whether you actually enjoy living somewhere stays exactly the same.',
   ],
 };
@@ -129,7 +129,7 @@ export const DOUBLE_SHARING_FAQS = [
   {
     question: 'How many people share a double room?',
     answer:
-      'A double sharing room is shared by two residents, each with their own bed, wardrobe and study desk in a fully furnished AC room.',
+      'A double sharing room is shared by two residents, each with their own bed, wardrobe and AC in a fully furnished AC room.',
   },
   {
     question: 'Can I choose my room-mate?',

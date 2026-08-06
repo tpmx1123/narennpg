@@ -54,7 +54,7 @@ export const ABOUT_MISSION = {
   eyebrow: 'Purpose',
   h2: 'Our Mission',
   body:
-    'Our mission is to make moving to a new city effortless. When a resident walks into Narenn Living with a suitcase, everything else is already taken care of - a furnished room, four homely meals a day, high-speed internet, housekeeping, laundry, security and a community waiting to welcome them.',
+    'Our mission is to make moving to a new city effortless. When a resident walks into Narenn Living with a suitcase, everything else is already taken care of - a furnished room, three homely meals a day, high-speed internet, housekeeping, security and a community waiting to welcome them.',
   quote:
     'We manage the hundred small things that make a house liveable, so our residents can focus on their careers, studies and lives.',
   badgeValue: '25+',
@@ -153,7 +153,7 @@ export const ABOUT_PROPERTIES = [
 ];
 
 export const ABOUT_DIFFERENT_BULLETS = [
-  'In-house kitchen serving four fresh meals daily, no outsourced tiffins.',
+  'In-house kitchen serving three fresh meals daily, no outsourced tiffins.',
   'Professional on-site management that responds fast to any request.',
   'Biometric no-curfew access that respects your independence.',
   'Vibrant community with regular events and festivals.',

@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Durgam Cheruvu itself has almost no PG or co-living stock - the lakefront is ringed by premium gated apartments and serviced flats, not shared housing. A PG near Durgam Cheruvu at Narenn Living gets around that by placing you a few minutes away in VIP Hills, Madhapur, close enough for an evening walk across the cable bridge or a quick ride to the metro station on the Blue Line. You still get a furnished AC room, four home-style meals, fast WiFi and daily housekeeping, without needing to pay lake-view apartment rent to live near the water.",
+          "Durgam Cheruvu itself has almost no PG or co-living stock - the lakefront is ringed by premium gated apartments and serviced flats, not shared housing. A PG near Durgam Cheruvu at Narenn Living gets around that by placing you a few minutes away in VIP Hills, Madhapur, close enough for an evening walk across the cable bridge or a quick ride to the metro station on the Blue Line. You still get a furnished AC room, three home-style meals, fast WiFi and daily housekeeping, without needing to pay lake-view apartment rent to live near the water.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      'A lake nearby is a lovely bonus, but daily life still runs on the basics - and that is where Narenn Living is deliberate. Every room is furnished and air-conditioned, our own kitchen puts out four meals a day, WiFi is fast enough for calls and streaming, and housekeeping and laundry are handled by an on-site team rather than left to residents. After an early walk by the cable bridge or a late one along the lakefront, you come back to a room that is already clean and a kitchen that already has dinner ready. See the full',
+      'A lake nearby is a lovely bonus, but daily life still runs on the basics - and that is where Narenn Living is deliberate. Every room is furnished and air-conditioned, our own kitchen puts out three meals a day, WiFi is fast enough for calls and streaming, and housekeeping is handled by an on-site team rather than left to residents. After an early walk by the cable bridge or a late one along the lakefront, you come back to a room that is already clean and a kitchen that already has dinner ready. See the full',
     ],
     links: [
       { to: '/amenities/', label: 'amenities' },

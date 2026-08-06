@@ -63,7 +63,7 @@ const questionsToAskBeforeBookingPg = {
       items: [
         'Is the room fully furnished, and does it have AC?',
         'Is WiFi included, and how reliable is it?',
-        'How often is housekeeping done, and is laundry included?',
+        'How often is housekeeping done?',
         'What common areas and amenities can I use?',
       ],
     },

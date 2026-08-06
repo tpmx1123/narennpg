@@ -11,7 +11,7 @@ export const AMENITIES = [
   },
   {
     title: 'Housekeeping',
-    description: 'Daily professional cleaning & laundry.',
+    description: 'Daily professional cleaning.',
     image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925678/M_P00093_1_vaq4bx.jpg',
   },
   {
@@ -117,7 +117,7 @@ export const RESIDENCES = [
     tagline: "Minimalist Elegance",
     livingType: "Co-Living",
     description: "Premium co-living designed for focused living, privacy, and high-productivity workflows.",
-    features: ["Co-Living", "Premium Desks", "Private Balconies", "Near Raheja Mindspace"],
+    features: ["Co-Living", "Premium Finish", "Private Balconies", "Near Raheja Mindspace"],
     image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
     mapUrl: "https://maps.app.goo.gl/DqPwF8JMTihVhMX28",
     rating: 4.9,

@@ -14,10 +14,10 @@ const SHARING_TIERS = [
       'Designed for privacy and personal comfort. A peaceful space to focus, relax, and unwind.',
     image:
       'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
-    alt: 'Fully furnished AC private room with bed, wardrobe and study desk at Narenn Living Madhapur',
+    alt: 'Fully furnished AC private room with bed, wardrobe and AC at Narenn Living Madhapur',
     features: [
       { label: 'Spacious Room', detail: 'Your own dedicated living space.' },
-      { label: 'Comfortable Bed', detail: 'Premium mattress for a restful sleep.' },
+      { label: 'Comfortable Bed', detail: 'Ortho mattress for a restful sleep.' },
       { label: 'In-Room Entertainment', detail: 'Television and mini-fridge.' },
       { label: 'Climate Control', detail: 'Fan, with AC option available.' },
     ],
@@ -34,8 +34,8 @@ const SHARING_TIERS = [
     alt: 'Double sharing furnished room at Narenn Living Madhapur co-living',
     features: [
       { label: 'Twin Beds', detail: 'Personal beds with privacy-friendly layout.' },
-      { label: 'Study Desks', detail: 'Independent desks for work and study.' },
-      { label: 'Storage', detail: 'Dual wardrobe setup for each resident.' },
+      { label: 'Wardrobes', detail: 'Dual wardrobe setup for each resident.' },
+      { label: 'High-Speed WiFi', detail: 'Strong fibre for work, study and streaming.' },
       { label: 'Climate Control', detail: 'AC and Non-AC options available.' },
     ],
   },
@@ -51,8 +51,8 @@ const SHARING_TIERS = [
     alt: 'Triple sharing room at Narenn Living PG in Madhapur',
     features: [
       { label: 'Three Beds', detail: 'Custom beds with personal storage drawers.' },
-      { label: 'Study Space', detail: 'Individual study compartments.' },
       { label: 'Wardrobe', detail: 'Modular wardrobe for each resident.' },
+      { label: 'High-Speed WiFi', detail: 'Strong fibre for work, study and streaming.' },
       { label: 'Climate Control', detail: 'AC and Non-AC options available.' },
     ],
   },
@@ -68,8 +68,8 @@ const SHARING_TIERS = [
     alt: 'Four sharing co-living room at Narenn Living Hyderabad',
     features: [
       { label: 'Four Beds', detail: 'Efficient layout with personal sleep zones.' },
-      { label: 'Study Tables', detail: 'Dedicated desks and chairs for each bed.' },
       { label: 'Secure Storage', detail: 'Individual lockers and wardrobe space.' },
+      { label: 'High-Speed WiFi', detail: 'Strong fibre for work, study and streaming.' },
       { label: 'Climate Control', detail: 'AC and Non-AC options available.' },
     ],
   },
@@ -91,7 +91,7 @@ export default function Pricing({ onBookVisit }) {
             <span className="text-brand-gold italic font-medium">No Surprises.</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
-            We publish a single monthly figure and we honour it. Your rent covers the room, AC, four
+            We publish a single monthly figure and we honour it. Your rent covers the room, AC, three
             meals a day, WiFi, daily housekeeping, RO water, hot water, power backup, security and
             every community event we run. Electricity is shared transparently as per actual usage,
             and that is the only variable.

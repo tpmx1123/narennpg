@@ -4,7 +4,7 @@ export const MADHAPUR_PAGE = {
   path: '/locations/madhapur/',
   title: 'PG in Madhapur, Hyderabad | Co-Living Near Hitech City',
   description:
-    'Premium PG & co-living in Madhapur, VIP Hills - AC rooms, four meals, WiFi & housekeeping, minutes from Hitech City. Book a free visit at Narenn Living today.',
+    'Premium PG & co-living in Madhapur, VIP Hills - AC rooms, three meals, WiFi & housekeeping, minutes from Hitech City. Book a free visit at Narenn Living today.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage: LOCATION_HERO_IMAGE,
 };
@@ -22,7 +22,7 @@ export const MADHAPUR_IMAGES = {
   },
   audience: {
     src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBGVQrBGflU1Iy372VSxVNsQOo5FTgF0bLZJnVT64t4ex3aukZFdSmcXGLvSjLDTRv1zYRhLkHzthzJuTGf5nECk4Cm__kIpfBF64CxnmGhIwgq1WcdtOLYqUEGw_ETZ_38eyMWdLe3cYvDqgpm_-qcd12ATbwGxsg9C5ATVhzF7m0jfOfQXSjYvUO_l8prlhvXhHtN4R505u-7nFMd3wiIIc1-uIX971Qmsvz7XQ9i1VGxCoo-hk0pNhHLzYgl3sCbS9YaxRjz8Z8',
-    alt: 'Professionals working in a Madhapur co-living study area',
+    alt: 'Professionals working in a Madhapur co-living common area',
     title: 'Madhapur professionals and students',
   },
 };
@@ -36,7 +36,7 @@ export const MADHAPUR_HERO = {
 };
 
 export const MADHAPUR_INTRO = [
-  "Madhapur is the beating heart of Hyderabad's tech corridor, and there is no better place to live if you work or study in West Hyderabad. A PG in Madhapur at Narenn Living puts you right where the action is - in the upscale VIP Hills neighbourhood, minutes from Hitech City, Cyber Towers and the Financial District - while giving you a fully furnished AC room, four home-style meals a day, high-speed WiFi and daily housekeeping, all in one simple monthly fee.",
+  "Madhapur is the beating heart of Hyderabad's tech corridor, and there is no better place to live if you work or study in West Hyderabad. A PG in Madhapur at Narenn Living puts you right where the action is - in the upscale VIP Hills neighbourhood, minutes from Hitech City, Cyber Towers and the Financial District - while giving you a fully furnished AC room, three home-style meals a day, high-speed WiFi and daily housekeeping, all in one simple monthly fee.",
   'For thousands of professionals and students who move to Hyderabad each year, Madhapur is the obvious choice, and Narenn Living is the address that makes living here effortless.',
 ];
 

@@ -7,7 +7,7 @@ import { GACHIBOWLI_AMENITIES } from '../../../data/gachibowliLocationData';
 const EASE = [0.16, 1, 0.3, 1];
 
 const HIGHLIGHTS = [
-  { icon: Sparkles, label: 'Meals & laundry' },
+  { icon: Sparkles, label: 'Meals included' },
   { icon: Wifi, label: 'Fast WiFi' },
   { icon: Shield, label: 'Security' },
   { icon: CheckCircle2, label: 'Daily housekeeping' },

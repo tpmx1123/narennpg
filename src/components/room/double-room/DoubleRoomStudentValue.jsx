@@ -24,7 +24,7 @@ export default function DoubleRoomStudentValue() {
       <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed border-l-[3px] border-brand-burgundy pl-4">
         Because you split the room, double sharing is noticeably more affordable than a single -
         without giving up comfort or any of the inclusions. That makes it a favourite among students
-        and first-jobbers who want premium living on a sensible budget. And with four fresh meals a
+        and first-jobbers who want premium living on a sensible budget. And with three fresh meals a
         day from our homely{' '}
         <Link
           to="/food/"

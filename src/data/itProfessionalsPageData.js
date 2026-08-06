@@ -21,8 +21,8 @@ export const IT_IMAGES = {
     src: `${SITE_URL}/images/wfh-desk-setup-high-speed-wifi-co-living-madhapur.jpg`,
     fallback:
       'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
-    alt: 'Work from home desk setup with high-speed WiFi in a Madhapur co-living room',
-    title: 'WFH desk and WiFi',
+    alt: 'Work from home setup with high-speed WiFi in a Madhapur co-living room',
+    title: 'WFH WiFi setup',
   },
   shifts: {
     src: `${SITE_URL}/images/night-shift-friendly-co-living-biometric-no-curfew.jpg`,
@@ -50,7 +50,7 @@ export const IT_HERO = {
 
 export const IT_INTRO = [
   'For an IT professional, where you live has a direct impact on how well you work and how much of your day is truly yours. Narenn Living offers co-living for IT professionals in Madhapur, purpose-built around your commute, your calls and your need for reliable comfort. From our VIP Hills base you are just 5-10 minutes from Hitech City and Cyber Towers, and 15-20 minutes from Gachibowli and the Financial District - so you swap long, draining commutes for extra time, energy and sleep.',
-  'Every room is fully furnished, air-conditioned and served by high-speed WiFi built for video calls and work-from-home. Add four home-style meals a day, daily housekeeping and biometric no-curfew access, and your entire home life is handled - leaving you free to focus on your career.',
+  'Every room is fully furnished, air-conditioned and served by high-speed WiFi built for video calls and work-from-home. Add three home-style meals a day, daily housekeeping and biometric no-curfew access, and your entire home life is handled - leaving you free to focus on your career.',
 ];
 
 export const IT_NEEDS = {
@@ -62,9 +62,9 @@ export const IT_NEEDS = {
     'A fast commute — minutes from Hitech City, Gachibowli and the Financial District',
     'High-speed, reliable WiFi engineered for calls and remote work',
     'Quiet, private single sharing rooms available for deep focus',
-    'Four fresh meals a day so you never cook after a long shift',
+    'Three fresh meals a day so you never cook after a long shift',
     'Biometric no-curfew access that fits any work schedule',
-    'Daily housekeeping, laundry support and 24/7 security',
+    'daily housekeeping and 24/7 security',
   ],
 };
 
@@ -88,7 +88,7 @@ export const IT_WFH = {
   h2: 'Built for Work-From-Home and Hybrid Schedules',
   h2Accent: 'Hybrid Schedules',
   paragraphs: [
-    'Hybrid work is here to stay, and a slow connection or noisy room can wreck a work-from-home day. Our rooms are equipped with strong, stable WiFi and quiet study desks, and our',
+    'Hybrid work is here to stay, and a slow connection or noisy room can wreck a work-from-home day. Our rooms are equipped with strong, stable WiFi, and our',
   ],
   link: { to: '/rooms/single-sharing/', label: 'single sharing rooms' },
   paragraphsAfter: [
@@ -141,8 +141,8 @@ export const IT_INFRA = {
   bullets: [
     'Fibre WiFi provisioned for video calls, VPN tunnels and large repository pulls, with backup connectivity',
     'Power backup, so an outage does not cost you a client meeting',
-    'A proper desk and chair in every room - laptop plus external monitor fits comfortably',
-    'Multiple charging points at the desk and bedside',
+    'Strong fibre WiFi in every room - built for video calls and VPNs',
+    'Multiple charging points in the room and at the bedside',
     'Quiet common areas usable as breakout space when your room feels small',
   ],
 };

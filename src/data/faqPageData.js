@@ -54,13 +54,13 @@ export const FAQ_CATEGORIES = [
       {
         question: 'What room types are available?',
         answer:
-          'Single, double and triple sharing, all fully furnished and air-conditioned.',
+          'Single, double, triple and four sharing, all fully furnished and air-conditioned.',
         link: { to: '/rooms/', label: 'See our room options' },
       },
       {
         question: 'Is everything furnished?',
         answer:
-          'Yes, every room includes a bed, mattress, wardrobe, study desk and AC.',
+          'Yes, every room includes a bed, ortho mattress, wardrobe and AC.',
       },
       {
         question: 'Is there a curfew?',
@@ -84,7 +84,7 @@ export const FAQ_CATEGORIES = [
       {
         question: 'How many meals are provided?',
         answer:
-          'Four a day: breakfast, lunch, evening snacks and dinner, cooked fresh in-house.',
+          'Three a day: breakfast, lunch and dinner, cooked fresh in-house. Evening snacks are served separately and are not counted as a meal.',
         link: { to: '/food/', label: 'See our food menu' },
       },
       {
@@ -95,7 +95,7 @@ export const FAQ_CATEGORIES = [
       {
         question: 'What else is included?',
         answer:
-          'Laundry support, security, terrace and common areas, and community events.',
+          'Security, terrace and common areas, and community events.',
         link: { to: '/amenities/', label: 'Explore all amenities' },
       },
       {
@@ -213,7 +213,7 @@ export const FAQ_WISH = {
     {
       question: 'Is the kitchen run in-house or outsourced to a caterer?',
       answer:
-        'In-house. Breakfast, lunch, evening snacks and dinner are cooked fresh on site by our kitchen team — not delivered by an outside caterer.',
+        'In-house. Breakfast, lunch and dinner are cooked fresh on site by our kitchen team — not delivered by an outside caterer.',
     },
     {
       question: 'How long did the last maintenance request in this building take to close?',
@@ -248,7 +248,7 @@ export const FAQ_DEPOSITS = {
   h2: 'How Pricing and Deposits Work',
   h2Accent: 'Work',
   paragraphs: [
-    'One monthly figure covers the fully furnished AC room, four meals a day, WiFi, daily housekeeping, RO water, hot water, power backup, security and every community event. Electricity is billed transparently against actual usage - that is the only variable line.',
+    'One monthly figure covers the fully furnished AC room, three meals a day, WiFi, daily housekeeping, RO water, hot water, power backup, security and every community event. Electricity is billed transparently against actual usage - that is the only variable line.',
     'The deposit is modest, refundable and governed by a written agreement that states the notice period and the deduction policy before you pay. No brokerage, no furniture cost, no internet installation charge, no exit painting deduction invented at the last minute.',
   ],
 };
@@ -263,7 +263,7 @@ export const FAQ_ACCORDION = [
   {
     question: 'What is included in the monthly fee?',
     answer:
-      'A single all-inclusive fee covers your furnished AC room, four meals a day, WiFi, housekeeping, laundry support, security and all amenities - with no hidden charges.',
+      'A single all-inclusive fee covers your furnished AC room, three meals a day, WiFi, housekeeping, security and all amenities - with no hidden charges.',
   },
   {
     question: 'Is there a curfew at Narenn Living?',

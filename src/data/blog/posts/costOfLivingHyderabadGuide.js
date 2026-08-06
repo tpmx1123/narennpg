@@ -55,7 +55,7 @@ const costOfLivingHyderabadGuide = {
         },
         { type: 'link', href: '/food/', text: 'meals included' },
         {
-          text: ' makes a real difference — with four home-style meals a day from our in-house kitchen, food is already covered in your co-living fee, saving both money and hassle.',
+          text: ' makes a real difference — with three home-style meals a day from our in-house kitchen, food is already covered in your co-living fee, saving both money and hassle.',
         },
       ],
     },
@@ -172,7 +172,7 @@ const costOfLivingHyderabadGuide = {
       type: 'paragraph',
       parts: [
         {
-          text: 'An inclusive co-living plan collapses rent, four meals a day, WiFi, housekeeping, water, power backup and security into one predictable monthly figure. It is not always the lowest headline number. It is very often the lowest actual number, and it is almost always the lowest-variance one, which matters more than people expect in the first year of a career.',
+          text: 'An inclusive co-living plan collapses rent, three meals a day, WiFi, housekeeping, water, power backup and security into one predictable monthly figure. It is not always the lowest headline number. It is very often the lowest actual number, and it is almost always the lowest-variance one, which matters more than people expect in the first year of a career.',
         },
       ],
     },

@@ -184,7 +184,7 @@ const movingToHyderabadFresherChecklist = {
       type: 'paragraph',
       parts: [
         {
-          text: 'If you are moving into a furnished co-living space, pack light. Bed, mattress, bedding, wardrobe, desk, chair, AC and WiFi are already there. Bring clothes, documents, your laptop, medicines and whatever makes a room feel like yours. Our ',
+          text: 'If you are moving into a furnished co-living space, pack light. Bed, mattress, bedding, wardrobe, AC and WiFi are already there. Bring clothes, documents, your laptop, medicines and whatever makes a room feel like yours. Our ',
         },
         { type: 'link', href: '/rooms/', text: 'furnished rooms' },
         {

@@ -38,7 +38,7 @@ const first30DaysNewCityPlaybook = {
       type: 'paragraph',
       parts: [
         {
-          text: 'With the basics handled, establish a rhythm. Fix rough times for waking, meals, work or study, exercise and sleep. A routine creates a comforting sense of normalcy in unfamiliar surroundings. This is much easier in a managed co-living space, where meals and chores are handled — with four meals a day from our in-house kitchen, that part of your routine is sorted for you when you have ',
+          text: 'With the basics handled, establish a rhythm. Fix rough times for waking, meals, work or study, exercise and sleep. A routine creates a comforting sense of normalcy in unfamiliar surroundings. This is much easier in a managed co-living space, where meals and chores are handled — with three meals a day from our in-house kitchen, that part of your routine is sorted for you when you have ',
         },
         { type: 'link', href: '/food/', text: 'meals included' },
         {

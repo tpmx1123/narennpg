@@ -22,7 +22,7 @@ export default function DoubleRoomManaged() {
         <span className="text-brand-gold italic font-medium">for You</span>
       </h2>
       <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
-        Cleaning, laundry support, WiFi, security, maintenance and meals are all handled by our
+        Cleaning, WiFi, security, maintenance and meals are all handled by our
         on-site team, so you and your room-mate can focus on work, study and enjoying the city. It is
         the kind of hassle-free living that makes Narenn Living so easy to settle into. Explore our{' '}
         <Link

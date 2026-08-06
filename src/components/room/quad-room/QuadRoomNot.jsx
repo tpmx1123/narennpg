@@ -34,8 +34,8 @@ export default function QuadRoomNot() {
           </p>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             Four residents, a room proportioned for four, individual beds, individual lockable
-            storage, individual study space, air conditioning, fibre WiFi, daily housekeeping and
-            four meals a day - in VIP Hills, Madhapur. That is the floor at Narenn Living, not a
+            storage, air conditioning, fibre WiFi, daily housekeeping and
+            three meals a day - in VIP Hills, Madhapur. That is the floor at Narenn Living, not a
             compromise on it. Come and look at one before you assume the price implies the quality.
             Call <PhoneWhatsAppLinks className={LINK_CLASS} />.
           </p>

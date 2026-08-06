@@ -32,7 +32,7 @@ export const TRIPLE_SHARING_PAGE = {
 
 export const TRIPLE_SHARING_HERO = {
   paragraphs: [
-    'If you want premium co-living at the friendliest price, our triple sharing room in Madhapur is the answer. You share a spacious, air-conditioned room with two others and split the cost three ways — which makes it the most economical option at Narenn Living without cutting a single corner on comfort. You still get an AC room, four meals a day, high-speed WiFi, daily housekeeping and full access to every amenity, all included in one low monthly fee.',
+    'If you want premium co-living at the friendliest price, our triple sharing room in Madhapur is the answer. You share a spacious, air-conditioned room with two others and split the cost three ways — which makes it the most economical option at Narenn Living without cutting a single corner on comfort. You still get an AC room, three meals a day, high-speed WiFi, daily housekeeping and full access to every amenity, all included in one low monthly fee.',
     'Set in VIP Hills, Madhapur, triple rooms put you minutes from Hitech City, Gachibowli and Kondapur, and are especially popular with students and freshers who want great value and a ready-made social circle.',
   ],
 };
@@ -72,16 +72,16 @@ export const TRIPLE_SHARING_IMAGES = {
   },
   studySpace: {
     src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00071_1_lcjjph.jpg',
-    alt: 'Study space in a triple sharing room',
-    title: 'Triple sharing room - study space',
+    alt: 'Room interior detail in a triple sharing room',
+    title: 'Triple sharing room - interior',
   },
 };
 
 export const TRIPLE_SHARING_INCLUDES = [
-  'An AC room shared by three, with a dedicated bed and mattress each',
-  'Personal wardrobe and study area per resident',
+  'An AC room shared by three, with a dedicated bed and ortho mattress each',
+  'Personal wardrobe per resident',
   'High-speed WiFi for study and streaming',
-  'Four home-style meals a day from our in-house kitchen',
+  'Three home-style meals a day from our in-house kitchen',
   'Daily housekeeping and fresh linen',
   'Biometric no-curfew access and 24/7 security',
 ];
@@ -98,10 +98,10 @@ export const TRIPLE_SHARING_SPACE = {
   h2: 'Space That Actually Works for Three',
   points: [
     'A larger room proportioned for three residents - not a double with a bed squeezed in',
-    'Three individual beds with quality mattresses and bedding',
+    'Three individual beds with ortho mattresses and bedding',
     'Three separate lockable wardrobes - nobody shares storage',
-    'Individual study space and charging points per resident',
-    'Air conditioning, fibre WiFi, daily housekeeping and four meals a day, exactly as in every other format',
+    'Charging points per resident',
+    'Air conditioning, fibre WiFi, daily housekeeping and three meals a day, exactly as in every other format',
   ],
 };
 
@@ -109,12 +109,12 @@ export const TRIPLE_SHARING_FAQS = [
   {
     question: 'How many people share a triple room?',
     answer:
-      'A triple sharing room is shared by three residents, each with a dedicated bed, wardrobe and study space in a fully furnished AC room.',
+      'A triple sharing room is shared by three residents, each with a dedicated bed, wardrobe in a fully furnished AC room.',
   },
   {
     question: 'Is triple sharing the cheapest option?',
     answer:
-      'Yes, triple sharing is our most economical room type while still including AC, four daily meals, WiFi, housekeeping and all amenities.',
+      'Yes, triple sharing is our most economical room type while still including AC, three daily meals, WiFi, housekeeping and all amenities.',
   },
   {
     question: 'Is a triple room good for students?',

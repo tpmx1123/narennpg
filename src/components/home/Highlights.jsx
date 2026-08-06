@@ -21,7 +21,7 @@ const HIGHLIGHTS = [
   },
   {
     label: 'Daily Housekeeping',
-    detail: 'Laundry Included',
+    detail: 'Rooms & Common Areas',
     icon: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784013213/cleaning-lady_xf09yy.png',
   },
 ];

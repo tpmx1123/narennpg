@@ -50,13 +50,13 @@ export const COMING_SOON_PAGES = {
     path: '/food/',
     title: 'Homely Food Menu | Narenn Living Madhapur',
     description:
-      'Four freshly cooked meals a day from our in-house kitchen at Narenn Living — hygienic homely food for co-living residents in Madhapur.',
+      'Three freshly cooked meals a day from our in-house kitchen at Narenn Living — hygienic homely food for co-living residents in Madhapur.',
   },
   'locations-madhapur': {
     path: '/locations/madhapur/',
     title: 'PG in Madhapur, Hyderabad | Co-Living Near Hitech City',
     description:
-      'Premium PG & co-living in Madhapur, VIP Hills — AC rooms, four meals, WiFi & housekeeping, minutes from Hitech City. Book a free visit at Narenn Living today.',
+      'Premium PG & co-living in Madhapur, VIP Hills — AC rooms, three meals, WiFi & housekeeping, minutes from Hitech City. Book a free visit at Narenn Living today.',
   },
   properties: {
     path: '/properties/',
@@ -68,7 +68,7 @@ export const COMING_SOON_PAGES = {
     path: '/properties/narenn-elite/',
     title: 'Narenn Elite | Premium Co-Living in Madhapur',
     description:
-      'Narenn Elite — minimalist co-living in VIP Hills, Madhapur with premium desks, private balconies and proximity to Raheja Mindspace.',
+      'Narenn Elite — minimalist co-living in VIP Hills, Madhapur with private balconies and proximity to Raheja Mindspace.',
   },
   'properties-narenn-crown': {
     path: '/properties/narenn-crown/',
@@ -122,7 +122,7 @@ export const COMING_SOON_PAGES = {
     path: '/pg-for-students/',
     title: 'PG for Students in Madhapur, Hyderabad | Safe & Homely',
     description:
-      'Safe, homely PG for students in Madhapur with AC rooms, four meals a day, WiFi & study-friendly spaces. Trusted by parents. Book a free visit at Narenn Living.',
+      'Safe, homely PG for students in Madhapur with AC rooms, three meals a day, WiFi & study-friendly spaces. Trusted by parents. Book a free visit at Narenn Living.',
   },
   'corporate-accommodation': {
     path: '/corporate-accommodation/',
@@ -134,13 +134,13 @@ export const COMING_SOON_PAGES = {
     path: '/locations/hitech-city/',
     title: 'PG near Hitech City, Hyderabad | 5–10 Min Co-Living | Narenn Living',
     description:
-      'Premium PG & co-living just 5–10 minutes from Hitech City. AC rooms, four meals, fast WiFi & housekeeping in Madhapur VIP Hills. Book a free visit at Narenn Living.',
+      'Premium PG & co-living just 5–10 minutes from Hitech City. AC rooms, three meals, fast WiFi & housekeeping in Madhapur VIP Hills. Book a free visit at Narenn Living.',
   },
   'locations-gachibowli': {
     path: '/locations/gachibowli/',
     title: 'PG near Gachibowli, Hyderabad | Co-Living & Furnished Rooms',
     description:
-      'Premium PG & co-living a short commute from Gachibowli & Financial District. AC rooms, four meals, WiFi & housekeeping in Madhapur. Book a free visit at Narenn Living.',
+      'Premium PG & co-living a short commute from Gachibowli & Financial District. AC rooms, three meals, WiFi & housekeeping in Madhapur. Book a free visit at Narenn Living.',
   },
   'locations-kondapur': {
     path: '/locations/kondapur/',

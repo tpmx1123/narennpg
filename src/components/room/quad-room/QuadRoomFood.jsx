@@ -22,7 +22,7 @@ export default function QuadRoomFood() {
         <span className="text-brand-gold italic font-medium">Light on Cost</span>
       </h2>
       <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
-        Eating out three times a day quietly drains a student budget. With four fresh, home-style
+        Eating out three times a day quietly drains a student budget. With three fresh, home-style
         meals included daily from our homely{' '}
         <Link
           to="/food/"

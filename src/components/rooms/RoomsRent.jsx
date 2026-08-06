@@ -38,7 +38,7 @@ export default function RoomsRent() {
               Covered in rent
             </h3>
             <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
-              Rent covers the fully furnished AC room, four meals a day, high-speed WiFi, daily
+              Rent covers the fully furnished AC room, three meals a day, high-speed WiFi, daily
               housekeeping and weekly deep clean, RO drinking water, 24x7 hot water, power backup,
               lift access, security and every community event we run through the year.
             </p>

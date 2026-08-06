@@ -4,7 +4,7 @@ export const GACHIBOWLI_PAGE = {
   path: '/locations/gachibowli/',
   title: 'PG near Gachibowli, Hyderabad | Co-Living & Furnished Rooms',
   description:
-    'Premium PG & co-living a short commute from Gachibowli & Financial District. AC rooms, four meals, WiFi & housekeeping in Madhapur. Book a free visit at Narenn Living.',
+    'Premium PG & co-living a short commute from Gachibowli & Financial District. AC rooms, three meals, WiFi & housekeeping in Madhapur. Book a free visit at Narenn Living.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage: LOCATION_HERO_IMAGE,
 };
@@ -48,7 +48,7 @@ export const GACHIBOWLI_HERO = {
 };
 
 export const GACHIBOWLI_INTRO = [
-  "Gachibowli and the Financial District are among Hyderabad's biggest employment hubs, home to global companies, banks and IT majors. A PG near Gachibowli at Narenn Living gives you a comfortable, fully managed home just 15-20 minutes away, in the upscale VIP Hills area of Madhapur. You get a furnished AC room, four home-style meals a day, high-speed WiFi and daily housekeeping - a calm, well-run base from which to take on your workday in Gachibowli or the Financial District.",
+  "Gachibowli and the Financial District are among Hyderabad's biggest employment hubs, home to global companies, banks and IT majors. A PG near Gachibowli at Narenn Living gives you a comfortable, fully managed home just 15-20 minutes away, in the upscale VIP Hills area of Madhapur. You get a furnished AC room, three home-style meals a day, high-speed WiFi and daily housekeeping - a calm, well-run base from which to take on your workday in Gachibowli or the Financial District.",
   "It is the ideal setup for professionals who want the buzz of Gachibowli's workplaces with the comfort and convenience of living in Madhapur.",
 ];
 
@@ -82,14 +82,14 @@ export const GACHIBOWLI_PROFESSIONALS = {
   bodyBefore: 'Whether you are an experienced engineer or a fresher starting your first role in Gachibowli, our',
   link: { to: '/coliving-for-it-professionals/', label: 'co-living for IT professionals' },
   bodyAfter:
-    'is built around your needs - reliable WiFi for remote work, quiet rooms for focus, four meals so you never cook after work, and no-curfew access for any schedule.',
+    'is built around your needs - reliable WiFi for remote work, quiet rooms for focus, three meals so you never cook after work, and no-curfew access for any schedule.',
 };
 
 export const GACHIBOWLI_AMENITIES = {
   eyebrow: 'Hassle-Free',
   h2: 'Everything Handled, Every Day',
   h2Accent: 'Every Day',
-  body: 'Cleaning, laundry, meals, WiFi, security and maintenance are all managed by our on-site team, so your home life runs itself while you focus on your career. It is the kind of hassle-free living that makes settling into a demanding job so much easier. See all that is included in our',
+  body: 'Cleaning, meals, WiFi, security and maintenance are all managed by our on-site team, so your home life runs itself while you focus on your career. It is the kind of hassle-free living that makes settling into a demanding job so much easier. See all that is included in our',
   link: { to: '/amenities/', label: 'amenities' },
   trail: '.',
 };
@@ -136,7 +136,7 @@ export const GACHIBOWLI_TWENTY = {
   h2: 'What You Get for the Twenty Minutes',
   h2Accent: 'Twenty Minutes',
   paragraphs: [
-    'Fully furnished AC rooms, four meals a day from our own kitchen, fibre WiFi, daily housekeeping, biometric no-curfew access, power backup, security and a terrace community that runs events through the year.',
+    'Fully furnished AC rooms, three meals a day from our own kitchen, fibre WiFi, daily housekeeping, biometric no-curfew access, power backup, security and a terrace community that runs events through the year.',
     'And the flexibility that matters most in an IT career: if your next role is in Hitech City, Mindspace or Kondapur instead, your commute gets shorter rather than forcing you to move again. Call 70759 85666 and we will show you the room and let you eat what the residents are eating that day.',
   ],
 };

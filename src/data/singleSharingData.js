@@ -77,16 +77,16 @@ export const SINGLE_SHARING_IMAGES = {
   },
   workDesk: {
     src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00012_1_t5x15w.jpg',
-    alt: 'Work desk and chair area in a single sharing room',
-    title: 'Single sharing room - work desk',
+    alt: 'Room interior detail in a single sharing room',
+    title: 'Single sharing room - interior',
   },
 };
 
 export const SINGLE_SHARING_INCLUDES = [
-  'A spacious AC room for one, with a quality bed and mattress',
-  'Personal wardrobe, study desk and chair',
+  'A spacious AC room for one, with a quality bed and ortho mattress',
+  'Personal wardrobe',
   'High-speed WiFi ideal for work-from-home and video calls',
-  'Four home-style meals a day from our in-house kitchen',
+  'Three home-style meals a day from our in-house kitchen',
   'Daily housekeeping and fresh linen',
   'Biometric no-curfew access and 24/7 CCTV security',
 ];
@@ -111,7 +111,7 @@ export const SINGLE_SHARING_COMPARISON = {
     '1BHK rent plus a six to ten month deposit, versus our single room rent plus a modest refundable deposit',
     'Furniture, appliances, AC, curtains and kitchen setup - a large one-time hit you never take with us',
     'Broadband connection, installation and monthly bill - included here',
-    'A cook and a maid, or cooking yourself after a ten-hour day - we serve four meals a day',
+    'A cook and a maid, or cooking yourself after a ten-hour day - we serve three meals a day',
     'Society maintenance, water charges and brokerage - none of it applies',
     'Lock-in periods and exit painting deductions - replaced by a clear written agreement',
   ],
@@ -126,11 +126,11 @@ export const SINGLE_SHARING_FAQS = [
   {
     question: 'Are single rooms good for work-from-home?',
     answer:
-      'They are ideal. With high-speed WiFi, a personal study desk and a quiet, private space, single rooms suit remote work and frequent video calls perfectly.',
+      'They are ideal. With high-speed WiFi and a quiet, private space, single rooms suit remote work and frequent video calls perfectly.',
   },
   {
     question: 'Do single room residents get meals too?',
     answer:
-      'Yes, all residents including single room occupants receive four home-style meals a day from our in-house kitchen.',
+      'Yes, all residents including single room occupants receive three home-style meals a day from our in-house kitchen.',
   },
 ];

@@ -4,7 +4,7 @@ export const STUDENTS_PAGE = {
   path: '/pg-for-students/',
   title: 'PG for Students in Madhapur, Hyderabad | Safe & Homely',
   description:
-    'Safe, homely PG for students in Madhapur with AC rooms, four meals a day, WiFi & study-friendly spaces. Trusted by parents. Book a free visit at Narenn Living.',
+    'Safe, homely PG for students in Madhapur with AC rooms, three meals a day, WiFi & study-friendly spaces. Trusted by parents. Book a free visit at Narenn Living.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage: `${SITE_URL}/images/pg-for-students-in-hyderabad-madhapur-hero.jpg`,
 };
@@ -21,8 +21,8 @@ export const STUDENTS_IMAGES = {
     src: `${SITE_URL}/images/student-study-desk-pg-room-hyderabad.jpg`,
     fallback:
       'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
-    alt: 'Study desk and chair in a student PG room in Madhapur, Hyderabad',
-    title: 'Student study desk',
+    alt: 'Student PG room in Madhapur, Hyderabad',
+    title: 'Student PG room',
   },
   parents: {
     src: `${SITE_URL}/images/parents-visiting-student-pg-madhapur-safety.jpg`,
@@ -45,11 +45,11 @@ export const STUDENTS_HERO = {
   h1: 'PG for Students in Madhapur',
   h1Accent: 'Safe & Homely',
   lead:
-    'A second home for students - AC rooms, four meals, WiFi and a community parents trust.',
+    'A second home for students - AC rooms, three meals, WiFi and a community parents trust.',
 };
 
 export const STUDENTS_INTRO = [
-  'Moving away from home for studies is a big step - for students and parents alike. Narenn Living offers a PG for students in Madhapur that feels like a second home: safe, well-managed, and genuinely comfortable. With AC rooms, four home-style meals a day, high-speed WiFi and daily housekeeping, students have everything they need to focus on their goals, while parents get the peace of mind that comes from a professionally run, secure property.',
+  'Moving away from home for studies is a big step - for students and parents alike. Narenn Living offers a PG for students in Madhapur that feels like a second home: safe, well-managed, and genuinely comfortable. With AC rooms, three home-style meals a day, high-speed WiFi and daily housekeeping, students have everything they need to focus on their goals, while parents get the peace of mind that comes from a professionally run, secure property.',
   'Our VIP Hills location keeps students close to coaching centres, cafes, transport and the vibrant energy of Madhapur, while our supportive community makes settling in easy from day one.',
 ];
 
@@ -72,7 +72,7 @@ export const STUDENTS_TRUST = {
     },
     {
       icon: 'UtensilsCrossed',
-      title: 'Four home-style meals',
+      title: 'Three home-style meals',
       body: 'Nutritious food from our own kitchen every day',
     },
     {
@@ -93,7 +93,7 @@ export const STUDENTS_STUDY = {
   h2: 'A Study-Friendly Environment',
   h2Accent: 'Environment',
   paragraphs: [
-    'Every room comes with a dedicated study desk and high-speed WiFi, so students have a proper space to work, attend online classes and prepare for exams. The calm, well-maintained setting helps students stay focused, while quiet hours and clean common areas support good study habits. Our economical',
+    'Every room comes with high-speed WiFi, so students can attend online classes and prepare for exams without fighting for bandwidth. The calm, well-maintained setting helps students stay focused, while quiet hours and clean common areas support good study habits. Our economical',
   ],
   link: { to: '/rooms/triple-sharing/', label: 'triple sharing rooms' },
   paragraphsAfter: [
@@ -106,7 +106,7 @@ export const STUDENTS_FOOD = {
   h2: 'Nutritious Food That Fuels Learning',
   h2Accent: 'Fuels Learning',
   paragraphs: [
-    'Good food matters even more when you are studying hard. Our in-house kitchen serves four fresh, balanced meals a day - breakfast, lunch, evening snacks and dinner - so students eat well without spending on takeout or skipping meals.',
+    'Good food matters even more when you are studying hard. Our in-house kitchen serves three fresh, balanced meals a day - breakfast, lunch and dinner - so students eat well without spending on takeout or skipping meals.',
   ],
   linkLead: 'Take a look at our',
   link: { to: '/food/', label: 'homely food menu' },
@@ -156,7 +156,7 @@ export const STUDENTS_APPROVE = {
   bullets: [
     'Separate, secure accommodation for women with dedicated floors and verified entry',
     'Biometric access with CCTV coverage across entries, corridors and common areas',
-    'Four home-style meals a day from our own kitchen - not instant noodles at 11 PM',
+    'Three home-style meals a day from our own kitchen - not instant noodles at 11 PM',
     'A written agreement with transparent fees and a clear refund policy',
     'A staff team parents can call directly, not a ticketing system',
   ],
@@ -166,11 +166,11 @@ export const STUDENTS_SUPPORTS = {
   eyebrow: 'Exam Ready',
   h2: 'A Place That Supports Studying',
   paragraphs: [
-    'Every room includes a study desk, a proper chair, charging points and fibre WiFi that holds up during an online class or a submission deadline. Common lounges give you somewhere to go when your room gets claustrophobic during exam week.',
+    'Every room includes charging points and fibre WiFi that holds up during an online class or a submission deadline. Common lounges give you somewhere to go when your room gets claustrophobic during exam week.',
     'Power backup means a load-shedding evening does not cost you a submission. And there is no curfew, so a late library session or an evening batch does not turn into an argument at the gate.',
   ],
   features: [
-    { icon: 'Monitor', title: 'Desk & chair', body: 'A proper place for classes and deadlines' },
+    { icon: 'Monitor', title: 'Charging points', body: 'Power where you need it for classes and deadlines' },
     { icon: 'Wifi', title: 'Fibre WiFi', body: 'Holds up for calls and submissions' },
     { icon: 'Sofa', title: 'Common lounges', body: 'Space to breathe during exam week' },
     { icon: 'Zap', title: 'Power backup', body: 'Load-shedding will not cost a submission' },
@@ -208,7 +208,7 @@ export const STUDENTS_FAQS = [
   {
     question: 'What food is provided for students?',
     answer:
-      'Students receive four home-style meals a day - breakfast, lunch, evening snacks and dinner - freshly prepared in our own in-house kitchen.',
+      'Students receive three home-style meals a day - breakfast, lunch and dinner - freshly prepared in our own in-house kitchen.',
   },
   {
     question: 'Which room type is best for students?',

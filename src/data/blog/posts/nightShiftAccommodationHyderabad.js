@@ -61,7 +61,7 @@ const nightShiftAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Your meal times are shifted, so rigid food schedules can leave you hungry at the wrong hours. While set meal times suit most, it helps to choose accommodation where you can store food and have flexibility around eating. Four home-style ',
+          text: 'Your meal times are shifted, so rigid food schedules can leave you hungry at the wrong hours. While set meal times suit most, it helps to choose accommodation where you can store food and have flexibility around eating. Three home-style ',
         },
         { type: 'link', href: '/food/', text: 'meals' },
         {

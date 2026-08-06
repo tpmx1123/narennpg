@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Miyapur anchors the northern end of the Red Line, and for anyone working there without wanting to live at that end of the city, the Metro changes the equation entirely. A PG near Miyapur at Narenn Living puts you in VIP Hills, Madhapur - a short ride from Durgam Cheruvu, our nearest Metro station, with a direct Blue Line to Ameerpet and an interchange onto the Red Line straight to Miyapur. You still get a furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping, with the Metro doing the heavy lifting on the commute itself.",
+          "Miyapur anchors the northern end of the Red Line, and for anyone working there without wanting to live at that end of the city, the Metro changes the equation entirely. A PG near Miyapur at Narenn Living puts you in VIP Hills, Madhapur - a short ride from Durgam Cheruvu, our nearest Metro station, with a direct Blue Line to Ameerpet and an interchange onto the Red Line straight to Miyapur. You still get a furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping, with the Metro doing the heavy lifting on the commute itself.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      "Every room is fully furnished and air-conditioned, with fibre WiFi strong enough to take a call before you leave for the Metro or right after you're back. Four home-style meals a day mean a 45-minute door-to-door commute doesn't also cost you an hour in the kitchen at either end. Daily housekeeping, laundry support and biometric no-curfew access fit around Metro timings and shift schedules alike, without a fixed gate time forcing your hand.",
+      "Every room is fully furnished and air-conditioned, with fibre WiFi strong enough to take a call before you leave for the Metro or right after you're back. Three home-style meals a day mean a 45-minute door-to-door commute doesn't also cost you an hour in the kitchen at either end. daily housekeeping and biometric no-curfew access fit around Metro timings and shift schedules alike, without a fixed gate time forcing your hand.",
     ],
     links: [
       { to: '/rooms/', label: 'room options' },

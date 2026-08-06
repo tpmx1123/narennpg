@@ -34,8 +34,8 @@ export default function TripleRoomNot() {
           </p>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             Three residents, a room proportioned for three, individual beds, individual lockable
-            wardrobes, individual study space, air conditioning, fibre WiFi, daily housekeeping and
-            four meals a day — in VIP Hills, Madhapur. That is the floor at Narenn Living, not a
+            wardrobes, air conditioning, fibre WiFi, daily housekeeping and
+            three meals a day — in VIP Hills, Madhapur. That is the floor at Narenn Living, not a
             compromise on it. Come and look at one before you assume the price implies the quality.
             Call <PhoneWhatsAppLinks className={LINK_CLASS} />.
           </p>

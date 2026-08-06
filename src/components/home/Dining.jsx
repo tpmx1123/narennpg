@@ -37,9 +37,9 @@ export default function Dining() {
             </h2>
             <p className="text-sm sm:text-[15px] leading-relaxed text-brand-charcoal-light max-w-lg">
               Bad food is the number one reason people leave a PG. It is also the first thing we got
-              right. Our in-house kitchen serves four meals a day - breakfast, lunch, evening snacks and
-              dinner - with a rotating menu of home-style South Indian and North Indian dishes, prepared
-              fresh in a hygienic kitchen. See what is on our{' '}
+              right. Our in-house kitchen serves three meals a day - breakfast, lunch and
+              dinner - with evening snacks in between, and a rotating menu of home-style South Indian
+              and North Indian dishes, prepared fresh in a hygienic kitchen. See what is on our{' '}
               <a href="/food/" className="text-brand-burgundy font-semibold hover:underline">
                 homely food menu
               </a>{' '}

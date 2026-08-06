@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Manikonda has grown into one of Hyderabad's busiest residential and IT pockets, spilling south from Gachibowli towards Puppalaguda and the Outer Ring Road. A PG near Manikonda at Narenn Living gives you a comfortable, fully managed home in VIP Hills, Madhapur - close enough for a daily commute to Manikonda and Puppalaguda offices, yet placed in an established neighbourhood with far more to offer than Manikonda's still-developing streets. You get a furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping, with Gachibowli itself only a few minutes closer still.",
+          "Manikonda has grown into one of Hyderabad's busiest residential and IT pockets, spilling south from Gachibowli towards Puppalaguda and the Outer Ring Road. A PG near Manikonda at Narenn Living gives you a comfortable, fully managed home in VIP Hills, Madhapur - close enough for a daily commute to Manikonda and Puppalaguda offices, yet placed in an established neighbourhood with far more to offer than Manikonda's still-developing streets. You get a furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping, with Gachibowli itself only a few minutes closer still.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      "Every Narenn Living room comes fully furnished and air-conditioned, with fibre WiFi steady enough for both video calls and long study sessions, and four home-style meals a day so neither a student's timetable nor a professional's late meeting means skipping dinner. Housekeeping, laundry support and biometric no-curfew access are handled daily, so the ride to Manikonda doesn't come with extra chores tacked onto either end of it.",
+      "Every Narenn Living room comes fully furnished and air-conditioned, with fibre WiFi steady enough for both video calls and long study sessions, and three home-style meals a day so neither a student's timetable nor a professional's late meeting means skipping dinner. Housekeeping and biometric no-curfew access are handled daily, so the ride to Manikonda doesn't come with extra chores tacked onto either end of it.",
     ],
     links: [
       { to: '/rooms/', label: 'room options' },
@@ -127,7 +127,7 @@ export default {
     {
       question: 'What is included in a PG near Manikonda at Narenn Living?',
       answer:
-        'A furnished AC room, four meals a day, fast WiFi, daily housekeeping and laundry support, all for one monthly fee.',
+        'A furnished AC room, three meals a day, fast WiFi, daily housekeeping, all for one monthly fee.',
     },
   ],
   maps: {

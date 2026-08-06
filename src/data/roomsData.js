@@ -10,7 +10,7 @@ export const ROOMS_PAGE = {
 export const ROOMS_IMAGES = {
   hero: {
     src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922730/M_P00299_1_ilshb5.jpg',
-    alt: 'Fully furnished PG rooms in Madhapur with AC, bed, wardrobe and study desk',
+    alt: 'Fully furnished PG rooms in Madhapur with AC, bed, wardrobe and AC',
     title: 'Fully furnished PG rooms in Madhapur',
   },
   single: {
@@ -47,7 +47,7 @@ export const ROOMS_HERO = {
 };
 
 export const ROOMS_INTRO = [
-  'Every Narenn Living room is designed to be move-in ready from the moment you arrive. Our PG rooms in Madhapur come fully furnished with a comfortable bed and mattress, wardrobe, study desk, air-conditioning and fresh linen - plus four meals a day, high-speed WiFi and daily housekeeping included in one simple monthly fee. Whether you want privacy, company or the most economical option, there is a room here that fits your budget and your lifestyle.',
+  'Every Narenn Living room is designed to be move-in ready from the moment you arrive. Our PG rooms in Madhapur come fully furnished with a comfortable bed and ortho mattress, wardrobe, air-conditioning and fresh linen - plus three meals a day, high-speed WiFi and daily housekeeping included in one simple monthly fee. Whether you want privacy, company or the most economical option, there is a room here that fits your budget and your lifestyle.',
   'Located in VIP Hills, Madhapur, all our rooms sit minutes from Hitech City, Gachibowli and Kondapur, so wherever you work or study, your commute stays short. Below is a quick guide to our four sharing types.',
 ];
 
@@ -60,7 +60,7 @@ export const ROOMS_FORMATS = [
     linkLabel: 'single sharing rooms',
     imageKey: 'single',
     paragraphs: [
-      'A private room to yourself is the ultimate in comfort and focus. Our single sharing rooms are ideal for working professionals who value quiet, take late calls, or simply prefer their own space at the end of the day. You get an AC room, personal wardrobe and study desk, all in a secure, professionally managed property.',
+      'A private room to yourself is the ultimate in comfort and focus. Our single sharing rooms are ideal for working professionals who value quiet, take late calls, or simply prefer their own space at the end of the day. You get an AC room, personal wardrobe, all in a secure, professionally managed property.',
     ],
   },
   {
@@ -71,7 +71,7 @@ export const ROOMS_FORMATS = [
     linkLabel: 'double sharing rooms',
     imageKey: 'double',
     paragraphs: [
-      'Our double sharing rooms strike the perfect balance between privacy and companionship - spacious enough to feel comfortable, shared enough to make the cost easy and the room lively. Each resident gets their own bed, storage and study area in a well-appointed AC room. It is our most popular choice for both students and young professionals.',
+      'Our double sharing rooms strike the perfect balance between privacy and companionship - spacious enough to feel comfortable, shared enough to make the cost easy and the room lively. Each resident gets their own bed and storage in a well-appointed AC room. It is our most popular choice for both students and young professionals.',
     ],
   },
   {
@@ -93,15 +93,15 @@ export const ROOMS_FORMATS = [
     linkLabel: 'four sharing rooms',
     imageKey: 'quad',
     paragraphs: [
-      'If keeping monthly costs as low as possible is the priority, our four sharing rooms offer the most economical co-living format at Narenn Living. You share an AC room with three others, with personal bed, storage and study space - plus the same meals, WiFi, housekeeping and full access to amenities.',
+      'If keeping monthly costs as low as possible is the priority, our four sharing rooms offer the most economical co-living format at Narenn Living. You share an AC room with three others, with personal bed and storage - plus the same meals, WiFi, housekeeping and full access to amenities.',
     ],
   },
 ];
 
 export const ROOMS_INCLUDES = [
-  'Air-conditioned room with comfortable bed and quality mattress',
-  'Personal wardrobe and dedicated study desk',
-  'Four home-style meals a day from our in-house kitchen',
+  'Air-conditioned room with comfortable bed and ortho mattress',
+  'Personal wardrobe',
+  'Three home-style meals a day from our in-house kitchen',
   'High-speed WiFi for work and study',
   'Daily housekeeping and clean linen',
   'Biometric no-curfew access and 24/7 security',
@@ -120,7 +120,7 @@ export const ROOMS_FAQS = [
   {
     question: 'Are the rooms at Narenn Living air-conditioned?',
     answer:
-      'Yes, all our single, double, triple and four sharing rooms are air-conditioned and fully furnished with a bed, wardrobe and study desk.',
+      'Yes, all our single, double, triple and four sharing rooms are air-conditioned and fully furnished with a bed, wardrobe and AC.',
   },
   {
     question: 'Which sharing type is the most economical?',

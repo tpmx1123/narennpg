@@ -32,7 +32,7 @@ export const QUAD_SHARING_PAGE = {
 
 export const QUAD_SHARING_HERO = {
   paragraphs: [
-    'If keeping monthly costs as low as possible is the priority — without settling for a grim PG — our four sharing room in Madhapur is built for you. You share a spacious, air-conditioned room with three others and split the cost four ways, which makes it the most economical format at Narenn Living. You still get an AC room, four meals a day, high-speed WiFi, daily housekeeping and full access to every amenity, all included in one low monthly fee.',
+    'If keeping monthly costs as low as possible is the priority — without settling for a grim PG — our four sharing room in Madhapur is built for you. You share a spacious, air-conditioned room with three others and split the cost four ways, which makes it the most economical format at Narenn Living. You still get an AC room, three meals a day, high-speed WiFi, daily housekeeping and full access to every amenity, all included in one low monthly fee.',
     'Set in VIP Hills, Madhapur, four sharing rooms put you minutes from Hitech City, Gachibowli and Kondapur. They are a favourite with students and freshers who want a lively room, a ready-made social circle and the lowest entry into premium co-living.',
   ],
 };
@@ -72,16 +72,16 @@ export const QUAD_SHARING_IMAGES = {
   },
   studySpace: {
     src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922347/M_P00060_1_mwxgvh.jpg',
-    alt: 'Study space in a four sharing room',
-    title: 'Four sharing room - study space',
+    alt: 'Room interior detail in a four sharing room',
+    title: 'Four sharing room - interior',
   },
 };
 
 export const QUAD_SHARING_INCLUDES = [
-  'An AC room shared by four, with a dedicated bed and mattress each',
-  'Personal wardrobe or locker and study area per resident',
+  'An AC room shared by four, with a dedicated bed and ortho mattress each',
+  'Personal wardrobe or locker per resident',
   'High-speed WiFi for study and streaming',
-  'Four home-style meals a day from our in-house kitchen',
+  'Three home-style meals a day from our in-house kitchen',
   'Daily housekeeping and fresh linen',
   'Biometric no-curfew access and 24/7 security',
 ];
@@ -98,10 +98,10 @@ export const QUAD_SHARING_SPACE = {
   h2: 'Space That Actually Works for Four',
   points: [
     'A room proportioned for four residents - not three beds with one squeezed in',
-    'Four individual beds with quality mattresses and bedding',
+    'Four individual beds with ortho mattresses and bedding',
     'Separate lockable storage per resident - nobody shares a wardrobe',
-    'Individual study space and charging points per resident',
-    'Air conditioning, fibre WiFi, daily housekeeping and four meals a day, exactly as in every other format',
+    'Charging points per resident',
+    'Air conditioning, fibre WiFi, daily housekeeping and three meals a day, exactly as in every other format',
   ],
 };
 
@@ -109,12 +109,12 @@ export const QUAD_SHARING_FAQS = [
   {
     question: 'How many people share a four sharing room?',
     answer:
-      'A four sharing room is shared by four residents, each with a dedicated bed, storage and study space in a fully furnished AC room.',
+      'A four sharing room is shared by four residents, each with a dedicated bed, storage in a fully furnished AC room.',
   },
   {
     question: 'Is four sharing the cheapest option?',
     answer:
-      'Yes, four sharing is our most economical room type while still including AC, four daily meals, WiFi, housekeeping and all amenities.',
+      'Yes, four sharing is our most economical room type while still including AC, three daily meals, WiFi, housekeeping and all amenities.',
   },
   {
     question: 'Is a four sharing room good for students?',

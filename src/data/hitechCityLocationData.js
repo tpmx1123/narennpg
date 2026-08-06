@@ -4,7 +4,7 @@ export const HITECH_CITY_PAGE = {
   path: '/locations/hitech-city/',
   title: 'PG near Hitech City, Hyderabad | 5-10 Min Co-Living | Narenn Living',
   description:
-    'Premium PG & co-living just 5-10 minutes from Hitech City. AC rooms, four meals, fast WiFi & housekeeping in Madhapur VIP Hills. Book a free visit at Narenn Living.',
+    'Premium PG & co-living just 5-10 minutes from Hitech City. AC rooms, three meals, fast WiFi & housekeeping in Madhapur VIP Hills. Book a free visit at Narenn Living.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage: LOCATION_HERO_IMAGE,
 };
@@ -44,11 +44,11 @@ export const HITECH_CITY_HERO = {
   h1: 'PG near Hitech City',
   h1Accent: 'Live Minutes From Your Office',
   lead:
-    'Fully furnished AC rooms, four meals and fast WiFi - just 5-10 minutes from Cyber Towers and Mindspace.',
+    'Fully furnished AC rooms, three meals and fast WiFi - just 5-10 minutes from Cyber Towers and Mindspace.',
 };
 
 export const HITECH_CITY_INTRO = [
-  'If you work in Hitech City, your commute should be measured in minutes, not hours. A PG near Hitech City at Narenn Living puts you just 5-10 minutes from the offices of Cyber Towers, Mindspace and the wider Hitech City IT hub, from our comfortable base in VIP Hills, Madhapur. That means more sleep, less traffic stress and hours of your week handed back to you - all while enjoying a fully furnished AC room, four home-style meals a day, high-speed WiFi and daily housekeeping.',
+  'If you work in Hitech City, your commute should be measured in minutes, not hours. A PG near Hitech City at Narenn Living puts you just 5-10 minutes from the offices of Cyber Towers, Mindspace and the wider Hitech City IT hub, from our comfortable base in VIP Hills, Madhapur. That means more sleep, less traffic stress and hours of your week handed back to you - all while enjoying a fully furnished AC room, three home-style meals a day, high-speed WiFi and daily housekeeping.',
   'For the thousands of engineers and IT professionals who work in Hitech City, this is the location that makes daily life dramatically easier.',
 ];
 
@@ -129,7 +129,7 @@ export const HITECH_CITY_RESIDENTS = {
     'Consultants and analysts at Mindspace, Raheja and DLF',
     'Support and operations professionals on US and EU shift patterns',
     'Freshers in their first month in Hyderabad, still learning the city',
-    'Hybrid workers who need a desk and reliable WiFi on WFH days',
+    'Hybrid workers who need a quiet room and reliable WiFi on WFH days',
   ],
 };
 
@@ -139,7 +139,7 @@ export const HITECH_CITY_TIMINGS = {
   h2Accent: 'IT Timings',
   paragraphs: [
     'Biometric access with no curfew, because your shift decides your timing and not a gate rule. Night-shift residents matched with each other so daytime sleep is not a daily battle. Kitchen timings that accommodate off-cycle meals. Housekeeping that works around a sleeping resident rather than through them.',
-    'Add fibre WiFi provisioned for video calls and VPNs, power backup so an outage does not cost you a client meeting, and a proper desk and chair in every room. None of it is exotic - it is just what a PG in the middle of an IT corridor should always have been.',
+    'Add fibre WiFi provisioned for video calls and VPNs, and power backup so an outage does not cost you a client meeting. None of it is exotic - it is just what a PG in the middle of an IT corridor should always have been.',
   ],
 };
 
@@ -180,6 +180,6 @@ export const HITECH_CITY_FAQS = [
   {
     question: 'What is included in the stay?',
     answer:
-      'A furnished AC room, four home-style meals a day, high-speed WiFi, daily housekeeping, laundry support, security and community amenities - all in one monthly fee.',
+      'A furnished AC room, three home-style meals a day, high-speed WiFi, daily housekeeping, security and community amenities - all in one monthly fee.',
   },
 ];

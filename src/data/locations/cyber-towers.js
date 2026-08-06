@@ -39,7 +39,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Cyber Towers sits at the heart of the Hitech City IT corridor, and being genuinely close to it - not close on a map, close in traffic - is what separates a livable commute from a daily grind. A PG near Cyber Towers at Narenn Living puts you 5-7 minutes away in VIP Hills, Madhapur, one of the shortest real commutes to this landmark building. That distance comes with a fully furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping, so the short ride is matched by a genuinely comfortable place to come back to.",
+          "Cyber Towers sits at the heart of the Hitech City IT corridor, and being genuinely close to it - not close on a map, close in traffic - is what separates a livable commute from a daily grind. A PG near Cyber Towers at Narenn Living puts you 5-7 minutes away in VIP Hills, Madhapur, one of the shortest real commutes to this landmark building. That distance comes with a fully furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping, so the short ride is matched by a genuinely comfortable place to come back to.",
       },
       {
         text:
@@ -79,7 +79,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      "A five-minute commute is worth little if the room you come back to is poorly kept. At Narenn Living, every room is furnished and air-conditioned, four home-style meals are served daily from our own kitchen, WiFi is fast and stable enough for back-to-back calls, and housekeeping and laundry are handled by an on-site team rather than left for the weekend. It means the time you save on the Cyber Towers commute actually gets spent resting, not catching up on chores. Explore our full",
+      "A five-minute commute is worth little if the room you come back to is poorly kept. At Narenn Living, every room is furnished and air-conditioned, three home-style meals are served daily from our own kitchen, WiFi is fast and stable enough for back-to-back calls, and housekeeping is handled by an on-site team rather than left for the weekend. It means the time you save on the Cyber Towers commute actually gets spent resting, not catching up on chores. Explore our full",
     ],
     links: [
       { to: '/amenities/', label: 'amenities' },
@@ -122,7 +122,7 @@ export default {
     {
       question: 'What is included in the monthly fee?',
       answer:
-        'A furnished AC room, four home-style meals a day, high-speed WiFi, daily housekeeping, laundry support, security and community amenities - all in one fee.',
+        'A furnished AC room, three home-style meals a day, high-speed WiFi, daily housekeeping, security and community amenities - all in one fee.',
     },
   ],
   maps: {

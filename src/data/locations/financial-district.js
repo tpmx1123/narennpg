@@ -11,7 +11,7 @@ export default {
     path: '/locations/financial-district/',
     title: 'PG near Financial District, Hyderabad | Narenn Living',
     description:
-      'Co-living a short commute from the Financial District. Furnished AC rooms, four meals, WiFi & housekeeping in Madhapur. Book a visit.',
+      'Co-living a short commute from the Financial District. Furnished AC rooms, three meals, WiFi & housekeeping in Madhapur. Book a visit.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     ogImage: LOCATION_HERO_IMAGE,
   },
@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "The Financial District is still a growing address - most housing right around it is new-build gated apartments and serviced flats priced like premium rentals, with almost no established PG market to fall back on. A PG near Financial District at Narenn Living takes a different, more honest approach: a genuinely comfortable, furnished home in VIP Hills, Madhapur, about 18-20 minutes from DLF Cyber City, Salarpuria Knowledge City and the Wipro campus. You get an AC room, four home-style meals a day, fast WiFi and daily housekeeping, in an area that already has restaurants, clinics, a metro line and an actual social life outside office hours.",
+          "The Financial District is still a growing address - most housing right around it is new-build gated apartments and serviced flats priced like premium rentals, with almost no established PG market to fall back on. A PG near Financial District at Narenn Living takes a different, more honest approach: a genuinely comfortable, furnished home in VIP Hills, Madhapur, about 18-20 minutes from DLF Cyber City, Salarpuria Knowledge City and the Wipro campus. You get an AC room, three home-style meals a day, fast WiFi and daily housekeeping, in an area that already has restaurants, clinics, a metro line and an actual social life outside office hours.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      'A twenty-minute commute is easier to accept when the room at the end of it is properly looked after. Every Narenn Living room is furnished and air-conditioned, our own kitchen serves four home-style meals a day, WiFi is fast enough for demanding client calls, and housekeeping and laundry run on a daily schedule handled by an on-site team. It matters more here than most places, since Financial District days tend to run long and unpredictable, and you want the basics at home to require zero thought. See our full',
+      'A twenty-minute commute is easier to accept when the room at the end of it is properly looked after. Every Narenn Living room is furnished and air-conditioned, our own kitchen serves three home-style meals a day, WiFi is fast enough for demanding client calls, and housekeeping runs on a daily schedule handled by an on-site team. It matters more here than most places, since Financial District days tend to run long and unpredictable, and you want the basics at home to require zero thought. See our full',
     ],
     links: [
       { to: '/amenities/', label: 'amenities' },

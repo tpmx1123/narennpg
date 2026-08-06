@@ -11,7 +11,7 @@ export default {
     path: '/locations/begumpet/',
     title: 'PG near Begumpet, Hyderabad | Co-Living | Narenn Living',
     description:
-      'Premium PG & co-living within easy reach of Begumpet. AC rooms, four meals, WiFi & housekeeping in VIP Hills, Madhapur. Book a visit.',
+      'Premium PG & co-living within easy reach of Begumpet. AC rooms, three meals, WiFi & housekeeping in VIP Hills, Madhapur. Book a visit.',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     ogImage: LOCATION_HERO_IMAGE,
   },
@@ -40,7 +40,7 @@ export default {
     paragraphs: [
       {
         text:
-          "Begumpet carries the legacy of Hyderabad's old airport road - a mix of corporate offices, older institutions and the Greenlands and Prakash Nagar stretch that still sees heavy daily traffic. A PG near Begumpet at Narenn Living puts you in VIP Hills, Madhapur, within easy reach of that corridor, in a newer, more settled neighbourhood than Begumpet's older commercial lanes. You get a furnished AC room, four home-style meals a day, fast WiFi and daily housekeeping, whether you're heading to an office near Greenlands or a course closer to Prakash Nagar.",
+          "Begumpet carries the legacy of Hyderabad's old airport road - a mix of corporate offices, older institutions and the Greenlands and Prakash Nagar stretch that still sees heavy daily traffic. A PG near Begumpet at Narenn Living puts you in VIP Hills, Madhapur, within easy reach of that corridor, in a newer, more settled neighbourhood than Begumpet's older commercial lanes. You get a furnished AC room, three home-style meals a day, fast WiFi and daily housekeeping, whether you're heading to an office near Greenlands or a course closer to Prakash Nagar.",
       },
       {
         text:
@@ -80,7 +80,7 @@ export default {
     h2: 'Rooms, Food, WiFi and',
     h2Accent: 'Daily Care',
     paragraphs: [
-      'Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi reliable for both office video calls and study sessions, and four home-style meals a day whether you are back from a Begumpet office or an evening class near Prakash Nagar. Daily housekeeping, laundry support and biometric no-curfew access are built around varied schedules rather than a single routine, which matters in an area that draws both working professionals and students.',
+      'Every room at Narenn Living is fully furnished and air-conditioned, with fibre WiFi reliable for both office video calls and study sessions, and three home-style meals a day whether you are back from a Begumpet office or an evening class near Prakash Nagar. daily housekeeping and biometric no-curfew access are built around varied schedules rather than a single routine, which matters in an area that draws both working professionals and students.',
     ],
     links: [
       { to: '/rooms/', label: 'room options' },

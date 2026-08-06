@@ -97,10 +97,10 @@ export default function Residences() {
           </div>
 
           <p className="max-w-lg text-sm text-brand-charcoal-light leading-relaxed border-l-2 border-brand-burgundy pl-4 lg:pl-5 lg:self-center">
-            Every room at Narenn Living is move-in ready with a comfortable bed, wardrobe, study desk,
+            Every room at Narenn Living is move-in ready with a comfortable bed, wardrobe,
             air-conditioning and clean linen. Choose a private single room for focus and privacy, a
-            double sharing room for the balance of company and space, or an economical triple sharing
-            room that keeps costs down without cutting corners. Take a closer look at{' '}
+            double sharing room for the balance of company and space, a triple sharing room for strong
+            value, or four sharing when keeping monthly costs as low as possible. Take a closer look at{' '}
             <a href="/rooms/" className="text-brand-burgundy font-semibold hover:underline">
               our rooms
             </a>{' '}

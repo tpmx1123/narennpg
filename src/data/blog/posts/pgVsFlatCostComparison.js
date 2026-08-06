@@ -59,7 +59,7 @@ const pgVsFlatCostComparison = {
         },
         { type: 'link', href: '/rooms/', text: 'fully furnished rooms' },
         {
-          text: ', four home-style meals a day, high-speed WiFi, daily housekeeping, laundry support, security and community amenities. There are no deposits to lose track of, no brokerage, no furniture to buy and no bills to juggle. Explore our ',
+          text: ', three home-style meals a day, high-speed WiFi, daily housekeeping, security and community amenities. There are no deposits to lose track of, no brokerage, no furniture to buy and no bills to juggle. Explore our ',
         },
         { type: 'link', href: '/amenities/', text: 'all-inclusive amenities' },
         { text: ' to see exactly what is bundled in.' },
