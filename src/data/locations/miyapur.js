@@ -1,7 +1,7 @@
 import { LOCATION_HERO_IMAGE, SITE_URL } from '../sitePages';
 
 const FALLBACK =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp';
+  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-5-scaled_tnhl5p_uftsbq.webp';
 
 export default {
   slug: 'miyapur',

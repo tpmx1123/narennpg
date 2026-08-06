@@ -5,7 +5,7 @@ const coLivingVsPgDifference = {
       type: 'paragraph',
       parts: [
         {
-          text: 'The terms get used interchangeably, but there is a real difference between co-living vs PG. Both give you a room in a shared property, yet the experience can be worlds apart. Understanding the distinction helps you choose accommodation that genuinely fits your lifestyle. Here is a clear comparison of the two — and why modern co-living has become the preferred choice for many students and professionals in Hyderabad.',
+          text: 'The terms get used interchangeably, but there is a real difference between co-living vs PG. Both give you a room in a shared property, yet the experience can be worlds apart. Understanding the distinction helps you choose accommodation that genuinely fits your lifestyle. Here is a clear comparison of the two - and why modern co-living has become the preferred choice for many students and professionals in Hyderabad.',
         },
       ],
     },
@@ -17,7 +17,7 @@ const coLivingVsPgDifference = {
       type: 'paragraph',
       parts: [
         {
-          text: 'A paying guest (PG) accommodation is the classic model — a room in a shared house or building, usually with basic meals and shared facilities. Traditional PGs vary enormously in quality. Some are well run; many are basic, with limited amenities, inconsistent food, tight rules and little sense of community. The focus is on providing a bed and a roof, not an experience.',
+          text: 'A paying guest (PG) accommodation is the classic model - a room in a shared house or building, usually with basic meals and shared facilities. Traditional PGs vary enormously in quality. Some are well run; many are basic, with limited amenities, inconsistent food, tight rules and little sense of community. The focus is on providing a bed and a roof, not an experience.',
         },
       ],
     },
@@ -37,7 +37,7 @@ const coLivingVsPgDifference = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785760929/output-image_1_mptfig.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002176/output-image_1_mptfig_fqcbyy.jpg',
       alt: 'Co-living community space compared with a traditional PG room in Hyderabad',
       title: 'Community vs room',
     },
@@ -56,12 +56,12 @@ const coLivingVsPgDifference = {
     {
       type: 'list',
       items: [
-        'Amenities — co-living offers premium, consistent facilities; PGs are often basic',
+        'Amenities - co-living offers premium, consistent facilities; PGs are often basic',
         'Food — co-living typically provides quality, varied meals; PG food can be hit or miss',
-        'Management — co-living has professional, responsive on-site staff',
-        'Community — co-living actively builds friendships through events; PGs rarely do',
-        'Consistency — co-living maintains standards daily; PG quality can fluctuate',
-        'Independence — good co-living offers no-curfew, flexible living',
+        'Management - co-living has professional, responsive on-site staff',
+        'Community - co-living actively builds friendships through events; PGs rarely do',
+        'Consistency - co-living maintains standards daily; PG quality can fluctuate',
+        'Independence - good co-living offers no-curfew, flexible living',
       ],
     },
     {
@@ -80,7 +80,7 @@ const coLivingVsPgDifference = {
       type: 'paragraph',
       parts: [
         {
-          text: 'The single most important distinction is community. A traditional PG is often just a place to sleep. Modern co-living is designed to help you belong — through shared spaces, events and a culture of connection. For anyone new to a city, that ready-made social circle is invaluable. See how our ',
+          text: 'The single most important distinction is community. A traditional PG is often just a place to sleep. Modern co-living is designed to help you belong - through shared spaces, events and a culture of connection. For anyone new to a city, that ready-made social circle is invaluable. See how our ',
         },
         { type: 'link', href: '/events/', text: 'community events' },
         { text: ' turn residents into friends.' },
@@ -94,7 +94,7 @@ const coLivingVsPgDifference = {
       type: 'paragraph',
       parts: [
         {
-          text: 'If your only priority is the lowest possible price and you do not mind basic facilities, a budget PG might do. But if you want comfort, good food, reliable service and a genuine community — without paying flat-level costs — co-living is the clear winner. The good news is that well-run co-living is often priced competitively with quality PGs, so you rarely have to choose between value and experience. Explore our ',
+          text: 'If your only priority is the lowest possible price and you do not mind basic facilities, a budget PG might do. But if you want comfort, good food, reliable service and a genuine community - without paying flat-level costs - co-living is the clear winner. The good news is that well-run co-living is often priced competitively with quality PGs, so you rarely have to choose between value and experience. Explore our ',
         },
         { type: 'link', href: '/rooms/', text: 'room options' },
         { text: ' to see the range.' },
@@ -102,7 +102,7 @@ const coLivingVsPgDifference = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785760930/wmremove-transformed_5_ubtiip.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002181/wmremove-transformed_5_ubtiip_ilzsmq.png',
       alt: 'In-house co-living kitchen compared with an outsourced PG caterer',
       title: 'Kitchen comparison',
     },
@@ -127,12 +127,12 @@ const coLivingVsPgDifference = {
     {
       type: 'list',
       items: [
-        'Curfew — traditional PGs often lock the gate; co-living runs on biometric access with no curfew',
-        'Food — a PG typically outsources to a caterer; good co-living runs its own kitchen',
-        'Maintenance — a PG landlord fixes things eventually; co-living operators run in-house staff on a response standard',
-        'Community — a PG gives you a room and a lock; co-living runs events and makes introductions',
-        'Agreements — PGs run on verbal understandings; co-living runs on written terms with clear deposit and notice policies',
-        'Standards — a PG is one owner\'s judgement; co-living applies a consistent standard across every property',
+        'Curfew - traditional PGs often lock the gate; co-living runs on biometric access with no curfew',
+        'Food - a PG typically outsources to a caterer; good co-living runs its own kitchen',
+        'Maintenance - a PG landlord fixes things eventually; co-living operators run in-house staff on a response standard',
+        'Community - a PG gives you a room and a lock; co-living runs events and makes introductions',
+        'Agreements - PGs run on verbal understandings; co-living runs on written terms with clear deposit and notice policies',
+        'Standards - a PG is one owner\'s judgement; co-living applies a consistent standard across every property',
       ],
     },
     {
@@ -193,8 +193,8 @@ const coLivingVsPgDifference = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785760929/output-image_2_ebpuz6.jpg',
-    imageAlt: 'Co-living vs PG comparison in Hyderabad — rooms, food and community',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002176/output-image_2_ebpuz6_ex1vsg.jpg',
+    imageAlt: 'Co-living vs PG comparison in Hyderabad - rooms, food and community',
   },
 };
 

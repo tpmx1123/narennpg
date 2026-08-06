@@ -17,7 +17,7 @@ export default function ComingSoon({ pageKey }) {
         canonical={canonical}
         robots="noindex, follow"
       />
-      <main className="flex-1 pt-10 sm:pt-12 pb-20 px-4 sm:px-6">
+      <main className="flex-1 pt-24 sm:pt-28 lg:pt-32 pb-20 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center py-16 sm:py-24">
           <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
             Coming Soon

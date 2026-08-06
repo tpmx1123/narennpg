@@ -4,7 +4,7 @@ export const CORPORATE_PAGE = {
   path: '/corporate-accommodation/',
   title: 'Corporate Accommodation in Hyderabad | Narenn Co-living & PG',
   description:
-    'Narenn offers safe, fully-managed corporate accommodation in Hyderabad for relocating employees, project teams & interns — flexible stays, hospitality-grade service, single point of billing.',
+    'Narenn offers safe, fully-managed corporate accommodation in Hyderabad for relocating employees, project teams & interns - flexible stays, hospitality-grade service, single point of billing.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage: LOCATION_HERO_IMAGE,
   keywords:
@@ -81,7 +81,7 @@ export const CORPORATE_HR = {
   items: [
     {
       title: 'Single point of billing',
-      body: 'One invoice, one point of contact — not a dozen individual leases to track and reconcile.',
+      body: 'One invoice, one point of contact - not a dozen individual leases to track and reconcile.',
     },
     {
       title: 'Bulk and group bookings',
@@ -102,20 +102,20 @@ export const CORPORATE_WHY = {
   eyebrow: 'Why Companies Choose Narenn',
   h2: 'Hospitality-Grade Discipline',
   h2Accent: 'Discipline',
-  body: "Narenn Living was founded by Narendranath Chaganla on the belief that accommodation should be run with hospitality-grade discipline, not treated as a bare rental transaction. That same standard — safety first, transparent pricing, responsive management — is what makes Narenn Living a dependable housing partner for companies, not just individual residents. When you place an employee with us, you're not handing them off to a landlord; you're handing them off to a team that treats them the way we'd want our own family treated.",
+  body: "Narenn Living was founded by Narendranath Chaganla on the belief that accommodation should be run with hospitality-grade discipline, not treated as a bare rental transaction. That same standard - safety first, transparent pricing, responsive management - is what makes Narenn Living a dependable housing partner for companies, not just individual residents. When you place an employee with us, you're not handing them off to a landlord; you're handing them off to a team that treats them the way we'd want our own family treated.",
 };
 
 export const CORPORATE_CTA = {
   eyebrow: 'Get Set Up',
   h2: 'Get Corporate Accommodation Set Up',
-  body: "Tell us your headcount, timeline, and city zone preference, and we'll put together a corporate accommodation plan — from a single relocating employee to a full project team — with transparent pricing and a dedicated point of contact.",
-  note: 'Narenn Living — managed housing your teams can actually move into.',
+  body: "Tell us your headcount, timeline, and city zone preference, and we'll put together a corporate accommodation plan - from a single relocating employee to a full project team - with transparent pricing and a dedicated point of contact.",
+  note: 'Narenn Living - managed housing your teams can actually move into.',
 };
 
 export const CORPORATE_FINAL_CTA = {
   title: 'Corporate Accommodation',
   titleAccent: 'Ready When You Are',
-  body: 'Share your headcount, timeline and preferred zone — we will prepare a clear plan for bulk or individual corporate stays.',
+  body: 'Share your headcount, timeline and preferred zone - we will prepare a clear plan for bulk or individual corporate stays.',
 };
 
 export const CORPORATE_FAQS = [

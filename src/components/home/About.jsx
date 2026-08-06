@@ -3,6 +3,9 @@ import { Phone } from 'lucide-react';
 import { HOME_SEO } from '../../data/seoHome';
 import IconSlideButton from '../ui/IconSlideButton';
 import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
+import { Cld } from '../../utils/cloudinary';
+
+const ABOUT_IMAGE = Cld.heroStill('v1786002162/M_P00337_1_xcyssw_hxkokm.jpg');
 
 export default function About() {
   const navigate = useNavigate();
@@ -13,10 +16,14 @@ export default function About() {
       <div className="hidden lg:flex lg:col-span-5 items-center justify-center self-center">
         <div className="relative w-full max-w-full sm:max-w-90 lg:max-w-100 h-70 sm:h-105 lg:h-115 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl group">
           <img 
-            src="https://res.cloudinary.com/dmaeijlc/image/upload/v1785919949/M_P00337_1_xcyssw.jpg" 
+            src={ABOUT_IMAGE}
             alt="Premium co-living building interior in Madhapur, Hyderabad — Narenn Living VIP Hills"
             title="Narenn Living co-living in Madhapur"
-            loading="lazy" className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+            width={900}
+            height={700}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-80 pointer-events-none" />
         </div>
@@ -35,10 +42,14 @@ export default function About() {
 
         <div className="lg:hidden relative w-full h-70 sm:h-105 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl mb-6">
           <img
-            src="https://res.cloudinary.com/dmaeijlc/image/upload/v1785919949/M_P00337_1_xcyssw.jpg"
+            src={ABOUT_IMAGE}
             alt="Premium co-living building interior in Madhapur, Hyderabad — Narenn Living VIP Hills"
             title="Narenn Living co-living in Madhapur"
-            loading="lazy" className="w-full h-full object-cover"
+            width={900}
+            height={700}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-80 pointer-events-none" />
         </div>

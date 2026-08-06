@@ -5,7 +5,7 @@ const nightShiftAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Working night shifts brings its own set of needs, and standard accommodation often does not meet them. If you work nights — common in IT support, BPO and global teams — finding the right night shift accommodation in Hyderabad matters enormously for your rest, health and sanity. Here is what to look for, and why a flexible, well-run co-living space is the ideal fit for shift workers.',
+          text: 'Working night shifts brings its own set of needs, and standard accommodation often does not meet them. If you work nights - common in IT support, BPO and global teams - finding the right night shift accommodation in Hyderabad matters enormously for your rest, health and sanity. Here is what to look for, and why a flexible, well-run co-living space is the ideal fit for shift workers.',
         },
       ],
     },
@@ -21,13 +21,13 @@ const nightShiftAccommodationHyderabad = {
         },
         { type: 'link', href: '/amenities/', text: 'no-curfew access' },
         {
-          text: ' that lets you come and go on your schedule — exactly what we provide across our properties.',
+          text: ' that lets you come and go on your schedule - exactly what we provide across our properties.',
         },
       ],
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763652/ChatGPT_Image_Aug_3_2026_06_57_01_PM_xdlrwm.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_57_01_PM_xdlrwm_aeke6v.png',
       alt: 'Biometric no-curfew entry for night shift residents in Madhapur',
       title: 'No-curfew biometric entry',
     },
@@ -49,7 +49,7 @@ const nightShiftAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763736/ChatGPT_Image_Aug_3_2026_06_58_44_PM_nv3dig.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_58_44_PM_nv3dig_xgu6cq.png',
       alt: 'AC room set up for daytime sleep for night shift workers in Hyderabad',
       title: 'Daytime sleep room',
     },
@@ -121,7 +121,7 @@ const nightShiftAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Narenn Living brings together no-curfew access, quiet private rooms, round-the-clock security, included meals and a central location — everything a night-shift worker in Hyderabad needs to rest well and live comfortably. Call 70759 85666 or ',
+          text: 'Narenn Living brings together no-curfew access, quiet private rooms, round-the-clock security, included meals and a central location - everything a night-shift worker in Hyderabad needs to rest well and live comfortably. Call 70759 85666 or ',
         },
         { type: 'link', href: '/contact-us/', text: 'book a visit' },
         {
@@ -136,12 +136,12 @@ const nightShiftAccommodationHyderabad = {
     {
       type: 'list',
       items: [
-        'No curfew — biometric access, always, because a gate rule cannot outvote your roster',
+        'No curfew - biometric access, always, because a gate rule cannot outvote your roster',
         'Roommate matching with other night-shift residents, so daytime sleep is not a daily battle',
         'Housekeeping that works around a sleeping resident instead of through them at 10 AM',
         'Kitchen timings that accommodate off-cycle meals rather than a fixed nine-to-nine window',
         'Blackout-friendly rooms and working AC for daytime sleep',
-        'Security staffed at the hours you actually come home — 2 AM, not 8 PM',
+        'Security staffed at the hours you actually come home - 2 AM, not 8 PM',
       ],
     },
     {
@@ -152,7 +152,7 @@ const nightShiftAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Because they were designed by people who work days. The gate closes at eleven. Housekeeping arrives at ten in the morning. The kitchen shuts before your shift ends. Your roommate\'s alarm goes off at seven, ninety minutes after you got to sleep. None of it is malicious — it just was not built for you.',
+          text: 'Because they were designed by people who work days. The gate closes at eleven. Housekeeping arrives at ten in the morning. The kitchen shuts before your shift ends. Your roommate\'s alarm goes off at seven, ninety minutes after you got to sleep. None of it is malicious - it just was not built for you.',
         },
       ],
     },
@@ -172,7 +172,7 @@ const nightShiftAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Biometric access with no curfew. Night-shift residents matched with each other wherever possible. Housekeeping scheduled around your sleep. Kitchen accommodation for off-cycle meal timings. AC in every room and 24x7 security at the hours you actually arrive.',
+          text: 'Biometric access with no curfew. Night-shift residents matched with each other wherever possible. Housekeeping scheduled around your sleep. Kitchen accommodation for off-cycle meal timings. AC in every room and 24/7 security at the hours you actually arrive.',
         },
       ],
     },
@@ -180,7 +180,7 @@ const nightShiftAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'And a five to ten minute commute to Hitech City, which matters most at 6 AM when you are exhausted and the last thing you can face is forty minutes in a cab. Call 70759 85666 and tell us your roster — we will show you the rooms that fit it.',
+          text: 'And a five to ten minute commute to Hitech City, which matters most at 6 AM when you are exhausted and the last thing you can face is forty minutes in a cab. Call 70759 85666 and tell us your roster - we will show you the rooms that fit it.',
         },
       ],
     },
@@ -191,12 +191,12 @@ const nightShiftAccommodationHyderabad = {
     {
       type: 'list',
       items: [
-        "Is there a curfew — and if the answer involves 'we make exceptions', treat that as a yes",
+        "Is there a curfew - and if the answer involves 'we make exceptions', treat that as a yes",
         'Will I be roomed with other night-shift residents, or with someone whose alarm goes off at 7 AM?',
         'When does housekeeping come, and will it be scheduled around my sleep?',
         'Can the kitchen handle off-cycle meal timings, or does it shut before my shift ends?',
         'Is security actually staffed at 2 AM, or just present at 8 PM?',
-        'How far is my office at 6 AM when I am exhausted — honestly, in minutes?',
+        'How far is my office at 6 AM when I am exhausted - honestly, in minutes?',
       ],
     },
   ],
@@ -217,8 +217,8 @@ const nightShiftAccommodationHyderabad = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763653/ChatGPT_Image_Aug_3_2026_06_56_54_PM_g0gvxl.png',
-    imageAlt: 'Night shift friendly PG in Hyderabad with 24x7 biometric access',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_56_54_PM_g0gvxl_yz5oui.png',
+    imageAlt: 'Night shift friendly PG in Hyderabad with 24/7 biometric access',
   },
 };
 

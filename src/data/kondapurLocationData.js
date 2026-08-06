@@ -19,21 +19,21 @@ export const KONDAPUR_IMAGES = {
   commute: {
     src: `${SITE_URL}/images/kondapur-commute-from-madhapur-vip-hills.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
     alt: 'Short commute from Narenn Living Madhapur to Kondapur and Botanical Garden Road',
     title: 'Kondapur commute',
   },
   room: {
     src: `${SITE_URL}/images/furnished-pg-room-near-kondapur-hyderabad.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-3-1200x750_ndmzod_ivw7jd.webp',
     alt: 'Furnished AC room at a PG near Kondapur, Hyderabad',
     title: 'Kondapur professional room',
   },
   landmarks: {
     src: `${SITE_URL}/images/botanical-garden-kondapur-near-narenn-living.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-6-1200x750_h0uzb7_vfb7fy.webp',
     alt: 'Botanical Garden Road and Kondapur landmarks near Narenn Living Madhapur',
     title: 'Kondapur landmarks',
   },

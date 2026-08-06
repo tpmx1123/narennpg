@@ -106,7 +106,7 @@ export default function Blog() {
       />
 
       <main className="flex-1 bg-[#FDFCF8] overflow-x-clip">
-        <section className="pt-10 sm:pt-12 lg:pt-16 pb-8 sm:pb-10 lg:pb-14">
+        <section className="pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-10 lg:pb-14">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 items-center">
               <div className="order-2 md:order-1 md:col-span-3 min-w-0">

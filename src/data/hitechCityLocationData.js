@@ -19,21 +19,21 @@ export const HITECH_CITY_IMAGES = {
   commute: {
     src: `${SITE_URL}/images/hitech-city-office-commute-from-pg-madhapur.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
     alt: 'Short commute from Narenn Living PG in Madhapur to Hitech City offices',
     title: 'Hitech City commute',
   },
   room: {
     src: `${SITE_URL}/images/it-professional-pg-room-near-hitech-city.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-3-1200x750_ndmzod_ivw7jd.webp',
     alt: "IT professional's furnished room at a PG near Hitech City, Hyderabad",
     title: 'IT professional room',
   },
   landmarks: {
     src: `${SITE_URL}/images/mindspace-cyber-towers-near-narenn-living.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-6-1200x750_h0uzb7_vfb7fy.webp',
     alt: 'Mindspace and Cyber Towers offices near Narenn Living co-living in Madhapur',
     title: 'Mindspace and Cyber Towers',
   },

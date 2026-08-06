@@ -5,7 +5,7 @@ const costOfLivingHyderabadGuide = {
       type: 'paragraph',
       parts: [
         {
-          text: "Hyderabad is one of India's most livable and affordable major cities, but knowing your likely expenses upfront helps you plan and avoid surprises. This practical guide to the cost of living in Hyderabad breaks down the main monthly costs for students and working professionals — from accommodation and food to transport and lifestyle — and shows where the smart savings are.",
+          text: "Hyderabad is one of India's most livable and affordable major cities, but knowing your likely expenses upfront helps you plan and avoid surprises. This practical guide to the cost of living in Hyderabad breaks down the main monthly costs for students and working professionals - from accommodation and food to transport and lifestyle - and shows where the smart savings are.",
         },
       ],
     },
@@ -19,7 +19,7 @@ const costOfLivingHyderabadGuide = {
     },
     {
       type: 'h2',
-      text: 'Accommodation — Your Biggest Expense',
+      text: 'Accommodation - Your Biggest Expense',
     },
     {
       type: 'paragraph',
@@ -39,8 +39,8 @@ const costOfLivingHyderabadGuide = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762693/ChatGPT_Image_Aug_3_2026_06_40_54_PM_ludnuj.png',
-      alt: 'Chart of monthly expenses in Hyderabad — rent, food, transport and lifestyle',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002149/ChatGPT_Image_Aug_3_2026_06_40_54_PM_ludnuj_fylq5z.png',
+      alt: 'Chart of monthly expenses in Hyderabad - rent, food, transport and lifestyle',
       title: 'Monthly expense breakdown',
     },
     {
@@ -55,7 +55,7 @@ const costOfLivingHyderabadGuide = {
         },
         { type: 'link', href: '/food/', text: 'meals included' },
         {
-          text: ' makes a real difference — with three home-style meals a day from our in-house kitchen, food is already covered in your co-living fee, saving both money and hassle.',
+          text: ' makes a real difference - with three home-style meals a day from our in-house kitchen, food is already covered in your co-living fee, saving both money and hassle.',
         },
       ],
     },
@@ -67,7 +67,7 @@ const costOfLivingHyderabadGuide = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Hyderabad offers affordable transport through its metro, buses, autos and cab or bike rentals. Your transport cost depends heavily on how far you live from work. Living centrally in an area like Madhapur, close to Hitech City and Gachibowli, keeps commutes — and costs — low. A short commute quietly saves money every single day.',
+          text: 'Hyderabad offers affordable transport through its metro, buses, autos and cab or bike rentals. Your transport cost depends heavily on how far you live from work. Living centrally in an area like Madhapur, close to Hitech City and Gachibowli, keeps commutes - and costs - low. A short commute quietly saves money every single day.',
         },
       ],
     },
@@ -93,7 +93,7 @@ const costOfLivingHyderabadGuide = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Budget for the things that make life enjoyable — the occasional meal out, movies, gym, shopping and weekend outings. Hyderabad offers plenty to do at every price point. Setting aside a sensible amount for lifestyle, plus a little for savings, keeps your finances healthy and your life balanced.',
+          text: 'Budget for the things that make life enjoyable - the occasional meal out, movies, gym, shopping and weekend outings. Hyderabad offers plenty to do at every price point. Setting aside a sensible amount for lifestyle, plus a little for savings, keeps your finances healthy and your life balanced.',
         },
       ],
     },
@@ -121,7 +121,7 @@ const costOfLivingHyderabadGuide = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762693/ChatGPT_Image_Aug_3_2026_06_37_03_PM_pfwayt.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002148/ChatGPT_Image_Aug_3_2026_06_37_03_PM_pfwayt_dnbexe.png',
       alt: 'Inclusive co-living rent covering room, meals and WiFi in Hyderabad',
       title: 'Inclusive monthly cost',
     },
@@ -148,12 +148,12 @@ const costOfLivingHyderabadGuide = {
     {
       type: 'list',
       items: [
-        'Accommodation — the largest line by far, and the one most worth optimising for location rather than price',
-        'Food — an enormous variable; cooking, ordering in daily and an inclusive PG plan produce wildly different totals',
-        'Transport — small if you live near the office, brutal if you do not',
-        'Utilities and internet — modest, but only if they are not duplicated across a flat you barely use',
-        'Lifestyle — gym, weekends, subscriptions, the occasional trip',
-        'Invisible costs — deposits locked up, furniture you cannot resell, brokerage you never see again',
+        'Accommodation - the largest line by far, and the one most worth optimising for location rather than price',
+        'Food - an enormous variable; cooking, ordering in daily and an inclusive PG plan produce wildly different totals',
+        'Transport - small if you live near the office, brutal if you do not',
+        'Utilities and internet - modest, but only if they are not duplicated across a flat you barely use',
+        'Lifestyle - gym, weekends, subscriptions, the occasional trip',
+        'Invisible costs - deposits locked up, furniture you cannot resell, brokerage you never see again',
       ],
     },
     {
@@ -164,7 +164,7 @@ const costOfLivingHyderabadGuide = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Almost everyone optimises the rent number and ignores the two lines attached to it. Move somewhere cheaper and further out, and transport plus ordered-in food quietly reclaim the savings within a quarter — with the commute charged on top in hours.',
+          text: 'Almost everyone optimises the rent number and ignores the two lines attached to it. Move somewhere cheaper and further out, and transport plus ordered-in food quietly reclaim the savings within a quarter - with the commute charged on top in hours.',
         },
       ],
     },
@@ -192,7 +192,7 @@ const costOfLivingHyderabadGuide = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Keep your costs predictable and your options open. Then spend the difference on the things that actually compound — skills, health and people. Call 70759 85666 if you want us to run the honest arithmetic with you rather than sell you a number.',
+          text: 'Keep your costs predictable and your options open. Then spend the difference on the things that actually compound - skills, health and people. Call 70759 85666 if you want us to run the honest arithmetic with you rather than sell you a number.',
         },
       ],
     },
@@ -214,8 +214,8 @@ const costOfLivingHyderabadGuide = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762695/output-image_jb9yac.png',
-    imageAlt: 'Cost of living in Hyderabad — monthly budget breakdown for professionals',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002177/output-image_jb9yac_thefic.png',
+    imageAlt: 'Cost of living in Hyderabad - monthly budget breakdown for professionals',
   },
 };
 

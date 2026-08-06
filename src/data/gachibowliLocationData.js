@@ -19,21 +19,21 @@ export const GACHIBOWLI_IMAGES = {
   commute: {
     src: `${SITE_URL}/images/gachibowli-financial-district-commute-from-madhapur.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
     alt: 'Commute route from Madhapur to Gachibowli and the Financial District',
     title: 'Gachibowli commute',
   },
   room: {
     src: `${SITE_URL}/images/furnished-pg-room-for-gachibowli-professionals.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-3-1200x750_ndmzod.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-3-1200x750_ndmzod_ivw7jd.webp',
     alt: 'Furnished PG room in Madhapur for professionals working in Gachibowli',
     title: 'Gachibowli professional room',
   },
   landmarks: {
     src: `${SITE_URL}/images/nanakramguda-financial-district-near-narenn-living.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121459/Narenn-Elite-6-1200x750_h0uzb7.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-6-1200x750_h0uzb7_vfb7fy.webp',
     alt: 'Nanakramguda and Financial District offices near Narenn Living Madhapur',
     title: 'Financial District',
   },
@@ -44,7 +44,7 @@ export const GACHIBOWLI_HERO = {
   h1: 'PG near Gachibowli',
   h1Accent: 'Comfortable Co-Living, Short Commute',
   lead:
-    'A fully managed home in VIP Hills, Madhapur - about 15–20 minutes from Gachibowli and the Financial District.',
+    'A fully managed home in VIP Hills, Madhapur - about 15-20 minutes from Gachibowli and the Financial District.',
 };
 
 export const GACHIBOWLI_INTRO = [

@@ -37,12 +37,17 @@ export default function Amenities() {
           {AMENITIES.map((am) => (
             <article
               key={am.title}
-              className="group relative h-40 sm:h-40 lg:h-44 overflow-hidden rounded-xl sm:rounded-2xl"
+              className="group relative h-40 sm:h-40 lg:h-44 overflow-hidden rounded-xl sm:rounded-2xl bg-brand-charcoal/10"
             >
               <img
                 src={am.image}
                 alt={am.title}
-                loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                width={560}
+                height={360}
+                sizes="(min-width: 1024px) 25vw, 50vw"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-brand-charcoal/55 group-hover:bg-brand-charcoal/45 transition-colors duration-300" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-2 sm:px-4">

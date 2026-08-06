@@ -1,162 +1,185 @@
+import { Cld, cldImg, cldVideo, cldVideoPoster } from '../utils/cloudinary';
+
 export const AMENITIES = [
   {
     title: 'Gourmet Dining',
     description: 'Chef-prepared hygienic meals, thrice daily.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785924684/M_P09905_1_b5nsjf.jpg',
+    image: Cld.tile('v1786002164/M_P09905_1_b5nsjf_ndrpm0.jpg'),
   },
   {
     title: 'Gigabit WiFi',
     description: 'Enterprise-grade seamless connectivity.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925677/M_P00138_1_1_bhlykz.jpg',
+    image: Cld.tile('v1786002158/M_P00138_1_1_bhlykz_qqxinr.jpg'),
   },
   {
     title: 'Housekeeping',
     description: 'Daily professional cleaning.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925678/M_P00093_1_vaq4bx.jpg',
+    image: Cld.tile('v1786002158/M_P00093_1_vaq4bx_bmn9nv.jpg'),
   },
   {
     title: 'Fitness Studio',
     description: 'Fully equipped modern gym on premise.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785935055/M_P00049_1_cemcnv.jpg',
+    image: Cld.tile('v1786002157/M_P00049_1_cemcnv_e6dncp.jpg'),
   },
   {
     title: '24/7 Power Backup',
     description: 'Uninterrupted electricity round the clock.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925775/ChatGPT_Image_Aug_5_2026_03_59_02_PM_l6bwrb.png',
+    image: Cld.tile('v1786002152/ChatGPT_Image_Aug_5_2026_03_59_02_PM_l6bwrb_m4h8di.png'),
   },
   {
     title: 'Rooftop Terrace',
     description: 'Breathtaking city views for evening relaxation.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785934758/M_P00038_1_reuqwj.jpg',
+    image: Cld.tile('v1786002157/M_P00038_1_reuqwj_ckjppq.jpg'),
   },
   {
     title: 'Two-Wheeler Parking',
     description: 'Secure on-premise parking for your two-wheelers.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785935045/M_P00295_2_1_p3nt4i.jpg',
+    image: Cld.tile('v1786002160/M_P00295_2_1_p3nt4i_yfxy25.jpg'),
   },
   {
     title: 'CCTV',
     description: '24/7 surveillance with live monitoring on site.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925676/M_P09901_1_zsv8ir.jpg',
+    image: Cld.tile('v1786002164/M_P09901_1_zsv8ir_wiyeej.jpg'),
   },
   {
     title: 'Lift Service',
     description: 'Convenient elevator access across floors.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925780/M_P00360_1_zvm9re.jpg',
+    image: Cld.tile('v1786002163/M_P00360_1_zvm9re_vffkqn.jpg'),
   },
   {
     title: 'Carrom Board',
     description: 'Indoor recreation for downtime with friends.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785935314/M_P00300_1_erklci.jpg',
+    image: Cld.tile('v1786002160/M_P00300_1_erklci_st4e9p.jpg'),
   },
   {
     title: 'Table Tennis',
     description: 'Play TT in our common recreation space.',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785935303/M_P00301_1_vbhlsh.jpg',
+    image: Cld.tile('v1786002161/M_P00301_1_vbhlsh_k2i5so.jpg'),
   },
   {
     title: 'Community Events',
     description: 'Curated networking and lifestyle events.',
-    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=560&h=360&q=70',
   },
 ];
 
-export const BRAND_LOGO =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784012843/narennlogo_opx4st.png';
+export const BRAND_LOGO = Cld.logo('v1786002176/narennlogo_opx4st_h4xfzh.png');
+
+const PROPERTY_VIDEOS = {
+  elite: 'v1786013199/Narenn_Elite_Website_1_1_jkfugw.mp4',
+  crown: 'v1786013198/Narenn_Crown_Website_1_2_jfmrs4.mp4',
+  pinnacle: 'v1786013199/Narenn_Pinacle_Website_1_1_dn44ql.mp4',
+  supreme: 'v1786013199/Narenn_Supreme_Website_1_1_rxi7go.mp4',
+};
 
 export const HERO_SLIDES = [
   {
     id: 1,
-    property: "Narenn Elite",
-    badge: "NARENN ELITE",
-    title: "Narenn Elite",
-    subtitle: "Minimalist Elegance",
-    livingType: "Co-Living",
-    description: "Premium co-living crafted for focus, privacy, and high-productivity living in the heart of Madhapur.",
-    videoUrl: "https://res.cloudinary.com/dmaeijlc/video/upload/v1784010621/01_NARENN_PINNACLE_ttyhib.mp4",
-    image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=400&q=80",
+    property: 'Narenn Elite',
+    badge: 'NARENN ELITE',
+    title: 'Narenn Elite',
+    subtitle: 'Minimalist Elegance',
+    livingType: 'Co-Living',
+    description:
+      'Premium co-living crafted for focus, privacy, and high-productivity living in the heart of Madhapur.',
+    videoUrl: Cld.cardVideo(PROPERTY_VIDEOS.elite),
+    image: Cld.cardPoster(PROPERTY_VIDEOS.elite),
   },
   {
     id: 2,
     property: "Narenn's Crown",
     badge: "NARENN'S CROWN",
     title: "Narenn's Crown",
-    subtitle: "Refined Comfort",
-    livingType: "For Girls",
-    description: "A signature safe space curated exclusively for girls - elegant residences with warm community spaces and everyday luxury.",
-    videoUrl: "https://res.cloudinary.com/dmaeijlc/video/upload/v1784010621/01_NARENN_PINNACLE_ttyhib.mp4",
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=400&q=80",
+    subtitle: 'Refined Comfort',
+    livingType: 'For Girls',
+    description:
+      'A signature safe space curated exclusively for girls - elegant residences with warm community spaces and everyday luxury.',
+    videoUrl: Cld.cardVideo(PROPERTY_VIDEOS.crown),
+    image: Cld.cardPoster(PROPERTY_VIDEOS.crown),
   },
   {
     id: 3,
-    property: "Narenn Pinnacle",
-    badge: "NARENN PINNACLE",
-    title: "Narenn Pinnacle",
-    subtitle: "Upscale Executive",
-    livingType: "Co-Living",
-    description: "Modern upscale co-living designed for ambitious professionals who want comfort without compromise.",
-    videoUrl: "https://res.cloudinary.com/dmaeijlc/video/upload/v1784010621/01_NARENN_PINNACLE_ttyhib.mp4",
-    image: "https://res.cloudinary.com/dmaeijlc/video/upload/so_1,w_400,h_250,c_fill,q_auto,f_jpg/v1784010621/01_NARENN_PINNACLE_ttyhib.jpg",
+    property: 'Narenn Pinnacle',
+    badge: 'NARENN PINNACLE',
+    title: 'Narenn Pinnacle',
+    subtitle: 'Upscale Executive',
+    livingType: 'Co-Living',
+    description:
+      'Modern upscale co-living designed for ambitious professionals who want comfort without compromise.',
+    videoUrl: Cld.cardVideo(PROPERTY_VIDEOS.pinnacle),
+    image: Cld.cardPoster(PROPERTY_VIDEOS.pinnacle),
   },
   {
     id: 4,
     property: "Narenn's Supreme",
     badge: "NARENN'S SUPREME",
     title: "Narenn's Supreme",
-    subtitle: "Vibrant Living",
-    livingType: "Co-Living",
-    description: "Spacious co-living residences with high-energy lounges, networking hubs, and Gen-Z energy.",
-    videoUrl: "https://res.cloudinary.com/dmaeijlc/video/upload/v1784010621/01_NARENN_PINNACLE_ttyhib.mp4",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-  }
+    subtitle: 'Vibrant Living',
+    livingType: 'Co-Living',
+    description:
+      'Spacious co-living residences with high-energy lounges, networking hubs, and Gen-Z energy.',
+    videoUrl: Cld.cardVideo(PROPERTY_VIDEOS.supreme),
+    image: Cld.cardPoster(PROPERTY_VIDEOS.supreme),
+  },
 ];
 
 export const RESIDENCES = [
   {
-    name: "Narenn Elite",
-    tagline: "Minimalist Elegance",
-    livingType: "Co-Living",
-    description: "Premium co-living designed for focused living, privacy, and high-productivity workflows.",
-    features: ["Co-Living", "Premium Finish", "Private Balconies", "Near Raheja Mindspace"],
-    image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
-    mapUrl: "https://maps.app.goo.gl/DqPwF8JMTihVhMX28",
+    name: 'Narenn Elite',
+    tagline: 'Minimalist Elegance',
+    livingType: 'Co-Living',
+    description:
+      'Premium co-living designed for focused living, privacy, and high-productivity workflows.',
+    features: ['Co-Living', 'Premium Finish', 'Private Balconies', 'Near Raheja Mindspace'],
+    image: cldVideoPoster(PROPERTY_VIDEOS.elite, { w: 640, h: 800 }),
+    mapUrl: 'https://maps.app.goo.gl/DqPwF8JMTihVhMX28',
     rating: 4.9,
-    reviews: 124
+    reviews: 124,
   },
   {
     name: "Narenn's Crown",
-    tagline: "Refined Comfort",
-    livingType: "For Girls",
-    description: "A signature safe space curated exclusively for girls - modern comfort with warm social settings.",
-    features: ["For Girls", "Spacious Lounge", "Dedicated Dining Room", "Walk to Metro"],
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
-    mapUrl: "https://maps.app.goo.gl/MBMx1EEn6psPjwUC8",
+    tagline: 'Refined Comfort',
+    livingType: 'For Girls',
+    description:
+      'A signature safe space curated exclusively for girls - modern comfort with warm social settings.',
+    features: ['For Girls', 'Spacious Lounge', 'Dedicated Dining Room', 'Walk to Metro'],
+    image: cldVideoPoster(PROPERTY_VIDEOS.crown, { w: 640, h: 800 }),
+    mapUrl: 'https://maps.app.goo.gl/MBMx1EEn6psPjwUC8',
     rating: 4.8,
-    reviews: 98
+    reviews: 98,
   },
   {
-    name: "Narenn Pinnacle",
-    tagline: "Upscale Executive",
-    livingType: "Co-Living",
-    description: "Modern upscale co-living crafted for ambitious corporate leaders and tech professionals.",
-    features: ["Co-Living", "Rooftop Cafe", "Mini-Gym inside", "Quiet Study Zone"],
-    image: "https://res.cloudinary.com/dmaeijlc/video/upload/so_1,w_800,h_500,c_fill,q_auto,f_jpg/v1784010621/01_NARENN_PINNACLE_ttyhib.jpg",
-    mapUrl: "https://maps.app.goo.gl/VcRoEHR2fWrfy3SL7",
+    name: 'Narenn Pinnacle',
+    tagline: 'Upscale Executive',
+    livingType: 'Co-Living',
+    description:
+      'Modern upscale co-living crafted for ambitious corporate leaders and tech professionals.',
+    features: ['Co-Living', 'Rooftop Cafe', 'Mini-Gym inside', 'Quiet Study Zone'],
+    image: cldVideoPoster(PROPERTY_VIDEOS.pinnacle, { w: 640, h: 800 }),
+    mapUrl: 'https://maps.app.goo.gl/VcRoEHR2fWrfy3SL7',
     rating: 4.9,
-    reviews: 87
+    reviews: 87,
   },
   {
     name: "Narenn's Supreme",
-    tagline: "Vibrant Living",
-    livingType: "Co-Living",
-    description: "Spacious co-living with high-energy environments, network hubs, and community living.",
-    features: ["Co-Living", "Curated Library", "Weekly Networking", "Silicon Valley Area"],
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-    mapUrl: "https://maps.app.goo.gl/L4ztDQmid2G76yMt6",
+    tagline: 'Vibrant Living',
+    livingType: 'Co-Living',
+    description:
+      'Spacious co-living with high-energy environments, network hubs, and community living.',
+    features: ['Co-Living', 'Curated Library', 'Weekly Networking', 'Silicon Valley Area'],
+    image: cldVideoPoster(PROPERTY_VIDEOS.supreme, { w: 640, h: 800 }),
+    mapUrl: 'https://maps.app.goo.gl/L4ztDQmid2G76yMt6',
     rating: 4.7,
-    reviews: 154
-  }
+    reviews: 154,
+  },
 ];
+
+export const HOME_HERO_VIDEO = Cld.heroVideo('v1786002186/Website_NArenn_ep62xg_lqcw1l.mp4');
+export const HOME_HERO_POSTER = cldVideoPoster('v1786002186/Website_NArenn_ep62xg_lqcw1l.mp4', {
+  w: 1280,
+  h: 720,
+  so: 0,
+});
 
 export const TESTIMONIALS = [
   {
@@ -188,3 +211,6 @@ export const TESTIMONIALS = [
       "One of the best and safest PG for women — 24/7 security with CCTV, delicious hygienic food, good ambiance, well-furnished rooms, and a cool balcony view. Housekeeping is excellent, and the terrace garden with gym and carrom is awesome.",
   },
 ];
+
+// re-export helpers for home components that build URLs inline
+export { cldImg, cldVideo };

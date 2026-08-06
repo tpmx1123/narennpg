@@ -16,7 +16,7 @@ export const MADHAPUR_IMAGES = {
     title: 'PG in Madhapur',
   },
   room: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00016_1_irxbq9_avrkd5.jpg',
     alt: 'Furnished AC room interior at a PG in Madhapur, Hyderabad',
     title: 'Madhapur PG room',
   },
@@ -100,14 +100,14 @@ export const MADHAPUR_MINUTES = {
     },
     {
       place: 'Kondapur',
-      time: 'around 8–10 minutes',
+      time: 'around 8-10 minutes',
       short: '8m',
       detail: 'Medical hubs & shopping centers',
       to: '/locations/kondapur/',
     },
     {
       place: 'Gachibowli & Financial District',
-      time: 'roughly 15–20 minutes',
+      time: 'roughly 15-20 minutes',
       short: '15m',
       detail: 'Financial District access',
       to: '/locations/gachibowli/',

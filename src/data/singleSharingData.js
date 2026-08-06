@@ -42,7 +42,7 @@ export const SINGLE_SHARING_PAGE = {
   description:
     'Private single occupancy AC rooms in Madhapur near Hitech City. Meals, WiFi, housekeeping & security included. Ideal for working professionals. Book a visit.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
+  ogImage: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00016_1_irxbq9_avrkd5.jpg',
 };
 
 export const SINGLE_SHARING_HERO = {
@@ -61,22 +61,22 @@ export const SINGLE_SHARING_BOOKING = {
 
 export const SINGLE_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00016_1_irxbq9_avrkd5.jpg',
     alt: 'Bed area in a single sharing room',
     title: 'Single sharing room - bed',
   },
   bathroom: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919949/M_P00337_1_xcyssw.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002162/M_P00337_1_xcyssw_hxkokm.jpg',
     alt: 'Alternate view of the room in a single sharing PG',
     title: 'Single sharing room - alternate view',
   },
   wardrobe: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920310/M_P00128_1_zkwdpx.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00128_1_zkwdpx_xehzi5.jpg',
     alt: 'Wardrobe and storage area in a single sharing room',
     title: 'Single sharing room - wardrobe',
   },
   workDesk: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00012_1_t5x15w.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002157/M_P00012_1_t5x15w_ipcg1j.jpg',
     alt: 'Room interior detail in a single sharing room',
     title: 'Single sharing room - interior',
   },

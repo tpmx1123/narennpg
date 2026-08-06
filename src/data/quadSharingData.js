@@ -27,7 +27,7 @@ export const QUAD_SHARING_PAGE = {
   description:
     'Budget-friendly 4-sharing AC rooms in Madhapur near Hitech City. Meals, WiFi & housekeeping included. Most economical co-living for students. Book a visit.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922348/M_P00064_1_xrjutj.jpg',
+  ogImage: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00064_1_xrjutj_sqqtbt.jpg',
 };
 
 export const QUAD_SHARING_HERO = {
@@ -56,22 +56,22 @@ export const QUAD_SHARING_BOOKING = {
 
 export const QUAD_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922348/M_P00064_1_xrjutj.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00064_1_xrjutj_sqqtbt.jpg',
     alt: 'Hero image of a four sharing room',
     title: 'Four sharing room - hero',
   },
   wardrobes: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00355_1_t0hd6k.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002162/M_P00355_1_t0hd6k_wlz0ax.jpg',
     alt: 'Storage/wardrobe area in a four sharing room',
     title: 'Four sharing room - storage',
   },
   students: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920680/M_P00072_1_gkmydq.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00072_1_gkmydq_xevg54.jpg',
     alt: 'Room interior view in a four sharing room',
     title: 'Four sharing room - interior view',
   },
   studySpace: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922347/M_P00060_1_mwxgvh.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00060_1_mwxgvh_rcpygn.jpg',
     alt: 'Room interior detail in a four sharing room',
     title: 'Four sharing room - interior',
   },

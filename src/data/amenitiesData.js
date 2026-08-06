@@ -22,57 +22,57 @@ export const AMENITIES_INTRO = [
 
 export const AMENITIES_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926109/M_P00304_2_becavf.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002162/M_P00304_2_becavf_sigkkj.jpg',
     alt: 'PG amenities in Madhapur including AC rooms, WiFi, housekeeping and meals',
     title: 'PG amenities in Madhapur',
   },
   rooms: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00355_1_t0hd6k.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002162/M_P00355_1_t0hd6k_wlz0ax.jpg',
     alt: 'Comfortable fully furnished PG room with wardrobe, TV and mini fridge in Madhapur',
     title: 'Fully furnished rooms',
   },
   meals: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926297/M_P09866_1_anlo2u.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002163/M_P09866_1_anlo2u_ks2lsj.jpg',
     alt: 'Three home-style meals a day from the Narenn Living in-house kitchen in Madhapur',
     title: 'Three home-style meals a day',
   },
   housekeeping: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925678/M_P00093_1_vaq4bx.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00093_1_vaq4bx_bmn9nv.jpg',
     alt: 'Daily housekeeping service in a PG room in Madhapur, Hyderabad',
     title: 'Daily housekeeping',
   },
   wifi: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925677/M_P00138_1_1_bhlykz.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00138_1_1_bhlykz_qqxinr.jpg',
     alt: 'High-speed fibre WiFi and power backup at Narenn Living co-living in Madhapur',
     title: 'WiFi and power backup',
   },
   security: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785910572/M_P09966_1_e3b8lr.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002168/M_P09966_1_e3b8lr_slouv8.jpg',
     alt: 'On-site Narenn Living security and facility staff in Madhapur',
     title: 'Safety and security',
   },
   community: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785851628/M_P00046_1_qstcck.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002157/M_P00046_1_qstcck_thoh1c.jpg',
     alt: 'Community terrace seating at Narenn Living co-living in Madhapur',
     title: 'Community spaces and terrace',
   },
   dining: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785926297/M_P09866_1_anlo2u.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002163/M_P09866_1_anlo2u_ks2lsj.jpg',
     alt: 'Dining hall and common lounge area at Narenn Living co-living in Hyderabad',
     title: 'Dining hall and lounge',
   },
   lounge: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785909674/M_P00304_1_cgpnd2.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002161/M_P00304_1_cgpnd2_bblyer.jpg',
     alt: 'Social lounge and common area at Narenn Living co-living in Madhapur',
     title: 'The Social Lounge',
   },
   rooftop: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785851628/M_P00046_1_qstcck.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002157/M_P00046_1_qstcck_thoh1c.jpg',
     alt: 'Rooftop terrace with city views at Narenn Living co-living in Hyderabad',
     title: 'Rooftop Skydeck',
   },
   utilities: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785925844/M_P00312_1_zealpq.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002161/M_P00312_1_zealpq_bn9kjt.jpg',
     alt: 'RO drinking water, hot water and lift access at a PG in Madhapur',
     title: 'Core utilities',
   },

@@ -1,5 +1,6 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
+import { HOME_HERO_VIDEO, HOME_HERO_POSTER } from '../../data/homeData';
 
 const controlBtnClass =
   'rounded-full border border-brand-cream/35 bg-brand-cream/15 text-brand-cream hover:bg-brand-gold hover:border-brand-gold backdrop-blur-md flex items-center justify-center shadow-lg transition-all duration-300';
@@ -7,6 +8,19 @@ const controlBtnClass =
 export default function Hero() {
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return undefined;
+
+    const tryPlay = () => {
+      video.play().catch(() => {});
+    };
+
+    tryPlay();
+    video.addEventListener('loadeddata', tryPlay);
+    return () => video.removeEventListener('loadeddata', tryPlay);
+  }, []);
 
   const toggleMute = () => {
     setIsMuted((muted) => {
@@ -26,12 +40,11 @@ export default function Hero() {
         muted={isMuted}
         loop
         playsInline
+        preload="metadata"
+        poster={HOME_HERO_POSTER}
         className="absolute inset-0 w-full h-full object-cover object-[55%_center] sm:object-center"
       >
-        <source
-          src="https://res.cloudinary.com/dmaeijlc/video/upload/v1785318741/Website_NArenn_ep62xg.mp4"
-          type="video/mp4"
-        />
+        <source src={HOME_HERO_VIDEO} type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/25 via-brand-charcoal/5 to-brand-charcoal/10 pointer-events-none z-1" />

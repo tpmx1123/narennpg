@@ -5,7 +5,7 @@ const questionsToAskBeforeBookingPg = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Booking a PG without asking the right questions is how people end up unhappy three weeks later. A little due diligence upfront saves a lot of regret. Here are the essential questions to ask before booking a PG in Hyderabad — cover these on your visit, and you will know exactly what you are signing up for. A good, transparent operator will answer every one of them openly.',
+          text: 'Booking a PG without asking the right questions is how people end up unhappy three weeks later. A little due diligence upfront saves a lot of regret. Here are the essential questions to ask before booking a PG in Hyderabad - cover these on your visit, and you will know exactly what you are signing up for. A good, transparent operator will answer every one of them openly.',
         },
       ],
     },
@@ -97,13 +97,13 @@ const questionsToAskBeforeBookingPg = {
     },
     {
       type: 'h2',
-      text: 'Questions About Money — The Critical Ones',
+      text: 'Questions About Money - The Critical Ones',
     },
     {
       type: 'paragraph',
       parts: [
         {
-          text: 'This is where unpleasant surprises hide, so be thorough. Ask for the total monthly fee and exactly what it includes, whether there are any charges beyond it, how much the security deposit is and under what conditions it is refunded, and what the notice period is if you decide to leave. A trustworthy operator practises complete transparency with no hidden charges — that is the standard you should expect and the standard we hold ourselves to. Explore our ',
+          text: 'This is where unpleasant surprises hide, so be thorough. Ask for the total monthly fee and exactly what it includes, whether there are any charges beyond it, how much the security deposit is and under what conditions it is refunded, and what the notice period is if you decide to leave. A trustworthy operator practises complete transparency with no hidden charges - that is the standard you should expect and the standard we hold ourselves to. Explore our ',
         },
         { type: 'link', href: '/amenities/', text: 'amenities' },
         { text: ' to see everything bundled into one clear fee.' },
@@ -111,7 +111,7 @@ const questionsToAskBeforeBookingPg = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762954/ChatGPT_Image_Aug_3_2026_06_43_59_PM_kcqwgw.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_43_59_PM_kcqwgw_dshih9.png',
       alt: 'Written PG agreement showing deposit and notice period terms in Hyderabad',
       title: 'Written agreement',
     },
@@ -130,7 +130,7 @@ const questionsToAskBeforeBookingPg = {
     {
       type: 'list',
       items: [
-        'What security measures are in place — CCTV, controlled access, night staff?',
+        'What security measures are in place - CCTV, controlled access, night staff?',
         'Is there on-site management, and how quickly do they respond?',
         'How are maintenance issues and complaints handled?',
       ],
@@ -141,7 +141,7 @@ const questionsToAskBeforeBookingPg = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762953/ChatGPT_Image_Aug_3_2026_06_45_36_PM_ubf8sb.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002147/ChatGPT_Image_Aug_3_2026_06_45_36_PM_ubf8sb_xwzz7l.png',
       alt: 'Prospective resident inspecting a PG room during a site visit in Hyderabad',
       title: 'PG site visit',
     },
@@ -185,7 +185,7 @@ const questionsToAskBeforeBookingPg = {
         'What is the notice period, and what happens if I leave early?',
         'Is there a curfew, and who decides the exception?',
         'How long did the last maintenance request in this building take to close?',
-        'Is the WiFi good at 9 PM when the building is full — or only at 3 PM when you demo it?',
+        'Is the WiFi good at 9 PM when the building is full - or only at 3 PM when you demo it?',
         'Can I speak to a resident who has lived here for over a year, without staff present?',
       ],
     },
@@ -225,7 +225,7 @@ const questionsToAskBeforeBookingPg = {
       type: 'paragraph',
       parts: [
         {
-          text: 'At Narenn Living, our kitchen is in-house and open — walk in and look at it. Call 70759 85666 and come at a mealtime, unannounced if you prefer. We would genuinely rather you did.',
+          text: 'At Narenn Living, our kitchen is in-house and open - walk in and look at it. Call 70759 85666 and come at a mealtime, unannounced if you prefer. We would genuinely rather you did.',
         },
       ],
     },
@@ -234,7 +234,7 @@ const questionsToAskBeforeBookingPg = {
     {
       question: 'What should I ask before booking a PG?',
       answer:
-        'Ask about meals and whether food is cooked in-house, what the room and fee include, hidden charges, deposit and refund terms, curfew and guest rules, and safety and management arrangements — then visit in person.',
+        'Ask about meals and whether food is cooked in-house, what the room and fee include, hidden charges, deposit and refund terms, curfew and guest rules, and safety and management arrangements - then visit in person.',
     },
     {
       question: 'How do I avoid hidden charges in a PG?',
@@ -247,8 +247,8 @@ const questionsToAskBeforeBookingPg = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762954/ChatGPT_Image_Aug_3_2026_06_42_48_PM_xl7yv3.png',
-    imageAlt: 'Questions to ask before booking a PG in Hyderabad — site visit checklist',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002149/ChatGPT_Image_Aug_3_2026_06_42_48_PM_xl7yv3_kehjsb.png',
+    imageAlt: 'Questions to ask before booking a PG in Hyderabad - site visit checklist',
   },
 };
 

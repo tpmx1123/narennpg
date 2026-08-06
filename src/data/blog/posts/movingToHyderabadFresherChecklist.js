@@ -5,7 +5,7 @@ const movingToHyderabadFresherChecklist = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Starting your first job in a new city is exciting — and a little overwhelming. This moving to Hyderabad checklist is built for freshers who want to arrive prepared and settle in fast. From choosing where to live to what to pack and how to budget, here is everything you need to make your move smooth and stress-free.',
+          text: 'Starting your first job in a new city is exciting - and a little overwhelming. This moving to Hyderabad checklist is built for freshers who want to arrive prepared and settle in fast. From choosing where to live to what to pack and how to budget, here is everything you need to make your move smooth and stress-free.',
         },
       ],
     },
@@ -55,7 +55,7 @@ const movingToHyderabadFresherChecklist = {
       type: 'list',
       items: [
         "Clothes suited to Hyderabad's warm climate, plus a few formals for work",
-        'Important documents — ID, offer letter, certificates and copies',
+        'Important documents - ID, offer letter, certificates and copies',
         'Laptop, phone and chargers',
         'Basic toiletries and any personal medication',
         'A few comforts from home to help you settle in',
@@ -63,7 +63,7 @@ const movingToHyderabadFresherChecklist = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757338/3b1e0be1-6538-40a5-bd17-db8ef1795fc5_1_kaukkm.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002146/3b1e0be1-6538-40a5-bd17-db8ef1795fc5_1_kaukkm_xnl5xl.jpg',
       alt: 'Move-in ready furnished co-living room for a fresher in Hyderabad',
       title: 'Move-in ready room',
     },
@@ -75,7 +75,7 @@ const movingToHyderabadFresherChecklist = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Map out your monthly expenses before your first salary lands. With an all-inclusive PG, your biggest costs — rent, food, WiFi and utilities — are bundled into one predictable fee, which makes budgeting far simpler. Beyond that, plan for transport, phone, and a little for socialising and savings. Knowing your numbers early prevents stress later. At Narenn Living, ',
+          text: 'Map out your monthly expenses before your first salary lands. With an all-inclusive PG, your biggest costs - rent, food, WiFi and utilities - are bundled into one predictable fee, which makes budgeting far simpler. Beyond that, plan for transport, phone, and a little for socialising and savings. Knowing your numbers early prevents stress later. At Narenn Living, ',
         },
         { type: 'link', href: '/food/', text: 'meals included' },
         {
@@ -103,7 +103,7 @@ const movingToHyderabadFresherChecklist = {
       type: 'paragraph',
       parts: [
         {
-          text: 'In your first few days, tick off the practical setup tasks: activate a local SIM if needed, open or update your bank account for salary, save emergency contacts, and locate the nearest pharmacy, ATM and grocery store. If you are in a managed co-living space, much of the daily hassle — food, cleaning, security — is already handled, so you can focus on your new job.',
+          text: 'In your first few days, tick off the practical setup tasks: activate a local SIM if needed, open or update your bank account for salary, save emergency contacts, and locate the nearest pharmacy, ATM and grocery store. If you are in a managed co-living space, much of the daily hassle - food, cleaning, security - is already handled, so you can focus on your new job.',
         },
       ],
     },
@@ -115,7 +115,7 @@ const movingToHyderabadFresherChecklist = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Do not underestimate the importance of community. Making friends early makes a new city feel like home and keeps homesickness at bay. Co-living spaces have a big advantage here — you are surrounded by peers in the same boat. At Narenn Living, our events and shared spaces help freshers connect fast, so you will have people to explore the city with in no time.',
+          text: 'Do not underestimate the importance of community. Making friends early makes a new city feel like home and keeps homesickness at bay. Co-living spaces have a big advantage here - you are surrounded by peers in the same boat. At Narenn Living, our events and shared spaces help freshers connect fast, so you will have people to explore the city with in no time.',
         },
       ],
     },
@@ -141,7 +141,7 @@ const movingToHyderabadFresherChecklist = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757339/009cacce-a5b5-4e17-b684-6092a394de62_qh8ds4.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002146/009cacce-a5b5-4e17-b684-6092a394de62_qh8ds4_gn1ymq.jpg',
       alt: 'First week essentials for a fresher moving to Hyderabad',
       title: 'First week essentials',
     },
@@ -153,7 +153,7 @@ const movingToHyderabadFresherChecklist = {
         'Register on the metro and cab apps; learn the two routes you will use most',
         'Find the nearest clinic, pharmacy and ATM before you need them at 11 PM',
         'Say yes to the first three social invitations you get, even if you are tired',
-        'Do not sign a twelve-month flat lease in week one — you do not know the city yet',
+        'Do not sign a twelve-month flat lease in week one - you do not know the city yet',
       ],
     },
     {
@@ -164,7 +164,7 @@ const movingToHyderabadFresherChecklist = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Renting far away to save money is the big one. The savings evaporate into cabs and the commute quietly eats the hours you would have spent learning, exercising or making friends. The second is signing a long lease before understanding where you will actually be working in a year — IT careers move offices, and a lock-in is a bet against your own promotion.',
+          text: 'Renting far away to save money is the big one. The savings evaporate into cabs and the commute quietly eats the hours you would have spent learning, exercising or making friends. The second is signing a long lease before understanding where you will actually be working in a year - IT careers move offices, and a lock-in is a bet against your own promotion.',
         },
       ],
     },
@@ -172,7 +172,7 @@ const movingToHyderabadFresherChecklist = {
       type: 'paragraph',
       parts: [
         {
-          text: 'The third is underestimating loneliness. Freshers optimise obsessively for rent and never once for community, then wonder why month two feels grey. A place with people your age, shared meals and things happening on a Saturday is not a luxury at twenty-two — it is the whole point.',
+          text: 'The third is underestimating loneliness. Freshers optimise obsessively for rent and never once for community, then wonder why month two feels grey. A place with people your age, shared meals and things happening on a Saturday is not a luxury at twenty-two - it is the whole point.',
         },
       ],
     },
@@ -218,8 +218,8 @@ const movingToHyderabadFresherChecklist = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757339/Gemini_Generated_Image_hpuyjjhpuyjjhpuy_v0gxge.jpg',
-    imageAlt: 'Fresher moving to Hyderabad with a suitcase — relocation checklist',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/Gemini_Generated_Image_hpuyjjhpuyjjhpuy_v0gxge_bnizic.jpg',
+    imageAlt: 'Fresher moving to Hyderabad with a suitcase - relocation checklist',
   },
 };
 

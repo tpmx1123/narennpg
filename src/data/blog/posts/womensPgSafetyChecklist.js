@@ -33,7 +33,7 @@ const womensPgSafetyChecklist = {
       type: 'list',
       items: [
         '24/7 CCTV surveillance covering entrances and common areas',
-        'Controlled entry — biometric access or a secure, monitored entrance',
+        'Controlled entry - biometric access or a secure, monitored entrance',
         'Well-lit corridors, staircases and surroundings, especially at night',
         'On-site staff or management present around the clock',
       ],
@@ -48,7 +48,7 @@ const womensPgSafetyChecklist = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785761471/wmremove-transformed_9_vlhg6k.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002184/wmremove-transformed_9_vlhg6k_a138bl.png',
       alt: "Biometric access and CCTV security at a women's PG in Hyderabad",
       title: 'Security systems',
     },
@@ -68,7 +68,7 @@ const womensPgSafetyChecklist = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785761471/wmremove-transformed_10_fxrvny.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002184/wmremove-transformed_10_fxrvny_hoz9ji.png',
       alt: "Well-lit corridor and stairwell at a women's PG in Madhapur, Hyderabad",
       title: 'Lighting and corridors',
     },
@@ -148,12 +148,12 @@ const womensPgSafetyChecklist = {
       type: 'list',
       items: [
         "Biometric or verified access at every entrance, not a latch and a watchman's memory",
-        'CCTV coverage at entries, corridors and common areas — ask to see the live feed',
+        'CCTV coverage at entries, corridors and common areas - ask to see the live feed',
         '24x7 security staffing, and ask specifically who is on duty at 2 AM',
         'Separate, clearly demarcated accommodation for women with dedicated floors',
-        'A logged visitor policy — ask how a guest is verified and recorded',
+        'A logged visitor policy - ask how a guest is verified and recorded',
         'Lighting on the approach road, the entrance and the stairwell after dark',
-        'Whether there is a curfew — and be clear that a curfew is not a safety measure',
+        'Whether there is a curfew - and be clear that a curfew is not a safety measure',
       ],
     },
     {
@@ -214,8 +214,8 @@ const womensPgSafetyChecklist = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785761471/wmremove-transformed_8_mku7o6.png',
-    imageAlt: 'Safe PG for women in Hyderabad — safety checklist and verified entry',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002181/wmremove-transformed_8_mku7o6_zhzg2t.png',
+    imageAlt: 'Safe PG for women in Hyderabad - safety checklist and verified entry',
   },
 };
 

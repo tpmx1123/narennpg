@@ -4,37 +4,37 @@ export const ROOMS_PAGE = {
   description:
     'Fully furnished AC rooms in Madhapur - single, double, triple & four sharing. Meals, WiFi & housekeeping included. Near Hitech City. Book your room at Narenn Living.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922730/M_P00299_1_ilshb5.jpg',
+  ogImage: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002160/M_P00299_1_ilshb5_i1cbub.jpg',
 };
 
 export const ROOMS_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922730/M_P00299_1_ilshb5.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002160/M_P00299_1_ilshb5_i1cbub.jpg',
     alt: 'Fully furnished PG rooms in Madhapur with AC, bed, wardrobe and AC',
     title: 'Fully furnished PG rooms in Madhapur',
   },
   single: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00016_1_irxbq9_avrkd5.jpg',
     alt: 'Single sharing room hero image',
     title: 'Single sharing room',
   },
   double: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785921010/M_P00210_2_tgzf4c.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002160/M_P00210_2_tgzf4c_fimpkh.jpg',
     alt: 'Double sharing room hero image',
     title: 'Double sharing room',
   },
   triple: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00196_1_hkg9hw.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002159/M_P00196_1_hkg9hw_v9pcqw.jpg',
     alt: 'Triple sharing PG room in Madhapur with three beds and individual wardrobes',
     title: 'Triple sharing room',
   },
   inclusions: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919949/M_P00337_1_xcyssw.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002162/M_P00337_1_xcyssw_hxkokm.jpg',
     alt: 'Standard inclusions in every Narenn Living PG room in Madhapur',
     title: 'Room inclusions',
   },
   quad: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922348/M_P00064_1_xrjutj.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00064_1_xrjutj_sqqtbt.jpg',
     alt: 'Four sharing room in Madhapur hero image',
     title: 'Four sharing room',
   },

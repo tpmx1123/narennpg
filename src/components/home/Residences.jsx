@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { HERO_SLIDES, RESIDENCES } from '../../data/homeData';
@@ -15,9 +15,37 @@ const PROPERTY_CARDS = RESIDENCES.map((res) => {
 
 function ResidenceCard({ res }) {
   const [hovered, setHovered] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const cardRef = useRef(null);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const node = cardRef.current;
+    if (!node) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px 0px', threshold: 0.01 }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!shouldLoad || !video) return undefined;
+    video.play().catch(() => {});
+  }, [shouldLoad]);
 
   return (
     <motion.article
+      ref={cardRef}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       animate={{
@@ -25,20 +53,37 @@ function ResidenceCard({ res }) {
         scale: hovered ? 1.02 : 1,
       }}
       transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl border border-white/15"
+      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl border border-white/15 bg-brand-charcoal"
     >
-      <motion.video
-        key={res.videoUrl}
-        src={res.videoUrl}
-        poster={res.image}
-        muted
-        loop
-        playsInline
-        autoPlay
-        animate={{ scale: hovered ? 1.06 : 1 }}
-        transition={{ duration: 0.7, ease }}
-        className="absolute inset-0 h-full w-full object-cover"
+      <img
+        src={res.image}
+        alt=""
+        aria-hidden="true"
+        width={560}
+        height={800}
+        loading="lazy"
+        decoding="async"
+        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
+          shouldLoad ? 'opacity-0' : 'opacity-100'
+        }`}
       />
+
+      {shouldLoad && (
+        <motion.video
+          ref={videoRef}
+          key={res.videoUrl}
+          src={res.videoUrl}
+          poster={res.image}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          autoPlay
+          animate={{ scale: hovered ? 1.06 : 1 }}
+          transition={{ duration: 0.7, ease }}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
 
       <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/80 via-brand-charcoal/15 to-transparent pointer-events-none" />
 
@@ -109,9 +154,7 @@ export default function Residences() {
         </div>
       </div>
 
-      <div
-        className="max-w-7xl mx-auto grid grid-cols-1 gap-4 px-4 pb-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-4 sm:px-6 lg:px-10"
-      >
+      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-4 px-4 pb-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-4 sm:px-6 lg:px-10">
         {PROPERTY_CARDS.map((res) => (
           <ResidenceCard key={res.name} res={res} />
         ))}

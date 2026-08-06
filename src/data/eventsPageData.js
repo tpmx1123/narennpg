@@ -99,7 +99,7 @@ export const EVENTS_CALENDAR = {
     {
       icon: 'Plane',
       title: 'Farewell send-offs',
-      body: 'Warm goodbyes for residents moving on to their next chapter — cementing lifelong bonds.',
+      body: 'Warm goodbyes for residents moving on to their next chapter - cementing lifelong bonds.',
       tone: 'pale',
     },
   ],
@@ -182,7 +182,7 @@ export const EVENTS_INVITE = {
   h2Accent: 'Anything',
   paragraphs: [
     'Community only works if it is an invitation rather than a requirement. Some months you will be on the terrace every weekend. Some months you will be shipping a release and you will not come up once, and nobody will comment on it.',
-    'The point is that the door is open when you want it. What kills people in a new city is not choosing solitude — it is having no alternative to it.',
+    'The point is that the door is open when you want it. What kills people in a new city is not choosing solitude - it is having no alternative to it.',
   ],
   closing: 'At Narenn, the alternative is always right outside your door.',
 };

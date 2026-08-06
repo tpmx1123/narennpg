@@ -5,7 +5,7 @@ const first30DaysNewCityPlaybook = {
       type: 'paragraph',
       parts: [
         {
-          text: 'The first month in a new city sets the tone for everything that follows. Get it right and you feel at home fast; drift through it and homesickness can take hold. This week-by-week playbook for settling into a new city helps you build routines, make friends and feel grounded in your first 30 days in Hyderabad — so your fresh start actually feels fresh.',
+          text: 'The first month in a new city sets the tone for everything that follows. Get it right and you feel at home fast; drift through it and homesickness can take hold. This week-by-week playbook for settling into a new city helps you build routines, make friends and feel grounded in your first 30 days in Hyderabad - so your fresh start actually feels fresh.',
         },
       ],
     },
@@ -38,7 +38,7 @@ const first30DaysNewCityPlaybook = {
       type: 'paragraph',
       parts: [
         {
-          text: 'With the basics handled, establish a rhythm. Fix rough times for waking, meals, work or study, exercise and sleep. A routine creates a comforting sense of normalcy in unfamiliar surroundings. This is much easier in a managed co-living space, where meals and chores are handled — with three meals a day from our in-house kitchen, that part of your routine is sorted for you when you have ',
+          text: 'With the basics handled, establish a rhythm. Fix rough times for waking, meals, work or study, exercise and sleep. A routine creates a comforting sense of normalcy in unfamiliar surroundings. This is much easier in a managed co-living space, where meals and chores are handled - with three meals a day from our in-house kitchen, that part of your routine is sorted for you when you have ',
         },
         { type: 'link', href: '/food/', text: 'meals included' },
         {
@@ -62,7 +62,7 @@ const first30DaysNewCityPlaybook = {
       type: 'paragraph',
       parts: [
         {
-          text: 'By the third week, push gently beyond your comfort zone socially. Say yes to invitations, join in community activities and get to know the people around you. Friendships are what truly turn a new place into home. Co-living gives you a natural head start — your neighbours are peers in the same situation. Our ',
+          text: 'By the third week, push gently beyond your comfort zone socially. Say yes to invitations, join in community activities and get to know the people around you. Friendships are what truly turn a new place into home. Co-living gives you a natural head start - your neighbours are peers in the same situation. Our ',
         },
         { type: 'link', href: '/events/', text: 'community events' },
         {
@@ -72,7 +72,7 @@ const first30DaysNewCityPlaybook = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785764227/ChatGPT_Image_Aug_3_2026_07_06_45_PM_jvkr7w.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002151/ChatGPT_Image_Aug_3_2026_07_06_45_PM_jvkr7w_enxony.png',
       alt: 'New resident meeting others in the dining hall at a co-living in Hyderabad',
       title: 'Community dining',
     },
@@ -84,7 +84,7 @@ const first30DaysNewCityPlaybook = {
       type: 'paragraph',
       parts: [
         {
-          text: 'In your final settling-in week, start exploring your surroundings properly. Find your favourite cafe, a go-to weekend spot and the local haunts that will become part of your life here. Discovering the character of your neighbourhood — like the lively scene around Madhapur — is what makes a city feel like yours rather than just a place you happen to live.',
+          text: 'In your final settling-in week, start exploring your surroundings properly. Find your favourite cafe, a go-to weekend spot and the local haunts that will become part of your life here. Discovering the character of your neighbourhood - like the lively scene around Madhapur - is what makes a city feel like yours rather than just a place you happen to live.',
         },
       ],
     },
@@ -96,7 +96,7 @@ const first30DaysNewCityPlaybook = {
       type: 'paragraph',
       parts: [
         {
-          text: 'It is completely normal to feel homesick, especially early on. Stay in regular touch with family and friends back home, but resist the urge to retreat entirely into your room. Balance is key — comfort from home plus active engagement with your new life. A supportive community around you makes a real difference during this adjustment, which is one of the quiet benefits of co-living.',
+          text: 'It is completely normal to feel homesick, especially early on. Stay in regular touch with family and friends back home, but resist the urge to retreat entirely into your room. Balance is key - comfort from home plus active engagement with your new life. A supportive community around you makes a real difference during this adjustment, which is one of the quiet benefits of co-living.',
         },
       ],
     },
@@ -138,20 +138,20 @@ const first30DaysNewCityPlaybook = {
         'Sort your local SIM, bank address update and cab apps on day one',
         'Learn your commute route in actual morning traffic, not on a map at midnight',
         'Find your clinic, pharmacy, ATM and supermarket before you need them urgently',
-        'Introduce yourself to the housekeeping and kitchen staff — they run your daily life',
+        'Introduce yourself to the housekeeping and kitchen staff - they run your daily life',
         'Eat in the dining hall, not in your room; this is the single highest-leverage decision of week one',
         "Learn five residents' names. Just five.",
       ],
     },
     {
       type: 'h2',
-      text: 'Weeks Two and Three — People',
+      text: 'Weeks Two and Three - People',
     },
     {
       type: 'paragraph',
       parts: [
         {
-          text: 'This is where most people quietly fail, and it is invisible while it is happening. You are tired, work is new, and staying in your room feels like resting. It is not resting — it is compounding into the thing that makes month three feel grey.',
+          text: 'This is where most people quietly fail, and it is invisible while it is happening. You are tired, work is new, and staying in your room feels like resting. It is not resting - it is compounding into the thing that makes month three feel grey.',
         },
       ],
     },
@@ -159,17 +159,17 @@ const first30DaysNewCityPlaybook = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Say yes to everything for three weeks. The terrace gathering you are too tired for. The gym group. The weekend trip with people you barely know. You can be selective later. In weeks two and three, quantity of contact beats quality, because you are not building friendships yet — you are building the surface area friendships eventually land on.',
+          text: 'Say yes to everything for three weeks. The terrace gathering you are too tired for. The gym group. The weekend trip with people you barely know. You can be selective later. In weeks two and three, quantity of contact beats quality, because you are not building friendships yet - you are building the surface area friendships eventually land on.',
         },
       ],
     },
     {
       type: 'h2',
-      text: 'Week Four — Rhythm',
+      text: 'Week Four - Rhythm',
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785764291/ChatGPT_Image_Aug_3_2026_07_07_57_PM_mnvesk.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002151/ChatGPT_Image_Aug_3_2026_07_07_57_PM_mnvesk_vlz4ek.png',
       alt: 'New residents socialising on a co-living terrace in Hyderabad',
       title: 'Terrace socialising',
     },
@@ -185,7 +185,7 @@ const first30DaysNewCityPlaybook = {
       type: 'paragraph',
       parts: [
         {
-          text: 'If you do not have those by day thirty, do not conclude the city is not for you. Conclude that you skipped weeks two and three, and start them now. Call 70759 85666 and tell our community team — putting new residents into the right rooms is literally part of the job.',
+          text: 'If you do not have those by day thirty, do not conclude the city is not for you. Conclude that you skipped weeks two and three, and start them now. Call 70759 85666 and tell our community team - putting new residents into the right rooms is literally part of the job.',
         },
       ],
     },
@@ -207,8 +207,8 @@ const first30DaysNewCityPlaybook = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785764228/ChatGPT_Image_Aug_3_2026_07_04_19_PM_pbe2v3.png',
-    imageAlt: 'Settling into Hyderabad — a first 30 days playbook for new residents',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002152/ChatGPT_Image_Aug_3_2026_07_04_19_PM_pbe2v3_hhulyv.png',
+    imageAlt: 'Settling into Hyderabad - a first 30 days playbook for new residents',
   },
 };
 

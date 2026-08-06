@@ -1,3 +1,5 @@
+import { Cld } from '../../utils/cloudinary';
+
 const NEARBY_HIGHLIGHTS = [
   {
     title: 'Major IT Hubs',
@@ -16,8 +18,7 @@ const NEARBY_HIGHLIGHTS = [
   },
 ];
 
-const AREA_IMAGE =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp';
+const AREA_IMAGE = Cld.wide('v1786002155/image-03-2_ze1iph_g3llre.webp');
 
 export default function Neighborhood() {
   return (

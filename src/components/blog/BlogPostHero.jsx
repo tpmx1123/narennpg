@@ -21,7 +21,7 @@ export default function BlogPostHero({ post, imageFallback }) {
         <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/90 via-brand-charcoal/35 to-brand-charcoal/10" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-8 sm:pt-10 pb-5 sm:pb-8 lg:pb-10">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-24 sm:pt-28 lg:pt-32 pb-5 sm:pb-8 lg:pb-10">
         <nav
           aria-label="Breadcrumb"
           className="mb-2.5 sm:mb-3 flex flex-wrap items-center gap-1.5 sm:gap-2 text-white/80 text-[10px] font-medium min-w-0"

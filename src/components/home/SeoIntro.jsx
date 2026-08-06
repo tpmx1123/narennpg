@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { HOME_SEO } from '../../data/seoHome';
+import { Cld } from '../../utils/cloudinary';
 
 const EASE_OUT = [0.16, 1, 0.3, 1];
-const INTRO_BG =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp';
-const LEGACY_BADGE =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784118784/ChatGPT_Image_Jul_15__2026__06_02_35_PM-removebg-preview_b343c0.png';
+const INTRO_BG = Cld.wide('v1786002155/image-03-2_ze1iph_g3llre.webp');
+const LEGACY_BADGE = Cld.logo(
+  'v1786002152/ChatGPT_Image_Jul_15__2026__06_02_35_PM-removebg-preview_b343c0_nm6kyz.png'
+);
 
 export default function SeoIntro() {
   return (

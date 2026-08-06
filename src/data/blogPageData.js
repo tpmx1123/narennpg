@@ -31,14 +31,14 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      'Is a PG cheaper than a flat in Hyderabad? A full cost breakdown of rent, deposits, furniture, food & bills — plus which option really saves you money.',
+      'Is a PG cheaper than a flat in Hyderabad? A full cost breakdown of rent, deposits, furniture, food & bills - plus which option really saves you money.',
     description:
-      'Is a PG cheaper than a flat in Hyderabad? A full cost breakdown of rent, deposits, furniture, food & bills — plus which option really saves you money.',
+      'Is a PG cheaper than a flat in Hyderabad? A full cost breakdown of rent, deposits, furniture, food & bills - plus which option really saves you money.',
     keywords:
       'PG vs flat in Hyderabad, cost of PG in Hyderabad, renting a flat in Madhapur cost, is PG cheaper than flat',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757345/wmremove-transformed_1_jklafe.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002179/wmremove-transformed_1_jklafe_buypft.png',
     alt: 'PG vs flat cost comparison for Hyderabad - rent, deposit and hidden costs',
     imageTitle: 'PG vs flat cost comparison',
   },
@@ -57,14 +57,14 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      'Madhapur, Gachibowli, Kondapur or Hitech City? A guide to the best areas to live in Hyderabad for IT professionals — commute, rent, lifestyle & where to base.',
+      'Madhapur, Gachibowli, Kondapur or Hitech City? A guide to the best areas to live in Hyderabad for IT professionals - commute, rent, lifestyle & where to base.',
     description:
-      'Madhapur, Gachibowli, Kondapur or Hitech City? A guide to the best areas to live in Hyderabad for IT professionals — commute, rent, lifestyle & where to base.',
+      'Madhapur, Gachibowli, Kondapur or Hitech City? A guide to the best areas to live in Hyderabad for IT professionals - commute, rent, lifestyle & where to base.',
     keywords:
       'best areas to live in Hyderabad for IT professionals, where to live in Hyderabad IT, best area near Hitech City, Madhapur vs Gachibowli living',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757343/wmremove-transformed_4_x4hsl8.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002180/wmremove-transformed_4_x4hsl8_s99ggs.png',
     alt: 'Best areas to live in Hyderabad for IT professionals - Madhapur, Kondapur, Gachibowli',
     imageTitle: 'Best areas for IT professionals',
   },
@@ -83,15 +83,15 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      'Starting your first job in Hyderabad? A complete moving checklist for freshers — what to pack, how to pick accommodation, budgeting & settling in fast.',
+      'Starting your first job in Hyderabad? A complete moving checklist for freshers - what to pack, how to pick accommodation, budgeting & settling in fast.',
     description:
-      'Starting your first job in Hyderabad? A complete moving checklist for freshers — what to pack, how to pick accommodation, budgeting & settling in fast.',
+      'Starting your first job in Hyderabad? A complete moving checklist for freshers - what to pack, how to pick accommodation, budgeting & settling in fast.',
     keywords:
       'moving to Hyderabad checklist, fresher moving to Hyderabad, first job Hyderabad accommodation, what to pack moving to Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757339/Gemini_Generated_Image_hpuyjjhpuyjjhpuy_v0gxge.jpg',
-    alt: 'Fresher moving to Hyderabad with a suitcase — relocation checklist',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/Gemini_Generated_Image_hpuyjjhpuyjjhpuy_v0gxge_bnizic.jpg',
+    alt: 'Fresher moving to Hyderabad with a suitcase - relocation checklist',
     imageTitle: 'Fresher moving checklist',
   },
   {
@@ -109,15 +109,15 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      "Co-living vs PG — what's the real difference? Compare amenities, community, privacy, food & cost to decide which type of accommodation suits you best.",
+      "Co-living vs PG - what's the real difference? Compare amenities, community, privacy, food & cost to decide which type of accommodation suits you best.",
     description:
-      "Co-living vs PG — what's the real difference? Compare amenities, community, privacy, food & cost to decide which type of accommodation suits you best.",
+      "Co-living vs PG - what's the real difference? Compare amenities, community, privacy, food & cost to decide which type of accommodation suits you best.",
     keywords:
       'co-living vs PG, difference between co-living and PG, is co-living better than PG, co-living meaning Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785760929/output-image_2_ebpuz6.jpg',
-    alt: 'Co-living vs PG comparison in Hyderabad — rooms, food and community',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002176/output-image_2_ebpuz6_ex1vsg.jpg',
+    alt: 'Co-living vs PG comparison in Hyderabad - rooms, food and community',
     imageTitle: 'Co-living vs PG',
   },
   {
@@ -142,8 +142,8 @@ export const BLOG_POSTS = [
       "safe PG for women in Hyderabad, women's PG safety Hyderabad, PG safety checklist, secure PG for women Madhapur",
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785761471/wmremove-transformed_8_mku7o6.png',
-    alt: 'Safe PG for women in Hyderabad — safety checklist and verified entry',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002181/wmremove-transformed_8_mku7o6_zhzg2t.png',
+    alt: 'Safe PG for women in Hyderabad - safety checklist and verified entry',
     imageTitle: 'Safe PG for women in Hyderabad',
   },
   {
@@ -161,15 +161,15 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      'How much does it cost to live in Hyderabad? A practical breakdown of rent, food, transport & lifestyle for students & professionals — plus how to save.',
+      'How much does it cost to live in Hyderabad? A practical breakdown of rent, food, transport & lifestyle for students & professionals - plus how to save.',
     description:
-      'How much does it cost to live in Hyderabad? A practical breakdown of rent, food, transport & lifestyle for students & professionals — plus how to save.',
+      'How much does it cost to live in Hyderabad? A practical breakdown of rent, food, transport & lifestyle for students & professionals - plus how to save.',
     keywords:
       'cost of living in Hyderabad, monthly expenses Hyderabad, living costs Hyderabad students, how much to earn to live in Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762695/output-image_jb9yac.png',
-    alt: 'Cost of living in Hyderabad — monthly budget breakdown for professionals',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002177/output-image_jb9yac_thefic.png',
+    alt: 'Cost of living in Hyderabad - monthly budget breakdown for professionals',
     imageTitle: 'Cost of living in Hyderabad',
   },
   {
@@ -187,15 +187,15 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      "Don't book a PG until you've asked these 12 questions — about food, rules, deposits, hidden charges & amenities. A must-read checklist before you commit.",
+      "Don't book a PG until you've asked these 12 questions - about food, rules, deposits, hidden charges & amenities. A must-read checklist before you commit.",
     description:
-      "Don't book a PG until you've asked these 12 questions — about food, rules, deposits, hidden charges & amenities. A must-read checklist before you commit.",
+      "Don't book a PG until you've asked these 12 questions - about food, rules, deposits, hidden charges & amenities. A must-read checklist before you commit.",
     keywords:
       'questions to ask before booking a PG, what to ask before joining a PG, PG booking checklist, things to check before booking PG',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785762954/ChatGPT_Image_Aug_3_2026_06_42_48_PM_xl7yv3.png',
-    alt: 'Questions to ask before booking a PG in Hyderabad — site visit checklist',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002149/ChatGPT_Image_Aug_3_2026_06_42_48_PM_xl7yv3_kehjsb.png',
+    alt: 'Questions to ask before booking a PG in Hyderabad - site visit checklist',
     imageTitle: 'Questions before booking a PG',
   },
   {
@@ -213,14 +213,14 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      "Working from home in Hyderabad? Here's what makes accommodation truly WFH-friendly — WiFi, quiet space, ergonomics & more — and how to choose right.",
+      "Working from home in Hyderabad? Here's what makes accommodation truly WFH-friendly - WiFi, quiet space, ergonomics & more - and how to choose right.",
     description:
-      "Working from home in Hyderabad? Here's what makes accommodation truly WFH-friendly — WiFi, quiet space, ergonomics & more — and how to choose right.",
+      "Working from home in Hyderabad? Here's what makes accommodation truly WFH-friendly - WiFi, quiet space, ergonomics & more - and how to choose right.",
     keywords:
       'WFH-friendly accommodation in Hyderabad, work from home PG Hyderabad, co-living for remote work, best WiFi PG Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002147/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71_afk0g6.png',
     alt: 'Work from home friendly PG room in Hyderabad with fast WiFi',
     imageTitle: 'WFH friendly PG in Hyderabad',
   },
@@ -239,15 +239,15 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      'New student in Hyderabad? Your guide to accommodation, food, transport, safety, budgeting & making friends — everything you need to thrive in the city.',
+      'New student in Hyderabad? Your guide to accommodation, food, transport, safety, budgeting & making friends - everything you need to thrive in the city.',
     description:
-      'New student in Hyderabad? Your guide to accommodation, food, transport, safety, budgeting & making friends — everything you need to thrive in the city.',
+      'New student in Hyderabad? Your guide to accommodation, food, transport, safety, budgeting & making friends - everything you need to thrive in the city.',
     keywords:
       'student guide to Hyderabad, student life in Hyderabad, accommodation for students Hyderabad, tips for students moving to Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763317/ChatGPT_Image_Aug_3_2026_06_51_25_PM_yb4ulk.png',
-    alt: 'Student guide to living in Hyderabad — accommodation, food and budget',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002148/ChatGPT_Image_Aug_3_2026_06_51_25_PM_yb4ulk_gap01w.png',
+    alt: 'Student guide to living in Hyderabad - accommodation, food and budget',
     imageTitle: 'Student guide to Hyderabad',
   },
   {
@@ -265,14 +265,14 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      "Working night shifts in Hyderabad? Here's what to look for in accommodation — no-curfew access, quiet daytime sleep, flexible meals & security. Read the guide.",
+      "Working night shifts in Hyderabad? Here's what to look for in accommodation - no-curfew access, quiet daytime sleep, flexible meals & security. Read the guide.",
     description:
-      "Working night shifts in Hyderabad? Here's what to look for in accommodation — no-curfew access, quiet daytime sleep, flexible meals & security. Read the guide.",
+      "Working night shifts in Hyderabad? Here's what to look for in accommodation - no-curfew access, quiet daytime sleep, flexible meals & security. Read the guide.",
     keywords:
       'night shift accommodation in Hyderabad, no curfew PG Hyderabad, PG for night shift workers, 24/7 access PG Madhapur',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763653/ChatGPT_Image_Aug_3_2026_06_56_54_PM_g0gvxl.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_56_54_PM_g0gvxl_yz5oui.png',
     alt: 'Night shift friendly PG in Hyderabad with 24x7 biometric access',
     imageTitle: 'Night shift PG in Hyderabad',
   },
@@ -298,7 +298,7 @@ export const BLOG_POSTS = [
       'things to do in Madhapur, Madhapur weekend guide, places to visit near Madhapur, cafes in Madhapur Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763804/ChatGPT_Image_Aug_3_2026_06_59_52_PM_qeamin.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_59_52_PM_qeamin_ywagdx.png',
     alt: 'Things to do in Madhapur on a weekend — Durgam Cheruvu and Inorbit Mall',
     imageTitle: 'Madhapur weekend guide',
   },
@@ -317,15 +317,15 @@ export const BLOG_POSTS = [
     dateModified: '2026-01-15',
     author: 'The Narenn Editorial Team',
     excerpt:
-      'Just moved to Hyderabad? A week-by-week playbook for your first 30 days — settling in, building routines, making friends & feeling at home fast.',
+      'Just moved to Hyderabad? A week-by-week playbook for your first 30 days - settling in, building routines, making friends & feeling at home fast.',
     description:
-      'Just moved to Hyderabad? A week-by-week playbook for your first 30 days — settling in, building routines, making friends & feeling at home fast.',
+      'Just moved to Hyderabad? A week-by-week playbook for your first 30 days - settling in, building routines, making friends & feeling at home fast.',
     keywords:
       'settling into a new city, first 30 days new city, moving to a new city tips, how to settle in Hyderabad',
     robots: 'index, follow, max-image-preview:large, max-snippet:-1',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785764228/ChatGPT_Image_Aug_3_2026_07_04_19_PM_pbe2v3.png',
-    alt: 'Settling into Hyderabad — a first 30 days playbook for new residents',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002152/ChatGPT_Image_Aug_3_2026_07_04_19_PM_pbe2v3_hhulyv.png',
+    alt: 'Settling into Hyderabad - a first 30 days playbook for new residents',
     imageTitle: 'First 30 days in Hyderabad',
   },
 ];

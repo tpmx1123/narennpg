@@ -27,12 +27,12 @@ export const TRIPLE_SHARING_PAGE = {
   description:
     'Affordable 3-sharing AC rooms in Madhapur near Hitech City. Meals, WiFi & housekeeping included. Best value co-living for students & freshers. Book a visit.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00196_1_hkg9hw.jpg',
+  ogImage: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002159/M_P00196_1_hkg9hw_v9pcqw.jpg',
 };
 
 export const TRIPLE_SHARING_HERO = {
   paragraphs: [
-    'If you want premium co-living at the friendliest price, our triple sharing room in Madhapur is the answer. You share a spacious, air-conditioned room with two others and split the cost three ways — which makes it the most economical option at Narenn Living without cutting a single corner on comfort. You still get an AC room, three meals a day, high-speed WiFi, daily housekeeping and full access to every amenity, all included in one low monthly fee.',
+    'If you want premium co-living at the friendliest price, our triple sharing room in Madhapur is the answer. You share a spacious, air-conditioned room with two others and split the cost three ways - which makes it the most economical option at Narenn Living without cutting a single corner on comfort. You still get an AC room, three meals a day, high-speed WiFi, daily housekeeping and full access to every amenity, all included in one low monthly fee.',
     'Set in VIP Hills, Madhapur, triple rooms put you minutes from Hitech City, Gachibowli and Kondapur, and are especially popular with students and freshers who want great value and a ready-made social circle.',
   ],
 };
@@ -56,22 +56,22 @@ export const TRIPLE_SHARING_BOOKING = {
 
 export const TRIPLE_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00196_1_hkg9hw.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002159/M_P00196_1_hkg9hw_v9pcqw.jpg',
     alt: 'Triple sharing room hero image',
     title: 'Triple sharing room - hero',
   },
   wardrobes: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920680/M_P00072_1_gkmydq.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00072_1_gkmydq_xevg54.jpg',
     alt: 'Wardrobe/storage area in a triple sharing room',
     title: 'Triple sharing room - wardrobes',
   },
   students: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00355_1_t0hd6k.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002162/M_P00355_1_t0hd6k_wlz0ax.jpg',
     alt: 'Room interior view in a triple sharing room',
     title: 'Triple sharing room - interior view',
   },
   studySpace: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00071_1_lcjjph.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00071_1_lcjjph_njxv7v.jpg',
     alt: 'Room interior detail in a triple sharing room',
     title: 'Triple sharing room - interior',
   },

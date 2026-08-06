@@ -5,7 +5,7 @@ const thingsToDoMadhapurWeekend = {
       type: 'paragraph',
       parts: [
         {
-          text: "One of the joys of living in Madhapur is that your weekends are as vibrant as your weekdays are convenient. As the heart of Hyderabad's tech corridor, the area is packed with cafes, shopping, entertainment and green escapes — all close to home. Here is a local guide to the best things to do in Madhapur when you have a day off, whether you want to relax, socialise or explore.",
+          text: "One of the joys of living in Madhapur is that your weekends are as vibrant as your weekdays are convenient. As the heart of Hyderabad's tech corridor, the area is packed with cafes, shopping, entertainment and green escapes - all close to home. Here is a local guide to the best things to do in Madhapur when you have a day off, whether you want to relax, socialise or explore.",
         },
       ],
     },
@@ -17,7 +17,7 @@ const thingsToDoMadhapurWeekend = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Madhapur has one of the liveliest cafe scenes in Hyderabad. From cosy specialty coffee spots to buzzing brunch places, it is the perfect area for a relaxed weekend catch-up or some laptop time over a good cup of coffee. Spend a morning trying somewhere new — there is always another cafe worth discovering nearby.',
+          text: 'Madhapur has one of the liveliest cafe scenes in Hyderabad. From cosy specialty coffee spots to buzzing brunch places, it is the perfect area for a relaxed weekend catch-up or some laptop time over a good cup of coffee. Spend a morning trying somewhere new - there is always another cafe worth discovering nearby.',
         },
       ],
     },
@@ -35,7 +35,7 @@ const thingsToDoMadhapurWeekend = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763966/ChatGPT_Image_Aug_3_2026_07_02_34_PM_odry8k.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002151/ChatGPT_Image_Aug_3_2026_07_02_34_PM_odry8k_eacnfn.png',
       alt: 'Inorbit Mall and Sarath City Capital Mall near Madhapur',
       title: 'Malls near Madhapur',
     },
@@ -55,7 +55,7 @@ const thingsToDoMadhapurWeekend = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763978/ChatGPT_Image_Aug_3_2026_07_00_40_PM_j3rwb6.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002151/ChatGPT_Image_Aug_3_2026_07_00_40_PM_j3rwb6_hyymgq.png',
       alt: 'Durgam Cheruvu lake and cable bridge near Madhapur, Hyderabad',
       title: 'Durgam Cheruvu',
     },
@@ -67,7 +67,7 @@ const thingsToDoMadhapurWeekend = {
       type: 'paragraph',
       parts: [
         {
-          text: "Madhapur's dining scene runs the full range — from Hyderabad's legendary biryani to global cuisines and street food. Come evening, the area offers a lively nightlife with restaurants, lounges and live-music spots. It is one of the best parts of the city to eat out and unwind with friends after a busy week.",
+          text: "Madhapur's dining scene runs the full range - from Hyderabad's legendary biryani to global cuisines and street food. Come evening, the area offers a lively nightlife with restaurants, lounges and live-music spots. It is one of the best parts of the city to eat out and unwind with friends after a busy week.",
         },
       ],
     },
@@ -105,7 +105,7 @@ const thingsToDoMadhapurWeekend = {
       type: 'paragraph',
       parts: [
         {
-          text: "Living in Madhapur means the best of Hyderabad's weekends is always on your doorstep — and Narenn Living puts you right in the middle of it. Learn more about ",
+          text: "Living in Madhapur means the best of Hyderabad's weekends is always on your doorstep - and Narenn Living puts you right in the middle of it. Learn more about ",
         },
         { type: 'link', href: '/locations/madhapur/', text: 'living in Madhapur' },
         { text: ', or read ' },
@@ -124,12 +124,12 @@ const thingsToDoMadhapurWeekend = {
     {
       type: 'list',
       items: [
-        'Durgam Cheruvu — the lake, the cable bridge and the best sunset walk in the corridor',
-        'Inorbit Mall and Sarath City Capital Mall — cinema, food courts and everything you forgot to buy',
+        'Durgam Cheruvu - the lake, the cable bridge and the best sunset walk in the corridor',
+        'Inorbit Mall and Sarath City Capital Mall - cinema, food courts and everything you forgot to buy',
         'Cafés and restaurants across Madhapur, Kondapur and Jubilee Hills, ten minutes out',
         'Gyms, box cricket, badminton courts and turf grounds all within the neighbourhood',
         'Hitech City metro and MMTS for Charminar, Golconda and the old city',
-        'The Narenn terrace — where most weekends actually end up anyway',
+        'The Narenn terrace - where most weekends actually end up anyway',
       ],
     },
     {
@@ -197,7 +197,7 @@ const thingsToDoMadhapurWeekend = {
     {
       question: 'What are the best things to do in Madhapur on a weekend?',
       answer:
-        'Madhapur offers a lively cafe scene, shopping malls, the scenic Durgam Cheruvu lake and cable bridge, great dining and nightlife, and fitness spots — plenty to fill any day off.',
+        'Madhapur offers a lively cafe scene, shopping malls, the scenic Durgam Cheruvu lake and cable bridge, great dining and nightlife, and fitness spots - plenty to fill any day off.',
     },
     {
       question: 'Is Madhapur a good area for a fun lifestyle?',
@@ -210,8 +210,8 @@ const thingsToDoMadhapurWeekend = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763804/ChatGPT_Image_Aug_3_2026_06_59_52_PM_qeamin.png',
-    imageAlt: 'Things to do in Madhapur on a weekend — Durgam Cheruvu and Inorbit Mall',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_59_52_PM_qeamin_ywagdx.png',
+    imageAlt: 'Things to do in Madhapur on a weekend - Durgam Cheruvu and Inorbit Mall',
   },
 };
 

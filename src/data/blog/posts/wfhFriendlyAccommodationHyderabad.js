@@ -5,7 +5,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Remote and hybrid work is now a permanent part of many careers, which makes your living space your workspace too. Choosing WFH-friendly accommodation in Hyderabad means looking beyond a comfortable bed to the things that make a full working day productive — fast internet, a quiet room and a setup that supports focus. Here is what to prioritise, and how the right co-living space can make working from home genuinely easy.',
+          text: 'Remote and hybrid work is now a permanent part of many careers, which makes your living space your workspace too. Choosing WFH-friendly accommodation in Hyderabad means looking beyond a comfortable bed to the things that make a full working day productive - fast internet, a quiet room and a setup that supports focus. Here is what to prioritise, and how the right co-living space can make working from home genuinely easy.',
         },
       ],
     },
@@ -17,7 +17,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Nothing derails a work-from-home day like a dropped video call or slow connection. The first thing to check in any accommodation is the quality and reliability of the WiFi, not just whether it exists. At Narenn Living, we provide high-speed WiFi built to handle calls, large downloads and continuous work — see it listed among our ',
+          text: 'Nothing derails a work-from-home day like a dropped video call or slow connection. The first thing to check in any accommodation is the quality and reliability of the WiFi, not just whether it exists. At Narenn Living, we provide high-speed WiFi built to handle calls, large downloads and continuous work - see it listed among our ',
         },
         { type: 'link', href: '/amenities/', text: 'WiFi and amenities' },
         { text: '.' },
@@ -25,7 +25,7 @@ const wfhFriendlyAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763226/ChatGPT_Image_Aug_3_2026_06_50_07_PM_uxikdo.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002149/ChatGPT_Image_Aug_3_2026_06_50_07_PM_uxikdo_aaae3y.png',
       alt: 'High-speed WiFi supporting video calls in a co-living room in Hyderabad',
       title: 'WiFi for video calls',
     },
@@ -47,7 +47,7 @@ const wfhFriendlyAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_46_49_PM_zs7jej.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002147/ChatGPT_Image_Aug_3_2026_06_46_49_PM_zs7jej_nszxzb.png',
       alt: 'Quiet co-living room suited for working from home in Hyderabad',
       title: 'WFH-friendly room',
     },
@@ -83,7 +83,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'When home is also the office, chores compete with work for your time and attention. A managed co-living space removes that burden — meals and cleaning are handled, so you can devote your working hours to work and your free time to rest. Three meals a day from our in-house kitchen means you never break your flow to cook.',
+          text: 'When home is also the office, chores compete with work for your time and attention. A managed co-living space removes that burden - meals and cleaning are handled, so you can devote your working hours to work and your free time to rest. Three meals a day from our in-house kitchen means you never break your flow to cook.',
         },
       ],
     },
@@ -95,7 +95,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Remote work can be lonely. One underrated benefit of co-living is built-in social contact — people to eat with, unwind with and talk to at the end of a solitary working day. That human connection is a real boost to wellbeing for anyone working from home. Our ',
+          text: 'Remote work can be lonely. One underrated benefit of co-living is built-in social contact - people to eat with, unwind with and talk to at the end of a solitary working day. That human connection is a real boost to wellbeing for anyone working from home. Our ',
         },
         {
           type: 'link',
@@ -115,7 +115,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Narenn Living brings together everything a remote worker needs: fast WiFi, private rooms, no-curfew flexibility, handled chores and a supportive community — all in a central Madhapur location minutes from Hitech City for your in-office days. See our guide to a ',
+          text: 'Narenn Living brings together everything a remote worker needs: fast WiFi, private rooms, no-curfew flexibility, handled chores and a supportive community - all in a central Madhapur location minutes from Hitech City for your in-office days. See our guide to a ',
         },
         { type: 'link', href: '/locations/hitech-city/', text: 'PG near Hitech City' },
         { text: '. Call 70759 85666 or ' },
@@ -137,7 +137,7 @@ const wfhFriendlyAccommodationHyderabad = {
         'Power backup, so an outage does not cost you a client meeting',
         'Multiple charging points, not one socket behind the bed',
         'A presentable, quiet background for camera-on calls',
-        'Somewhere to go when the room closes in — a lounge, a terrace, anywhere that is not the same four walls',
+        'Somewhere to go when the room closes in - a lounge, a terrace, anywhere that is not the same four walls',
       ],
     },
     {
@@ -168,7 +168,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'A flat plus full-time WFH is a recipe for going three days without a real conversation. Co-living gives you people at breakfast and dinner without you having to organise anything — which turns out to be the difference between remote work being sustainable and remote work being isolating.',
+          text: 'A flat plus full-time WFH is a recipe for going three days without a real conversation. Co-living gives you people at breakfast and dinner without you having to organise anything - which turns out to be the difference between remote work being sustainable and remote work being isolating.',
         },
       ],
     },
@@ -176,7 +176,7 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Add three meals arriving without you cooking during a workday, daily housekeeping, and infrastructure maintained by someone else. Call 70759 85666 and ask specifically about WFH-suitable rooms — we know which ones they are.',
+          text: 'Add three meals arriving without you cooking during a workday, daily housekeeping, and infrastructure maintained by someone else. Call 70759 85666 and ask specifically about WFH-suitable rooms - we know which ones they are.',
         },
       ],
     },
@@ -188,10 +188,10 @@ const wfhFriendlyAccommodationHyderabad = {
       type: 'list',
       items: [
         'Can I join a video call from the room during a visit, or is the WiFi demo only at a quiet hour?',
-        'How does the WiFi perform at 9 PM when the building is full — not at 3 PM when you are demonstrating it?',
+        'How does the WiFi perform at 9 PM when the building is full - not at 3 PM when you are demonstrating it?',
         'Is there backup connectivity, or does one outage cost me a client call?',
         'Is there power backup, and how quickly does it cut in?',
-        'What is the room like on a camera-on call — background, lighting, noise?',
+        'What is the room like on a camera-on call - background, lighting, noise?',
         'Where do I go when I have been in this room for nine hours and need to not be?',
       ],
     },
@@ -213,7 +213,7 @@ const wfhFriendlyAccommodationHyderabad = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763173/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002147/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71_afk0g6.png',
     imageAlt: 'Work from home friendly PG room in Hyderabad with fast WiFi',
   },
 };

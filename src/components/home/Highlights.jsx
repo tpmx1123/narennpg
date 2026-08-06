@@ -1,28 +1,30 @@
+import { Cld } from '../../utils/cloudinary';
+
 const HIGHLIGHTS = [
   {
     label: 'Fully Furnished',
     detail: 'Designer Rooms',
-    icon: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784013213/furniture_oc1dei.png',
+    icon: Cld.icon('v1786002155/furniture_oc1dei_inum7g.png'),
   },
   {
     label: 'Chef-Curated Meals',
     detail: 'Thrice Daily',
-    icon: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784012843/chef_o0npjr.png',
+    icon: Cld.icon('v1786002153/chef_o0npjr_clubhs.png'),
   },
   {
     label: 'High-Speed Wi-Fi',
     detail: 'Enterprise Grade',
-    icon: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784013213/wifi-router_as6edp.png',
+    icon: Cld.icon('v1786002178/wifi-router_as6edp_rlfelu.png'),
   },
   {
     label: '24/7 Smart Security',
     detail: 'Biometric Access',
-    icon: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784013213/cctv_uxdqb6.png',
+    icon: Cld.icon('v1786002147/cctv_uxdqb6_u0ztzf.png'),
   },
   {
     label: 'Daily Housekeeping',
     detail: 'Rooms & Common Areas',
-    icon: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1784013213/cleaning-lady_xf09yy.png',
+    icon: Cld.icon('v1786002153/cleaning-lady_xf09yy_u2ou43.png'),
   },
 ];
 

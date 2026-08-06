@@ -8,7 +8,7 @@ import {
 
 const EASE = [0.16, 1, 0.3, 1];
 const WHY_NARENN_WATERMARK =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1785333986/Screenshot_2026-07-27_152428_plsvfj.png';
+  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002177/Screenshot_2026-07-27_152428_plsvfj_n3y2zm.png';
 
 export default function AboutProperties() {
   return (

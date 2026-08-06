@@ -13,14 +13,14 @@ export const CONTACT_IMAGES = {
   hero: {
     src: `${SITE_URL}/images/book-a-pg-in-madhapur-contact-narenn-living.jpg`,
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784114731/image-03-2_ze1iph.webp',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
     alt: 'Book a PG in Madhapur - Narenn Living reception and enquiry desk',
     title: 'Contact Narenn Living',
   },
   visit: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785931048/M_P00021_1_jrrqj3.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00021_1_jrrqj3_zgjgkn.jpg',
     fallback:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785931048/M_P00021_1_jrrqj3.jpg',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00021_1_jrrqj3_zgjgkn.jpg',
     alt: 'Hallway interior during a free site visit at Narenn Living PG in Madhapur',
     title: 'Free site visit',
   },

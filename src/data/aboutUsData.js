@@ -9,27 +9,27 @@ export const ABOUT_PAGE = {
 
 export const ABOUT_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785332320/DIN00315_3_fuqgs1.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00315_3_fuqgs1_ey66zm.jpg',
     alt: 'Narenn Living premium co-living properties in VIP Hills, Madhapur, Hyderabad',
     title: 'About Narenn Living',
   },
   mission: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785850669/M_P09974_1_vq94me.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/M_P09974_1_vq94me_wzebor.jpg',
     alt: 'Premium furnished co-living room at Narenn Living Madhapur',
     title: 'Our Mission',
   },
   communityA: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785909674/M_P00304_1_cgpnd2.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002161/M_P00304_1_cgpnd2_bblyer.jpg',
     alt: 'Residents sharing a meal in a Narenn Living communal dining area',
     title: 'Narenn Living community',
   },
   communityB: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785851628/M_P00046_1_qstcck.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002157/M_P00046_1_qstcck_thoh1c.jpg',
     alt: 'Evening terrace gathering at Narenn Living Madhapur',
     title: 'Community events at Narenn Living',
   },
   security: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785910572/M_P09966_1_e3b8lr.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002168/M_P09966_1_e3b8lr_slouv8.jpg',
     alt: 'Biometric access control at the entrance of Narenn Living co-living in Madhapur',
     title: 'Biometric security access',
   },
@@ -71,7 +71,7 @@ export const ABOUT_FOUNDER = {
   name: 'Narendranath Chaganla',
   role: 'Founder & CEO, Narenn Living',
   image:
-    'https://res.cloudinary.com/dmaeijlc/image/upload/v1785153675/image-Picsart-AiImageEnhancer_epd6hh.png',
+    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/image-Picsart-AiImageEnhancer_epd6hh_ql5gr3.png',
   alt: 'Narendranath Chaganla, Founder of Narenn Living',
   title: 'Narendranath Chaganla, Founder',
   ctaLabel: "Read the Founder's Note",
@@ -90,11 +90,11 @@ export const ABOUT_GALLERY = {
   h2: 'Moments from',
   h2Accent: 'Our House',
   intro:
-    'A look at the people and places behind Narenn Living — from the founder\'s stage to the teams who keep every property running every day.',
+    'A look at the people and places behind Narenn Living - from the founder\'s stage to the teams who keep every property running every day.',
   images: [
     {
       id: 'founder-portrait',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785153675/image-Picsart-AiImageEnhancer_epd6hh.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/image-Picsart-AiImageEnhancer_epd6hh_ql5gr3.png',
       alt: 'Narendranath Chaganla, Founder of Narenn Living',
       title: 'Narendranath Chaganla',
       caption: 'Founder, Narenn Living',
@@ -104,7 +104,7 @@ export const ABOUT_GALLERY = {
     },
     {
       id: 'founder-speaking',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785155108/DIN00360_1_vtiagv.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00360_1_vtiagv_anbxas.jpg',
       alt: 'Narendranath Chaganla speaking at a podium representing Narenn Living',
       title: 'Founder on stage',
       caption: 'Leadership in conversation',
@@ -114,7 +114,7 @@ export const ABOUT_GALLERY = {
     },
     {
       id: 'leadership-trio',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785155108/DIN00335_1_c1r1xf.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00335_1_c1r1xf_ulgk9h.jpg',
       alt: 'Narendranath Chaganla with leadership team at Narenn Living',
       title: 'Leadership team',
       caption: 'The people steering Narenn',
@@ -124,7 +124,7 @@ export const ABOUT_GALLERY = {
     },
     {
       id: 'full-team',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785155108/DIN00315_1_ihb7xa.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00315_1_ihb7xa_lted73.jpg',
       alt: 'Full Narenn Living team group portrait in Madhapur',
       title: 'The Narenn family',
       caption: 'One house, one standard',
@@ -134,7 +134,7 @@ export const ABOUT_GALLERY = {
     },
     {
       id: 'operations-team',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785155217/DIN00275_1_sthams.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00275_1_sthams_dehz0i.jpg',
       alt: 'Narenn Living operations and hospitality team standing together',
       title: 'Operations & hospitality',
       caption: 'The team behind every stay',

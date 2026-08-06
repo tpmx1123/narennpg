@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import CurvedInput from '../ui/CurvedInput';
 import ContactText from '../ui/ContactText';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
+import { Cld } from '../../utils/cloudinary';
 
-const CTA_IMAGE =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1785851628/M_P00046_1_qstcck.jpg';
+const CTA_IMAGE = Cld.content('v1786002157/M_P00046_1_qstcck_thoh1c.jpg');
 
 const PhoneIcon = (
   <g>

@@ -5,7 +5,7 @@ const studentGuideToHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: "Hyderabad is one of India's best cities to be a student — affordable, safe, welcoming and full of energy. If you are new here, this student guide to Hyderabad covers the essentials: where to live, what to eat, how to get around, how to stay safe, and how to make the most of student life. Get these right, and the city will quickly feel like home.",
+          text: "Hyderabad is one of India's best cities to be a student - affordable, safe, welcoming and full of energy. If you are new here, this student guide to Hyderabad covers the essentials: where to live, what to eat, how to get around, how to stay safe, and how to make the most of student life. Get these right, and the city will quickly feel like home.",
         },
       ],
     },
@@ -17,7 +17,7 @@ const studentGuideToHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Where you live shapes your entire student experience. A safe, well-managed PG or co-living space close to your college or coaching centre is the ideal choice — food, WiFi and cleaning are handled, so you can focus on studying and enjoying the city. Our ',
+          text: 'Where you live shapes your entire student experience. A safe, well-managed PG or co-living space close to your college or coaching centre is the ideal choice - food, WiFi and cleaning are handled, so you can focus on studying and enjoying the city. Our ',
         },
         { type: 'link', href: '/pg-for-students/', text: 'PG for students' },
         {
@@ -31,7 +31,7 @@ const studentGuideToHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763397/ChatGPT_Image_Aug_3_2026_06_52_59_PM_mvpalo.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002149/ChatGPT_Image_Aug_3_2026_06_52_59_PM_mvpalo_oqop99.png',
       alt: 'Student PG room in Hyderabad with WiFi',
       title: 'Student room setup',
     },
@@ -43,7 +43,7 @@ const studentGuideToHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Good, affordable food is essential for a student. Constantly eating out is expensive and often unhealthy. Accommodation with included home-style meals solves this neatly — with three fresh meals a day from our in-house kitchen, you eat well without stretching your budget. Having ',
+          text: 'Good, affordable food is essential for a student. Constantly eating out is expensive and often unhealthy. Accommodation with included home-style meals solves this neatly - with three fresh meals a day from our in-house kitchen, you eat well without stretching your budget. Having ',
         },
         { type: 'link', href: '/food/', text: 'meals included' },
         {
@@ -57,7 +57,7 @@ const studentGuideToHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763443/ChatGPT_Image_Aug_3_2026_06_53_52_PM_f9zoll.png',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_53_52_PM_f9zoll_gowt8k.png',
       alt: 'Hyderabad metro and transport options for students',
       title: 'Student transport',
     },
@@ -101,7 +101,7 @@ const studentGuideToHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Some of your best memories will come from the people you meet. Making friends early keeps homesickness away and makes the city fun. Co-living spaces have a big edge here — you are surrounded by peers. At Narenn Living, our ',
+          text: 'Some of your best memories will come from the people you meet. Making friends early keeps homesickness away and makes the city fun. Co-living spaces have a big edge here - you are surrounded by peers. At Narenn Living, our ',
         },
         { type: 'link', href: '/events/', text: 'community events' },
         {
@@ -132,10 +132,10 @@ const studentGuideToHyderabad = {
     {
       type: 'list',
       items: [
-        'Learn the two routes you will use most — everything else can wait',
+        'Learn the two routes you will use most - everything else can wait',
         'Get a metro card and the cab apps sorted in week one',
         'Find the nearest clinic, pharmacy and ATM before an emergency finds them for you',
-        'Sort a local SIM immediately — a surprising amount of verification depends on it',
+        'Sort a local SIM immediately - a surprising amount of verification depends on it',
         'Say yes to the first few invitations; the friendships from your first month tend to last',
         'Do not commit to a long lease before you know where you will actually be studying and working',
       ],
@@ -148,7 +148,7 @@ const studentGuideToHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'The classic student economy is a cheap room far away and instant noodles at 11 PM. It looks like thrift and it functions as a slow tax — on your health, your energy and your grades.',
+          text: 'The classic student economy is a cheap room far away and instant noodles at 11 PM. It looks like thrift and it functions as a slow tax - on your health, your energy and your grades.',
         },
       ],
     },
@@ -176,7 +176,7 @@ const studentGuideToHyderabad = {
       type: 'paragraph',
       parts: [
         {
-          text: 'Most parental resistance is not about money — it is about not knowing. Twenty minutes on site usually resolves what twenty phone calls could not. Call 70759 85666 and bring them along, evenings and weekends included.',
+          text: 'Most parental resistance is not about money - it is about not knowing. Twenty minutes on site usually resolves what twenty phone calls could not. Call 70759 85666 and bring them along, evenings and weekends included.',
         },
       ],
     },
@@ -218,8 +218,8 @@ const studentGuideToHyderabad = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785763317/ChatGPT_Image_Aug_3_2026_06_51_25_PM_yb4ulk.png',
-    imageAlt: 'Student guide to living in Hyderabad — accommodation, food and budget',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002148/ChatGPT_Image_Aug_3_2026_06_51_25_PM_yb4ulk_gap01w.png',
+    imageAlt: 'Student guide to living in Hyderabad - accommodation, food and budget',
   },
 };
 

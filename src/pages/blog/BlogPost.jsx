@@ -16,11 +16,11 @@ import {
 import { SITE_URL, SITE_LOGO } from '../../data/sitePages';
 
 const BLOG_IMAGE_FALLBACK =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784121460/Narenn-Elite-5-scaled_tnhl5p.webp';
+  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-5-scaled_tnhl5p_uftsbq.webp';
 
 function BlogPostPlaceholderView({ post, onBookVisit }) {
   return (
-    <main className="flex-1 bg-[#FDFCF8] pt-10 sm:pt-12 lg:pt-16 overflow-x-clip">
+    <main className="flex-1 bg-[#FDFCF8] pt-24 sm:pt-28 lg:pt-32 overflow-x-clip">
       <section className="pb-10 sm:pb-14 lg:pb-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10">
           <Link

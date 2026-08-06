@@ -5,19 +5,19 @@ const bestAreasToLiveHyderabadItProfessionals = {
       type: 'paragraph',
       parts: [
         {
-          text: "Hyderabad's IT corridor offers plenty of great neighbourhoods, but the best areas to live in Hyderabad for IT professionals share three things: a short commute to the major tech parks, a lively lifestyle, and good value for money. If you are relocating for a job in Hitech City, Gachibowli or the Financial District, choosing the right base can save you hours every week and make settling in far easier. Here is a practical guide to the top areas — and why Madhapur so often comes out on top.",
+          text: "Hyderabad's IT corridor offers plenty of great neighbourhoods, but the best areas to live in Hyderabad for IT professionals share three things: a short commute to the major tech parks, a lively lifestyle, and good value for money. If you are relocating for a job in Hitech City, Gachibowli or the Financial District, choosing the right base can save you hours every week and make settling in far easier. Here is a practical guide to the top areas - and why Madhapur so often comes out on top.",
         },
       ],
     },
     {
       type: 'h2',
-      text: 'Madhapur — The Central Choice',
+      text: 'Madhapur - The Central Choice',
     },
     {
       type: 'paragraph',
       parts: [
         {
-          text: 'Madhapur sits at the heart of the IT corridor, minutes from Hitech City and within easy reach of Gachibowli. It offers the best of everything: short commutes in multiple directions, a buzzing scene of cafes, restaurants and nightlife, and strong metro and road connectivity. For professionals who want to be close to work without sacrificing lifestyle, Madhapur is hard to beat — which is why we built our ',
+          text: 'Madhapur sits at the heart of the IT corridor, minutes from Hitech City and within easy reach of Gachibowli. It offers the best of everything: short commutes in multiple directions, a buzzing scene of cafes, restaurants and nightlife, and strong metro and road connectivity. For professionals who want to be close to work without sacrificing lifestyle, Madhapur is hard to beat - which is why we built our ',
         },
         {
           type: 'link',
@@ -33,7 +33,7 @@ const bestAreasToLiveHyderabadItProfessionals = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757339/Gemini_Generated_Image_3ux1xd3ux1xd3ux1_jb2ivn.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/Gemini_Generated_Image_3ux1xd3ux1xd3ux1_jb2ivn_nzjazk.jpg',
       alt: 'Madhapur and Hitech City IT corridor in Hyderabad',
       title: 'Hyderabad IT corridor',
     },
@@ -101,7 +101,7 @@ const bestAreasToLiveHyderabadItProfessionals = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757739/output-image_oqqvw1.jpg',
+      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002177/output-image_oqqvw1_rypyrr.jpg',
       alt: 'Commute map showing Hyderabad IT office locations and residential areas',
       title: 'Hyderabad commute map',
     },
@@ -149,7 +149,7 @@ const bestAreasToLiveHyderabadItProfessionals = {
       type: 'list',
       items: [
         'Madhapur / VIP Hills - inside the corridor, everything walkable, highest convenience; priced accordingly',
-        'Kondapur — good balance, slightly cheaper, still close to Hitech City',
+        'Kondapur - good balance, slightly cheaper, still close to Hitech City',
         'Gachibowli - right for Financial District work; a newer ecosystem with less around it after hours',
         'Kukatpally / Miyapur - noticeably cheaper, and a long daily commute that eats the savings',
         'Jubilee Hills - excellent lifestyle, premium rents, moderate commute to the corridor',
@@ -213,7 +213,7 @@ const bestAreasToLiveHyderabadItProfessionals = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785757343/wmremove-transformed_4_x4hsl8.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002180/wmremove-transformed_4_x4hsl8_s99ggs.png',
     imageAlt:
       'Best areas to live in Hyderabad for IT professionals - Madhapur, Kondapur, Gachibowli',
   },

@@ -26,7 +26,7 @@ export const FOUNDER_INTRO = {
     name: 'Narendranath Chaganla',
     role: 'Founder, Narenn Living',
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1785153675/image-Picsart-AiImageEnhancer_epd6hh.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/image-Picsart-AiImageEnhancer_epd6hh_ql5gr3.png',
     alt: 'Narendranath Chaganla, Founder of Narenn Living',
     title: 'Narendranath Chaganla, Founder',
   },
@@ -111,7 +111,7 @@ export const FOUNDER_CLOSING = {
   ],
   signature: {
     image:
-      'https://res.cloudinary.com/dmaeijlc/image/upload/v1784010508/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo.png',
+      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo_rdu5bg.png',
     alt: 'Narendranath Chaganla signature',
     name: 'Narendranath Chaganla',
     role: 'Founder & CEO, Narenn Living',

@@ -5,7 +5,7 @@ import IconSlideButton from '../ui/IconSlideButton';
 
 const EASE = [0.16, 1, 0.3, 1];
 const FOOTER_LOGO =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784010508/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo.png';
+  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo_rdu5bg.png';
 
 export default function PropertiesBuilt({ onBookVisit }) {
   return (

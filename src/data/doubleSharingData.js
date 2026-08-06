@@ -27,7 +27,7 @@ export const DOUBLE_SHARING_PAGE = {
   description:
     'Comfortable 2-sharing AC rooms in Madhapur near Hitech City. Meals, WiFi & housekeeping included. Perfect balance of privacy & company. Book a free visit today.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785921010/M_P00210_2_tgzf4c.jpg',
+  ogImage: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002160/M_P00210_2_tgzf4c_fimpkh.jpg',
 };
 
 export const DOUBLE_SHARING_HERO = {
@@ -42,8 +42,8 @@ export const DOUBLE_SHARING_BOOKING = {
   availabilitySignal: 'Most in-demand format - fills first every month',
   trustItems: ['AC', 'Meals', 'WiFi', 'Housekeeping'],
   monthlyProductLabels: {
-    ac: 'Double Sharing — 2 Sharing (AC)',
-    nonAc: 'Double Sharing — 2 Sharing (Non-AC)',
+    ac: 'Double Sharing - 2 Sharing (AC)',
+    nonAc: 'Double Sharing - 2 Sharing (Non-AC)',
   },
   monthlyHint: [
     'Want more privacy? See our ',
@@ -56,22 +56,22 @@ export const DOUBLE_SHARING_BOOKING = {
 
 export const DOUBLE_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785921010/M_P00210_2_tgzf4c.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002160/M_P00210_2_tgzf4c_fimpkh.jpg',
     alt: 'Hero image of a double sharing room',
     title: 'Double sharing room - hero',
   },
   studyDesks: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920680/M_P00072_1_gkmydq.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00072_1_gkmydq_xevg54.jpg',
     alt: 'Room interior detail in a double sharing room',
     title: 'Double sharing room - interior',
   },
   roommates: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920571/M_P00014_1_x7k9z0.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002157/M_P00014_1_x7k9z0_rcbhsf.jpg',
     alt: 'Room view in a double sharing room',
     title: 'Double sharing room - room view',
   },
   wardrobes: {
-    src: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785920312/M_P00166_1_gxa8lp.jpg',
+    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002159/M_P00166_1_gxa8lp_xsm3ty.jpg',
     alt: 'Wardrobe area in a double sharing room',
     title: 'Double sharing room - wardrobes',
   },
@@ -87,7 +87,7 @@ export const DOUBLE_SHARING_INCLUDES = [
 ];
 
 export const DOUBLE_SHARING_ROOMMATE_MATCHING = {
-  h2: "We Match Roommates — We Don't Assign Them Randomly",
+  h2: "We Match Roommates - We Don't Assign Them Randomly",
   intro:
     'A bad roommate can ruin an otherwise excellent PG, so we treat matching as a process rather than a spreadsheet coincidence. Before allocation we look at your profession, your shift pattern, your sleep timings, your food preference and your general lifestyle. A night-shift engineer does not get paired with someone on a 9 AM standup. A student does not get paired with someone who codes until 2 AM.',
   outro:
@@ -121,7 +121,7 @@ export const DOUBLE_SHARING_FALLBACK = {
   h2: "What Happens If It Doesn't Work Out",
   paragraphs: [
     'Sometimes a match just does not click, and no amount of profiling catches it in advance. Tell us. We will move you to another room subject to availability, and we will not turn it into a negotiation or make you justify yourself.',
-    'That policy exists because the alternative is worse for everyone. A resident quietly enduring a bad pairing does not renew, and they do not tell you why — they just leave. We would rather move you across the corridor than lose you across the city.',
+    'That policy exists because the alternative is worse for everyone. A resident quietly enduring a bad pairing does not renew, and they do not tell you why - they just leave. We would rather move you across the corridor than lose you across the city.',
   ],
 };
 

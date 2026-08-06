@@ -1,8 +1,8 @@
 export const SITE_URL = 'https://narennliving.com';
 export const SITE_LOGO =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1785750940/Narenn_Favicon_u6seha.png';
+  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn_Favicon_u6seha_ahuchx.png';
 export const LOCATION_HERO_IMAGE =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1785751476/ChatGPT_Image_Aug_3_2026_03_34_24_PM_zri9cq.png';
+  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002148/ChatGPT_Image_Aug_3_2026_03_34_24_PM_zri9cq_d61ozj.png';
 export const PHONE_DISPLAY = '70759 85666';
 export const PHONE_TEL = '+917075985666';
 export const WHATSAPP_URL = 'https://wa.me/917075985666';
@@ -156,7 +156,7 @@ export const NAV_ROOMS = [
     label: 'All Rooms',
     href: '/rooms/',
     slug: 'all',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922730/M_P00299_1_ilshb5.jpg',
+    image: 'v1786002160/M_P00299_1_ilshb5_i1cbub.jpg',
     description: 'Explore single, double, triple and quad sharing in VIP Hills, Madhapur.',
     tagline: 'All Options',
     sharingType: 'Sharing',
@@ -165,7 +165,7 @@ export const NAV_ROOMS = [
     label: 'Single Sharing',
     href: '/rooms/single-sharing/',
     slug: 'single-sharing',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785919947/M_P00016_1_irxbq9.jpg',
+    image: 'v1786002156/M_P00016_1_irxbq9_avrkd5.jpg',
     description: 'Private single occupancy — designed for privacy, focus and personal comfort.',
     tagline: 'Single Occupancy',
     sharingType: '1 Sharing',
@@ -174,7 +174,7 @@ export const NAV_ROOMS = [
     label: 'Double Sharing',
     href: '/rooms/double-sharing/',
     slug: 'double-sharing',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785921010/M_P00210_2_tgzf4c.jpg',
+    image: 'v1786002160/M_P00210_2_tgzf4c_fimpkh.jpg',
     description: 'Twin sharing with personal space and friendly companionship.',
     tagline: 'Twin Occupancy',
     sharingType: '2 Sharing',
@@ -183,7 +183,7 @@ export const NAV_ROOMS = [
     label: 'Triple Sharing',
     href: '/rooms/triple-sharing/',
     slug: 'triple-sharing',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922018/M_P00196_1_hkg9hw.jpg',
+    image: 'v1786002159/M_P00196_1_hkg9hw_v9pcqw.jpg',
     description: 'Comfortable shared living for collaboration and cost efficiency.',
     tagline: 'Triple Occupancy',
     sharingType: '3 Sharing',
@@ -192,7 +192,7 @@ export const NAV_ROOMS = [
     label: 'Quad Sharing',
     href: '/rooms/quad-sharing/',
     slug: 'quad-sharing',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785922348/M_P00064_1_xrjutj.jpg',
+    image: 'v1786002158/M_P00064_1_xrjutj_sqqtbt.jpg',
     description: 'Budget-friendly four sharing built around group routines.',
     tagline: 'Quad Occupancy',
     sharingType: '4 Sharing',
@@ -204,7 +204,7 @@ export const NAV_PROPERTIES = [
     label: 'All Properties',
     href: '/properties/',
     slug: 'all',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911174/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly.png',
+    image: 'v1786002153/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly_ulwfmu.png',
     description: 'Four premium residences in VIP Hills, Madhapur.',
     tagline: 'VIP Hills',
     livingType: 'Co-Living',
@@ -213,7 +213,7 @@ export const NAV_PROPERTIES = [
     label: 'Narenn Elite',
     href: '/properties/narenn-elite/',
     slug: 'narenn-elite',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911174/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly.png',
+    image: 'v1786002153/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly_ulwfmu.png',
     description: 'Premium co-living designed for focused living and high productivity.',
     tagline: 'Minimalist Elegance',
     livingType: 'Co-Living',
@@ -222,7 +222,7 @@ export const NAV_PROPERTIES = [
     label: "Narenn's Crown",
     href: '/properties/narenn-crown/',
     slug: 'narenn-crown',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785911283/ChatGPT_Image_Aug_5_2026_11_57_36_AM_xwf4ye.png',
+    image: 'v1786002152/ChatGPT_Image_Aug_5_2026_11_57_36_AM_xwf4ye_dw5crm.png',
     description: 'A signature safe space curated exclusively for girls.',
     tagline: 'Refined Comfort',
     livingType: 'For Girls',
@@ -231,7 +231,7 @@ export const NAV_PROPERTIES = [
     label: 'Narenn Pinnacle',
     href: '/properties/narenn-pinnacle/',
     slug: 'narenn-pinnacle',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785915351/ChatGPT_Image_Aug_5_2026_01_05_43_PM_c34gr5.png',
+    image: 'v1786002152/ChatGPT_Image_Aug_5_2026_01_05_43_PM_c34gr5_edwlrp.png',
     description: 'Upscale co-living crafted for ambitious corporate leaders.',
     tagline: 'Upscale Executive',
     livingType: 'Co-Living',
@@ -240,7 +240,7 @@ export const NAV_PROPERTIES = [
     label: "Narenn's Supreme",
     href: '/properties/narenn-supreme/',
     slug: 'narenn-supreme',
-    image: 'https://res.cloudinary.com/dmaeijlc/image/upload/v1785914850/ChatGPT_Image_Aug_5_2026_12_57_13_PM_muwbh3.png',
+    image: 'v1786002153/ChatGPT_Image_Aug_5_2026_12_57_13_PM_muwbh3_oqlip7.png',
     description: 'Vibrant co-living with high-energy community spaces.',
     tagline: 'Vibrant Living',
     livingType: 'Co-Living',

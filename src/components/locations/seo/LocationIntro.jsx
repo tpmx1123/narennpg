@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const EASE = [0.16, 1, 0.3, 1];
 const WATERMARK_LOGO =
-  'https://res.cloudinary.com/dmaeijlc/image/upload/v1784012843/narennlogo_opx4st.png';
+  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002176/narennlogo_opx4st_h4xfzh.png';
 
 export default function LocationIntro({ data }) {
   const paragraphs = data.intro.paragraphs.map((p) => (typeof p === 'string' ? p : p.text));
