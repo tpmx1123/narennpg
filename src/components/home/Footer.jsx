@@ -104,7 +104,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-green-pale border-t border-brand-gold/30 relative z-10 pt-28 sm:pt-32 lg:pt-36 pb-6 sm:pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-5 gap-y-8 sm:gap-x-10 sm:gap-y-10 lg:gap-4 mb-0">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-5 gap-y-8 sm:gap-x-10 sm:gap-y-10 lg:gap-4 mb-0 relative z-10">
           <div className="col-span-2 lg:col-span-3 space-y-4 max-w-sm lg:max-w-xs mx-auto lg:mx-0">
             <Link to="/" className="flex justify-center">
               <img
@@ -177,17 +177,27 @@ export default function Footer() {
             <h3 className="font-display font-bold text-sm text-brand-green">Contact Us</h3>
             <ul className="space-y-3 text-sm text-brand-charcoal-light">
               <li className="flex items-center gap-2.5">
-                <span className="w-8 h-8 rounded-full bg-white border border-brand-gold/30 flex items-center justify-center shrink-0 shadow-sm">
+                <a
+                  href={`tel:${PHONE_TEL}`}
+                  aria-label={`Call +91 ${PHONE_DISPLAY}`}
+                  className="w-8 h-8 rounded-full bg-white border border-brand-gold/30 flex items-center justify-center shrink-0 shadow-sm hover:border-brand-burgundy/40 transition-colors"
+                >
                   <Phone className="w-4 h-4 text-brand-burgundy" />
-                </span>
+                </a>
                 <a href={`tel:${PHONE_TEL}`} className="hover:text-brand-burgundy transition-colors">
                   +91 {PHONE_DISPLAY}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <span className="w-8 h-8 rounded-full bg-white border border-brand-gold/30 flex items-center justify-center shrink-0 shadow-sm">
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chat on WhatsApp"
+                  className="w-8 h-8 rounded-full bg-white border border-brand-gold/30 flex items-center justify-center shrink-0 shadow-sm hover:border-[#25D366]/50 transition-colors"
+                >
                   <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
-                </span>
+                </a>
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
@@ -198,9 +208,13 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <span className="w-8 h-8 rounded-full bg-white border border-brand-gold/30 flex items-center justify-center shrink-0 shadow-sm">
+                <a
+                  href="mailto:info@narennliving.com"
+                  aria-label="Email info@narennliving.com"
+                  className="w-8 h-8 rounded-full bg-white border border-brand-gold/30 flex items-center justify-center shrink-0 shadow-sm hover:border-brand-burgundy/40 transition-colors"
+                >
                   <Mail className="w-4 h-4 text-brand-burgundy" />
-                </span>
+                </a>
                 <a
                   href="mailto:info@narennliving.com"
                   className="hover:text-brand-burgundy transition-colors break-all"
@@ -239,12 +253,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex justify-center mt-8 sm:mt-10 lg:-mt-40 pb-6 lg:pb-8">
+        <div className="flex justify-center mt-8 sm:mt-10 lg:-mt-40 pb-6 lg:pb-8 pointer-events-none relative z-0">
           <img
             src={FOOTER_ORNAMENT}
             alt=""
             aria-hidden="true"
-            loading="lazy" className="w-[min(100%,880px)] h-auto max-h-24 sm:max-h-36 lg:max-h-40 object-contain"
+            loading="lazy"
+            className="w-[min(100%,880px)] h-auto max-h-24 sm:max-h-36 lg:max-h-40 object-contain"
           />
         </div>
 
