@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import { CheckCircle2, Sparkles, Wifi, Shield } from 'lucide-react';
 import SectionHeading from '../../ui/SectionHeading';
 import { GACHIBOWLI_AMENITIES } from '../../../data/gachibowliLocationData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 const HIGHLIGHTS = [
   { icon: Sparkles, label: 'Meals included' },
@@ -15,12 +16,9 @@ const HIGHLIGHTS = [
 
 export default function GachibowliAmenities() {
   return (
-    <section className="mb-8 sm:mb-10 lg:mb-12 rounded-2xl border border-brand-gold/20 bg-brand-gold-pale/30 px-4 py-6 sm:px-8 sm:py-10 lg:px-10">
+    <section className="mb-8 sm:mb-10 lg:mb-12 rounded-2xl border border-brand-gold/20 bg-brand-gold-pale/30 px-4 py-6 sm:px-8 sm:py-10 lg:px-6">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.5, ease: EASE }}
+        {...scrollReveal}
         className="max-w-3xl mx-auto text-center space-y-5 sm:space-y-6"
       >
         <SectionHeading

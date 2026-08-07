@@ -1,9 +1,9 @@
 import { motion, useReducedMotion } from 'framer-motion';
+import { staggerContainerMount, staggerItemMount } from '../../../motion/motionPresets';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import IconSlideButton from '../../ui/IconSlideButton';
 
-const EASE = [0.22, 1, 0.36, 1];
 
 /** Elite & Supreme: left; Crown & Pinnacle: right */
 const HERO_ALIGN = {
@@ -40,30 +40,31 @@ export default function PropertyHero({ data, onBookVisit }) {
         aria-hidden="true"
       />
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-12 lg:pb-16">
+      <div className="relative w-full site-container pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-12 lg:pb-16">
         <motion.div
-          initial={reduceMotion ? { opacity: 0 } : { opacity: 0, y: 22 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: EASE, delay: 0.06 }}
           className={`max-w-3xl flex flex-col ${
             isRight ? 'ml-auto items-end text-right' : 'items-start'
           }`}
+          {...(reduceMotion
+            ? { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.35 } }
+            : staggerContainerMount)}
         >
-          <span className="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4">
+          <motion.span className="inline-flex items-center gap-2 section-eyebrow-on-dark mb-4" {...staggerItemMount}>
             {hero.eyebrow}
-          </span>
+          </motion.span>
 
-          <h1 className="text-2xl sm:text-[2rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-4 sm:mb-5">
+          <motion.h1 className="text-2xl sm:text-[2rem] font-display font-semibold text-[#F7F3E9] tracking-tight leading-[1.12] mb-4 sm:mb-5" {...staggerItemMount}>
             {hero.h1} -{' '}
-            <span className="text-brand-gold-light italic font-medium">{hero.h1Accent}</span>
-          </h1>
+            <span className="section-title-accent">{hero.h1Accent}</span>
+          </motion.h1>
 
-          <p className="text-sm sm:text-base text-brand-cream/85 leading-relaxed max-w-xl mb-6 sm:mb-7">
+          <motion.p className="text-sm sm:text-base text-brand-cream/85 leading-relaxed max-w-xl mb-6 sm:mb-7" {...staggerItemMount}>
             {hero.lead}
-          </p>
+          </motion.p>
 
-          <div
+          <motion.div
             className={`flex flex-wrap items-center gap-4 ${isRight ? 'justify-end' : ''}`}
+            {...staggerItemMount}
           >
             {onBookVisit ? (
               <IconSlideButton
@@ -89,7 +90,7 @@ export default function PropertyHero({ data, onBookVisit }) {
               All properties
               <ChevronRight className={`w-4 h-4 ${isRight ? 'rotate-180' : ''}`} />
             </Link>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

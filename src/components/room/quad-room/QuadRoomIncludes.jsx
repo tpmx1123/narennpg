@@ -15,12 +15,12 @@ export default function QuadRoomIncludes() {
       transition={{ duration: 0.6, ease: EASE }}
       className="mb-12 lg:mb-14"
     >
-      <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+      <span className="section-eyebrow block mb-3">
         Complete Package
       </span>
-      <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4">
+      <h2 className="section-title mb-4">
         What Your Four Room{' '}
-        <span className="text-brand-gold italic font-medium">Includes</span>
+        <span className="section-title-accent">Includes</span>
       </h2>
       <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mb-6">
         A four sharing room is designed so all four residents have their own comfortable, private

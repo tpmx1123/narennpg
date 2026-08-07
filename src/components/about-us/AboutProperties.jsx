@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import {
   ABOUT_DIFFERENT_BULLETS,
   ABOUT_PROPERTIES,
 } from '../../data/aboutUsData';
 
-const EASE = [0.16, 1, 0.3, 1];
 const WHY_NARENN_WATERMARK =
   'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002177/Screenshot_2026-07-27_152428_plsvfj_n3y2zm.png';
 
@@ -14,16 +14,13 @@ export default function AboutProperties() {
   return (
     <section className="mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 md:grid-cols-3 gap-5"
       >
         {/* Residences */}
         <article className="md:col-span-1 bg-white p-5 sm:p-7 lg:p-8 rounded-xl border border-brand-gold/20 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
           <div>
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+            <span className="section-eyebrow block mb-3">
               Residences
             </span>
             <h2 className="font-display font-bold text-xl sm:text-2xl text-brand-charcoal tracking-tight mb-6">
@@ -69,11 +66,11 @@ export default function AboutProperties() {
           />
           <div className="relative z-10 p-5 sm:p-7 lg:p-10 h-full flex flex-col justify-between">
             <div>
-              <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+              <span className="section-eyebrow block mb-3">
                 Why Narenn
               </span>
-              <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6">
-                What Makes Us <span className="text-brand-gold italic font-medium">Different</span>
+              <h2 className="section-title mb-6">
+                What Makes Us <span className="section-title-accent">Different</span>
               </h2>
               <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-5">
                 {ABOUT_DIFFERENT_BULLETS.map((item) => (

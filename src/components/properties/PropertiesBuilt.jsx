@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { PROPERTIES_BUILT, PROPERTIES_VISIT } from '../../data/propertiesPageData';
 import { WHATSAPP_URL } from '../../data/sitePages';
 import IconSlideButton from '../ui/IconSlideButton';
 
-const EASE = [0.16, 1, 0.3, 1];
 const FOOTER_LOGO =
   'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo_rdu5bg.png';
 
@@ -11,15 +11,12 @@ export default function PropertiesBuilt({ onBookVisit }) {
   return (
     <section className="mb-14 lg:mb-16 space-y-12 lg:space-y-14">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="relative overflow-hidden rounded-[1.75rem] sm:rounded-[2rem] bg-brand-green-pale border border-brand-gold/20 px-5 py-8 sm:px-10 sm:py-12 lg:px-12 lg:py-14 max-w-4xl mx-auto"
       >
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center">
           <div className="lg:col-span-8">
-            <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
+            <h2 className="section-title mb-5">
               {PROPERTIES_BUILT.h2}
             </h2>
             <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed max-w-2xl">
@@ -38,14 +35,11 @@ export default function PropertiesBuilt({ onBookVisit }) {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE, delay: 0.05 }}
+        {...scrollReveal}
         className="py-10 lg:py-14"
       >
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {PROPERTIES_VISIT.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mt-5">

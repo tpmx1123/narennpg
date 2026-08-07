@@ -1,24 +1,21 @@
 import { CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { AMENITIES_FULL_LIST, AMENITIES_FULL_LIST_ITEMS } from '../../data/amenitiesData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function AmenitiesFullList() {
   const plain = AMENITIES_FULL_LIST.h2.replace(AMENITIES_FULL_LIST.h2Accent, '').trim();
 
   return (
-    <section className="mb-14 lg:mb-16 pt-8 lg:pt-10 pb-10 lg:pb-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-gold-pale/25 border-b border-brand-gold/15">
+    <section className="mb-14 lg:mb-16 pt-8 lg:pt-10 pb-10 lg:pb-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-brand-gold-pale/25 border-b border-brand-gold/15">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="max-w-5xl mx-auto"
       >
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-3">
+        <h2 className="section-title mb-3">
           {plain}{' '}
-          <span className="text-brand-gold italic font-medium">{AMENITIES_FULL_LIST.h2Accent}</span>
+          <span className="section-title-accent">{AMENITIES_FULL_LIST.h2Accent}</span>
         </h2>
         <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mb-6">
           {AMENITIES_FULL_LIST.intro}

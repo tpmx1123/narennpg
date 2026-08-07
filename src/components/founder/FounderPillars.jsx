@@ -12,13 +12,13 @@ const ICONS = {
 export default function FounderPillars() {
   return (
     <section className="py-8 sm:py-10 lg:py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="site-container">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 sm:mb-8 gap-3 sm:gap-4">
           <div className="min-w-0">
-            <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-2.5 sm:mb-3">
+            <span className="section-eyebrow block mb-2.5 sm:mb-3">
               {FOUNDER_PILLARS.eyebrow}
             </span>
-            <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            <h2 className="section-title">
               {FOUNDER_PILLARS.h2}
             </h2>
           </div>
@@ -37,7 +37,7 @@ export default function FounderPillars() {
                 }`}
               >
                 <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-brand-burgundy mb-3 sm:mb-4" strokeWidth={1.5} />
-                <h4 className="text-[10px] sm:text-[11px] font-display font-bold text-brand-green uppercase tracking-[0.18em] mb-1.5 sm:mb-2">
+                <h4 className="text-[10px] sm:text-[11px] font-display font-semibold text-brand-green uppercase tracking-[0.18em] mb-1.5 sm:mb-2">
                   {item.title}
                 </h4>
                 <p className="text-xs sm:text-sm text-brand-charcoal-light leading-relaxed max-w-xs mx-auto">

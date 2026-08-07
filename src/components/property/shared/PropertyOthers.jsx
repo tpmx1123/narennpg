@@ -1,23 +1,20 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import { getOtherProperties } from '../../../data/propertySharedData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function PropertyOthers({ currentId }) {
   const others = getOtherProperties(currentId);
 
   return (
-    <section className="mb-10 sm:mb-14 lg:mb-16 pt-4 sm:pt-5 lg:pt-6 pb-10 sm:pb-12 lg:pb-16 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-[#F7F7F5]">
+    <section className="mb-10 sm:mb-14 lg:mb-16 pt-4 sm:pt-5 lg:pt-6 pb-10 sm:pb-12 lg:pb-16 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-[#F7F7F5]">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
       >
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 sm:gap-4 mb-8">
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             Explore Other Properties
           </h2>
           <Link

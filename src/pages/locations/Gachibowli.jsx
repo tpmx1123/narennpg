@@ -122,7 +122,7 @@ export default function Gachibowli() {
 
       <main className="flex-1 bg-white overflow-x-clip">
         <GachibowliHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 sm:pb-10 lg:pb-10">
+        <div className="site-container pb-8 sm:pb-10 lg:pb-10">
           <GachibowliIntro />
           <GachibowliConnected />
           <GachibowliWhyMadhapur />
@@ -143,7 +143,7 @@ export default function Gachibowli() {
           title={
             <>
               {GACHIBOWLI_FINAL_CTA.title} —{' '}
-              <span className="text-brand-gold italic font-medium">
+              <span className="section-title-accent">
                 {GACHIBOWLI_FINAL_CTA.titleAccent}
               </span>
             </>

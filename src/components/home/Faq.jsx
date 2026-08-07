@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { HOME_FAQS } from '../../data/seoHome';
+import { accordionPanel, scrollReveal } from '../../motion/motionPresets';
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -8,12 +10,12 @@ export default function Faq() {
   return (
     <section id="faq" className="py-10 sm:py-14 bg-white border-t border-brand-gold/15">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
-        <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3 text-center">
-          FAQ
-        </span>
-        <h2 className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-8 sm:mb-10">
-          Frequently Asked <span className="text-brand-gold italic font-medium">Questions</span>
-        </h2>
+        <motion.div className="text-center mb-8 sm:mb-10" {...scrollReveal}>
+          <span className="section-eyebrow block mb-3">FAQ</span>
+          <h2 className="section-title">
+            Frequently Asked <span className="section-title-accent">Questions</span>
+          </h2>
+        </motion.div>
 
         <div className="space-y-3">
           {HOME_FAQS.map((faq, index) => {
@@ -29,7 +31,7 @@ export default function Faq() {
                   className="w-full flex items-center justify-between gap-3 px-4 py-3.5 sm:gap-4 sm:px-5 sm:py-4 text-left"
                   aria-expanded={open}
                 >
-                  <h3 className="font-display font-bold text-sm sm:text-base text-brand-charcoal pr-2">
+                  <h3 className="font-display font-semibold text-sm sm:text-base text-brand-charcoal pr-2">
                     {faq.question}
                   </h3>
                   <ChevronDown
@@ -38,11 +40,22 @@ export default function Faq() {
                     }`}
                   />
                 </button>
-                {open && (
-                  <div className="px-4 pb-4 sm:px-5 sm:pb-5">
-                    <p className="text-sm leading-relaxed text-brand-charcoal-light">{faq.answer}</p>
-                  </div>
-                )}
+                <AnimatePresence initial={false}>
+                  {open && (
+                    <motion.div
+                      key="panel"
+                      initial={accordionPanel.initial}
+                      animate={accordionPanel.animate}
+                      exit={accordionPanel.exit}
+                      transition={accordionPanel.transition}
+                      className="overflow-hidden"
+                    >
+                      <p className="px-4 pb-4 sm:px-5 sm:pb-5 text-sm leading-relaxed text-brand-charcoal-light">
+                        {faq.answer}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             );
           })}

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { ROOMS_FORMATS, ROOMS_IMAGES } from '../../data/roomsData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 export default function RoomsFormats() {
   return (
@@ -16,10 +17,7 @@ export default function RoomsFormats() {
         return (
           <motion.article
             key={format.id}
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: EASE }}
+            {...scrollReveal}
             className="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-12 items-center rounded-xl border border-brand-gold/20 bg-white p-3 shadow-sm lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none"
           >
             <div className={`min-w-0 lg:col-span-5 ${reverse ? 'lg:order-2' : ''}`}>
@@ -35,7 +33,7 @@ export default function RoomsFormats() {
             </div>
 
             <div className={`min-w-0 pt-3 sm:pt-5 lg:pt-0 lg:col-span-7 ${reverse ? 'lg:order-1' : ''}`}>
-              <span className="lg:hidden text-[10px] font-bold tracking-[0.2em] text-brand-gold uppercase block mb-2">
+              <span className="lg:hidden section-eyebrow block mb-2">
                 {format.eyebrow}
               </span>
               <h2 className="text-lg sm:text-2xl lg:text-4xl font-display font-bold text-brand-burgundy lg:text-brand-green tracking-tight leading-[1.15] mb-2 sm:mb-3 lg:mb-4">
@@ -43,7 +41,7 @@ export default function RoomsFormats() {
                 {accent && (
                   <>
                     {' - '}
-                    <span className="text-brand-gold italic font-medium">{accent}</span>
+                    <span className="section-title-accent">{accent}</span>
                   </>
                 )}
               </h2>

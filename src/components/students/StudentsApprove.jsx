@@ -1,20 +1,18 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { STUDENTS_APPROVE, STUDENTS_IMAGES } from '../../data/studentsPageData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 export default function StudentsApprove() {
   const img = STUDENTS_IMAGES.parents;
   const [src, setSrc] = useState(img.src);
 
   return (
-    <section className="mb-0 -mx-4 sm:-mx-6 lg:-mx-10 bg-brand-gold-pale/30 border-t border-brand-gold/15 overflow-hidden">
+    <section className="mb-0 -mx-4 sm:-mx-6 lg:-mx-6 bg-brand-gold-pale/30 border-t border-brand-gold/15 overflow-hidden">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.12 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12"
       >
         <div className="lg:col-span-5 relative min-h-[240px] sm:min-h-[300px] lg:min-h-full order-2 lg:order-1">
@@ -28,12 +26,12 @@ export default function StudentsApprove() {
         </div>
 
         <div className="lg:col-span-7 order-1 lg:order-2 px-4 sm:px-8 lg:px-12 py-10 lg:py-14 space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             {STUDENTS_APPROVE.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             Why Parents{' '}
-            <span className="text-brand-gold italic font-medium">Approve</span> of Narenn Living
+            <span className="section-title-accent">Approve</span> of Narenn Living
           </h2>
           {STUDENTS_APPROVE.paragraphs.map((para) => (
             <p

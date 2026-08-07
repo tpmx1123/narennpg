@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import { HITECH_CITY_MADHAPUR, HITECH_CITY_IMAGES } from '../../../data/hitechCityLocationData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function HitechCityMadhapur() {
   const img = HITECH_CITY_IMAGES.landmarks;
@@ -12,10 +12,7 @@ export default function HitechCityMadhapur() {
   return (
     <section className="mb-8 sm:mb-10 lg:mb-12">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center max-w-6xl mx-auto"
       >
         <div className="lg:col-span-7 order-1 lg:order-1">
@@ -31,12 +28,12 @@ export default function HitechCityMadhapur() {
         </div>
 
         <div className="lg:col-span-5 order-2 lg:order-2 space-y-4 sm:space-y-5 min-w-0">
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             {HITECH_CITY_MADHAPUR.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             The Convenience of{' '}
-            <span className="text-brand-gold italic font-medium">
+            <span className="section-title-accent">
               {HITECH_CITY_MADHAPUR.h2Accent}
             </span>
           </h2>

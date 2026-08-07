@@ -107,7 +107,7 @@ export default function Properties() {
 
       <main className="flex-1 bg-white">
         <PropertiesHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
+        <div className="site-container pb-8 lg:pb-10">
           <PropertiesIntro />
           <PropertiesShowcase />
           <PropertiesLocation />
@@ -121,7 +121,7 @@ export default function Properties() {
           onBookVisit={onBookVisit}
           title={
             <>
-              Tour Our <span className="text-brand-gold italic font-medium">Properties</span>
+              Tour Our <span className="section-title-accent">Properties</span>
             </>
           }
           description={

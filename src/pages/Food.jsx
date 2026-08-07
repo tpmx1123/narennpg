@@ -81,7 +81,7 @@ export default function Food() {
         <FoodHero onBookVisit={onBookVisit} />
         <FoodIntro />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 sm:pb-10 lg:pb-10">
+        <div className="site-container pb-8 sm:pb-10 lg:pb-10">
           <FoodMeals />
           <FoodHome />
           <FoodHygiene />
@@ -97,7 +97,7 @@ export default function Food() {
           onBookVisit={onBookVisit}
           title={
             <>
-              Come Taste <span className="text-brand-gold italic font-medium">for Yourself</span>
+              Come Taste <span className="section-title-accent">for Yourself</span>
             </>
           }
           description={

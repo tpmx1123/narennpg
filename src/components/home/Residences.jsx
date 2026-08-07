@@ -2,8 +2,14 @@ import { useEffect, useRef, useState } from 'react';
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { HERO_SLIDES, RESIDENCES } from '../../data/homeData';
+import {
+  EASE_OUT,
+  scrollReveal,
+  staggerContainer,
+  staggerItem,
+} from '../../motion/motionPresets';
 
-const ease = [0.22, 1, 0.36, 1];
+const ease = EASE_OUT;
 
 const PROPERTY_CARDS = RESIDENCES.map((res) => {
   const slide = HERO_SLIDES.find((s) => s.property === res.name);
@@ -53,7 +59,7 @@ function ResidenceCard({ res }) {
         scale: hovered ? 1.02 : 1,
       }}
       transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl border border-white/15 bg-brand-charcoal"
+      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl "
     >
       <img
         src={res.image}
@@ -130,14 +136,15 @@ export default function Residences() {
   return (
     <section id="properties" className="py-10 sm:py-12 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-6 px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-10">
+        <motion.div
+          className="mb-6 px-4 sm:px-6 lg:px-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-10"
+          {...scrollReveal}
+        >
           <div className="shrink-0">
-            <span className="text-[10px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-2 block">
-              Our Properties
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            <span className="section-eyebrow block mb-2">Our Properties</span>
+            <h2 className="section-title">
               Properties Designed <br />
-              <span className="text-brand-gold italic font-medium">for Real Life.</span>
+              <span className="section-title-accent">for Real Life.</span>
             </h2>
           </div>
 
@@ -151,14 +158,19 @@ export default function Residences() {
             </a>{' '}
             and find the option that fits your budget and lifestyle.
           </p>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-4 px-4 pb-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-4 sm:px-6 lg:px-10">
+      <motion.div
+        className="max-w-7xl mx-auto grid grid-cols-1 gap-4 px-4 pb-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-4 sm:px-6 lg:px-6"
+        {...staggerContainer}
+      >
         {PROPERTY_CARDS.map((res) => (
-          <ResidenceCard key={res.name} res={res} />
+          <motion.div key={res.name} {...staggerItem}>
+            <ResidenceCard res={res} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

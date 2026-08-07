@@ -1,21 +1,27 @@
 import { useNavigate } from 'react-router-dom';
 import { Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { HOME_SEO } from '../../data/seoHome';
 import IconSlideButton from '../ui/IconSlideButton';
 import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
 import { Cld } from '../../utils/cloudinary';
+import { scrollReveal } from '../../motion/motionPresets';
 
 const ABOUT_IMAGE = Cld.heroStill('v1786002162/M_P00337_1_xcyssw_hxkokm.jpg');
 
 export default function About() {
   const navigate = useNavigate();
   return (
-    <section id="about" className="py-10 sm:py-14 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-4 items-center bg-white">
-      
-      {/* LEFT SIDE: Premium Cinematic Image — centered in column */}
-      <div className="hidden lg:flex lg:col-span-5 items-center justify-center self-center">
+    <section
+      id="about"
+      className="py-10 sm:py-14 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-4 items-center bg-white"
+    >
+      <motion.div
+        className="hidden lg:flex lg:col-span-5 items-center justify-center self-center"
+        {...scrollReveal}
+      >
         <div className="relative w-full max-w-full sm:max-w-90 lg:max-w-100 h-70 sm:h-105 lg:h-115 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl group">
-          <img 
+          <img
             src={ABOUT_IMAGE}
             alt="Premium co-living building interior in Madhapur, Hyderabad — Narenn Living VIP Hills"
             title="Narenn Living co-living in Madhapur"
@@ -27,17 +33,14 @@ export default function About() {
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-80 pointer-events-none" />
         </div>
-      </div>
+      </motion.div>
 
-      {/* RIGHT SIDE: Content Narrative & Metrics */}
-      <div className="lg:col-span-7 flex flex-col justify-center self-center">
-        <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-3 block">
-          From Day One
-        </span>
-        
-        <h2 className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-3">
+      <motion.div className="lg:col-span-7 flex flex-col justify-center self-center" {...scrollReveal}>
+        <span className="section-eyebrow block mb-3">From Day One</span>
+
+        <h2 className="section-title mb-3">
           Why Residents Choose <br />
-          <span className="text-brand-gold italic font-medium">Narenn Living.</span>
+          <span className="section-title-accent">Narenn Living.</span>
         </h2>
 
         <div className="lg:hidden relative w-full h-70 sm:h-105 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl mb-6">
@@ -53,27 +56,31 @@ export default function About() {
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-80 pointer-events-none" />
         </div>
-        
+
         <p className="text-brand-charcoal-light text-sm sm:text-base leading-relaxed mb-3 max-w-3xl">
           We built Narenn Living around the things that actually matter when you move to a new city -
           food you look forward to, a room that feels yours, reliable internet, and people you can
           trust. Here is what every resident gets from day one:
         </p>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-3 max-w-2xl text-sm text-brand-charcoal-light">
-          {HOME_SEO.whyChoose.map((item) => (
-            <li key={item} className="flex gap-2">
-              <span className="text-brand-gold font-bold shrink-0" aria-hidden="true">
-                •
+        <ul className="space-y-3 mb-5 max-w-2xl">
+          {HOME_SEO.whyChoose.map((feature) => (
+            <li key={feature.label} className="flex gap-3 text-sm">
+              <span
+                className="shrink-0 w-2 h-2 mt-1.5 bg-brand-gold"
+                aria-hidden="true"
+              />
+              <span className="text-brand-charcoal-light">
+                <strong className="font-bold text-brand-charcoal">
+                  {feature.label}:
+                </strong>{' '}
+                {feature.detail}
               </span>
-              <span>{item}</span>
             </li>
           ))}
         </ul>
 
-        {/* Action CTAs */}
         <div className="flex flex-row items-center justify-around sm:justify-start gap-3 sm:gap-6">
-         
           <IconSlideButton
             onClick={() => navigate('/about-us/')}
             radius={10}
@@ -88,17 +95,10 @@ export default function About() {
           >
             Know More About Us
           </IconSlideButton>
-          
-          <a 
-            href={`tel:${PHONE_TEL}`} 
-            className="flex items-center gap-2 text-brand-charcoal-light font-display font-bold text-xs sm:text-sm hover:text-[#FBBD45] transition-colors group"
-          >
-            <Phone className="w-4 h-4 text-[#FBBD45] group-hover:animate-pulse" />
-            +91 {PHONE_DISPLAY}
-          </a>
-        </div>
 
-      </div>
+         
+        </div>
+      </motion.div>
     </section>
   );
 }

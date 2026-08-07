@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import { Phone } from 'lucide-react';
 import { CONTACT_MAPS } from '../../../data/contactUsData';
 import { GACHIBOWLI_MAPS } from '../../../data/gachibowliLocationData';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../../data/sitePages';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function GachibowliMaps() {
   const plain = GACHIBOWLI_MAPS.h2.replace(GACHIBOWLI_MAPS.h2Accent, '').trim();
@@ -13,19 +13,16 @@ export default function GachibowliMaps() {
   return (
     <section className="mb-8 sm:mb-10 lg:mb-12">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.12 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-start"
       >
         <div className="lg:col-span-5 space-y-4 sm:space-y-5 min-w-0">
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-2.5 sm:mb-3">
+          <span className="section-eyebrow block mb-2.5 sm:mb-3">
             {GACHIBOWLI_MAPS.eyebrow}
           </span>
-          <p className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <p className="section-title">
             {plain}{' '}
-            <span className="text-brand-gold italic font-medium">{GACHIBOWLI_MAPS.h2Accent}</span>
+            <span className="section-title-accent">{GACHIBOWLI_MAPS.h2Accent}</span>
           </p>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             {GACHIBOWLI_MAPS.body}

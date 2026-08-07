@@ -19,12 +19,12 @@ export default function EventsPillars() {
               transition={{ duration: 0.5, ease: EASE, delay: index * 0.06 }}
               className="flex flex-col gap-4 p-5 sm:p-8 bg-brand-gold-pale/30 rounded-xl lg:rounded-2xl border border-brand-gold/20"
             >
-              <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+              <span className="section-eyebrow block mb-3">
                 {pillar.eyebrow}
               </span>
-              <h2 className="text-2xl sm:text-[1.75rem] lg:text-3xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+              <h2 className="text-2xl sm:text-[1.75rem] lg:text-3xl font-display font-semibold text-brand-green tracking-tight leading-[1.15]">
                 {plain}{' '}
-                <span className="text-brand-gold italic font-medium">{pillar.h2Accent}</span>
+                <span className="section-title-accent">{pillar.h2Accent}</span>
               </h2>
               <p className="text-sm text-brand-charcoal-light leading-relaxed flex-1">{pillar.body}</p>
               {pillar.link ? (

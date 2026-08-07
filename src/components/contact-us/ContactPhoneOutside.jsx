@@ -16,12 +16,12 @@ function SectionBlock({ data, delay = 0, children }) {
       transition={{ duration: 0.55, ease: EASE, delay }}
       className="space-y-5"
     >
-      <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+      <span className="section-eyebrow block mb-3">
         {data.eyebrow}
       </span>
-      <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+      <h2 className="section-title">
         {plain}{' '}
-        <span className="text-brand-gold italic font-medium">{data.h2Accent}</span>
+        <span className="section-title-accent">{data.h2Accent}</span>
       </h2>
       {data.paragraphs.map((para) => (
         <p
@@ -47,7 +47,7 @@ export default function ContactPhoneOutside() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-xl border border-brand-gold/40 bg-brand-gold-pale/50 px-5 py-3 text-sm font-display font-bold text-brand-green hover:border-brand-burgundy hover:text-brand-burgundy transition-colors"
+              className="inline-flex items-center justify-center rounded-xl border border-brand-gold/40 bg-brand-gold-pale/50 px-5 py-3 text-sm font-display font-semibold text-brand-green hover:border-brand-burgundy hover:text-brand-burgundy transition-colors"
             >
               WhatsApp
             </a>

@@ -4,7 +4,7 @@ export default function MadhapurSuburbs() {
   const { room } = MADHAPUR_IMAGES;
 
   return (
-    <section className="relative mb-8 sm:mb-10 lg:mb-12 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 overflow-hidden">
+    <section className="relative mb-8 sm:mb-10 lg:mb-12 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 overflow-hidden">
       <img
         src={room.src}
         alt=""

@@ -46,11 +46,11 @@ export default function LegalDoc({
       <main className="flex-1">
         <section className="pt-28 sm:pt-32 lg:pt-36 pb-14 sm:pb-16 bg-white">
           <div className="max-w-3xl mx-auto px-6 sm:px-8">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+            <span className="section-eyebrow block mb-3">
               Legal
             </span>
-            <h1 className="text-3xl sm:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
-              {h1} <span className="text-brand-gold italic font-medium">{h1Accent}</span>
+            <h1 className="text-3xl sm:text-4xl font-display font-semibold text-brand-green tracking-tight leading-[1.15] mb-5">
+              {h1} <span className="section-title-accent">{h1Accent}</span>
             </h1>
             <p className="text-sm sm:text-[15px] leading-relaxed text-brand-charcoal-light mb-10">
               {intro}
@@ -59,7 +59,7 @@ export default function LegalDoc({
             <div className="space-y-8">
               {sections.map((section) => (
                 <div key={section.title}>
-                  <h2 className="text-lg sm:text-xl font-display font-bold text-brand-green mb-3">
+                  <h2 className="text-lg sm:text-xl font-display font-semibold text-brand-green mb-3">
                     {section.title}
                   </h2>
                   <p className="text-sm sm:text-[15px] leading-relaxed text-brand-charcoal-light">
@@ -86,7 +86,7 @@ export default function LegalDoc({
               ))}
 
               <div>
-                <h2 className="text-lg sm:text-xl font-display font-bold text-brand-green mb-3">
+                <h2 className="text-lg sm:text-xl font-display font-semibold text-brand-green mb-3">
                   6. Contact Us
                 </h2>
                 <p className="text-sm sm:text-[15px] leading-relaxed text-brand-charcoal-light mb-3">

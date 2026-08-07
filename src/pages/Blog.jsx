@@ -107,7 +107,7 @@ export default function Blog() {
 
       <main className="flex-1 bg-[#FDFCF8] overflow-x-clip">
         <section className="pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-10 lg:pb-14">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="site-container">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 items-center">
               <div className="order-2 md:order-1 md:col-span-3 min-w-0">
                 <span className="text-brand-burgundy font-display text-[10px] sm:text-[11px] font-bold tracking-[0.28em] uppercase mb-2.5 sm:mb-3 block">
@@ -115,7 +115,7 @@ export default function Blog() {
                 </span>
                 <h1 className="font-display text-2xl sm:text-[2rem] lg:text-4xl font-bold text-brand-charcoal tracking-tight leading-[1.15] mb-3 sm:mb-4">
                   The Narenn Journal
-                  <span className="text-brand-gold italic font-medium">
+                  <span className="section-title-accent">
                     {' '}
                     - Insights into Premium Co-Living in Hyderabad
                   </span>
@@ -151,7 +151,7 @@ export default function Blog() {
         </section>
 
         <section className="pb-8 sm:pb-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="site-container">
             <Link
               to={featuredPost.path}
               className="group block overflow-hidden rounded-xl sm:rounded-2xl border border-brand-gold/15 bg-white shadow-[0_12px_32px_rgba(15,61,46,0.05)]"
@@ -192,7 +192,7 @@ export default function Blog() {
         </section>
 
         <section id="blog-categories" className="border-y border-brand-gold/15 py-5 sm:py-6 lg:py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="site-container">
             <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between gap-4 sm:gap-6">
               <div className="flex gap-2 sm:gap-3 overflow-x-auto scrollbar-none pb-0.5 -mx-1 px-1">
                 {BLOG_CATEGORIES.map((category) => (
@@ -230,7 +230,7 @@ export default function Blog() {
         </section>
 
         <section className="py-8 sm:py-10 lg:py-14">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="site-container">
             {paginatedPosts.length ? (
               <>
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
@@ -334,7 +334,7 @@ export default function Blog() {
           <div className="absolute inset-0 bg-brand-charcoal/65" aria-hidden="true" />
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand-burgundy/20 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-brand-gold/10 blur-3xl" />
-          <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
+          <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-6 text-center">
             <h2 className="text-xl sm:text-3xl font-display font-bold tracking-tight mb-2.5 sm:mb-3">
               {BLOG_NEWSLETTER.title}
             </h2>

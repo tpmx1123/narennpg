@@ -92,7 +92,7 @@ export default function FaqCategories() {
 
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
-      <div className="sticky top-[64px] sm:top-[72px] z-30 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-2 sm:py-2.5 bg-white/95 backdrop-blur-md border-y border-brand-charcoal/8 mb-6 sm:mb-8 lg:mb-10">
+      <div className="sticky top-[64px] sm:top-[72px] z-30 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 py-2 sm:py-2.5 bg-white/95 backdrop-blur-md border-y border-brand-charcoal/8 mb-6 sm:mb-8 lg:mb-10">
         <div className="flex gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none justify-start sm:justify-center max-w-3xl mx-auto pb-0.5">
           {FAQ_CATEGORIES.map((category) => {
             const active = activeId === category.h2;
@@ -126,10 +126,10 @@ export default function FaqCategories() {
             className="scroll-mt-28 sm:scroll-mt-32 min-w-0"
           >
             <div className="text-center mb-3 sm:mb-4">
-              <span className="text-[10px] font-bold tracking-[0.22em] text-brand-gold uppercase block mb-2">
+              <span className="section-eyebrow block mb-2">
                 {category.eyebrow}
               </span>
-              <h2 className="text-lg sm:text-2xl font-display font-bold text-brand-green tracking-tight leading-snug mb-1.5">
+              <h2 className="text-lg sm:text-2xl font-display font-semibold text-brand-green tracking-tight leading-snug mb-1.5">
                 {category.h2}
               </h2>
               <p className="text-sm text-brand-charcoal-light leading-relaxed px-0.5">

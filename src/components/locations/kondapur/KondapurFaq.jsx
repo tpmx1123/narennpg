@@ -11,12 +11,12 @@ export default function KondapurFaq() {
     <section className="mb-8 sm:mb-10 lg:mb-12 pt-8 sm:pt-10 lg:pt-12 border-t border-brand-gold/15">
       <div className="max-w-3xl mx-auto min-w-0">
         <div className="space-y-2.5 sm:space-y-3 mb-6 sm:mb-8 text-center">
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             {KONDAPUR_FAQ_HEADING.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             Frequently Asked{' '}
-            <span className="text-brand-gold italic font-medium">
+            <span className="section-title-accent">
               {KONDAPUR_FAQ_HEADING.h2Accent}
             </span>
           </h2>

@@ -3,13 +3,13 @@ import { FOUNDER_PROMISE } from '../../data/founderPageData';
 export default function FounderPromise() {
   return (
     <section className="py-8 sm:py-10 lg:py-12 bg-white overflow-hidden relative">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-10 text-center relative z-10">
-        <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-3 sm:mb-4 block">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-6 text-center relative z-10">
+        <span className="section-eyebrow mb-3 sm:mb-4 block">
           {FOUNDER_PROMISE.eyebrow}
         </span>
-        <blockquote className="text-xl sm:text-3xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.25] sm:leading-[1.2] mb-4 sm:mb-5">
+        <blockquote className="text-xl sm:text-3xl lg:text-4xl font-display font-semibold text-brand-green tracking-tight leading-[1.25] sm:leading-[1.2] mb-4 sm:mb-5">
           &ldquo;{FOUNDER_PROMISE.quote}{' '}
-          <span className="text-brand-gold italic font-medium">
+          <span className="section-title-accent">
             {FOUNDER_PROMISE.quoteAccent}
           </span>
           &rdquo;

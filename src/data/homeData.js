@@ -3,7 +3,7 @@ import { Cld, cldImg, cldVideo, cldVideoPoster } from '../utils/cloudinary';
 export const AMENITIES = [
   {
     title: 'Gourmet Dining',
-    description: 'Chef-prepared hygienic meals, thrice daily.',
+    description: 'Chef-prepared meals, thrice daily.',
     image: Cld.tile('v1786002164/M_P09905_1_b5nsjf_ndrpm0.jpg'),
   },
   {
@@ -23,22 +23,22 @@ export const AMENITIES = [
   },
   {
     title: '24/7 Power Backup',
-    description: 'Uninterrupted electricity round the clock.',
+    description: 'Uninterrupted electricity, 24/7.',
     image: Cld.tile('v1786002152/ChatGPT_Image_Aug_5_2026_03_59_02_PM_l6bwrb_m4h8di.png'),
   },
   {
     title: 'Rooftop Terrace',
-    description: 'Breathtaking city views for evening relaxation.',
+    description: 'City views for evening relaxation.',
     image: Cld.tile('v1786002157/M_P00038_1_reuqwj_ckjppq.jpg'),
   },
   {
     title: 'Two-Wheeler Parking',
-    description: 'Secure on-premise parking for your two-wheelers.',
+    description: 'Secure on-premise two-wheeler parking.',
     image: Cld.tile('v1786002160/M_P00295_2_1_p3nt4i_yfxy25.jpg'),
   },
   {
     title: 'CCTV',
-    description: '24/7 surveillance with live monitoring on site.',
+    description: '24/7 surveillance with live monitoring.',
     image: Cld.tile('v1786002164/M_P09901_1_zsv8ir_wiyeej.jpg'),
   },
   {
@@ -48,12 +48,12 @@ export const AMENITIES = [
   },
   {
     title: 'Carrom Board',
-    description: 'Indoor recreation for downtime with friends.',
+    description: 'Indoor recreation for downtime.',
     image: Cld.tile('v1786002160/M_P00300_1_erklci_st4e9p.jpg'),
   },
   {
     title: 'Table Tennis',
-    description: 'Play TT in our common recreation space.',
+    description: 'Play TT in our common space.',
     image: Cld.tile('v1786002161/M_P00301_1_vbhlsh_k2i5so.jpg'),
   },
   {

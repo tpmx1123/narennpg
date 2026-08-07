@@ -112,7 +112,7 @@ export default function ColivingItProfessionals() {
 
       <main className="flex-1 bg-white">
         <ItHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
+        <div className="site-container pb-8 lg:pb-10">
           <ItIntro />
           <ItNeeds />
           <ItCommute />
@@ -130,7 +130,7 @@ export default function ColivingItProfessionals() {
           title={
             <>
               {ctaPlain}{' '}
-              <span className="text-brand-gold italic font-medium">{IT_FINAL_CTA.titleAccent}</span>
+              <span className="section-title-accent">{IT_FINAL_CTA.titleAccent}</span>
             </>
           }
           description={

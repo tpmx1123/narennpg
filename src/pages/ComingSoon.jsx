@@ -19,10 +19,10 @@ export default function ComingSoon({ pageKey }) {
       />
       <main className="flex-1 pt-24 sm:pt-28 lg:pt-32 pb-20 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center py-16 sm:py-24">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             Coming Soon
           </span>
-          <h1 className="font-display font-bold text-2xl sm:text-3xl text-brand-green tracking-tight mb-4">
+          <h1 className="font-display font-semibold text-2xl sm:text-3xl text-brand-green tracking-tight mb-4">
             This page is on its way
           </h1>
           <p className="text-sm text-brand-charcoal-light leading-relaxed mb-8">

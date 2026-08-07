@@ -14,12 +14,12 @@ export default function SingleRoomPrivacyCommunity() {
       transition={{ duration: 0.55, ease: EASE }}
       className="mb-14 lg:mb-16 bg-white"
     >
-      <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+      <span className="section-eyebrow block mb-3">
         Community
       </span>
-      <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
+      <h2 className="section-title mb-5">
         Privacy Without{' '}
-        <span className="text-brand-gold italic font-medium">Isolation</span>
+        <span className="section-title-accent">Isolation</span>
       </h2>
       <div className="space-y-4 max-w-3xl">
         {SINGLE_SHARING_PRIVACY.first.map((para) => (
@@ -48,12 +48,12 @@ export function SingleRoomPrivacyCommunitySecond() {
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start">
         <div className="lg:col-span-4">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             Belonging
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             Privacy Without{' '}
-            <span className="text-brand-gold italic font-medium">Isolation</span>
+            <span className="section-title-accent">Isolation</span>
           </h2>
         </div>
         <div className="lg:col-span-8 space-y-5">

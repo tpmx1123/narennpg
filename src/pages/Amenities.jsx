@@ -91,22 +91,22 @@ export default function Amenities() {
 
       <main className="flex-1 bg-white overflow-x-clip">
         <AmenitiesHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 sm:pb-10 lg:pb-10">
+        <div className="site-container pb-8 sm:pb-10 lg:pb-10">
           <AmenitiesIntro />
           <AmenitiesFeatures />
           <AmenitiesFullList />
           
-          <AmenitiesHonest />
+          {/* <AmenitiesHonest /> */}
           <AmenitiesMaintenance />
           <AmenitiesSpaces />
-          <AmenitiesDontOffer />
+          {/* <AmenitiesDontOffer /> */}
           <AmenitiesFaq />
         </div>
         <FinalCta
           onBookVisit={onBookVisit}
           title={
             <>
-              See It All <span className="text-brand-gold italic font-medium">in Person</span>
+              See It All <span className="section-title-accent">in Person</span>
             </>
           }
           description={

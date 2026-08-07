@@ -1,14 +1,14 @@
 /**
- * Home-page section heading styles — use site-wide for eyebrows + H2s.
- * Eyebrow: gold · Title: green · Accent: gold italic
+ * Shared section heading styles — site-wide eyebrows + titles.
+ * Eyebrow (light): burgundy/red · Title: green semibold · Accent: gold italic
+ * Heroes use section-eyebrow-on-dark + section-title-on-dark separately.
  */
-export const SECTION_EYEBROW =
-  'text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3';
+export const SECTION_EYEBROW = 'section-eyebrow block mb-3';
 
 export const SECTION_TITLE =
-  'text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]';
+  'section-title';
 
-export const SECTION_TITLE_ACCENT = 'text-brand-gold italic font-medium';
+export const SECTION_TITLE_ACCENT = 'section-title-accent';
 
 export default function SectionHeading({
   eyebrow,

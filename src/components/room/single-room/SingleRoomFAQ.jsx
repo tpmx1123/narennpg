@@ -10,11 +10,11 @@ export default function SingleRoomFAQ() {
   return (
     <section id="faq" className="py-14 bg-white border-t border-brand-gold/15">
       <div className="max-w-3xl mx-auto px-6">
-        <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3 text-center">
+        <span className="section-eyebrow block mb-3 text-center">
           FAQ
         </span>
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-10">
-          Frequently Asked <span className="text-brand-gold italic font-medium">Questions</span>
+        <h2 className="section-title text-center mb-10">
+          Frequently Asked <span className="section-title-accent">Questions</span>
         </h2>
 
         <div className="space-y-3">

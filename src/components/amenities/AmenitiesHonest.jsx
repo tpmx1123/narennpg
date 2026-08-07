@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { AMENITIES_DAILY, AMENITIES_IMAGES } from '../../data/amenitiesData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function AmenitiesHonest() {
   const plain = AMENITIES_DAILY.h2.replace(AMENITIES_DAILY.h2Accent, '').trim();
@@ -10,18 +10,15 @@ export default function AmenitiesHonest() {
     <section className="mb-10 sm:mb-14 lg:mb-16">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.55, ease: EASE }}
+          {...scrollReveal}
           className="lg:col-span-6 space-y-5"
         >
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {AMENITIES_DAILY.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {plain}{' '}
-            <span className="text-brand-gold italic font-medium">{AMENITIES_DAILY.h2Accent}</span>
+            <span className="section-title-accent">{AMENITIES_DAILY.h2Accent}</span>
           </h2>
           {AMENITIES_DAILY.paragraphs.map((para) => (
             <p key={para.slice(0, 48)} className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
@@ -31,10 +28,7 @@ export default function AmenitiesHonest() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.55, ease: EASE, delay: 0.08 }}
+          {...scrollReveal}
           className="lg:col-span-6 grid grid-cols-2 gap-3 sm:gap-4"
         >
           <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-brand-gold/20">

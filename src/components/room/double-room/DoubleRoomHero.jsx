@@ -1,7 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion';
+import { staggerContainerMount, staggerItemMount } from '../../../motion/motionPresets';
 import { DOUBLE_SHARING_IMAGES } from '../../../data/doubleSharingData';
-
-const EASE = [0.22, 1, 0.36, 1];
 
 export default function DoubleRoomHero() {
   const reduceMotion = useReducedMotion();
@@ -24,21 +23,24 @@ export default function DoubleRoomHero() {
         aria-hidden="true"
       />
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-12 lg:pb-16">
+      <div className="relative site-container pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-12 lg:pb-16">
         <motion.div
-          initial={reduceMotion ? { opacity: 0 } : { opacity: 0, y: 22 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: EASE, delay: 0.06 }}
           className="max-w-3xl"
+          {...(reduceMotion
+            ? { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.35 } }
+            : staggerContainerMount)}
         >
-          <span className="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4">
+          <motion.span
+            className="inline-flex items-center gap-2 section-eyebrow-on-dark mb-4"
+            {...staggerItemMount}
+          >
             2 Sharing · Twin Occupancy
-          </span>
+          </motion.span>
 
-          <h1 className="text-2xl sm:text-[2rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-6 sm:mb-7">
+          <motion.h1 className="section-title-on-dark mb-6 sm:mb-7" {...staggerItemMount}>
             Double Sharing PG Rooms in Madhapur -{' '}
-            <span className="text-brand-gold-light italic font-medium">Comfort Meets Company</span>
-          </h1>
+            <span className="section-title-accent">Comfort Meets Company</span>
+          </motion.h1>
         </motion.div>
       </div>
     </section>

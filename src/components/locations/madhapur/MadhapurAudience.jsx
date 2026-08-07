@@ -19,7 +19,7 @@ export default function MadhapurAudience() {
       </div>
 
       <div className="order-2 space-y-4 sm:space-y-5 min-w-0">
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="section-title">
           {MADHAPUR_AUDIENCE.h2}
         </h2>
         <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">

@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { STUDENTS_FOOD, STUDENTS_COMMUNITY } from '../../data/studentsPageData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 function PairColumn({ data }) {
   return (
     <div className="space-y-4">
-      <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+      <span className="section-eyebrow block">
         {data.eyebrow}
       </span>
-      <h2 className="text-2xl sm:text-3xl font-display font-bold text-brand-green tracking-tight leading-[1.2]">
+      <h2 className="section-title">
         {data.h2}
       </h2>
       {data.paragraphs.map((para) => (
@@ -40,10 +41,7 @@ export default function StudentsFoodCommunity() {
   return (
     <section className="mb-8 lg:mb-10">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5, ease: EASE }}
+        {...scrollReveal}
         className="max-w-5xl mx-auto border-t border-brand-charcoal/10 pt-8 lg:pt-10"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">

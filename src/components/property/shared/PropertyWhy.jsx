@@ -1,7 +1,7 @@
 import { Check } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function PropertyWhy({ data }) {
   const { why } = data;
@@ -9,14 +9,11 @@ export default function PropertyWhy({ data }) {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start"
       >
         <div className="lg:col-span-5">
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {why.h2}
           </h2>
         </div>

@@ -7,7 +7,7 @@ export default function MadhapurLandmarks() {
   return (
     <section className="mb-8 sm:mb-10 lg:mb-12">
       <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-2.5">
+        <h2 className="section-title mb-2.5">
           {MADHAPUR_LANDMARKS.h2}
         </h2>
         <p className="text-sm text-brand-charcoal-light leading-relaxed px-1">

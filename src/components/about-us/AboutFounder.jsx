@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { ABOUT_FOUNDER } from '../../data/aboutUsData';
 
-const EASE = [0.16, 1, 0.3, 1];
 const LINK_CLASS = 'text-brand-burgundy font-semibold hover:underline underline-offset-2';
 
 export default function AboutFounder() {
@@ -12,10 +12,7 @@ export default function AboutFounder() {
   return (
     <section className="mb-14 lg:mb-16 py-2">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center"
       >
         <div className="order-2 lg:order-1 lg:col-span-4 relative group w-full">
@@ -30,22 +27,22 @@ export default function AboutFounder() {
             />
           </div>
           <div className="mt-5">
-            <h3 className="text-xl sm:text-2xl font-display font-bold text-brand-green tracking-tight mb-1">
+            <h3 className="text-xl sm:text-2xl font-display font-semibold text-brand-green tracking-tight mb-1">
               {ABOUT_FOUNDER.name}
             </h3>
-            <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-brand-gold">
+            <p className="section-eyebrow">
               {ABOUT_FOUNDER.role}
             </p>
           </div>
         </div>
 
         <div className="order-1 lg:order-2 lg:col-span-8 space-y-5 max-w-none">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {ABOUT_FOUNDER.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {ABOUT_FOUNDER.h2}{' '}
-            <span className="text-brand-gold italic font-medium">{ABOUT_FOUNDER.h2Accent}</span>
+            <span className="section-title-accent">{ABOUT_FOUNDER.h2Accent}</span>
           </h2>
 
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">

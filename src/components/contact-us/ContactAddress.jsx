@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { CONTACT_ADDRESS, CONTACT_MAPS } from '../../data/contactUsData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 export default function ContactAddress() {
   const plain = CONTACT_ADDRESS.h2.replace(CONTACT_ADDRESS.h2Accent, '').trim();
@@ -10,19 +11,16 @@ export default function ContactAddress() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.12 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start"
       >
         <div className="lg:col-span-5 space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {CONTACT_ADDRESS.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {plain}{' '}
-            <span className="text-brand-gold italic font-medium">{CONTACT_ADDRESS.h2Accent}</span>
+            <span className="section-title-accent">{CONTACT_ADDRESS.h2Accent}</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             {CONTACT_ADDRESS.body}

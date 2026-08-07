@@ -1,29 +1,26 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import { CONTACT_MAPS } from '../../../data/contactUsData';
 import { PHONE_DISPLAY, PHONE_TEL } from '../../../data/sitePages';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function LocationMaps({ data }) {
   const { maps } = data;
 
   return (
-    <section className="mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-7 sm:py-10 lg:py-12 bg-brand-gold-pale/25 border-y border-brand-gold/15">
+    <section className="mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 py-7 sm:py-10 lg:py-12 bg-brand-gold-pale/25 border-y border-brand-gold/15">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.12 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 lg:gap-10 items-start max-w-7xl mx-auto"
       >
         <div className="lg:col-span-5 space-y-3.5 sm:space-y-5 min-w-0">
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] sm:tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             {maps.eyebrow}
           </span>
-          <h2 className="text-[1.65rem] sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.2] sm:leading-[1.15]">
+          <h2 className="text-[1.65rem] sm:text-[2rem] lg:text-4xl font-display font-semibold text-brand-green tracking-tight leading-[1.2] sm:leading-[1.15]">
             {maps.h2}{' '}
-            <span className="text-brand-gold italic font-medium">{maps.h2Accent}</span>
+            <span className="section-title-accent">{maps.h2Accent}</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             {maps.body}

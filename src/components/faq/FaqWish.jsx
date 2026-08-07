@@ -14,7 +14,7 @@ export default function FaqWish() {
         transition={{ duration: 0.45, ease: EASE }}
         className="max-w-3xl mx-auto"
       >
-        <h2 className="text-lg sm:text-2xl font-display font-bold text-brand-green tracking-tight leading-snug mb-4 sm:mb-6 text-center">
+        <h2 className="text-lg sm:text-2xl font-display font-semibold text-brand-green tracking-tight leading-snug mb-4 sm:mb-6 text-center">
           {FAQ_WISH.h2}
         </h2>
         <ol className="space-y-0 border-t border-brand-charcoal/10">

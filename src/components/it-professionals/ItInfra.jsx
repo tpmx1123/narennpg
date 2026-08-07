@@ -1,18 +1,16 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { Check } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 import { IT_INFRA } from '../../data/itProfessionalsPageData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 export default function ItInfra() {
   return (
     <section className="mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5, ease: EASE }}
+        {...scrollReveal}
         className="max-w-3xl mx-auto"
       >
         <SectionHeading

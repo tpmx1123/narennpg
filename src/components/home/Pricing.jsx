@@ -78,14 +78,12 @@ export default function Pricing({ onBookVisit }) {
 
   return (
     <section id="pricing" className="py-10 sm:py-16 bg-white relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
-            Sharing Types
-          </span>
-          <h2 className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4 sm:mb-5">
+          <span className="section-eyebrow block mb-3">Sharing Types</span>
+          <h2 className="section-title mb-4 sm:mb-5">
             Transparent Pricing,{' '}
-            <span className="text-brand-gold italic font-medium">No Surprises.</span>
+            <span className="section-title-accent">No Surprises.</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             We publish a single monthly figure and we honour it. Your rent covers the room, AC, three

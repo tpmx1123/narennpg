@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { staggerContainerMount, staggerItemMount } from '../../motion/motionPresets';
 import IconSlideButton from '../ui/IconSlideButton';
 import { IT_HERO, IT_IMAGES } from '../../data/itProfessionalsPageData';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 
-const EASE = [0.22, 1, 0.36, 1];
 
 export default function ItHero({ onBookVisit }) {
   const { hero } = IT_IMAGES;
@@ -28,27 +28,22 @@ export default function ItHero({ onBookVisit }) {
         aria-hidden="true"
       />
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-28 sm:pt-32 pb-12 sm:pb-14 lg:pb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 22 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: EASE, delay: 0.06 }}
-          className="max-w-3xl"
-        >
-          <span className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4">
+      <div className="relative site-container pt-28 sm:pt-32 pb-12 sm:pb-14 lg:pb-16">
+        <motion.div className="max-w-3xl" {...staggerContainerMount}>
+          <motion.span {...staggerItemMount} className="inline-flex items-center gap-2 section-eyebrow-on-dark mb-4">
             {IT_HERO.eyebrow}
-          </span>
+          </motion.span>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-[2.35rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-5">
+          <motion.h1 className="text-3xl sm:text-4xl lg:text-[2.35rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-5" {...staggerItemMount}>
             {IT_HERO.h1},{' '}
-            <span className="text-brand-gold italic font-medium">{IT_HERO.h1Accent}</span>
-          </h1>
+            <span className="section-title-accent">{IT_HERO.h1Accent}</span>
+          </motion.h1>
 
-          <p className="text-sm sm:text-base text-brand-cream/85 leading-relaxed max-w-2xl mb-7">
+          <motion.p className="text-sm sm:text-base text-brand-cream/85 leading-relaxed max-w-2xl mb-7" {...staggerItemMount}>
             {IT_HERO.lead}
-          </p>
+          </motion.p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <motion.div className="flex flex-wrap items-center gap-4" {...staggerItemMount}>
             {onBookVisit ? (
               <IconSlideButton
                 onClick={() => onBookVisit()}
@@ -78,7 +73,7 @@ export default function ItHero({ onBookVisit }) {
             >
               WhatsApp
             </a>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

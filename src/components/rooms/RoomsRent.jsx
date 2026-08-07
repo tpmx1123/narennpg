@@ -1,24 +1,21 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function RoomsRent() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 mb-8 items-end">
           <div className="lg:col-span-5">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+            <span className="section-eyebrow block mb-3">
               Transparent Fee
             </span>
-            <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            <h2 className="section-title">
               What Your Rent Covers -{' '}
-              <span className="text-brand-gold italic font-medium">and What It Does Not</span>
+              <span className="section-title-accent">and What It Does Not</span>
             </h2>
           </div>
           <div className="lg:col-span-7 flex items-stretch gap-5 lg:gap-6">

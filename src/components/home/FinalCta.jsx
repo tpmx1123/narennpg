@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import CurvedInput from '../ui/CurvedInput';
 import ContactText from '../ui/ContactText';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 import { Cld } from '../../utils/cloudinary';
+import { scrollRevealSoft } from '../../motion/motionPresets';
 
 const CTA_IMAGE = Cld.content('v1786002157/M_P00046_1_qstcck_thoh1c.jpg');
 
@@ -29,7 +31,7 @@ const PhoneIcon = (
 const DEFAULT_TITLE = (
   <>
     Book your free visit and see why residents choose{' '}
-    <span className="text-brand-gold italic font-medium">Narenn Living</span>
+    <span className="section-title-accent">Narenn Living</span>
   </>
 );
 
@@ -50,20 +52,21 @@ export default function FinalCta({
 
   return (
     <section id="contact" className="relative z-20 px-4 sm:px-6 pb-0">
-      <div className="max-w-6xl mx-auto -mb-20 sm:-mb-24 lg:-mb-28">
+      <motion.div className="max-w-6xl mx-auto -mb-20 sm:-mb-24 lg:-mb-28" {...scrollRevealSoft}>
         <div className="rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-green shadow-[0_24px_60px_rgba(15,61,46,0.28)]">
           <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
             <div className="relative lg:col-span-5 min-h-45 sm:min-h-65 lg:min-h-80">
               <img
                 src={CTA_IMAGE}
                 alt={imageAlt}
-                loading="lazy" className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-r from-brand-green/20 via-brand-green/40 to-brand-green/90 lg:to-brand-green" />
             </div>
 
             <div className="lg:col-span-7 px-4 py-7 sm:px-10 sm:py-10 lg:px-12 lg:py-12 flex flex-col justify-center">
-              <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-[2rem] text-white tracking-tight leading-snug mb-3">
+              <h2 className="font-display font-semibold text-2xl sm:text-3xl lg:text-[2rem] text-[#F7F3E9] tracking-tight leading-snug mb-3">
                 {title}
               </h2>
               <div className="text-sm sm:text-base text-white/85 leading-relaxed mb-6 max-w-lg">
@@ -156,7 +159,7 @@ export default function FinalCta({
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

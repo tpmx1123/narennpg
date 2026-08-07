@@ -2,9 +2,9 @@ import { useCallback, useEffect, useId, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { ABOUT_GALLERY } from '../../data/aboutUsData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 function GalleryLightbox({ images, index, onClose, onPrev, onNext }) {
   const titleId = useId();
@@ -139,18 +139,15 @@ export default function AboutGallery() {
   return (
     <section className="mb-14 lg:mb-16 py-2">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
       >
         <div className="max-w-2xl mb-8 lg:mb-10">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {ABOUT_GALLERY.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4">
+          <h2 className="section-title mb-4">
             {ABOUT_GALLERY.h2}{' '}
-            <span className="text-brand-gold italic font-medium">{ABOUT_GALLERY.h2Accent}</span>
+            <span className="section-title-accent">{ABOUT_GALLERY.h2Accent}</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             {ABOUT_GALLERY.intro}

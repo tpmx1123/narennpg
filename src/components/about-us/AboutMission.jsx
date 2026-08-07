@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { ABOUT_IMAGES, ABOUT_MISSION } from '../../data/aboutUsData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function AboutMission() {
   const { mission } = ABOUT_IMAGES;
@@ -9,17 +9,14 @@ export default function AboutMission() {
   return (
     <section className="mb-14 lg:mb-16 py-2">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-14 items-center"
       >
         <div className="space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {ABOUT_MISSION.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {ABOUT_MISSION.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">

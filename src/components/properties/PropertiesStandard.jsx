@@ -1,5 +1,6 @@
 import { Fingerprint, Sparkles, UtensilsCrossed } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { PROPERTIES_STANDARD } from '../../data/propertiesPageData';
 
 const EASE = [0.16, 1, 0.3, 1];
@@ -12,18 +13,15 @@ const ICONS = {
 
 export default function PropertiesStandard() {
   return (
-    <section className="py-10 lg:py-14 -mx-4 sm:-mx-6 lg:mx-0 px-4 sm:px-6 lg:px-10 bg-brand-cream-dark/60 border-y border-brand-gold/10">
+    <section className="py-10 lg:py-14 -mx-4 sm:-mx-6 lg:mx-0 px-4 sm:px-6 lg:px-6 bg-brand-cream-dark/60 border-y border-brand-gold/10">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
       >
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             The Narenn Standard
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mt-3">
+          <h2 className="section-title mt-3">
             {PROPERTIES_STANDARD.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mt-4">

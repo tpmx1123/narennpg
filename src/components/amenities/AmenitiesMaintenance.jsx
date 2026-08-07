@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { AMENITIES_IMAGES, AMENITIES_MAINTENANCE, AMENITIES_MAINTENANCE_POINTS } from '../../data/amenitiesData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function AmenitiesMaintenance() {
   const plain = AMENITIES_MAINTENANCE.h2.replace(AMENITIES_MAINTENANCE.h2Accent, '').trim();
@@ -10,16 +10,13 @@ export default function AmenitiesMaintenance() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center"
       >
         <div className="lg:col-span-7">
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6">
+          <h2 className="section-title mb-6">
             {plain}{' '}
-            <span className="text-brand-gold italic font-medium">{AMENITIES_MAINTENANCE.h2Accent}</span>
+            <span className="section-title-accent">{AMENITIES_MAINTENANCE.h2Accent}</span>
           </h2>
           <ul className="space-y-3">
             {AMENITIES_MAINTENANCE_POINTS.map((point) => (

@@ -1,9 +1,9 @@
 import { ChefHat, Coffee, CupSoda, UtensilsCrossed } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { FOOD_MEALS, FOOD_SNACKS } from '../../data/foodPageData';
 import FoodSectionHeading from './FoodSectionHeading';
 
-const EASE = [0.16, 1, 0.3, 1];
 const MEAL_ICONS = {
   breakfast: Coffee,
   lunch: UtensilsCrossed,
@@ -12,7 +12,7 @@ const MEAL_ICONS = {
 
 export default function FoodMeals() {
   return (
-    <section className="mb-10 sm:mb-14 lg:mb-16 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-gold-pale/35 border-y border-brand-gold/15">
+    <section className="mb-10 sm:mb-14 lg:mb-16 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-brand-gold-pale/35 border-y border-brand-gold/15">
       <FoodSectionHeading centered title="Three Meals, Every Single Day" />
       <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
         {FOOD_MEALS.map((meal) => {
@@ -20,10 +20,7 @@ export default function FoodMeals() {
           return (
             <motion.article
               key={meal.key}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.45, ease: EASE }}
+              {...scrollReveal}
               className="bg-white p-5 sm:p-6 lg:p-7 rounded-2xl border border-brand-gold/20 shadow-sm"
             >
               <div className="flex items-center gap-3 mb-3">
@@ -39,13 +36,10 @@ export default function FoodMeals() {
       </div>
 
       <motion.aside
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.45, ease: EASE }}
+        {...scrollReveal}
         className="mt-5 sm:mt-6 max-w-2xl mx-auto bg-white/80 p-5 sm:p-6 rounded-2xl border border-dashed border-brand-gold/35"
       >
-        <p className="text-[11px] font-bold tracking-[0.2em] text-brand-gold uppercase mb-2">
+        <p className="section-eyebrow mb-2">
           {FOOD_SNACKS.eyebrow}
         </p>
         <div className="flex items-start gap-3">

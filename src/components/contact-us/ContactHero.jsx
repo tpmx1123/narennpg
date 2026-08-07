@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { staggerContainerMount, staggerItemMount } from '../../motion/motionPresets';
 import IconSlideButton from '../ui/IconSlideButton';
 import { CONTACT_HERO, CONTACT_IMAGES } from '../../data/contactUsData';
 import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
 
-const EASE = [0.22, 1, 0.36, 1];
 
 export default function ContactHero({ onBookVisit }) {
   const { hero } = CONTACT_IMAGES;
@@ -28,27 +28,22 @@ export default function ContactHero({ onBookVisit }) {
         aria-hidden="true"
       />
 
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-12 lg:pb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 22 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: EASE, delay: 0.06 }}
-          className="max-w-3xl"
-        >
-          <span className="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4">
+      <div className="relative site-container pt-24 sm:pt-28 lg:pt-32 pb-10 sm:pb-12 lg:pb-16">
+        <motion.div className="max-w-3xl" {...staggerContainerMount}>
+          <motion.span {...staggerItemMount} className="inline-flex items-center gap-2 section-eyebrow-on-dark mb-4">
             {CONTACT_HERO.eyebrow}
-          </span>
+          </motion.span>
 
-          <h1 className="text-2xl sm:text-[2rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-4">
+          <motion.h1 className="section-title-on-dark mb-4" {...staggerItemMount}>
             {CONTACT_HERO.h1} -{' '}
-            <span className="text-brand-gold-light italic font-medium">{CONTACT_HERO.h1Accent}</span>
-          </h1>
+            <span className="section-title-accent">{CONTACT_HERO.h1Accent}</span>
+          </motion.h1>
 
-          <p className="text-sm sm:text-base text-brand-cream/85 leading-relaxed max-w-2xl mb-6 sm:mb-7">
+          <motion.p className="text-sm sm:text-base text-brand-cream/85 leading-relaxed max-w-2xl mb-6 sm:mb-7" {...staggerItemMount}>
             {CONTACT_HERO.lead}
-          </p>
+          </motion.p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <motion.div className="flex flex-wrap items-center gap-4" {...staggerItemMount}>
             {onBookVisit ? (
               <IconSlideButton
                 onClick={() => onBookVisit()}
@@ -70,7 +65,7 @@ export default function ContactHero({ onBookVisit }) {
             >
               Call {PHONE_DISPLAY}
             </a>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

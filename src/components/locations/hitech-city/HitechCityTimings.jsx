@@ -1,24 +1,21 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import { HITECH_CITY_TIMINGS } from '../../../data/hitechCityLocationData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function HitechCityTimings() {
   return (
     <section className="mb-8 sm:mb-10 lg:mb-12">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.5, ease: EASE }}
+        {...scrollReveal}
         className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-5"
       >
-        <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+        <span className="section-eyebrow block">
           {HITECH_CITY_TIMINGS.eyebrow}
         </span>
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="section-title">
           Built for{' '}
-          <span className="text-brand-gold italic font-medium">
+          <span className="section-title-accent">
             {HITECH_CITY_TIMINGS.h2Accent}
           </span>
         </h2>

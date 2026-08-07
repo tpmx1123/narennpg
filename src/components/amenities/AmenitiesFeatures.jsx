@@ -11,14 +11,14 @@ function FeatureTitle({ h2, h2Accent }) {
   return (
     <h2 className="min-w-0 font-display font-bold text-sm sm:text-base lg:text-lg text-brand-green leading-snug mb-2">
       {plain}{' '}
-      <span className="text-brand-gold italic font-medium">{h2Accent}</span>
+      <span className="section-title-accent">{h2Accent}</span>
     </h2>
   );
 }
 
 export default function AmenitiesFeatures() {
   return (
-    <section className="mb-0 pt-5 sm:pt-6 lg:pt-8 pb-8 sm:pb-10 lg:pb-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-gold-pale/40 border-t border-brand-gold/15">
+    <section className="mb-0 pt-5 sm:pt-6 lg:pt-8 pb-8 sm:pb-10 lg:pb-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-brand-gold-pale/40 border-t border-brand-gold/15">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
         {AMENITIES_FEATURES.map((item, index) => {
           const image = item.imageKey ? AMENITIES_IMAGES[item.imageKey] : null;

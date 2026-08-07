@@ -87,11 +87,11 @@ export default function TripleSharing() {
       <main className="flex-1 bg-white pb-24 lg:pb-0">
         <TripleRoomHero />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 bg-white">
+        <div className="site-container bg-white">
           <TripleRoomIntro />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 bg-white">
+        <div className="site-container bg-white">
           <div className="grid grid-cols-1 lg:grid lg:grid-cols-[62%_38%] lg:gap-10 lg:items-start">
             <div className="min-w-0 bg-white">
               <TripleRoomGallery />
@@ -112,7 +112,7 @@ export default function TripleSharing() {
         </div>
 
         <div className="w-full pt-2 lg:pt-4 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 bg-white">
+          <div className="site-container bg-white">
             <TripleRoomWho />
             <TripleRoomSpace />
             <TripleRoomUpgrade />
@@ -126,7 +126,7 @@ export default function TripleSharing() {
           onBookVisit={onBookVisit}
           title={
             <>
-              Reserve Your <span className="text-brand-gold italic font-medium">Triple Room</span>
+              Reserve Your <span className="section-title-accent">Triple Room</span>
             </>
           }
           description={

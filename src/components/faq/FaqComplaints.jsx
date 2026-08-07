@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { FAQ_COMPLAINTS } from '../../data/faqPageData';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 import { linkifyContact } from '../ui/ContactText';
 import IconSlideButton from '../ui/IconSlideButton';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 function formatComplaintPara(text) {
   const parts = text.split('same-day response');
@@ -26,17 +26,14 @@ export default function FaqComplaints() {
   const plain = FAQ_COMPLAINTS.h2.replace(FAQ_COMPLAINTS.h2Accent, '').trim();
 
   return (
-    <section className="mb-10 sm:mb-14 lg:mb-20 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20 bg-brand-green-pale/50 border-y border-brand-gold/15">
+    <section className="mb-10 sm:mb-14 lg:mb-20 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 py-10 sm:py-14 lg:py-20 bg-brand-green-pale/50 border-y border-brand-gold/15">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-6"
       >
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="section-title">
           {plain}{' '}
-          <span className="text-brand-gold italic font-medium">{FAQ_COMPLAINTS.h2Accent}</span>
+          <span className="section-title-accent">{FAQ_COMPLAINTS.h2Accent}</span>
         </h2>
         {FAQ_COMPLAINTS.paragraphs.map((para) => (
           <p

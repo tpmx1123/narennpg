@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import {
   Shield,
   Users,
@@ -9,7 +10,7 @@ import {
 } from 'lucide-react';
 import { STUDENTS_TRUST, STUDENTS_IMAGES } from '../../data/studentsPageData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 const ICONS = {
   Shield,
@@ -24,12 +25,9 @@ export default function StudentsTrust() {
   const [src, setSrc] = useState(img.src);
 
   return (
-    <section className="mb-8 lg:mb-10 -mx-4 sm:-mx-6 lg:-mx-10 bg-brand-green-pale/45 border-y border-brand-gold/15 overflow-hidden">
+    <section className="mb-8 lg:mb-10 -mx-4 sm:-mx-6 lg:-mx-6 bg-brand-green-pale/45 border-y border-brand-gold/15 overflow-hidden">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.12 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12"
       >
         <div className="lg:col-span-5 relative min-h-[240px] sm:min-h-[300px] lg:min-h-full">
@@ -43,10 +41,10 @@ export default function StudentsTrust() {
         </div>
 
         <div className="lg:col-span-7 px-4 sm:px-8 lg:px-12 py-10 lg:py-14 space-y-6">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             {STUDENTS_TRUST.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {STUDENTS_TRUST.h2}
           </h2>
           <p className="text-sm sm:text-base text-brand-charcoal-light leading-relaxed max-w-xl">

@@ -12,7 +12,7 @@ export default function StudentsSupports() {
   const [src, setSrc] = useState(img.src);
 
   return (
-    <section className="mb-0 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-10 lg:py-12 bg-brand-green-pale/35 border-t border-brand-gold/15">
+    <section className="mb-0 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 py-10 lg:py-12 bg-brand-green-pale/35 border-t border-brand-gold/15">
       <motion.div
         initial={{ opacity: 0, y: 14 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,10 +22,10 @@ export default function StudentsSupports() {
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           <div className="lg:col-span-6 space-y-4">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+            <span className="section-eyebrow block">
               {STUDENTS_SUPPORTS.eyebrow}
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            <h2 className="section-title">
               {STUDENTS_SUPPORTS.h2}
             </h2>
             <div className="space-y-3">

@@ -85,7 +85,7 @@ export default function AboutUs() {
 
       <main className="flex-1 bg-white">
         <AboutHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
+        <div className="site-container pb-8 lg:pb-10">
           <AboutIntro />
           <AboutMission />
           <AboutFounder />
@@ -100,7 +100,7 @@ export default function AboutUs() {
           onBookVisit={onBookVisit}
           title={
             <>
-              Ready to see it for <span className="text-brand-gold italic font-medium">yourself?</span>
+              Ready to see it for <span className="section-title-accent">yourself?</span>
             </>
           }
           description="Words only go so far. The best way to understand Narenn Living is to walk through it — see the rooms, meet the team, taste the food and feel the atmosphere."

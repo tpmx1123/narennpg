@@ -11,10 +11,10 @@ export default function StudentsFaq() {
     <section className="mb-4 lg:mb-6 pt-2">
       <div className="max-w-3xl mx-auto">
         <div className="space-y-3 mb-8 text-center">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             {STUDENTS_FAQ_HEADING.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {STUDENTS_FAQ_HEADING.h2}
           </h2>
         </div>

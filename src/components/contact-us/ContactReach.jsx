@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { Phone, MapPin, CalendarCheck, MessageCircle } from 'lucide-react';
 import { CONTACT_REACH } from '../../data/contactUsData';
 import { PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 import ContactText from '../ui/ContactText';
 import IconSlideButton from '../ui/IconSlideButton';
 
-const EASE = [0.16, 1, 0.3, 1];
 const ICONS = { Phone, MapPin, CalendarCheck, MessageCircle };
 
 const BTN =
@@ -78,18 +78,15 @@ export default function ContactReach({ onBookVisit }) {
   return (
     <section id="reach" className="mb-10 sm:mb-14 lg:mb-16 scroll-mt-24">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
       >
         <div className="mb-8 sm:mb-10 lg:mb-12 max-w-3xl space-y-4">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {CONTACT_REACH.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {plain}{' '}
-            <span className="text-brand-gold italic font-medium">{CONTACT_REACH.h2Accent}</span>
+            <span className="section-title-accent">{CONTACT_REACH.h2Accent}</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             {CONTACT_REACH.intro}

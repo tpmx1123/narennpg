@@ -85,7 +85,7 @@ export default function Founder() {
           title={
             <>
               Experience the vision{' '}
-              <span className="text-brand-gold italic font-medium">in person</span>
+              <span className="section-title-accent">in person</span>
             </>
           }
           description={

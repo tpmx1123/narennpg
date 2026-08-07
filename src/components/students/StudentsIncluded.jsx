@@ -1,23 +1,21 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { STUDENTS_INCLUDED } from '../../data/studentsPageData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 export default function StudentsIncluded() {
   return (
-    <section className="mb-0 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-12 lg:py-14 bg-brand-green-pale/50 border-t border-brand-gold/15">
+    <section className="mb-0 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 py-12 lg:py-14 bg-brand-green-pale/50 border-t border-brand-gold/15">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="max-w-3xl mx-auto text-center space-y-6"
       >
-        <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+        <span className="section-eyebrow block">
           {STUDENTS_INCLUDED.eyebrow}
         </span>
-        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="section-title">
           {STUDENTS_INCLUDED.h2}
         </h2>
         {STUDENTS_INCLUDED.paragraphs.map((para) => (

@@ -1,20 +1,17 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import { Briefcase, Building2, GraduationCap, Users } from 'lucide-react';
 import SectionHeading from '../../ui/SectionHeading';
 import { GACHIBOWLI_WHO } from '../../../data/gachibowliLocationData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 const ICONS = [Briefcase, Building2, GraduationCap, Users];
 
 export default function GachibowliWhoCommutes() {
   return (
-    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-cream-dark/60 border-y border-brand-gold/15">
+    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-brand-cream-dark/60 border-y border-brand-gold/15">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5, ease: EASE }}
+        {...scrollReveal}
         className="max-w-5xl mx-auto space-y-6 sm:space-y-8"
       >
         <SectionHeading

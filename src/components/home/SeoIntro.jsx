@@ -34,15 +34,10 @@ export default function SeoIntro() {
           transition={{ duration: 0.55, ease: EASE_OUT }}
           className="mb-6 lg:mb-8 max-w-4xl text-center lg:text-left"
         >
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
-            Co-Living in Madhapur
-          </span>
-          <h2
-            id="home-seo-heading"
-            className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]"
-          >
+          <span className="section-eyebrow block mb-3">Co-Living in Madhapur</span>
+          <h2 id="home-seo-heading" className="section-title">
             Premium Co-Living &amp; Luxury PG in{' '}
-            <span className="text-brand-gold italic font-medium">
+            <span className="section-title-accent">
               <br className="hidden sm:block" /> Madhapur, Hyderabad
             </span>
           </h2>

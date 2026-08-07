@@ -2,8 +2,8 @@ import { MADHAPUR_PROPERTIES } from '../../../data/madhapurLocationData';
 
 export default function MadhapurProperties() {
   return (
-    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-green-pale/35 border-y border-brand-gold/15">
-      <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-6 sm:mb-8 lg:mb-10">
+    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-brand-green-pale/35 border-y border-brand-gold/15">
+      <h2 className="section-title text-center mb-6 sm:mb-8 lg:mb-10">
         {MADHAPUR_PROPERTIES.h2}
       </h2>
 

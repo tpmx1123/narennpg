@@ -1,18 +1,15 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import SectionHeading from '../../ui/SectionHeading';
 import { GACHIBOWLI_WHY_MADHAPUR } from '../../../data/gachibowliLocationData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function GachibowliWhyMadhapur() {
   return (
-    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-green-pale/35 border-y border-brand-gold/15">
+    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 sm:py-10 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-brand-green-pale/35 border-y border-brand-gold/15">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.5, ease: EASE }}
+        {...scrollReveal}
         className="max-w-3xl mx-auto text-center space-y-4 sm:space-y-5"
       >
         <SectionHeading

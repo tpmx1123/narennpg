@@ -22,7 +22,7 @@ function BlogPostPlaceholderView({ post, onBookVisit }) {
   return (
     <main className="flex-1 bg-[#FDFCF8] pt-24 sm:pt-28 lg:pt-32 overflow-x-clip">
       <section className="pb-10 sm:pb-14 lg:pb-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-6">
           <Link
             to="/blog/"
             className="inline-flex items-center text-sm font-display font-bold text-brand-burgundy hover:underline mb-5 sm:mb-6"
@@ -68,7 +68,7 @@ function BlogPostPlaceholderView({ post, onBookVisit }) {
         title={
           <>
             Want the practical version?{' '}
-            <span className="text-brand-gold italic font-medium">Visit us</span>
+            <span className="section-title-accent">Visit us</span>
           </>
         }
         description={
@@ -90,7 +90,7 @@ function BlogPostArticleView({ post, content, onBookVisit }) {
         <BlogPostHero post={post} imageFallback={BLOG_IMAGE_FALLBACK} />
 
         <section className="py-7 sm:py-10 lg:py-14">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="site-container">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-6 lg:gap-8">
               <div className="lg:col-span-8 min-w-0">
                 <BlogPostContent blocks={content.blocks} imageFallback={BLOG_IMAGE_FALLBACK} />
@@ -112,7 +112,7 @@ function BlogPostArticleView({ post, content, onBookVisit }) {
         title={
           <>
             Ready to see it in person?{' '}
-            <span className="text-brand-gold italic font-medium">Book a visit</span>
+            <span className="section-title-accent">Book a visit</span>
           </>
         }
         description={

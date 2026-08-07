@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { Clapperboard, Trophy } from 'lucide-react';
 import { EVENTS_TERRACE, EVENTS_IMAGES } from '../../data/eventsPageData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 const ICONS = { Clapperboard, Trophy };
 
@@ -13,10 +14,7 @@ export default function EventsTerrace() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center"
       >
         <div className="order-2 lg:order-1 grid grid-cols-2 gap-3 sm:gap-4">
@@ -35,12 +33,12 @@ export default function EventsTerrace() {
         </div>
 
         <div className="order-1 lg:order-2 space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {EVENTS_TERRACE.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {plain}{' '}
-            <span className="text-brand-gold italic font-medium">{EVENTS_TERRACE.h2Accent}</span>
+            <span className="section-title-accent">{EVENTS_TERRACE.h2Accent}</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
             {EVENTS_TERRACE.body}

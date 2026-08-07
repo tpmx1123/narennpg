@@ -1,4 +1,9 @@
+import { motion } from 'framer-motion';
+import { MapPin } from 'lucide-react';
 import { Cld } from '../../utils/cloudinary';
+import { RESIDENCES } from '../../data/homeData';
+import IconSlideButton from '../ui/IconSlideButton';
+import { scrollReveal } from '../../motion/motionPresets';
 
 const NEARBY_HIGHLIGHTS = [
   {
@@ -19,23 +24,23 @@ const NEARBY_HIGHLIGHTS = [
 ];
 
 const AREA_IMAGE = Cld.wide('v1786002155/image-03-2_ze1iph_g3llre.webp');
+const ELITE_MAP_URL =
+  RESIDENCES.find((res) => res.name === 'Narenn Elite')?.mapUrl ??
+  'https://maps.app.goo.gl/DqPwF8JMTihVhMX28';
 
 export default function Neighborhood() {
   return (
-    <section
-      id="neighborhood"
-      className="relative py-10 sm:py-14 bg-white overflow-hidden"
-    >
+    <section id="neighborhood" className="relative py-10 sm:py-14 bg-white overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
-        {/* Header */}
-        <div className="mb-8 sm:mb-10 lg:mb-14 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-12">
+        <motion.div
+          className="mb-8 sm:mb-10 lg:mb-14 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-12"
+          {...scrollReveal}
+        >
           <div className="max-w-xl">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-3 block">
-              Location
-            </span>
-            <h2 className="text-2xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+            <span className="section-eyebrow block mb-3">Location</span>
+            <h2 className="section-title">
               Four properties in{' '}
-              <span className="text-brand-gold italic font-medium">VIP Hills, Madhapur.</span>
+              <span className="section-title-accent">VIP Hills, Madhapur.</span>
             </h2>
           </div>
           <p className="text-sm text-brand-charcoal leading-relaxed max-w-lg border-l-[3px] border-brand-burgundy pl-5">
@@ -57,17 +62,18 @@ export default function Neighborhood() {
             </a>
             .
           </p>
-        </div>
+        </motion.div>
 
-        {/* Main — open list + full-bleed visual */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 mb-10 sm:mb-14 lg:mb-16 items-start">
-          <div className="lg:col-span-5">
+          <motion.div className="lg:col-span-5" {...scrollReveal}>
             <ul className="divide-y divide-brand-gold/25">
               {NEARBY_HIGHLIGHTS.map(({ title, distance, detail }) => (
                 <li key={title} className="py-5 first:pt-0 last:pb-0">
                   <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4 mb-1.5">
-                    <span className="font-display font-bold text-base text-brand-charcoal">{title}</span>
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-brand-gold shrink-0">
+                    <span className="font-display font-semibold text-base text-brand-charcoal">
+                      {title}
+                    </span>
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-brand-gold shrink-0">
                       {distance}
                     </span>
                   </div>
@@ -75,29 +81,47 @@ export default function Neighborhood() {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="lg:col-span-7 relative min-h-55 sm:min-h-85 overflow-hidden rounded-[10px]">
+          <motion.div
+            className="lg:col-span-7 relative min-h-55 sm:min-h-85 overflow-hidden rounded-[10px]"
+            {...scrollReveal}
+          >
             <img
               src={AREA_IMAGE}
               alt="Narenn Living terrace and neighbourhood views in VIP Hills, Madhapur"
-              loading="lazy" className="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-t from-brand-green/90 via-brand-green/40 to-transparent" />
             <div className="relative h-full min-h-55 sm:min-h-85 flex flex-col justify-end p-4 sm:p-8">
-              
-              <h3 className="font-display font-bold text-xl sm:text-2xl text-white mb-1">
+              <h3 className="font-display font-semibold text-xl sm:text-2xl text-white mb-1">
                 VIP Hills, Madhapur
               </h3>
-              <p className="text-sm text-white/85 max-w-md leading-relaxed">
+              <p className="text-sm text-white/85 max-w-md leading-relaxed mb-4">
                 Hyderabad, Telangana 500084 - four Narenn Living homes within walking distance of
                 Madhapur&apos;s best commute and lifestyle corridors.
               </p>
+              <IconSlideButton
+                href={ELITE_MAP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                leadingIcon={MapPin}
+                compact
+                radius={8}
+                bgColor="#B1020C"
+                bgHoverColor="#8A0109"
+                fillColor="#FBBD45"
+                textColor="#ffffff"
+                textHoverColor="#1A1A1A"
+                iconColor="#ffffff"
+                iconHoverColor="#1A1A1A"
+              >
+                View on Maps
+              </IconSlideButton>
             </div>
-          </div>
+          </motion.div>
         </div>
-
-              
       </div>
     </section>
   );

@@ -1,20 +1,17 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { PROPERTIES_CHOOSE } from '../../data/propertiesPageData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function PropertiesCompare() {
   return (
-    <section className="mb-10 sm:mb-14 lg:mb-16 py-8 sm:py-10 lg:py-14 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-cream-dark/60 border-y border-brand-gold/10">
+    <section className="mb-10 sm:mb-14 lg:mb-16 py-8 sm:py-10 lg:py-14 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-brand-cream-dark/60 border-y border-brand-gold/10">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-14 items-center"
       >
         <div>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-6 sm:mb-8">
+          <h2 className="section-title mb-6 sm:mb-8">
             {PROPERTIES_CHOOSE.h2}
           </h2>
           <ol className="space-y-5">

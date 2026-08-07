@@ -115,9 +115,9 @@ function DottedLine({ className }) {
 
 export default function MadhapurMinutes() {
   return (
-    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-white border-y border-brand-gold/10">
+    <section className="mb-8 sm:mb-10 lg:mb-12 py-8 lg:py-12 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-white border-y border-brand-gold/10">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-8 lg:mb-9">
+        <h2 className="section-title text-center mb-8 lg:mb-9">
           {MADHAPUR_MINUTES.h2}
         </h2>
 

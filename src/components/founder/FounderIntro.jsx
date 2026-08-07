@@ -8,19 +8,19 @@ export default function FounderIntro() {
 
   return (
     <section className="pt-24 sm:pt-28 lg:pt-36 pb-8 sm:pb-10 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="site-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, ease: EASE }}
           className="max-w-3xl mb-6 sm:mb-8 lg:mb-6"
         >
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-2.5 sm:mb-3">
+          <span className="section-eyebrow block mb-2.5 sm:mb-3">
             {FOUNDER_INTRO.eyebrow}
           </span>
-          <h1 className="text-2xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h1 className="text-2xl sm:text-[2rem] lg:text-4xl font-display font-semibold text-brand-green tracking-tight leading-[1.15]">
             {FOUNDER_INTRO.h1}{' '}
-            <span className="text-brand-gold italic font-medium">{FOUNDER_INTRO.h1Accent}</span>{' '}
+            <span className="section-title-accent">{FOUNDER_INTRO.h1Accent}</span>{' '}
             {FOUNDER_INTRO.h1Suffix}
           </h1>
         </motion.div>
@@ -38,7 +38,7 @@ export default function FounderIntro() {
             <p>{FOUNDER_INTRO.paragraphs[1]}</p>
 
             <div className="pt-5 sm:pt-6 border-t border-brand-gold/20">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-2.5 sm:mb-3">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-display font-semibold text-brand-green tracking-tight leading-[1.15] mb-2.5 sm:mb-3">
                 {experience.h2}
               </h2>
               <p>{experience.body}</p>
@@ -62,10 +62,10 @@ export default function FounderIntro() {
                 />
               </div>
               <div className="mt-4 sm:mt-6">
-                <h3 className="text-lg sm:text-2xl font-display font-bold text-brand-green tracking-tight mb-1">
+                <h3 className="text-lg sm:text-2xl font-display font-semibold text-brand-green tracking-tight mb-1">
                   {founder.name}
                 </h3>
-                <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] text-brand-gold">
+                <p className="text-[10px] sm:section-eyebrow">
                   {founder.role}
                 </p>
               </div>

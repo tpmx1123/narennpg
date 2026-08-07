@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { FAQ_DEPOSITS, FAQ_IMAGES } from '../../data/faqPageData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 /** Trust stage — Treatment B (pricing transparency) */
 export default function FaqDeposits() {
@@ -13,16 +14,13 @@ export default function FaqDeposits() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-20">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-14 items-center max-w-6xl mx-auto"
       >
         <div className="order-2 lg:order-1 lg:col-span-6 space-y-4 sm:space-y-5 min-w-0">
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {plain}{' '}
-            <span className="text-brand-gold italic font-medium">{FAQ_DEPOSITS.h2Accent}</span>
+            <span className="section-title-accent">{FAQ_DEPOSITS.h2Accent}</span>
           </h2>
           {FAQ_DEPOSITS.paragraphs.map((para) => (
             <p

@@ -6,9 +6,9 @@ export default function FoodInspection() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16 space-y-10 sm:space-y-12 lg:space-y-14">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="section-title">
           Hygiene You Can{' '}
-          <span className="text-brand-gold italic font-medium">Walk In and Inspect</span>
+          <span className="section-title-accent">Walk In and Inspect</span>
         </h2>
         <p className="mt-5 text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
           {FOOD_INSPECTION.body}
@@ -16,9 +16,9 @@ export default function FoodInspection() {
       </div>
 
       <div className="max-w-3xl mx-auto text-center pt-10 border-t border-brand-gold/20">
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="section-title">
           Special Requirements and{' '}
-          <span className="text-brand-gold italic font-medium">Off-Cycle Timings</span>
+          <span className="section-title-accent">Off-Cycle Timings</span>
         </h2>
         <p className="mt-5 text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">
           {FOOD_SPECIAL.body}

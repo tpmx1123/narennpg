@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import ContactText from '../../ui/ContactText';
 import IconSlideButton from '../../ui/IconSlideButton';
 import { KONDAPUR_BOOK, KONDAPUR_IMAGES } from '../../../data/kondapurLocationData';
 import { WHATSAPP_URL } from '../../../data/sitePages';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 function WhatsAppIcon({ className }) {
   return (
@@ -21,7 +22,7 @@ export default function KondapurBook({ onBookVisit }) {
   const [src, setSrc] = useState(bg.src);
 
   return (
-    <section className="relative mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-10 overflow-hidden">
+    <section className="relative mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-6 overflow-hidden">
       <img loading="lazy"
         src={src}
         alt=""
@@ -36,13 +37,10 @@ export default function KondapurBook({ onBookVisit }) {
       />
 
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.5, ease: EASE }}
-        className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-10 py-10 sm:py-12 lg:py-14"
+        {...scrollReveal}
+        className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-6 py-10 sm:py-12 lg:py-14"
       >
-        <p className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4 sm:mb-5">
+        <p className="section-eyebrow mb-4 sm:mb-5">
           {KONDAPUR_BOOK.eyebrow}
         </p>
         <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-white tracking-tight leading-[1.15] mb-4 sm:mb-5">

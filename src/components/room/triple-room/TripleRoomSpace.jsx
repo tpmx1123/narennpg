@@ -26,12 +26,12 @@ export default function TripleRoomSpace() {
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 mb-8 lg:mb-10 items-end">
         <div className="lg:col-span-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             Real Layout
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             Space That Actually Works for{' '}
-            <span className="text-brand-gold italic font-medium">Three</span>
+            <span className="section-title-accent">Three</span>
           </h2>
         </div>
       </div>

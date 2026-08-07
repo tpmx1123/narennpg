@@ -12,12 +12,12 @@ export default function FaqAccordion() {
     <section className="mb-6 lg:mb-8 pt-2 sm:pt-4 lg:pt-6">
       <div className="max-w-3xl mx-auto min-w-0">
         <div className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 text-center">
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-2.5 sm:mb-3">
+          <span className="section-eyebrow block mb-2.5 sm:mb-3">
             {FAQ_ACCORDION_HEADING.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {plain}{' '}
-            <span className="text-brand-gold italic font-medium">{FAQ_ACCORDION_HEADING.h2Accent}</span>
+            <span className="section-title-accent">{FAQ_ACCORDION_HEADING.h2Accent}</span>
           </h2>
         </div>
 

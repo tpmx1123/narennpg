@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { FAQ_STILL_ASK, FAQ_IMAGES } from '../../data/faqPageData';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 import ContactText from '../ui/ContactText';
 import IconSlideButton from '../ui/IconSlideButton';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 function WhatsAppIcon({ className }) {
   return (
@@ -19,7 +19,7 @@ export default function FaqHelp({ onBookVisit }) {
   const { talkBg } = FAQ_IMAGES;
 
   return (
-    <section className="relative mb-10 sm:mb-14 lg:mb-20 -mx-4 sm:-mx-6 lg:-mx-10 overflow-hidden">
+    <section className="relative mb-10 sm:mb-14 lg:mb-20 -mx-4 sm:-mx-6 lg:-mx-6 overflow-hidden">
       <img
         src={talkBg.src}
         alt=""
@@ -36,14 +36,11 @@ export default function FaqHelp({ onBookVisit }) {
       />
 
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.5, ease: EASE }}
-        className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20"
+        {...scrollReveal}
+        className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-6 py-10 sm:py-14 lg:py-20"
       >
         <h2 className="sr-only">{FAQ_STILL_ASK.h2}</h2>
-        <p className="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4 sm:mb-5">
+        <p className="section-eyebrow mb-4 sm:mb-5">
           Talk to us
         </p>
         <a
@@ -54,7 +51,7 @@ export default function FaqHelp({ onBookVisit }) {
         </a>
         <p className="mt-3 sm:mt-4 text-sm sm:text-lg text-white/90 leading-relaxed max-w-xl mx-auto">
           A real person picks up -{' '}
-          <span className="text-brand-gold italic font-medium">evenings and weekends included</span>.
+          <span className="section-title-accent">evenings and weekends included</span>.
         </p>
         <p className="mt-2.5 sm:mt-3 text-sm text-white/75 leading-relaxed max-w-lg mx-auto">
           <ContactText linkClassName="text-brand-gold font-semibold hover:underline underline-offset-2">

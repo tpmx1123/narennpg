@@ -124,7 +124,7 @@ function BookingCardBody({ onBookVisit, rates, booking, compact = false }) {
       <div className="mt-4">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div key={`${billing}-${climate}`} {...fadeProps}>
-            <p className="text-[11px] font-bold tracking-[0.18em] text-brand-gold uppercase mb-2">
+            <p className="section-eyebrow mb-2">
               {productLabel}
             </p>
             <p className="font-display text-xl sm:text-2xl font-semibold text-brand-green tracking-tight">

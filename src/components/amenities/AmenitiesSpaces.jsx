@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { AMENITIES_IMAGES, AMENITIES_SPACES } from '../../data/amenitiesData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function AmenitiesSpaces() {
   const plain = AMENITIES_SPACES.h2.replace(AMENITIES_SPACES.h2Accent, '').trim();
@@ -10,9 +10,9 @@ export default function AmenitiesSpaces() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
       <div className="text-center max-w-5xl mx-auto mb-8 sm:mb-10">
-        <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+        <h2 className="section-title">
           {plain}{' '}
-          <span className="text-brand-gold italic font-medium">{AMENITIES_SPACES.h2Accent}</span>
+          <span className="section-title-accent">{AMENITIES_SPACES.h2Accent}</span>
         </h2>
         {AMENITIES_SPACES.paragraphs.map((para) => (
           <p
@@ -25,10 +25,7 @@ export default function AmenitiesSpaces() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 md:grid-cols-12 gap-4 md:min-h-130"
       >
         <div className="md:col-span-8 overflow-hidden rounded-2xl relative group aspect-4/3 md:aspect-auto md:min-h-0 border border-brand-gold/20">

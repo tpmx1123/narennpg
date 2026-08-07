@@ -19,12 +19,12 @@ export default function QuadRoomNot() {
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start">
         <div className="lg:col-span-4">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             Honest Floor
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             What Four Sharing{' '}
-            <span className="text-brand-gold italic font-medium">Is Not</span>
+            <span className="section-title-accent">Is Not</span>
           </h2>
         </div>
         <div className="lg:col-span-8 space-y-5">

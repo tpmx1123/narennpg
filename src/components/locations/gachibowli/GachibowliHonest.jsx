@@ -1,18 +1,15 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import SectionHeading from '../../ui/SectionHeading';
 import { GACHIBOWLI_HONEST } from '../../../data/gachibowliLocationData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function GachibowliHonest() {
   return (
     <section className="mb-8 sm:mb-10 lg:mb-12">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.5, ease: EASE }}
-        className="relative overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-cream-dark/50 px-4 py-6 sm:px-8 sm:py-10 lg:px-10 max-w-4xl mx-auto"
+        {...scrollReveal}
+        className="relative overflow-hidden rounded-2xl border border-brand-charcoal/10 bg-brand-cream-dark/50 px-4 py-6 sm:px-8 sm:py-10 lg:px-6 max-w-4xl mx-auto"
       >
         <div
           className="absolute left-0 top-0 bottom-0 w-1 bg-brand-burgundy"

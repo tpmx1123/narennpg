@@ -11,12 +11,12 @@ export default function LocationFaq({ data }) {
     <section className="mb-8 sm:mb-10 lg:mb-12 pt-8 sm:pt-10 lg:pt-12 border-t border-brand-gold/15">
       <div className="max-w-3xl mx-auto min-w-0">
         <div className="space-y-2.5 sm:space-y-3 mb-5 sm:mb-8 text-center px-1">
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] sm:tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             FAQ
           </span>
-          <h2 className="text-[1.65rem] sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.2] sm:leading-[1.15]">
+          <h2 className="section-title">
             Frequently Asked{' '}
-            <span className="text-brand-gold italic font-medium">Questions</span>
+            <span className="section-title-accent">Questions</span>
           </h2>
         </div>
 

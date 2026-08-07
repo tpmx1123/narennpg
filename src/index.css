@@ -32,6 +32,97 @@ body {
   scrollbar-width: none;
 }
 
+/* Match home hero gutters sitewide */
+.site-container {
+  width: 100%;
+  max-width: 80rem; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-left: 1.5rem; /* sm:px-6 */
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: 1.5rem; /* lg:px-6 — same as home hero */
+    padding-right: 1.5rem;
+  }
+}
+
+/* —— Shared section typography —— */
+.section-eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6875rem; /* 11px */
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #B1020C; /* brand burgundy / red — light sections only */
+}
+
+.section-eyebrow-on-dark {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #FBBD45; /* gold on dark heroes */
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* semibold — not bold/extrabold */
+  color: #0F3D2E; /* brand-green */
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+.section-title-on-dark {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #F7F3E9; /* cream */
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .section-title-on-dark {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title-on-dark {
+    font-size: 2.25rem;
+  }
+}
+
+.section-title-accent {
+  color: #FBBD45; /* brand-gold */
+  font-style: italic;
+  font-weight: 500;
+}
+
 /* Madhapur minutes — continuous flowing dotted line */
 @keyframes madhapur-dot-flow {
   from {

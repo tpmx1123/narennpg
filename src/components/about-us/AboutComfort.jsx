@@ -1,22 +1,19 @@
 import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { ABOUT_COMMUNITY, ABOUT_IMAGES } from '../../data/aboutUsData';
 import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
 import IconSlideButton from '../ui/IconSlideButton';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function AboutComfort() {
   const { communityA, communityB } = ABOUT_IMAGES;
 
   return (
-    <section className="mb-14 lg:mb-16 py-10 lg:py-14 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 bg-brand-cream-dark/60 border-y border-brand-gold/10">
+    <section className="mb-14 lg:mb-16 py-10 lg:py-14 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 bg-brand-cream-dark/60 border-y border-brand-gold/10">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-14 items-center"
       >
         <div className="relative grid grid-cols-2 gap-3 sm:gap-4 pb-4 sm:pb-6 lg:pb-8">
@@ -37,10 +34,10 @@ export default function AboutComfort() {
         </div>
 
         <div className="space-y-5">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {ABOUT_COMMUNITY.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {ABOUT_COMMUNITY.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">

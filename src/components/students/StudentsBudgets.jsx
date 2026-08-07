@@ -21,7 +21,7 @@ export default function StudentsBudgets() {
   const { compare } = STUDENTS_BUDGETS;
 
   return (
-    <section className="mb-8 lg:mb-10 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-10 lg:py-12 bg-brand-gold-pale/30 border-y border-brand-gold/15">
+    <section className="mb-8 lg:mb-10 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 py-10 lg:py-12 bg-brand-gold-pale/30 border-y border-brand-gold/15">
       <motion.div
         initial={{ opacity: 0, y: 14 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -30,10 +30,10 @@ export default function StudentsBudgets() {
         className="max-w-5xl mx-auto space-y-8"
       >
         <div className="max-w-2xl mx-auto text-center space-y-4">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             {STUDENTS_BUDGETS.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15]">
+          <h2 className="section-title">
             {STUDENTS_BUDGETS.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">

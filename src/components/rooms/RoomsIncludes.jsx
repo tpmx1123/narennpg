@@ -1,9 +1,10 @@
 import { Check } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { Link } from 'react-router-dom';
 import { ROOMS_IMAGES, ROOMS_INCLUDES } from '../../data/roomsData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 export default function RoomsIncludes() {
   const { inclusions } = ROOMS_IMAGES;
@@ -11,10 +12,7 @@ export default function RoomsIncludes() {
   return (
     <section className="mb-10 sm:mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="relative overflow-hidden rounded-[16px] border border-brand-gold/30 shadow-[0_24px_60px_-28px_rgba(15,61,46,0.2)]"
       >
         <div
@@ -25,12 +23,12 @@ export default function RoomsIncludes() {
 
         <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 p-5 sm:p-8 lg:p-11">
           <div className="lg:col-span-7">
-            <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+            <span className="section-eyebrow block mb-3">
               Standard Package
             </span>
-            <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-4">
+            <h2 className="section-title mb-4">
               What Every Room{' '}
-              <span className="text-brand-gold italic font-medium">Includes</span>
+              <span className="section-title-accent">Includes</span>
             </h2>
             <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed mb-6">
               No matter which sharing type you choose, every Narenn Living room comes with the same

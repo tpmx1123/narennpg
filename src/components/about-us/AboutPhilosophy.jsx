@@ -1,23 +1,20 @@
 import { XCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { ABOUT_NOT_ITEMS, ABOUT_PHILOSOPHY } from '../../data/aboutUsData';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function AboutPhilosophy() {
   return (
     <section className="mb-14 lg:mb-16">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
       >
         <div className="max-w-3xl mb-8 lg:mb-10">
-          <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+          <span className="section-eyebrow block mb-3">
             {ABOUT_PHILOSOPHY.eyebrow}
           </span>
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-5">
+          <h2 className="section-title mb-5">
             {ABOUT_PHILOSOPHY.h2}
           </h2>
           <p className="text-sm sm:text-lg font-display font-medium text-brand-charcoal-light italic border-l-4 border-brand-gold pl-4 sm:pl-5 leading-snug">

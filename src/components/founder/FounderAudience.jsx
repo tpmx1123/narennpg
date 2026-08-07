@@ -5,9 +5,9 @@ import { FOUNDER_AUDIENCE } from '../../data/founderPageData';
 export default function FounderAudience() {
   return (
     <section className="py-8 sm:py-10 lg:py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="site-container">
         <div className="text-center mb-6 sm:mb-8">
-          <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] mb-2.5 sm:mb-3">
+          <h2 className="section-title mb-2.5 sm:mb-3">
             {FOUNDER_AUDIENCE.h2}
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light max-w-2xl mx-auto leading-relaxed px-1">

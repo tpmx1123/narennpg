@@ -1,8 +1,8 @@
 import { Briefcase, Building2, CheckCircle2, Coffee, TrainFront } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import { MADHAPUR_IMAGES, MADHAPUR_PREMIUM, MADHAPUR_WHY } from '../../../data/madhapurLocationData';
 
-const EASE = [0.4, 0, 0.2, 1];
 
 const CARD_STYLE = {
   gold: 'bg-brand-gold/10',
@@ -14,17 +14,14 @@ export default function MadhapurWhy() {
 
   return (
     <section className="mb-8 sm:mb-10 lg:mb-12">
-      <h2 className="text-3xl sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.15] text-center mb-6 sm:mb-8 lg:mb-10">
+      <h2 className="section-title text-center mb-6 sm:mb-8 lg:mb-10">
         {MADHAPUR_WHY.h2}
       </h2>
 
       <div className="grid grid-cols-2 lg:grid-cols-12 gap-3 sm:gap-4">
         {/* Tech Epicenter — wide */}
         <motion.article
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.45, ease: EASE }}
+          {...scrollReveal}
           className="col-span-2 lg:col-span-8 relative overflow-hidden rounded-xl p-5 sm:p-6 bg-brand-cream-dark group hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(15,61,46,0.12)] transition-all duration-300"
         >
           <div className="relative z-10">
@@ -46,10 +43,7 @@ export default function MadhapurWhy() {
 
         {/* Urban Pulse — narrow */}
         <motion.article
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.45, ease: EASE, delay: 0.05 }}
+          {...scrollReveal}
           className={`lg:col-span-4 rounded-xl p-4 sm:p-6 ${CARD_STYLE.gold} hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(15,61,46,0.12)] transition-all duration-300`}
         >
           <div className="flex items-center gap-3 mb-2">
@@ -65,10 +59,7 @@ export default function MadhapurWhy() {
 
         {/* Seamless Transit — narrow */}
         <motion.article
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.45, ease: EASE, delay: 0.1 }}
+          {...scrollReveal}
           className={`lg:col-span-4 rounded-xl p-4 sm:p-6 ${CARD_STYLE.outline} hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(15,61,46,0.12)] transition-all duration-300`}
         >
           <div className="flex items-center gap-3 mb-2">
@@ -84,10 +75,7 @@ export default function MadhapurWhy() {
 
         {/* Premium Living — wide image card */}
         <motion.article
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.45, ease: EASE, delay: 0.15 }}
+          {...scrollReveal}
           className="col-span-2 lg:col-span-8 relative rounded-xl overflow-hidden group min-h-65 hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(15,61,46,0.12)] transition-all duration-300"
         >
           <img

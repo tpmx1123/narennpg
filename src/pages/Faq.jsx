@@ -81,7 +81,7 @@ export default function Faq() {
 
       <main className="flex-1 bg-white">
         <FaqHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
+        <div className="site-container pb-8 lg:pb-10">
           <FaqIntro />
           <FaqCategories />
           <FaqHelp onBookVisit={onBookVisit} />
@@ -95,7 +95,7 @@ export default function Faq() {
           title={
             <>
               Still unsure? Ask us{' '}
-              <span className="text-brand-gold italic font-medium">anything</span>
+              <span className="section-title-accent">anything</span>
             </>
           }
           description={

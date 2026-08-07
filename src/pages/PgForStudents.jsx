@@ -111,7 +111,7 @@ export default function PgForStudents() {
 
       <main className="flex-1 bg-white">
         <StudentsHero onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-4 lg:pb-6">
+        <div className="site-container pb-4 lg:pb-6">
           <StudentsIntro />
           <StudentsTrust />
           <StudentsStudy />
@@ -128,7 +128,7 @@ export default function PgForStudents() {
           title={
             <>
               {ctaPlain}{' '}
-              <span className="text-brand-gold italic font-medium">
+              <span className="section-title-accent">
                 {STUDENTS_FINAL_CTA.titleAccent}
               </span>
             </>

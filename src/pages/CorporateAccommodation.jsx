@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
 import { Check, ChevronDown } from 'lucide-react';
+import { motion } from 'framer-motion';
 import PageMeta, { buildBreadcrumbSchema, organizationRef } from '../components/seo/PageMeta';
 import { Footer, FinalCta } from '../components/home';
 import IconSlideButton from '../components/ui/IconSlideButton';
@@ -20,6 +21,7 @@ import {
   CORPORATE_FINAL_CTA,
 } from '../data/corporateAccommodationPageData';
 import { SITE_URL, SITE_LOGO, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../data/sitePages';
+import { staggerContainerMount, staggerItemMount } from '../motion/motionPresets';
 
 export default function CorporateAccommodation() {
   const { onBookVisit } = useOutletContext() ?? {};
@@ -133,19 +135,28 @@ export default function CorporateAccommodation() {
             className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-brand-green/85 to-brand-green/55"
             aria-hidden="true"
           />
-          <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-28 sm:pt-32 pb-12 sm:pb-14 lg:pb-16">
-            <div className="max-w-3xl">
-              <span className="inline-flex text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase mb-4">
+          <div className="relative site-container pt-28 sm:pt-32 pb-12 sm:pb-14 lg:pb-16">
+            <motion.div className="max-w-3xl" {...staggerContainerMount}>
+              <motion.span
+                className="inline-flex section-eyebrow-on-dark mb-4"
+                {...staggerItemMount}
+              >
                 {CORPORATE_HERO.eyebrow}
-              </span>
-              <h1 className="text-3xl sm:text-4xl lg:text-[2.35rem] font-display font-bold text-brand-cream tracking-tight leading-[1.12] mb-5">
+              </motion.span>
+              <motion.h1
+                className="text-3xl sm:text-4xl lg:text-[2.35rem] font-display font-semibold text-brand-cream tracking-tight leading-[1.12] mb-5"
+                {...staggerItemMount}
+              >
                 {CORPORATE_HERO.h1}{' '}
-                <span className="text-brand-gold italic font-medium">{CORPORATE_HERO.h1Accent}</span>
-              </h1>
-              <p className="text-sm sm:text-base text-brand-cream/85 leading-relaxed max-w-2xl mb-7">
+                <span className="section-title-accent">{CORPORATE_HERO.h1Accent}</span>
+              </motion.h1>
+              <motion.p
+                className="text-sm sm:text-base text-brand-cream/85 leading-relaxed max-w-2xl mb-7"
+                {...staggerItemMount}
+              >
                 {CORPORATE_HERO.lead}
-              </p>
-              <div className="flex flex-wrap items-center gap-4">
+              </motion.p>
+              <motion.div className="flex flex-wrap items-center gap-4" {...staggerItemMount}>
                 {onBookVisit ? (
                   <IconSlideButton
                     onClick={() => onBookVisit()}
@@ -175,12 +186,12 @@ export default function CorporateAccommodation() {
                 >
                   WhatsApp
                 </a>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </section>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-8 lg:pb-10">
+        <div className="site-container pb-8 lg:pb-10">
           <section className="mb-14 lg:mb-16 -mt-6 sm:-mt-8 relative z-10">
             <div className="rounded-[10px] border border-brand-gold/25 bg-white shadow-[0_20px_60px_-24px_rgba(15,61,46,0.18)] p-6 sm:p-8 lg:p-12 max-w-6xl mx-auto text-center space-y-4">
               <SectionHeading
@@ -211,7 +222,7 @@ export default function CorporateAccommodation() {
                   key={item.title}
                   className="rounded-[10px] border border-brand-gold/20 bg-brand-gold-pale/20 p-5 sm:p-6"
                 >
-                  <h3 className="font-display font-bold text-brand-green text-base sm:text-lg mb-2">
+                  <h3 className="font-display font-semibold text-brand-green text-base sm:text-lg mb-2">
                     {item.title}
                   </h3>
                   <p className="text-sm text-brand-charcoal-light leading-relaxed">{item.body}</p>
@@ -249,7 +260,7 @@ export default function CorporateAccommodation() {
             <div className="grid sm:grid-cols-2 gap-4 max-w-5xl mx-auto">
               {CORPORATE_HR.items.map((item) => (
                 <div key={item.title} className="border-l-2 border-brand-gold pl-4 py-1">
-                  <h3 className="font-display font-bold text-brand-green text-base mb-1.5">{item.title}</h3>
+                  <h3 className="font-display font-semibold text-brand-green text-base mb-1.5">{item.title}</h3>
                   <p className="text-sm text-brand-charcoal-light leading-relaxed">{item.body}</p>
                 </div>
               ))}
@@ -275,7 +286,7 @@ export default function CorporateAccommodation() {
 
           <section className="mb-10 lg:mb-12">
             <div className="rounded-[10px] bg-brand-green text-brand-cream px-6 sm:px-10 py-10 sm:py-12 max-w-5xl mx-auto text-center">
-              <span className="text-[11px] font-bold tracking-[0.25em] text-brand-gold uppercase block mb-3">
+              <span className="section-eyebrow block mb-3">
                 {CORPORATE_CTA.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl font-display font-bold tracking-tight mb-4">{CORPORATE_CTA.h2}</h2>
@@ -358,7 +369,7 @@ export default function CorporateAccommodation() {
           title={
             <>
               {CORPORATE_FINAL_CTA.title}{' '}
-              <span className="text-brand-gold italic font-medium">{CORPORATE_FINAL_CTA.titleAccent}</span>
+              <span className="section-title-accent">{CORPORATE_FINAL_CTA.titleAccent}</span>
             </>
           }
           description={

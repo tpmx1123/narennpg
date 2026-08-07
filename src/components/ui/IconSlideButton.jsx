@@ -40,11 +40,36 @@ export default function IconSlideButton({
   radius = HERO_DEFAULTS.radius,
   fontSize = HERO_DEFAULTS.fontSize,
   compact = false,
+  dense = false,
+  iconOnly = false,
+  icon: Icon = ArrowRight,
+  leadingIcon: LeadingIcon,
+  'aria-label': ariaLabel,
 }) {
-  const padRest = compact ? { paddingLeft: 18, paddingRight: 26 } : { paddingLeft: 28, paddingRight: 36 };
-  const padHover = compact ? { paddingLeft: 14, paddingRight: 14 } : { paddingLeft: 20, paddingRight: 18 };
-  const labelPy = compact ? 'py-2.5' : 'py-3.5';
-  const resolvedFontSize = compact && fontSize === HERO_DEFAULTS.fontSize ? 11 : fontSize;
+  const padRest = iconOnly
+    ? { paddingLeft: 0, paddingRight: 0 }
+    : dense
+      ? { paddingLeft: 10, paddingRight: 22 }
+      : compact
+        ? { paddingLeft: 18, paddingRight: 26 }
+        : { paddingLeft: 28, paddingRight: 36 };
+  const padHover = iconOnly
+    ? { paddingLeft: 0, paddingRight: 0 }
+    : dense
+      ? { paddingLeft: 8, paddingRight: 8 }
+      : compact
+        ? { paddingLeft: 14, paddingRight: 14 }
+        : { paddingLeft: 20, paddingRight: 18 };
+  const labelPy = dense ? 'py-1.5' : compact ? 'py-2.5' : 'py-3.5';
+  const resolvedFontSize =
+    dense
+      ? Math.min(fontSize, 10)
+      : compact && fontSize === HERO_DEFAULTS.fontSize
+        ? 11
+        : fontSize;
+  const iconSize = dense ? 'w-3.5 h-3.5' : 'w-4 h-4';
+  const iconRestRight = dense ? 8 : 12;
+  const hoverIconWidth = dense ? 16 : 20;
 
   const motionProps = {
     initial: 'rest',
@@ -62,16 +87,25 @@ export default function IconSlideButton({
       },
     },
     transition: { duration: 0.4, ease: EASE },
-    className: `group relative inline-flex items-center justify-center gap-2.5 overflow-hidden font-display font-bold tracking-[0.14em] uppercase cursor-pointer select-none no-underline ${className}`,
+    className: `group relative inline-flex w-fit items-center justify-center overflow-hidden font-display font-bold uppercase cursor-pointer select-none no-underline ${
+      iconOnly
+        ? 'gap-0 tracking-normal'
+        : dense
+          ? 'gap-1.5 tracking-[0.1em]'
+          : 'gap-2.5 tracking-[0.14em]'
+    } ${className}`,
     style: {
       borderRadius: radius,
       fontSize: resolvedFontSize,
       color: textColor,
+      width: 'fit-content',
+      ...(iconOnly ? { width: 36, height: 36 } : null),
     },
     onClick,
+    'aria-label': ariaLabel,
   };
 
-  const content = (
+  const content = iconOnly ? (
     <>
       <motion.span
         aria-hidden="true"
@@ -79,9 +113,50 @@ export default function IconSlideButton({
         variants={{
           rest: {
             opacity: 0,
-            width: 30,
-            height: 'calc(100% - 20px)',
-            right: 10,
+            width: 18,
+            height: 18,
+            right: 9,
+            top: '50%',
+            left: 'auto',
+            x: 0,
+            y: '-50%',
+          },
+          hover: {
+            opacity: 1,
+            width: '120%',
+            height: '120%',
+            left: '50%',
+            right: 'auto',
+            top: '50%',
+            x: '-50%',
+            y: '-50%',
+          },
+        }}
+        transition={{ duration: 0.4, ease: EASE }}
+        style={{ backgroundColor: fillColor }}
+      />
+      <motion.span
+        className="relative z-10 inline-flex items-center justify-center"
+        variants={{
+          rest: { color: iconColor },
+          hover: { color: iconHoverColor },
+        }}
+        transition={{ duration: 0.35, ease: EASE }}
+      >
+        <Icon className="w-4 h-4" strokeWidth={2.5} />
+      </motion.span>
+    </>
+  ) : (
+    <>
+      <motion.span
+        aria-hidden="true"
+        className="pointer-events-none absolute z-0 rounded-full"
+        variants={{
+          rest: {
+            opacity: 0,
+            width: dense ? 22 : 30,
+            height: dense ? 'calc(100% - 10px)' : 'calc(100% - 20px)',
+            right: dense ? 6 : 10,
             top: '50%',
             left: 'auto',
             x: 0,
@@ -103,13 +178,16 @@ export default function IconSlideButton({
       />
 
       <motion.span
-        className={`relative z-10 whitespace-nowrap ${labelPy}`}
+        className={`relative z-10 inline-flex items-center gap-1.5 whitespace-nowrap ${labelPy}`}
         variants={{
           rest: { color: textColor },
           hover: { color: textHoverColor },
         }}
         transition={{ duration: 0.35, ease: EASE }}
       >
+        {LeadingIcon ? (
+          <LeadingIcon className={`${iconSize} shrink-0`} strokeWidth={2.5} aria-hidden="true" />
+        ) : null}
         {children}
       </motion.span>
 
@@ -117,24 +195,24 @@ export default function IconSlideButton({
         aria-hidden="true"
         className="relative z-10 inline-flex items-center justify-center"
         variants={{
-          rest: { x: 28, opacity: 0, width: 0 },
-          hover: { x: 0, opacity: 1, width: 20 },
+          rest: { x: dense ? 16 : 28, opacity: 0, width: 0 },
+          hover: { x: 0, opacity: 1, width: hoverIconWidth },
         }}
         transition={{ duration: 0.4, ease: EASE }}
       >
-        <ArrowRight className="w-4 h-4 shrink-0" style={{ color: iconHoverColor }} strokeWidth={2.5} />
+        <Icon className={`${iconSize} shrink-0`} style={{ color: iconHoverColor }} strokeWidth={2.5} />
       </motion.span>
 
       <motion.span
         aria-hidden="true"
         className="pointer-events-none absolute top-1/2 z-10 -translate-y-1/2"
         variants={{
-          rest: { right: 12, opacity: 0.85 },
-          hover: { right: 12, opacity: 0 },
+          rest: { right: iconRestRight, opacity: 0.85 },
+          hover: { right: iconRestRight, opacity: 0 },
         }}
         transition={{ duration: 0.25, ease: EASE }}
       >
-        <ArrowRight className="w-4 h-4" style={{ color: iconColor }} strokeWidth={2.5} />
+        <Icon className={iconSize} style={{ color: iconColor }} strokeWidth={2.5} />
       </motion.span>
     </>
   );

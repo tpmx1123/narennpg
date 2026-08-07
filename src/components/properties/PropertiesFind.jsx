@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import { PROPERTIES_FIND } from '../../data/propertiesPageData';
 import { PhoneWhatsAppLinks } from '../ui/ContactText';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 export default function PropertiesFind() {
   return (
-    <section className="mb-14 lg:mb-16 -mx-4 sm:-mx-6 lg:-mx-10 relative overflow-hidden">
+    <section className="mb-14 lg:mb-16 -mx-4 sm:-mx-6 lg:-mx-6 relative overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url('${PROPERTIES_FIND.backgroundImage}')` }}
@@ -16,11 +16,8 @@ export default function PropertiesFind() {
       <div className="absolute inset-0 bg-brand-green/80" aria-hidden="true" />
 
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.55, ease: EASE }}
-        className="relative z-10 px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-24 text-center"
+        {...scrollReveal}
+        className="relative z-10 px-4 sm:px-6 lg:px-6 py-12 sm:py-16 lg:py-24 text-center"
       >
         <div className="max-w-2xl mx-auto">
           <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-[1.12]">

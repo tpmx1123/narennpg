@@ -126,7 +126,7 @@ export default function LocationSeoPage({ slug }) {
 
       <main className="flex-1 bg-white overflow-x-clip">
         <LocationHero data={data} onBookVisit={onBookVisit} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pb-6 sm:pb-10 lg:pb-10">
+        <div className="site-container pb-6 sm:pb-10 lg:pb-10">
           <LocationIntro data={data} />
           <LocationCommute data={data} />
           <LocationWhy data={data} />
@@ -142,7 +142,7 @@ export default function LocationSeoPage({ slug }) {
           title={
             <>
               {data.finalCta.title}{' '}
-              <span className="text-brand-gold italic font-medium">
+              <span className="section-title-accent">
                 {data.finalCta.titleAccent}
               </span>
             </>

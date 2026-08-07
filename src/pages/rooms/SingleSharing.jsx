@@ -86,12 +86,12 @@ export default function SingleSharing() {
         <SingleRoomHero />
 
         {/* About-style intro — full width, above sticky region */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 bg-white">
+        <div className="site-container bg-white">
           <SingleRoomIntro />
         </div>
 
         {/* Sticky booking region: through All-Inclusive only */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 bg-white">
+        <div className="site-container bg-white">
           <div className="grid grid-cols-1 lg:grid lg:grid-cols-[62%_38%] lg:gap-10 lg:items-start">
             <div className="min-w-0 bg-white">
               <SingleRoomGallery />
@@ -109,7 +109,7 @@ export default function SingleSharing() {
 
         {/* Full-width after sticky region */}
         <div className="w-full pt-2 lg:pt-4 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 bg-white">
+          <div className="site-container bg-white">
             <SingleRoomValueComparison />
             <SingleRoomPrivacyCommunitySecond />
             <SingleRoomAvailability />
@@ -123,7 +123,7 @@ export default function SingleSharing() {
           onBookVisit={onBookVisit}
           title={
             <>
-              Book Your <span className="text-brand-gold italic font-medium">Single Room</span>
+              Book Your <span className="section-title-accent">Single Room</span>
             </>
           }
           description={

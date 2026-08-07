@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 import SectionHeading from '../../ui/SectionHeading';
 import { GACHIBOWLI_IMAGES, GACHIBOWLI_WORK_LIVING } from '../../../data/gachibowliLocationData';
 
-const EASE = [0.16, 1, 0.3, 1];
+
 
 export default function GachibowliWorkLiving() {
   const img = GACHIBOWLI_IMAGES.landmarks;
@@ -12,10 +13,7 @@ export default function GachibowliWorkLiving() {
   return (
     <section className="mb-8 sm:mb-10 lg:mb-12">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center"
       >
         <div className="order-2 lg:order-1 lg:col-span-7 space-y-3.5 sm:space-y-4 min-w-0">

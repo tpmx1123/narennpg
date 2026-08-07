@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../../motion/motionPresets';
 
-const EASE = [0.16, 1, 0.3, 1];
 const ROOM_FALLBACK =
   'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002153/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte_b9o6aa.webp';
 
@@ -25,12 +25,9 @@ export default function LocationStandard({ data }) {
         ];
 
   return (
-    <section className="mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-10 bg-brand-gold-pale/30 border-y border-brand-gold/15 overflow-hidden">
+    <section className="mb-8 sm:mb-10 lg:mb-12 -mx-4 sm:-mx-6 lg:-mx-6 bg-brand-gold-pale/30 border-y border-brand-gold/15 overflow-hidden">
       <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.12 }}
-        transition={{ duration: 0.55, ease: EASE }}
+        {...scrollReveal}
         className="grid grid-cols-1 lg:grid-cols-12"
       >
         <div className="lg:col-span-5 relative aspect-[16/10] sm:aspect-[16/9] lg:aspect-auto lg:min-h-[280px] lg:h-full order-1">
@@ -44,12 +41,12 @@ export default function LocationStandard({ data }) {
         </div>
 
         <div className="lg:col-span-7 order-2 px-4 sm:px-8 lg:px-12 py-7 sm:py-10 lg:py-14 space-y-3.5 sm:space-y-5 min-w-0">
-          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] sm:tracking-[0.25em] text-brand-gold uppercase block">
+          <span className="section-eyebrow block">
             {standard.eyebrow}
           </span>
-          <h2 className="text-[1.65rem] sm:text-[2rem] lg:text-4xl font-display font-bold text-brand-green tracking-tight leading-[1.2] sm:leading-[1.15] break-words">
+          <h2 className="section-title break-words">
             {standard.h2}{' '}
-            <span className="text-brand-gold italic font-medium">{standard.h2Accent}</span>
+            <span className="section-title-accent">{standard.h2Accent}</span>
           </h2>
           <p className="text-sm sm:text-[15px] text-brand-charcoal-light leading-relaxed">{body}</p>
           {(roomsLink || amenitiesLink) && (

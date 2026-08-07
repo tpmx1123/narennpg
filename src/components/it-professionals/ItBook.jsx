@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
+import { scrollReveal } from '../../motion/motionPresets';
 import SectionHeading from '../ui/SectionHeading';
 import ContactText from '../ui/ContactText';
 import IconSlideButton from '../ui/IconSlideButton';
 import { IT_BOOK } from '../../data/itProfessionalsPageData';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 
-const EASE = [0.16, 1, 0.3, 1];
 
 function WhatsAppIcon({ className }) {
   return (
@@ -17,12 +17,9 @@ function WhatsAppIcon({ className }) {
 
 export default function ItBook({ onBookVisit }) {
   return (
-    <section className="mb-16 lg:mb-20 -mx-4 sm:-mx-6 lg:-mx-10 px-4 sm:px-6 lg:px-10 py-12 lg:py-16 border-y border-brand-gold/25 bg-brand-gold-pale/35">
+    <section className="mb-16 lg:mb-20 -mx-4 sm:-mx-6 lg:-mx-6 px-4 sm:px-6 lg:px-6 py-12 lg:py-16 border-y border-brand-gold/25 bg-brand-gold-pale/35">
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.5, ease: EASE }}
+        {...scrollReveal}
         className="max-w-3xl mx-auto text-center space-y-6"
       >
         <SectionHeading
