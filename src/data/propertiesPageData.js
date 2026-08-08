@@ -4,14 +4,14 @@ export const PROPERTIES_PAGE = {
   description:
     "Explore Narenn Living's four premium co-living properties in VIP Hills, Madhapur - Elite, Crown, Pinnacle & Supreme. AC rooms, meals & WiFi included. Book a visit.",
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/Gemini_Generated_Image_shjp3lshjp3lshjp_bbugon_mwyiak.png',
+  ogImage: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Gemini_Generated_Image_shjp3lshjp3lshjp_bbugon.png',
 };
 
 export const PROPERTIES_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/Gemini_Generated_Image_shjp3lshjp3lshjp_bbugon_mwyiak.png',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Gemini_Generated_Image_shjp3lshjp3lshjp_bbugon.png',
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-03-2_ze1iph.webp',
     alt: 'Narenn Living branded lobby entrance in VIP Hills, Madhapur, Hyderabad',
     title: 'Co-living properties in Madhapur',
   },
@@ -61,7 +61,7 @@ export const PROPERTIES_LIST = [
     href: '/properties/narenn-elite/',
     linkLabel: 'Explore Narenn Elite',
     image: {
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002153/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly_ulwfmu.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_5_2026_11_55_51_AM_zhi0ly.png',
       alt: 'Narenn Elite co-living property in VIP Hills, Madhapur',
       title: 'Narenn Elite',
     },
@@ -76,7 +76,7 @@ export const PROPERTIES_LIST = [
     href: '/properties/narenn-crown/',
     linkLabel: 'Explore Narenn Crown',
     image: {
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002152/ChatGPT_Image_Aug_5_2026_11_57_36_AM_xwf4ye_dw5crm.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_5_2026_11_57_36_AM_xwf4ye.png',
       alt: 'Narenn Crown co-living property in VIP Hills, Madhapur',
       title: 'Narenn Crown',
     },
@@ -91,7 +91,7 @@ export const PROPERTIES_LIST = [
     href: '/properties/narenn-pinnacle/',
     linkLabel: 'Explore Narenn Pinnacle',
     image: {
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002152/ChatGPT_Image_Aug_5_2026_01_05_43_PM_c34gr5_edwlrp.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_5_2026_01_05_43_PM_c34gr5.png',
       alt: 'Narenn Pinnacle co-living property in VIP Hills, Madhapur',
       title: 'Narenn Pinnacle',
     },
@@ -106,7 +106,7 @@ export const PROPERTIES_LIST = [
     href: '/properties/narenn-supreme/',
     linkLabel: 'Explore Narenn Supreme',
     image: {
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002153/ChatGPT_Image_Aug_5_2026_12_57_13_PM_muwbh3_oqlip7.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_5_2026_12_57_13_PM_muwbh3.png',
       alt: 'Narenn Supreme co-living property in VIP Hills, Madhapur',
       title: 'Narenn Supreme',
     },
@@ -128,7 +128,7 @@ export const PROPERTIES_FIND = {
   h2: 'Find Your Property',
   body: 'The best way to choose is to visit and feel the difference between them. Tell us your budget, preferred sharing type and workplace or college, and we will recommend the ideal property and room.',
   backgroundImage:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-03-2_ze1iph.webp',
 };
 
 export const PROPERTIES_UNIFORM = {

@@ -111,7 +111,7 @@ const questionsToAskBeforeBookingPg = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_43_59_PM_kcqwgw_dshih9.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_43_59_PM_kcqwgw.png',
       alt: 'Written PG agreement showing deposit and notice period terms in Hyderabad',
       title: 'Written agreement',
     },
@@ -141,7 +141,7 @@ const questionsToAskBeforeBookingPg = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002147/ChatGPT_Image_Aug_3_2026_06_45_36_PM_ubf8sb_xwzz7l.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_45_36_PM_ubf8sb.png',
       alt: 'Prospective resident inspecting a PG room during a site visit in Hyderabad',
       title: 'PG site visit',
     },
@@ -247,7 +247,7 @@ const questionsToAskBeforeBookingPg = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002149/ChatGPT_Image_Aug_3_2026_06_42_48_PM_xl7yv3_kehjsb.png',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_42_48_PM_xl7yv3.png',
     imageAlt: 'Questions to ask before booking a PG in Hyderabad - site visit checklist',
   },
 };

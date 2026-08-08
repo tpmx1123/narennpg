@@ -1,28 +1,71 @@
 import { useState, useRef, useEffect } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { HOME_HERO_VIDEO, HOME_HERO_POSTER } from '../../data/homeData';
+import { HOME_HERO_POSTER, HOME_HERO_VIDEO } from '../../data/homeData';
 import { staggerContainerMount, staggerItemMount } from '../../motion/motionPresets';
 
 const controlBtnClass =
   'rounded-full border border-brand-cream/35 bg-brand-cream/15 text-brand-cream hover:bg-brand-gold hover:border-brand-gold backdrop-blur-md flex items-center justify-center shadow-lg transition-all duration-300';
 
-export default function Hero() {
+/** Reveal the page once the first frame is available — don't wait for a full buffer. */
+const READY_FAILSAFE_MS = 3500;
+
+export default function Hero({ onReady }) {
   const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
+  const readySent = useRef(false);
+
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'video';
+    link.href = HOME_HERO_VIDEO;
+    link.type = 'video/mp4';
+    link.fetchPriority = 'high';
+    document.head.appendChild(link);
+    return () => {
+      link.remove();
+    };
+  }, []);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return undefined;
 
+    const markReady = () => {
+      if (readySent.current) return;
+      readySent.current = true;
+      onReady?.();
+    };
+
     const tryPlay = () => {
       video.play().catch(() => {});
     };
 
-    tryPlay();
-    video.addEventListener('loadeddata', tryPlay);
-    return () => video.removeEventListener('loadeddata', tryPlay);
-  }, []);
+    const onFirstFrame = () => {
+      tryPlay();
+      markReady();
+    };
+
+    video.addEventListener('loadedmetadata', tryPlay);
+    video.addEventListener('loadeddata', onFirstFrame);
+    video.addEventListener('canplay', onFirstFrame);
+    video.addEventListener('playing', markReady);
+
+    // Already buffered from a previous visit / preload.
+    if (video.readyState >= 2) onFirstFrame();
+    else if (video.readyState >= 1) tryPlay();
+
+    const failSafe = window.setTimeout(markReady, READY_FAILSAFE_MS);
+
+    return () => {
+      video.removeEventListener('loadedmetadata', tryPlay);
+      video.removeEventListener('loadeddata', onFirstFrame);
+      video.removeEventListener('canplay', onFirstFrame);
+      video.removeEventListener('playing', markReady);
+      window.clearTimeout(failSafe);
+    };
+  }, [onReady]);
 
   const toggleMute = () => {
     setIsMuted((muted) => {
@@ -42,8 +85,9 @@ export default function Hero() {
         muted={isMuted}
         loop
         playsInline
-        preload="metadata"
+        preload="auto"
         poster={HOME_HERO_POSTER}
+        fetchPriority="high"
         className="absolute inset-0 w-full h-full object-cover object-[55%_center] sm:object-center"
       >
         <source src={HOME_HERO_VIDEO} type="video/mp4" />

@@ -72,7 +72,7 @@ const first30DaysNewCityPlaybook = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002151/ChatGPT_Image_Aug_3_2026_07_06_45_PM_jvkr7w_enxony.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_07_06_45_PM_jvkr7w.png',
       alt: 'New resident meeting others in the dining hall at a co-living in Hyderabad',
       title: 'Community dining',
     },
@@ -169,7 +169,7 @@ const first30DaysNewCityPlaybook = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002151/ChatGPT_Image_Aug_3_2026_07_07_57_PM_mnvesk_vlz4ek.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_07_07_57_PM_mnvesk.png',
       alt: 'New residents socialising on a co-living terrace in Hyderabad',
       title: 'Terrace socialising',
     },
@@ -207,7 +207,7 @@ const first30DaysNewCityPlaybook = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002152/ChatGPT_Image_Aug_3_2026_07_04_19_PM_pbe2v3_hhulyv.png',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_07_04_19_PM_pbe2v3.png',
     imageAlt: 'Settling into Hyderabad - a first 30 days playbook for new residents',
   },
 };

@@ -1,7 +1,7 @@
 import { LOCATION_HERO_IMAGE, SITE_URL } from '../sitePages';
 
 const FALLBACK =
-  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-5-scaled_tnhl5p_uftsbq.webp';
+  'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-5-scaled_tnhl5p.webp';
 
 export default {
   slug: 'ameerpet',

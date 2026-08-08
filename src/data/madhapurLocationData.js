@@ -16,7 +16,7 @@ export const MADHAPUR_IMAGES = {
     title: 'PG in Madhapur',
   },
   room: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00016_1_irxbq9_avrkd5.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00016_1_irxbq9.jpg',
     alt: 'Furnished AC room interior at a PG in Madhapur, Hyderabad',
     title: 'Madhapur PG room',
   },

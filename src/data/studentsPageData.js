@@ -13,28 +13,28 @@ export const STUDENTS_IMAGES = {
   hero: {
     src: `${SITE_URL}/images/pg-for-students-in-hyderabad-madhapur-hero.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002153/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte_b9o6aa.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte.webp',
     alt: 'Students at a PG for students in Hyderabad - Narenn Living Madhapur',
     title: 'PG for students in Hyderabad',
   },
   study: {
     src: `${SITE_URL}/images/student-study-desk-pg-room-hyderabad.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-3-1200x750_ndmzod_ivw7jd.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-3-1200x750_ndmzod.webp',
     alt: 'Student PG room in Madhapur, Hyderabad',
     title: 'Student PG room',
   },
   parents: {
     src: `${SITE_URL}/images/parents-visiting-student-pg-madhapur-safety.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-03-2_ze1iph.webp',
     alt: 'Parents touring a safe student PG in Madhapur, Hyderabad',
     title: 'Parent site visit',
   },
   safety: {
     src: `${SITE_URL}/images/cctv-security-student-pg-hyderabad.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-6-1200x750_h0uzb7_vfb7fy.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-6-1200x750_h0uzb7.webp',
     alt: 'CCTV security and verified entry at a student PG in Hyderabad',
     title: 'CCTV security',
   },

@@ -10,7 +10,7 @@ export default function FoodHero({ onBookVisit }) {
       <img
         src={FOOD_HERO.image}
         alt={FOOD_HERO.alt}
-        className="absolute inset-0 w-full h-full object-cover object-center scale-105"
+        className="absolute inset-0 w-full h-full object-cover "
       />
       <div
         className="absolute inset-0 bg-linear-to-t from-brand-charcoal/90 via-brand-green/45 to-brand-green/20"
@@ -38,7 +38,7 @@ export default function FoodHero({ onBookVisit }) {
                 radius={10}
                 bgColor="#B1020C"
                 bgHoverColor="#8A0109"
-                fillColor="#FBBD45"
+                fillColor="#D89B22"
                 textColor="#ffffff"
                 textHoverColor="#1A1A1A"
                 iconColor="#ffffff"

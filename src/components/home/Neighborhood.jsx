@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
-import { Cld } from '../../utils/cloudinary';
 import { RESIDENCES } from '../../data/homeData';
 import IconSlideButton from '../ui/IconSlideButton';
 import { scrollReveal } from '../../motion/motionPresets';
@@ -23,7 +22,7 @@ const NEARBY_HIGHLIGHTS = [
   },
 ];
 
-const AREA_IMAGE = Cld.wide('v1786002155/image-03-2_ze1iph_g3llre.webp');
+const AREA_IMAGE = 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-03-2_ze1iph.webp';
 const ELITE_MAP_URL =
   RESIDENCES.find((res) => res.name === 'Narenn Elite')?.mapUrl ??
   'https://maps.app.goo.gl/DqPwF8JMTihVhMX28';
@@ -111,7 +110,7 @@ export default function Neighborhood() {
                 radius={8}
                 bgColor="#B1020C"
                 bgHoverColor="#8A0109"
-                fillColor="#FBBD45"
+                fillColor="#D89B22"
                 textColor="#ffffff"
                 textHoverColor="#1A1A1A"
                 iconColor="#ffffff"

@@ -102,7 +102,7 @@ export const CORPORATE_WHY = {
   eyebrow: 'Why Companies Choose Narenn',
   h2: 'Hospitality-Grade Discipline',
   h2Accent: 'Discipline',
-  body: "Narenn Living was founded by Narendranath Chaganla on the belief that accommodation should be run with hospitality-grade discipline, not treated as a bare rental transaction. That same standard - safety first, transparent pricing, responsive management - is what makes Narenn Living a dependable housing partner for companies, not just individual residents. When you place an employee with us, you're not handing them off to a landlord; you're handing them off to a team that treats them the way we'd want our own family treated.",
+  body: "Narenn Living was founded by Narendra Nath Chaganla on the belief that accommodation should be run with hospitality-grade discipline, not treated as a bare rental transaction. That same standard - safety first, transparent pricing, responsive management - is what makes Narenn Living a dependable housing partner for companies, not just individual residents. When you place an employee with us, you're not handing them off to a landlord; you're handing them off to a team that treats them the way we'd want our own family treated.",
 };
 
 export const CORPORATE_CTA = {

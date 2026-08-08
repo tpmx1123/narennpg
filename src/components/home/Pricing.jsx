@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import IconSlideButton from '../ui/IconSlideButton';
-import { Cld } from '../../utils/cloudinary';
+import { Img } from '../../utils/media';
 
 const EASE_OUT = [0.16, 1, 0.3, 1];
 
@@ -13,7 +13,9 @@ const SHARING_TIERS = [
     titleSuffix: '(1 Sharing)',
     description:
       'Designed for privacy and personal comfort. A peaceful space to focus, relax, and unwind.',
-    image: Cld.content('v1786002156/M_P00016_1_irxbq9_avrkd5.jpg'),
+    image: Img.content(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00016_1_irxbq9.jpg'
+    ),
     alt: 'Fully furnished AC private room with bed, wardrobe and AC at Narenn Living Madhapur',
     features: [
       { label: 'Spacious Room', detail: 'Your own dedicated living space.' },
@@ -29,7 +31,9 @@ const SHARING_TIERS = [
     titleSuffix: '(2 Sharing)',
     description:
       'Balanced living with personal space and friendly companionship — ideal for friends or classmates.',
-    image: Cld.content('v1786002160/M_P00210_2_tgzf4c_fimpkh.jpg'),
+    image: Img.content(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00210_2_tgzf4c.jpg'
+    ),
     alt: 'Double sharing furnished room at Narenn Living Madhapur co-living',
     features: [
       { label: 'Twin Beds', detail: 'Personal beds with privacy-friendly layout.' },
@@ -45,7 +49,9 @@ const SHARING_TIERS = [
     titleSuffix: '(3 Sharing)',
     description:
       'Comfortable shared living designed for collaboration, cost efficiency, and everyday camaraderie.',
-    image: Cld.content('v1786002159/M_P00196_1_hkg9hw_v9pcqw.jpg'),
+    image: Img.content(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00196_1_hkg9hw.jpg'
+    ),
     alt: 'Triple sharing room at Narenn Living PG in Madhapur',
     features: [
       { label: 'Three Beds', detail: 'Custom beds with personal storage drawers.' },
@@ -61,7 +67,9 @@ const SHARING_TIERS = [
     titleSuffix: '(4 Sharing)',
     description:
       'A vibrant, budget-friendly footprint built around group routines and shared convenience.',
-    image: Cld.content('v1786002158/M_P00064_1_xrjutj_sqqtbt.jpg'),
+    image: Img.content(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00064_1_xrjutj.jpg'
+    ),
     alt: 'Four sharing co-living room at Narenn Living Hyderabad',
     features: [
       { label: 'Four Beds', detail: 'Efficient layout with personal sleep zones.' },
@@ -192,7 +200,7 @@ export default function Pricing({ onBookVisit }) {
                     radius={10}
                     bgColor="#B1020C"
                     bgHoverColor="#8A0109"
-                    fillColor="#FBBD45"
+                    fillColor="#D89B22"
                     textColor="#ffffff"
                     textHoverColor="#1A1A1A"
                     iconColor="#ffffff"

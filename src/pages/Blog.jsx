@@ -12,6 +12,7 @@ import {
   BLOG_POSTS,
 } from '../data/blogPageData';
 import { SITE_URL, SITE_LOGO } from '../data/sitePages';
+import { submitForm } from '../utils/formSubmit';
 
 const POSTS_PER_PAGE = 6;
 
@@ -26,6 +27,9 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('All Posts');
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [newsletterStatus, setNewsletterStatus] = useState('idle');
+  const [newsletterError, setNewsletterError] = useState('');
 
   const canonical = `${SITE_URL}${BLOG_PAGE.path}`;
   const featuredPost = BLOG_POSTS.find((post) => post.slug === BLOG_FEATURED_SLUG) ?? BLOG_POSTS[0];
@@ -343,21 +347,52 @@ export default function Blog() {
             </p>
             <form
               className="max-w-xl mx-auto flex flex-col sm:flex-row gap-2.5 sm:gap-3"
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={async (e) => {
+                e.preventDefault();
+                if (newsletterStatus === 'sending') return;
+                setNewsletterError('');
+                setNewsletterStatus('sending');
+                try {
+                  await submitForm(
+                    { email: newsletterEmail, form: 'Blog newsletter' },
+                    { subject: 'Blog newsletter signup — Narenn Living' }
+                  );
+                  setNewsletterStatus('sent');
+                  setNewsletterEmail('');
+                } catch (err) {
+                  setNewsletterStatus('error');
+                  setNewsletterError(
+                    err?.message || 'Could not subscribe. Please try again.'
+                  );
+                }
+              }}
             >
               <input
                 type="email"
+                name="email"
                 required
+                value={newsletterEmail}
+                onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder="Your professional email"
                 className="flex-1 rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm text-white placeholder:text-white/45 focus:outline-none focus:ring-2 focus:ring-brand-gold/40"
               />
               <button
                 type="submit"
-                className="rounded-xl bg-brand-burgundy px-6 py-3 text-xs font-display font-bold uppercase tracking-[0.14em] text-white hover:bg-brand-burgundy-dark transition-colors"
+                disabled={newsletterStatus === 'sending'}
+                className="rounded-xl bg-brand-burgundy px-6 py-3 text-xs font-display font-bold uppercase tracking-[0.14em] text-white hover:bg-brand-burgundy-dark transition-colors disabled:opacity-70"
               >
-                Join Now
+                {newsletterStatus === 'sending'
+                  ? 'Sending…'
+                  : newsletterStatus === 'sent'
+                    ? 'Joined'
+                    : 'Join Now'}
               </button>
             </form>
+            {newsletterError ? (
+              <p className="mt-2 text-xs text-red-300" role="alert">
+                {newsletterError}
+              </p>
+            ) : null}
             <p className="mt-3 sm:mt-4 text-[10px] italic text-white/45">{BLOG_NEWSLETTER.note}</p>
           </div>
         </section>

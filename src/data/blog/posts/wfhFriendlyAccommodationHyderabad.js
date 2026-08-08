@@ -25,7 +25,7 @@ const wfhFriendlyAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002149/ChatGPT_Image_Aug_3_2026_06_50_07_PM_uxikdo_aaae3y.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_50_07_PM_uxikdo.png',
       alt: 'High-speed WiFi supporting video calls in a co-living room in Hyderabad',
       title: 'WiFi for video calls',
     },
@@ -47,7 +47,7 @@ const wfhFriendlyAccommodationHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002147/ChatGPT_Image_Aug_3_2026_06_46_49_PM_zs7jej_nszxzb.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_46_49_PM_zs7jej.png',
       alt: 'Quiet co-living room suited for working from home in Hyderabad',
       title: 'WFH-friendly room',
     },
@@ -213,7 +213,7 @@ const wfhFriendlyAccommodationHyderabad = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002147/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71_afk0g6.png',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_49_10_PM_u3rz71.png',
     imageAlt: 'Work from home friendly PG room in Hyderabad with fast WiFi',
   },
 };

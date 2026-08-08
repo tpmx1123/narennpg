@@ -5,7 +5,7 @@ import ContactText from '../ui/ContactText';
 
 
 const WATERMARK_LOGO =
-  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002176/narennlogo_opx4st_h4xfzh.png';
+  'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/narennlogo_opx4st.png';
 
 export default function FaqIntro() {
   return (

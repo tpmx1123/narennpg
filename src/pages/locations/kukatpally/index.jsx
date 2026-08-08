@@ -1,4 +1,4 @@
-﻿import LocationSeoPage from '../LocationSeoPage';
+import LocationSeoPage from '../LocationSeoPage';
 
 export default function Kukatpally() {
   return <LocationSeoPage slug="kukatpally" />;

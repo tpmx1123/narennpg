@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { RESIDENCES } from '../../data/homeData';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
-import { Cld } from '../../utils/cloudinary';
+import { Img } from '../../utils/media';
 
-const FOOTER_LOGO = Cld.logo(
-  'v1786002154/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo_rdu5bg.png'
+const FOOTER_LOGO = Img.logo(
+  'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo.png'
 );
 
-const FOOTER_ORNAMENT = Cld.ornament(
-  'v1786002154/f51c22a1-fcd7-429f-95dc-dcc512f1285a_-_Copy_ah0mdw_zr3rh2.png'
+const FOOTER_ORNAMENT = Img.ornament(
+  'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/f51c22a1-fcd7-429f-95dc-dcc512f1285a_-_Copy_ah0mdw.png'
 );
 
 function FacebookIcon({ className }) {

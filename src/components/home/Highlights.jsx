@@ -1,32 +1,42 @@
 import { motion } from 'framer-motion';
-import { Cld } from '../../utils/cloudinary';
+import { Img } from '../../utils/media';
 import { staggerContainer, staggerItem } from '../../motion/motionPresets';
 
 const HIGHLIGHTS = [
   {
     label: 'Fully Furnished',
     detail: 'Designer Rooms',
-    icon: Cld.icon('v1786002155/furniture_oc1dei_inum7g.png'),
+    icon: Img.icon(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/furniture_oc1dei.png'
+    ),
   },
   {
     label: 'Chef-Curated Meals',
     detail: 'Thrice Daily',
-    icon: Cld.icon('v1786002153/chef_o0npjr_clubhs.png'),
+    icon: Img.icon(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/chef_o0npjr.png'
+    ),
   },
   {
     label: 'High-Speed Wi-Fi',
     detail: 'Enterprise Grade',
-    icon: Cld.icon('v1786002178/wifi-router_as6edp_rlfelu.png'),
+    icon: Img.icon(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/wifi-router_as6edp.png'
+    ),
   },
   {
     label: '24/7 Smart Security',
     detail: 'Biometric Access',
-    icon: Cld.icon('v1786002147/cctv_uxdqb6_u0ztzf.png'),
+    icon: Img.icon(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/cctv_uxdqb6.png'
+    ),
   },
   {
     label: 'Daily Housekeeping',
     detail: 'Rooms & Common Areas',
-    icon: Cld.icon('v1786002153/cleaning-lady_xf09yy_u2ou43.png'),
+    icon: Img.icon(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/cleaning-lady_xf09yy.png'
+    ),
   },
 ];
 

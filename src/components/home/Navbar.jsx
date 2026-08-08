@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BRAND_LOGO } from '../../data/homeData';
 import { NAV_PROPERTIES, NAV_ROOMS } from '../../data/sitePages';
 import IconSlideButton from '../ui/IconSlideButton';
-import { Cld } from '../../utils/cloudinary';
+import { Img } from '../../utils/media';
 
 const NAV_LINKS = [
   { to: '/amenities/', label: 'Amenities' },
@@ -18,7 +18,7 @@ const EASE = [0.22, 1, 0.36, 1];
 
 const withNavImage = (item) => ({
   ...item,
-  image: Cld.navCard(item.image),
+  image: Img.navCard(item.image),
 });
 
 const PROPERTY_ITEMS = NAV_PROPERTIES.filter((p) => p.slug !== 'all').map(withNavImage);
@@ -26,13 +26,11 @@ const ROOM_ITEMS = NAV_ROOMS.filter((r) => r.slug !== 'all').map(withNavImage);
 const MOBILE_PROPERTIES = NAV_PROPERTIES.map(withNavImage);
 const MOBILE_ROOMS = NAV_ROOMS.map(withNavImage);
 
-const NAV_PRELOAD_URLS = [
-  BRAND_LOGO,
-  ...PROPERTY_ITEMS.map((i) => i.image),
-  ...ROOM_ITEMS.map((i) => i.image),
-];
+const NAV_PRELOAD_URLS = [BRAND_LOGO];
 
 function preloadNavAssets() {
+  // Only warm the logo on boot. Property/room thumbs load when the menu opens
+  // so the homepage isn’t blocked by a burst of card images.
   NAV_PRELOAD_URLS.forEach((src) => {
     if (!src) return;
     const img = new Image();
@@ -93,26 +91,26 @@ const mobileItem = {
   animate: { opacity: 1, x: 0, transition: { duration: 0.4, ease: EASE } },
 };
 
-function NavLink({ to, children, overHero, onClick, className = '' }) {
+function NavLink({ to, children, onClick, className = '', solid = false }) {
   return (
     <Link
       to={to}
       onClick={onClick}
-      className={`font-display text-sm font-semibold tracking-wide whitespace-nowrap shrink-0 transition-colors duration-300 ${linkClass(overHero)} ${className}`}
+      className={`font-display text-sm font-semibold tracking-wide whitespace-nowrap shrink-0 transition-colors duration-300 ${linkClass(solid)} ${className}`}
     >
       {children}
     </Link>
   );
 }
 
-function linkClass(overHero) {
-  return overHero
-    ? 'text-brand-cream/90 hover:text-brand-gold-light'
-    : 'text-brand-charcoal hover:text-brand-gold';
+function linkClass(solid = false) {
+  return solid
+    ? 'text-brand-charcoal hover:text-brand-burgundy'
+    : 'text-brand-cream/90 hover:text-brand-gold-light';
 }
 
-function AnimatedMenuIcon({ open, overHero }) {
-  const color = overHero || open ? '#F7F3E9' : '#1A1A1A';
+function AnimatedMenuIcon({ open, solid = false }) {
+  const color = solid ? '#1A1A1A' : '#F7F3E9';
 
   return (
     <motion.span
@@ -150,16 +148,16 @@ function AnimatedMenuIcon({ open, overHero }) {
 
 function MobileAccordion({ title, open, onToggle, children }) {
   return (
-    <div className="border-b border-white/10">
+    <div className="border-b border-brand-charcoal/10">
       <button
         type="button"
         onClick={onToggle}
-        className="w-full flex items-center justify-between py-3.5 font-display text-base font-semibold text-brand-cream"
+        className="w-full flex items-center justify-between py-3.5 font-display text-base font-semibold text-brand-charcoal"
         aria-expanded={open}
       >
         {title}
         <motion.span animate={{ rotate: open ? 180 : 0 }} transition={chevronSpring} className="inline-flex">
-          <ChevronDown className={`w-4 h-4 ${open ? 'text-brand-gold' : 'text-brand-cream/60'}`} />
+          <ChevronDown className={`w-4 h-4 ${open ? 'text-brand-burgundy' : 'text-brand-charcoal/50'}`} />
         </motion.span>
       </button>
       <AnimatePresence initial={false}>
@@ -182,14 +180,13 @@ function MobileAccordion({ title, open, onToggle, children }) {
 
 export default function Navbar() {
   const location = useLocation();
-  const isHome = location.pathname === '/';
 
   const [roomsOpen, setRoomsOpen] = useState(false);
   const [layerOpen, setLayerOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobilePropsOpen, setMobilePropsOpen] = useState(false);
   const [mobileRoomsOpen, setMobileRoomsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const navRef = useRef(null);
   const roomsTimer = useRef(null);
   const layerTimer = useRef(null);
@@ -204,7 +201,7 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const onScroll = () => setIsScrolled(window.scrollY > 8);
+    const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -282,33 +279,27 @@ export default function Navbar() {
     setRoomsOpen(false);
   };
 
-  const overHero = isHome && !isScrolled && !mobileOpen;
-  const menuExpanded = layerOpen || roomsOpen;
+  const solid = scrolled || layerOpen || roomsOpen || mobileOpen;
+  const lightNavPages = [
+    '/narenn-founder/',
+    '/narenn-founder',
+    '/privacy-policy/',
+    '/privacy-policy',
+    '/terms-of-use/',
+    '/terms-of-use',
+  ];
+  const darkLinks = solid || lightNavPages.includes(location.pathname);
 
   return (
     <header
       ref={navRef}
-      className="fixed top-0 left-0 w-full z-50 transition-[background,border-color,box-shadow] duration-500 ease-out"
+      className="fixed top-0 left-0 w-full z-50 transition-[background,backdrop-filter,border-color,box-shadow] duration-300"
       style={{
-        WebkitBackdropFilter: mobileOpen ? 'none' : overHero || menuExpanded ? 'blur(18px)' : 'blur(14px)',
-        backdropFilter: mobileOpen ? 'none' : overHero || menuExpanded ? 'blur(18px)' : 'blur(14px)',
-        background: mobileOpen
-          ? 'transparent'
-          : overHero
-            ? menuExpanded
-              ? 'rgba(12, 12, 12, 0.28)'
-              : 'linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.03) 60%, rgba(255,255,255,0) 100%)'
-            : menuExpanded
-              ? 'rgba(255, 255, 255, 0.92)'
-              : 'rgba(255, 255, 255, 0.96)',
-        borderBottom: mobileOpen
-          ? '1px solid transparent'
-          : overHero
-            ? menuExpanded
-              ? '1px solid rgba(255,255,255,0.12)'
-              : '1px solid transparent'
-            : '1px solid rgba(15, 61, 46, 0.08)',
-        boxShadow: !overHero && !mobileOpen ? '0 8px 30px -18px rgba(34,34,34,0.18)' : 'none',
+        background: solid ? 'rgba(255, 255, 255, 0.45)' : 'transparent',
+        borderBottom: solid ? '1px solid rgba(26, 26, 26, 0.06)' : '1px solid transparent',
+        boxShadow: solid ? '0 10px 40px rgba(15, 61, 46, 0.05)' : 'none',
+        backdropFilter: solid ? 'blur(18px)' : 'none',
+        WebkitBackdropFilter: solid ? 'blur(18px)' : 'none',
       }}
     >
       <nav className="max-w-[1320px] mx-auto px-6 sm:px-8 lg:px-12 py-3.5 relative z-[55]">
@@ -325,12 +316,12 @@ export default function Navbar() {
               height={48}
               decoding="async"
               fetchPriority="high"
-              className="h-11 sm:h-12 w-auto object-contain drop-shadow-sm"
+              className="h-14 sm:h-16 w-auto object-contain drop-shadow-sm"
             />
           </Link>
 
           <motion.div className="hidden lg:flex items-center gap-5 xl:gap-7 ml-auto">
-            <NavLink to="/about-us/" overHero={overHero} onClick={closeAll}>
+            <NavLink to="/about-us/" onClick={closeAll} solid={darkLinks}>
               About Us
             </NavLink>
 
@@ -338,7 +329,7 @@ export default function Navbar() {
               <button
                 type="button"
                 className={`flex items-center gap-1.5 font-display text-sm font-semibold tracking-wide whitespace-nowrap shrink-0 transition-colors ${
-                  layerOpen ? 'text-brand-gold' : linkClass(overHero)
+                  layerOpen ? 'text-brand-burgundy' : linkClass(darkLinks)
                 }`}
               >
                 Properties
@@ -352,7 +343,7 @@ export default function Navbar() {
               <button
                 type="button"
                 className={`flex items-center gap-1.5 font-display text-sm font-semibold tracking-wide whitespace-nowrap shrink-0 transition-colors ${
-                  roomsOpen ? 'text-brand-gold' : linkClass(overHero)
+                  roomsOpen ? 'text-brand-burgundy' : linkClass(darkLinks)
                 }`}
               >
                 Rooms
@@ -363,7 +354,7 @@ export default function Navbar() {
             </div>
 
             {NAV_LINKS.map((link) => (
-              <NavLink key={link.to} to={link.to} overHero={overHero} onClick={closeAll}>
+              <NavLink key={link.to} to={link.to} onClick={closeAll} solid={darkLinks}>
                 {link.label}
               </NavLink>
             ))}
@@ -376,17 +367,13 @@ export default function Navbar() {
           <button
             type="button"
             className={`lg:hidden relative z-[70] p-2 ml-auto rounded-lg transition-colors ${
-              mobileOpen
-                ? 'text-brand-cream'
-                : overHero
-                  ? 'text-brand-cream'
-                  : 'text-brand-charcoal'
+              darkLinks ? 'text-brand-charcoal' : 'text-brand-cream'
             }`}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileOpen}
             onClick={toggleMobile}
           >
-            <AnimatedMenuIcon open={mobileOpen} overHero={overHero || mobileOpen} />
+            <AnimatedMenuIcon open={mobileOpen} solid={darkLinks} />
           </button>
         </motion.div>
       </nav>
@@ -399,11 +386,7 @@ export default function Navbar() {
             {...menuMotion}
             onMouseEnter={openLayer}
             onMouseLeave={closeLayer}
-            className="hidden lg:block overflow-hidden border-t border-white/10"
-            style={{
-              background: overHero ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.35)',
-              backdropFilter: 'blur(22px)',
-            }}
+            className="hidden lg:block overflow-hidden border-t border-brand-charcoal/8 bg-transparent"
           >
             <div className="max-w-[1320px] mx-auto px-6 sm:px-8 lg:px-12 py-5">
               <motion.div className="grid grid-cols-2 xl:grid-cols-4 gap-3 lg:gap-4" variants={cardStagger} initial="initial" animate="animate">
@@ -412,11 +395,7 @@ export default function Navbar() {
                     <Link
                       to={item.href}
                       onClick={closeAll}
-                      className={`group block min-w-0 overflow-hidden border transition-colors rounded-[15px] ${
-                        overHero
-                          ? 'border-white/15 bg-white/8 hover:border-brand-gold/45'
-                          : 'border-brand-cream-dark/50 bg-white/70 hover:border-brand-gold/40'
-                      }`}
+                      className="group block min-w-0 overflow-hidden border transition-colors rounded-[15px] border-brand-charcoal/10 bg-white hover:border-brand-gold/50 shadow-[0_8px_24px_-16px_rgba(15,61,46,0.2)]"
                     >
                       <div className="relative h-32 overflow-hidden">
                         <img
@@ -427,19 +406,19 @@ export default function Navbar() {
                           decoding="async"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/55 to-transparent" />
-                        <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest font-bold text-brand-cream bg-black/45 px-2 py-0.5 rounded-full">
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/45 to-transparent" />
+                        <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest font-bold text-white bg-brand-charcoal/50 px-2 py-0.5 rounded-full">
                           {item.livingType}
                         </span>
                       </div>
                       <div className="p-3">
                         <div className="flex items-center justify-between gap-2">
-                          <h3 className={`font-display font-bold text-sm ${overHero ? 'text-brand-cream' : 'text-brand-charcoal'}`}>
+                          <h3 className="font-display font-bold text-sm text-brand-charcoal">
                             {item.label}
                           </h3>
-                          <ArrowRight className="w-4 h-4 text-brand-gold opacity-0 group-hover:opacity-100 transition-opacity" />
+                          <ArrowRight className="w-4 h-4 text-brand-burgundy opacity-0 group-hover:opacity-100 transition-opacity" />
                         </div>
-                        <p className={`text-xs mt-1 line-clamp-2 ${overHero ? 'text-brand-cream/70' : 'text-brand-charcoal-light'}`}>
+                        <p className="text-xs mt-1 line-clamp-2 text-brand-charcoal-light">
                           {item.description}
                         </p>
                       </div>
@@ -448,7 +427,7 @@ export default function Navbar() {
                 ))}
               </motion.div>
               <div className="mt-3 text-right">
-                <Link to="/properties/" onClick={closeAll} className="text-xs font-display font-bold text-brand-gold hover:underline">
+                <Link to="/properties/" onClick={closeAll} className="text-xs font-display font-bold text-brand-burgundy hover:underline">
                   View all properties →
                 </Link>
               </div>
@@ -465,11 +444,7 @@ export default function Navbar() {
             {...menuMotion}
             onMouseEnter={openRooms}
             onMouseLeave={closeRooms}
-            className="hidden lg:block overflow-hidden border-t border-white/10"
-            style={{
-              background: overHero ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.35)',
-              backdropFilter: 'blur(22px)',
-            }}
+            className="hidden lg:block overflow-hidden border-t border-brand-charcoal/8 bg-transparent"
           >
             <div className="max-w-[1320px] mx-auto px-6 sm:px-8 lg:px-12 py-5">
               <motion.div className="grid grid-cols-2 xl:grid-cols-4 gap-3 lg:gap-4" variants={cardStagger} initial="initial" animate="animate">
@@ -478,11 +453,7 @@ export default function Navbar() {
                     <Link
                       to={item.href}
                       onClick={closeAll}
-                      className={`group block min-w-0 overflow-hidden border transition-colors rounded-[15px] ${
-                        overHero
-                          ? 'border-white/15 bg-white/8 hover:border-brand-gold/45'
-                          : 'border-brand-cream-dark/50 bg-white/70 hover:border-brand-gold/40'
-                      }`}
+                      className="group block min-w-0 overflow-hidden border transition-colors rounded-[15px] border-brand-charcoal/10 bg-white hover:border-brand-gold/50 shadow-[0_8px_24px_-16px_rgba(15,61,46,0.2)]"
                     >
                       <div className="relative h-32 overflow-hidden">
                         <img
@@ -493,22 +464,22 @@ export default function Navbar() {
                           decoding="async"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/55 to-transparent" />
-                        <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest font-bold text-brand-cream bg-black/45 px-2 py-0.5 rounded-full">
+                        <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/45 to-transparent" />
+                        <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest font-bold text-white bg-brand-charcoal/50 px-2 py-0.5 rounded-full">
                           {item.sharingType}
                         </span>
                       </div>
                       <div className="p-3">
                         <div className="flex items-center justify-between gap-2">
-                          <h3 className={`font-display font-bold text-sm ${overHero ? 'text-brand-cream' : 'text-brand-charcoal'}`}>
+                          <h3 className="font-display font-bold text-sm text-brand-charcoal">
                             {item.label}
                           </h3>
-                          <ArrowRight className="w-4 h-4 text-brand-gold opacity-0 group-hover:opacity-100 transition-opacity" />
+                          <ArrowRight className="w-4 h-4 text-brand-burgundy opacity-0 group-hover:opacity-100 transition-opacity" />
                         </div>
-                        <p className={`text-[10px] font-semibold uppercase tracking-wide mt-0.5 ${overHero ? 'text-brand-gold/90' : 'text-brand-gold'}`}>
+                        <p className="text-[10px] font-semibold uppercase tracking-wide mt-0.5 text-brand-burgundy">
                           {item.tagline}
                         </p>
-                        <p className={`text-xs mt-1 line-clamp-2 ${overHero ? 'text-brand-cream/70' : 'text-brand-charcoal-light'}`}>
+                        <p className="text-xs mt-1 line-clamp-2 text-brand-charcoal-light">
                           {item.description}
                         </p>
                       </div>
@@ -517,7 +488,7 @@ export default function Navbar() {
                 ))}
               </motion.div>
               <div className="mt-3 text-right">
-                <Link to="/rooms/" onClick={closeAll} className="text-xs font-display font-bold text-brand-gold hover:underline">
+                <Link to="/rooms/" onClick={closeAll} className="text-xs font-display font-bold text-brand-burgundy hover:underline">
                   View all rooms →
                 </Link>
               </div>
@@ -535,17 +506,17 @@ export default function Navbar() {
               aria-label="Close menu backdrop"
               {...mobileBackdrop}
               onClick={closeAll}
-              className="absolute inset-0 bg-brand-charcoal/55 backdrop-blur-sm"
+              className="absolute inset-0 bg-brand-charcoal/25 backdrop-blur-sm"
             />
 
             <motion.aside
               {...mobilePanel}
-              className="absolute inset-y-0 right-0 w-full max-w-full sm:max-w-md bg-brand-charcoal text-brand-cream shadow-2xl flex flex-col"
+              className="absolute inset-y-0 right-0 w-full max-w-full sm:max-w-md bg-white/95 text-brand-charcoal shadow-2xl backdrop-blur-xl flex flex-col"
               role="dialog"
               aria-modal="true"
               aria-label="Mobile navigation"
             >
-              <div className="flex items-center justify-between px-6 pt-[max(1rem,env(safe-area-inset-top))] pb-4 border-b border-white/10">
+              <div className="flex items-center justify-between px-6 pt-[max(1rem,env(safe-area-inset-top))] pb-4 border-b border-brand-charcoal/10">
                 <Link to="/" onClick={closeAll} className="flex items-center">
                   <img
                     src={BRAND_LOGO}
@@ -553,16 +524,16 @@ export default function Navbar() {
                     width={160}
                     height={40}
                     decoding="async"
-                    className="h-10 w-auto object-contain"
+                    className="h-12 w-auto object-contain"
                   />
                 </Link>
                 <button
                   type="button"
                   onClick={closeAll}
                   aria-label="Close menu"
-                  className="p-2 rounded-lg text-brand-cream hover:text-brand-gold transition-colors"
+                  className="p-2 rounded-lg text-brand-charcoal hover:text-brand-burgundy transition-colors"
                 >
-                  <AnimatedMenuIcon open overHero />
+                  <AnimatedMenuIcon open solid />
                 </button>
               </div>
 
@@ -576,7 +547,7 @@ export default function Navbar() {
                   <Link
                     to="/about-us/"
                     onClick={closeAll}
-                    className="block py-3.5 border-b border-white/10 font-display text-base font-semibold text-brand-cream hover:text-brand-gold transition-colors"
+                    className="block py-3.5 border-b border-brand-charcoal/10 font-display text-base font-semibold text-brand-charcoal hover:text-brand-burgundy transition-colors"
                   >
                     About Us
                   </Link>
@@ -596,7 +567,7 @@ export default function Navbar() {
                         key={item.href}
                         to={item.href}
                         onClick={closeAll}
-                        className="block rounded-lg px-3 py-2.5 text-sm text-brand-cream/80 hover:bg-white/5 hover:text-brand-gold transition-colors"
+                        className="block rounded-lg px-3 py-2.5 text-sm text-brand-charcoal-light hover:bg-brand-cream-dark hover:text-brand-burgundy transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -618,7 +589,7 @@ export default function Navbar() {
                         key={item.href}
                         to={item.href}
                         onClick={closeAll}
-                        className="block rounded-lg px-3 py-2.5 text-sm text-brand-cream/80 hover:bg-white/5 hover:text-brand-gold transition-colors"
+                        className="block rounded-lg px-3 py-2.5 text-sm text-brand-charcoal-light hover:bg-brand-cream-dark hover:text-brand-burgundy transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -631,7 +602,7 @@ export default function Navbar() {
                     <Link
                       to={link.to}
                       onClick={closeAll}
-                      className="block py-3.5 border-b border-white/10 font-display text-base font-semibold text-brand-cream hover:text-brand-gold transition-colors"
+                      className="block py-3.5 border-b border-brand-charcoal/10 font-display text-base font-semibold text-brand-charcoal hover:text-brand-burgundy transition-colors"
                     >
                       {link.label}
                     </Link>

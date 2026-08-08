@@ -21,33 +21,43 @@ const PROPERTY_CARDS = RESIDENCES.map((res) => {
 
 function ResidenceCard({ res }) {
   const [hovered, setHovered] = useState(false);
-  const [shouldLoad, setShouldLoad] = useState(false);
   const cardRef = useRef(null);
   const videoRef = useRef(null);
 
+  // Load & play only when the card is near the viewport so hero bandwidth stays free.
   useEffect(() => {
-    const node = cardRef.current;
-    if (!node) return undefined;
+    const card = cardRef.current;
+    const video = videoRef.current;
+    if (!card || !video || !res.videoUrl) return undefined;
+
+    let loaded = false;
+
+    const tryPlay = () => {
+      video.play().catch(() => {});
+    };
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setShouldLoad(true);
-          observer.disconnect();
+          if (!loaded) {
+            loaded = true;
+            video.src = res.videoUrl;
+            video.preload = 'metadata';
+            video.load();
+            video.addEventListener('loadeddata', tryPlay, { once: true });
+            video.addEventListener('canplay', tryPlay, { once: true });
+          }
+          tryPlay();
+        } else {
+          video.pause();
         }
       },
-      { rootMargin: '200px 0px', threshold: 0.01 }
+      { rootMargin: '180px 0px', threshold: 0.01 }
     );
 
-    observer.observe(node);
+    observer.observe(card);
     return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!shouldLoad || !video) return undefined;
-    video.play().catch(() => {});
-  }, [shouldLoad]);
+  }, [res.videoUrl]);
 
   return (
     <motion.article
@@ -59,37 +69,20 @@ function ResidenceCard({ res }) {
         scale: hovered ? 1.02 : 1,
       }}
       transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl "
+      className="group relative w-full h-95 sm:w-70 sm:h-105 shrink-0 overflow-hidden rounded-2xl bg-brand-charcoal"
     >
-      <img
-        src={res.image}
-        alt=""
-        aria-hidden="true"
-        width={560}
-        height={800}
-        loading="lazy"
-        decoding="async"
-        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${
-          shouldLoad ? 'opacity-0' : 'opacity-100'
-        }`}
-      />
-
-      {shouldLoad && (
+      {res.videoUrl ? (
         <motion.video
           ref={videoRef}
-          key={res.videoUrl}
-          src={res.videoUrl}
-          poster={res.image}
           muted
           loop
           playsInline
-          preload="metadata"
-          autoPlay
+          preload="none"
           animate={{ scale: hovered ? 1.06 : 1 }}
           transition={{ duration: 0.7, ease }}
           className="absolute inset-0 h-full w-full object-cover"
         />
-      )}
+      ) : null}
 
       <div className="absolute inset-0 bg-linear-to-t from-brand-charcoal/80 via-brand-charcoal/15 to-transparent pointer-events-none" />
 
@@ -104,7 +97,7 @@ function ResidenceCard({ res }) {
           {res.livingType}
         </span>
         <span className="inline-flex items-center gap-1 rounded-full border border-white/25 bg-black/35 px-2 py-0.5 text-[9px] font-semibold text-white backdrop-blur-md">
-          <Star className="h-2.5 w-2.5 fill-[#FBBD45] text-[#FBBD45]" />
+          <Star className="h-2.5 w-2.5 fill-[#D89B22] text-[#D89B22]" />
           {res.rating}
         </span>
       </div>
@@ -117,7 +110,7 @@ function ResidenceCard({ res }) {
         >
           {res.name}
         </motion.h3>
-        <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#FBBD45]">
+        <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#D89B22]">
           {res.tagline}
         </p>
         <motion.p

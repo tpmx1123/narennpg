@@ -4,7 +4,7 @@ export const FOUNDER_PAGE = {
   path: '/narenn-founder/',
   title: "Founder's Note | Narenn Living - Building for Every Boy and Girl in Hyderabad",
   description:
-    'Read a personal letter from Narendranath Chaganla about the vision behind Narenn Living: a commitment to premium co-living standards, safety, and dignity for students and professionals in Hyderabad.',
+    'Read a personal letter from Narendra Nath Chaganla about the vision behind Narenn Living: a commitment to premium co-living standards, safety, and dignity for students and professionals in Hyderabad.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   ogImage: `${SITE_URL}/images/narendranath-chaganla-founder-narenn-living.jpg`,
 };
@@ -23,12 +23,12 @@ export const FOUNDER_INTRO = {
     body: 'Having spent years developing properties and managing hospitality services, I realized that the co-living sector lacked the professional oversight it desperately needed. Narenn Living is the culmination of those years of experience - applying institutional standards to a personal living experience.',
   },
   founder: {
-    name: 'Narendranath Chaganla',
+    name: 'Narendra Nath Chaganla',
     role: 'Founder, Narenn Living',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/image-Picsart-AiImageEnhancer_epd6hh_ql5gr3.png',
-    alt: 'Narendranath Chaganla, Founder of Narenn Living',
-    title: 'Narendranath Chaganla, Founder',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-Picsart-AiImageEnhancer_epd6hh.png',
+    alt: 'Narendra Nath Chaganla, Founder of Narenn Living',
+    title: 'Narendra Nath Chaganla, Founder',
   },
 };
 
@@ -111,9 +111,9 @@ export const FOUNDER_CLOSING = {
   ],
   signature: {
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo_rdu5bg.png',
-    alt: 'Narendranath Chaganla signature',
-    name: 'Narendranath Chaganla',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo.png',
+    alt: 'Narendra Nath Chaganla signature',
+    name: 'Narendra Nath Chaganla',
     role: 'Founder & CEO, Narenn Living',
     location: 'Hyderabad, India',
   },

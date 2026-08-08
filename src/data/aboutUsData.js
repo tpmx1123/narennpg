@@ -9,27 +9,27 @@ export const ABOUT_PAGE = {
 
 export const ABOUT_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00315_3_fuqgs1_ey66zm.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/DIN00315_3_fuqgs1.jpg',
     alt: 'Narenn Living premium co-living properties in VIP Hills, Madhapur, Hyderabad',
     title: 'About Narenn Living',
   },
   mission: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/M_P09974_1_vq94me_wzebor.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09974_1_vq94me.jpg',
     alt: 'Premium furnished co-living room at Narenn Living Madhapur',
     title: 'Our Mission',
   },
   communityA: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002161/M_P00304_1_cgpnd2_bblyer.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00304_1_cgpnd2.jpg',
     alt: 'Residents sharing a meal in a Narenn Living communal dining area',
     title: 'Narenn Living community',
   },
   communityB: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002157/M_P00046_1_qstcck_thoh1c.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00046_1_qstcck.jpg',
     alt: 'Evening terrace gathering at Narenn Living Madhapur',
     title: 'Community events at Narenn Living',
   },
   security: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002168/M_P09966_1_e3b8lr_slouv8.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09966_1_e3b8lr.jpg',
     alt: 'Biometric access control at the entrance of Narenn Living co-living in Madhapur',
     title: 'Biometric security access',
   },
@@ -64,16 +64,16 @@ export const ABOUT_MISSION = {
 export const ABOUT_FOUNDER = {
   eyebrow: 'Leadership',
   h2: 'Meet Our Founder',
-  h2Accent: 'Narendranath Chaganla',
+  h2Accent: 'Narendra Nath Chaganla',
   paragraphs: [
-    'Narenn Living was founded by Narendranath Chaganla, whose decades in Indian real estate and hospitality shaped a simple belief: students and professionals arriving in Hyderabad deserve more than a compromise on safety, comfort and dignity.',
+    'Narenn Living was founded by Narendra Nath Chaganla, whose decades in Indian real estate and hospitality shaped a simple belief: students and professionals arriving in Hyderabad deserve more than a compromise on safety, comfort and dignity.',
   ],
-  name: 'Narendranath Chaganla',
+  name: 'Narendra Nath Chaganla',
   role: 'Founder & CEO, Narenn Living',
   image:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/image-Picsart-AiImageEnhancer_epd6hh_ql5gr3.png',
-  alt: 'Narendranath Chaganla, Founder of Narenn Living',
-  title: 'Narendranath Chaganla, Founder',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-Picsart-AiImageEnhancer_epd6hh.png',
+  alt: 'Narendra Nath Chaganla, Founder of Narenn Living',
+  title: 'Narendra Nath Chaganla, Founder',
   ctaLabel: "Read the Founder's Note",
   ctaHref: '/narenn-founder/',
   links: [
@@ -94,9 +94,9 @@ export const ABOUT_GALLERY = {
   images: [
     {
       id: 'founder-portrait',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/image-Picsart-AiImageEnhancer_epd6hh_ql5gr3.png',
-      alt: 'Narendranath Chaganla, Founder of Narenn Living',
-      title: 'Narendranath Chaganla',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-Picsart-AiImageEnhancer_epd6hh.png',
+      alt: 'Narendra Nath Chaganla, Founder of Narenn Living',
+      title: 'Narendra Nath Chaganla',
       caption: 'Founder, Narenn Living',
       orientation: 'portrait',
       width: 1012,
@@ -104,8 +104,8 @@ export const ABOUT_GALLERY = {
     },
     {
       id: 'founder-speaking',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00360_1_vtiagv_anbxas.jpg',
-      alt: 'Narendranath Chaganla speaking at a podium representing Narenn Living',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/DIN00360_1_vtiagv.jpg',
+      alt: 'Narendra Nath Chaganla speaking at a podium representing Narenn Living',
       title: 'Founder on stage',
       caption: 'Leadership in conversation',
       orientation: 'landscape',
@@ -114,8 +114,8 @@ export const ABOUT_GALLERY = {
     },
     {
       id: 'leadership-trio',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00335_1_c1r1xf_ulgk9h.jpg',
-      alt: 'Narendranath Chaganla with leadership team at Narenn Living',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/DIN00335_1_c1r1xf.jpg',
+      alt: 'Narendra Nath Chaganla with leadership team at Narenn Living',
       title: 'Leadership team',
       caption: 'The people steering Narenn',
       orientation: 'portrait',
@@ -124,7 +124,7 @@ export const ABOUT_GALLERY = {
     },
     {
       id: 'full-team',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00315_1_ihb7xa_lted73.jpg',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/DIN00315_1_ihb7xa.jpg',
       alt: 'Full Narenn Living team group portrait in Madhapur',
       title: 'The Narenn family',
       caption: 'One house, one standard',
@@ -134,7 +134,7 @@ export const ABOUT_GALLERY = {
     },
     {
       id: 'operations-team',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/DIN00275_1_sthams_dehz0i.jpg',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/DIN00275_1_sthams.jpg',
       alt: 'Narenn Living operations and hospitality team standing together',
       title: 'Operations & hospitality',
       caption: 'The team behind every stay',
@@ -221,7 +221,7 @@ export const ABOUT_FAQS = [
   {
     question: 'Who runs Narenn Living?',
     answer:
-      'Narenn Living was founded by Narendranath Chaganla and is operated by the Narenn Group, bringing decades of real estate and hospitality experience to its co-living properties in Madhapur, Hyderabad.',
+      'Narenn Living was founded by Narendra Nath Chaganla and is operated by the Narenn Group, bringing decades of real estate and hospitality experience to its co-living properties in Madhapur, Hyderabad.',
   },
   {
     question: 'What kind of residents live at Narenn Living?',

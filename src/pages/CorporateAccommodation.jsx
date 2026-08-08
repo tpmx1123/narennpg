@@ -44,7 +44,7 @@ export default function CorporateAccommodation() {
           email: 'info@narennliving.com',
           founder: {
             '@type': 'Person',
-            name: 'Narendranath Chaganla',
+            name: 'Narendra Nath Chaganla',
             jobTitle: 'Founder',
           },
         },
@@ -73,7 +73,7 @@ export default function CorporateAccommodation() {
             parentOrganization: organizationRef(),
             founder: {
               '@type': 'Person',
-              name: 'Narendranath Chaganla',
+              name: 'Narendra Nath Chaganla',
               jobTitle: 'Founder',
             },
             address: {
@@ -163,7 +163,7 @@ export default function CorporateAccommodation() {
                     radius={10}
                     bgColor="#B1020C"
                     bgHoverColor="#8A0109"
-                    fillColor="#FBBD45"
+                    fillColor="#D89B22"
                     textColor="#ffffff"
                     textHoverColor="#1A1A1A"
                     iconColor="#ffffff"

@@ -4,14 +4,13 @@ import { motion } from 'framer-motion';
 import CurvedInput from '../ui/CurvedInput';
 import ContactText from '../ui/ContactText';
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
-import { Cld } from '../../utils/cloudinary';
 import { scrollRevealSoft } from '../../motion/motionPresets';
 
-const CTA_IMAGE = Cld.content('v1786002157/M_P00046_1_qstcck_thoh1c.jpg');
+const CTA_IMAGE = 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00046_1_qstcck.jpg';
 
 const PhoneIcon = (
   <g>
-    <rect x="-17" y="-13.5" width="34" height="27" rx="7" fill="#FBBD45" />
+    <rect x="-17" y="-13.5" width="34" height="27" rx="7" fill="#D89B22" />
     <path
       d="M -5 -4.5 C -5 -6.5 -3.5 -8 -1.5 -8 L 1.5 -8 C 3.5 -8 5 -6.5 5 -4.5 L 5 4.5 C 5 6.5 3.5 8 1.5 8 L -1.5 8 C -3.5 8 -5 6.5 -5 4.5 Z"
       fill="none"
@@ -126,7 +125,7 @@ export default function FinalCta({
                     borderColor="rgba(251,189,69,0.45)"
                     buttonColor="#ffffff"
                     buttonTextColor="#0F3D2E"
-                    iconColor="#FBBD45"
+                    iconColor="#D89B22"
                     shadowSize="sm"
                     shadowColor="#000000"
                     icon={PhoneIcon}

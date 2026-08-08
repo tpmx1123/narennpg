@@ -1,22 +1,28 @@
 import { motion } from 'framer-motion';
-import { Cld } from '../../utils/cloudinary';
+import { Img } from '../../utils/media';
 import { scrollReveal, staggerContainer, staggerItem } from '../../motion/motionPresets';
 
 const FOOD_IMAGES = [
   {
-    src: Cld.wide('v1786002155/image-27_y9go5p_okxfwr.webp'),
+    src: Img.content(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-27_y9go5p.webp'
+    ),
     alt: 'Buffet counter with labelled Indian meals at Narenn Living Madhapur in-house kitchen',
     title: 'In-house kitchen buffet at Narenn Living',
     className: 'col-span-12 sm:col-span-7 row-span-2 min-h-45 sm:min-h-[280px] lg:min-h-[320px]',
   },
   {
-    src: Cld.content('v1786002163/M_P09866_1_anlo2u_ks2lsj.jpg'),
+    src: Img.content(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09866_1_anlo2u.jpg'
+    ),
     alt: 'Resident serving lunch from the Narenn Living Madhapur buffet',
     title: 'Serving lunch at Narenn Living',
     className: 'col-span-6 sm:col-span-5 min-h-35 sm:min-h-[180px] lg:min-h-[200px]',
   },
   {
-    src: Cld.content('v1786002163/M_P09865_1_u709q3_h9gavw.jpg'),
+    src: Img.content(
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09865_1_u709q3.jpg'
+    ),
     alt: 'Residents with thali trays at Narenn Living co-living dining hall',
     title: 'Community dining at Narenn Living',
     className: 'col-span-6 sm:col-span-5 min-h-35 sm:min-h-[180px] lg:min-h-[200px]',

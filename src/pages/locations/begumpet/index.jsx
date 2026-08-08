@@ -1,4 +1,4 @@
-﻿import LocationSeoPage from '../LocationSeoPage';
+import LocationSeoPage from '../LocationSeoPage';
 
 export default function Begumpet() {
   return <LocationSeoPage slug="begumpet" />;

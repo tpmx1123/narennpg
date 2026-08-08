@@ -6,6 +6,8 @@ import IconSlideButton from '../ui/IconSlideButton';
 export default function BookingModal({
   open,
   bookingSubmitted,
+  bookingSubmitting = false,
+  bookingError = '',
   formData,
   onInputChange,
   onSubmit,
@@ -51,7 +53,7 @@ export default function BookingModal({
                   </p>
                 </div>
 
-                <form onSubmit={onSubmit} className="space-y-4">
+                <form onSubmit={onSubmit} className="space-y-4" method="POST">
                   <div>
                     <label className="block font-display font-semibold text-xs text-brand-charcoal-light mb-1.5">
                       FULL NAME
@@ -148,19 +150,26 @@ export default function BookingModal({
                     />
                   </div>
 
+                  {bookingError ? (
+                    <p className="text-sm text-brand-burgundy" role="alert">
+                      {bookingError}
+                    </p>
+                  ) : null}
+
                   <IconSlideButton
                     type="submit"
                     radius={10}
                     className="w-full mt-4"
+                    disabled={bookingSubmitting}
                     bgColor="#B1020C"
                     bgHoverColor="#8A0109"
-                    fillColor="#FBBD45"
+                    fillColor="#D89B22"
                     textColor="#ffffff"
                     textHoverColor="#1A1A1A"
                     iconColor="#ffffff"
                     iconHoverColor="#1A1A1A"
                   >
-                    Submit Visit Request
+                    {bookingSubmitting ? 'Sending…' : 'Submit Visit Request'}
                   </IconSlideButton>
                 </form>
               </div>

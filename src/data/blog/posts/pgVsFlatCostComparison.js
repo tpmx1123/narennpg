@@ -42,7 +42,7 @@ const pgVsFlatCostComparison = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002180/wmremove-transformed_2_yh7hul_qi0bdm.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/wmremove-transformed_2_yh7hul.png',
       alt: 'Chart comparing inclusive PG rent against total flat costs in Hyderabad',
       title: 'Cost breakdown chart',
       caption: 'Data based on 2024 averages in Madhapur and Gachibowli areas.',
@@ -80,7 +80,7 @@ const pgVsFlatCostComparison = {
     {
       type: 'callout',
       image:
-        'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002180/wmremove-transformed_3_yx1e5e_onmx5l.png',
+        'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/wmremove-transformed_3_yx1e5e.png',
       imageAlt:
         'Furnished PG room compared with an unfurnished rented flat in Hyderabad',
       imageTitle: 'Furnished vs unfurnished',
@@ -208,7 +208,7 @@ const pgVsFlatCostComparison = {
     buttonLabel: 'Explore Spaces',
     href: '/rooms/',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002179/wmremove-transformed_1_jklafe_buypft.png',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/wmremove-transformed_1_jklafe.png',
     imageAlt:
       'A premium co-living room interior with warm ambient lighting and elegant minimalist furniture',
   },

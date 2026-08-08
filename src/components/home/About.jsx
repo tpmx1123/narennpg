@@ -4,10 +4,9 @@ import { motion } from 'framer-motion';
 import { HOME_SEO } from '../../data/seoHome';
 import IconSlideButton from '../ui/IconSlideButton';
 import { PHONE_DISPLAY, PHONE_TEL } from '../../data/sitePages';
-import { Cld } from '../../utils/cloudinary';
 import { scrollReveal } from '../../motion/motionPresets';
 
-const ABOUT_IMAGE = Cld.heroStill('v1786002162/M_P00337_1_xcyssw_hxkokm.jpg');
+const ABOUT_IMAGE = 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00337_1_xcyssw.jpg';
 
 export default function About() {
   const navigate = useNavigate();
@@ -86,7 +85,7 @@ export default function About() {
             radius={10}
             bgColor="#B1020C"
             bgHoverColor="#8A0109"
-            fillColor="#FBBD45"
+            fillColor="#D89B22"
             textColor="#ffffff"
             textHoverColor="#1A1A1A"
             iconColor="#ffffff"

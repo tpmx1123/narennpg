@@ -13,14 +13,14 @@ export const CONTACT_IMAGES = {
   hero: {
     src: `${SITE_URL}/images/book-a-pg-in-madhapur-contact-narenn-living.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-03-2_ze1iph.webp',
     alt: 'Book a PG in Madhapur - Narenn Living reception and enquiry desk',
     title: 'Contact Narenn Living',
   },
   visit: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00021_1_jrrqj3_zgjgkn.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00021_1_jrrqj3.jpg',
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002156/M_P00021_1_jrrqj3_zgjgkn.jpg',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00021_1_jrrqj3.jpg',
     alt: 'Hallway interior during a free site visit at Narenn Living PG in Madhapur',
     title: 'Free site visit',
   },
@@ -79,7 +79,7 @@ export const CONTACT_REACH = {
     {
       icon: 'Phone',
       title: 'Call or WhatsApp',
-      body: '70759 85666 - a real person picks up, including evenings and weekends.',
+      body: '9963120333 - a real person picks up, including evenings and weekends.',
       actions: [
         { type: 'call', label: 'Call' },
         { type: 'whatsapp', label: 'WhatsApp' },
@@ -162,7 +162,7 @@ export const CONTACT_PHONE = {
   h2: 'Reach Us',
   h2Accent: 'Us',
   paragraphs: [
-    'Call or WhatsApp 70759 85666 - a real person picks up, including evenings and weekends. Tell us your joining date, your budget, your preferred sharing format and whether you want a student or working-professional plan, and we will come back with what is actually available rather than a brochure.',
+    'Call or WhatsApp 9963120333 - a real person picks up, including evenings and weekends. Tell us your joining date, your budget, your preferred sharing format and whether you want a student or working-professional plan, and we will come back with what is actually available rather than a brochure.',
     'All four properties are in VIP Hills, Madhapur, Hyderabad - minutes from Hitech City, Mindspace, Kondapur and Durgam Cheruvu, and around twenty minutes from Gachibowli and the Financial District.',
   ],
 };
@@ -172,7 +172,7 @@ export const CONTACT_OUTSIDE = {
   h2: 'Enquiring from Outside Hyderabad?',
   h2Accent: 'Outside Hyderabad?',
   paragraphs: [
-    'If you have not moved yet, you do not need to fly in to decide. Call or WhatsApp 70759 85666 and we will send you a video walkthrough of the actual rooms currently available, the current menu, the pricing and the written agreement terms - before you commit to anything.',
+    'If you have not moved yet, you do not need to fly in to decide. Call or WhatsApp 9963120333 and we will send you a video walkthrough of the actual rooms currently available, the current menu, the pricing and the written agreement terms - before you commit to anything.',
     'We can also hold a room against a confirmed joining date. Most people relocating to Hyderabad lose their first fortnight to hotel bills and panic-viewing while jetlagged. One phone call three weeks out removes the entire problem.',
   ],
 };
@@ -206,7 +206,7 @@ export const CONTACT_FAQS = [
   {
     question: 'How do I book a room at Narenn Living?',
     answer:
-      'Simply call or WhatsApp 70759 85666, or book a free visit through our contact page. Our team will help you choose a room and complete the booking.',
+      'Simply call or WhatsApp 9963120333, or book a free visit through our contact page. Our team will help you choose a room and complete the booking.',
   },
   {
     question: 'Can I visit before booking?',

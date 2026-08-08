@@ -35,7 +35,7 @@ const thingsToDoMadhapurWeekend = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002151/ChatGPT_Image_Aug_3_2026_07_02_34_PM_odry8k_eacnfn.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_07_02_34_PM_odry8k.png',
       alt: 'Inorbit Mall and Sarath City Capital Mall near Madhapur',
       title: 'Malls near Madhapur',
     },
@@ -55,7 +55,7 @@ const thingsToDoMadhapurWeekend = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002151/ChatGPT_Image_Aug_3_2026_07_00_40_PM_j3rwb6_hyymgq.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_07_00_40_PM_j3rwb6.png',
       alt: 'Durgam Cheruvu lake and cable bridge near Madhapur, Hyderabad',
       title: 'Durgam Cheruvu',
     },
@@ -210,7 +210,7 @@ const thingsToDoMadhapurWeekend = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_59_52_PM_qeamin_ywagdx.png',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_59_52_PM_qeamin.png',
     imageAlt: 'Things to do in Madhapur on a weekend - Durgam Cheruvu and Inorbit Mall',
   },
 };

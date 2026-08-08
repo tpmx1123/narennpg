@@ -10,7 +10,7 @@ const HERO_DEFAULTS = {
   bgHoverColor: '#8A0109',
   textColor: '#ffffff',
   textHoverColor: '#1A1A1A',
-  fillColor: '#FBBD45',
+  fillColor: '#D89B22',
   iconColor: '#ffffff',
   iconHoverColor: '#1A1A1A',
   radius: 10,
@@ -30,6 +30,7 @@ export default function IconSlideButton({
   href,
   target,
   rel,
+  disabled = false,
   bgColor = HERO_DEFAULTS.bgColor,
   bgHoverColor = HERO_DEFAULTS.bgHoverColor,
   textColor = HERO_DEFAULTS.textColor,
@@ -87,7 +88,9 @@ export default function IconSlideButton({
       },
     },
     transition: { duration: 0.4, ease: EASE },
-    className: `group relative inline-flex w-fit items-center justify-center overflow-hidden font-display font-bold uppercase cursor-pointer select-none no-underline ${
+    className: `group relative inline-flex w-fit items-center justify-center overflow-hidden font-display font-bold uppercase select-none no-underline ${
+      disabled ? 'opacity-70 pointer-events-none cursor-not-allowed' : 'cursor-pointer'
+    } ${
       iconOnly
         ? 'gap-0 tracking-normal'
         : dense
@@ -102,7 +105,9 @@ export default function IconSlideButton({
       ...(iconOnly ? { width: 36, height: 36 } : null),
     },
     onClick,
+    disabled,
     'aria-label': ariaLabel,
+    'aria-disabled': disabled || undefined,
   };
 
   const content = iconOnly ? (

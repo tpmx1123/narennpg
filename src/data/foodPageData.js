@@ -18,7 +18,7 @@ export const FOOD_HERO = {
     'For students and professionals new to Hyderabad, reliable, tasty, nutritious food is one of the biggest reasons they choose - and stay at - Narenn Living.',
   ],
   image:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002163/M_P09882_1_zeo7ft_lbyx5k.jpg',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09882_1_zeo7ft.jpg',
   alt: 'Professional chefs preparing fresh meals in the Narenn Living in-house kitchen',
 };
 
@@ -57,7 +57,7 @@ export const FOOD_HOME = {
     'Every ingredient is sourced fresh, every dish is tasted by our quality manager, and every recipe is refined based on resident feedback. We do not just feed you; we nourish you.',
   ],
   image:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002163/M_P09866_1_anlo2u_ks2lsj.jpg',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09866_1_anlo2u.jpg',
   alt: 'Home-style Indian food served on a warm dining table at Narenn Living',
 };
 
@@ -72,7 +72,7 @@ export const FOOD_HYGIENE = {
     'Trained culinary staff and an open-kitchen mindset',
   ],
   image:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002163/M_P09857_1_ppkmpv_a8wtqu.jpg',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09857_1_ppkmpv.jpg',
   alt: 'Clean kitchen counter and hygiene-focused food prep area at Narenn Living',
 };
 
@@ -85,7 +85,7 @@ export const FOOD_SAVINGS = {
   label: 'No Extra Food Budget',
   note: '*Three home-style meals a day are part of your stay - no daily ordering needed',
   image:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002182/wmremove-transformed_7_uubsmx_dccq9v.png',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/wmremove-transformed_7_uubsmx.png',
   alt: 'Home-style Indian meal with dal, rice, curry and roti at Narenn Living',
 };
 
@@ -96,7 +96,7 @@ export const FOOD_FUEL = {
     'Strategic protein-rich breakfasts and balanced lunches help you avoid the mid-afternoon slump that bad PG food often causes.',
   ],
   image:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-27_y9go5p_okxfwr.webp',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-27_y9go5p.webp',
   alt: 'Healthy breakfast with work laptop at Narenn Living co-living dining area',
 };
 
@@ -106,7 +106,7 @@ export const FOOD_EDITORIAL = {
     'Many PGs outsource their catering to save costs. We do not. We manage our own kitchen staff, source our own produce, and control every variable. Why? Because you cannot outsource care.',
   attribution: 'The Management Team, Narenn Living',
   image:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002163/M_P09882_1_zeo7ft_lbyx5k.jpg',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09882_1_zeo7ft.jpg',
   alt: 'Narenn Living in-house kitchen team preparing fresh meals together',
 };
 
@@ -121,7 +121,7 @@ export const FOOD_VARIETY = {
     'Desserts and fresh fruits included',
   ],
   image:
-    'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002163/M_P09865_1_u709q3_h9gavw.jpg',
+    'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P09865_1_u709q3.jpg',
   alt: 'Traditional Indian thali showing food variety at Narenn Living',
 };
 

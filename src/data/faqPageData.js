@@ -13,19 +13,19 @@ export const FAQ_IMAGES = {
   hero: {
     src: `${SITE_URL}/images/narenn-living-faq-co-living-madhapur.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-03-2_ze1iph.webp',
     alt: 'Frequently asked questions about co-living and PG at Narenn Living Madhapur',
     title: 'Narenn Living FAQ',
   },
   pricing: {
     src: `${SITE_URL}/images/pg-rent-deposit-terms-madhapur.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002162/M_P00337_1_xcyssw_hxkokm.jpg',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00337_1_xcyssw.jpg',
     alt: 'Transparent rent and deposit terms for a PG in Madhapur, Hyderabad',
     title: 'Pricing and deposits',
   },
   talkBg: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-13-2_xarwah_rukqqd.webp',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-13-2_xarwah.webp',
     alt: 'Narenn Living terrace community space in Madhapur',
     title: 'Talk to Narenn Living',
   },

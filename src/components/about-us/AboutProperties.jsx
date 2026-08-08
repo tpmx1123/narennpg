@@ -8,7 +8,7 @@ import {
 } from '../../data/aboutUsData';
 
 const WHY_NARENN_WATERMARK =
-  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002177/Screenshot_2026-07-27_152428_plsvfj_n3y2zm.png';
+  'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Screenshot_2026-07-27_152428_plsvfj.png';
 
 export default function AboutProperties() {
   return (

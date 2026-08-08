@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { scrollReveal } from '../../../motion/motionPresets';
 
 const ROOM_FALLBACK =
-  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002153/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte_b9o6aa.webp';
+  'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT-Image-Jun-30-2025-06_48_11-PM-1200x800_kjphte.webp';
 
 export default function LocationStandard({ data }) {
   const { standard } = data;

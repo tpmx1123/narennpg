@@ -1,6 +1,8 @@
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../data/sitePages';
 
-const CONTACT_TOKEN = /(\+91[\s-]?)?(70759[\s-]?85666)|\bWhatsApp\b/gi;
+/** Call number (70759…) and WhatsApp number (99631…) plus the word "WhatsApp" */
+const CONTACT_TOKEN =
+  /(\+91[\s-]?)?(70759[\s-]?85666)|(\+91[\s-]?)?(99631[\s-]?20333)|\bWhatsApp\b/gi;
 
 const DEFAULT_LINK_CLASS =
   'text-brand-burgundy font-semibold hover:underline underline-offset-2';
@@ -30,7 +32,8 @@ export function PhoneWhatsAppLinks({ className = GOLD_LINK_CLASS }) {
 }
 
 /**
- * Turns phone numbers and the word "WhatsApp" in prose into clickable links.
+ * Turns phone / WhatsApp numbers and the word "WhatsApp" in prose into links.
+ * Call number → tel:; WhatsApp number / "WhatsApp" → wa.me
  */
 export function linkifyContact(text, linkClassName = DEFAULT_LINK_CLASS) {
   if (text == null || text === '') return text;
@@ -48,9 +51,10 @@ export function linkifyContact(text, linkClassName = DEFAULT_LINK_CLASS) {
     }
 
     const token = match[0];
-    const isWhatsApp = /^whatsapp$/i.test(token);
+    const isWhatsAppWord = /^whatsapp$/i.test(token);
+    const isWhatsAppNumber = /99631/.test(token);
 
-    if (isWhatsApp) {
+    if (isWhatsAppWord || isWhatsAppNumber) {
       nodes.push(
         <a
           key={`wa-${key++}`}

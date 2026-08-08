@@ -3,7 +3,7 @@ import { scrollReveal } from '../../../motion/motionPresets';
 import { TRIPLE_SHARING_HERO } from '../../../data/tripleSharingData';
 
 const WATERMARK_LOGO =
-  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002154/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo_rdu5bg.png';
+  'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/f51c22a1-fcd7-429f-95dc-dcc512f1285a_x6ybxo.png';
 
 export default function TripleRoomIntro() {
   return (

@@ -17,7 +17,7 @@ body {
   background: #FFFFFF;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FBBD45;
+  background: #D89B22;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -72,7 +72,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #FBBD45; /* gold on dark heroes */
+  color: #D89B22; /* gold on dark heroes */
 }
 
 .section-title {
@@ -118,7 +118,7 @@ body {
 }
 
 .section-title-accent {
-  color: #FBBD45; /* brand-gold */
+  color: #D89B22; /* brand-gold */
   font-style: italic;
   font-weight: 500;
 }

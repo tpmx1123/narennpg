@@ -16,7 +16,7 @@ import {
 import { SITE_URL, SITE_LOGO } from '../../data/sitePages';
 
 const BLOG_IMAGE_FALLBACK =
-  'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-5-scaled_tnhl5p_uftsbq.webp';
+  'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-5-scaled_tnhl5p.webp';
 
 function BlogPostPlaceholderView({ post, onBookVisit }) {
   return (

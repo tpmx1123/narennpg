@@ -27,7 +27,7 @@ export const DOUBLE_SHARING_PAGE = {
   description:
     'Comfortable 2-sharing AC rooms in Madhapur near Hitech City. Meals, WiFi & housekeeping included. Perfect balance of privacy & company. Book a free visit today.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002160/M_P00210_2_tgzf4c_fimpkh.jpg',
+  ogImage: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00210_2_tgzf4c.jpg',
 };
 
 export const DOUBLE_SHARING_HERO = {
@@ -56,22 +56,22 @@ export const DOUBLE_SHARING_BOOKING = {
 
 export const DOUBLE_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002160/M_P00210_2_tgzf4c_fimpkh.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00210_2_tgzf4c.jpg',
     alt: 'Hero image of a double sharing room',
     title: 'Double sharing room - hero',
   },
   studyDesks: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00072_1_gkmydq_xevg54.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00072_1_gkmydq.jpg',
     alt: 'Room interior detail in a double sharing room',
     title: 'Double sharing room - interior',
   },
   roommates: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002157/M_P00014_1_x7k9z0_rcbhsf.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00014_1_x7k9z0.jpg',
     alt: 'Room view in a double sharing room',
     title: 'Double sharing room - room view',
   },
   wardrobes: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002159/M_P00166_1_gxa8lp_xsm3ty.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00166_1_gxa8lp.jpg',
     alt: 'Wardrobe area in a double sharing room',
     title: 'Double sharing room - wardrobes',
   },

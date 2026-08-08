@@ -13,28 +13,28 @@ export const IT_IMAGES = {
   hero: {
     src: `${SITE_URL}/images/co-living-for-it-professionals-madhapur-hero.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-5-scaled_tnhl5p_uftsbq.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-5-scaled_tnhl5p.webp',
     alt: 'IT professional working from a co-living room in Madhapur near Hitech City',
     title: 'Co-living for IT professionals',
   },
   wfh: {
     src: `${SITE_URL}/images/wfh-desk-setup-high-speed-wifi-co-living-madhapur.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-3-1200x750_ndmzod_ivw7jd.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-3-1200x750_ndmzod.webp',
     alt: 'Work from home setup with high-speed WiFi in a Madhapur co-living room',
     title: 'WFH WiFi setup',
   },
   shifts: {
     src: `${SITE_URL}/images/night-shift-friendly-co-living-biometric-no-curfew.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-6-1200x750_h0uzb7_vfb7fy.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-6-1200x750_h0uzb7.webp',
     alt: 'Biometric no-curfew entry supporting night shift IT professionals in Madhapur',
     title: 'Night shift friendly access',
   },
   commute: {
     src: `${SITE_URL}/images/commute-hitech-city-mindspace-from-vip-hills.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-03-2_ze1iph.webp',
     alt: 'Short commute from VIP Hills co-living to Hitech City and Mindspace offices',
     title: 'Hitech City commute',
   },

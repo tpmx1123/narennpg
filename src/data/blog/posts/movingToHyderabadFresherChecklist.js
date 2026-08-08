@@ -63,7 +63,7 @@ const movingToHyderabadFresherChecklist = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002146/3b1e0be1-6538-40a5-bd17-db8ef1795fc5_1_kaukkm_xnl5xl.jpg',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/3b1e0be1-6538-40a5-bd17-db8ef1795fc5_1_kaukkm.jpg',
       alt: 'Move-in ready furnished co-living room for a fresher in Hyderabad',
       title: 'Move-in ready room',
     },
@@ -141,7 +141,7 @@ const movingToHyderabadFresherChecklist = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002146/009cacce-a5b5-4e17-b684-6092a394de62_qh8ds4_gn1ymq.jpg',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/009cacce-a5b5-4e17-b684-6092a394de62_qh8ds4.jpg',
       alt: 'First week essentials for a fresher moving to Hyderabad',
       title: 'First week essentials',
     },
@@ -218,7 +218,7 @@ const movingToHyderabadFresherChecklist = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/Gemini_Generated_Image_hpuyjjhpuyjjhpuy_v0gxge_bnizic.jpg',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Gemini_Generated_Image_hpuyjjhpuyjjhpuy_v0gxge.jpg',
     imageAlt: 'Fresher moving to Hyderabad with a suitcase - relocation checklist',
   },
 };

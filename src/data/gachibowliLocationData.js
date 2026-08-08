@@ -19,21 +19,21 @@ export const GACHIBOWLI_IMAGES = {
   commute: {
     src: `${SITE_URL}/images/gachibowli-financial-district-commute-from-madhapur.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002155/image-03-2_ze1iph_g3llre.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/image-03-2_ze1iph.webp',
     alt: 'Commute route from Madhapur to Gachibowli and the Financial District',
     title: 'Gachibowli commute',
   },
   room: {
     src: `${SITE_URL}/images/furnished-pg-room-for-gachibowli-professionals.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-3-1200x750_ndmzod_ivw7jd.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-3-1200x750_ndmzod.webp',
     alt: 'Furnished PG room in Madhapur for professionals working in Gachibowli',
     title: 'Gachibowli professional room',
   },
   landmarks: {
     src: `${SITE_URL}/images/nanakramguda-financial-district-near-narenn-living.jpg`,
     fallback:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002175/Narenn-Elite-6-1200x750_h0uzb7_vfb7fy.webp',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/Narenn-Elite-6-1200x750_h0uzb7.webp',
     alt: 'Nanakramguda and Financial District offices near Narenn Living Madhapur',
     title: 'Financial District',
   },

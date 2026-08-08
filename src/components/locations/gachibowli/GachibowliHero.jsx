@@ -51,7 +51,7 @@ export default function GachibowliHero({ onBookVisit }) {
                 radius={10}
                 bgColor="#B1020C"
                 bgHoverColor="#8A0109"
-                fillColor="#FBBD45"
+                fillColor="#D89B22"
                 textColor="#ffffff"
                 textHoverColor="#1A1A1A"
                 iconColor="#ffffff"

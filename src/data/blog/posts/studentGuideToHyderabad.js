@@ -31,7 +31,7 @@ const studentGuideToHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002149/ChatGPT_Image_Aug_3_2026_06_52_59_PM_mvpalo_oqop99.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_52_59_PM_mvpalo.png',
       alt: 'Student PG room in Hyderabad with WiFi',
       title: 'Student room setup',
     },
@@ -57,7 +57,7 @@ const studentGuideToHyderabad = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002150/ChatGPT_Image_Aug_3_2026_06_53_52_PM_f9zoll_gowt8k.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_53_52_PM_f9zoll.png',
       alt: 'Hyderabad metro and transport options for students',
       title: 'Student transport',
     },
@@ -218,7 +218,7 @@ const studentGuideToHyderabad = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002148/ChatGPT_Image_Aug_3_2026_06_51_25_PM_yb4ulk_gap01w.png',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/ChatGPT_Image_Aug_3_2026_06_51_25_PM_yb4ulk.png',
     imageAlt: 'Student guide to living in Hyderabad - accommodation, food and budget',
   },
 };

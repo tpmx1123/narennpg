@@ -27,7 +27,7 @@ export const TRIPLE_SHARING_PAGE = {
   description:
     'Affordable 3-sharing AC rooms in Madhapur near Hitech City. Meals, WiFi & housekeeping included. Best value co-living for students & freshers. Book a visit.',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
-  ogImage: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002159/M_P00196_1_hkg9hw_v9pcqw.jpg',
+  ogImage: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00196_1_hkg9hw.jpg',
 };
 
 export const TRIPLE_SHARING_HERO = {
@@ -56,22 +56,22 @@ export const TRIPLE_SHARING_BOOKING = {
 
 export const TRIPLE_SHARING_IMAGES = {
   hero: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002159/M_P00196_1_hkg9hw_v9pcqw.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00196_1_hkg9hw.jpg',
     alt: 'Triple sharing room hero image',
     title: 'Triple sharing room - hero',
   },
   wardrobes: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00072_1_gkmydq_xevg54.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00072_1_gkmydq.jpg',
     alt: 'Wardrobe/storage area in a triple sharing room',
     title: 'Triple sharing room - wardrobes',
   },
   students: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002162/M_P00355_1_t0hd6k_wlz0ax.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00355_1_t0hd6k.jpg',
     alt: 'Room interior view in a triple sharing room',
     title: 'Triple sharing room - interior view',
   },
   studySpace: {
-    src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002158/M_P00071_1_lcjjph_njxv7v.jpg',
+    src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/M_P00071_1_lcjjph.jpg',
     alt: 'Room interior detail in a triple sharing room',
     title: 'Triple sharing room - interior',
   },

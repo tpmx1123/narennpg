@@ -9,10 +9,10 @@ export default {
       colors: {
         brand: {
           gold: {
-            DEFAULT: '#FBBD45',
-            light: '#FCD56E',
-            dark: '#E5A62A',
-            pale: '#FFF8E6',
+            DEFAULT: '#D89B22',
+            light: '#E5B348',
+            dark: '#B8821C',
+            pale: '#FBF4E6',
           },
           green: {
             DEFAULT: '#0F3D2E',

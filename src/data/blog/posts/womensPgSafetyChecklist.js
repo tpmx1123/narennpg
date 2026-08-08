@@ -48,7 +48,7 @@ const womensPgSafetyChecklist = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002184/wmremove-transformed_9_vlhg6k_a138bl.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/wmremove-transformed_9_vlhg6k.png',
       alt: "Biometric access and CCTV security at a women's PG in Hyderabad",
       title: 'Security systems',
     },
@@ -68,7 +68,7 @@ const womensPgSafetyChecklist = {
     },
     {
       type: 'image',
-      src: 'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002184/wmremove-transformed_10_fxrvny_hoz9ji.png',
+      src: 'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/wmremove-transformed_10_fxrvny.png',
       alt: "Well-lit corridor and stairwell at a women's PG in Madhapur, Hyderabad",
       title: 'Lighting and corridors',
     },
@@ -214,7 +214,7 @@ const womensPgSafetyChecklist = {
     buttonLabel: 'Book a Visit',
     href: '/contact-us/',
     image:
-      'https://res.cloudinary.com/dcrdkvt2q/image/upload/f_auto,q_auto/v1786002181/wmremove-transformed_8_mku7o6_zhzg2t.png',
+      'https://narenn.sgp1.cdn.digitaloceanspaces.com/narennpgimages/wmremove-transformed_8_mku7o6.png',
     imageAlt: 'Safe PG for women in Hyderabad - safety checklist and verified entry',
   },
 };
